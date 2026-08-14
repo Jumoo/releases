@@ -840,6 +840,18 @@
     "prerelease": false
   },
   {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "17.0.0",
+    "publishedAt": "2026-04-14T10:50:33.007+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/17.0.0",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "uSync",
@@ -897,6 +909,18 @@
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/13.2.21",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases",
     "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "17.0.0-rc1",
+    "publishedAt": "2026-03-20T18:35:11Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/17.0.0-rc1",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/v17.0.0-rc1",
+    "notes": "This is the release candidate for uSync.Migrartions for Umbraco v17. for migrating from Umbraco 8 to Umbraco 17. \r\n\r\n> [!NOTE]\r\n> If you have a fairly modern umbraco v10+ site, with no legacy data providers (e.g Grid or Nested Content). the **YOU DON'T NEED USYNC.MIGRATIONS** - Standard boring old uSync will perform the minor updates between current properties and content inline, without you needing to do any fancy upgrades.\r\n>\r\n> Migrations is only really needed when you want to go from one property type to another ,(e.g Grid to BlockGrid)\r\n\r\n## Migrate All the things. \r\nuSync will migrate a lot of things for you. Migratrions also migrated. \r\n\r\n- Nested Content to BlockList\r\n- Grid to BlockGrid\r\n- Macros to Content Types (including updating the content)\r\n- Swicher to toggle\r\n- SpecrumColurPicker\r\n- ... loads of community migrations from v4\r\n\r\n## All New Migrations \r\nuSync.Migrations for v17, is the all new, (but still probibly not fully supported) way of migrating a site from older versions to the new one. \r\n\r\nWith this version we are aiming for a simpler process, put the files on the site, press the upgrade buttons, and get a site out the other side, \r\nyou can still customise and extend migrations like you could the v13 version, but the UI control is a lot simpler\r\n\r\n<img width=\"1580\" height=\"976\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0aca2c25-12a0-4895-8a23-598acfa0320e\" />\r\n\r\nNow you get three steps to migrating. \r\n\r\nuSync migrations now looks for old uSync version folders (e.g /uSync/v8, or /uSync/v13) you 'simply' copy the uSync folder from an old site into a new sites uSync directly and migrations will pick this up\r\n\r\n> [!NOTE]\r\n> If you are migrating from the grid we recommend you also drop the sites config folder into the versioned uSync folder (e.g /uSync/v8/config) that way migrations can read the grid settings from the old site and ping them over. \r\n\r\n## Anaylise \r\nWill take a look at the files in the legacy folder, and see if there are any issues. this then reports these to you 👍 \r\n\r\n<img width=\"1251\" height=\"448\" alt=\"image\" src=\"https://github.com/user-attachments/assets/6ac4ea37-f58b-4325-a92e-ab557d814f39\" />\r\n\r\n\r\n## Upgrade\r\nThe upgrade step is where uSync.Migrations will create any new content type or data type uSync files that might be needed for the data to be migrated, \r\n\r\nexamples of this are, new content types for all the grid elements, new content and doctypes to replace any macros you might have defined. \r\n\r\nAt this point nothing has been imported to your site \r\n\r\n<img width=\"1248\" height=\"539\" alt=\"image\" src=\"https://github.com/user-attachments/assets/83a7e5f7-1e64-4d43-9ada-658995901a69\" />\r\n\r\n## Import \r\n\r\nThe final step is the import, which is actually just the same as the standard import uSync performs, Migrations has some extra items that integrate with the standard import (ConfigSeriaizers and ValueMappers) - anyone can write these, and the will run on import. \r\n\r\n<img width=\"1266\" height=\"474\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0d737297-0800-4164-a788-61cd763c9c34\" />\r\n\r\n_The import runs some things through twice, because for example the Grid DataType requires that all the new content types be created, and rather than write a whole new import process, we run it twice._\r\n\r\n---\r\n# Installing \r\n\r\n> uSync.Migrations rc1 - requires uSync v17.1.0-rc1 \r\n\r\n```\r\ndotnet add package uSync.Migrations --prerelease\r\n```",
     "prerelease": false
   },
   {
@@ -1596,6 +1620,18 @@
     "prerelease": true
   },
   {
+    "package": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.CommandLine",
+    "version": "16.1.0",
+    "publishedAt": "2025-10-24T11:08:05.09+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Cli/16.1.0",
+    "githubUrl": "https://github.com/Jumoo/uSync.CommandLine/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -2052,6 +2088,18 @@
     "prerelease": false
   },
   {
+    "package": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.CommandLine",
+    "version": "16.0.0",
+    "publishedAt": "2025-06-12T09:12:56Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Cli/16.0.0",
+    "githubUrl": "https://github.com/Jumoo/uSync.CommandLine/releases/tag/v16.0.0",
+    "notes": "This is the v16 release of the uSync.CommandLine tool which lets you send commands to Umbraco from a terminal.\r\n\r\n# What's new\r\n- Support for v16 (some changes to hubs, and callbacks).\r\n\r\nSee the [readme](https://github.com/Jumoo/uSync.CommandLine/blob/v16/main/readme.md) for usage !\r\n\r\n",
+    "prerelease": false
+  },
+  {
     "package": "uSync.Forms",
     "title": "uSync Forms",
     "category": "uSync",
@@ -2232,6 +2280,18 @@
     "prerelease": false
   },
   {
+    "package": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.CommandLine",
+    "version": "15.0.0-beta3",
+    "publishedAt": "2025-04-09T09:34:56.97+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Cli/15.0.0-beta3",
+    "githubUrl": "https://github.com/Jumoo/uSync.CommandLine/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "uSync",
@@ -2254,6 +2314,18 @@
     "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v15.1.6",
     "notes": "This is a patch release of uSync for Umbraco v15. It contains some fixes to known issues and improves import on first boot and startup. \r\n\r\n## What's Changed\r\n\r\n### Fixes\r\n* 🐛 Fix: Domain (Culture and Hostnames) not set on import. by @KevinJump in https://github.com/KevinJump/uSync/pull/737\r\n* 🐛 V15/first import fixes by @KevinJump in https://github.com/KevinJump/uSync/pull/739\r\n* 🐛 Fix #732 - tree sort order isn't set for new items on first import. by @KevinJump in https://github.com/KevinJump/uSync/pull/733\r\n* 🐛 V15/boot on appstarting fix by @KevinJump in https://github.com/KevinJump/uSync/pull/743\r\n* 🐛 V15/block merge fixes by @KevinJump in https://github.com/KevinJump/uSync/pull/748\r\n\r\n### Housekeeping.\r\n* 🧹 V15/code clean by @KevinJump in https://github.com/KevinJump/uSync/pull/740\r\n* 🧹 Update the links on the nonodes page. by @KevinJump in https://github.com/KevinJump/uSync/pull/742\r\n* 🧹 Tidy up some second pass code. by @KevinJump in https://github.com/KevinJump/uSync/pull/744\r\n\r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v15.1.5...v15.1.6",
     "prerelease": false
+  },
+  {
+    "package": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.CommandLine",
+    "version": "15.0.0-beta2",
+    "publishedAt": "2025-04-01T12:31:56.847+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Cli/15.0.0-beta2",
+    "githubUrl": "https://github.com/Jumoo/uSync.CommandLine/releases",
+    "notes": null,
+    "prerelease": true
   },
   {
     "package": "uSync.Complete",
@@ -2470,6 +2542,18 @@
     "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v13.2.6",
     "notes": "This is a v13 patch release for uSync for Umbraco v13, it contains some updates and fixes to known issues.\r\n\r\n## What's Changed\r\n* Add state to cancellable events by @bielu in https://github.com/KevinJump/uSync/pull/686 (Fixes #682)\r\n* Introduce method of internal to make other protected and virtual by @bielu in https://github.com/KevinJump/uSync/pull/690 (Fixes #679)\r\n* V13/j object sorting by @KevinJump in https://github.com/KevinJump/uSync/pull/695 \r\n* Config options for usync.once and usync.stop files\r\n\r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v13.2.5...v13.2.6",
     "prerelease": false
+  },
+  {
+    "package": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.CommandLine",
+    "version": "15.0.0-beta1",
+    "publishedAt": "2024-12-12T16:02:55.88+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Cli/15.0.0-beta1",
+    "githubUrl": "https://github.com/Jumoo/uSync.CommandLine/releases",
+    "notes": null,
+    "prerelease": true
   },
   {
     "package": "uSync.Complete",
@@ -3165,6 +3249,18 @@
     "nugetUrl": "https://www.nuget.org/packages/uSync/13.2.1",
     "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v13.2.1",
     "notes": "This is a patch release of uSync for Umbraco v13, it contains some small fixes for people using roots,\r\n\r\n## What's Changed\r\n- Fix for #623 Files are created in \"default\" export folder when they are the same as in the root folder\r\n- Fix for #622 Apply button doesn't work for changes constructed from merged items.\r\n- Fix for false positive duplicates when using clean function.\r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v13.2.0...v13.2.1\r\n\r\n```bash\r\ndotnet add package uSync --version 13.2.1\r\n```",
+    "prerelease": false
+  },
+  {
+    "package": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.CommandLine",
+    "version": "13.1.0",
+    "publishedAt": "2024-04-22T20:11:29.977+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Cli/13.1.0",
+    "githubUrl": "https://github.com/Jumoo/uSync.CommandLine/releases",
+    "notes": null,
     "prerelease": false
   },
   {
@@ -4344,6 +4440,18 @@
     "prerelease": false
   },
   {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-beta016",
+    "publishedAt": "2023-04-12T09:48:03.647+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-beta016",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -4416,6 +4524,18 @@
     "prerelease": false
   },
   {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-beta015",
+    "publishedAt": "2023-03-24T10:06:52.97+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-beta015",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -4426,6 +4546,18 @@
     "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v8.11.4",
     "notes": "This is a minor support release for uSync v8.x for Umbraco v8.x \r\n\r\n## Updates\r\n* Performance fix for heavily nested sites (content type caching on nested content) #448 \r\n* Ensure DateTime values are serialized in a consistent way, even inside nested content. \r\n* Fix: #480 Nested content properties can error if nested content child properties are an Json Array\r\n\r\n## Upgrading, \r\n\r\n**If you are using Content Edition, updating content edition also updates uSync** \r\n```\r\nupdate-package uSync.ContentEdition -version 8.11.4 -FileConflictAction IgnoreAll\r\n```\r\n\r\nIf you are 'just' using the core uSync package\r\n```\r\nupdate-package uSync -version 8.11.4 -FileConflictAction IgnoreAll\r\n```\r\n\r\n### ⚠️  uSync v8.x is in it's \"Support phase\" ⚠️ \r\n**During the support phase we will be issuing no new feature releases, only patches for known issues.** \r\n\r\n- v8.x -  will enter a security only phase in 📆 Feb 2024 at which date only security updates will be issued \r\n- v8.x - reaches end of life in 📆 Feb 2025 \r\n \r\n these support phases match the [Umbraco v8 support dates](https://umbraco.com/products/knowledge-center/long-term-support-and-end-of-life/umbraco-8-end-of-life-eol/).\r\n\r\n",
     "prerelease": false
+  },
+  {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-beta014",
+    "publishedAt": "2023-03-17T16:03:56.98+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-beta014",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases",
+    "notes": null,
+    "prerelease": true
   },
   {
     "package": "uSync",
@@ -4450,6 +4582,30 @@
     "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v10.3.4",
     "notes": "This is a minor patch fix for uSync. for Umbraco v10. It contains super small issues around firstboot \r\n# Fixes\r\n\r\n- 🐞(bug) - Firstboot fails if default language is changed in language config files.\r\n- 🗒️(doc) - Different spelling fix _(fixing the word 'different' across the code)_\r\n\r\n# Getting uSync .\r\n\r\n```\r\ndotnet add package uSync --version 10.3.4 \r\n```\r\n\r\n\r\n",
     "prerelease": false
+  },
+  {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-beta013",
+    "publishedAt": "2023-03-10T10:13:33.2+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-beta013",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-beta012",
+    "publishedAt": "2023-03-03T17:12:09.453+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-beta012",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases",
+    "notes": null,
+    "prerelease": true
   },
   {
     "package": "Jumoo.TranslationManager",
@@ -4533,6 +4689,78 @@
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/8.7.11",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v8.7.11",
     "notes": "This is a minor patch release for Translation manager v8 for Umbraco 8 . It contains a backported fix for a issue that occurs when you have two or more sets that have the same source and target nodes. \r\n\r\n**You do not need to update to this release unless you are experiencing this specific issue .** \r\n\r\n(please note - the main supported release for Umbraco 8 is now Translation Manager v9)\r\n\r\n# Fix\r\n- If you have two or more sets that have the same source and target nodes in them using variants . then when you attempt to send the a language to translation you might see the 'Nodes can only be from one translation set' message. \r\n- this fix - removes that by property passing the set and site id to the backend when creating nodes. \r\n\r\nThis fix  was included in v9.16 / v10.1.3 and v11.0.2 \r\n\r\n\r\n",
+    "prerelease": false
+  },
+  {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-beta011",
+    "publishedAt": "2023-02-24T12:18:08.94+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-beta011",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
+    "package": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.CommandLine",
+    "version": "10.0.4",
+    "publishedAt": "2023-02-13T15:54:15.607+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Cli/10.0.4",
+    "githubUrl": "https://github.com/Jumoo/uSync.CommandLine/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-beta010",
+    "publishedAt": "2023-02-09T16:50:31Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-beta010",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/4.0.0-beta010",
+    "notes": "This is another beta of **uSync.Migrations**, getting closer to being useful, with being finished. \r\n\r\n\r\n```\r\ndotnet add package uSync.Migrations --version 4.0.0-beta010 \r\n```\r\n\r\n## What's Changed\r\n\r\n### Migrations or Conversions? \r\nThe big changes in this version are splitting Migrations and Converting. \r\n\r\n- Migrations are moving from old to new (e.g. v7 to v8+)\r\n- Conversions are chaning things your site already have (e.g. Nested Content to Block List)\r\n\r\n### Grid -> BlockGrid\r\nSupport for Grid to Block Grid ! HT @soreng  (as a conversion) - so if your site have grid, one (or maybe two now) clicks of a button will turn it all into blockgrid (*you will have to update your own razor templates to get things to render).\r\n\r\n![image](https://user-images.githubusercontent.com/431231/217881916-d550a42d-883a-4de7-abaf-4cab78a28fba.png)\r\n\r\n\r\n### Breaking Changes 🛠\r\n* Move the context (breaking) by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/71\r\n\r\n### Other Changes\r\n* Making the code version aware. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/56\r\n* Community migrator: Stacked Content to Block List by @soreng in https://github.com/Jumoo/uSyncMigrations/pull/57\r\n* v8 and Shared migration code. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/58\r\n* Add logging to the handlers. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/62\r\n* NestedContent: Property value can be null, resulting in an error by @soreng in https://github.com/Jumoo/uSyncMigrations/pull/65\r\n* Update the UI - So we group profiles by migrations and conversions by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/69\r\n* Feature : v8 grid to block grid by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/70\r\n\r\n## New Contributors\r\n* @soreng made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/57\r\n\r\n**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/4.0.0-beta007...4.0.0-beta010",
+    "prerelease": true
+  },
+  {
+    "package": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.CommandLine",
+    "version": "10.0.3",
+    "publishedAt": "2023-01-30T11:43:18.5+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Cli/10.0.3",
+    "githubUrl": "https://github.com/Jumoo/uSync.CommandLine/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.CommandLine",
+    "version": "10.0.2",
+    "publishedAt": "2023-01-30T10:37:44.697+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Cli/10.0.2",
+    "githubUrl": "https://github.com/Jumoo/uSync.CommandLine/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.CommandLine",
+    "version": "10.0.1",
+    "publishedAt": "2023-01-27T11:31:13.06+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Cli/10.0.1",
+    "githubUrl": "https://github.com/Jumoo/uSync.CommandLine/releases",
+    "notes": null,
     "prerelease": false
   },
   {
@@ -4656,6 +4884,18 @@
     "prerelease": false
   },
   {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-beta007",
+    "publishedAt": "2022-12-06T12:21:40Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-beta007",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/4.0.0-beta007",
+    "notes": "This is another beta of usync.Migrations, getting less rought but still quite not ready - \r\n\r\n** N.B you need to use uSync 10.3.1 beta (or uSync v11 for this to work.) **\r\n\r\n## Fixes\r\n- Quite a lot, tweaks around the houses to make properties come in better \r\n   -  Nested / BlockList any Content Typers used are now made as element types)\r\n   -  Language - the default language of the current install is kept\r\n   -  Checkbox List - the result is now JSON not CSV\r\n   -  Grid - slightly better (but Grid to BlockGrid is on the roadmap)\r\n\r\n## What's Changed\r\n* The SyncPropertyMigrators are now loaded in the context based on options (so you can in theory choose them - UI to come)\r\n* ID look ups in the context so int to guid on really only (pre v7.6 things) can have a go at working\r\n* Support for mapping things to the new media types in Umbraco 10\r\n* Nested Content to BlockList (but you need to enable this in code [see sample profile for how])(https://github.com/Jumoo/uSyncMigrations/blob/main/MyMigrations/MyMigrationProfile.cs#L48-L52)\r\n* the Handlers are now version aware, meaning we might also have v8 handlers for other types of migration 🤫 \r\n\r\n## New Mappers\r\n* uEditorNotes migrators (both to uEditorNotes and Contentment) added to community migrators\r\n* Multi-URL picker editor support\r\n\r\n<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Other Changes\r\n* Tiny spelling mistake by @CarlSargunar in https://github.com/Jumoo/uSyncMigrations/pull/26\r\n* Fix/prep order fix by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/27\r\n* Order the profiles correctly. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/28\r\n* error box on the migrations dashboard by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/29\r\n* profiles - keep them lazy loaded but in order by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/30\r\n* Corrected typos by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/31\r\n* Removed unused namespaces by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/32\r\n* Whitespace formatting by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/33\r\n* Various code formatting by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/34\r\n* Marks internal `ISyncPropertyMigrator` classes as public by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/35\r\n* Corrected typo in `EditorAliasInfo.OriginalEditorAlias` by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/36\r\n* Adds migrator for Multi-URL Picker editor by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/37\r\n* Add support for the popular uEditorNotes property editor by @marcemarc in https://github.com/Jumoo/uSyncMigrations/pull/39\r\n* Adds ID/Key lookup to `SyncMigrationContext` by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/42\r\n* Adds support for newer Media Types by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/43\r\n* fix typo by @LottePitcher in https://github.com/Jumoo/uSyncMigrations/pull/46\r\n* Move migrators to the context, so they can be configured. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/38\r\n* Typos by @craigs100 in https://github.com/Jumoo/uSyncMigrations/pull/47\r\n* Change attributes on editornotes, so they both load  by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/48\r\n* Make sure we use Path.DirectorySeparatorChar as needed. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/50\r\n* Make context disposable. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/49\r\n* spell it with two r's pre-fer-red - by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/51\r\n* Nested to BlockList Migrator. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/52\r\n* fix case of Textbox to TextBox when migrating from v7 by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/53\r\n* Tidy up handlers, allow for source versioning. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/54\r\n* Fix/checkboxlist by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/55\r\n\r\n## New Contributors\r\n* @CarlSargunar made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/26\r\n* @marcemarc made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/39\r\n* @LottePitcher made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/46\r\n* @craigs100 made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/47\r\n\r\n**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/4.0.0-beta1...4.0.0-beta4",
+    "prerelease": true
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -4728,6 +4968,42 @@
     "prerelease": false
   },
   {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-beta003",
+    "publishedAt": "2022-11-17T14:07:20.33+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-beta003",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-beta002",
+    "publishedAt": "2022-11-17T13:37:59.237+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-beta002",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-beta001",
+    "publishedAt": "2022-11-17T12:26:09.79+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-beta001",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -4797,6 +5073,18 @@
     "nugetUrl": "https://www.nuget.org/packages/uSync/10.3.0",
     "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v10.3.0",
     "notes": "This is a minor patch release for uSync for Umbraco it contains fixes and some minor updates.\r\n\r\n*uSync 10.x releases are fully backward compatible with all Umbraco 10.x versions - but as always we recommend you update to the latest version when you have a chance.*\r\n\r\n## Fixes\r\n* Solve Errors While saving DocTypesContaining Images by @sgerme in https://github.com/KevinJump/uSync/pull/418\r\n\r\n## Updates \r\n- #419 Add the ability to ignore content items by content type\r\n- ef3bab4e74cd547965f1e81054fa516a4e977e4b Add notification messages for UI should uSync have a problem exporting on save, delete or move. \r\n- Pre support for block list grid* \r\n\r\n**support for blocklist grid as it appeared in 10.3-rc1 if internal structures changes before 10.4-rc this will require updating. *\r\n\r\n## What's Changed\r\n* Solve Errors While saving DocTypesContaining Images by @sgerme in https://github.com/KevinJump/uSync/pull/418\r\n\r\n## New Contributors\r\n* @sgerme made their first contribution in https://github.com/KevinJump/uSync/pull/418\r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v10.2.1...v10.3.0",
+    "prerelease": false
+  },
+  {
+    "package": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.CommandLine",
+    "version": "10.0.0",
+    "publishedAt": "2022-10-19T10:57:02.11+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Cli/10.0.0",
+    "githubUrl": "https://github.com/Jumoo/uSync.CommandLine/releases",
+    "notes": null,
     "prerelease": false
   },
   {

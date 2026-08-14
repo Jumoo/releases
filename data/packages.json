@@ -30,6 +30,18 @@
     "githubRepo": "Jumoo/uSync.Automate"
   },
   {
+    "nugetId": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync",
+    "githubRepo": "Jumoo/uSync.CommandLine"
+  },
+  {
+    "nugetId": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync",
+    "githubRepo": "Jumoo/uSyncMigrations"
+  },
+  {
     "nugetId": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
