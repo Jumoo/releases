@@ -5,6 +5,40 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Translation Manager 18.1.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.1.1</guid>
+      <pubDate>Fri, 14 Aug 2026 14:11:02 GMT</pubDate>
+      <description><![CDATA[Fixes a rich text property crash caused by empty markup round-tripping as `null` after translation.
+
+## What's fixed
+
+- **Empty RTE markup no longer breaks the node.** A rich text property with empty markup (for example, a block-only rich text value with no plain text) could come back from translation stored as `{"markup": null, "blocks": ...}` instead of `{"markup": "", "blocks": ...}`. That made the content node unopenable in the backoffice.
+
+If you have content already affected by this, the stored property value will need `"markup": null` corrected back to `"markup": ""`.
+
+---
+
+Published to NuGet.]]></description>
+    </item>
+    <item>
+      <title>Translation Manager 17.7.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.1</guid>
+      <pubDate>Fri, 14 Aug 2026 13:58:28 GMT</pubDate>
+      <description><![CDATA[Fixes a rich text property crash caused by empty markup round-tripping as `null` after translation.
+
+## What's fixed
+
+- **Empty RTE markup no longer breaks the node.** A rich text property with empty markup (for example, a block-only rich text value with no plain text) could come back from translation stored as `{"markup": null, "blocks": ...}` instead of `{"markup": "", "blocks": ...}`. That made the content node unopenable in the backoffice, failing with `ArgumentNullException: Value cannot be null. (Parameter 'input')` from `RichTextPropertyValueEditor.ToEditor`.
+
+If you have content already affected by this, the stored property value will need `"markup": null` corrected back to `"markup": ""`.
+
+---
+
+Published to NuGet.]]></description>
+    </item>
+    <item>
       <title>uSync Commerce 17.1.0</title>
       <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v17.1.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v17.1.0</guid>
@@ -658,57 +692,6 @@ This version updates the minimum Umbraco CMS dependency to **17.5.0**. Translati
       <guid isPermaLink="true">https://github.com/KevinJump/uSync.Forms/releases</guid>
       <pubDate>Thu, 25 Jun 2026 11:30:51 GMT</pubDate>
       <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync 18.0.0</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v18.0.0</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.0.0</guid>
-      <pubDate>Thu, 25 Jun 2026 08:47:36 GMT</pubDate>
-      <description><![CDATA[This is the v18 release of uSync for Umbraco v18, it contains updates to make sure things still work in the v18 version of Umbraco and support for new features (Libraries - elements). 
-
-## Element Support (Libraries)
- - uSync v18 supports the importing/exporting of Library elements (reusable elements). 
-
-## What's Changed
-* V18/wip elements by @KevinJump in https://github.com/KevinJump/uSync/pull/968
-* V18/17 merge/20260613 by @KevinJump in https://github.com/KevinJump/uSync/pull/975
-
-## Breaking
-- Elements are a little different than content (although they are near identical,) most of the differences are at an API/Service level, so they shouldn't change things if you are just using uSync, but base services around content have changed to accommodate this - so if you re-use any bits of uSync in your own code you might get breaking changes. 
-- Umbraco has moved from swagger to Microsoft's OpenApi libraries (and to v3.x of the OpenAPI Schemas). this does change a couple of things around how the management API for usync presents itself, and the naming of some of the services. we have updated the code here for this - these changes will break anyone's use of the management API- _there are long and complex reasons why we are **not** offering a backwards compatible API at this level , many of them are not technical, if you catch me in a conference bar one day i might tell you them (and then you will probably slowly back away)_
-
-> [!NOTE]
-> Umbraco v18 is a STS release, and has a shorter support lifecycle,  we support uSync on this version until the next one is released (and after that will only do security updates) - you probibly shouldn't go to a STS release unless you are prepared and can upgrade your site every six months. 
-
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.3.2...v18.0.8]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.4.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.4.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.4.2</guid>
-      <pubDate>Thu, 18 Jun 2026 16:07:52 GMT</pubDate>
-      <description><![CDATA[
-This is a feature patch release for Translation Manager it add more management tools to Local translation memory so users can edit/delete and view individual values in a connectors memory, they can also copy the memory between connectors. 
-
-
-**Translation Memory**
-- New translation memory entry management UI — browse, edit, and delete individual memory entries
-- Copy memory between connectors
-- Approved-only filter in the memory browser
-- Bulk delete for memory sources with Umbraco-native confirm dialogs
-
-**Batch Translation Support**
-- New `BatchableMachineConnectorBase` for async/batch translation APIs
-- Translation results now passed back to connectors for memory/value tracking
-
-**Localisations**
-- Added Dutch, Danish, Spanish, French, and German backoffice localisations
-
-**UI Improvements**
-- Loading bar added to pending view actions (remove/check)
-- "Delete all pending" button added
-]]></description>
     </item>
   </channel>
 </rss>

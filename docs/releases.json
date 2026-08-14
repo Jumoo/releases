@@ -1,5 +1,29 @@
 [
   {
+    "package": "Jumoo.TranslationManager",
+    "title": "Translation Manager",
+    "category": "",
+    "repo": "Jumoo/Jumoo.TranslationManager.Issues",
+    "version": "18.1.1",
+    "publishedAt": "2026-08-14T14:11:02Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/18.1.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.1.1",
+    "notes": "Fixes a rich text property crash caused by empty markup round-tripping as `null` after translation.\n\n## What's fixed\n\n- **Empty RTE markup no longer breaks the node.** A rich text property with empty markup (for example, a block-only rich text value with no plain text) could come back from translation stored as `{\"markup\": null, \"blocks\": ...}` instead of `{\"markup\": \"\", \"blocks\": ...}`. That made the content node unopenable in the backoffice.\n\nIf you have content already affected by this, the stored property value will need `\"markup\": null` corrected back to `\"markup\": \"\"`.\n\n---\n\nPublished to NuGet.",
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager",
+    "title": "Translation Manager",
+    "category": "",
+    "repo": "Jumoo/Jumoo.TranslationManager.Issues",
+    "version": "17.7.1",
+    "publishedAt": "2026-08-14T13:58:28Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.7.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.1",
+    "notes": "Fixes a rich text property crash caused by empty markup round-tripping as `null` after translation.\n\n## What's fixed\n\n- **Empty RTE markup no longer breaks the node.** A rich text property with empty markup (for example, a block-only rich text value with no plain text) could come back from translation stored as `{\"markup\": null, \"blocks\": ...}` instead of `{\"markup\": \"\", \"blocks\": ...}`. That made the content node unopenable in the backoffice, failing with `ArgumentNullException: Value cannot be null. (Parameter 'input')` from `RichTextPropertyValueEditor.ToEditor`.\n\nIf you have content already affected by this, the stored property value will need `\"markup\": null` corrected back to `\"markup\": \"\"`.\n\n---\n\nPublished to NuGet.",
+    "prerelease": false
+  },
+  {
     "package": "uSync.Umbraco.Commerce",
     "title": "uSync Commerce",
     "category": "uSync Addon",
