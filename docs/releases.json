@@ -24,6 +24,18 @@
     "prerelease": true
   },
   {
+    "package": "uSync.Hangfire",
+    "title": "uSync Hangfire",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.Hangfire",
+    "version": "0.17.3",
+    "publishedAt": "2026-08-13T08:48:21.503+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Hangfire/0.17.3",
+    "githubUrl": "https://github.com/Jumoo/uSync.Hangfire/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -45,6 +57,18 @@
     "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/18.1.0",
     "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.1.0",
     "notes": "This release brings two features across from the v17 line — background restore point compression with status tracking, and a per-server \"Hide Compare tab\" setting — plus a fix for scheduled publishes landing an hour (or more) out on servers with a non-zero UTC offset.\n\n### Added\n- Publisher: a per-server **Hide \"Compare\" tab** UI setting. When a target site blocks being embedded in an iframe (`X-Frame-Options` / CSP `frame-ancestors`), the visual Compare tab only rendered a browser security error — enabling this option hides the Compare tab for that server so the change view opens straight on **Details**.\n- Snapshots: restore point compression now runs in the background instead of blocking the request thread, so creating a restore point returns as soon as the snapshot is taken. A **Pending / Complete / Failed** status is tracked and shown in the restore point dashboard; Restore is disabled until a point reaches Complete, and pending points are no longer treated as orphaned by `Scan()`.\n\n### Fixed\n- #306 - Publisher: the scheduled publish date from the push dialog is now normalised to UTC before being written into the pack, fixing schedules landing offset by the server's UTC offset on servers with a non-zero timezone.\n",
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "18.0.0",
+    "publishedAt": "2026-08-11T13:06:38.533+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/18.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
     "prerelease": false
   },
   {
@@ -108,6 +132,30 @@
     "prerelease": true
   },
   {
+    "package": "Umbraco.Community.LinkedPages",
+    "title": "Linked Pages",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.LinkedPages",
+    "version": "18.0.3",
+    "publishedAt": "2026-07-27T14:32:27.32+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.LinkedPages/18.0.3",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "Umbraco.Community.LinkedPages",
+    "title": "Linked Pages",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.LinkedPages",
+    "version": "18.0.2",
+    "publishedAt": "2026-07-27T14:05:47.84+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.LinkedPages/18.0.2",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "uSync",
@@ -140,6 +188,18 @@
     "publishedAt": "2026-07-22T09:40:58.633+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.6.0",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "Umbraco.Community.LinkedPages",
+    "title": "Linked Pages",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.LinkedPages",
+    "version": "18.0.1",
+    "publishedAt": "2026-07-21T13:35:02.15+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.LinkedPages/18.0.1",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases",
     "notes": null,
     "prerelease": false
   },
@@ -348,6 +408,18 @@
     "prerelease": false
   },
   {
+    "package": "Umbraco.Community.LinkedPages",
+    "title": "Linked Pages",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.LinkedPages",
+    "version": "18.0.0",
+    "publishedAt": "2026-06-30T10:38:42.323+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.LinkedPages/18.0.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -501,6 +573,18 @@
     "nugetUrl": "https://www.nuget.org/packages/uSync.Forms/17.1.0",
     "githubUrl": "https://github.com/KevinJump/uSync.Forms/releases/tag/v17.1.0",
     "notes": "## What's Changed\r\n* Update Forms to work when the site is running in a \"frontend only\" mode\r\n",
+    "prerelease": false
+  },
+  {
+    "package": "Umbraco.Community.LinkedPages",
+    "title": "Linked Pages",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.LinkedPages",
+    "version": "17.0.0",
+    "publishedAt": "2026-06-15T14:40:07.24+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.LinkedPages/17.0.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases",
+    "notes": null,
     "prerelease": false
   },
   {
@@ -789,6 +873,18 @@
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.3.0",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.3.0",
     "notes": "This is a patch release of Jumoo.TranslationManager for Umbraco v17, it contains updates to keep translation manager inline with the latest umbraco releases.\r\n\r\n> [!NOTE] \r\n> This release requires Umbraco v17.3 or above. as we have updated client methds to use the latest versions of umbraco.\r\n\r\n# What's new\r\n - Update client methods to support v17.3 Client auth in umbraco\r\n - Performance improvements in UI for large jobs\r\n - UI Updates to tidy up create process.\r\n\r\nover all this update makes translation manager look a bit nicer and run a bit faster. \r\n\r\n--- \r\n",
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "17.1.0",
+    "publishedAt": "2026-04-24T13:02:32.91+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/17.1.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
     "prerelease": false
   },
   {
@@ -1116,6 +1212,18 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "17.0.0",
+    "publishedAt": "2026-01-27T15:00:22.883+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/17.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -1125,6 +1233,18 @@
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.1.0",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.1.0",
     "notes": "This is a minor release of Translation Manager for Umbraco, it introduces the new \"Quick translate\" feature and fixes some known issues.\r\n\r\n# What's new\r\n\r\n- ⭐ \"Quick Translate\" - Single button translation from any content item (requires setup)\r\n- ⭐ Provider settings via config files - allows for provider settings to be read from the config (as opposed to stored in db)\r\n- ⭐ Per request throttling options for 3rd party connectors\r\n- 🐛 Fix blocks inside RTE elements in blocks do not render on translated language\r\n\r\n# Installation\r\n\r\n```\r\n  dotnet add package Jumoo.TranslationManager --version 17.1.0 \r\n```\r\n\r\nor update your package Reference in the csproj file\r\n\r\n```\r\n  <PackageReference Include=\"Jumoo.TranslationManager\" Version=\"17.1.0\" />\r\n```\r\n",
+    "prerelease": false
+  },
+  {
+    "package": "uSync.Hangfire",
+    "title": "uSync Hangfire",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.Hangfire",
+    "version": "0.17.2",
+    "publishedAt": "2026-01-20T10:54:45Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Hangfire/0.17.2",
+    "githubUrl": "https://github.com/Jumoo/uSync.Hangfire/releases/tag/0.17.2",
+    "notes": "Updated everything to Umbraco v17 dependencies. ",
     "prerelease": false
   },
   {
@@ -1356,6 +1476,18 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "17.0.0-rc4",
+    "publishedAt": "2025-11-25T11:42:48.603+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/17.0.0-rc4",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
     "package": "Jumoo.TranslationManager.Passthrough",
     "title": "Translation Manager Passthrough",
     "category": "Translation Connectors",
@@ -1532,6 +1664,18 @@
     "publishedAt": "2025-11-03T15:00:03.507+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.DeepL/17.0.0-rc1",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "17.0.0-rc1",
+    "publishedAt": "2025-11-03T14:59:31.69+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/17.0.0-rc1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
     "notes": null,
     "prerelease": true
   },
@@ -1812,6 +1956,30 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "16.0.1",
+    "publishedAt": "2025-09-04T12:57:32.817+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/16.0.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "uSync.Hangfire",
+    "title": "uSync Hangfire",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.Hangfire",
+    "version": "0.1.1",
+    "publishedAt": "2025-08-27T09:04:35.15+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Hangfire/0.1.1",
+    "githubUrl": "https://github.com/Jumoo/uSync.Hangfire/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -1821,6 +1989,18 @@
     "nugetUrl": "https://www.nuget.org/packages/uSync/16.0.4",
     "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v16.0.4",
     "notes": "This is a minor patch release of uSync for Umbraco v16 - that contains a new feature that lets you move the uSync tree into it's own section of the backoffice. this has the effect of letting you give people uSync access who don't have settings access.\r\n\r\n> [!WARNING]\r\n> Access to uSync means a user can import changes to your site that would only normally be possible if they had settings access, as such moving uSync to a new section and removing settings access isn't reducing the level of control a user may have over your site it is mearly removing their access to the settings UI while they retain full access to what uSync will let them do. \r\n>\r\n> This is a UI not a security change, and should be treated as that. \r\n\r\n## What's Changed\r\n* Add a custom section with the uSync tree in it  by @KevinJump in https://github.com/KevinJump/uSync/pull/794\r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v16.0.3...v16.0.4\r\n\r\n## Moving the uSync tree to it's own section\r\nAdding the new `MoveToSection` to the uSync settings. \r\n\r\n```json\r\n \"uSync\": {\r\n    \"Settings\": {\r\n      \"MoveToSection\": true\r\n    }\r\n  }\r\n```\r\n\r\nWill result in a new \"Synchronisation\" section being added to Umbraco.\r\n\r\n> [!NOTE]\r\n> You will have to add this section to the list of allowed sections for the groups you now want to access uSync (including the admin group)\r\n\r\n## Installing. \r\n\r\nYou can get into your project via nuget. \r\n\r\n```bash\r\ndotnet add package usync --version 16.*\r\n```\r\n\r\nor add it directly to the csproj file.\r\n\r\n```xml\r\n<PackageReference Include=\"uSync\" Version=\"16.*\" />\r\n```\r\n",
+    "prerelease": false
+  },
+  {
+    "package": "uSync.Hangfire",
+    "title": "uSync Hangfire",
+    "category": "uSync",
+    "repo": "Jumoo/uSync.Hangfire",
+    "version": "0.1.0",
+    "publishedAt": "2025-08-22T11:50:25.88+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Hangfire/0.1.0",
+    "githubUrl": "https://github.com/Jumoo/uSync.Hangfire/releases",
+    "notes": null,
     "prerelease": false
   },
   {
@@ -1965,6 +2145,18 @@
     "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/16.0.4",
     "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v16.0.4",
     "notes": "This is a patch release for v16 of uSync.Complete for Umbraco, it contains fixes for reported issues.\r\n\r\n# What's New\r\n- 🐛 update the document filter declarations in restore and snapshots so they only appear in the usync swagger documents\r\n- 🐛 Fix items in child folders for stylesheets, scripts and partial views are not synced correctly when pushed from the menu\r\n- 🐛 Removed the push/pull from sub folder menu items in scripts, stylesheets and partial views as this cannot be supported with the current defined UDI types in umbraco. \r\n- ⭐ Updated to latest uSync version to support fixes/updates in [uSync 16.0.1](https://github.com/KevinJump/uSync/releases/tag/v16.0.1) \r\n\r\n\r\n# Getting\r\nInstall via your favorite command line,\r\n\r\n```bat\r\ndotnet add package uSync.Complete --version 16.0.4\r\n```\r\n\r\nor directly into your .csproj file.\r\n```xml\r\n<PackageReference Include=\"uSync.Complete\" Version=\"16.0.4\" />\r\n```\r\n\r\n> [!NOTE]\r\n> For Standard Term Release (STS) we are following a practice of little and often, we will release tested fixes as soon as practical rather than wating for a rollup, this means there might be many small 'patch' releases during this time, but fixes will be public quicker\r\n>\r\n> When we return to Long Term Support (LTS) releases we will move to a slower cadence where fixes will be rolled up into larger releases\r\n",
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "16.0.0",
+    "publishedAt": "2025-07-17T14:20:08.977+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/16.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
     "prerelease": false
   },
   {
@@ -2664,6 +2856,18 @@
     "prerelease": false
   },
   {
+    "package": "Umbraco.Community.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "15.0.0",
+    "publishedAt": "2024-11-21T14:30:19.897+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.MaintenanceMode/15.0.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -2697,6 +2901,18 @@
     "nugetUrl": "https://www.nuget.org/packages/uSync/15.0.1",
     "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v15.0.1",
     "notes": "## What's Changed\r\n* Fix case sensitive folder on linux, means dashboard is blank #683 \r\n* Fix unawaited tasks causing bad serialization by @matthewcare in https://github.com/KevinJump/uSync/pull/685\r\n\r\n## New Contributors\r\n* @matthewcare made their first contribution in https://github.com/KevinJump/uSync/pull/685\r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v15.0.0...v15.0.1",
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "9.0.10",
+    "publishedAt": "2024-11-14T11:38:37.82+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/9.0.10",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
     "prerelease": false
   },
   {
@@ -3084,6 +3300,18 @@
     "prerelease": true
   },
   {
+    "package": "Umbraco.Community.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "14.0.0",
+    "publishedAt": "2024-05-30T14:26:28Z",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.MaintenanceMode/14.0.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v14.0.0",
+    "notes": "This is a major release of Maintenance Manager for Umbraco version 14\r\n\r\n## What's Changed\r\n* Ensure the case is consistant (Pascal) by @KevinJump in https://github.com/KevinJump/Our.Umbraco.MaintenanceMode/pull/39\r\n* V14/dev by @KevinJump in https://github.com/KevinJump/Our.Umbraco.MaintenanceMode/pull/42\r\n* V14 Initial Release Version by @henryjump in https://github.com/KevinJump/Our.Umbraco.MaintenanceMode/pull/43\r\n\r\n## New Contributors\r\n* @henryjump made their first contribution in https://github.com/KevinJump/Our.Umbraco.MaintenanceMode/pull/43\r\n\r\n**Full Changelog**: https://github.com/KevinJump/Our.Umbraco.MaintenanceMode/compare/v10.1.1...v14.0.0",
+    "prerelease": false
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -3240,6 +3468,18 @@
     "prerelease": true
   },
   {
+    "package": "Umbraco.Community.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "14.0.0-rc2",
+    "publishedAt": "2024-04-25T14:16:26.623+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.MaintenanceMode/14.0.0-rc2",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -3370,6 +3610,18 @@
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases",
     "notes": null,
     "prerelease": false
+  },
+  {
+    "package": "Umbraco.Community.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "14.0.0-beta001",
+    "publishedAt": "2024-03-15T16:53:31.07+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.MaintenanceMode/14.0.0-beta001",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
+    "notes": null,
+    "prerelease": true
   },
   {
     "package": "uSync.Complete",
@@ -4380,6 +4632,18 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "9.0.9",
+    "publishedAt": "2023-05-30T13:20:38.037+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/9.0.9",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -4728,6 +4992,30 @@
     "prerelease": true
   },
   {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "9.0.7",
+    "publishedAt": "2023-02-07T10:41:06.967+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/9.0.7",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "9.0.6",
+    "publishedAt": "2023-01-31T10:39:08.807+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/9.0.6",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "uSync.Cli",
     "title": "uSync CLI",
     "category": "uSync",
@@ -4896,6 +5184,18 @@
     "prerelease": true
   },
   {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "9.0.5",
+    "publishedAt": "2022-12-02T11:00:56.06+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/9.0.5",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -4929,6 +5229,18 @@
     "nugetUrl": "https://www.nuget.org/packages/uSync/11.0.0",
     "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v11.0.0",
     "notes": "This is the Major release of uSync to work with Umbraco 11 on .NET 7 - It contains updates and patches that make uSync on Umbraco even nicerer.\r\n\r\n# Features \r\n- Grouped Results - Just making results a little more compact and easier to view when there are lots of items.\r\n- Apply button in details - you can appy a single item as you import. \r\n- Doctype caching - faster checks when you have large nested / block lists. \r\n\r\n## What's Changed\r\n* Create fr.xml by @mikecp in https://github.com/KevinJump/uSync/pull/428\r\n* Mergin in V10/dev to v11/dev  by @KevinJump in https://github.com/KevinJump/uSync/pull/432\r\n* V11/umbraco rc4 by @KevinJump in https://github.com/KevinJump/uSync/pull/435\r\n* V11/uSync route by @KevinJump in https://github.com/KevinJump/uSync/pull/433\r\n* V11/grouped result view by @KevinJump in https://github.com/KevinJump/uSync/pull/434\r\n* Signalr route via config. by @KevinJump in https://github.com/KevinJump/uSync/pull/439\r\n* V11/schema by @KevinJump in https://github.com/KevinJump/uSync/pull/440\r\n* Adds Apply button to the change-dialog box. by @KevinJump in https://github.com/KevinJump/uSync/pull/446\r\n* v11: Schema Inclusion. by @KevinJump in https://github.com/KevinJump/uSync/pull/447\r\n* V11/doctype caching by @KevinJump in https://github.com/KevinJump/uSync/pull/449\r\n* Fix - don't treat angular expressions as json when saving. by @KevinJump in https://github.com/KevinJump/uSync/pull/451\r\n\r\n## New Contributors\r\n* @mikecp made their first contribution in https://github.com/KevinJump/uSync/pull/428\r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v10.3.0...v11.0.0",
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "9.0.4",
+    "publishedAt": "2022-11-23T15:43:55.13+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/9.0.4",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
     "prerelease": false
   },
   {
@@ -5088,6 +5400,18 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "9.0.3",
+    "publishedAt": "2022-10-13T09:18:59.36+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/9.0.3",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -5172,6 +5496,18 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "9.0.1",
+    "publishedAt": "2022-07-13T10:06:05.647+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/9.0.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -5181,6 +5517,18 @@
     "nugetUrl": "https://www.nuget.org/packages/uSync/8.11.1",
     "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v8.11.1",
     "notes": "This is a minor patch to Umbraco 8.11.x branch that addresses an issue that can occur with MultiUrl picker values when stored in nested or block content.\r\n\r\n# Issues\r\n - #400 Issues with MultiUrl Pickers and Blocks \r\n\r\n# More \r\nThe issue occurs if you have single-pick multi-url pickers inside block or nested content and no values are selected, uSync prior to this version would serialize the value out as an empty string \"\". Within the back office the blocks and content would still render, on the front end your would get a null reference exception if your code attempted to access the values inside the mult-url picker properties. \r\n\r\nN.B this null reference error is fixed in Umbraco 8.18 and above. \r\n\r\nThis patch would only be required if running less than Umbraco 8.18\r\n\r\n",
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "9.0.0",
+    "publishedAt": "2022-07-07T19:07:49.113+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/9.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
     "prerelease": false
   },
   {

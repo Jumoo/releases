@@ -69,6 +69,13 @@ Both action packages share loop-protection against uSync/Automate cascades (a si
 - See `UPSTREAM-REQUESTS.md` for documented friction points against `Umbraco.Automate.Core`, `uSync`, `uSync.Complete` and `Jumoo.Processing.Core` found while building this.]]></description>
     </item>
     <item>
+      <title>uSync Hangfire 0.17.3</title>
+      <link>https://github.com/Jumoo/uSync.Hangfire/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Hangfire/releases</guid>
+      <pubDate>Thu, 13 Aug 2026 08:48:21 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>uSync 18.1.0</title>
       <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.0</link>
       <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.0</guid>
@@ -121,6 +128,13 @@ Both action packages share loop-protection against uSync/Automate cascades (a si
 ### Fixed
 - #306 - Publisher: the scheduled publish date from the push dialog is now normalised to UTC before being written into the pack, fixing schedules landing offset by the server's UTC offset on servers with a non-zero timezone.
 ]]></description>
+    </item>
+    <item>
+      <title>Translation Manager CrowdIn 18.0.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases</guid>
+      <pubDate>Tue, 11 Aug 2026 13:06:38 GMT</pubDate>
+      <description><![CDATA[]]></description>
     </item>
     <item>
       <title>Translation Manager 17.7.0</title>
@@ -320,6 +334,20 @@ Not user facing, but new in this release:
       <description><![CDATA[]]></description>
     </item>
     <item>
+      <title>Linked Pages 18.0.3</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</guid>
+      <pubDate>Mon, 27 Jul 2026 14:32:27 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>Linked Pages 18.0.2</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</guid>
+      <pubDate>Mon, 27 Jul 2026 14:05:47 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>uSync Complete 18.0.3</title>
       <link>https://github.com/Jumoo/uSync.Complete.Issues/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases</guid>
@@ -338,6 +366,13 @@ Not user facing, but new in this release:
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
       <pubDate>Wed, 22 Jul 2026 09:40:58 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>Linked Pages 18.0.1</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</guid>
+      <pubDate>Tue, 21 Jul 2026 13:35:02 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
@@ -497,6 +532,13 @@ Not user facing, but new in this release:
       <description><![CDATA[]]></description>
     </item>
     <item>
+      <title>Linked Pages 18.0.0</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</guid>
+      <pubDate>Tue, 30 Jun 2026 10:38:42 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>Translation Manager 17.5.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.5.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.5.0</guid>
@@ -642,6 +684,13 @@ This is a feature patch release for Translation Manager it add more management t
 ]]></description>
     </item>
     <item>
+      <title>Linked Pages 17.0.0</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</guid>
+      <pubDate>Mon, 15 Jun 2026 14:40:07 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>Translation Manager 17.4.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.4.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.4.0</guid>
@@ -699,67 +748,6 @@ Installing
 ```
 dotnet package update Jumoo.TranslationManager
 ```]]></description>
-    </item>
-    <item>
-      <title>Translation Manager DeepL 17.1.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</guid>
-      <pubDate>Thu, 11 Jun 2026 14:36:25 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 17.3.9</title>
-      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases</guid>
-      <pubDate>Tue, 09 Jun 2026 13:54:03 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync 17.3.5</title>
-      <link>https://github.com/KevinJump/uSync/releases</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases</guid>
-      <pubDate>Tue, 09 Jun 2026 13:50:01 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 17.3.8</title>
-      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases</guid>
-      <pubDate>Tue, 09 Jun 2026 09:51:11 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync 17.3.4</title>
-      <link>https://github.com/KevinJump/uSync/releases</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases</guid>
-      <pubDate>Tue, 09 Jun 2026 09:49:37 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 17.3.7</title>
-      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases</guid>
-      <pubDate>Mon, 08 Jun 2026 14:34:44 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync 17.3.3</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v17.3.3</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.3.3</guid>
-      <pubDate>Mon, 08 Jun 2026 13:58:55 GMT</pubDate>
-      <description><![CDATA[This is a minor release of uSync for Umbraco v17.x it contains two updates
-
-### What's new
-1. A Fix for image paths inside Umbraco.Upload controls when they are used in place of Umbraco.Cropper controls for the media items `UmbracoFile` property (legacy upgrades from v-old umbracos)
-
-2. Support for setting the umbraco site up to only have a front end (e.g https://docs.umbraco.com/umbraco-cms/develop-with-umbraco/service-registration) While uSync is still installed. uSync will not register when the site is setup like this, it expects you to have a backoffice on the server.
-
-## What's Changed
-* V17/image upload mapper by @KevinJump in https://github.com/KevinJump/uSync/pull/959
-* Support front end only umbraco config.  by @KevinJump in https://github.com/KevinJump/uSync/pull/962
-
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.3.2...v17.3.3]]></description>
     </item>
   </channel>
 </rss>

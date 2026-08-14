@@ -42,6 +42,12 @@
     "githubRepo": "Jumoo/uSyncMigrations"
   },
   {
+    "nugetId": "uSync.Hangfire",
+    "title": "uSync Hangfire",
+    "category": "uSync",
+    "githubRepo": "Jumoo/uSync.Hangfire"
+  },
+  {
     "nugetId": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -82,5 +88,23 @@
     "title": "Translation Manager Passthrough",
     "category": "Translation Connectors",
     "githubRepo": "Jumoo/Passthrough.Connector"
+  },
+  {
+    "nugetId": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "githubRepo": "Jumoo/Jumoo.TranslationManager.CrowdIn"
+  },
+  {
+    "nugetId": "Umbraco.Community.LinkedPages",
+    "title": "Linked Pages",
+    "category": "Other",
+    "githubRepo": "Jumoo/Our.Umbraco.LinkedPages"
+  },
+  {
+    "nugetId": "Umbraco.Community.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "githubRepo": "Jumoo/Our.Umbraco.MaintenanceMode"
   }
 ]
