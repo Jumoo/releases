@@ -1,0 +1,74 @@
+[
+  {
+    "nugetId": "uSync",
+    "title": "uSync",
+    "category": "",
+    "githubRepo": "KevinJump/uSync"
+  },
+  {
+    "nugetId": "uSync.Complete",
+    "title": "uSync Complete",
+    "category": "uSync",
+    "githubRepo": "Jumoo/uSync.Complete.Issues"
+  },
+  {
+    "nugetId": "uSync.Forms",
+    "title": "uSync Forms",
+    "category": "uSync",
+    "githubRepo": "KevinJump/uSync.Forms"
+  },
+  {
+    "nugetId": "uSync.Umbraco.Commerce",
+    "title": "uSync Commerce",
+    "category": "uSync",
+    "githubRepo": "Jumoo/uSync.Umbraco.Commerce"
+  },
+  {
+    "nugetId": "uSync.Automate",
+    "title": "uSync Automate",
+    "category": "uSync",
+    "githubRepo": "Jumoo/uSync.Automate"
+  },
+  {
+    "nugetId": "Jumoo.TranslationManager",
+    "title": "Translation Manager",
+    "category": "",
+    "githubRepo": "Jumoo/Jumoo.TranslationManager.Issues"
+  },
+  {
+    "nugetId": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "githubRepo": "Jumoo/Jumoo.TranslationManager.AI"
+  },
+  {
+    "nugetId": "Jumoo.TranslationManager.DeepL",
+    "title": "Translation Manager DeepL",
+    "category": "Translation Connectors",
+    "githubRepo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL"
+  },
+  {
+    "nugetId": "Jumoo.TranslationManager.Google",
+    "title": "Translation Manager Google",
+    "category": "Translation Connectors",
+    "githubRepo": "Jumoo/Google.Connector"
+  },
+  {
+    "nugetId": "Jumoo.TranslationManager.Xliff",
+    "title": "Translation Manager Xliff",
+    "category": "Translation Connectors",
+    "githubRepo": "Jumoo/Xliff.Connector"
+  },
+  {
+    "nugetId": "Jumoo.TranslationManager.Microsoft",
+    "title": "Translation Manager Microsoft",
+    "category": "Translation Connectors",
+    "githubRepo": "Jumoo/Microsoft.Connector"
+  },
+  {
+    "nugetId": "Jumoo.TranslationManager.Passthrough",
+    "title": "Translation Manager Passthrough",
+    "category": "Translation Connectors",
+    "githubRepo": "Jumoo/Passthrough.Connector"
+  }
+]
