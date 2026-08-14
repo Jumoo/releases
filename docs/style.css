@@ -214,3 +214,24 @@ footer {
   color: var(--muted);
   font-size: 0.85em;
 }
+
+.site-nav {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site-nav a:hover {
+  color: var(--accent);
+}
+
+.site-nav a.current {
+  color: var(--fg);
+  font-weight: bold;
+}
