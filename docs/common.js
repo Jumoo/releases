@@ -92,9 +92,30 @@ async function fetchReleases() {
   return res.json();
 }
 
+// Compares two semver-ish version strings ("18.1.0", "17.1.0-rc1").
+// Returns >0 if a > b, <0 if a < b, 0 if equal. A prerelease always
+// sorts below the same numeric version without one.
+function compareVersions(a, b) {
+  const [aMain, aPre] = a.split("-");
+  const [bMain, bPre] = b.split("-");
+  const aParts = aMain.split(".").map(Number);
+  const bParts = bMain.split(".").map(Number);
+
+  for (let i = 0; i < Math.max(aParts.length, bParts.length); i++) {
+    const diff = (aParts[i] || 0) - (bParts[i] || 0);
+    if (diff !== 0) return diff;
+  }
+  if (aPre && !bPre) return -1;
+  if (!aPre && bPre) return 1;
+  if (aPre && bPre) return aPre.localeCompare(bPre);
+  return 0;
+}
+
 // Groups a flat, already-sorted (newest first) release list by package,
 // returning one entry per package with its full release history and
-// the latest release singled out.
+// the latest release singled out. "Latest" is the highest version
+// number, not simply the most recently published release — packages
+// can publish an older maintenance branch after a newer major version.
 function groupByPackage(releases) {
   const groups = new Map();
   for (const r of releases) {
@@ -110,7 +131,12 @@ function groupByPackage(releases) {
     groups.get(r.package).releases.push(r);
   }
   return [...groups.values()]
-    .map((g) => ({ ...g, latest: g.releases[0] }))
+    .map((g) => ({
+      ...g,
+      latest: g.releases.reduce((best, r) =>
+        compareVersions(r.version, best.version) > 0 ? r : best
+      ),
+    }))
     .sort((a, b) => new Date(b.latest.publishedAt) - new Date(a.latest.publishedAt));
 }
 
