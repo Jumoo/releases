@@ -235,3 +235,51 @@ footer {
   color: var(--fg);
   font-weight: bold;
 }
+
+main.wide {
+  max-width: 900px;
+}
+
+.compat-table-wrap {
+  overflow-x: auto;
+}
+
+.compat-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.9em;
+  margin-bottom: 1.5rem;
+}
+
+.compat-table th,
+.compat-table td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.compat-table th {
+  background: var(--bg-raised);
+  color: var(--muted);
+  position: sticky;
+  top: 0;
+}
+
+.compat-package-col {
+  color: var(--fg);
+  font-weight: bold;
+}
+
+.compat-table a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.compat-table a:hover {
+  text-decoration: underline;
+}
+
+.compat-none {
+  color: var(--muted);
+}

@@ -1,0 +1,225 @@
+[
+  {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "support": {
+      "9": "9.0.0",
+      "10": "10.0.0-beta1",
+      "11": "11.0.0-rc3",
+      "12": "12.0.0-rc1",
+      "13": "13.0.0-rc1",
+      "14": "14.0.0-rc1",
+      "15": "15.0.0",
+      "16": "16.0.0-beta01",
+      "17": "17.0.0-beta",
+      "18": "18.0.0-rc1"
+    }
+  },
+  {
+    "package": "uSync.Complete",
+    "title": "uSync Complete",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.Complete.Issues",
+    "support": {
+      "9": "9.0.0",
+      "10": "10.0.0-beta1",
+      "11": "11.0.0",
+      "12": "12.0.2",
+      "13": "13.0.0-rc2",
+      "14": "14.0.0-preview001",
+      "15": "15.0.0",
+      "16": "16.0.0",
+      "17": "17.0.0-rc1",
+      "18": "18.0.0"
+    }
+  },
+  {
+    "package": "uSync.Forms",
+    "title": "uSync Forms",
+    "category": "uSync Addon",
+    "repo": "KevinJump/uSync.Forms",
+    "support": {
+      "9": "9.0.0",
+      "10": "10.0.0",
+      "12": "12.0.0",
+      "13": "13.0.0-rc1",
+      "15": "15.0.0",
+      "16": "16.0.0",
+      "17": "17.0.0-rc2",
+      "18": "18.0.0"
+    }
+  },
+  {
+    "package": "uSync.Umbraco.Commerce",
+    "title": "uSync Commerce",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.Umbraco.Commerce",
+    "support": {
+      "10": "12.0.0-rc3",
+      "11": "12.0.0-rc3",
+      "12": "12.0.0-rc1",
+      "13": "12.0.0-rc2",
+      "17": "17.0.0-rc1"
+    }
+  },
+  {
+    "package": "uSync.Automate",
+    "title": "uSync Automate",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.Automate",
+    "support": {
+      "17": "17.0.0-beta1"
+    }
+  },
+  {
+    "package": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.CommandLine",
+    "support": {}
+  },
+  {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSyncMigrations",
+    "support": {
+      "10": "4.0.0-beta001",
+      "11": "4.0.0-phase.4",
+      "12": "4.0.0-phase.4",
+      "13": "4.0.0-phase.4",
+      "17": "17.0.0-rc1"
+    }
+  },
+  {
+    "package": "uSync.Hangfire",
+    "title": "uSync Hangfire",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.Hangfire",
+    "support": {
+      "16": "0.1.0",
+      "17": "0.17.2"
+    }
+  },
+  {
+    "package": "Jumoo.TranslationManager",
+    "title": "Translation Manager",
+    "category": "",
+    "repo": "Jumoo/Jumoo.TranslationManager.Issues",
+    "support": {
+      "9": "9.0.0-beta002",
+      "10": "10.0.0",
+      "11": "11.0.0",
+      "12": "12.3.0",
+      "13": "13.0.0",
+      "14": "14.0.1",
+      "15": "15.0.0",
+      "16": "16.0.0",
+      "17": "17.0.0-rc1",
+      "18": "18.0.0"
+    }
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "support": {
+      "13": "1.0.0-rc2",
+      "16": "1.0.0-rc2",
+      "17": "17.0.0-beta",
+      "18": "18.0.0"
+    }
+  },
+  {
+    "package": "Jumoo.TranslationManager.DeepL",
+    "title": "Translation Manager DeepL",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL",
+    "support": {
+      "17": "17.0.0-rc1",
+      "18": "18.0.0"
+    }
+  },
+  {
+    "package": "Jumoo.TranslationManager.Google",
+    "title": "Translation Manager Google",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Google.Connector",
+    "support": {
+      "17": "17.0.0-rc1",
+      "18": "18.0.0"
+    }
+  },
+  {
+    "package": "Jumoo.TranslationManager.Xliff",
+    "title": "Translation Manager Xliff",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Xliff.Connector",
+    "support": {
+      "17": "17.0.0-rc1",
+      "18": "18.0.0"
+    }
+  },
+  {
+    "package": "Jumoo.TranslationManager.Microsoft",
+    "title": "Translation Manager Microsoft",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Microsoft.Connector",
+    "support": {
+      "17": "17.0.0-rc1",
+      "18": "18.0.0"
+    }
+  },
+  {
+    "package": "Jumoo.TranslationManager.Passthrough",
+    "title": "Translation Manager Passthrough",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Passthrough.Connector",
+    "support": {
+      "17": "17.0.0-rc1",
+      "18": "18.0.0"
+    }
+  },
+  {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "Translation Manager CrowdIn",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "support": {
+      "9": "9.0.0",
+      "10": "16.0.0",
+      "13": "16.0.0",
+      "16": "16.0.0",
+      "17": "17.0.0-rc1",
+      "18": "18.0.0"
+    }
+  },
+  {
+    "package": "Umbraco.Community.LinkedPages",
+    "title": "Linked Pages",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.LinkedPages",
+    "support": {
+      "17": "17.0.0",
+      "18": "18.0.0"
+    }
+  },
+  {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "support": {
+      "9": "3.0.0",
+      "10": "10.0.0",
+      "14": "14.0.0-beta001",
+      "15": "15.0.0",
+      "16": "16.0.0",
+      "17": "17.0.0-rc4",
+      "18": "18.0.0"
+    }
+  }
+]

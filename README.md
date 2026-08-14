@@ -5,9 +5,15 @@ Static feed of releases across Jumoo's NuGet packages, combining NuGet version/p
 ## How it works
 
 - `data/packages.json` lists the tracked packages (NuGet package ID + GitHub repo).
-- `scripts/fetch-releases.mjs` fetches version data from the NuGet API and release notes from the GitHub Releases API, merges them, and writes `docs/releases.json` and `docs/feed.xml`.
-- `docs/` is a plain static site (no build step) that fetches `releases.json` and renders it. This is also the GitHub Pages publish directory.
+- `scripts/fetch-releases.mjs` fetches version data from the NuGet API and release notes from the GitHub Releases API, merges them, and writes `docs/releases.json`, `docs/feed.xml`, and `docs/compatibility.json`.
+- `docs/` is a plain static site (no build step) that fetches those JSON files and renders them. This is also the GitHub Pages publish directory.
 - `.github/workflows/update-releases.yml` runs the fetch script every 6 hours (and on manual trigger), committing the regenerated JSON/feed if anything changed. Since Pages serves straight from `docs/` on `main`, the commit itself triggers a redeploy.
+
+## Compatibility matrix
+
+`docs/compatibility.html` shows, per package, the earliest version known to support each Umbraco major. The data comes from each NuGet version's declared `Umbraco.Cms.*` dependency range (read from the NuGet registration API's `catalogEntry.dependencyGroups`, no repo checkouts needed).
+
+An **open-ended dependency range** (e.g. a bare `13.0.0`, meaning "13.0.0 or later") is deliberately **not** treated as "compatible with every later major too" — Jumoo packages are almost always rewritten per Umbraco major, so an open range is attributed only to the major it was actually published against. A version only shows as supporting multiple majors when its range explicitly states an upper bound spanning them (or, for the rare package that genuinely works across majors, e.g. a CLI tool, when it publishes separate dependency entries per major).
 
 ## Adding a package
 
