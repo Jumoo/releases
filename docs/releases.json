@@ -240,6 +240,18 @@
     "prerelease": false
   },
   {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "18.1.0",
+    "publishedAt": "2026-07-21T10:50:21.733+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/18.1.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager.Microsoft",
     "title": "Translation Manager Microsoft",
     "category": "Translation Connectors",
@@ -452,6 +464,18 @@
     "publishedAt": "2026-07-02T10:25:57.363+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.5.1",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "18.0.0",
+    "publishedAt": "2026-06-30T13:35:38.173+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/18.0.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
     "notes": null,
     "prerelease": false
   },
@@ -1392,6 +1416,18 @@
     "prerelease": false
   },
   {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "17.1.0",
+    "publishedAt": "2026-01-26T11:59:31.41+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/17.1.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -1426,6 +1462,18 @@
     "githubUrl": "https://github.com/KevinJump/uSync/releases",
     "notes": null,
     "prerelease": true
+  },
+  {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "17.0.0",
+    "publishedAt": "2026-01-12T14:18:54.987+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/17.0.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
+    "notes": null,
+    "prerelease": false
   },
   {
     "package": "uSync",
@@ -1676,6 +1724,18 @@
     "publishedAt": "2025-11-25T11:42:48.603+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/17.0.0-rc4",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "17.0.0-rc4",
+    "publishedAt": "2025-11-25T10:53:32.59+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/17.0.0-rc4",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
     "notes": null,
     "prerelease": true
   },
@@ -2136,6 +2196,18 @@
     "prerelease": false
   },
   {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "16.0.1",
+    "publishedAt": "2025-09-29T09:57:22.49+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/16.0.1",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "uSync Addon",
@@ -2206,6 +2278,18 @@
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
     "notes": null,
     "prerelease": true
+  },
+  {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "16.0.0",
+    "publishedAt": "2025-09-18T13:54:05Z",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/16.0.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v16.0.0",
+    "notes": "This is the v16 release of Maintenance Mode package for Umbraco it re-organises the project so the v13 (old school) and v16 (fancy new school) versions can be built from the same core code. This also means when we fixed issues in one, if fixes both.\r\n\r\n# What's new \r\n-  🐛 Fix issue with Database Provider factory than meant every other time you attempted to save a page the provider would cause a \"Cannot save a non-current version.\" issue. \r\n- ⭐ Default Provider of \"Auto\" which will use \"file\" when on a single site and \"database\" when loadbalanced.\r\n- ⭐ Re-org the code - with \".core\" for core, \".Assets\" for v13 and \".Client\" for v16\r\n\r\n# Installing\r\n\r\nShould Install on any site from v10+ upwards (but only v13 and v16 are 'supported')\r\n\r\n```bash\r\nhttps://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/16.0.0\r\n```",
+    "prerelease": false
   },
   {
     "package": "Jumoo.TranslationManager.AI",
@@ -2736,6 +2820,30 @@
     "prerelease": false
   },
   {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "15.0.1",
+    "publishedAt": "2025-04-24T14:22:38Z",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/15.0.1",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/15.0.1",
+    "notes": "## What's new\r\n- Adds ability to exclude certain URLs from maintenance page.  #56\r\n\r\n**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v15.0.0...15.0.1",
+    "prerelease": false
+  },
+  {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "10.2.1",
+    "publishedAt": "2025-04-24T14:11:47Z",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/10.2.1",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v10.2.1",
+    "notes": "## What's new\r\n- Adds ability to exclude certain URLs from maintenance page.  #56 \r\n\r\n**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v10.2.0...v10.2.1",
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -3144,13 +3252,13 @@
     "prerelease": false
   },
   {
-    "package": "Umbraco.Community.MaintenanceMode",
+    "package": "Our.Umbraco.MaintenanceMode",
     "title": "Maintenance Mode",
     "category": "Other",
     "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
     "version": "15.0.0",
-    "publishedAt": "2024-11-21T14:30:19.897+00:00",
-    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.MaintenanceMode/15.0.0",
+    "publishedAt": "2024-11-21T14:30:19.323+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/15.0.0",
     "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
     "notes": null,
     "prerelease": false
@@ -3432,6 +3540,18 @@
     "prerelease": false
   },
   {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "10.2.0",
+    "publishedAt": "2024-08-30T13:40:10Z",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/10.2.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v10.2.0",
+    "notes": "## What's Changed\r\n* Ensure the case is consistant (Pascal) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/39\r\n* V10 load balanced by @craigagnew & @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/44\r\n\r\n## New Contributors\r\n* @craigagnew made their first contribution in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/44\r\n\r\n\r\n**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v10.1.1...v10.2.0",
+    "prerelease": false
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -3588,13 +3708,13 @@
     "prerelease": true
   },
   {
-    "package": "Umbraco.Community.MaintenanceMode",
+    "package": "Our.Umbraco.MaintenanceMode",
     "title": "Maintenance Mode",
     "category": "Other",
     "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
     "version": "14.0.0",
     "publishedAt": "2024-05-30T14:26:28Z",
-    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.MaintenanceMode/14.0.0",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/14.0.0",
     "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v14.0.0",
     "notes": "This is a major release of Maintenance Manager for Umbraco version 14\r\n\r\n## What's Changed\r\n* Ensure the case is consistant (Pascal) by @KevinJump in https://github.com/KevinJump/Our.Umbraco.MaintenanceMode/pull/39\r\n* V14/dev by @KevinJump in https://github.com/KevinJump/Our.Umbraco.MaintenanceMode/pull/42\r\n* V14 Initial Release Version by @henryjump in https://github.com/KevinJump/Our.Umbraco.MaintenanceMode/pull/43\r\n\r\n## New Contributors\r\n* @henryjump made their first contribution in https://github.com/KevinJump/Our.Umbraco.MaintenanceMode/pull/43\r\n\r\n**Full Changelog**: https://github.com/KevinJump/Our.Umbraco.MaintenanceMode/compare/v10.1.1...v14.0.0",
     "prerelease": false
@@ -3768,13 +3888,13 @@
     "prerelease": true
   },
   {
-    "package": "Umbraco.Community.MaintenanceMode",
+    "package": "Our.Umbraco.MaintenanceMode",
     "title": "Maintenance Mode",
     "category": "Other",
     "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
     "version": "14.0.0-rc2",
-    "publishedAt": "2024-04-25T14:16:26.623+00:00",
-    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.MaintenanceMode/14.0.0-rc2",
+    "publishedAt": "2024-04-25T14:16:27.53+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/14.0.0-rc2",
     "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
     "notes": null,
     "prerelease": true
@@ -3912,13 +4032,13 @@
     "prerelease": false
   },
   {
-    "package": "Umbraco.Community.MaintenanceMode",
+    "package": "Our.Umbraco.MaintenanceMode",
     "title": "Maintenance Mode",
     "category": "Other",
     "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
     "version": "14.0.0-beta001",
-    "publishedAt": "2024-03-15T16:53:31.07+00:00",
-    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.MaintenanceMode/14.0.0-beta001",
+    "publishedAt": "2024-03-15T16:53:32.06+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/14.0.0-beta001",
     "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
     "notes": null,
     "prerelease": true
@@ -4932,6 +5052,18 @@
     "prerelease": true
   },
   {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "2.0.1",
+    "publishedAt": "2023-06-22T11:04:07.62+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/2.0.1",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
     "category": "uSync Addon",
@@ -5556,6 +5688,18 @@
     "prerelease": false
   },
   {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "10.1.1",
+    "publishedAt": "2022-12-06T14:44:02Z",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/10.1.1",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v10.1.1",
+    "notes": "Umbraco 10 and 11 release (Works on both). \r\n\r\nThis release has one update just to stop the duplicate dashboard appearing (v11 now reads the package.manifest direct - v10 didn't use to do that). \r\n\r\n",
+    "prerelease": false
+  },
+  {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
     "category": "uSync Addon",
@@ -5566,6 +5710,18 @@
     "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/4.0.0-beta007",
     "notes": "This is another beta of usync.Migrations, getting less rought but still quite not ready - \r\n\r\n** N.B you need to use uSync 10.3.1 beta (or uSync v11 for this to work.) **\r\n\r\n## Fixes\r\n- Quite a lot, tweaks around the houses to make properties come in better \r\n   -  Nested / BlockList any Content Typers used are now made as element types)\r\n   -  Language - the default language of the current install is kept\r\n   -  Checkbox List - the result is now JSON not CSV\r\n   -  Grid - slightly better (but Grid to BlockGrid is on the roadmap)\r\n\r\n## What's Changed\r\n* The SyncPropertyMigrators are now loaded in the context based on options (so you can in theory choose them - UI to come)\r\n* ID look ups in the context so int to guid on really only (pre v7.6 things) can have a go at working\r\n* Support for mapping things to the new media types in Umbraco 10\r\n* Nested Content to BlockList (but you need to enable this in code [see sample profile for how])(https://github.com/Jumoo/uSyncMigrations/blob/main/MyMigrations/MyMigrationProfile.cs#L48-L52)\r\n* the Handlers are now version aware, meaning we might also have v8 handlers for other types of migration 🤫 \r\n\r\n## New Mappers\r\n* uEditorNotes migrators (both to uEditorNotes and Contentment) added to community migrators\r\n* Multi-URL picker editor support\r\n\r\n<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n### Other Changes\r\n* Tiny spelling mistake by @CarlSargunar in https://github.com/Jumoo/uSyncMigrations/pull/26\r\n* Fix/prep order fix by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/27\r\n* Order the profiles correctly. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/28\r\n* error box on the migrations dashboard by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/29\r\n* profiles - keep them lazy loaded but in order by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/30\r\n* Corrected typos by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/31\r\n* Removed unused namespaces by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/32\r\n* Whitespace formatting by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/33\r\n* Various code formatting by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/34\r\n* Marks internal `ISyncPropertyMigrator` classes as public by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/35\r\n* Corrected typo in `EditorAliasInfo.OriginalEditorAlias` by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/36\r\n* Adds migrator for Multi-URL Picker editor by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/37\r\n* Add support for the popular uEditorNotes property editor by @marcemarc in https://github.com/Jumoo/uSyncMigrations/pull/39\r\n* Adds ID/Key lookup to `SyncMigrationContext` by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/42\r\n* Adds support for newer Media Types by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/43\r\n* fix typo by @LottePitcher in https://github.com/Jumoo/uSyncMigrations/pull/46\r\n* Move migrators to the context, so they can be configured. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/38\r\n* Typos by @craigs100 in https://github.com/Jumoo/uSyncMigrations/pull/47\r\n* Change attributes on editornotes, so they both load  by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/48\r\n* Make sure we use Path.DirectorySeparatorChar as needed. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/50\r\n* Make context disposable. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/49\r\n* spell it with two r's pre-fer-red - by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/51\r\n* Nested to BlockList Migrator. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/52\r\n* fix case of Textbox to TextBox when migrating from v7 by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/53\r\n* Tidy up handlers, allow for source versioning. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/54\r\n* Fix/checkboxlist by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/55\r\n\r\n## New Contributors\r\n* @CarlSargunar made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/26\r\n* @marcemarc made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/39\r\n* @LottePitcher made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/46\r\n* @craigs100 made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/47\r\n\r\n**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/4.0.0-beta1...4.0.0-beta4",
     "prerelease": true
+  },
+  {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "10.1.0",
+    "publishedAt": "2022-12-02T12:17:11.397+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/10.1.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
+    "notes": null,
+    "prerelease": false
   },
   {
     "package": "Jumoo.TranslationManager.CrowdIn",
@@ -5976,6 +6132,18 @@
     "prerelease": false
   },
   {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "10.0.0",
+    "publishedAt": "2022-06-18T12:33:47Z",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/10.0.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v10.0.0",
+    "notes": "Version that works with Umbraco 10.0 (some slight updates).\r\n\r\nUpdates\r\n- #29 - Change to API to enable content freeze in v10\r\n- #30 - RazorClassLibrary all the files for v10 package\r\n- #31 - Full null excption in v10 when no backoffice users are logged in. ",
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -6153,6 +6321,18 @@
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/9.0.6",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases",
     "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "3.0.0",
+    "publishedAt": "2022-02-26T11:27:56Z",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/3.0.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v3.0.0",
+    "notes": "With most of the work being done by @AaronSadlerUK  - we have a donetCore version of Maintenance Manager 🎉 .\r\n\r\n# Maintenance Page\r\nThis version uses middleware to intercept requests and turn off the site which is better than before because we no longer rely on you having not swapped out your default render controllers. \r\n\r\nYou can quickly set things like text, notes and titles in the settings and the \"maintence template\" is also delivered from a RazorClassLibrary which means it doesn't clutter up your views folder (unless you want it to, in which case you can create your own maintenance template and use that in its place).\r\n\r\n## BackOffice restricted access, \r\nthere is also an option that lets anyone who is currently logged into the back office past the maintenance mode page, to see the site, so your site can be publicly locked while still available to logged in people. \r\n\r\n# Content Freeze\r\nYou can also choose to freeze your sites content (you don't have to also be in maintenance mode to do this!) - which will stop any back office users from editing things on the site while you do the upgrades etc you need to perform. \r\n\r\n![image](https://user-images.githubusercontent.com/431231/155841430-fe01dc5d-1295-463b-8441-fb6b326e9596.png)\r\n\r\n\r\n# Installing\r\nvia dotnet\r\n\r\n```\r\ndotnet add package Our.Umbraco.MaintenanceMode\r\n```\r\n\r\n\r\n",
     "prerelease": false
   },
   {

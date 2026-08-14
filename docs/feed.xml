@@ -412,6 +412,13 @@ Not user facing, but new in this release:
       <description><![CDATA[]]></description>
     </item>
     <item>
+      <title>Maintenance Mode 18.1.0</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases</guid>
+      <pubDate>Tue, 21 Jul 2026 10:50:21 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>Translation Manager Microsoft 17.0.2</title>
       <link>https://github.com/Jumoo/Microsoft.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases</guid>
@@ -575,6 +582,13 @@ Not user facing, but new in this release:
       <description><![CDATA[]]></description>
     </item>
     <item>
+      <title>Maintenance Mode 18.0.0</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases</guid>
+      <pubDate>Tue, 30 Jun 2026 13:35:38 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>Linked Pages 18.0.0</title>
       <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</guid>
@@ -695,20 +709,6 @@ This is a feature patch release for Translation Manager it add more management t
 - Loading bar added to pending view actions (remove/check)
 - "Delete all pending" button added
 ]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.4.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
-      <pubDate>Thu, 18 Jun 2026 16:01:05 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Translation Manager DeepL 17.1.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</guid>
-      <pubDate>Thu, 18 Jun 2026 16:00:17 GMT</pubDate>
-      <description><![CDATA[]]></description>
     </item>
   </channel>
 </rss>
