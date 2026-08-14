@@ -2,7 +2,7 @@
   {
     "package": "uSync.Umbraco.Commerce",
     "title": "uSync Commerce",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Umbraco.Commerce",
     "version": "17.1.0",
     "publishedAt": "2026-08-13T15:28:03Z",
@@ -14,7 +14,7 @@
   {
     "package": "uSync.Automate",
     "title": "uSync Automate",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Automate",
     "version": "17.0.0-beta1",
     "publishedAt": "2026-08-13T09:55:06Z",
@@ -26,7 +26,7 @@
   {
     "package": "uSync.Hangfire",
     "title": "uSync Hangfire",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Hangfire",
     "version": "0.17.3",
     "publishedAt": "2026-08-13T08:48:21.503+00:00",
@@ -50,7 +50,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "18.1.0",
     "publishedAt": "2026-08-12T09:34:36Z",
@@ -96,15 +96,51 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "18.1.0",
+    "publishedAt": "2026-08-11T10:56:24Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/18.1.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.1.0",
+    "notes": "Fixes and updates since v18.0.0 (10 Jul 2026).\n\n- Port Claude translator fixes and model-listing from v17: fixes a `MissingMethodException` in `ClaudeAITranslator`, fixes a top_k/temperature/top_p deprecation error on newer Claude models, and implements `IAIConfigTranslator` so Claude can list models from the Anthropic API. (#21)\n- Let translators build their own batch request bodies, fixing a max-tokens issue in batch submissions. (#27)\n- Bring repository standards and CI/CD in line with Xliff.Connector. (#20)\n- Keep the local dev server URL out of the generated client. (#22)\n- Bump the ai-client npm dependencies, hold typescript at 5.x. (#23)",
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.4.1",
+    "publishedAt": "2026-08-11T10:38:08Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.4.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.4.1",
+    "notes": "## Changes since v17.3.5\n\n- Let translators build their own batch request bodies (#28) — fixes the OpenAI batch endpoint rejecting every line with \"Unsupported parameter: 'max_tokens'\", plus two related batch-entry defects (duplicate `custom_id`, unmatchable html paths).\n- Implement `IAIConfigTranslator` for Claude, list models from the Anthropic API (#19)\n- Fix `ClaudeAITranslator` `MissingMethodException` by bypassing the M.E.AI bridge\n- Fix `top_k`/`temperature`/`top_p` deprecation error on newer Claude models\n- Stop dependabot proposing TypeScript 7\n- CI/CD and repository standards brought in line with Xliff.Connector; ai-client dependency fixes\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)",
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.4.0",
+    "publishedAt": "2026-08-06T15:37:21.28+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.4.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager.Xliff",
     "title": "Translation Manager Xliff",
     "category": "Translation Connectors",
     "repo": "Jumoo/Xliff.Connector",
     "version": "18.0.1",
-    "publishedAt": "2026-08-06T06:12:02Z",
+    "publishedAt": "2026-08-06T06:13:09.117+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Xliff/18.0.1",
-    "githubUrl": "https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.1",
-    "notes": "### Upgrading\r\n\r\n- **Re-tick \"Blank Targets\" if you use it.** The checkbox saved under a setting name the\r\n  connector never read, so it has never had any effect. It works now, which means the option\r\n  was not being applied before and needs ticking again.\r\n- **Split HTML and Remove Blank Values may display differently.** On a site that had never\r\n  saved connector settings, the config screen showed these as on while the connector ran\r\n  with them off. The screen now matches what a submit uses. Job processing is unchanged —\r\n  only the display was wrong.\r\n\r\n### Added\r\n\r\n- Umbraco 18 support — `net10.0`, the 18.0.0 Translation Manager packages, and a backoffice\r\n  client regenerated against the Umbraco 18 management API.\r\n- Repository standards: `LICENSE`, `README.md`, `CHANGELOG.md`, `SECURITY.md`,\r\n  `CODE_OF_CONDUCT.md`, `.editorconfig`, `global.json`, `Directory.Build.props`,\r\n  `GitVersion.yml`, dependabot, and issue and PR templates.\r\n- CI workflows — PR build, package build, release, and CodeQL. The package build runs the\r\n  client build before packing, so the produced package actually contains the backoffice\r\n  assets.\r\n- Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated\r\n  behind the `nuget` GitHub environment and authenticated with trusted publishing (OIDC)\r\n  rather than a stored API key.\r\n- `XliffConnectorOptions`, holding every connector setting, its default, and the parsing of\r\n  the delimited ones in one place.\r\n- Submitted jobs record the settings they were sent with, shown behind a cog in the pending\r\n  and submitted views.\r\n\r\n### Changed\r\n\r\n- `GetOptionsAsync` returns the effective settings — saved values with the connector defaults\r\n  filled in — rather than a partial dictionary with its own set of defaults.\r\n- Duplicate keys in `replacements` are now last-wins rather than throwing.\r\n- `Active()` returns true before `Reload()` has run, because the options object carries a\r\n  default folder. It previously returned false until the first reload.\r\n- \"Include Target Values\" only shows for XLIFF 2.1, where it applies.\r\n\r\n### Fixed\r\n\r\n- Connector settings are read from configuration rather than from the job's provider\r\n  properties, which nothing set client side and which therefore arrived empty.\r\n- The \"blank targets\" checkbox in the advanced config modal saved `blankTargets`, a key\r\n  nothing read. Existing installs need to re-tick it once.\r\n- Config view defaults contradicted the connector: `split` and `removeBlanks` showed as on\r\n  while the connector ran them off, and `targetMode` came back as an enum where the views\r\n  expect `\"\"`, `\"Blank\"` or `\"Source\"`.\r\n- The package manifest alias was set to the connector name rather than its alias.\r\n- `npm run format` failed on every file on Windows — prettier defaulted to LF line endings\r\n  against a CRLF working tree.\r\n- The entry point script had no cache-busting query string, so a browser could keep serving\r\n  a stale cached `xliff.js` after an upgrade. It's now requested as `xliff.js?v={version}`.\r\n\r\n**Full Changelog**: https://github.com/Jumoo/Xliff.Connector/blob/v18/main/CHANGELOG.md\r\n",
+    "githubUrl": "https://github.com/Jumoo/Xliff.Connector/releases",
+    "notes": null,
     "prerelease": false
   },
   {
@@ -113,10 +149,10 @@
     "category": "Translation Connectors",
     "repo": "Jumoo/Xliff.Connector",
     "version": "17.0.1",
-    "publishedAt": "2026-08-05T16:59:23Z",
+    "publishedAt": "2026-08-05T17:05:37.21+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Xliff/17.0.1",
-    "githubUrl": "https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.1",
-    "notes": "A fix release for connector settings, which had drifted apart across the three places that\r\ndefined them, plus the first release built and published by the new CI pipeline.\r\n\r\n## ⚠️ Upgrading\r\n\r\n**Re-tick \"Blank Targets\" if you use it.** The checkbox in Advanced Settings saved under a\r\nsetting name the connector never read, so it has never had any effect. It now works — which\r\nmeans if you had it ticked, the option was not actually being applied, and you should tick\r\nit again and save.\r\n\r\n**Check your Split HTML and Remove Blank Values settings.** On a site that had never saved\r\nconnector settings, the config screen displayed these as *on* while the connector ran with\r\nthem *off*. What the screen shows now matches what a submit actually uses, so these may read\r\ndifferently to before. Nothing about how your jobs are processed has changed — only the\r\ndisplay was wrong.\r\n\r\n## Fixed\r\n\r\n- The **Blank Targets** option in Advanced Settings saved to `blankTargets`, while the\r\n  connector reads `blankTarget`. The option had no effect.\r\n- The config screen's defaults disagreed with the connector's. **Split HTML** and **Remove\r\n  Blank Values** displayed as on when the connector's defaults are off, only 9 of the 20\r\n  settings were covered, and **Target Mode** was returned in a form the dropdown could not\r\n  match, so it never pre-selected.\r\n- The backoffice package manifest used the connector's display name as its alias.\r\n\r\n## Added\r\n\r\n- **Submitted jobs now record the settings they were sent with.** A cog in the top right of\r\n  the XLIFF panel shows the format, folder, target mode, language mappings and every\r\n  formatting option that applied to that job. Jobs submitted before this release have no\r\n  record, so they show no cog and look exactly as they did.\r\n- The same cog on the pending view shows the options a job *will* be sent with.\r\n\r\n## Changed\r\n\r\n- Every connector setting now lives in one place, `XliffConnectorOptions`, which owns the\r\n  values, their defaults, and the parsing of the delimited ones (language mappings, text\r\n  replacements, inline codes). The settings were previously loaded and defaulted\r\n  independently in three places, which is how the mismatches above arose.\r\n- The config screen is handed the *effective* settings — what is saved, with the connector\r\n  defaults filled in for anything that is not — rather than a partial set.\r\n- Duplicate find-keys in **Replacements** now take the last value instead of throwing.\r\n\r\n## Build and repository\r\n\r\nNot user facing, but new in this release:\r\n\r\n- CI on every pull request and push, and a package build that produces a testable package\r\n  for each commit on `main`.\r\n- Releases publish to NuGet from a `v{version}` tag, authenticated with\r\n  [trusted publishing](https://learn.microsoft.com/en-us/nuget/nuget-org/trusted-publishing)\r\n  rather than a stored API key.\r\n- Standard repository files — `README`, `CHANGELOG`, `SECURITY`, `CODE_OF_CONDUCT`,\r\n  `LICENSE` (MPL-2.0), `.editorconfig`, issue and PR templates, and dependabot.\r\n- The package build now builds the backoffice client before packing. Previously nothing\r\n  guaranteed the published package contained the client assets.\r\n\r\n**Full changelog**: https://github.com/Jumoo/Xliff.Connector/compare/v17.0.0...v17.0.1\r\n",
+    "githubUrl": "https://github.com/Jumoo/Xliff.Connector/releases",
+    "notes": null,
     "prerelease": false
   },
   {
@@ -158,7 +194,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "18.0.3",
     "publishedAt": "2026-07-22T11:24:02.67+00:00",
@@ -218,7 +254,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.11",
     "publishedAt": "2026-07-13T10:35:44.113+00:00",
@@ -260,6 +296,18 @@
     "publishedAt": "2026-07-10T10:27:13.16+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/18.0.0",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "18.0.0",
+    "publishedAt": "2026-07-10T10:27:02.733+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/18.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
     "notes": null,
     "prerelease": false
   },
@@ -326,7 +374,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "18.0.1",
     "publishedAt": "2026-07-08T11:09:23.787+00:00",
@@ -338,7 +386,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "18.0.1",
     "publishedAt": "2026-07-08T10:05:04Z",
@@ -374,7 +422,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "18.0.0",
     "publishedAt": "2026-07-03T15:42:48.62+00:00",
@@ -470,7 +518,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.10",
     "publishedAt": "2026-06-25T16:19:44.693+00:00",
@@ -494,7 +542,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "18.0.0",
     "publishedAt": "2026-06-25T11:30:51.66+00:00",
@@ -566,7 +614,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "17.1.0",
     "publishedAt": "2026-06-16T08:46:51Z",
@@ -614,7 +662,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.9",
     "publishedAt": "2026-06-09T13:54:03.6+00:00",
@@ -638,7 +686,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.8",
     "publishedAt": "2026-06-09T09:51:11.72+00:00",
@@ -662,7 +710,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.7",
     "publishedAt": "2026-06-08T14:34:44.553+00:00",
@@ -722,7 +770,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.6",
     "publishedAt": "2026-05-15T10:21:24Z",
@@ -734,7 +782,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.5",
     "publishedAt": "2026-05-14T09:19:48.42+00:00",
@@ -758,7 +806,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.4",
     "publishedAt": "2026-05-12T13:30:36.81+00:00",
@@ -776,6 +824,42 @@
     "publishedAt": "2026-05-11T09:33:19.87+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.3.2",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.3.5",
+    "publishedAt": "2026-05-07T16:30:49.503+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.3.5",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.3.4",
+    "publishedAt": "2026-05-06T19:54:10.747+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.3.4",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.3.3",
+    "publishedAt": "2026-05-06T14:19:03.593+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.3.3",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
     "notes": null,
     "prerelease": false
   },
@@ -806,7 +890,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.3-rc",
     "publishedAt": "2026-05-01T15:45:55.547+00:00",
@@ -830,7 +914,7 @@
   {
     "package": "uSync.Umbraco.Commerce",
     "title": "uSync Commerce",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Umbraco.Commerce",
     "version": "17.1.0-rc1",
     "publishedAt": "2026-04-29T10:36:44.317+00:00",
@@ -842,7 +926,7 @@
   {
     "package": "uSync.Umbraco.Commerce",
     "title": "uSync Commerce",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Umbraco.Commerce",
     "version": "13.3.0-rc1",
     "publishedAt": "2026-04-29T10:35:38.953+00:00",
@@ -854,7 +938,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.2.4",
     "publishedAt": "2026-04-29T10:33:25.17+00:00",
@@ -890,7 +974,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.2",
     "publishedAt": "2026-04-23T13:51:19.27+00:00",
@@ -926,7 +1010,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.1",
     "publishedAt": "2026-04-20T14:40:21Z",
@@ -938,7 +1022,7 @@
   {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSyncMigrations",
     "version": "17.0.0",
     "publishedAt": "2026-04-14T10:50:33.007+00:00",
@@ -950,7 +1034,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.0",
     "publishedAt": "2026-04-14T10:37:29Z",
@@ -1010,7 +1094,7 @@
   {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSyncMigrations",
     "version": "17.0.0-rc1",
     "publishedAt": "2026-03-20T18:35:11Z",
@@ -1034,7 +1118,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.1.3",
     "publishedAt": "2026-03-11T09:05:10.94+00:00",
@@ -1046,7 +1130,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.1.2",
     "publishedAt": "2026-03-10T15:00:43.627+00:00",
@@ -1054,6 +1138,18 @@
     "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases",
     "notes": null,
     "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.3.0-rc2",
+    "publishedAt": "2026-03-09T14:05:53.217+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.3.0-rc2",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": true
   },
   {
     "package": "Jumoo.TranslationManager",
@@ -1068,9 +1164,21 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.3.0-rc1",
+    "publishedAt": "2026-03-09T12:01:38.3+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.3.0-rc1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.1.1",
     "publishedAt": "2026-02-26T12:46:45Z",
@@ -1082,7 +1190,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.1.0",
     "publishedAt": "2026-02-25T13:54:31Z",
@@ -1118,7 +1226,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.1.0-rc1",
     "publishedAt": "2026-02-13T23:09:00Z",
@@ -1152,6 +1260,18 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.2.2",
+    "publishedAt": "2026-02-06T10:50:46.503+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.2.2",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager.DeepL",
     "title": "Translation Manager DeepL",
     "category": "Translation Connectors",
@@ -1166,7 +1286,7 @@
   {
     "package": "uSync.Umbraco.Commerce",
     "title": "uSync Commerce",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Umbraco.Commerce",
     "version": "17.0.0-rc1",
     "publishedAt": "2026-02-05T11:45:50.6+00:00",
@@ -1174,6 +1294,18 @@
     "githubUrl": "https://github.com/Jumoo/uSync.Umbraco.Commerce/releases",
     "notes": null,
     "prerelease": true
+  },
+  {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-phase.5.2",
+    "publishedAt": "2026-02-04T18:43:09Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-phase.5.2",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/4.0.0-phase.5.2",
+    "notes": "Very long time no release. \r\n\r\n## What's Changed\r\n### Other Changes\r\n* Make it so we can migrate variant properties, (for v8 -> v.x migrations. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/257\r\n* Added check for cultured name or published values - to ensure no duplicates by @CodingDK in https://github.com/Jumoo/uSyncMigrations/pull/258\r\n* Fixed missing use of label variable in GridConfigurationExtensions by @CodingDK in https://github.com/Jumoo/uSyncMigrations/pull/259\r\n* Prevent adding blocks that already added to the grid blocks by @CodingDK in https://github.com/Jumoo/uSyncMigrations/pull/260\r\n* Fixes that PropertyType is not updated on contentTypes by @CodingDK in https://github.com/Jumoo/uSyncMigrations/pull/262\r\n* Content template migration by @kows in https://github.com/Jumoo/uSyncMigrations/pull/296\r\n* New grid view property migrators, migrate column settings from grid to block grid by @steve-crook-wtg in https://github.com/Jumoo/uSyncMigrations/pull/286\r\n* Add a Terratype to Our.Umbraco.GMaps Migrator by @glombek in https://github.com/Jumoo/uSyncMigrations/pull/285\r\n* Add a Cogworks.Meganav to Our.Umbraco.Meganav migrator by @glombek in https://github.com/Jumoo/uSyncMigrations/pull/284\r\n* BlockedItems should be a list of DataTypes, not property editors by @glombek in https://github.com/Jumoo/uSyncMigrations/pull/283\r\n* Update Imulus URL picker to migrate with maximum by @ljfio in https://github.com/Jumoo/uSyncMigrations/pull/299\r\n* Add in migrator for Codery.TextCount by @ljfio in https://github.com/Jumoo/uSyncMigrations/pull/300\r\n* Fix resolving aliases for newly migrated Archetype data types by @ljfio in https://github.com/Jumoo/uSyncMigrations/pull/301\r\n* Add in Umbraco.DropdownlistPublishingKeys migrator by @ljfio in https://github.com/Jumoo/uSyncMigrations/pull/302\r\n* Add Block Settings Directly To Layout Blocks by @keck-marcel in https://github.com/Jumoo/uSyncMigrations/pull/305\r\n* Add domain migration handlers for Umbraco 7 and 8 to 13 migrations by @miyagisan221b in https://github.com/Jumoo/uSyncMigrations/pull/307\r\n* Migrate a grid to a block *list* by @glombek in https://github.com/Jumoo/uSyncMigrations/pull/308\r\n* SEO Checker Robots field to separate fields by @glombek in https://github.com/Jumoo/uSyncMigrations/pull/309\r\n* Fix broken inline macros by @glombek in https://github.com/Jumoo/uSyncMigrations/pull/310\r\n* Prevents adding language titles unnecessarily by @AaronSadlerUK in https://github.com/Jumoo/uSyncMigrations/pull/314\r\n\r\n## New Contributors\r\n* @CodingDK made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/258\r\n* @kows made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/296\r\n* @steve-crook-wtg made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/286\r\n* @glombek made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/285\r\n* @ljfio made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/299\r\n* @keck-marcel made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/305\r\n* @miyagisan221b made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/307\r\n* @AaronSadlerUK made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/314\r\n\r\n**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/4.0.0-phase.5...4.0.0-phase.5.2",
+    "prerelease": false
   },
   {
     "package": "Jumoo.TranslationManager",
@@ -1185,6 +1317,18 @@
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.2.0",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.2.0",
     "notes": "This is a minor version release of Translation Manager for Umbraco v17 - it contains updates to the UI and refresh of the AI Connector to simplify a lot of translation workflows. \r\n\r\n# What's in v17.2.0 \r\n*some of these features where released in v17.1.x but have been improved in v17.2*\r\n\r\n## Quick Translate\r\nnew Quick translate button, makes translating content super quick, \"one click\" for the editor, \r\n\r\n![QuickTranslate](https://github.com/user-attachments/assets/6ec3ab96-065b-4281-bf8d-8719e3752a78)\r\n\r\n## Simplifyed send to translate\r\nWe have drasticly simplifed the Send to translate process from two steps down to one, \r\nwe have hidden all the 'extra' information that 99% of the time your editors don't need so now it's just what language do you want, do you want to include all the children. \r\n\r\n<img width=\"502\" height=\"771\" alt=\"image\" src=\"https://github.com/user-attachments/assets/0a423b44-af9f-40f9-801e-8870a2b73c15\" />\r\n\r\n\r\n## AI Connector, user prompts. \r\nAlong side the system prompts you can now let your editors add their own additional prompt when translating content, even more control over the whole AI translation thing ! \r\n\r\n<img width=\"501\" height=\"775\" alt=\"image\" src=\"https://github.com/user-attachments/assets/9035c335-0ee9-47d1-9988-04d1c8e3acaa\" />\r\n\r\n## Translation Memory\r\n\r\nTranslation Managers \"Translation memory\" now works with more translation connectors, \r\n\r\nTranslation memory, stores the responses to translation phrases from a translation service so next time you use that service Translation manager can check to see if you have translated the exact phrase before. saving a trip to the translation service which saves you time and money! (less tokens!!!) . \r\n\r\nTranslation memory can be enabled and disabled at the connector level. \r\n\r\n<img width=\"295\" height=\"109\" alt=\"image\" src=\"https://github.com/user-attachments/assets/6aa63839-8626-4f62-93a2-ada1aa65ebcf\" />\r\n\r\n\r\n# Installation\r\n\r\n```\r\n  dotnet add package Jumoo.TranslationManager --version 17.2.0 \r\n```\r\n\r\nor update your package Reference in the csproj file\r\n\r\n```\r\n  <PackageReference Include=\"Jumoo.TranslationManager\" Version=\"17.2.0\" />\r\n```",
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.2.1",
+    "publishedAt": "2026-02-03T15:08:46.02+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.2.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
     "prerelease": false
   },
   {
@@ -1208,6 +1352,30 @@
     "publishedAt": "2026-01-29T14:48:07.74+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.1.3",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.1.1",
+    "publishedAt": "2026-01-27T15:38:17.593+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.1.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.1.0",
+    "publishedAt": "2026-01-27T15:31:50.8+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.1.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
     "notes": null,
     "prerelease": false
   },
@@ -1238,7 +1406,7 @@
   {
     "package": "uSync.Hangfire",
     "title": "uSync Hangfire",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Hangfire",
     "version": "0.17.2",
     "publishedAt": "2026-01-20T10:54:45Z",
@@ -1284,9 +1452,21 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "1.0.1",
+    "publishedAt": "2025-12-17T14:58:25.987+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/1.0.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.0.1",
     "publishedAt": "2025-12-11T15:33:35Z",
@@ -1298,7 +1478,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.0.0",
     "publishedAt": "2025-12-11T15:26:08Z",
@@ -1416,6 +1596,18 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.0.0",
+    "publishedAt": "2025-11-27T07:28:41.947+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager.Xliff",
     "title": "Translation Manager Xliff",
     "category": "Translation Connectors",
@@ -1442,7 +1634,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "17.0.0",
     "publishedAt": "2025-11-27T07:28:19.257+00:00",
@@ -1454,7 +1646,7 @@
   {
     "package": "uSync.Umbraco.Commerce",
     "title": "uSync Commerce",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Umbraco.Commerce",
     "version": "13.2.0-rc1",
     "publishedAt": "2025-11-25T14:24:35.63+00:00",
@@ -1466,7 +1658,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.2.3",
     "publishedAt": "2025-11-25T14:15:25.7+00:00",
@@ -1536,6 +1728,18 @@
     "prerelease": true
   },
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.0.0-rc4",
+    "publishedAt": "2025-11-25T09:10:24.897+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.0.0-rc4",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -1574,7 +1778,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "17.0.0-rc4",
     "publishedAt": "2025-11-25T09:09:49.83+00:00",
@@ -1586,7 +1790,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.0.0-rc4",
     "publishedAt": "2025-11-25T09:09:45.647+00:00",
@@ -1598,7 +1802,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.0.0-rc3",
     "publishedAt": "2025-11-20T11:52:52.737+00:00",
@@ -1622,7 +1826,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "17.0.0-rc2",
     "publishedAt": "2025-11-13T15:37:40.103+00:00",
@@ -1668,6 +1872,18 @@
     "prerelease": true
   },
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.0.0-rc1",
+    "publishedAt": "2025-11-03T14:59:51.503+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.0.0-rc1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
     "package": "Jumoo.TranslationManager.CrowdIn",
     "title": "Translation Manager CrowdIn",
     "category": "Translation Connectors",
@@ -1700,6 +1916,18 @@
     "publishedAt": "2025-11-03T14:57:37.96+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Xliff/17.0.0-rc1",
     "githubUrl": "https://github.com/Jumoo/Xliff.Connector/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.0.0-beta",
+    "publishedAt": "2025-11-03T14:57:17+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.0.0-beta",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
     "notes": null,
     "prerelease": true
   },
@@ -1742,7 +1970,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.0.0-rc1",
     "publishedAt": "2025-10-31T09:21:17.053+00:00",
@@ -1766,7 +1994,7 @@
   {
     "package": "uSync.Cli",
     "title": "uSync CLI",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.CommandLine",
     "version": "16.1.0",
     "publishedAt": "2025-10-24T11:08:05.09+00:00",
@@ -1802,7 +2030,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.1.2",
     "publishedAt": "2025-10-20T16:04:09.6+00:00",
@@ -1814,7 +2042,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.1.1",
     "publishedAt": "2025-10-16T16:01:27Z",
@@ -1838,7 +2066,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.1.0",
     "publishedAt": "2025-10-15T12:18:57Z",
@@ -1862,7 +2090,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "16.0.2",
     "publishedAt": "2025-10-14T12:59:13.74+00:00",
@@ -1874,7 +2102,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "13.4.6",
     "publishedAt": "2025-10-14T12:53:44Z",
@@ -1896,9 +2124,21 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "1.0.0",
+    "publishedAt": "2025-10-06T14:40:33.78+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/1.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.2.2",
     "publishedAt": "2025-09-24T16:11:33Z",
@@ -1910,7 +2150,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "13.4.5",
     "publishedAt": "2025-09-24T16:07:47Z",
@@ -1944,9 +2184,45 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "1.0.0-rc5",
+    "publishedAt": "2025-09-19T10:01:28Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/1.0.0-rc5",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v1.0.0-rc5",
+    "notes": "RC5 - Release \r\n\r\n- Streamlined Translator creation (`AITranslatorBase`)\r\n- Fixed Config for Azure AI URL and Models. ",
+    "prerelease": false
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "1.0.0-rc4",
+    "publishedAt": "2025-09-18T14:49:46.493+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/1.0.0-rc4",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "1.0.0-rc3",
+    "publishedAt": "2025-09-09T15:31:10.057+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/1.0.0-rc3",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.6",
     "publishedAt": "2025-09-08T12:53:15Z",
@@ -1968,9 +2244,21 @@
     "prerelease": false
   },
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "Translation Manager AI",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "1.0.0-rc2",
+    "publishedAt": "2025-09-04T11:59:08.533+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/1.0.0-rc2",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
     "package": "uSync.Hangfire",
     "title": "uSync Hangfire",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Hangfire",
     "version": "0.1.1",
     "publishedAt": "2025-08-27T09:04:35.15+00:00",
@@ -1994,7 +2282,7 @@
   {
     "package": "uSync.Hangfire",
     "title": "uSync Hangfire",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Hangfire",
     "version": "0.1.0",
     "publishedAt": "2025-08-22T11:50:25.88+00:00",
@@ -2006,7 +2294,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.5",
     "publishedAt": "2025-08-22T11:13:20Z",
@@ -2042,7 +2330,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.2.1",
     "publishedAt": "2025-08-08T10:25:50.543+00:00",
@@ -2102,7 +2390,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.2.0",
     "publishedAt": "2025-07-23T14:53:03Z",
@@ -2138,7 +2426,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.4",
     "publishedAt": "2025-07-21T13:01:59Z",
@@ -2174,7 +2462,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "16.0.1",
     "publishedAt": "2025-07-01T14:36:41Z",
@@ -2186,7 +2474,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.3",
     "publishedAt": "2025-07-01T14:33:52Z",
@@ -2198,7 +2486,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.2",
     "publishedAt": "2025-06-26T10:10:35Z",
@@ -2210,7 +2498,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.9",
     "publishedAt": "2025-06-24T10:49:32.213+00:00",
@@ -2222,7 +2510,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.1",
     "publishedAt": "2025-06-24T10:46:11.407+00:00",
@@ -2270,7 +2558,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.0",
     "publishedAt": "2025-06-12T09:17:45Z",
@@ -2282,7 +2570,7 @@
   {
     "package": "uSync.Cli",
     "title": "uSync CLI",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.CommandLine",
     "version": "16.0.0",
     "publishedAt": "2025-06-12T09:12:56Z",
@@ -2294,7 +2582,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "16.0.0",
     "publishedAt": "2025-06-12T08:33:56Z",
@@ -2390,7 +2678,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.8",
     "publishedAt": "2025-05-14T13:39:22Z",
@@ -2474,7 +2762,7 @@
   {
     "package": "uSync.Cli",
     "title": "uSync CLI",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.CommandLine",
     "version": "15.0.0-beta3",
     "publishedAt": "2025-04-09T09:34:56.97+00:00",
@@ -2486,7 +2774,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.6",
     "publishedAt": "2025-04-03T12:44:21Z",
@@ -2510,7 +2798,7 @@
   {
     "package": "uSync.Cli",
     "title": "uSync CLI",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.CommandLine",
     "version": "15.0.0-beta2",
     "publishedAt": "2025-04-01T12:31:56.847+00:00",
@@ -2522,7 +2810,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.10",
     "publishedAt": "2025-03-28T15:12:30Z",
@@ -2546,7 +2834,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.4",
     "publishedAt": "2025-03-18T16:58:17Z",
@@ -2630,7 +2918,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.3",
     "publishedAt": "2025-02-18T10:56:41Z",
@@ -2642,7 +2930,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.2",
     "publishedAt": "2025-02-15T12:08:08Z",
@@ -2690,7 +2978,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.9",
     "publishedAt": "2025-01-20T15:19:34Z",
@@ -2702,7 +2990,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.1",
     "publishedAt": "2025-01-20T15:01:30Z",
@@ -2738,7 +3026,7 @@
   {
     "package": "uSync.Cli",
     "title": "uSync CLI",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.CommandLine",
     "version": "15.0.0-beta1",
     "publishedAt": "2024-12-12T16:02:55.88+00:00",
@@ -2750,7 +3038,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.0",
     "publishedAt": "2024-12-11T13:03:48Z",
@@ -2786,7 +3074,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "15.0.1",
     "publishedAt": "2024-12-03T11:33:26.687+00:00",
@@ -2798,7 +3086,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "13.4.4",
     "publishedAt": "2024-12-03T10:14:02Z",
@@ -2918,7 +3206,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "15.0.0",
     "publishedAt": "2024-11-14T10:15:19.777+00:00",
@@ -2942,7 +3230,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.0.0",
     "publishedAt": "2024-11-14T08:41:55.18+00:00",
@@ -2954,7 +3242,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "13.4.2",
     "publishedAt": "2024-11-07T15:29:06.64+00:00",
@@ -2966,7 +3254,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "13.4.1",
     "publishedAt": "2024-10-31T16:13:38Z",
@@ -3002,7 +3290,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.8",
     "publishedAt": "2024-10-30T08:42:01.237+00:00",
@@ -3026,7 +3314,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "13.4.0",
     "publishedAt": "2024-10-23T21:59:11Z",
@@ -3050,7 +3338,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.7.4",
     "publishedAt": "2024-09-27T08:56:03.243+00:00",
@@ -3062,7 +3350,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "14.2.1",
     "publishedAt": "2024-09-25T13:55:40.547+00:00",
@@ -3086,7 +3374,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "14.2.0",
     "publishedAt": "2024-09-16T13:16:33Z",
@@ -3122,7 +3410,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.7",
     "publishedAt": "2024-09-10T19:55:59.82+00:00",
@@ -3134,7 +3422,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.6",
     "publishedAt": "2024-09-05T11:52:51.75+00:00",
@@ -3158,7 +3446,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "13.3.0",
     "publishedAt": "2024-07-10T09:02:37Z",
@@ -3170,7 +3458,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.5",
     "publishedAt": "2024-06-27T11:24:17Z",
@@ -3266,7 +3554,7 @@
   {
     "package": "uSync.Umbraco.Commerce",
     "title": "uSync Commerce",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Umbraco.Commerce",
     "version": "13.1.0-rc1",
     "publishedAt": "2024-06-10T08:57:40.293+00:00",
@@ -3278,7 +3566,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "14.0.0-preview001",
     "publishedAt": "2024-06-04T16:04:51Z",
@@ -3326,7 +3614,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.2.5",
     "publishedAt": "2024-05-29T13:19:04.353+00:00",
@@ -3344,6 +3632,18 @@
     "publishedAt": "2024-05-29T13:15:14.137+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync/12.2.4",
     "githubUrl": "https://github.com/KevinJump/uSync/releases",
+    "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "uSync.Complete",
+    "title": "uSync Complete",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.Complete.Issues",
+    "version": "12.2.4",
+    "publishedAt": "2024-05-28T09:11:26.943+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/12.2.4",
+    "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases",
     "notes": null,
     "prerelease": false
   },
@@ -3386,7 +3686,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.4",
     "publishedAt": "2024-05-24T08:18:20Z",
@@ -3494,7 +3794,7 @@
   {
     "package": "uSync.Cli",
     "title": "uSync CLI",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.CommandLine",
     "version": "13.1.0",
     "publishedAt": "2024-04-22T20:11:29.977+00:00",
@@ -3506,7 +3806,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "13.2.0",
     "publishedAt": "2024-04-22T13:51:02Z",
@@ -3542,7 +3842,7 @@
   {
     "package": "uSync.Umbraco.Commerce",
     "title": "uSync Commerce",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Umbraco.Commerce",
     "version": "12.0.0-rc3",
     "publishedAt": "2024-04-03T09:08:53.053+00:00",
@@ -3626,7 +3926,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.3",
     "publishedAt": "2024-03-14T13:12:11Z",
@@ -3662,7 +3962,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.2",
     "publishedAt": "2024-03-11T16:02:13Z",
@@ -3674,7 +3974,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.7.3",
     "publishedAt": "2024-03-11T14:37:29Z",
@@ -3698,7 +3998,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.1",
     "publishedAt": "2024-02-23T11:24:21.777+00:00",
@@ -3746,7 +4046,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.0",
     "publishedAt": "2024-02-15T10:06:01Z",
@@ -3770,7 +4070,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.0.2",
     "publishedAt": "2024-02-12T15:31:55Z",
@@ -3782,7 +4082,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.0.1",
     "publishedAt": "2024-02-12T15:31:41Z",
@@ -3828,6 +4128,18 @@
     "prerelease": false
   },
   {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-phase.5.1",
+    "publishedAt": "2024-02-06T14:51:17.54+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-phase.5.1",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases",
+    "notes": null,
+    "prerelease": true
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -3842,7 +4154,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.14",
     "publishedAt": "2024-02-01T12:21:19Z",
@@ -3854,7 +4166,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.7.2.1",
     "publishedAt": "2024-01-31T10:38:05.957+00:00",
@@ -3866,7 +4178,7 @@
   {
     "package": "uSync.Umbraco.Commerce",
     "title": "uSync Commerce",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Umbraco.Commerce",
     "version": "12.0.0-rc2",
     "publishedAt": "2024-01-26T16:55:04.413+00:00",
@@ -3974,7 +4286,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.7.2",
     "publishedAt": "2024-01-15T12:03:13.573+00:00",
@@ -3986,7 +4298,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.2.3",
     "publishedAt": "2024-01-15T12:03:05.91+00:00",
@@ -4046,7 +4358,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "13.0.0",
     "publishedAt": "2023-12-15T09:48:58Z",
@@ -4070,7 +4382,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.0.0",
     "publishedAt": "2023-12-14T12:11:45Z",
@@ -4092,9 +4404,21 @@
     "prerelease": false
   },
   {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-phase.5",
+    "publishedAt": "2023-11-30T15:54:56Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-phase.5",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/4.0.0-phase.5",
+    "notes": "This release contains user contributed fixes, and updates to the structure of uSync.Migrations, to make it easier to contribute (or at least easer to see where to contribute) to the project.\r\n\r\n<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n### Changes\r\n* Scylla.TextboxWithCharacterCount migrator by @ProNotion in https://github.com/Jumoo/uSyncMigrations/pull/226\r\n* refactor: Remove archetype stuff from core classes by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/227\r\n* fix: another small bits and bobs at migrations by @bielu in https://github.com/Jumoo/uSyncMigrations/pull/228\r\n* Make v7 node ID accessible in SyncMigrationContext._idKeyMap by @MDuncan98 in https://github.com/Jumoo/uSyncMigrations/pull/230\r\n* feat: block grid settings by @ryan-woodruff in https://github.com/Jumoo/uSyncMigrations/pull/232\r\n* Project seperation. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/235\r\n* Fix typo in BlockMigrationPlan name by @stevetemple in https://github.com/Jumoo/uSyncMigrations/pull/242\r\n* Add migrator for Gibe.LinkPicker by @stevetemple in https://github.com/Jumoo/uSyncMigrations/pull/244\r\n* better progress messages during migration. (bye bye sims messages) by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/247\r\n* Fix - don't reset variation value in content type if its already set. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/248\r\n* Feature/numeric ids in pickers by @stevetemple in https://github.com/Jumoo/uSyncMigrations/pull/249\r\n* Validation of XML, and Datatypes for v8 by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/250\r\n* Fixes a typo in the project folder name in package build script & fixes a bug with migrations caused by recent changes by @ProNotion in https://github.com/Jumoo/uSyncMigrations/pull/251\r\n* Dev/download by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/253\r\n\r\n## New Contributors\r\n* @MDuncan98 made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/230\r\n* @ryan-woodruff made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/232\r\n* @stevetemple made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/242\r\n\r\n**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/4.0.0-phase.4.1...4.0.0-phase.5",
+    "prerelease": false
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.0.0-rc3",
     "publishedAt": "2023-11-30T15:13:11.227+00:00",
@@ -4118,7 +4442,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.0.0-rc2",
     "publishedAt": "2023-11-27T16:33:54.323+00:00",
@@ -4130,7 +4454,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "13.0.0-rc1",
     "publishedAt": "2023-11-27T16:22:34.21+00:00",
@@ -4166,7 +4490,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.2.1.1",
     "publishedAt": "2023-10-25T14:01:07.647+00:00",
@@ -4178,7 +4502,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.2.1",
     "publishedAt": "2023-10-25T10:47:12Z",
@@ -4226,7 +4550,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.2.0",
     "publishedAt": "2023-10-06T11:23:11Z",
@@ -4248,9 +4572,21 @@
     "prerelease": false
   },
   {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-phase.4.1",
+    "publishedAt": "2023-10-04T22:16:38Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-phase.4.1",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/4.0.0-phase.4.1",
+    "notes": "## Loads of changes !! \r\n\r\nLots and lots of community contribs, have been sitting behind my desire to make the project neater. #218  which has been a blocker, so i've done 'some' of the tidy but not all so we can release something with all these wonderful fixes in \r\n\r\n## What's Changed\r\n### Breaking Changes 🛠\r\n* fix: ensured that we can rerun migrations after having db up and running first migration by @bielu in https://github.com/Jumoo/uSyncMigrations/pull/195\r\n### Other Changes\r\n* Feature/community new pickers by @bielu in https://github.com/Jumoo/uSyncMigrations/pull/185\r\n* Fixes : #173 & #187 - Skip \"empty\" files during migration. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/188\r\n* Fixes #165 - some changes to make the Upload UI a bit easier to follow by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/190\r\n* Packer v7 min version guidance by @LottePitcher in https://github.com/Jumoo/uSyncMigrations/pull/186\r\n* Fix/ensured that repeated archetypes are handled by @bielu in https://github.com/Jumoo/uSyncMigrations/pull/189\r\n* fix: colour picker can have 2 different aliases by @bielu in https://github.com/Jumoo/uSyncMigrations/pull/192\r\n* DTGE fixes by @skttl in https://github.com/Jumoo/uSyncMigrations/pull/193\r\n* Fix for Nested Content to Block List in Grid by @skttl in https://github.com/Jumoo/uSyncMigrations/pull/194\r\n* feat: added possibility to turn off handlers by @bielu in https://github.com/Jumoo/uSyncMigrations/pull/196\r\n* More debug logging in property migrations by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/198\r\n* DTGE Migrator by @andrewmckaskill in https://github.com/Jumoo/uSyncMigrations/pull/197\r\n* Dev/dtge migrator merge by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/199\r\n* Migrator for robotsMetaEditor to Contentment Data List by @skttl in https://github.com/Jumoo/uSyncMigrations/pull/201\r\n* Migrator for skttl.HtmlEditor to Contentment Code Editor by @skttl in https://github.com/Jumoo/uSyncMigrations/pull/202\r\n* Some times DTGEs has no view specified by @skttl in https://github.com/Jumoo/uSyncMigrations/pull/205\r\n* Fix SEO metadata migrator outputting empty GUID for definition node by @peterkeating in https://github.com/Jumoo/uSyncMigrations/pull/204\r\n* Fix: iterate through all composition levels to find editor alias by @jhenkes in https://github.com/Jumoo/uSyncMigrations/pull/206\r\n* fix: ensure Umbraco.Date editors are migrated to Umbraco.DateTime by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/207\r\n* Fix build error introduced by recent logging changes by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/208\r\n* Ability to rename content types by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/209\r\n* Update GETTING-STARTED.md by @Wiggee11 in https://github.com/Jumoo/uSyncMigrations/pull/214\r\n* Wip/nullable less warnings by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/212\r\n* Update GETTING-STARTED.md by @Wiggee11 in https://github.com/Jumoo/uSyncMigrations/pull/215\r\n* feat: allow for overrides on grid migrators by @grey-muir in https://github.com/Jumoo/uSyncMigrations/pull/216\r\n* fix: ensured that if content is not presented to not populate it as it breaks usync by @bielu in https://github.com/Jumoo/uSyncMigrations/pull/221\r\n* fix: ensured that we can migrate grid by @bielu in https://github.com/Jumoo/uSyncMigrations/pull/223\r\n* Dev/migrator tidy by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/224\r\n\r\n## New Contributors\r\n* @bielu made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/185\r\n* @skttl made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/193\r\n* @andrewmckaskill made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/197\r\n* @peterkeating made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/204\r\n* @jhenkes made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/206\r\n* @Wiggee11 made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/214\r\n* @grey-muir made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/216\r\n\r\n**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/4.0.0-phase.4...4.0.0-phase.4.1",
+    "prerelease": false
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.7.1",
     "publishedAt": "2023-10-04T14:49:55Z",
@@ -4286,7 +4622,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.2.0-rc1",
     "publishedAt": "2023-09-27T10:06:58Z",
@@ -4356,6 +4692,18 @@
     "prerelease": false
   },
   {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-phase.4",
+    "publishedAt": "2023-08-10T13:49:09Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-phase.4",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/4.0.0-phase.4",
+    "notes": "\r\nThis is the next release of uSync.Migrations and it contains alot of work that other people have done over the last two months #H5YR \r\n\r\n# Highlights \r\nEvent the small fixes mean something big to some people, so highlights are install it now and watch more things work! \r\n\r\nBut thanks to all the lovely contributors we have: \r\n- Vorto stuff, @leekelleher  has given the vorto conversions a bit of an overhaul so they now convert vorto betterer.\r\n- Stacked content migrations have been vastly improved by @michaelchart \r\n- Grid Macro's now convert as part of the block grid work thanks to @prjseal \r\n- related links migrator fixed by @drummerboy46 \r\n- nupickers with xml in them migrate better thanks to @Hendy \r\n- Grid to block has been polished and finessed by @BPadfield and @michaelchart \r\n- old school images with Ids instead of UDIs now migrate thanks to @Deba22 \r\n\r\n\r\n## What's Changed\r\n### Other Changes\r\n* Getting Started - corrected typos by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/142\r\n* Getting Started - corrected another typo I'd missed by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/143\r\n* #145 - fixed related links migrator  by @drummerboy46 in https://github.com/Jumoo/uSyncMigrations/pull/146\r\n* directory did not exist by default, so added guard clause by @Hendy in https://github.com/Jumoo/uSyncMigrations/pull/148\r\n* Multiple sections/templates in grids to blockgrid by @BPadfield in https://github.com/Jumoo/uSyncMigrations/pull/150\r\n* Fixed XPath string manipulation for NuPickers by @Hendy in https://github.com/Jumoo/uSyncMigrations/pull/151\r\n* #156 Adds basic unit test for RadioButtonListMigrator and addresses a potential issue with prevalue sort order by @ProNotion in https://github.com/Jumoo/uSyncMigrations/pull/157\r\n* Added support for images that are stored with IDs instead of udi by @Deba22 in https://github.com/Jumoo/uSyncMigrations/pull/158\r\n* Fix stacked content migrator to respect preferred migrators by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/162\r\n* Fix stacked content max items = 0 migration issue by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/163\r\n* Fix issue where nested DateTime format gets messed up by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/164\r\n* Fix to ensure element type compositions are marked as element types by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/166\r\n* Fix issue causing split properties to use duplicate property key by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/167\r\n* Getting Started - consistency and typos by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/174\r\n* Removes dashboard heading glyph by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/175\r\n* Updated \"Installed Package\" name by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/176\r\n* RadioButtonList - Fixes #113, migrated value by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/177\r\n* RichText/TinyMCE - config migrator by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/178\r\n* NestedContent migrator - adds ContentType/PropertyType alias to inner migrator lookup by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/179\r\n* Language handler - LCID was unreliable, changed to culture code by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/180\r\n* Whitespace formatting by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/181\r\n* Lee's Vorto migrator updates by @leekelleher in https://github.com/Jumoo/uSyncMigrations/pull/182\r\n* Allow setting compositions and tabs for new content types by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/169\r\n* Get Vorto to do its lookup using the context, not the services. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/149\r\n* got macro to block grid block working  by @prjseal in https://github.com/Jumoo/uSyncMigrations/pull/183\r\n\r\n## New Contributors\r\n* @drummerboy46 made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/146\r\n* @Hendy made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/148\r\n* @BPadfield made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/150\r\n* @ProNotion made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/157\r\n* @Deba22 made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/158\r\n\r\n**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/4.0.0-phase.3...4.0.0-phase.4",
+    "prerelease": false
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -4370,7 +4718,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.13",
     "publishedAt": "2023-08-10T07:11:40Z",
@@ -4382,7 +4730,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.6.2",
     "publishedAt": "2023-08-10T07:08:09Z",
@@ -4406,7 +4754,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.1.0",
     "publishedAt": "2023-08-10T07:05:39Z",
@@ -4454,7 +4802,7 @@
   {
     "package": "uSync.Umbraco.Commerce",
     "title": "uSync Commerce",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Umbraco.Commerce",
     "version": "12.0.0-rc1",
     "publishedAt": "2023-07-21T11:44:34.947+00:00",
@@ -4466,7 +4814,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "12.0.0",
     "publishedAt": "2023-07-19T13:10:56.223+00:00",
@@ -4526,7 +4874,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.0.2",
     "publishedAt": "2023-06-29T23:03:57.257+00:00",
@@ -4584,9 +4932,21 @@
     "prerelease": true
   },
   {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-phase.3",
+    "publishedAt": "2023-06-22T10:43:57Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-phase.3",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/4.0.0-phase.3",
+    "notes": "Hi Migrators ! \r\n\r\nThis is the latest pre-release of uSync.Migrations - its the pick a packer release - with super added Grid->BlockList goodness.\r\n\r\n# Highlights \r\n- The Packers for v7 and v8 mean you can create zip files of your content/settings ready for easy migration\r\n- If you use a packer generated zip you can now go from v7 to v11 blocklists, blockgrid in one step!!!\r\n- there is better support for all the Grid to Blocklist when using DTGE\r\n\r\nSee our [Getting Started Guide](https://github.com/Jumoo/uSyncMigrations/blob/main/GETTING-STARTED.md) for more info on the new recommended Migration workflow\r\n\r\n## Packers !\r\nPackers are small packages that you can install on existing v7/v8 sites that grab the uSync files and a couple of other things (notably a sort of super munged version of grid.editors.config.js). \r\n\r\nThis means when we come to do the migration we have all the files and the config we need to actually do grid conversions properly. \r\n\r\nA proper grid conversion means we can go from v7 grid to v10+ BlockGrid in one step. \r\n\r\n- You can download the packer packages from our website : https://clients.jumoo.co.uk/migrations/\r\n- they are also open source and have a repo of their own : https://github.com/Jumoo/uSync.Migrations.Packers\r\n\r\n## BlockList grids\r\nthanks to a PR from @prjseal  we can now convert items inside existing block lists, so if you have a v8/9/10 site that is already using blocklists but has other stuff inside - so for example a Grid inside a blocklist! - then the conversion will make that a blockgrid inside a blocklist. ! woot!\r\n\r\n## Better DTGE support\r\ngrabbing the config in a packer also means we can capture any custom DTGE config you might have had (whether it was in grid.editors.config.js or the DTGE package.manifest file). and when we do the conversion it all \"works\". \r\n\r\n\r\n<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n* Feature/blocklistmigrator by @prjseal in https://github.com/Jumoo/uSyncMigrations/pull/128\r\n* WIP - Merging property handlers. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/138\r\n* Move the grid calls to use ILegacyGridConfig, by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/141\r\n\r\n\r\n\r\n\r\n\r\n**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/4.0.0-phase.2.2...4.0.0-phase.3",
+    "prerelease": false
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.6.0",
     "publishedAt": "2023-06-07T08:35:42Z",
@@ -4610,7 +4970,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "11.2.0",
     "publishedAt": "2023-06-07T08:24:26Z",
@@ -4632,6 +4992,18 @@
     "prerelease": false
   },
   {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-phase.2.2",
+    "publishedAt": "2023-06-05T14:35:55Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-phase.2.2",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/4.0.0-phase.2.2",
+    "notes": "Hi, \r\n\r\nThis is the latest pre-release of uSync.Migrations. Featuring ..[ property level migrators](https://github.com/Jumoo/uSyncMigrations/pull/135) (define migrations at a property level).\r\n\r\nIt also contains a number of fixes and improvements from the community. \r\n\r\n<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n\r\n## What's Changed\r\n* Fix framework versions in actions yaml. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/125\r\n* Fix ? for #122 by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/123\r\n* fixed dropdown migrator so it has a 0 based index for the id by @prjseal in https://github.com/Jumoo/uSyncMigrations/pull/124\r\n* null check for values by @giuunit in https://github.com/Jumoo/uSyncMigrations/pull/130\r\n* Fix - imulus picker , to work when multiple items are set. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/133\r\n* Nested content - Catching errors - reporting them back meaningfully. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/134\r\n* Migrators by property name. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/135\r\n\r\n## New Contributors\r\n* @prjseal made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/124\r\n* @giuunit made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/130\r\n\r\n**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/4.0.0-phase.2.1...4.0.0-phase.2.2",
+    "prerelease": false
+  },
+  {
     "package": "Jumoo.TranslationManager.CrowdIn",
     "title": "Translation Manager CrowdIn",
     "category": "Translation Connectors",
@@ -4641,6 +5013,18 @@
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/9.0.9",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
     "notes": null,
+    "prerelease": false
+  },
+  {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "4.0.0-phase.2.1",
+    "publishedAt": "2023-05-12T11:09:45Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/4.0.0-phase.2.1",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/4.0.0-phase.2.1",
+    "notes": "Hi, this is the latest pre-release update of uSync.Migrations. featuring a new dashboard and workflow to the migration and conversion process. \r\nHopefully this makes it even easier to migrate and convert your sites between Umbraco versions. \r\n\r\n# Big Changes\r\n\r\nThe main thrust of this update is the change to a new dashboard, and a flow for how Migrations are ran **& re-ran!** - now you can start your migration with a zip file, and get straight into migrating without even having to copy stuff to disk. \r\n\r\n**migrations are now easier to re-run !** You can start a migration, do the conversion and then run the import again and again, and the dashboard will keep you upto date with what you have done so far. \r\n\r\n# Feedback \r\n**[For more and to give feedback - join the discussion on this release !](https://github.com/Jumoo/uSyncMigrations/discussions/120)**\r\n\r\n\r\n# Breaking\r\nThis is a beta so things will change - and for this version a number of bits of cheese have been moved. \r\n\r\n- `ISyncMigrationProfiles` are now called `ISyncigrationPlan` - so you will need to rename any profiles you have, but everything else should continue to be ok.\r\n\r\n# What's new.\r\n\r\n## New Dashboard.\r\n\r\n![image](https://github.com/Jumoo/uSyncMigrations/assets/431231/96521eec-c573-4ce8-bbc5-b6299b70d4f2)\r\n\r\nWe have moved migrations to its own tree item. so now its less confusing, migration happen on the migrations dashboards.\r\n\r\n## Upload zip files.\r\n\r\n![image](https://github.com/Jumoo/uSyncMigrations/assets/431231/ed027a22-13f8-4399-851d-56a8c262eec7)\r\n\r\nNow you can start your migration with a zip file ! - \r\n\r\nYou can 'just' zip up the uSync folder from a site and upload it here, but Coming soon, Packages for Umbraco 7 & 8 that let you quickly create zip files - these will capture some other bits such as config, and views, meaning the migration can be more complete. \r\n\r\n## Migration Status view \r\n![image](https://github.com/Jumoo/uSyncMigrations/assets/431231/c0958b60-1160-4120-a9b5-313261709428)\r\nThe new workflow means you can revisit a migration - re-run conversions or re-import from the folder. \r\n\r\n<!-- Release notes generated using configuration in .github/release.yml at main -->\r\n### Other Changes\r\n* Make NuPickers models public by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/108\r\n* Support nuPickers JSON format by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/107\r\n* Add Archetype migrator by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/105\r\n* Add migration from Epiphany.SeoMetadata to separate properties by @michaelchart in https://github.com/Jumoo/uSyncMigrations/pull/109\r\n* Fix RelatedLinks migration by @marcemarc in https://github.com/Jumoo/uSyncMigrations/pull/110\r\n* New UI - Big changes. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/114\r\n* Handle JSON and XML for NuPIckersXPathDropdownPicker by @marcemarc in https://github.com/Jumoo/uSyncMigrations/pull/115\r\n* Wip/core nullable by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/116\r\n* Wip/import logging by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/117\r\n* Wip/dashboard flow by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/119\r\n\r\n# Things we are going to do (in subsequent PRs!)\r\n- actually use the site files. At the moment we don't use them, but this should in theory make it possible for us to go from v7 direct to block grid. (because the site files will have the grid.config.js file in it)\r\n- see if there is a way to let people pick migrators (e.g convert to nested but not grid) at the moment we just have separate plans for this. \r\n- put some history in there - so you can say, \"Fred ran the conversion on this date Alice imported content when\"...\r\n\r\n**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/4.0.0-beta16...4.0.0-phase2-001",
     "prerelease": false
   },
   {
@@ -4670,7 +5054,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.12",
     "publishedAt": "2023-05-02T08:41:31Z",
@@ -4706,7 +5090,7 @@
   {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSyncMigrations",
     "version": "4.0.0-beta016",
     "publishedAt": "2023-04-12T09:48:03.647+00:00",
@@ -4742,7 +5126,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.5.0",
     "publishedAt": "2023-04-04T09:54:43Z",
@@ -4766,7 +5150,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "11.1.0",
     "publishedAt": "2023-03-29T11:13:33Z",
@@ -4790,7 +5174,7 @@
   {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSyncMigrations",
     "version": "4.0.0-beta015",
     "publishedAt": "2023-03-24T10:06:52.97+00:00",
@@ -4814,7 +5198,7 @@
   {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSyncMigrations",
     "version": "4.0.0-beta014",
     "publishedAt": "2023-03-17T16:03:56.98+00:00",
@@ -4850,7 +5234,7 @@
   {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSyncMigrations",
     "version": "4.0.0-beta013",
     "publishedAt": "2023-03-10T10:13:33.2+00:00",
@@ -4862,7 +5246,7 @@
   {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSyncMigrations",
     "version": "4.0.0-beta012",
     "publishedAt": "2023-03-03T17:12:09.453+00:00",
@@ -4910,7 +5294,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.4.1",
     "publishedAt": "2023-03-03T15:29:48.4+00:00",
@@ -4922,7 +5306,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "11.0.2",
     "publishedAt": "2023-03-03T15:08:57Z",
@@ -4958,7 +5342,7 @@
   {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSyncMigrations",
     "version": "4.0.0-beta011",
     "publishedAt": "2023-02-24T12:18:08.94+00:00",
@@ -4970,7 +5354,7 @@
   {
     "package": "uSync.Cli",
     "title": "uSync CLI",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.CommandLine",
     "version": "10.0.4",
     "publishedAt": "2023-02-13T15:54:15.607+00:00",
@@ -4982,7 +5366,7 @@
   {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSyncMigrations",
     "version": "4.0.0-beta010",
     "publishedAt": "2023-02-09T16:50:31Z",
@@ -5018,7 +5402,7 @@
   {
     "package": "uSync.Cli",
     "title": "uSync CLI",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.CommandLine",
     "version": "10.0.3",
     "publishedAt": "2023-01-30T11:43:18.5+00:00",
@@ -5030,7 +5414,7 @@
   {
     "package": "uSync.Cli",
     "title": "uSync CLI",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.CommandLine",
     "version": "10.0.2",
     "publishedAt": "2023-01-30T10:37:44.697+00:00",
@@ -5042,7 +5426,7 @@
   {
     "package": "uSync.Cli",
     "title": "uSync CLI",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.CommandLine",
     "version": "10.0.1",
     "publishedAt": "2023-01-27T11:31:13.06+00:00",
@@ -5090,7 +5474,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "11.0.0",
     "publishedAt": "2023-01-12T11:17:04Z",
@@ -5102,7 +5486,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.11",
     "publishedAt": "2023-01-12T11:16:44Z",
@@ -5114,7 +5498,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "11.0.1",
     "publishedAt": "2023-01-12T11:10:14Z",
@@ -5126,7 +5510,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.4.0",
     "publishedAt": "2023-01-12T10:54:19Z",
@@ -5162,7 +5546,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "10.0.1",
     "publishedAt": "2022-12-14T10:59:56Z",
@@ -5174,7 +5558,7 @@
   {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSyncMigrations",
     "version": "4.0.0-beta007",
     "publishedAt": "2022-12-06T12:21:40Z",
@@ -5258,7 +5642,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.10",
     "publishedAt": "2022-11-22T16:24:55Z",
@@ -5282,7 +5666,7 @@
   {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSyncMigrations",
     "version": "4.0.0-beta003",
     "publishedAt": "2022-11-17T14:07:20.33+00:00",
@@ -5294,7 +5678,7 @@
   {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSyncMigrations",
     "version": "4.0.0-beta002",
     "publishedAt": "2022-11-17T13:37:59.237+00:00",
@@ -5306,7 +5690,7 @@
   {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSyncMigrations",
     "version": "4.0.0-beta001",
     "publishedAt": "2022-11-17T12:26:09.79+00:00",
@@ -5342,7 +5726,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.3.0",
     "publishedAt": "2022-10-27T10:25:47Z",
@@ -5354,7 +5738,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.9",
     "publishedAt": "2022-10-25T19:17:19Z",
@@ -5390,7 +5774,7 @@
   {
     "package": "uSync.Cli",
     "title": "uSync CLI",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.CommandLine",
     "version": "10.0.0",
     "publishedAt": "2022-10-19T10:57:02.11+00:00",
@@ -5426,7 +5810,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.2.0",
     "publishedAt": "2022-09-26T12:55:11Z",
@@ -5474,7 +5858,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.1.0",
     "publishedAt": "2022-08-04T11:02:47Z",
@@ -5570,7 +5954,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "10.0.0",
     "publishedAt": "2022-06-20T19:48:20.153+00:00",
@@ -5606,7 +5990,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.0.0",
     "publishedAt": "2022-06-16T13:32:18.583+00:00",
@@ -5642,7 +6026,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.0.0-beta1",
     "publishedAt": "2022-05-17T10:31:15.383+00:00",
@@ -5702,7 +6086,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.4.0",
     "publishedAt": "2022-04-25T17:33:53Z",
@@ -5726,7 +6110,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.3.1",
     "publishedAt": "2022-04-01T10:09:19.58+00:00",
@@ -5786,7 +6170,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "9.0.1",
     "publishedAt": "2022-02-22T09:26:30Z",
@@ -5798,7 +6182,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.2.0",
     "publishedAt": "2022-02-21T14:15:58Z",
@@ -5822,7 +6206,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.8",
     "publishedAt": "2022-02-17T15:03:11Z",
@@ -5846,7 +6230,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.1.0",
     "publishedAt": "2022-02-03T12:03:23Z",
@@ -5882,7 +6266,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.7",
     "publishedAt": "2022-01-21T10:52:22Z",
@@ -5918,7 +6302,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.6",
     "publishedAt": "2022-01-10T14:09:18Z",
@@ -5942,7 +6326,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.0.6",
     "publishedAt": "2022-01-07T12:16:31Z",
@@ -5978,7 +6362,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.5",
     "publishedAt": "2021-12-01T14:46:36Z",
@@ -6002,7 +6386,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.0.4",
     "publishedAt": "2021-11-18T09:56:51Z",
@@ -6026,7 +6410,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.5-rc1",
     "publishedAt": "2021-11-10T15:42:46.023+00:00",
@@ -6074,7 +6458,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.4",
     "publishedAt": "2021-10-22T10:17:51Z",
@@ -6110,7 +6494,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "9.0.0",
     "publishedAt": "2021-10-12T09:13:40.203+00:00",
@@ -6146,7 +6530,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.0.1",
     "publishedAt": "2021-10-04T11:54:32Z",
@@ -6170,7 +6554,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.3",
     "publishedAt": "2021-10-01T19:47:20Z",
@@ -6182,7 +6566,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.0.0",
     "publishedAt": "2021-09-29T14:48:24.027+00:00",
@@ -6230,7 +6614,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.2",
     "publishedAt": "2021-09-22T11:31:28Z",
@@ -6254,7 +6638,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "8.0.1",
     "publishedAt": "2021-09-15T10:33:56.353+00:00",
@@ -6266,7 +6650,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "8.0.0",
     "publishedAt": "2021-09-14T11:25:05.74+00:00",
@@ -6278,7 +6662,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.1",
     "publishedAt": "2021-09-06T16:10:05Z",
@@ -6314,7 +6698,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.0",
     "publishedAt": "2021-09-02T05:06:37Z",
@@ -6434,7 +6818,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.10.3",
     "publishedAt": "2021-07-29T11:29:39Z",
@@ -6506,7 +6890,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.10.2",
     "publishedAt": "2021-07-05T09:59:31Z",
@@ -6554,7 +6938,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.10.1",
     "publishedAt": "2021-06-08T15:52:58Z",
@@ -6566,7 +6950,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.10.0",
     "publishedAt": "2021-06-04T13:13:33Z",
@@ -6626,7 +7010,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.6",
     "publishedAt": "2021-05-05T10:37:37Z",
@@ -6638,7 +7022,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.5",
     "publishedAt": "2021-04-20T08:52:08Z",
@@ -6650,7 +7034,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.4",
     "publishedAt": "2021-04-14T15:07:06Z",
@@ -6734,7 +7118,7 @@
   {
     "package": "uSync.Forms",
     "title": "uSync Forms",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "KevinJump/uSync.Forms",
     "version": "8.0.0-rc1",
     "publishedAt": "2021-03-23T16:55:38.073+00:00",
@@ -6746,7 +7130,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.3",
     "publishedAt": "2021-03-17T15:39:50Z",
@@ -6782,7 +7166,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.2",
     "publishedAt": "2021-03-08T16:15:32Z",
@@ -6806,7 +7190,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.1",
     "publishedAt": "2021-02-17T15:35:47Z",
@@ -6818,7 +7202,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.0",
     "publishedAt": "2021-02-01T16:05:29Z",
@@ -6842,7 +7226,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.8.3",
     "publishedAt": "2021-01-25T10:20:27Z",
@@ -6866,7 +7250,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.8.1",
     "publishedAt": "2021-01-11T12:15:38Z",
@@ -6902,7 +7286,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.0-rc",
     "publishedAt": "2020-12-16T12:31:11Z",
@@ -6974,7 +7358,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.8.0",
     "publishedAt": "2020-10-09T09:05:44Z",
@@ -7034,7 +7418,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.7.0.1",
     "publishedAt": "2020-09-23T11:55:59.237+00:00",
@@ -7070,7 +7454,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.7.0",
     "publishedAt": "2020-09-10T16:13:03Z",
@@ -7118,7 +7502,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.7.0-rc",
     "publishedAt": "2020-08-26T10:00:47Z",
@@ -7130,7 +7514,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.6.3",
     "publishedAt": "2020-08-20T13:20:58Z",
@@ -7202,7 +7586,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.6.2",
     "publishedAt": "2020-06-03T10:41:13Z",
@@ -7238,7 +7622,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.6.1.1",
     "publishedAt": "2020-05-14T14:09:12.4+00:00",
@@ -7262,7 +7646,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.6.1",
     "publishedAt": "2020-05-10T20:26:38.003+00:00",
@@ -7298,7 +7682,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.6.0",
     "publishedAt": "2020-04-21T15:20:53.12+00:00",
@@ -7370,7 +7754,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.5.1",
     "publishedAt": "2020-03-19T11:35:47.763+00:00",
@@ -7406,7 +7790,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.5.0.1",
     "publishedAt": "2020-03-03T15:09:11.537+00:00",
@@ -7442,7 +7826,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.5.0",
     "publishedAt": "2020-02-14T16:17:59.16+00:00",
@@ -7502,7 +7886,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.4.3",
     "publishedAt": "2020-01-29T21:48:05.787+00:00",
@@ -7538,7 +7922,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.4.2",
     "publishedAt": "2020-01-23T11:00:40.627+00:00",
@@ -7562,7 +7946,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.4.1",
     "publishedAt": "2020-01-06T15:32:41.87+00:00",
@@ -7598,7 +7982,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.4.0",
     "publishedAt": "2019-12-13T01:45:33.087+00:00",
@@ -7694,7 +8078,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.2.4",
     "publishedAt": "2019-10-21T10:20:30.84+00:00",
@@ -7730,7 +8114,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.2.3",
     "publishedAt": "2019-09-30T10:32:14.957+00:00",
@@ -7754,7 +8138,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.2.2",
     "publishedAt": "2019-09-27T11:14:30.17+00:00",
@@ -7814,7 +8198,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.2.0",
     "publishedAt": "2019-09-16T11:42:36.337+00:00",
@@ -7862,7 +8246,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.2.0-beta2",
     "publishedAt": "2019-08-28T09:32:36.14+00:00",
@@ -7886,7 +8270,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "uSync",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.2.0-beta1",
     "publishedAt": "2019-08-08T08:30:03.883+00:00",

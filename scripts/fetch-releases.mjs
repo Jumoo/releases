@@ -32,7 +32,10 @@ async function fetchJson(url, headers = {}) {
 // (large package, items split across catalog pages fetched via @id).
 async function fetchNugetVersions(nugetId) {
   const id = nugetId.toLowerCase();
-  const url = `https://api.nuget.org/v3/registration5-semver1/${id}/index.json`;
+  // registration5-semver1 is the legacy endpoint and 404s ("BlobNotFound")
+  // for some packages that are only indexed under semver2 (NuGet's own
+  // service index lists registration5-gz-semver2 as the current default).
+  const url = `https://api.nuget.org/v3/registration5-gz-semver2/${id}/index.json`;
   let index;
   try {
     index = await fetchJson(url);

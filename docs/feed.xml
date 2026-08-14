@@ -201,130 +201,54 @@ Not yet published to NuGet — this tag marks the source at release time; packag
 ]]></description>
     </item>
     <item>
+      <title>Translation Manager AI 18.1.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.1.0</guid>
+      <pubDate>Tue, 11 Aug 2026 10:56:24 GMT</pubDate>
+      <description><![CDATA[Fixes and updates since v18.0.0 (10 Jul 2026).
+
+- Port Claude translator fixes and model-listing from v17: fixes a `MissingMethodException` in `ClaudeAITranslator`, fixes a top_k/temperature/top_p deprecation error on newer Claude models, and implements `IAIConfigTranslator` so Claude can list models from the Anthropic API. (#21)
+- Let translators build their own batch request bodies, fixing a max-tokens issue in batch submissions. (#27)
+- Bring repository standards and CI/CD in line with Xliff.Connector. (#20)
+- Keep the local dev server URL out of the generated client. (#22)
+- Bump the ai-client npm dependencies, hold typescript at 5.x. (#23)]]></description>
+    </item>
+    <item>
+      <title>Translation Manager AI 17.4.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.4.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.4.1</guid>
+      <pubDate>Tue, 11 Aug 2026 10:38:08 GMT</pubDate>
+      <description><![CDATA[## Changes since v17.3.5
+
+- Let translators build their own batch request bodies (#28) — fixes the OpenAI batch endpoint rejecting every line with "Unsupported parameter: 'max_tokens'", plus two related batch-entry defects (duplicate `custom_id`, unmatchable html paths).
+- Implement `IAIConfigTranslator` for Claude, list models from the Anthropic API (#19)
+- Fix `ClaudeAITranslator` `MissingMethodException` by bypassing the M.E.AI bridge
+- Fix `top_k`/`temperature`/`top_p` deprecation error on newer Claude models
+- Stop dependabot proposing TypeScript 7
+- CI/CD and repository standards brought in line with Xliff.Connector; ai-client dependency fixes
+
+🤖 Generated with [Claude Code](https://claude.com/claude-code)]]></description>
+    </item>
+    <item>
+      <title>Translation Manager AI 17.4.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</guid>
+      <pubDate>Thu, 06 Aug 2026 15:37:21 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>Translation Manager Xliff 18.0.1</title>
-      <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.1</guid>
-      <pubDate>Thu, 06 Aug 2026 06:12:02 GMT</pubDate>
-      <description><![CDATA[### Upgrading
-
-- **Re-tick "Blank Targets" if you use it.** The checkbox saved under a setting name the
-  connector never read, so it has never had any effect. It works now, which means the option
-  was not being applied before and needs ticking again.
-- **Split HTML and Remove Blank Values may display differently.** On a site that had never
-  saved connector settings, the config screen showed these as on while the connector ran
-  with them off. The screen now matches what a submit uses. Job processing is unchanged —
-  only the display was wrong.
-
-### Added
-
-- Umbraco 18 support — `net10.0`, the 18.0.0 Translation Manager packages, and a backoffice
-  client regenerated against the Umbraco 18 management API.
-- Repository standards: `LICENSE`, `README.md`, `CHANGELOG.md`, `SECURITY.md`,
-  `CODE_OF_CONDUCT.md`, `.editorconfig`, `global.json`, `Directory.Build.props`,
-  `GitVersion.yml`, dependabot, and issue and PR templates.
-- CI workflows — PR build, package build, release, and CodeQL. The package build runs the
-  client build before packing, so the produced package actually contains the backoffice
-  assets.
-- Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated
-  behind the `nuget` GitHub environment and authenticated with trusted publishing (OIDC)
-  rather than a stored API key.
-- `XliffConnectorOptions`, holding every connector setting, its default, and the parsing of
-  the delimited ones in one place.
-- Submitted jobs record the settings they were sent with, shown behind a cog in the pending
-  and submitted views.
-
-### Changed
-
-- `GetOptionsAsync` returns the effective settings — saved values with the connector defaults
-  filled in — rather than a partial dictionary with its own set of defaults.
-- Duplicate keys in `replacements` are now last-wins rather than throwing.
-- `Active()` returns true before `Reload()` has run, because the options object carries a
-  default folder. It previously returned false until the first reload.
-- "Include Target Values" only shows for XLIFF 2.1, where it applies.
-
-### Fixed
-
-- Connector settings are read from configuration rather than from the job's provider
-  properties, which nothing set client side and which therefore arrived empty.
-- The "blank targets" checkbox in the advanced config modal saved `blankTargets`, a key
-  nothing read. Existing installs need to re-tick it once.
-- Config view defaults contradicted the connector: `split` and `removeBlanks` showed as on
-  while the connector ran them off, and `targetMode` came back as an enum where the views
-  expect `""`, `"Blank"` or `"Source"`.
-- The package manifest alias was set to the connector name rather than its alias.
-- `npm run format` failed on every file on Windows — prettier defaulted to LF line endings
-  against a CRLF working tree.
-- The entry point script had no cache-busting query string, so a browser could keep serving
-  a stale cached `xliff.js` after an upgrade. It's now requested as `xliff.js?v={version}`.
-
-**Full Changelog**: https://github.com/Jumoo/Xliff.Connector/blob/v18/main/CHANGELOG.md
-]]></description>
+      <link>https://github.com/Jumoo/Xliff.Connector/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases</guid>
+      <pubDate>Thu, 06 Aug 2026 06:13:09 GMT</pubDate>
+      <description><![CDATA[]]></description>
     </item>
     <item>
       <title>Translation Manager Xliff 17.0.1</title>
-      <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.1</guid>
-      <pubDate>Wed, 05 Aug 2026 16:59:23 GMT</pubDate>
-      <description><![CDATA[A fix release for connector settings, which had drifted apart across the three places that
-defined them, plus the first release built and published by the new CI pipeline.
-
-## ⚠️ Upgrading
-
-**Re-tick "Blank Targets" if you use it.** The checkbox in Advanced Settings saved under a
-setting name the connector never read, so it has never had any effect. It now works — which
-means if you had it ticked, the option was not actually being applied, and you should tick
-it again and save.
-
-**Check your Split HTML and Remove Blank Values settings.** On a site that had never saved
-connector settings, the config screen displayed these as *on* while the connector ran with
-them *off*. What the screen shows now matches what a submit actually uses, so these may read
-differently to before. Nothing about how your jobs are processed has changed — only the
-display was wrong.
-
-## Fixed
-
-- The **Blank Targets** option in Advanced Settings saved to `blankTargets`, while the
-  connector reads `blankTarget`. The option had no effect.
-- The config screen's defaults disagreed with the connector's. **Split HTML** and **Remove
-  Blank Values** displayed as on when the connector's defaults are off, only 9 of the 20
-  settings were covered, and **Target Mode** was returned in a form the dropdown could not
-  match, so it never pre-selected.
-- The backoffice package manifest used the connector's display name as its alias.
-
-## Added
-
-- **Submitted jobs now record the settings they were sent with.** A cog in the top right of
-  the XLIFF panel shows the format, folder, target mode, language mappings and every
-  formatting option that applied to that job. Jobs submitted before this release have no
-  record, so they show no cog and look exactly as they did.
-- The same cog on the pending view shows the options a job *will* be sent with.
-
-## Changed
-
-- Every connector setting now lives in one place, `XliffConnectorOptions`, which owns the
-  values, their defaults, and the parsing of the delimited ones (language mappings, text
-  replacements, inline codes). The settings were previously loaded and defaulted
-  independently in three places, which is how the mismatches above arose.
-- The config screen is handed the *effective* settings — what is saved, with the connector
-  defaults filled in for anything that is not — rather than a partial set.
-- Duplicate find-keys in **Replacements** now take the last value instead of throwing.
-
-## Build and repository
-
-Not user facing, but new in this release:
-
-- CI on every pull request and push, and a package build that produces a testable package
-  for each commit on `main`.
-- Releases publish to NuGet from a `v{version}` tag, authenticated with
-  [trusted publishing](https://learn.microsoft.com/en-us/nuget/nuget-org/trusted-publishing)
-  rather than a stored API key.
-- Standard repository files — `README`, `CHANGELOG`, `SECURITY`, `CODE_OF_CONDUCT`,
-  `LICENSE` (MPL-2.0), `.editorconfig`, issue and PR templates, and dependabot.
-- The package build now builds the backoffice client before packing. Previously nothing
-  guaranteed the published package contained the client assets.
-
-**Full changelog**: https://github.com/Jumoo/Xliff.Connector/compare/v17.0.0...v17.0.1
-]]></description>
+      <link>https://github.com/Jumoo/Xliff.Connector/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases</guid>
+      <pubDate>Wed, 05 Aug 2026 17:05:37 GMT</pubDate>
+      <description><![CDATA[]]></description>
     </item>
     <item>
       <title>Translation Manager Microsoft 17.1.0-rc1</title>
@@ -438,6 +362,13 @@ Not user facing, but new in this release:
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
       <pubDate>Fri, 10 Jul 2026 10:27:13 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>Translation Manager AI 18.0.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</guid>
+      <pubDate>Fri, 10 Jul 2026 10:27:02 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
@@ -666,88 +597,6 @@ This is a feature patch release for Translation Manager it add more management t
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</guid>
       <pubDate>Thu, 18 Jun 2026 16:00:17 GMT</pubDate>
       <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Translation Manager DeepL 17.1.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</guid>
-      <pubDate>Wed, 17 Jun 2026 21:42:00 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync Forms 17.1.0</title>
-      <link>https://github.com/KevinJump/uSync.Forms/releases/tag/v17.1.0</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync.Forms/releases/tag/v17.1.0</guid>
-      <pubDate>Tue, 16 Jun 2026 08:46:51 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Update Forms to work when the site is running in a "frontend only" mode
-]]></description>
-    </item>
-    <item>
-      <title>Linked Pages 17.0.0</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</guid>
-      <pubDate>Mon, 15 Jun 2026 14:40:07 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.4.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.4.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.4.0</guid>
-      <pubDate>Thu, 11 Jun 2026 14:56:45 GMT</pubDate>
-      <description><![CDATA[This is a minor feature release of Translation Manager for Umbraco v17, it conains fixes and new features for making translations quicker and cheap(er). 
-
-## Batch Support 
-The big feature for this release is batch support in the machine and AI translation connectors. 
-
-Traditionally the Machine connectors (e.g. Microsoft, google, Deepl, and AI models). translate inline as you submit the job, they work through each bit of translatable text and send it to the service to be translated . these models to groupd things together to reduce the number of API calls but its still done in real-time with the site waiting for each translation to be returned before more are sent. 
-
-A lot of the machine translation services do support batch submission, that is you can submit a file with all your translations in them and then check back later for when they are done (very much like a traditional translation service). 
-
-This has some advantages, - on is its much quicker to send the translations, so there is less waiting around for the process to complete, another is cost, in that batch translations can be much cheaper on some services (e.g. Batch processing is around 50% cheaper for OpenAI Requests). 
-
-## Improved Translation Memory Support
-Another thing we have been working on is improving the local translation memory support for connectors, (this release DeepL now also supports Translation Memory)
-
-Local translation memory is a memory of translations stored locally in your Umbraco site, so content that has already been translated isn't sent again if we know what it is going to be translated to locally. 
-
-This saves money and time, it reduces the number or characters or tokens needed to translate a page or collection of pages, as only the changes are sent to translation. thus reducing the amount of work the translation service needs to do, and the amount of tokens you need to spend for it to do it. 
-
-> [!TIP]
-> Fun Fact: Did you know it's approximately 10 times cheaper to perform AI translations with Translation manager than with Direct AI methods in Umbraco? *(this is because translation manager presents just the text to be translated to the AI, which doesn't have to do all the working out of how to get it in and out of Umbraco every time)*
->
-> and that doesn't take into account how much Translation memory can save you.
-
-## Updated Connectors 
-Updates to connectors shipped with this release include:
-
-### DeepL
- - The DeepL connector has been updated to support our core Translation Memory and Batch services,
-
-### AI Connector
- - The AI Connector now supports batch submissions for OpenAI, Azure Models and Microsoft Foundry Translation Models. 
- - Spit Connector model, you can now see all the individual translation connectors inside the connector menu, meaning you can have even more AI configs if you want to translate different bits different ways 
-
----
-
-## What's new 
-
-### Fetures
-- ⭐ Support for batch submissions at the machine translation level.
-- ⭐ Improved Translation Memory support for xliff style connectors 
-   - ⭐ DeepL Batch Support (submit large jobs to DeepL in one go).
-   - ⭐ AI Batch Support for OpenAI and Microsoft Foundry Models. 
-
-### Fixes
-- 🐛 Fix: Quick Translate Button - displays on non-quick enabled sets. 
-
----
-
-Installing 
-
-```
-dotnet package update Jumoo.TranslationManager
-```]]></description>
     </item>
   </channel>
 </rss>
