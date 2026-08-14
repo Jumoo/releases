@@ -1,5 +1,17 @@
 [
   {
+    "package": "Jumoo.TranslationManager.Google",
+    "title": "Translation Manager Google",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Google.Connector",
+    "version": "17.1.0-beta",
+    "publishedAt": "2026-08-14T15:09:48Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Google/17.1.0-beta",
+    "githubUrl": "https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0-beta",
+    "notes": "Beta release adding Cloud Translation v3 support and batch translation, on top of the existing v2 (Basic) API-key connector.\n\n## Added\n- Cloud Translation v3 (Advanced) support alongside the existing v2 API-key path — paste a Google Cloud service account JSON into the config page to switch a connector to v3, no settings migration needed. Existing API-key-only installs keep working unchanged.\n- Glossaries, model selection (NMT / Translation LLM), and regional/multi-regional endpoint selection — all v3-only.\n- Batch translation via `batchTranslateText`, backed by a configured Google Cloud Storage bucket. See [`BATCH-SETUP.md`](https://github.com/Jumoo/Google.Connector/blob/main/Jumoo.TranslationManager.Google/BATCH-SETUP.md) for the GCS/IAM setup this needs — genuinely fiddly, worth reading before enabling it.\n- \"Test connection\" and live batch-status \"Check now\" buttons in the backoffice, calling the connector's own API via a generated TypeScript client.\n- Language mapping and glossary-mapping editors in the config view.\n\n## Fixed\n- `CanTranslate` returned `false` for almost every real culture (compared two-letter codes against full culture names).\n- Language codes were truncated to two characters, breaking anything needing a region subtag (`zh-Hant`, `pt-BR`, etc).\n- The backoffice manifest's package alias was the connector's display name instead of its actual alias.\n- The config view bundled its own copy of Lit instead of the shared backoffice one.\n- Settings are now trimmed — a stray copy-pasted space in a bucket name produced an opaque error from Google.\n- Batch translation was sending an invalid `mime_type`, and several failure points logged nothing at all.\n\nFull changelog: [CHANGELOG.md](https://github.com/Jumoo/Google.Connector/blob/main/CHANGELOG.md)\n\nThis is a **beta** release — flag anything odd on the [issue tracker](https://github.com/Jumoo/Jumoo.TranslationManager.Issues).",
+    "prerelease": true
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
