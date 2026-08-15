@@ -30,6 +30,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add docs/releases.json docs/feed.xml
+          git add docs/releases.json docs/feed.xml docs/downloads.json docs/downloads-history.json
           git diff --cached --quiet || git commit -m "Update releases feed"
           git push

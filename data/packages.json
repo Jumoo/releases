@@ -60,6 +60,24 @@
     "githubRepo": "Jumoo/Jumoo.TranslationManager.AI"
   },
   {
+    "nugetId": "Jumoo.TranslationManager.CSV",
+    "title": "Translation Manager CSV",
+    "category": "Translation Connectors",
+    "githubRepo": "Jumoo/Jumoo.TranslationManager.CSV"
+  },
+  {
+    "nugetId": "Jumoo.TranslationManager.SmartCat",
+    "title": "Translation Manager SmartCat",
+    "category": "Translation Connectors",
+    "githubRepo": "Jumoo/Jumoo.TranslationManager.SmartCat"
+  },
+  {
+    "nugetId": "Jumoo.TranslationManager.Publicis",
+    "title": "Translation Manager Publicis",
+    "category": "Translation Connectors",
+    "githubRepo": "Jumoo/Jumoo.TranslationManager.Publicis"
+  },
+  {
     "nugetId": "Jumoo.TranslationManager.DeepL",
     "title": "Translation Manager DeepL",
     "category": "Translation Connectors",

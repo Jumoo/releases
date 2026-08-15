@@ -334,3 +334,163 @@ footer {
   color: var(--fg);
   font-weight: bold;
 }
+
+.stats-section {
+  margin-bottom: 1.25rem;
+}
+
+.stats-section > summary.stats-section-title {
+  font-size: 1.1rem;
+  color: var(--accent);
+  margin: 0;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  user-select: none;
+}
+
+.stats-section > summary.stats-section-title::-webkit-details-marker {
+  display: none;
+}
+
+.stats-section > summary.stats-section-title::before {
+  content: "▸";
+  display: inline-block;
+  font-size: 0.9em;
+  transition: transform 0.1s ease;
+}
+
+.stats-section[open] > summary.stats-section-title::before {
+  transform: rotate(90deg);
+}
+
+.stats-section > summary.stats-section-title:hover {
+  color: var(--fg);
+}
+
+.stats-section-body {
+  margin-top: 0.75rem;
+}
+
+.stats-section-subtitle {
+  color: var(--muted);
+  font-size: 0.85em;
+  margin: 0 0 1rem;
+}
+
+.big-counter {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+}
+
+.trivia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+}
+
+.trivia-card {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.75rem 1rem;
+  background: var(--bg-raised);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.trivia-value {
+  font-weight: bold;
+  font-size: 1.15rem;
+}
+
+.trivia-label {
+  color: var(--muted);
+  font-size: 0.8em;
+}
+
+.cadence-chart {
+  width: 100%;
+  max-height: 220px;
+  margin-bottom: 1.25rem;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+.stats-table th,
+.stats-table td {
+  text-align: left;
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.stats-table th {
+  color: var(--muted);
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.03em;
+}
+
+.sparkline-cell {
+  width: 150px;
+}
+
+.sparkline-placeholder {
+  color: var(--muted);
+  font-size: 0.8em;
+}
+
+.adoption-package {
+  margin-bottom: 1.25rem;
+}
+
+.adoption-package-title {
+  font-size: 0.95rem;
+  margin: 0 0 0.4rem;
+}
+
+.adoption-chart-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.gauge-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.gauge-chart-wrap {
+  position: relative;
+  width: 200px;
+  height: 100px;
+}
+
+.gauge-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.gauge-pct {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--pre-badge);
+}
+
+.gauge-caption {
+  color: var(--muted);
+  font-size: 0.85em;
+  max-width: 220px;
+}

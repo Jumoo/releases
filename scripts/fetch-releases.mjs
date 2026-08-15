@@ -75,6 +75,25 @@ function flattenDependencies(dependencyGroups) {
   return [...byId.values()];
 }
 
+// NuGet's search API (unlike the registration API) exposes download
+// counts: a package-level total plus a per-version breakdown. Both are
+// cumulative-to-date, not a live install count.
+async function fetchNugetDownloads(nugetId) {
+  const url = `https://azuresearch-usnc.nuget.org/query?q=packageid:${encodeURIComponent(nugetId)}&prerelease=true`;
+  try {
+    const result = await fetchJson(url);
+    const entry = result.data?.find((d) => d.id.toLowerCase() === nugetId.toLowerCase()) ?? result.data?.[0];
+    if (!entry) return null;
+    return {
+      totalDownloads: entry.totalDownloads ?? 0,
+      versions: (entry.versions ?? []).map((v) => ({ version: v.version, downloads: v.downloads ?? 0 })),
+    };
+  } catch (err) {
+    console.warn(`  NuGet downloads fetch failed for ${nugetId}: ${err.message}`);
+    return null;
+  }
+}
+
 async function fetchGithubReleases(repo) {
   const headers = { Accept: "application/vnd.github+json" };
   if (GH_TOKEN) headers.Authorization = `Bearer ${GH_TOKEN}`;
@@ -275,6 +294,47 @@ ${items}
 `;
 }
 
+async function buildDownloads(packages) {
+  const packagesOut = [];
+  for (const pkg of packages) {
+    const downloads = await fetchNugetDownloads(pkg.nugetId);
+    if (!downloads) continue;
+    packagesOut.push({
+      package: pkg.nugetId,
+      title: pkg.title || pkg.nugetId,
+      totalDownloads: downloads.totalDownloads,
+      versions: downloads.versions,
+    });
+  }
+  return packagesOut;
+}
+
+// Appends one row per package to the history log, but only once per UTC
+// day (the workflow runs every 6h; we don't want 4x redundant rows/day).
+async function updateDownloadsHistory(packagesDownloads) {
+  const historyPath = path.join(ROOT, "docs", "downloads-history.json");
+  let history = [];
+  try {
+    history = JSON.parse(await readFile(historyPath, "utf8"));
+  } catch {
+    // No history file yet - start fresh.
+  }
+
+  const today = new Date().toISOString().slice(0, 10); // YYYY-MM-DD (UTC)
+  const alreadyLogged = history.some((row) => row.date === today);
+  if (alreadyLogged) {
+    console.log(`Downloads history already has an entry for ${today}, skipping.`);
+    return history;
+  }
+
+  for (const pkg of packagesDownloads) {
+    history.push({ date: today, package: pkg.package, totalDownloads: pkg.totalDownloads });
+  }
+  await writeFile(historyPath, JSON.stringify(history, null, 2) + "\n", "utf8");
+  console.log(`Appended ${packagesDownloads.length} rows to ${historyPath} for ${today}`);
+  return history;
+}
+
 async function main() {
   const packages = await readPackages();
   const all = [];
@@ -293,6 +353,17 @@ async function main() {
   const outXml = path.join(ROOT, "docs", "feed.xml");
   await writeFile(outXml, buildFeedXml(all), "utf8");
   console.log(`Wrote feed to ${outXml}`);
+
+  const downloads = await buildDownloads(packages);
+  const outDownloads = path.join(ROOT, "docs", "downloads.json");
+  await writeFile(
+    outDownloads,
+    JSON.stringify({ generatedAt: new Date().toISOString(), packages: downloads }, null, 2) + "\n",
+    "utf8"
+  );
+  console.log(`Wrote downloads for ${downloads.length} packages to ${outDownloads}`);
+
+  await updateDownloadsHistory(downloads);
 }
 
 main().catch((err) => {
