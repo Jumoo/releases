@@ -147,7 +147,7 @@ function renderReleaseCadence(releases) {
     },
   });
 
-  // Per-package: days since last release, average gap between releases.
+  // Per-package: total releases, days since last release, average gap.
   const byPackage = groupByPackage(releases);
   const rows = byPackage.map((g) => {
     const sorted = [...g.releases].sort((a, b) => new Date(a.publishedAt) - new Date(b.publishedAt));
@@ -160,16 +160,25 @@ function renderReleaseCadence(releases) {
     }
     const averageGap = sorted.length > 1 ? Math.round(totalGap / (sorted.length - 1)) : 0;
 
-    return { title: g.title, daysSince, averageGap };
+    return { title: g.title, totalReleases: sorted.length, daysSince, averageGap };
   });
   rows.sort((a, b) => a.daysSince - b.daysSince);
 
+  // Headers are kept short (with title tooltips for the full meaning) so
+  // four columns still fit comfortably at the site's narrow max-width.
   const table = document.createElement("table");
   table.className = "stats-table";
   table.innerHTML = `
-    <thead><tr><th>Package</th><th>Days since last release</th><th>Average gap between releases</th></tr></thead>
+    <thead>
+      <tr>
+        <th>Package</th>
+        <th title="Total releases all-time">Releases</th>
+        <th title="Days since last release">Since last</th>
+        <th title="Average gap between releases, in days">Avg gap</th>
+      </tr>
+    </thead>
     <tbody>
-      ${rows.map((r) => `<tr><td>${escapeHtml(r.title)}</td><td>${r.daysSince}</td><td>${r.averageGap}</td></tr>`).join("")}
+      ${rows.map((r) => `<tr><td>${escapeHtml(r.title)}</td><td>${r.totalReleases}</td><td>${r.daysSince}</td><td>${r.averageGap}</td></tr>`).join("")}
     </tbody>
   `;
   el.appendChild(table);
