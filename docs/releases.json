@@ -5,10 +5,10 @@
     "category": "Translation Connectors",
     "repo": "Jumoo/Google.Connector",
     "version": "17.1.0-beta",
-    "publishedAt": "2026-08-14T15:10:56.883+00:00",
+    "publishedAt": "2026-08-14T15:09:48Z",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Google/17.1.0-beta",
-    "githubUrl": "https://github.com/Jumoo/Google.Connector/releases",
-    "notes": null,
+    "githubUrl": "https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0-beta",
+    "notes": "Beta release adding Cloud Translation v3 support and batch translation, on top of the existing v2 (Basic) API-key connector.\n\n## Added\n- Cloud Translation v3 (Advanced) support alongside the existing v2 API-key path — paste a Google Cloud service account JSON into the config page to switch a connector to v3, no settings migration needed. Existing API-key-only installs keep working unchanged.\n- Glossaries, model selection (NMT / Translation LLM), and regional/multi-regional endpoint selection — all v3-only.\n- Batch translation via `batchTranslateText`, backed by a configured Google Cloud Storage bucket. See [`BATCH-SETUP.md`](https://github.com/Jumoo/Google.Connector/blob/main/Jumoo.TranslationManager.Google/BATCH-SETUP.md) for the GCS/IAM setup this needs — genuinely fiddly, worth reading before enabling it.\n- \"Test connection\" and live batch-status \"Check now\" buttons in the backoffice, calling the connector's own API via a generated TypeScript client.\n- Language mapping and glossary-mapping editors in the config view.\n\n## Fixed\n- `CanTranslate` returned `false` for almost every real culture (compared two-letter codes against full culture names).\n- Language codes were truncated to two characters, breaking anything needing a region subtag (`zh-Hant`, `pt-BR`, etc).\n- The backoffice manifest's package alias was the connector's display name instead of its actual alias.\n- The config view bundled its own copy of Lit instead of the shared backoffice one.\n- Settings are now trimmed — a stray copy-pasted space in a bucket name produced an opaque error from Google.\n- Batch translation was sending an invalid `mime_type`, and several failure points logged nothing at all.\n\nFull changelog: [CHANGELOG.md](https://github.com/Jumoo/Google.Connector/blob/main/CHANGELOG.md)\n\nThis is a **beta** release — flag anything odd on the [issue tracker](https://github.com/Jumoo/Jumoo.TranslationManager.Issues).",
     "prerelease": true,
     "umbracoMajor": 17
   },
@@ -93,7 +93,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "18.1.0",
     "publishedAt": "2026-08-12T09:34:36Z",
@@ -187,10 +187,10 @@
     "category": "Translation Connectors",
     "repo": "Jumoo/Xliff.Connector",
     "version": "18.0.1",
-    "publishedAt": "2026-08-06T06:13:09.117+00:00",
+    "publishedAt": "2026-08-06T06:12:02Z",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Xliff/18.0.1",
-    "githubUrl": "https://github.com/Jumoo/Xliff.Connector/releases",
-    "notes": null,
+    "githubUrl": "https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.1",
+    "notes": "### Upgrading\r\n\r\n- **Re-tick \"Blank Targets\" if you use it.** The checkbox saved under a setting name the\r\n  connector never read, so it has never had any effect. It works now, which means the option\r\n  was not being applied before and needs ticking again.\r\n- **Split HTML and Remove Blank Values may display differently.** On a site that had never\r\n  saved connector settings, the config screen showed these as on while the connector ran\r\n  with them off. The screen now matches what a submit uses. Job processing is unchanged —\r\n  only the display was wrong.\r\n\r\n### Added\r\n\r\n- Umbraco 18 support — `net10.0`, the 18.0.0 Translation Manager packages, and a backoffice\r\n  client regenerated against the Umbraco 18 management API.\r\n- Repository standards: `LICENSE`, `README.md`, `CHANGELOG.md`, `SECURITY.md`,\r\n  `CODE_OF_CONDUCT.md`, `.editorconfig`, `global.json`, `Directory.Build.props`,\r\n  `GitVersion.yml`, dependabot, and issue and PR templates.\r\n- CI workflows — PR build, package build, release, and CodeQL. The package build runs the\r\n  client build before packing, so the produced package actually contains the backoffice\r\n  assets.\r\n- Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated\r\n  behind the `nuget` GitHub environment and authenticated with trusted publishing (OIDC)\r\n  rather than a stored API key.\r\n- `XliffConnectorOptions`, holding every connector setting, its default, and the parsing of\r\n  the delimited ones in one place.\r\n- Submitted jobs record the settings they were sent with, shown behind a cog in the pending\r\n  and submitted views.\r\n\r\n### Changed\r\n\r\n- `GetOptionsAsync` returns the effective settings — saved values with the connector defaults\r\n  filled in — rather than a partial dictionary with its own set of defaults.\r\n- Duplicate keys in `replacements` are now last-wins rather than throwing.\r\n- `Active()` returns true before `Reload()` has run, because the options object carries a\r\n  default folder. It previously returned false until the first reload.\r\n- \"Include Target Values\" only shows for XLIFF 2.1, where it applies.\r\n\r\n### Fixed\r\n\r\n- Connector settings are read from configuration rather than from the job's provider\r\n  properties, which nothing set client side and which therefore arrived empty.\r\n- The \"blank targets\" checkbox in the advanced config modal saved `blankTargets`, a key\r\n  nothing read. Existing installs need to re-tick it once.\r\n- Config view defaults contradicted the connector: `split` and `removeBlanks` showed as on\r\n  while the connector ran them off, and `targetMode` came back as an enum where the views\r\n  expect `\"\"`, `\"Blank\"` or `\"Source\"`.\r\n- The package manifest alias was set to the connector name rather than its alias.\r\n- `npm run format` failed on every file on Windows — prettier defaulted to LF line endings\r\n  against a CRLF working tree.\r\n- The entry point script had no cache-busting query string, so a browser could keep serving\r\n  a stale cached `xliff.js` after an upgrade. It's now requested as `xliff.js?v={version}`.\r\n\r\n**Full Changelog**: https://github.com/Jumoo/Xliff.Connector/blob/v18/main/CHANGELOG.md\r\n",
     "prerelease": false,
     "umbracoMajor": 18
   },
@@ -200,10 +200,10 @@
     "category": "Translation Connectors",
     "repo": "Jumoo/Xliff.Connector",
     "version": "17.0.1",
-    "publishedAt": "2026-08-05T17:05:37.21+00:00",
+    "publishedAt": "2026-08-05T16:59:23Z",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Xliff/17.0.1",
-    "githubUrl": "https://github.com/Jumoo/Xliff.Connector/releases",
-    "notes": null,
+    "githubUrl": "https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.1",
+    "notes": "A fix release for connector settings, which had drifted apart across the three places that\r\ndefined them, plus the first release built and published by the new CI pipeline.\r\n\r\n## ⚠️ Upgrading\r\n\r\n**Re-tick \"Blank Targets\" if you use it.** The checkbox in Advanced Settings saved under a\r\nsetting name the connector never read, so it has never had any effect. It now works — which\r\nmeans if you had it ticked, the option was not actually being applied, and you should tick\r\nit again and save.\r\n\r\n**Check your Split HTML and Remove Blank Values settings.** On a site that had never saved\r\nconnector settings, the config screen displayed these as *on* while the connector ran with\r\nthem *off*. What the screen shows now matches what a submit actually uses, so these may read\r\ndifferently to before. Nothing about how your jobs are processed has changed — only the\r\ndisplay was wrong.\r\n\r\n## Fixed\r\n\r\n- The **Blank Targets** option in Advanced Settings saved to `blankTargets`, while the\r\n  connector reads `blankTarget`. The option had no effect.\r\n- The config screen's defaults disagreed with the connector's. **Split HTML** and **Remove\r\n  Blank Values** displayed as on when the connector's defaults are off, only 9 of the 20\r\n  settings were covered, and **Target Mode** was returned in a form the dropdown could not\r\n  match, so it never pre-selected.\r\n- The backoffice package manifest used the connector's display name as its alias.\r\n\r\n## Added\r\n\r\n- **Submitted jobs now record the settings they were sent with.** A cog in the top right of\r\n  the XLIFF panel shows the format, folder, target mode, language mappings and every\r\n  formatting option that applied to that job. Jobs submitted before this release have no\r\n  record, so they show no cog and look exactly as they did.\r\n- The same cog on the pending view shows the options a job *will* be sent with.\r\n\r\n## Changed\r\n\r\n- Every connector setting now lives in one place, `XliffConnectorOptions`, which owns the\r\n  values, their defaults, and the parsing of the delimited ones (language mappings, text\r\n  replacements, inline codes). The settings were previously loaded and defaulted\r\n  independently in three places, which is how the mismatches above arose.\r\n- The config screen is handed the *effective* settings — what is saved, with the connector\r\n  defaults filled in for anything that is not — rather than a partial set.\r\n- Duplicate find-keys in **Replacements** now take the last value instead of throwing.\r\n\r\n## Build and repository\r\n\r\nNot user facing, but new in this release:\r\n\r\n- CI on every pull request and push, and a package build that produces a testable package\r\n  for each commit on `main`.\r\n- Releases publish to NuGet from a `v{version}` tag, authenticated with\r\n  [trusted publishing](https://learn.microsoft.com/en-us/nuget/nuget-org/trusted-publishing)\r\n  rather than a stored API key.\r\n- Standard repository files — `README`, `CHANGELOG`, `SECURITY`, `CODE_OF_CONDUCT`,\r\n  `LICENSE` (MPL-2.0), `.editorconfig`, issue and PR templates, and dependabot.\r\n- The package build now builds the backoffice client before packing. Previously nothing\r\n  guaranteed the published package contained the client assets.\r\n\r\n**Full changelog**: https://github.com/Jumoo/Xliff.Connector/compare/v17.0.0...v17.0.1\r\n",
     "prerelease": false,
     "umbracoMajor": 17
   },
@@ -249,7 +249,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "18.0.3",
     "publishedAt": "2026-07-22T11:24:02.67+00:00",
@@ -327,7 +327,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.11",
     "publishedAt": "2026-07-13T10:35:44.113+00:00",
@@ -470,7 +470,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "18.0.1",
     "publishedAt": "2026-07-08T10:05:04Z",
@@ -509,7 +509,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "18.0.0",
     "publishedAt": "2026-07-03T15:42:48.62+00:00",
@@ -626,7 +626,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.10",
     "publishedAt": "2026-06-25T16:19:44.693+00:00",
@@ -782,7 +782,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.9",
     "publishedAt": "2026-06-09T13:54:03.6+00:00",
@@ -808,7 +808,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.8",
     "publishedAt": "2026-06-09T09:51:11.72+00:00",
@@ -834,7 +834,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.7",
     "publishedAt": "2026-06-08T14:34:44.553+00:00",
@@ -899,7 +899,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.6",
     "publishedAt": "2026-05-15T10:21:24Z",
@@ -912,7 +912,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.5",
     "publishedAt": "2026-05-14T09:19:48.42+00:00",
@@ -938,7 +938,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.4",
     "publishedAt": "2026-05-12T13:30:36.81+00:00",
@@ -1029,7 +1029,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.3-rc",
     "publishedAt": "2026-05-01T15:45:55.547+00:00",
@@ -1081,7 +1081,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.2.4",
     "publishedAt": "2026-04-29T10:33:25.17+00:00",
@@ -1120,7 +1120,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.2",
     "publishedAt": "2026-04-23T13:51:19.27+00:00",
@@ -1159,7 +1159,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.1",
     "publishedAt": "2026-04-20T14:40:21Z",
@@ -1185,7 +1185,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.3.0",
     "publishedAt": "2026-04-14T10:37:29Z",
@@ -1276,7 +1276,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.1.3",
     "publishedAt": "2026-03-11T09:05:10.94+00:00",
@@ -1289,7 +1289,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.1.2",
     "publishedAt": "2026-03-10T15:00:43.627+00:00",
@@ -1341,7 +1341,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.1.1",
     "publishedAt": "2026-02-26T12:46:45Z",
@@ -1354,7 +1354,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.1.0",
     "publishedAt": "2026-02-25T13:54:31Z",
@@ -1393,7 +1393,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.1.0-rc1",
     "publishedAt": "2026-02-13T23:09:00Z",
@@ -1679,7 +1679,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.0.1",
     "publishedAt": "2025-12-11T15:33:35Z",
@@ -1692,7 +1692,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.0.0",
     "publishedAt": "2025-12-11T15:26:08Z",
@@ -1887,7 +1887,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.2.3",
     "publishedAt": "2025-11-25T14:15:25.7+00:00",
@@ -2043,7 +2043,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.0.0-rc4",
     "publishedAt": "2025-11-25T09:09:45.647+00:00",
@@ -2056,7 +2056,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.0.0-rc3",
     "publishedAt": "2025-11-20T11:52:52.737+00:00",
@@ -2238,7 +2238,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "17.0.0-rc1",
     "publishedAt": "2025-10-31T09:21:17.053+00:00",
@@ -2303,7 +2303,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.1.2",
     "publishedAt": "2025-10-20T16:04:09.6+00:00",
@@ -2316,7 +2316,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.1.1",
     "publishedAt": "2025-10-16T16:01:27Z",
@@ -2342,7 +2342,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.1.0",
     "publishedAt": "2025-10-15T12:18:57Z",
@@ -2433,7 +2433,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.2.2",
     "publishedAt": "2025-09-24T16:11:33Z",
@@ -2537,7 +2537,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.6",
     "publishedAt": "2025-09-08T12:53:15Z",
@@ -2615,7 +2615,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.5",
     "publishedAt": "2025-08-22T11:13:20Z",
@@ -2654,7 +2654,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.2.1",
     "publishedAt": "2025-08-08T10:25:50.543+00:00",
@@ -2719,7 +2719,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.2.0",
     "publishedAt": "2025-07-23T14:53:03Z",
@@ -2758,7 +2758,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.4",
     "publishedAt": "2025-07-21T13:01:59Z",
@@ -2810,7 +2810,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.3",
     "publishedAt": "2025-07-01T14:33:52Z",
@@ -2823,7 +2823,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.2",
     "publishedAt": "2025-06-26T10:10:35Z",
@@ -2836,7 +2836,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.9",
     "publishedAt": "2025-06-24T10:49:32.213+00:00",
@@ -2849,7 +2849,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.1",
     "publishedAt": "2025-06-24T10:46:11.407+00:00",
@@ -2901,7 +2901,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "16.0.0",
     "publishedAt": "2025-06-12T09:17:45Z",
@@ -3031,7 +3031,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.8",
     "publishedAt": "2025-05-14T13:39:22Z",
@@ -3161,7 +3161,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.6",
     "publishedAt": "2025-04-03T12:44:21Z",
@@ -3200,7 +3200,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.10",
     "publishedAt": "2025-03-28T15:12:30Z",
@@ -3226,7 +3226,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.4",
     "publishedAt": "2025-03-18T16:58:17Z",
@@ -3317,7 +3317,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.3",
     "publishedAt": "2025-02-18T10:56:41Z",
@@ -3330,7 +3330,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.2",
     "publishedAt": "2025-02-15T12:08:08Z",
@@ -3382,7 +3382,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.9",
     "publishedAt": "2025-01-20T15:19:34Z",
@@ -3395,7 +3395,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.1",
     "publishedAt": "2025-01-20T15:01:30Z",
@@ -3447,7 +3447,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.1.0",
     "publishedAt": "2024-12-11T13:03:48Z",
@@ -3655,7 +3655,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "15.0.0",
     "publishedAt": "2024-11-14T08:41:55.18+00:00",
@@ -3720,7 +3720,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.8",
     "publishedAt": "2024-10-30T08:42:01.237+00:00",
@@ -3772,7 +3772,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.7.4",
     "publishedAt": "2024-09-27T08:56:03.243+00:00",
@@ -3785,7 +3785,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "14.2.1",
     "publishedAt": "2024-09-25T13:55:40.547+00:00",
@@ -3811,7 +3811,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "14.2.0",
     "publishedAt": "2024-09-16T13:16:33Z",
@@ -3850,7 +3850,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.7",
     "publishedAt": "2024-09-10T19:55:59.82+00:00",
@@ -3863,7 +3863,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.6",
     "publishedAt": "2024-09-05T11:52:51.75+00:00",
@@ -3915,7 +3915,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.5",
     "publishedAt": "2024-06-27T11:24:17Z",
@@ -4032,7 +4032,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "14.0.0-preview001",
     "publishedAt": "2024-06-04T16:04:51Z",
@@ -4084,7 +4084,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.2.5",
     "publishedAt": "2024-05-29T13:19:04.353+00:00",
@@ -4110,7 +4110,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.2.4",
     "publishedAt": "2024-05-28T09:11:26.943+00:00",
@@ -4162,7 +4162,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.4",
     "publishedAt": "2024-05-24T08:18:20Z",
@@ -4422,7 +4422,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.3",
     "publishedAt": "2024-03-14T13:12:11Z",
@@ -4461,7 +4461,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.2",
     "publishedAt": "2024-03-11T16:02:13Z",
@@ -4474,7 +4474,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.7.3",
     "publishedAt": "2024-03-11T14:37:29Z",
@@ -4500,7 +4500,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.1",
     "publishedAt": "2024-02-23T11:24:21.777+00:00",
@@ -4552,7 +4552,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.1.0",
     "publishedAt": "2024-02-15T10:06:01Z",
@@ -4578,7 +4578,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.0.2",
     "publishedAt": "2024-02-12T15:31:55Z",
@@ -4591,7 +4591,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.0.1",
     "publishedAt": "2024-02-12T15:31:41Z",
@@ -4669,7 +4669,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.14",
     "publishedAt": "2024-02-01T12:21:19Z",
@@ -4682,7 +4682,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.7.2.1",
     "publishedAt": "2024-01-31T10:38:05.957+00:00",
@@ -4812,7 +4812,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.7.2",
     "publishedAt": "2024-01-15T12:03:13.573+00:00",
@@ -4825,7 +4825,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.2.3",
     "publishedAt": "2024-01-15T12:03:05.91+00:00",
@@ -4916,7 +4916,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.0.0",
     "publishedAt": "2023-12-14T12:11:45Z",
@@ -4955,7 +4955,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.0.0-rc3",
     "publishedAt": "2023-11-30T15:13:11.227+00:00",
@@ -4981,7 +4981,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "13.0.0-rc2",
     "publishedAt": "2023-11-27T16:33:54.323+00:00",
@@ -5033,7 +5033,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.2.1.1",
     "publishedAt": "2023-10-25T14:01:07.647+00:00",
@@ -5046,7 +5046,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.2.1",
     "publishedAt": "2023-10-25T10:47:12Z",
@@ -5098,7 +5098,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.2.0",
     "publishedAt": "2023-10-06T11:23:11Z",
@@ -5137,7 +5137,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.7.1",
     "publishedAt": "2023-10-04T14:49:55Z",
@@ -5176,7 +5176,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.2.0-rc1",
     "publishedAt": "2023-09-27T10:06:58Z",
@@ -5280,7 +5280,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.13",
     "publishedAt": "2023-08-10T07:11:40Z",
@@ -5293,7 +5293,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.6.2",
     "publishedAt": "2023-08-10T07:08:09Z",
@@ -5319,7 +5319,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.1.0",
     "publishedAt": "2023-08-10T07:05:39Z",
@@ -5449,7 +5449,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "12.0.2",
     "publishedAt": "2023-06-29T23:03:57.257+00:00",
@@ -5540,7 +5540,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.6.0",
     "publishedAt": "2023-06-07T08:35:42Z",
@@ -5566,7 +5566,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "11.2.0",
     "publishedAt": "2023-06-07T08:24:26Z",
@@ -5657,7 +5657,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.12",
     "publishedAt": "2023-05-02T08:41:31Z",
@@ -5735,7 +5735,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.5.0",
     "publishedAt": "2023-04-04T09:54:43Z",
@@ -5761,7 +5761,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "11.1.0",
     "publishedAt": "2023-03-29T11:13:33Z",
@@ -5917,7 +5917,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.4.1",
     "publishedAt": "2023-03-03T15:29:48.4+00:00",
@@ -5930,7 +5930,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "11.0.2",
     "publishedAt": "2023-03-03T15:08:57Z",
@@ -6112,7 +6112,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "11.0.0",
     "publishedAt": "2023-01-12T11:17:04Z",
@@ -6125,7 +6125,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.11",
     "publishedAt": "2023-01-12T11:16:44Z",
@@ -6138,7 +6138,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "11.0.1",
     "publishedAt": "2023-01-12T11:10:14Z",
@@ -6151,7 +6151,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.4.0",
     "publishedAt": "2023-01-12T10:54:19Z",
@@ -6320,7 +6320,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.10",
     "publishedAt": "2022-11-22T16:24:55Z",
@@ -6411,7 +6411,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.3.0",
     "publishedAt": "2022-10-27T10:25:47Z",
@@ -6424,7 +6424,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.9",
     "publishedAt": "2022-10-25T19:17:19Z",
@@ -6502,7 +6502,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.2.0",
     "publishedAt": "2022-09-26T12:55:11Z",
@@ -6554,7 +6554,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.1.0",
     "publishedAt": "2022-08-04T11:02:47Z",
@@ -6710,7 +6710,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.0.0",
     "publishedAt": "2022-06-16T13:32:18.583+00:00",
@@ -6749,7 +6749,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "10.0.0-beta1",
     "publishedAt": "2022-05-17T10:31:15.383+00:00",
@@ -6814,7 +6814,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.4.0",
     "publishedAt": "2022-04-25T17:33:53Z",
@@ -6840,7 +6840,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.3.1",
     "publishedAt": "2022-04-01T10:09:19.58+00:00",
@@ -6931,7 +6931,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.2.0",
     "publishedAt": "2022-02-21T14:15:58Z",
@@ -6957,7 +6957,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.8",
     "publishedAt": "2022-02-17T15:03:11Z",
@@ -6983,7 +6983,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.1.0",
     "publishedAt": "2022-02-03T12:03:23Z",
@@ -7022,7 +7022,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.7",
     "publishedAt": "2022-01-21T10:52:22Z",
@@ -7061,7 +7061,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.6",
     "publishedAt": "2022-01-10T14:09:18Z",
@@ -7087,7 +7087,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.0.6",
     "publishedAt": "2022-01-07T12:16:31Z",
@@ -7126,7 +7126,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.5",
     "publishedAt": "2021-12-01T14:46:36Z",
@@ -7152,7 +7152,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.0.4",
     "publishedAt": "2021-11-18T09:56:51Z",
@@ -7178,7 +7178,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.5-rc1",
     "publishedAt": "2021-11-10T15:42:46.023+00:00",
@@ -7230,7 +7230,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.4",
     "publishedAt": "2021-10-22T10:17:51Z",
@@ -7308,7 +7308,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.0.1",
     "publishedAt": "2021-10-04T11:54:32Z",
@@ -7334,7 +7334,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.3",
     "publishedAt": "2021-10-01T19:47:20Z",
@@ -7347,7 +7347,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "9.0.0",
     "publishedAt": "2021-09-29T14:48:24.027+00:00",
@@ -7399,7 +7399,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.2",
     "publishedAt": "2021-09-22T11:31:28Z",
@@ -7451,7 +7451,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.1",
     "publishedAt": "2021-09-06T16:10:05Z",
@@ -7490,7 +7490,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.11.0",
     "publishedAt": "2021-09-02T05:06:37Z",
@@ -7620,7 +7620,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.10.3",
     "publishedAt": "2021-07-29T11:29:39Z",
@@ -7698,7 +7698,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.10.2",
     "publishedAt": "2021-07-05T09:59:31Z",
@@ -7750,7 +7750,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.10.1",
     "publishedAt": "2021-06-08T15:52:58Z",
@@ -7763,7 +7763,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.10.0",
     "publishedAt": "2021-06-04T13:13:33Z",
@@ -7828,7 +7828,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.6",
     "publishedAt": "2021-05-05T10:37:37Z",
@@ -7841,7 +7841,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.5",
     "publishedAt": "2021-04-20T08:52:08Z",
@@ -7854,7 +7854,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.4",
     "publishedAt": "2021-04-14T15:07:06Z",
@@ -7958,7 +7958,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.3",
     "publishedAt": "2021-03-17T15:39:50Z",
@@ -7997,7 +7997,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.2",
     "publishedAt": "2021-03-08T16:15:32Z",
@@ -8023,7 +8023,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.1",
     "publishedAt": "2021-02-17T15:35:47Z",
@@ -8036,7 +8036,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.0",
     "publishedAt": "2021-02-01T16:05:29Z",
@@ -8062,7 +8062,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.8.3",
     "publishedAt": "2021-01-25T10:20:27Z",
@@ -8088,7 +8088,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.8.1",
     "publishedAt": "2021-01-11T12:15:38Z",
@@ -8127,7 +8127,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.9.0-rc",
     "publishedAt": "2020-12-16T12:31:11Z",
@@ -8205,7 +8205,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.8.0",
     "publishedAt": "2020-10-09T09:05:44Z",
@@ -8270,7 +8270,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.7.0.1",
     "publishedAt": "2020-09-23T11:55:59.237+00:00",
@@ -8309,7 +8309,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.7.0",
     "publishedAt": "2020-09-10T16:13:03Z",
@@ -8361,7 +8361,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.7.0-rc",
     "publishedAt": "2020-08-26T10:00:47Z",
@@ -8374,7 +8374,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.6.3",
     "publishedAt": "2020-08-20T13:20:58Z",
@@ -8452,7 +8452,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.6.2",
     "publishedAt": "2020-06-03T10:41:13Z",
@@ -8491,7 +8491,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.6.1.1",
     "publishedAt": "2020-05-14T14:09:12.4+00:00",
@@ -8517,7 +8517,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.6.1",
     "publishedAt": "2020-05-10T20:26:38.003+00:00",
@@ -8556,7 +8556,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.6.0",
     "publishedAt": "2020-04-21T15:20:53.12+00:00",
@@ -8634,7 +8634,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.5.1",
     "publishedAt": "2020-03-19T11:35:47.763+00:00",
@@ -8673,7 +8673,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.5.0.1",
     "publishedAt": "2020-03-03T15:09:11.537+00:00",
@@ -8712,7 +8712,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.5.0",
     "publishedAt": "2020-02-14T16:17:59.16+00:00",
@@ -8777,7 +8777,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.4.3",
     "publishedAt": "2020-01-29T21:48:05.787+00:00",
@@ -8816,7 +8816,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.4.2",
     "publishedAt": "2020-01-23T11:00:40.627+00:00",
@@ -8842,7 +8842,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.4.1",
     "publishedAt": "2020-01-06T15:32:41.87+00:00",
@@ -8881,7 +8881,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.4.0",
     "publishedAt": "2019-12-13T01:45:33.087+00:00",
@@ -8985,7 +8985,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.2.4",
     "publishedAt": "2019-10-21T10:20:30.84+00:00",
@@ -9024,7 +9024,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.2.3",
     "publishedAt": "2019-09-30T10:32:14.957+00:00",
@@ -9050,7 +9050,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.2.2",
     "publishedAt": "2019-09-27T11:14:30.17+00:00",
@@ -9115,7 +9115,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.2.0",
     "publishedAt": "2019-09-16T11:42:36.337+00:00",
@@ -9167,7 +9167,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.2.0-beta2",
     "publishedAt": "2019-08-28T09:32:36.14+00:00",
@@ -9193,7 +9193,7 @@
   {
     "package": "uSync.Complete",
     "title": "uSync Complete",
-    "category": "",
+    "category": "uSync Addon",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.2.0-beta1",
     "publishedAt": "2019-08-08T08:30:03.883+00:00",
