@@ -6,10 +6,29 @@
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
       <title>Translation Manager Google 17.1.0-beta</title>
-      <link>https://github.com/Jumoo/Google.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases</guid>
-      <pubDate>Fri, 14 Aug 2026 15:10:56 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0-beta</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0-beta</guid>
+      <pubDate>Fri, 14 Aug 2026 15:09:48 GMT</pubDate>
+      <description><![CDATA[Beta release adding Cloud Translation v3 support and batch translation, on top of the existing v2 (Basic) API-key connector.
+
+## Added
+- Cloud Translation v3 (Advanced) support alongside the existing v2 API-key path — paste a Google Cloud service account JSON into the config page to switch a connector to v3, no settings migration needed. Existing API-key-only installs keep working unchanged.
+- Glossaries, model selection (NMT / Translation LLM), and regional/multi-regional endpoint selection — all v3-only.
+- Batch translation via `batchTranslateText`, backed by a configured Google Cloud Storage bucket. See [`BATCH-SETUP.md`](https://github.com/Jumoo/Google.Connector/blob/main/Jumoo.TranslationManager.Google/BATCH-SETUP.md) for the GCS/IAM setup this needs — genuinely fiddly, worth reading before enabling it.
+- "Test connection" and live batch-status "Check now" buttons in the backoffice, calling the connector's own API via a generated TypeScript client.
+- Language mapping and glossary-mapping editors in the config view.
+
+## Fixed
+- `CanTranslate` returned `false` for almost every real culture (compared two-letter codes against full culture names).
+- Language codes were truncated to two characters, breaking anything needing a region subtag (`zh-Hant`, `pt-BR`, etc).
+- The backoffice manifest's package alias was the connector's display name instead of its actual alias.
+- The config view bundled its own copy of Lit instead of the shared backoffice one.
+- Settings are now trimmed — a stray copy-pasted space in a bucket name produced an opaque error from Google.
+- Batch translation was sending an invalid `mime_type`, and several failure points logged nothing at all.
+
+Full changelog: [CHANGELOG.md](https://github.com/Jumoo/Google.Connector/blob/main/CHANGELOG.md)
+
+This is a **beta** release — flag anything odd on the [issue tracker](https://github.com/Jumoo/Jumoo.TranslationManager.Issues).]]></description>
     </item>
     <item>
       <title>Translation Manager 18.1.1</title>
@@ -279,17 +298,129 @@ Not yet published to NuGet — this tag marks the source at release time; packag
     </item>
     <item>
       <title>Translation Manager Xliff 18.0.1</title>
-      <link>https://github.com/Jumoo/Xliff.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases</guid>
-      <pubDate>Thu, 06 Aug 2026 06:13:09 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.1</guid>
+      <pubDate>Thu, 06 Aug 2026 06:12:02 GMT</pubDate>
+      <description><![CDATA[### Upgrading
+
+- **Re-tick "Blank Targets" if you use it.** The checkbox saved under a setting name the
+  connector never read, so it has never had any effect. It works now, which means the option
+  was not being applied before and needs ticking again.
+- **Split HTML and Remove Blank Values may display differently.** On a site that had never
+  saved connector settings, the config screen showed these as on while the connector ran
+  with them off. The screen now matches what a submit uses. Job processing is unchanged —
+  only the display was wrong.
+
+### Added
+
+- Umbraco 18 support — `net10.0`, the 18.0.0 Translation Manager packages, and a backoffice
+  client regenerated against the Umbraco 18 management API.
+- Repository standards: `LICENSE`, `README.md`, `CHANGELOG.md`, `SECURITY.md`,
+  `CODE_OF_CONDUCT.md`, `.editorconfig`, `global.json`, `Directory.Build.props`,
+  `GitVersion.yml`, dependabot, and issue and PR templates.
+- CI workflows — PR build, package build, release, and CodeQL. The package build runs the
+  client build before packing, so the produced package actually contains the backoffice
+  assets.
+- Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated
+  behind the `nuget` GitHub environment and authenticated with trusted publishing (OIDC)
+  rather than a stored API key.
+- `XliffConnectorOptions`, holding every connector setting, its default, and the parsing of
+  the delimited ones in one place.
+- Submitted jobs record the settings they were sent with, shown behind a cog in the pending
+  and submitted views.
+
+### Changed
+
+- `GetOptionsAsync` returns the effective settings — saved values with the connector defaults
+  filled in — rather than a partial dictionary with its own set of defaults.
+- Duplicate keys in `replacements` are now last-wins rather than throwing.
+- `Active()` returns true before `Reload()` has run, because the options object carries a
+  default folder. It previously returned false until the first reload.
+- "Include Target Values" only shows for XLIFF 2.1, where it applies.
+
+### Fixed
+
+- Connector settings are read from configuration rather than from the job's provider
+  properties, which nothing set client side and which therefore arrived empty.
+- The "blank targets" checkbox in the advanced config modal saved `blankTargets`, a key
+  nothing read. Existing installs need to re-tick it once.
+- Config view defaults contradicted the connector: `split` and `removeBlanks` showed as on
+  while the connector ran them off, and `targetMode` came back as an enum where the views
+  expect `""`, `"Blank"` or `"Source"`.
+- The package manifest alias was set to the connector name rather than its alias.
+- `npm run format` failed on every file on Windows — prettier defaulted to LF line endings
+  against a CRLF working tree.
+- The entry point script had no cache-busting query string, so a browser could keep serving
+  a stale cached `xliff.js` after an upgrade. It's now requested as `xliff.js?v={version}`.
+
+**Full Changelog**: https://github.com/Jumoo/Xliff.Connector/blob/v18/main/CHANGELOG.md
+]]></description>
     </item>
     <item>
       <title>Translation Manager Xliff 17.0.1</title>
-      <link>https://github.com/Jumoo/Xliff.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases</guid>
-      <pubDate>Wed, 05 Aug 2026 17:05:37 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.1</guid>
+      <pubDate>Wed, 05 Aug 2026 16:59:23 GMT</pubDate>
+      <description><![CDATA[A fix release for connector settings, which had drifted apart across the three places that
+defined them, plus the first release built and published by the new CI pipeline.
+
+## ⚠️ Upgrading
+
+**Re-tick "Blank Targets" if you use it.** The checkbox in Advanced Settings saved under a
+setting name the connector never read, so it has never had any effect. It now works — which
+means if you had it ticked, the option was not actually being applied, and you should tick
+it again and save.
+
+**Check your Split HTML and Remove Blank Values settings.** On a site that had never saved
+connector settings, the config screen displayed these as *on* while the connector ran with
+them *off*. What the screen shows now matches what a submit actually uses, so these may read
+differently to before. Nothing about how your jobs are processed has changed — only the
+display was wrong.
+
+## Fixed
+
+- The **Blank Targets** option in Advanced Settings saved to `blankTargets`, while the
+  connector reads `blankTarget`. The option had no effect.
+- The config screen's defaults disagreed with the connector's. **Split HTML** and **Remove
+  Blank Values** displayed as on when the connector's defaults are off, only 9 of the 20
+  settings were covered, and **Target Mode** was returned in a form the dropdown could not
+  match, so it never pre-selected.
+- The backoffice package manifest used the connector's display name as its alias.
+
+## Added
+
+- **Submitted jobs now record the settings they were sent with.** A cog in the top right of
+  the XLIFF panel shows the format, folder, target mode, language mappings and every
+  formatting option that applied to that job. Jobs submitted before this release have no
+  record, so they show no cog and look exactly as they did.
+- The same cog on the pending view shows the options a job *will* be sent with.
+
+## Changed
+
+- Every connector setting now lives in one place, `XliffConnectorOptions`, which owns the
+  values, their defaults, and the parsing of the delimited ones (language mappings, text
+  replacements, inline codes). The settings were previously loaded and defaulted
+  independently in three places, which is how the mismatches above arose.
+- The config screen is handed the *effective* settings — what is saved, with the connector
+  defaults filled in for anything that is not — rather than a partial set.
+- Duplicate find-keys in **Replacements** now take the last value instead of throwing.
+
+## Build and repository
+
+Not user facing, but new in this release:
+
+- CI on every pull request and push, and a package build that produces a testable package
+  for each commit on `main`.
+- Releases publish to NuGet from a `v{version}` tag, authenticated with
+  [trusted publishing](https://learn.microsoft.com/en-us/nuget/nuget-org/trusted-publishing)
+  rather than a stored API key.
+- Standard repository files — `README`, `CHANGELOG`, `SECURITY`, `CODE_OF_CONDUCT`,
+  `LICENSE` (MPL-2.0), `.editorconfig`, issue and PR templates, and dependabot.
+- The package build now builds the backoffice client before packing. Previously nothing
+  guaranteed the published package contained the client assets.
+
+**Full changelog**: https://github.com/Jumoo/Xliff.Connector/compare/v17.0.0...v17.0.1
+]]></description>
     </item>
     <item>
       <title>Translation Manager Microsoft 17.1.0-rc1</title>
