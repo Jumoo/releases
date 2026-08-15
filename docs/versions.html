@@ -3,39 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Jumoo Releases</title>
+  <title>Supported versions — Jumoo Releases</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="alternate" type="application/rss+xml" title="Jumoo Releases" href="feed.xml" />
 </head>
 <body>
   <header>
     <nav class="site-nav site-nav-top">
       <a href="https://changes.jumoo.co.uk">changes</a>
-      <a href="https://releases.jumoo.co.uk" class="current">releases</a>
-      <a href="versions.html">versions</a>
+      <a href="https://releases.jumoo.co.uk">releases</a>
+      <a href="versions.html" class="current">versions</a>
     </nav>
-    <h1>Jumoo Releases</h1>
-    <p class="subtitle">Latest NuGet package releases across Jumoo projects</p>
-    <a class="rss-link" href="feed.xml">RSS feed</a>
+    <p class="back-link"><a href="index.html">&larr; All packages</a></p>
+    <h1>Supported versions</h1>
+    <p class="subtitle">Highest release per supported major version, for each package</p>
   </header>
 
   <main id="feed">
-    <p id="status">Loading releases…</p>
+    <p id="status">Loading versions…</p>
   </main>
 
   <footer>
     <p>Generated automatically from NuGet and GitHub release data.</p>
     <nav class="site-nav">
       <a href="https://changes.jumoo.co.uk">changes</a>
-      <a href="https://releases.jumoo.co.uk" class="current">releases</a>
-      <a href="versions.html">versions</a>
+      <a href="https://releases.jumoo.co.uk">releases</a>
+      <a href="versions.html" class="current">versions</a>
     </nav>
   </footer>
 
   <script src="common.js"></script>
-  <script src="app.js"></script>
+  <script src="versions.js"></script>
 </body>
 </html>

@@ -54,10 +54,25 @@ async function fetchNugetVersions(nugetId) {
         version: catalogEntry.version,
         published: catalogEntry.published,
         nugetUrl: `https://www.nuget.org/packages/${nugetId}/${catalogEntry.version}`,
+        dependencies: flattenDependencies(catalogEntry.dependencyGroups),
       });
     }
   }
   return entries;
+}
+
+// NuGet's registration payload already includes each version's dependency
+// groups (one per target framework) inline in catalogEntry - no extra API
+// call needed. Flatten to a de-duped {id, range} list across frameworks.
+function flattenDependencies(dependencyGroups) {
+  const byId = new Map();
+  for (const group of dependencyGroups ?? []) {
+    for (const dep of group.dependencies ?? []) {
+      if (!dep.id || byId.has(dep.id.toLowerCase())) continue;
+      byId.set(dep.id.toLowerCase(), { id: dep.id, range: dep.range });
+    }
+  }
+  return [...byId.values()];
 }
 
 async function fetchGithubReleases(repo) {
@@ -115,8 +130,111 @@ async function buildReleases(pkg) {
       githubUrl: gh?.htmlUrl ?? `https://github.com/${pkg.githubRepo}/releases`,
       notes: gh?.body ?? null,
       prerelease: gh?.prerelease ?? nv.version.includes("-"),
+      dependencies: nv.dependencies,
     };
   });
+}
+
+function majorOf(version) {
+  return parseInt(version.split(".")[0], 10) || 0;
+}
+
+// Compares two semver-ish version strings, matching docs/common.js's rules.
+function compareVersions(a, b) {
+  const [aMain, aPre] = a.split("-");
+  const [bMain, bPre] = b.split("-");
+  const aParts = aMain.split(".").map(Number);
+  const bParts = bMain.split(".").map(Number);
+
+  for (let i = 0; i < Math.max(aParts.length, bParts.length); i++) {
+    const diff = (aParts[i] || 0) - (bParts[i] || 0);
+    if (diff !== 0) return diff;
+  }
+  if (aPre && !bPre) return -1;
+  if (!aPre && bPre) return 1;
+  if (aPre && bPre) return aPre.localeCompare(bPre);
+  return 0;
+}
+
+// NuGet dependency ranges look like "[17.6.1, )", "[18.1.0]", or a bare
+// "1.0.0" (meaning >= 1.0.0). Extract the lower-bound version.
+function parseLowerBound(range) {
+  if (!range) return null;
+  const bracket = range.trim().match(/^[\[(]\s*([^,\])]*)/);
+  const v = bracket ? bracket[1].trim() : range.trim();
+  return v || null;
+}
+
+function findNearestVersion(releases, target) {
+  if (!releases || releases.length === 0) return null;
+  const sorted = [...releases].sort((a, b) => compareVersions(a.version, b.version));
+  let best = null;
+  for (const r of sorted) {
+    if (compareVersions(r.version, target) <= 0) best = r;
+  }
+  return best ?? sorted[0];
+}
+
+// Determines the Umbraco major version each release actually targets.
+// Package majors don't always track Umbraco's own numbering (e.g.
+// uSync.Hangfire is versioned independently) - but the release's NuGet
+// dependencies do reveal compatibility:
+//   1. A direct dependency on an Umbraco.Cms.* package - use its version.
+//   2. A dependency on another package we track (e.g. uSync.Complete ->
+//      uSync) - resolve through that package's own release, recursively.
+//   3. Otherwise, fall back to the release's own version major (the
+//      existing behaviour, correct for packages like uSync that already
+//      version themselves to match Umbraco).
+function resolveUmbracoMajors(releases, packages) {
+  const trackedIds = new Set(packages.map((p) => p.nugetId.toLowerCase()));
+  const byPackageVersion = new Map();
+  const byPackage = new Map();
+  for (const r of releases) {
+    const pkgKey = r.package.toLowerCase();
+    byPackageVersion.set(`${pkgKey}@${r.version}`, r);
+    if (!byPackage.has(pkgKey)) byPackage.set(pkgKey, []);
+    byPackage.get(pkgKey).push(r);
+  }
+
+  const memo = new Map();
+
+  function resolve(release, depth) {
+    const key = `${release.package.toLowerCase()}@${release.version}`;
+    if (memo.has(key)) return memo.get(key);
+    const selfMajor = majorOf(release.version);
+    if (depth > 6) return selfMajor;
+    memo.set(key, selfMajor); // tentative, guards against dependency cycles
+
+    let result = selfMajor;
+    const deps = release.dependencies ?? [];
+    const umbracoDep = deps.find((d) => /^umbraco\.cms/i.test(d.id));
+    if (umbracoDep) {
+      const lower = parseLowerBound(umbracoDep.range);
+      if (lower) result = majorOf(lower);
+    } else {
+      const hopDep = deps.find(
+        (d) => trackedIds.has(d.id.toLowerCase()) && d.id.toLowerCase() !== release.package.toLowerCase()
+      );
+      if (hopDep) {
+        const lower = parseLowerBound(hopDep.range);
+        if (lower) {
+          const targetKey = `${hopDep.id.toLowerCase()}@${lower}`;
+          const target =
+            byPackageVersion.get(targetKey) ??
+            findNearestVersion(byPackage.get(hopDep.id.toLowerCase()), lower);
+          if (target) result = resolve(target, depth + 1);
+        }
+      }
+    }
+
+    memo.set(key, result);
+    return result;
+  }
+
+  for (const r of releases) {
+    r.umbracoMajor = resolve(r, 0);
+    delete r.dependencies;
+  }
 }
 
 function toRssItem(release) {
@@ -165,6 +283,7 @@ async function main() {
     all.push(...releases);
   }
 
+  resolveUmbracoMajors(all, packages);
   all.sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
 
   const outJson = path.join(ROOT, "docs", "releases.json");

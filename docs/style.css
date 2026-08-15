@@ -100,6 +100,43 @@ main {
   margin-top: 0;
 }
 
+.category-group {
+  margin: 1.5rem 0 0.5rem;
+}
+
+.category-group:first-child {
+  margin-top: 0;
+}
+
+.category-group > summary.category-heading {
+  margin: 0 0 0.5rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  user-select: none;
+}
+
+.category-group > summary.category-heading::-webkit-details-marker {
+  display: none;
+}
+
+.category-group > summary.category-heading::before {
+  content: "▸";
+  display: inline-block;
+  font-size: 0.9em;
+  transition: transform 0.1s ease;
+}
+
+.category-group[open] > summary.category-heading::before {
+  transform: rotate(90deg);
+}
+
+.category-group > summary.category-heading:hover {
+  color: var(--accent);
+}
+
 .package-card {
   display: flex;
   align-items: baseline;
@@ -207,6 +244,61 @@ main {
   font-family: inherit;
 }
 
+.version-group {
+  margin-bottom: 1.4rem;
+}
+
+.version-group-name {
+  display: block;
+  font-weight: bold;
+  color: var(--accent);
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.version-group-name:hover {
+  text-decoration: underline;
+}
+
+.version-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.version-chip {
+  display: inline-block;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.25rem 0.55rem;
+  font-size: 0.85em;
+  background: var(--bg-raised);
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.version-chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.version-chip-pre {
+  color: var(--pre-badge);
+  border-color: var(--pre-badge);
+}
+
+.version-chip-eol {
+  color: var(--muted);
+  border-color: var(--border);
+  opacity: 0.45;
+}
+
+.version-chip-eol:hover {
+  opacity: 0.75;
+  border-color: var(--muted);
+  color: var(--muted);
+}
+
 footer {
   max-width: 640px;
   margin: 0 auto;
@@ -220,6 +312,13 @@ footer {
   display: flex;
   justify-content: center;
   gap: 1rem;
+}
+
+.site-nav-top {
+  justify-content: flex-end;
+  gap: 0.85rem;
+  margin: 0 0 0.75rem;
+  font-size: 0.8em;
 }
 
 .site-nav a {

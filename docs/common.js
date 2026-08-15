@@ -140,6 +140,56 @@ function groupByPackage(releases) {
     .sort((a, b) => new Date(b.latest.publishedAt) - new Date(a.latest.publishedAt));
 }
 
+// Extracts the major version number from a version string ("18.1.0" -> 18).
+function majorOf(version) {
+  return parseInt(version.split(".")[0], 10) || 0;
+}
+
+// The Umbraco major a release actually targets. Most packages version
+// themselves to match Umbraco directly, but some (e.g. uSync.Hangfire)
+// don't - for those, fetch-releases.mjs resolves the real Umbraco major
+// from NuGet dependency data and stores it as `umbracoMajor`. Fall back
+// to the release's own version major for data fetched before that existed.
+function effectiveMajor(release) {
+  return release.umbracoMajor ?? majorOf(release.version);
+}
+
+// Given one package's release list, returns the highest-versioned release
+// for each (Umbraco-compatible) major version, sorted ascending by major
+// (e.g. v13.4, v14.5, v16.5 for a package that skipped a major).
+function highestPerMajor(releases) {
+  const byMajor = new Map();
+  for (const r of releases) {
+    const m = effectiveMajor(r);
+    const current = byMajor.get(m);
+    if (!current || compareVersions(r.version, current.version) > 0) {
+      byMajor.set(m, r);
+    }
+  }
+  return [...byMajor.entries()]
+    .sort((a, b) => a[0] - b[0])
+    .map(([, r]) => r);
+}
+
+async function fetchEol() {
+  try {
+    const res = await fetch("eol.json", { cache: "no-store" });
+    if (!res.ok) return {};
+    return res.json();
+  } catch {
+    return {};
+  }
+}
+
+// A major version is supported unless eol.json has an entry for it with
+// an "eol" date that has already passed. Majors with no entry (or a null
+// eol) are treated as supported.
+function isMajorSupported(major, eol) {
+  const entry = eol[String(major)];
+  if (!entry || !entry.eol) return true;
+  return new Date(entry.eol).getTime() >= Date.now();
+}
+
 // Buckets package groups (from groupByPackage) by category, each bucket
 // sorted by its most recently released package; categories sorted the
 // same way, except the uncategorized bucket (empty category) always
