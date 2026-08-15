@@ -147,29 +147,29 @@ function renderReleaseCadence(releases) {
     },
   });
 
-  // Per-package: days since last release, longest gap.
+  // Per-package: days since last release, average gap between releases.
   const byPackage = groupByPackage(releases);
   const rows = byPackage.map((g) => {
     const sorted = [...g.releases].sort((a, b) => new Date(a.publishedAt) - new Date(b.publishedAt));
     const lastDate = new Date(sorted[sorted.length - 1].publishedAt);
     const daysSince = Math.floor((Date.now() - lastDate.getTime()) / 86400000);
 
-    let longestGap = 0;
+    let totalGap = 0;
     for (let i = 1; i < sorted.length; i++) {
-      const gap = (new Date(sorted[i].publishedAt) - new Date(sorted[i - 1].publishedAt)) / 86400000;
-      if (gap > longestGap) longestGap = Math.round(gap);
+      totalGap += (new Date(sorted[i].publishedAt) - new Date(sorted[i - 1].publishedAt)) / 86400000;
     }
+    const averageGap = sorted.length > 1 ? Math.round(totalGap / (sorted.length - 1)) : 0;
 
-    return { title: g.title, daysSince, longestGap };
+    return { title: g.title, daysSince, averageGap };
   });
   rows.sort((a, b) => a.daysSince - b.daysSince);
 
   const table = document.createElement("table");
   table.className = "stats-table";
   table.innerHTML = `
-    <thead><tr><th>Package</th><th>Days since last release</th><th>Longest gap ever</th></tr></thead>
+    <thead><tr><th>Package</th><th>Days since last release</th><th>Average gap between releases</th></tr></thead>
     <tbody>
-      ${rows.map((r) => `<tr><td>${escapeHtml(r.title)}</td><td>${r.daysSince}</td><td>${r.longestGap}</td></tr>`).join("")}
+      ${rows.map((r) => `<tr><td>${escapeHtml(r.title)}</td><td>${r.daysSince}</td><td>${r.averageGap}</td></tr>`).join("")}
     </tbody>
   `;
   el.appendChild(table);
