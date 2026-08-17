@@ -1,5 +1,44 @@
 [
   {
+    "package": "Jumoo.TranslationManager.CSV",
+    "title": "CSV Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CSV",
+    "version": "18.0.0",
+    "publishedAt": "2026-08-17T10:44:25Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CSV/18.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v18.0.0",
+    "notes": "Umbraco 18 release.\n\nAdds repository standards (LICENSE, CHANGELOG, SECURITY, CODE_OF_CONDUCT, CLAUDE.md,\neditorconfig, global.json, Directory.Build.props, GitVersion.yml) and CI/CD workflows\n(PR build, package build, release, CodeQL), matching the conventions used across\nJumoo's other Translation Manager connectors.\n\nSee [CHANGELOG.md](https://github.com/Jumoo/Jumoo.TranslationManager.CSV/blob/v18/main/CHANGELOG.md) for details.",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager.CSV",
+    "title": "CSV Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CSV",
+    "version": "18.0.0-beta1",
+    "publishedAt": "2026-08-17T10:32:41.1+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CSV/18.0.0-beta1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "version": "17.3.7",
+    "publishedAt": "2026-08-17T09:39:43Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/17.3.7",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.3.7",
+    "notes": "## Release\n\n- v17.3.7 build files (package version bumps)\n\n## Fixes\n\n- Fix discarded save-attempt results across remaining serializers (#1041)\n- Fix silently discarded save failures in Language/DictionaryItem/Webhook serializers (#1039)\n- Save blueprints via `SaveBlueprint` on the bulk save path (#1037)\n- Fix: move property out of group on import (#1009, #1010)\n\n## Performance\n\n- Use new `Lock` & make internal/private classes sealed to avoid virtual dispatch (#998)\n- Avoid some unneeded dictionary operations (#997)\n\n## Dependencies\n\n- Bump postcss from 8.5.15 to 8.5.26 in /uSync.History/history-client (#1023)\n- Bump fast-uri in /uSync.Backoffice.Management.Client/usync-assets (#1021, #1008)\n- Bump ws from 7.5.10 to 7.5.11 in /uSync.History/history-client (#995)\n- Bump ws in /uSync.Backoffice.Management.Client/usync-assets (#1013)\n- Bump @hey-api/openapi-ts in /uSync.History/history-client (#978)\n- Bump js-yaml and @hey-api/openapi-ts (#1011)\n- Bump linkify-it in /uSync.Backoffice.Management.Client/usync-assets (#1007)\n- Bump brace-expansion in /uSync.Backoffice.Management.Client/usync-assets (#999)\n\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.3.6...v17.3.7\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.Google",
     "title": "Google Connector",
     "category": "Translation Connectors",
@@ -14149,10 +14188,10 @@
     "category": "",
     "repo": "KevinJump/uSync",
     "version": "9.1.0",
-    "publishedAt": "2022-02-03T12:02:12Z",
+    "publishedAt": "2022-02-03T12:01:04.693+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync/9.1.0",
-    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v9.1.0",
-    "notes": "This is a major minor release of uSync that moves the code base to multi-targeting dotnet 5 and 6 . we have made this change to smooth the way to supporting both Umbraco 9 (.net 5) and Umbraco 10 (.net 6) within the same package.\r\n\r\n(Milestone : https://github.com/KevinJump/uSync/milestone/8?closed=1) \r\n\r\n## Features\r\n - #338 - Multi-target package (Umbraco 10 prep)\r\n - Migrate soon to be obsolete `AddUnique` to `AddSingleton` (Umbraco 9.3 prep)\r\n\r\n## Fixes\r\n- Remove history settings\r\n- Consistent line endings in config files, (fixes false positives if you compare uSync files generated on windows and Linux)\r\n- #337 Ensure we parsing of path variable works in all cultures\r\n- #335 Ensure items with same name but different location in tree don't overwrite uSync files.\r\n\r\n---\r\n\r\n# Get uSync \r\nusync 9 is distributed as a nuget package and can be added to your site in a couple of ways. \r\n\r\n\r\n### via dotnet add\r\nvia a command line you can add uSync \r\n```\r\ndotnet add package uSync  --version 9.1.0\r\n```\r\n\r\n### as a package reference \r\nYou can add the dependency directly to your projects .csproj file. \r\n```xml\r\n<ItemGroup>\r\n  <PackageReference Include=\"uSync\" Version=\"9.1.0\" />\r\n</ItemGroup>\r\n```\r\n\r\n### via Visual Studio package manager console\r\nIf you are old school . install-package still works \r\n```\r\ninstall-package uSync -version 9.1.0.\r\n```\r\n\r\n\r\n",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases",
+    "notes": null,
     "prerelease": false,
     "umbracoMajor": 9
   },
