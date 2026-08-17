@@ -5,7 +5,7 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
-      <title>Translation Manager Google 17.1.0-beta</title>
+      <title>Google Connector 17.1.0-beta</title>
       <link>https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0-beta</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0-beta</guid>
       <pubDate>Fri, 14 Aug 2026 15:09:48 GMT</pubDate>
@@ -99,27 +99,7 @@ Published to NuGet.]]></description>
 **Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/blob/v17/main/CHANGELOG.md]]></description>
     </item>
     <item>
-      <title>Translation Manager LanguageWire 17.0.0-rc1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.0.0-rc1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.0.0-rc1</guid>
-      <pubDate>Thu, 13 Aug 2026 10:42:16 GMT</pubDate>
-      <description><![CDATA[First release candidate for the Umbraco 17 / Translation Manager v17 line.
-
-See [CHANGELOG.md](https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/blob/v17/main/CHANGELOG.md#1700) for details.
-
-## Highlights
-
-- Umbraco 17 (`net10.0`) support, with a backoffice client rewritten in Lit/TypeScript/Vite,
-  replacing the old AngularJS `App_Plugins` UI.
-- Repository brought up to Jumoo's standard release scaffolding: docs, CI/CD (PR build,
-  package build, tag-triggered NuGet release via trusted publishing, CodeQL), dependabot.
-- Project and client code moved into `src/Jumoo.TranslationManager.GlobalLink/`.
-
-This is a release candidate - please test against a real Umbraco 17 site and GlobalLink
-account before relying on it in production.]]></description>
-    </item>
-    <item>
-      <title>Translation Manager GlobalLink 17.0.0-rc1</title>
+      <title>GlobalLink Connector 17.0.0-rc1</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.0.0-rc1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.0.0-rc1</guid>
       <pubDate>Thu, 13 Aug 2026 10:42:16 GMT</pubDate>
@@ -230,7 +210,7 @@ Both action packages share loop-protection against uSync/Automate cascades (a si
 ]]></description>
     </item>
     <item>
-      <title>Translation Manager CrowdIn 18.0.0</title>
+      <title>CrowdIn Connector 18.0.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases</guid>
       <pubDate>Tue, 11 Aug 2026 13:06:38 GMT</pubDate>
@@ -301,7 +281,7 @@ Not yet published to NuGet — this tag marks the source at release time; packag
 ]]></description>
     </item>
     <item>
-      <title>Translation Manager AI 18.1.0</title>
+      <title>AI Connector 18.1.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.1.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.1.0</guid>
       <pubDate>Tue, 11 Aug 2026 10:56:24 GMT</pubDate>
@@ -314,7 +294,7 @@ Not yet published to NuGet — this tag marks the source at release time; packag
 - Bump the ai-client npm dependencies, hold typescript at 5.x. (#23)]]></description>
     </item>
     <item>
-      <title>Translation Manager AI 17.4.1</title>
+      <title>AI Connector 17.4.1</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.4.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.4.1</guid>
       <pubDate>Tue, 11 Aug 2026 10:38:08 GMT</pubDate>
@@ -330,14 +310,14 @@ Not yet published to NuGet — this tag marks the source at release time; packag
 🤖 Generated with [Claude Code](https://claude.com/claude-code)]]></description>
     </item>
     <item>
-      <title>Translation Manager AI 17.4.0</title>
+      <title>AI Connector 17.4.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</guid>
       <pubDate>Thu, 06 Aug 2026 15:37:21 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>Translation Manager Xliff 18.0.1</title>
+      <title>Xliff Connector 18.0.1</title>
       <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.1</guid>
       <pubDate>Thu, 06 Aug 2026 06:12:02 GMT</pubDate>
@@ -397,7 +377,7 @@ Not yet published to NuGet — this tag marks the source at release time; packag
 ]]></description>
     </item>
     <item>
-      <title>Translation Manager Xliff 17.0.1</title>
+      <title>Xliff Connector 17.0.1</title>
       <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.1</guid>
       <pubDate>Wed, 05 Aug 2026 16:59:23 GMT</pubDate>
@@ -463,7 +443,7 @@ Not user facing, but new in this release:
 ]]></description>
     </item>
     <item>
-      <title>Translation Manager Microsoft 17.1.0-rc1</title>
+      <title>Microsoft Connector 17.1.0-rc1</title>
       <link>https://github.com/Jumoo/Microsoft.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases</guid>
       <pubDate>Tue, 04 Aug 2026 11:14:06 GMT</pubDate>
@@ -519,28 +499,28 @@ Not user facing, but new in this release:
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>Translation Manager Publicis 17.0.0-rc4</title>
+      <title>Publicis Connector 17.0.0-rc4</title>
       <link>https://github.com/Jumoo/TranslatePlus-Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases</guid>
       <pubDate>Thu, 16 Jul 2026 07:34:28 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>Translation Manager Publicis 17.0.0-rc3</title>
+      <title>Publicis Connector 17.0.0-rc3</title>
       <link>https://github.com/Jumoo/TranslatePlus-Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases</guid>
       <pubDate>Wed, 15 Jul 2026 13:41:49 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>Translation Manager Publicis 17.0.0-rc2</title>
+      <title>Publicis Connector 17.0.0-rc2</title>
       <link>https://github.com/Jumoo/TranslatePlus-Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases</guid>
       <pubDate>Wed, 15 Jul 2026 10:29:50 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>Translation Manager Microsoft 17.0.2</title>
+      <title>Microsoft Connector 17.0.2</title>
       <link>https://github.com/Jumoo/Microsoft.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases</guid>
       <pubDate>Tue, 14 Jul 2026 12:57:37 GMT</pubDate>
@@ -605,42 +585,42 @@ Not user facing, but new in this release:
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>Translation Manager AI 18.0.0</title>
+      <title>AI Connector 18.0.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</guid>
       <pubDate>Fri, 10 Jul 2026 10:27:02 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>Translation Manager Xliff 18.0.0</title>
+      <title>Xliff Connector 18.0.0</title>
       <link>https://github.com/Jumoo/Xliff.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases</guid>
       <pubDate>Fri, 10 Jul 2026 10:27:02 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>Translation Manager Passthrough 18.0.0</title>
+      <title>Passthrough Connector 18.0.0</title>
       <link>https://github.com/Jumoo/Passthrough.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Passthrough.Connector/releases</guid>
       <pubDate>Fri, 10 Jul 2026 10:27:01 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>Translation Manager Microsoft 18.0.0</title>
+      <title>Microsoft Connector 18.0.0</title>
       <link>https://github.com/Jumoo/Microsoft.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases</guid>
       <pubDate>Fri, 10 Jul 2026 10:27:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>Translation Manager Google 18.0.0</title>
+      <title>Google Connector 18.0.0</title>
       <link>https://github.com/Jumoo/Google.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases</guid>
       <pubDate>Fri, 10 Jul 2026 10:27:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>Translation Manager DeepL 18.0.0</title>
+      <title>DeepL Connector 18.0.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</guid>
       <pubDate>Fri, 10 Jul 2026 10:26:59 GMT</pubDate>
@@ -675,7 +655,7 @@ Not user facing, but new in this release:
       <description><![CDATA[]]></description>
     </item>
     <item>
-      <title>Translation Manager Microsoft 17.0.1</title>
+      <title>Microsoft Connector 17.0.1</title>
       <link>https://github.com/Jumoo/Microsoft.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases</guid>
       <pubDate>Tue, 07 Jul 2026 09:26:41 GMT</pubDate>
@@ -737,6 +717,13 @@ This version updates the minimum Umbraco CMS dependency to **17.5.0**. Translati
 
 - **Fixed job-option toggles.** Job option toggles now use the correct underlying option key rather than the display label.
 ]]></description>
+    </item>
+    <item>
+      <title>Translation Manager 17.4.6</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
+      <pubDate>Mon, 29 Jun 2026 15:53:13 GMT</pubDate>
+      <description><![CDATA[]]></description>
     </item>
   </channel>
 </rss>

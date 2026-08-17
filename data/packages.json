@@ -55,19 +55,19 @@
   },
   {
     "nugetId": "Jumoo.TranslationManager.AI",
-    "title": "Translation Manager AI",
+    "title": "AI Connector",
     "category": "Translation Connectors",
     "githubRepo": "Jumoo/Jumoo.TranslationManager.AI"
   },
   {
     "nugetId": "Jumoo.TranslationManager.CSV",
-    "title": "Translation Manager CSV",
+    "title": "CSV Connector",
     "category": "Translation Connectors",
     "githubRepo": "Jumoo/Jumoo.TranslationManager.CSV"
   },
   {
     "nugetId": "Jumoo.TranslationManager.SmartCat",
-    "title": "Translation Manager SmartCat",
+    "title": "SmartCat Connector",
     "category": "Translation Connectors",
     "githubRepo": "Jumoo/Jumoo.TranslationManager.SmartCat"
   },
@@ -77,14 +77,14 @@
       "Jumoo.TranslationManager.Providers.TranslatePlus",
       "Jumoo.TranslationManager.TranslatePlus"
     ],
-    "title": "Translation Manager Publicis",
+    "title": "Publicis Connector",
     "category": "Translation Connectors",
     "githubRepo": "Jumoo/TranslatePlus-Connector"
   },
   {
     "nugetId": "Jumoo.TranslationManager.DeepL",
     "aliasNugetIds": ["Jumoo.TranslationManager.Connector.DeepL"],
-    "title": "Translation Manager DeepL",
+    "title": "DeepL Connector",
     "category": "Translation Connectors",
     "githubRepo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL"
   },
@@ -94,7 +94,7 @@
       "Jumoo.TranslationManager.Connector.Google",
       "Jumoo.TranslationManager.Providers.Google"
     ],
-    "title": "Translation Manager Google",
+    "title": "Google Connector",
     "category": "Translation Connectors",
     "githubRepo": "Jumoo/Google.Connector"
   },
@@ -104,7 +104,7 @@
       "Jumoo.TranslationManager.Connector.Xliff",
       "Jumoo.TranslationManager.Providers.Xliff"
     ],
-    "title": "Translation Manager Xliff",
+    "title": "Xliff Connector",
     "category": "Translation Connectors",
     "githubRepo": "Jumoo/Xliff.Connector"
   },
@@ -114,33 +114,33 @@
       "Jumoo.TranslationManager.Connector.Microsoft",
       "Jumoo.TranslationManager.Providers.Microsoft"
     ],
-    "title": "Translation Manager Microsoft",
+    "title": "Microsoft Connector",
     "category": "Translation Connectors",
     "githubRepo": "Jumoo/Microsoft.Connector"
   },
   {
     "nugetId": "Jumoo.TranslationManager.Passthrough",
     "aliasNugetIds": ["Jumoo.TranslationManager.Connector.Passthrough"],
-    "title": "Translation Manager Passthrough",
+    "title": "Passthrough Connector",
     "category": "Translation Connectors",
     "githubRepo": "Jumoo/Passthrough.Connector"
   },
   {
     "nugetId": "Jumoo.TranslationManager.CrowdIn",
-    "title": "Translation Manager CrowdIn",
+    "title": "CrowdIn Connector",
     "category": "Translation Connectors",
     "githubRepo": "Jumoo/Jumoo.TranslationManager.CrowdIn"
   },
   {
     "nugetId": "Jumoo.TranslationManager.LanguageWire",
-    "title": "Translation Manager LanguageWire",
+    "title": "LanguageWire Connector",
     "category": "Translation Connectors",
-    "githubRepo": "Jumoo/Jumoo.TranslationManager.GlobalLink"
+    "githubRepo": "Jumoo/Jumoo.TranslationManager.LanguageWire"
   },
   {
     "nugetId": "Jumoo.TranslationManager.GlobalLink",
     "aliasNugetIds": ["Jumoo.TranslationManager.Connectors.GlobalLink"],
-    "title": "Translation Manager GlobalLink",
+    "title": "GlobalLink Connector",
     "category": "Translation Connectors",
     "githubRepo": "Jumoo/Jumoo.TranslationManager.GlobalLink"
   },

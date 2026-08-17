@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T08:48:13.402Z",
+  "generatedAt": "2026-08-17T08:53:54.622Z",
   "packages": [
     {
       "package": "uSync",
@@ -2778,7 +2778,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.CSV",
-      "title": "Translation Manager CSV",
+      "title": "CSV Connector",
       "totalDownloads": 159,
       "versions": [
         {
@@ -2793,7 +2793,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.SmartCat",
-      "title": "Translation Manager SmartCat",
+      "title": "SmartCat Connector",
       "totalDownloads": 1000,
       "versions": [
         {
@@ -2808,7 +2808,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.Publicis",
-      "title": "Translation Manager Publicis",
+      "title": "Publicis Connector",
       "totalDownloads": 7696,
       "versions": [
         {
@@ -2863,7 +2863,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.DeepL",
-      "title": "Translation Manager DeepL",
+      "title": "DeepL Connector",
       "totalDownloads": 95655,
       "versions": [
         {
@@ -3162,7 +3162,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.Google",
-      "title": "Translation Manager Google",
+      "title": "Google Connector",
       "totalDownloads": 255171,
       "versions": [
         {
@@ -3669,7 +3669,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.Xliff",
-      "title": "Translation Manager Xliff",
+      "title": "Xliff Connector",
       "totalDownloads": 354421,
       "versions": [
         {
@@ -4300,7 +4300,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.Microsoft",
-      "title": "Translation Manager Microsoft",
+      "title": "Microsoft Connector",
       "totalDownloads": 230362,
       "versions": [
         {
@@ -4851,7 +4851,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.Passthrough",
-      "title": "Translation Manager Passthrough",
+      "title": "Passthrough Connector",
       "totalDownloads": 229228,
       "versions": [
         {
@@ -5346,7 +5346,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.CrowdIn",
-      "title": "Translation Manager CrowdIn",
+      "title": "CrowdIn Connector",
       "totalDownloads": 11875,
       "versions": [
         {
@@ -5417,7 +5417,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.LanguageWire",
-      "title": "Translation Manager LanguageWire",
+      "title": "LanguageWire Connector",
       "totalDownloads": 28846,
       "versions": [
         {
@@ -5488,7 +5488,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.GlobalLink",
-      "title": "Translation Manager GlobalLink",
+      "title": "GlobalLink Connector",
       "totalDownloads": 8104,
       "versions": [
         {
