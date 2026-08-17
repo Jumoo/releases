@@ -1,5 +1,18 @@
 [
   {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "version": "18.1.1",
+    "publishedAt": "2026-08-17T11:22:51Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/18.1.1",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.1.1",
+    "notes": "## Fixes\n\n- **Import**: fixed a property that's been moved out of all groups (an empty tab, no matching `<Tabs>` entry) not actually persisting that move on import — it took a second import to stick. ([#1043](https://github.com/KevinJump/uSync/pull/1043))\n- **Reliability**: save failures rejected by Umbraco (e.g. an invalid ISO code, a rejected content/media/template save) were previously discarded silently, so a failed import step could still get reported as a success. These now surface as proper import failures across Language, DictionaryItem, Webhook, ContentType/MediaType/MemberType, DataType, Domain, Template, Media, and Content serializers. ([#1040](https://github.com/KevinJump/uSync/pull/1040), [#1042](https://github.com/KevinJump/uSync/pull/1042))\n- **Blueprints**: fixed bulk-imported content blueprints being saved through the wrong path, which silently corrupted their object type and caused duplicate-key errors on the next import. Blueprints saved during the second-pass bulk import now go through `SaveBlueprint` like a normal single-item save. ([#1035](https://github.com/KevinJump/uSync/pull/1035))\n\n## Other\n\n- Dependency bumps (chalk, vite-plugin-dts, and a few NuGet/npm dependency-group updates).\n- CI/CD: nightly builds are now automatically published to the [Azure Artifacts nightly feed](https://pkgs.dev.azure.com/jumoo/Public/_packaging/nightly/nuget/v3/index.json) on every push to this branch.\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
     "package": "Jumoo.TranslationManager.CSV",
     "title": "CSV Connector",
     "category": "Translation Connectors",
@@ -14162,10 +14175,10 @@
     "category": "",
     "repo": "KevinJump/uSync",
     "version": "8.11.0",
-    "publishedAt": "2022-02-17T14:59:50Z",
+    "publishedAt": "2022-02-17T14:55:21.497+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync/8.11.0",
-    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v8.11.0",
-    "notes": "This is a patch release of uSync with some fixes for known issues - it also contains some performance improvements for content save/delete events on large sites. \r\n\r\nIt has also tested against the release candidate for Umbraco v8.18.  \r\n\r\n🤞 this will be the Umbraco v8.18 supported \"major.minor\" (e.g. 8.11.x is the long term support branch)\r\n\r\n## Fixes\r\n- #336 - Content item path length to long even if item is excluded via config.\r\n- #348 - Renaming then deleting a content item, will result in a 'clash' warning when re-importing \r\n- #349 - After renaming content the path value in the uSync file contains the old name\r\n- #350 - Moving a content type from a folder to the root isn't reflected after a sync\r\n- #351 - uSync will attempt to publish, published items that have been moved to trash \r\n\r\n## Updates\r\n- #347 Performance improvements in uSync file clean up for large sites. \r\n- #346 Support for History Clean-up in Umbraco v8.18.0\r\n- Enhancing #323. This fix fixed more than one issue with the DocTypeGridEditor, so has been updated to reflect this, and also clean up legacy DTGE json on import, to aid with syncing from old uSync versions to new.\r\n- branding!  \" ♾️ uSync all the things\" banner on dashboard background\r\n\r\n----\r\n\r\n# Get uSync\r\nuSync is best installed via NuGet, as part of a calorie-controlled installation. you can also download it as a Umbraco package via the Umbraco BackOffice or the our.umbraco.com website.\r\n\r\n## uSync\r\nSync DataTypes, DocumentTypes, MediaTypes, Languages, Macros, Templates & MemberTypes\r\n\r\n```\r\nPM> install-package uSync -version 8.11\r\n```\r\n## Content Edition\r\nAdd Content, Media, Domains, Dictionary Items and Content Templates\r\n\r\n```\r\nPM> install-package uSync.ContentEdition -version 8.11\r\n```\r\n\r\n## Upgrade\r\nWhen upgrading the best thing to do is not overwrite your uSync8.config file - new config settings will always defaults to something doesn't alter existing behaviors - so not having values in the config will no break anything.\r\n\r\nDuring a nuget upgrade you should choose not to overwrite the usync8.config file. If you haven't altered any other files from the uSync packages you can also instruct nuget to do this on the update line\r\n\r\n```\r\nPM> update-package uSync.ContentEdition -FileConflictAction Ignore\r\n```\r\n\r\n",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases",
+    "notes": null,
     "prerelease": false,
     "umbracoMajor": 8
   },

@@ -5,6 +5,23 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync 18.1.1</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.1</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.1</guid>
+      <pubDate>Mon, 17 Aug 2026 11:22:51 GMT</pubDate>
+      <description><![CDATA[## Fixes
+
+- **Import**: fixed a property that's been moved out of all groups (an empty tab, no matching `<Tabs>` entry) not actually persisting that move on import — it took a second import to stick. ([#1043](https://github.com/KevinJump/uSync/pull/1043))
+- **Reliability**: save failures rejected by Umbraco (e.g. an invalid ISO code, a rejected content/media/template save) were previously discarded silently, so a failed import step could still get reported as a success. These now surface as proper import failures across Language, DictionaryItem, Webhook, ContentType/MediaType/MemberType, DataType, Domain, Template, Media, and Content serializers. ([#1040](https://github.com/KevinJump/uSync/pull/1040), [#1042](https://github.com/KevinJump/uSync/pull/1042))
+- **Blueprints**: fixed bulk-imported content blueprints being saved through the wrong path, which silently corrupted their object type and caused duplicate-key errors on the next import. Blueprints saved during the second-pass bulk import now go through `SaveBlueprint` like a normal single-item save. ([#1035](https://github.com/KevinJump/uSync/pull/1035))
+
+## Other
+
+- Dependency bumps (chalk, vite-plugin-dts, and a few NuGet/npm dependency-group updates).
+- CI/CD: nightly builds are now automatically published to the [Azure Artifacts nightly feed](https://pkgs.dev.azure.com/jumoo/Public/_packaging/nightly/nuget/v3/index.json) on every push to this branch.
+]]></description>
+    </item>
+    <item>
       <title>CSV Connector 18.0.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v18.0.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v18.0.0</guid>
@@ -736,13 +753,6 @@ Not user facing, but new in this release:
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
       <pubDate>Thu, 02 Jul 2026 10:25:57 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Maintenance Mode 18.0.0</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases</guid>
-      <pubDate>Tue, 30 Jun 2026 13:35:38 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>
