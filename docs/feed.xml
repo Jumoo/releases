@@ -99,6 +99,46 @@ Published to NuGet.]]></description>
 **Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/blob/v17/main/CHANGELOG.md]]></description>
     </item>
     <item>
+      <title>Translation Manager LanguageWire 17.0.0-rc1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.0.0-rc1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.0.0-rc1</guid>
+      <pubDate>Thu, 13 Aug 2026 10:42:16 GMT</pubDate>
+      <description><![CDATA[First release candidate for the Umbraco 17 / Translation Manager v17 line.
+
+See [CHANGELOG.md](https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/blob/v17/main/CHANGELOG.md#1700) for details.
+
+## Highlights
+
+- Umbraco 17 (`net10.0`) support, with a backoffice client rewritten in Lit/TypeScript/Vite,
+  replacing the old AngularJS `App_Plugins` UI.
+- Repository brought up to Jumoo's standard release scaffolding: docs, CI/CD (PR build,
+  package build, tag-triggered NuGet release via trusted publishing, CodeQL), dependabot.
+- Project and client code moved into `src/Jumoo.TranslationManager.GlobalLink/`.
+
+This is a release candidate - please test against a real Umbraco 17 site and GlobalLink
+account before relying on it in production.]]></description>
+    </item>
+    <item>
+      <title>Translation Manager GlobalLink 17.0.0-rc1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.0.0-rc1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.0.0-rc1</guid>
+      <pubDate>Thu, 13 Aug 2026 10:42:16 GMT</pubDate>
+      <description><![CDATA[First release candidate for the Umbraco 17 / Translation Manager v17 line.
+
+See [CHANGELOG.md](https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/blob/v17/main/CHANGELOG.md#1700) for details.
+
+## Highlights
+
+- Umbraco 17 (`net10.0`) support, with a backoffice client rewritten in Lit/TypeScript/Vite,
+  replacing the old AngularJS `App_Plugins` UI.
+- Repository brought up to Jumoo's standard release scaffolding: docs, CI/CD (PR build,
+  package build, tag-triggered NuGet release via trusted publishing, CodeQL), dependabot.
+- Project and client code moved into `src/Jumoo.TranslationManager.GlobalLink/`.
+
+This is a release candidate - please test against a real Umbraco 17 site and GlobalLink
+account before relying on it in production.]]></description>
+    </item>
+    <item>
       <title>uSync Automate 17.0.0-beta1</title>
       <link>https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.0-beta1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.0-beta1</guid>
@@ -480,22 +520,22 @@ Not user facing, but new in this release:
     </item>
     <item>
       <title>Translation Manager Publicis 17.0.0-rc4</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Publicis/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Publicis/releases</guid>
+      <link>https://github.com/Jumoo/TranslatePlus-Connector/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases</guid>
       <pubDate>Thu, 16 Jul 2026 07:34:28 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>Translation Manager Publicis 17.0.0-rc3</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Publicis/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Publicis/releases</guid>
+      <link>https://github.com/Jumoo/TranslatePlus-Connector/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases</guid>
       <pubDate>Wed, 15 Jul 2026 13:41:49 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>Translation Manager Publicis 17.0.0-rc2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Publicis/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Publicis/releases</guid>
+      <link>https://github.com/Jumoo/TranslatePlus-Connector/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases</guid>
       <pubDate>Wed, 15 Jul 2026 10:29:50 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
@@ -697,20 +737,6 @@ This version updates the minimum Umbraco CMS dependency to **17.5.0**. Translati
 
 - **Fixed job-option toggles.** Job option toggles now use the correct underlying option key rather than the display label.
 ]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.4.6</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
-      <pubDate>Mon, 29 Jun 2026 15:53:13 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.4.5</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
-      <pubDate>Mon, 29 Jun 2026 14:21:10 GMT</pubDate>
-      <description><![CDATA[]]></description>
     </item>
   </channel>
 </rss>

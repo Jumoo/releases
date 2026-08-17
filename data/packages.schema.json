@@ -1,0 +1,40 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://releases.jumoo.co.uk/data/packages.schema.json",
+  "title": "Jumoo Releases package list",
+  "description": "Packages tracked by scripts/fetch-releases.mjs. See README.md for the full field reference.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "title": "Package",
+    "additionalProperties": false,
+    "required": ["nugetId", "githubRepo"],
+    "properties": {
+      "nugetId": {
+        "type": "string",
+        "description": "The current NuGet package ID. Used to build package links and as the site's canonical package key.",
+        "minLength": 1
+      },
+      "aliasNugetIds": {
+        "type": "array",
+        "description": "Prior NuGet IDs this package has shipped under (e.g. after a rename). Their version history and download counts are fetched and merged into nugetId's totals. Omit if the package has never changed ID.",
+        "items": { "type": "string", "minLength": 1 },
+        "minItems": 1,
+        "uniqueItems": true
+      },
+      "title": {
+        "type": "string",
+        "description": "Display name shown on the site. Falls back to nugetId if omitted."
+      },
+      "category": {
+        "type": "string",
+        "description": "Groups packages into sections on the homepage (e.g. \"uSync\", \"Integrations\"). Leave empty/omit for uncategorized packages, which are listed first with no heading."
+      },
+      "githubRepo": {
+        "type": "string",
+        "description": "owner/repo for the matching GitHub releases.",
+        "pattern": "^[^/\\s]+/[^/\\s]+$"
+      }
+    }
+  }
+}

@@ -28,9 +28,17 @@ async function fetchJson(url, headers = {}) {
   return res.json();
 }
 
+// A package may have shipped under more than one NuGet ID over its
+// lifetime (e.g. renamed/rebranded packages). `nugetId` is the current
+// (primary) ID used for display/URLs; `aliasNugetIds` lists any prior IDs
+// whose version history and download counts should still be counted.
+function allNugetIds(pkg) {
+  return [pkg.nugetId, ...(pkg.aliasNugetIds ?? [])];
+}
+
 // NuGet registration index can be "inline" (small package) or "paged"
 // (large package, items split across catalog pages fetched via @id).
-async function fetchNugetVersions(nugetId) {
+async function fetchNugetVersionsForId(nugetId) {
   const id = nugetId.toLowerCase();
   // registration5-semver1 is the legacy endpoint and 404s ("BlobNotFound")
   // for some packages that are only indexed under semver2 (NuGet's own
@@ -61,6 +69,14 @@ async function fetchNugetVersions(nugetId) {
   return entries;
 }
 
+// Fetches version history across all NuGet IDs a package has used, merged
+// into a single list (order doesn't matter - buildReleases re-sorts/keys
+// by version).
+async function fetchNugetVersions(pkg) {
+  const results = await Promise.all(allNugetIds(pkg).map(fetchNugetVersionsForId));
+  return results.flat();
+}
+
 // NuGet's registration payload already includes each version's dependency
 // groups (one per target framework) inline in catalogEntry - no extra API
 // call needed. Flatten to a de-duped {id, range} list across frameworks.
@@ -78,7 +94,7 @@ function flattenDependencies(dependencyGroups) {
 // NuGet's search API (unlike the registration API) exposes download
 // counts: a package-level total plus a per-version breakdown. Both are
 // cumulative-to-date, not a live install count.
-async function fetchNugetDownloads(nugetId) {
+async function fetchNugetDownloadsForId(nugetId) {
   const url = `https://azuresearch-usnc.nuget.org/query?q=packageid:${encodeURIComponent(nugetId)}&prerelease=true`;
   try {
     const result = await fetchJson(url);
@@ -92,6 +108,28 @@ async function fetchNugetDownloads(nugetId) {
     console.warn(`  NuGet downloads fetch failed for ${nugetId}: ${err.message}`);
     return null;
   }
+}
+
+// Sums download counts across all NuGet IDs a package has used. Per-version
+// counts are merged by version string (summed, in case the same version
+// number was ever published under both an old and new ID).
+async function fetchNugetDownloads(pkg) {
+  const results = await Promise.all(allNugetIds(pkg).map(fetchNugetDownloadsForId));
+  const present = results.filter(Boolean);
+  if (present.length === 0) return null;
+
+  let totalDownloads = 0;
+  const versionsByKey = new Map();
+  for (const r of present) {
+    totalDownloads += r.totalDownloads;
+    for (const v of r.versions) {
+      versionsByKey.set(v.version, (versionsByKey.get(v.version) ?? 0) + v.downloads);
+    }
+  }
+  return {
+    totalDownloads,
+    versions: [...versionsByKey.entries()].map(([version, downloads]) => ({ version, downloads })),
+  };
 }
 
 async function fetchGithubReleases(repo) {
@@ -127,7 +165,7 @@ function normalizeVersion(tag) {
 async function buildReleases(pkg) {
   console.log(`Fetching ${pkg.nugetId} / ${pkg.githubRepo}...`);
   const [nugetVersions, githubReleases] = await Promise.all([
-    fetchNugetVersions(pkg.nugetId),
+    fetchNugetVersions(pkg),
     fetchGithubReleases(pkg.githubRepo),
   ]);
 
@@ -297,7 +335,7 @@ ${items}
 async function buildDownloads(packages) {
   const packagesOut = [];
   for (const pkg of packages) {
-    const downloads = await fetchNugetDownloads(pkg.nugetId);
+    const downloads = await fetchNugetDownloads(pkg);
     if (!downloads) continue;
     packagesOut.push({
       package: pkg.nugetId,

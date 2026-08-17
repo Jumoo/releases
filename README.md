@@ -11,18 +11,20 @@ Static feed of releases across Jumoo's NuGet packages, combining NuGet version/p
 
 ## Adding a package
 
-Add an entry to `data/packages.json`:
+Add an entry to `data/packages.json`. Its shape is described by [`data/packages.schema.json`](data/packages.schema.json) — `.vscode/settings.json` wires that schema up for autocomplete/validation in VS Code.
 
 ```json
 {
   "nugetId": "Jumoo.SomePackage",
+  "aliasNugetIds": ["Jumoo.SomePackage.Old"],
   "title": "Some Package",
   "category": "Integrations",
   "githubRepo": "Jumoo/SomePackage"
 }
 ```
 
-- `nugetId` — the NuGet package ID (used to query the NuGet API and build package links).
+- `nugetId` — the current NuGet package ID (used to build package links and as the site's canonical package key).
+- `aliasNugetIds` — optional list of prior NuGet IDs the package has shipped under (e.g. after a rename); their version history and download counts are fetched and merged into `nugetId`'s totals. Omit if the package has never changed ID.
 - `title` — display name shown on the site; falls back to `nugetId` if omitted.
 - `category` — groups packages into sections on the homepage (e.g. "uSync", "Integrations"); omit it to leave a package uncategorized — uncategorized packages are listed first, with no heading.
 - `githubRepo` — `owner/repo` for the matching GitHub releases.
