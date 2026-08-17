@@ -191,6 +191,16 @@ main {
   white-space: nowrap;
 }
 
+@media (max-width: 600px) {
+  .release-title {
+    flex-basis: 100%;
+  }
+
+  .release-date {
+    margin-left: auto;
+  }
+}
+
 .badge {
   display: inline-block;
   font-size: 0.7em;
