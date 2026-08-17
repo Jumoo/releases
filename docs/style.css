@@ -162,6 +162,12 @@ main {
   margin-right: auto;
 }
 
+.package-card-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
 .package-card-version {
   color: var(--muted);
   font-size: 0.9em;
@@ -198,6 +204,15 @@ main {
 
   .release-date {
     margin-left: auto;
+  }
+
+  .package-card-name {
+    flex-basis: 100%;
+  }
+
+  .package-card-meta {
+    flex-basis: 100%;
+    justify-content: space-between;
   }
 }
 

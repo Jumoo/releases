@@ -12,8 +12,10 @@ function renderPackageCard(group) {
 
   el.innerHTML = `
     <span class="package-card-name">${escapeHtml(group.title)}</span>
-    <span class="package-card-version">v${escapeHtml(r.version)}${prereleaseBadge}</span>
-    <span class="package-card-date">${formatDate(r.publishedAt)}</span>
+    <span class="package-card-meta">
+      <span class="package-card-version">v${escapeHtml(r.version)}${prereleaseBadge}</span>
+      <span class="package-card-date">${formatDate(r.publishedAt)}</span>
+    </span>
   `;
   return el;
 }
