@@ -65,9 +65,14 @@ function formatDate(iso) {
   return d.toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
 }
 
+function releaseAnchorId(version) {
+  return `v${version}`;
+}
+
 function renderRelease(r) {
   const el = document.createElement("article");
   el.className = "release";
+  el.id = releaseAnchorId(r.version);
 
   const prereleaseBadge = r.prerelease ? '<span class="badge">pre-release</span>' : "";
 

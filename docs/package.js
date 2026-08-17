@@ -32,6 +32,11 @@ async function loadPackage() {
     for (const r of packageReleases) {
       feedEl.appendChild(renderRelease(r));
     }
+
+    if (location.hash) {
+      const target = document.getElementById(location.hash.slice(1));
+      if (target) target.scrollIntoView();
+    }
   } catch (err) {
     statusEl.textContent = `Couldn't load releases: ${err.message}`;
     feedEl.innerHTML = "";
