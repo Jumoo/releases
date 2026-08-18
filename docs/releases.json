@@ -1,5 +1,18 @@
 [
   {
+    "package": "Jumoo.TranslationManager.SmartCat",
+    "title": "SmartCat Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.SmartCat",
+    "version": "17.0.0-rc1",
+    "publishedAt": "2026-08-18T14:51:07Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.SmartCat/17.0.0-rc1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0-rc1",
+    "notes": "**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/commits/v17.0.0-rc1",
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.Automate",
     "title": "Translation Manager Automate",
     "category": "uSync.Automate Extensions",

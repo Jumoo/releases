@@ -5,6 +5,13 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>SmartCat Connector 17.0.0-rc1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0-rc1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0-rc1</guid>
+      <pubDate>Tue, 18 Aug 2026 14:51:07 GMT</pubDate>
+      <description><![CDATA[**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/commits/v17.0.0-rc1]]></description>
+    </item>
+    <item>
       <title>Translation Manager Automate 17.0.0-rc1</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0-rc1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0-rc1</guid>
@@ -777,13 +784,6 @@ Not user facing, but new in this release:
       <link>https://github.com/Jumoo/uSync.Complete.Issues/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases</guid>
       <pubDate>Fri, 03 Jul 2026 15:42:48 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync 18.0.1</title>
-      <link>https://github.com/KevinJump/uSync/releases</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases</guid>
-      <pubDate>Fri, 03 Jul 2026 15:36:28 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>
