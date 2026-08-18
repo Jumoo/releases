@@ -287,57 +287,97 @@
   {
     "date": "2026-08-18",
     "package": "uSync",
+<<<<<<< HEAD
     "totalDownloads": 6856485
+=======
+    "totalDownloads": 6852903
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "uSync.Complete",
+<<<<<<< HEAD
     "totalDownloads": 1489520
+=======
+    "totalDownloads": 1488568
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "uSync.Forms",
+<<<<<<< HEAD
     "totalDownloads": 429913
+=======
+    "totalDownloads": 429508
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "uSync.Umbraco.Commerce",
+<<<<<<< HEAD
     "totalDownloads": 8568
+=======
+    "totalDownloads": 8555
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "uSync.Automate",
+<<<<<<< HEAD
     "totalDownloads": 43
+=======
+    "totalDownloads": 42
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "uSync.Cli",
+<<<<<<< HEAD
     "totalDownloads": 32216
+=======
+    "totalDownloads": 32193
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "uSync.Migrations",
+<<<<<<< HEAD
     "totalDownloads": 93802
+=======
+    "totalDownloads": 93693
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "uSync.Hangfire",
+<<<<<<< HEAD
     "totalDownloads": 979
   },
   {
     "date": "2026-08-18",
     "package": "Jumoo.TranslationManager.Automate",
     "totalDownloads": 0
+=======
+    "totalDownloads": 975
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "Jumoo.TranslationManager",
+<<<<<<< HEAD
     "totalDownloads": 431094
+=======
+    "totalDownloads": 430874
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "Jumoo.TranslationManager.CSV",
+<<<<<<< HEAD
     "totalDownloads": 238
+=======
+    "totalDownloads": 159
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
@@ -347,37 +387,65 @@
   {
     "date": "2026-08-18",
     "package": "Jumoo.TranslationManager.Publicis",
+<<<<<<< HEAD
     "totalDownloads": 7707
+=======
+    "totalDownloads": 7706
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "Jumoo.TranslationManager.DeepL",
+<<<<<<< HEAD
     "totalDownloads": 95815
+=======
+    "totalDownloads": 95714
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "Jumoo.TranslationManager.Google",
+<<<<<<< HEAD
     "totalDownloads": 255430
+=======
+    "totalDownloads": 255268
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "Jumoo.TranslationManager.Xliff",
+<<<<<<< HEAD
     "totalDownloads": 354698
+=======
+    "totalDownloads": 354525
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "Jumoo.TranslationManager.Microsoft",
+<<<<<<< HEAD
     "totalDownloads": 230627
+=======
+    "totalDownloads": 230467
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "Jumoo.TranslationManager.Passthrough",
+<<<<<<< HEAD
     "totalDownloads": 229492
+=======
+    "totalDownloads": 229326
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "Jumoo.TranslationManager.CrowdIn",
+<<<<<<< HEAD
     "totalDownloads": 11894
+=======
+    "totalDownloads": 11882
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
@@ -392,11 +460,19 @@
   {
     "date": "2026-08-18",
     "package": "Umbraco.Community.LinkedPages",
+<<<<<<< HEAD
     "totalDownloads": 692
+=======
+    "totalDownloads": 680
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   },
   {
     "date": "2026-08-18",
     "package": "Our.Umbraco.MaintenanceMode",
+<<<<<<< HEAD
     "totalDownloads": 67910
+=======
+    "totalDownloads": 67801
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   }
 ]

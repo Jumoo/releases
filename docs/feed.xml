@@ -5,6 +5,7 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+<<<<<<< HEAD
       <title>Translation Manager Automate 17.0.0-rc1</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0-rc1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0-rc1</guid>
@@ -43,6 +44,8 @@ Release candidate — API and settings surface may still change before v17.0.0 f
 ]]></description>
     </item>
     <item>
+=======
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
       <title>uSync 18.1.1</title>
       <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.1</link>
       <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.1</guid>
@@ -786,5 +789,15 @@ Not user facing, but new in this release:
       <pubDate>Fri, 03 Jul 2026 15:36:28 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
+<<<<<<< HEAD
+=======
+    <item>
+      <title>Translation Manager 17.5.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
+      <pubDate>Thu, 02 Jul 2026 10:25:57 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+>>>>>>> a1e4d351c715c4ddc80833f962e48a109320d50a
   </channel>
 </rss>
