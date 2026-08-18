@@ -1,43 +1,293 @@
 [
   {
-    "date": "2026-08-18",
+    "date": "2026-08-15",
+    "package": "Jumoo.TranslationManager",
+    "totalDownloads": 430426
+  },
+  {
+    "date": "2026-08-15",
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "totalDownloads": 11863
+  },
+  {
+    "date": "2026-08-15",
+    "package": "Jumoo.TranslationManager.DeepL",
+    "totalDownloads": 14453
+  },
+  {
+    "date": "2026-08-15",
+    "package": "Jumoo.TranslationManager.Google",
+    "totalDownloads": 12947
+  },
+  {
+    "date": "2026-08-15",
+    "package": "Jumoo.TranslationManager.Microsoft",
+    "totalDownloads": 13647
+  },
+  {
+    "date": "2026-08-15",
+    "package": "Jumoo.TranslationManager.Passthrough",
+    "totalDownloads": 12972
+  },
+  {
+    "date": "2026-08-15",
+    "package": "Jumoo.TranslationManager.Xliff",
+    "totalDownloads": 13133
+  },
+  {
+    "date": "2026-08-15",
+    "package": "Our.Umbraco.MaintenanceMode",
+    "totalDownloads": 67630
+  },
+  {
+    "date": "2026-08-15",
+    "package": "Umbraco.Community.LinkedPages",
+    "totalDownloads": 665
+  },
+  {
+    "date": "2026-08-15",
     "package": "uSync",
-    "totalDownloads": 6856485
+    "totalDownloads": 6846742
   },
   {
-    "date": "2026-08-18",
-    "package": "uSync.Complete",
-    "totalDownloads": 1489520
-  },
-  {
-    "date": "2026-08-18",
-    "package": "uSync.Forms",
-    "totalDownloads": 429913
-  },
-  {
-    "date": "2026-08-18",
-    "package": "uSync.Umbraco.Commerce",
-    "totalDownloads": 8568
-  },
-  {
-    "date": "2026-08-18",
+    "date": "2026-08-15",
     "package": "uSync.Automate",
-    "totalDownloads": 43
+    "totalDownloads": 37
   },
   {
-    "date": "2026-08-18",
+    "date": "2026-08-15",
     "package": "uSync.Cli",
-    "totalDownloads": 32216
+    "totalDownloads": 32062
   },
   {
-    "date": "2026-08-18",
-    "package": "uSync.Migrations",
-    "totalDownloads": 93802
+    "date": "2026-08-15",
+    "package": "uSync.Complete",
+    "totalDownloads": 1487252
   },
   {
-    "date": "2026-08-18",
+    "date": "2026-08-15",
+    "package": "uSync.Forms",
+    "totalDownloads": 429044
+  },
+  {
+    "date": "2026-08-15",
     "package": "uSync.Hangfire",
-    "totalDownloads": 979
+    "totalDownloads": 961
+  },
+  {
+    "date": "2026-08-15",
+    "package": "uSync.Migrations",
+    "totalDownloads": 93511
+  },
+  {
+    "date": "2026-08-15",
+    "package": "uSync.Umbraco.Commerce",
+    "totalDownloads": 8519
+  },
+  {
+    "date": "2026-08-16",
+    "package": "Jumoo.TranslationManager",
+    "totalDownloads": 430725
+  },
+  {
+    "date": "2026-08-16",
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "totalDownloads": 11872
+  },
+  {
+    "date": "2026-08-16",
+    "package": "Jumoo.TranslationManager.CSV",
+    "totalDownloads": 158
+  },
+  {
+    "date": "2026-08-16",
+    "package": "Jumoo.TranslationManager.DeepL",
+    "totalDownloads": 14551
+  },
+  {
+    "date": "2026-08-16",
+    "package": "Jumoo.TranslationManager.Google",
+    "totalDownloads": 13079
+  },
+  {
+    "date": "2026-08-16",
+    "package": "Jumoo.TranslationManager.Microsoft",
+    "totalDownloads": 13748
+  },
+  {
+    "date": "2026-08-16",
+    "package": "Jumoo.TranslationManager.Passthrough",
+    "totalDownloads": 13067
+  },
+  {
+    "date": "2026-08-16",
+    "package": "Jumoo.TranslationManager.Publicis",
+    "totalDownloads": 364
+  },
+  {
+    "date": "2026-08-16",
+    "package": "Jumoo.TranslationManager.SmartCat",
+    "totalDownloads": 999
+  },
+  {
+    "date": "2026-08-16",
+    "package": "Jumoo.TranslationManager.Xliff",
+    "totalDownloads": 13234
+  },
+  {
+    "date": "2026-08-16",
+    "package": "Our.Umbraco.MaintenanceMode",
+    "totalDownloads": 67721
+  },
+  {
+    "date": "2026-08-16",
+    "package": "Umbraco.Community.LinkedPages",
+    "totalDownloads": 669
+  },
+  {
+    "date": "2026-08-16",
+    "package": "uSync",
+    "totalDownloads": 6850409
+  },
+  {
+    "date": "2026-08-16",
+    "package": "uSync.Automate",
+    "totalDownloads": 38
+  },
+  {
+    "date": "2026-08-16",
+    "package": "uSync.Cli",
+    "totalDownloads": 32131
+  },
+  {
+    "date": "2026-08-16",
+    "package": "uSync.Complete",
+    "totalDownloads": 1488108
+  },
+  {
+    "date": "2026-08-16",
+    "package": "uSync.Forms",
+    "totalDownloads": 429298
+  },
+  {
+    "date": "2026-08-16",
+    "package": "uSync.Hangfire",
+    "totalDownloads": 969
+  },
+  {
+    "date": "2026-08-16",
+    "package": "uSync.Migrations",
+    "totalDownloads": 93631
+  },
+  {
+    "date": "2026-08-16",
+    "package": "uSync.Umbraco.Commerce",
+    "totalDownloads": 8532
+  },
+  {
+    "date": "2026-08-17",
+    "package": "Jumoo.TranslationManager",
+    "totalDownloads": 430757
+  },
+  {
+    "date": "2026-08-17",
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "totalDownloads": 11875
+  },
+  {
+    "date": "2026-08-17",
+    "package": "Jumoo.TranslationManager.CSV",
+    "totalDownloads": 159
+  },
+  {
+    "date": "2026-08-17",
+    "package": "Jumoo.TranslationManager.DeepL",
+    "totalDownloads": 14565
+  },
+  {
+    "date": "2026-08-17",
+    "package": "Jumoo.TranslationManager.Google",
+    "totalDownloads": 13094
+  },
+  {
+    "date": "2026-08-17",
+    "package": "Jumoo.TranslationManager.Microsoft",
+    "totalDownloads": 13762
+  },
+  {
+    "date": "2026-08-17",
+    "package": "Jumoo.TranslationManager.Passthrough",
+    "totalDownloads": 13081
+  },
+  {
+    "date": "2026-08-17",
+    "package": "Jumoo.TranslationManager.Publicis",
+    "totalDownloads": 365
+  },
+  {
+    "date": "2026-08-17",
+    "package": "Jumoo.TranslationManager.SmartCat",
+    "totalDownloads": 1000
+  },
+  {
+    "date": "2026-08-17",
+    "package": "Jumoo.TranslationManager.Xliff",
+    "totalDownloads": 13248
+  },
+  {
+    "date": "2026-08-17",
+    "package": "Our.Umbraco.MaintenanceMode",
+    "totalDownloads": 67755
+  },
+  {
+    "date": "2026-08-17",
+    "package": "Umbraco.Community.LinkedPages",
+    "totalDownloads": 672
+  },
+  {
+    "date": "2026-08-17",
+    "package": "uSync",
+    "totalDownloads": 6851073
+  },
+  {
+    "date": "2026-08-17",
+    "package": "uSync.Automate",
+    "totalDownloads": 38
+  },
+  {
+    "date": "2026-08-17",
+    "package": "uSync.Cli",
+    "totalDownloads": 32149
+  },
+  {
+    "date": "2026-08-17",
+    "package": "uSync.Complete",
+    "totalDownloads": 1488213
+  },
+  {
+    "date": "2026-08-17",
+    "package": "uSync.Forms",
+    "totalDownloads": 429340
+  },
+  {
+    "date": "2026-08-17",
+    "package": "uSync.Hangfire",
+    "totalDownloads": 972
+  },
+  {
+    "date": "2026-08-17",
+    "package": "uSync.Migrations",
+    "totalDownloads": 93641
+  },
+  {
+    "date": "2026-08-17",
+    "package": "uSync.Umbraco.Commerce",
+    "totalDownloads": 8533
+  },
+  {
+    "date": "2026-08-18",
+    "package": "Jumoo.TranslationManager",
+    "totalDownloads": 430874
   },
   {
     "date": "2026-08-18",
@@ -46,58 +296,18 @@
   },
   {
     "date": "2026-08-18",
-    "package": "Jumoo.TranslationManager",
-    "totalDownloads": 431094
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "totalDownloads": 11882
   },
   {
     "date": "2026-08-18",
     "package": "Jumoo.TranslationManager.CSV",
-    "totalDownloads": 238
-  },
-  {
-    "date": "2026-08-18",
-    "package": "Jumoo.TranslationManager.SmartCat",
-    "totalDownloads": 1000
-  },
-  {
-    "date": "2026-08-18",
-    "package": "Jumoo.TranslationManager.Publicis",
-    "totalDownloads": 7707
+    "totalDownloads": 159
   },
   {
     "date": "2026-08-18",
     "package": "Jumoo.TranslationManager.DeepL",
-    "totalDownloads": 95815
-  },
-  {
-    "date": "2026-08-18",
-    "package": "Jumoo.TranslationManager.Google",
-    "totalDownloads": 255430
-  },
-  {
-    "date": "2026-08-18",
-    "package": "Jumoo.TranslationManager.Xliff",
-    "totalDownloads": 354698
-  },
-  {
-    "date": "2026-08-18",
-    "package": "Jumoo.TranslationManager.Microsoft",
-    "totalDownloads": 230627
-  },
-  {
-    "date": "2026-08-18",
-    "package": "Jumoo.TranslationManager.Passthrough",
-    "totalDownloads": 229492
-  },
-  {
-    "date": "2026-08-18",
-    "package": "Jumoo.TranslationManager.CrowdIn",
-    "totalDownloads": 11894
-  },
-  {
-    "date": "2026-08-18",
-    "package": "Jumoo.TranslationManager.LanguageWire",
-    "totalDownloads": 28847
+    "totalDownloads": 95714
   },
   {
     "date": "2026-08-18",
@@ -106,12 +316,87 @@
   },
   {
     "date": "2026-08-18",
-    "package": "Umbraco.Community.LinkedPages",
-    "totalDownloads": 692
+    "package": "Jumoo.TranslationManager.Google",
+    "totalDownloads": 255268
+  },
+  {
+    "date": "2026-08-18",
+    "package": "Jumoo.TranslationManager.LanguageWire",
+    "totalDownloads": 28847
+  },
+  {
+    "date": "2026-08-18",
+    "package": "Jumoo.TranslationManager.Microsoft",
+    "totalDownloads": 230467
+  },
+  {
+    "date": "2026-08-18",
+    "package": "Jumoo.TranslationManager.Passthrough",
+    "totalDownloads": 229326
+  },
+  {
+    "date": "2026-08-18",
+    "package": "Jumoo.TranslationManager.Publicis",
+    "totalDownloads": 7706
+  },
+  {
+    "date": "2026-08-18",
+    "package": "Jumoo.TranslationManager.SmartCat",
+    "totalDownloads": 1000
+  },
+  {
+    "date": "2026-08-18",
+    "package": "Jumoo.TranslationManager.Xliff",
+    "totalDownloads": 354525
   },
   {
     "date": "2026-08-18",
     "package": "Our.Umbraco.MaintenanceMode",
-    "totalDownloads": 67910
+    "totalDownloads": 67801
+  },
+  {
+    "date": "2026-08-18",
+    "package": "Umbraco.Community.LinkedPages",
+    "totalDownloads": 680
+  },
+  {
+    "date": "2026-08-18",
+    "package": "uSync",
+    "totalDownloads": 6852903
+  },
+  {
+    "date": "2026-08-18",
+    "package": "uSync.Automate",
+    "totalDownloads": 42
+  },
+  {
+    "date": "2026-08-18",
+    "package": "uSync.Cli",
+    "totalDownloads": 32193
+  },
+  {
+    "date": "2026-08-18",
+    "package": "uSync.Complete",
+    "totalDownloads": 1488568
+  },
+  {
+    "date": "2026-08-18",
+    "package": "uSync.Forms",
+    "totalDownloads": 429508
+  },
+  {
+    "date": "2026-08-18",
+    "package": "uSync.Hangfire",
+    "totalDownloads": 975
+  },
+  {
+    "date": "2026-08-18",
+    "package": "uSync.Migrations",
+    "totalDownloads": 93693
+  },
+  {
+    "date": "2026-08-18",
+    "package": "uSync.Umbraco.Commerce",
+    "totalDownloads": 8555
   }
 ]
