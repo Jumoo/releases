@@ -48,6 +48,12 @@
     "githubRepo": "Jumoo/uSync.Hangfire"
   },
   {
+    "nugetId": "Jumoo.TranslationManager.Automate",
+    "title": "Translation Manager Automate",
+    "category": "Translation AddOn",
+    "githubRepo": "Jumoo/Jumoo.TranslationManager.Automate"
+  },
+  {
     "nugetId": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",

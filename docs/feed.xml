@@ -5,6 +5,117 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Translation Manager Automate 17.0.0-rc1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0-rc1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0-rc1</guid>
+      <pubDate>Tue, 18 Aug 2026 10:20:05 GMT</pubDate>
+      <description><![CDATA[## Jumoo.TranslationManager.Automate v17.0.0-rc1
+
+> [!NOTE]
+> This package replaces `Jumoo.TranslationManager.Automations`, which we will be delisting from NuGet soon.
+
+First release candidate. Adds Translation Manager support to [Umbraco Automate](https://jumoo.co.uk/): create, submit and approve Translation Manager jobs from Automate workflows, and start workflows from translation events.
+
+The classic use case — when content is published, translate it — is a no-code automation: `Content Published` → `Translate Content` → `Check Translation Job` → `Approve Translation Job`.
+
+### Actions
+- **Translate Content** (`translationManager.translateContent`) — creates translation nodes across matching translation sets and submits one job per target culture. Supports culture/set/connector filters, force-retranslate, and optional synchronous approve+publish.
+- **Check Translation Job** (`translationManager.checkJob`) — polls a connector for job status; branches directly on outcome, enabling translate → sleep → check → approve polling loops.
+- **Approve Translation Job** (`translationManager.approveJob`) — approves a job and optionally publishes translated content, with per-node authorization checks against the running service account.
+
+### Triggers
+- Translation Job Submitted
+- Translation Received
+- Translation Job Approved
+- Translation Published
+
+Only past-tense Translation Manager events are exposed; each shares filtering by set, culture, connector, and error state.
+
+### Loop protection
+Guards against `Content Published` → translate → approve/publish → `Content Published` cycles: approval always runs synchronously on the triggering thread, trigger settings default to skipping automation-originated cycles, and an in-process gate suppresses this package's own triggers while it is actively writing a translation.
+
+### Requirements
+- Umbraco 17, .NET 10
+- [Umbraco.Automate](https://jumoo.co.uk/) and [Jumoo.TranslationManager](https://jumoo.co.uk/TranslationManager)
+
+### Status
+Release candidate — API and settings surface may still change before v17.0.0 final. Feedback welcome via [issues](https://github.com/Jumoo/Jumoo.TranslationManager.Automate/issues).
+]]></description>
+    </item>
+    <item>
+      <title>uSync 18.1.1</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.1</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.1</guid>
+      <pubDate>Mon, 17 Aug 2026 11:22:51 GMT</pubDate>
+      <description><![CDATA[## Fixes
+
+- **Import**: fixed a property that's been moved out of all groups (an empty tab, no matching `<Tabs>` entry) not actually persisting that move on import — it took a second import to stick. ([#1043](https://github.com/KevinJump/uSync/pull/1043))
+- **Reliability**: save failures rejected by Umbraco (e.g. an invalid ISO code, a rejected content/media/template save) were previously discarded silently, so a failed import step could still get reported as a success. These now surface as proper import failures across Language, DictionaryItem, Webhook, ContentType/MediaType/MemberType, DataType, Domain, Template, Media, and Content serializers. ([#1040](https://github.com/KevinJump/uSync/pull/1040), [#1042](https://github.com/KevinJump/uSync/pull/1042))
+- **Blueprints**: fixed bulk-imported content blueprints being saved through the wrong path, which silently corrupted their object type and caused duplicate-key errors on the next import. Blueprints saved during the second-pass bulk import now go through `SaveBlueprint` like a normal single-item save. ([#1035](https://github.com/KevinJump/uSync/pull/1035))
+
+## Other
+
+- Dependency bumps (chalk, vite-plugin-dts, and a few NuGet/npm dependency-group updates).
+- CI/CD: nightly builds are now automatically published to the [Azure Artifacts nightly feed](https://pkgs.dev.azure.com/jumoo/Public/_packaging/nightly/nuget/v3/index.json) on every push to this branch.
+]]></description>
+    </item>
+    <item>
+      <title>CSV Connector 18.0.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v18.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v18.0.0</guid>
+      <pubDate>Mon, 17 Aug 2026 10:44:25 GMT</pubDate>
+      <description><![CDATA[Umbraco 18 release.
+
+Adds repository standards (LICENSE, CHANGELOG, SECURITY, CODE_OF_CONDUCT, CLAUDE.md,
+editorconfig, global.json, Directory.Build.props, GitVersion.yml) and CI/CD workflows
+(PR build, package build, release, CodeQL), matching the conventions used across
+Jumoo's other Translation Manager connectors.
+
+See [CHANGELOG.md](https://github.com/Jumoo/Jumoo.TranslationManager.CSV/blob/v18/main/CHANGELOG.md) for details.]]></description>
+    </item>
+    <item>
+      <title>CSV Connector 18.0.0-beta1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases</guid>
+      <pubDate>Mon, 17 Aug 2026 10:32:41 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>uSync 17.3.7</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v17.3.7</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.3.7</guid>
+      <pubDate>Mon, 17 Aug 2026 09:39:43 GMT</pubDate>
+      <description><![CDATA[## Release
+
+- v17.3.7 build files (package version bumps)
+
+## Fixes
+
+- Fix discarded save-attempt results across remaining serializers (#1041)
+- Fix silently discarded save failures in Language/DictionaryItem/Webhook serializers (#1039)
+- Save blueprints via `SaveBlueprint` on the bulk save path (#1037)
+- Fix: move property out of group on import (#1009, #1010)
+
+## Performance
+
+- Use new `Lock` & make internal/private classes sealed to avoid virtual dispatch (#998)
+- Avoid some unneeded dictionary operations (#997)
+
+## Dependencies
+
+- Bump postcss from 8.5.15 to 8.5.26 in /uSync.History/history-client (#1023)
+- Bump fast-uri in /uSync.Backoffice.Management.Client/usync-assets (#1021, #1008)
+- Bump ws from 7.5.10 to 7.5.11 in /uSync.History/history-client (#995)
+- Bump ws in /uSync.Backoffice.Management.Client/usync-assets (#1013)
+- Bump @hey-api/openapi-ts in /uSync.History/history-client (#978)
+- Bump js-yaml and @hey-api/openapi-ts (#1011)
+- Bump linkify-it in /uSync.Backoffice.Management.Client/usync-assets (#1007)
+- Bump brace-expansion in /uSync.Backoffice.Management.Client/usync-assets (#999)
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.3.6...v17.3.7
+]]></description>
+    </item>
+    <item>
       <title>Google Connector 17.1.0-beta</title>
       <link>https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0-beta</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0-beta</guid>
@@ -673,56 +784,6 @@ Not user facing, but new in this release:
       <link>https://github.com/KevinJump/uSync/releases</link>
       <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases</guid>
       <pubDate>Fri, 03 Jul 2026 15:36:28 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.5.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
-      <pubDate>Thu, 02 Jul 2026 10:25:57 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Maintenance Mode 18.0.0</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases</guid>
-      <pubDate>Tue, 30 Jun 2026 13:35:38 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Linked Pages 18.0.0</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</guid>
-      <pubDate>Tue, 30 Jun 2026 10:38:42 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.5.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.5.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.5.0</guid>
-      <pubDate>Mon, 29 Jun 2026 19:53:29 GMT</pubDate>
-      <description><![CDATA[This release focuses on the reliability of background processing. It fixes the "No AmbientContext was found" errors that could occur while translation jobs were being processed in the background, and modernises how those background tasks are run. _These errors surfaced as a result of some changes to how background tasks work in Umbraco v17.5.0._ 
-
-## ⚠️ Requires Umbraco 17.5.0
-
-This version updates the minimum Umbraco CMS dependency to **17.5.0**. Translation Manager now uses Umbraco's recurring background job framework, which is only available from 17.5.0 onwards. Please make sure your site is on Umbraco 17.5.0 (or newer) before upgrading.
-
-## What's changed
-
-- **Fixed background processing scope errors.** Resolved the intermittent "No AmbientContext was found" errors that could appear in the logs during background translation processing. Background jobs no longer share Umbraco's internal scope state with the rest of the site.
-
-- **Approval items now process as the right user.** When translations are approved in the background, each item is now processed as the user who queued it. This fixes cases where a scheduled pass could pick up approval items and fail the permission check.
-
-- **Modernised background jobs.** The background item processor and the submitted-job checker now run as Umbraco recurring background jobs. Immediate processing signals the job directly, replacing the older queue/locking approach.
-
-- **Fixed job-option toggles.** Job option toggles now use the correct underlying option key rather than the display label.
-]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.4.6</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
-      <pubDate>Mon, 29 Jun 2026 15:53:13 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>
