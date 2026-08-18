@@ -24,12 +24,6 @@
     "githubRepo": "Jumoo/uSync.Umbraco.Commerce"
   },
   {
-    "nugetId": "uSync.Automate",
-    "title": "uSync Automate",
-    "category": "uSync Addon",
-    "githubRepo": "Jumoo/uSync.Automate"
-  },
-  {
     "nugetId": "uSync.Cli",
     "title": "uSync CLI",
     "category": "uSync Addon",
@@ -46,12 +40,6 @@
     "title": "uSync Hangfire",
     "category": "uSync Addon",
     "githubRepo": "Jumoo/uSync.Hangfire"
-  },
-  {
-    "nugetId": "Jumoo.TranslationManager.Automate",
-    "title": "Translation Manager Automate",
-    "category": "Translation AddOn",
-    "githubRepo": "Jumoo/Jumoo.TranslationManager.Automate"
   },
   {
     "nugetId": "Jumoo.TranslationManager",
@@ -161,5 +149,17 @@
     "title": "Maintenance Mode",
     "category": "Other",
     "githubRepo": "Jumoo/Our.Umbraco.MaintenanceMode"
+  },
+  {
+    "nugetId": "uSync.Automate",
+    "title": "uSync Automate",
+    "category": "uSync.Automate Extensions",
+    "githubRepo": "Jumoo/uSync.Automate"
+  },
+  {
+    "nugetId": "Jumoo.TranslationManager.Automate",
+    "title": "Translation Manager Automate",
+    "category": "uSync.Automate Extensions",
+    "githubRepo": "Jumoo/Jumoo.TranslationManager.Automate"
   }
 ]

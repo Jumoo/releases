@@ -3,6 +3,10 @@
     {
       "fileMatch": ["/data/packages.json"],
       "url": "./data/packages.schema.json"
+    },
+    {
+      "fileMatch": ["/docs/categories.json"],
+      "url": "./docs/categories.schema.json"
     }
   ]
 }

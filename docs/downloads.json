@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T11:21:02.606Z",
+  "generatedAt": "2026-08-18T12:45:49.523Z",
   "packages": [
     {
       "package": "uSync",
@@ -1722,17 +1722,6 @@
       ]
     },
     {
-      "package": "uSync.Automate",
-      "title": "uSync Automate",
-      "totalDownloads": 43,
-      "versions": [
-        {
-          "version": "17.0.0-beta1",
-          "downloads": 43
-        }
-      ]
-    },
-    {
       "package": "uSync.Cli",
       "title": "uSync CLI",
       "totalDownloads": 32216,
@@ -1862,17 +1851,6 @@
         {
           "version": "0.17.3",
           "downloads": 45
-        }
-      ]
-    },
-    {
-      "package": "Jumoo.TranslationManager.Automate",
-      "title": "Translation Manager Automate",
-      "totalDownloads": 0,
-      "versions": [
-        {
-          "version": "17.0.0-rc1",
-          "downloads": 0
         }
       ]
     },
@@ -5683,6 +5661,28 @@
         {
           "version": "18.1.0",
           "downloads": 227
+        }
+      ]
+    },
+    {
+      "package": "uSync.Automate",
+      "title": "uSync Automate",
+      "totalDownloads": 43,
+      "versions": [
+        {
+          "version": "17.0.0-beta1",
+          "downloads": 43
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.Automate",
+      "title": "Translation Manager Automate",
+      "totalDownloads": 0,
+      "versions": [
+        {
+          "version": "17.0.0-rc1",
+          "downloads": 0
         }
       ]
     }

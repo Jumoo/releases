@@ -68,7 +68,7 @@ function renderCategorySection(categoryGroup, eol) {
 
 async function loadVersions() {
   try {
-    const [releases, eol] = await Promise.all([fetchReleases(), fetchEol()]);
+    const [releases, eol, categoryOrder] = await Promise.all([fetchReleases(), fetchEol(), fetchCategoryOrder()]);
 
     feedEl.innerHTML = "";
     if (releases.length === 0) {
@@ -78,7 +78,7 @@ async function loadVersions() {
     }
 
     const packageGroups = groupByPackage(releases);
-    for (const categoryGroup of groupByCategory(packageGroups)) {
+    for (const categoryGroup of groupByCategory(packageGroups, categoryOrder)) {
       feedEl.appendChild(renderCategorySection(categoryGroup, eol));
     }
   } catch (err) {

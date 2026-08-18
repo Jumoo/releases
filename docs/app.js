@@ -38,7 +38,7 @@ function renderCategorySection(categoryGroup) {
 
 async function loadReleases() {
   try {
-    const releases = await fetchReleases();
+    const [releases, categoryOrder] = await Promise.all([fetchReleases(), fetchCategoryOrder()]);
 
     feedEl.innerHTML = "";
     if (releases.length === 0) {
@@ -48,7 +48,7 @@ async function loadReleases() {
     }
 
     const packageGroups = groupByPackage(releases);
-    for (const categoryGroup of groupByCategory(packageGroups)) {
+    for (const categoryGroup of groupByCategory(packageGroups, categoryOrder)) {
       feedEl.appendChild(renderCategorySection(categoryGroup));
     }
   } catch (err) {

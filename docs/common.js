@@ -186,6 +186,19 @@ async function fetchEol() {
   }
 }
 
+// Optional, hand-maintained list of categories in display order (see
+// docs/categories.json). Categories not listed fall back to the default
+// most-recently-released-first order, after all listed categories.
+async function fetchCategoryOrder() {
+  try {
+    const res = await fetch("categories.json", { cache: "no-store" });
+    if (!res.ok) return [];
+    return res.json();
+  } catch {
+    return [];
+  }
+}
+
 // A major version is supported unless eol.json has an entry for it with
 // an "eol" date that has already passed. Majors with no entry (or a null
 // eol) are treated as supported.
@@ -195,11 +208,12 @@ function isMajorSupported(major, eol) {
   return new Date(entry.eol).getTime() >= Date.now();
 }
 
-// Buckets package groups (from groupByPackage) by category, each bucket
-// sorted by its most recently released package; categories sorted the
-// same way, except the uncategorized bucket (empty category) always
-// comes first and renders without a heading.
-function groupByCategory(packageGroups) {
+// Buckets package groups (from groupByPackage) by category. Order is:
+// 1. the uncategorized bucket (empty category) always first, no heading;
+// 2. categories listed in `order` (see fetchCategoryOrder), in that order;
+// 3. any remaining categories, sorted by their most recently released
+//    package (the pre-existing default when no order is configured).
+function groupByCategory(packageGroups, order = []) {
   const categories = new Map();
   for (const g of packageGroups) {
     if (!categories.has(g.category)) {
@@ -207,9 +221,15 @@ function groupByCategory(packageGroups) {
     }
     categories.get(g.category).packages.push(g);
   }
+  const rank = (category) => {
+    const i = order.indexOf(category);
+    return i === -1 ? order.length : i;
+  };
   return [...categories.values()].sort((a, b) => {
     if (a.category === "" && b.category !== "") return -1;
     if (b.category === "" && a.category !== "") return 1;
+    const rankDiff = rank(a.category) - rank(b.category);
+    if (rankDiff !== 0) return rankDiff;
     return new Date(b.packages[0].latest.publishedAt) - new Date(a.packages[0].latest.publishedAt);
   });
 }

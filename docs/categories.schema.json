@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://releases.jumoo.co.uk/docs/categories.schema.json",
+  "title": "Jumoo Releases category order",
+  "description": "Display order for the category headings on the homepage and versions page. Each entry must match a `category` value used in data/packages.json. Categories not listed here fall back to the default order (most recently released first). The uncategorized group (empty category) always comes first regardless of this list.",
+  "type": "array",
+  "items": { "type": "string", "minLength": 1 },
+  "uniqueItems": true
+}
