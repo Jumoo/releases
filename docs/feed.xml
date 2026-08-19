@@ -5,6 +5,13 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>LanguageWire Connector 17.0.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.LanguageWire/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.LanguageWire/releases</guid>
+      <pubDate>Wed, 19 Aug 2026 10:07:06 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>SmartCat Connector 17.0.0-rc1</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0-rc1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0-rc1</guid>
@@ -777,13 +784,6 @@ Not user facing, but new in this release:
       <link>https://github.com/Jumoo/Microsoft.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases</guid>
       <pubDate>Tue, 07 Jul 2026 09:26:41 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 18.0.0</title>
-      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases</guid>
-      <pubDate>Fri, 03 Jul 2026 15:42:48 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>
