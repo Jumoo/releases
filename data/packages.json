@@ -60,6 +60,12 @@
     "githubRepo": "Jumoo/Jumoo.TranslationManager.CSV"
   },
   {
+    "nugetId": "Jumoo.TranslationManager.UmbracoAI",
+    "title": "UmbracoAI Connector",
+    "category": "Translation Connectors",
+    "githubRepo": "Jumoo/Jumoo.TranslationManager.UmbracoAI"
+  },
+  {
     "nugetId": "Jumoo.TranslationManager.SmartCat",
     "title": "SmartCat Connector",
     "category": "Translation Connectors",
