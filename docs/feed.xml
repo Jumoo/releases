@@ -5,6 +5,23 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>UmbracoAI Connector 17.0.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.0.0</guid>
+      <pubDate>Thu, 20 Aug 2026 11:42:54 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* chore: bring repository standards and CI/CD in line with the other connectors by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/2
+* chore: bump to the latest Umbraco 17.x, Umbraco.AI, and Translation Manager AI packages by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/6
+* Remove unused hey-api devDependencies by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/7
+* chore(deps-dev): Bump vite from 7.3.1 to 8.2.1 in /src/Jumoo.TranslationManager.UmbracoAi/Client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/5
+
+## New Contributors
+* @KevinJump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/2
+* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/5
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/commits/v17.0.0]]></description>
+    </item>
+    <item>
       <title>LanguageWire Connector 17.0.1</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.LanguageWire/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.LanguageWire/releases</guid>
@@ -778,13 +795,6 @@ Not user facing, but new in this release:
 -  UI: — Publisher "UI settings" button toggles overlapping / broken layout
  - UI: Rounded corners on the UI-page example buttons
 ]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.5.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
-      <pubDate>Tue, 07 Jul 2026 10:43:40 GMT</pubDate>
-      <description><![CDATA[]]></description>
     </item>
   </channel>
 </rss>

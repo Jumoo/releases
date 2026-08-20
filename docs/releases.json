@@ -1,5 +1,18 @@
 [
   {
+    "package": "Jumoo.TranslationManager.UmbracoAI",
+    "title": "UmbracoAI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.UmbracoAI",
+    "version": "17.0.0",
+    "publishedAt": "2026-08-20T11:42:54Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.UmbracoAI/17.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.0.0",
+    "notes": "## What's Changed\n* chore: bring repository standards and CI/CD in line with the other connectors by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/2\n* chore: bump to the latest Umbraco 17.x, Umbraco.AI, and Translation Manager AI packages by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/6\n* Remove unused hey-api devDependencies by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/7\n* chore(deps-dev): Bump vite from 7.3.1 to 8.2.1 in /src/Jumoo.TranslationManager.UmbracoAi/Client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/5\n\n## New Contributors\n* @KevinJump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/2\n* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/5\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/commits/v17.0.0",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.LanguageWire",
     "title": "LanguageWire Connector",
     "category": "Translation Connectors",
@@ -1909,6 +1922,19 @@
     "notes": "Very long time no release. \r\n\r\n## What's Changed\r\n### Other Changes\r\n* Make it so we can migrate variant properties, (for v8 -> v.x migrations. by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/257\r\n* Added check for cultured name or published values - to ensure no duplicates by @CodingDK in https://github.com/Jumoo/uSyncMigrations/pull/258\r\n* Fixed missing use of label variable in GridConfigurationExtensions by @CodingDK in https://github.com/Jumoo/uSyncMigrations/pull/259\r\n* Prevent adding blocks that already added to the grid blocks by @CodingDK in https://github.com/Jumoo/uSyncMigrations/pull/260\r\n* Fixes that PropertyType is not updated on contentTypes by @CodingDK in https://github.com/Jumoo/uSyncMigrations/pull/262\r\n* Content template migration by @kows in https://github.com/Jumoo/uSyncMigrations/pull/296\r\n* New grid view property migrators, migrate column settings from grid to block grid by @steve-crook-wtg in https://github.com/Jumoo/uSyncMigrations/pull/286\r\n* Add a Terratype to Our.Umbraco.GMaps Migrator by @glombek in https://github.com/Jumoo/uSyncMigrations/pull/285\r\n* Add a Cogworks.Meganav to Our.Umbraco.Meganav migrator by @glombek in https://github.com/Jumoo/uSyncMigrations/pull/284\r\n* BlockedItems should be a list of DataTypes, not property editors by @glombek in https://github.com/Jumoo/uSyncMigrations/pull/283\r\n* Update Imulus URL picker to migrate with maximum by @ljfio in https://github.com/Jumoo/uSyncMigrations/pull/299\r\n* Add in migrator for Codery.TextCount by @ljfio in https://github.com/Jumoo/uSyncMigrations/pull/300\r\n* Fix resolving aliases for newly migrated Archetype data types by @ljfio in https://github.com/Jumoo/uSyncMigrations/pull/301\r\n* Add in Umbraco.DropdownlistPublishingKeys migrator by @ljfio in https://github.com/Jumoo/uSyncMigrations/pull/302\r\n* Add Block Settings Directly To Layout Blocks by @keck-marcel in https://github.com/Jumoo/uSyncMigrations/pull/305\r\n* Add domain migration handlers for Umbraco 7 and 8 to 13 migrations by @miyagisan221b in https://github.com/Jumoo/uSyncMigrations/pull/307\r\n* Migrate a grid to a block *list* by @glombek in https://github.com/Jumoo/uSyncMigrations/pull/308\r\n* SEO Checker Robots field to separate fields by @glombek in https://github.com/Jumoo/uSyncMigrations/pull/309\r\n* Fix broken inline macros by @glombek in https://github.com/Jumoo/uSyncMigrations/pull/310\r\n* Prevents adding language titles unnecessarily by @AaronSadlerUK in https://github.com/Jumoo/uSyncMigrations/pull/314\r\n\r\n## New Contributors\r\n* @CodingDK made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/258\r\n* @kows made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/296\r\n* @steve-crook-wtg made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/286\r\n* @glombek made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/285\r\n* @ljfio made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/299\r\n* @keck-marcel made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/305\r\n* @miyagisan221b made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/307\r\n* @AaronSadlerUK made their first contribution in https://github.com/Jumoo/uSyncMigrations/pull/314\r\n\r\n**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/4.0.0-phase.5...4.0.0-phase.5.2",
     "prerelease": false,
     "umbracoMajor": 10
+  },
+  {
+    "package": "Jumoo.TranslationManager.UmbracoAI",
+    "title": "UmbracoAI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.UmbracoAI",
+    "version": "1.0.0",
+    "publishedAt": "2026-02-04T16:23:19.81+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.UmbracoAI/1.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 17
   },
   {
     "package": "Jumoo.TranslationManager",
