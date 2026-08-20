@@ -5,6 +5,23 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>UmbracoAI Connector 17.1.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.0</guid>
+      <pubDate>Thu, 20 Aug 2026 13:57:07 GMT</pubDate>
+      <description><![CDATA[## Highlights
+
+This release adds an **AI Tool** — `translate_page` — that lets Umbraco Copilot trigger a Translation Manager translation job directly from the backoffice chat panel. An editor can ask to translate the page they're on (optionally with its children, and optionally publish the result) without leaving it or knowing anything about Translation Manager's workspace; if a page has more than one target language configured, the tool asks the assistant to relay a clarifying question instead of guessing. Because it creates and submits a normal Translation Manager job under the hood, chat-triggered translations get the same translation memory reuse, review/approval workflow, and workspace visibility as a job created by hand — see [docs/tools.md](https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/blob/v17/main/docs/tools.md) for the full write-up, including screenshots of both flows.
+
+## What's Changed
+* Add translate_page Umbraco.AI tool by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/8
+* Add docs/tools.md describing the translate_page AI Tool by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/9
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/compare/v17.0.0...v17.1.0
+]]></description>
+    </item>
+    <item>
       <title>UmbracoAI Connector 17.0.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.0.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.0.0</guid>
@@ -781,20 +798,6 @@ Not user facing, but new in this release:
       <guid isPermaLink="true">https://github.com/KevinJump/uSync.Forms/releases</guid>
       <pubDate>Wed, 08 Jul 2026 11:09:23 GMT</pubDate>
       <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 18.0.1</title>
-      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.0.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.0.1</guid>
-      <pubDate>Wed, 08 Jul 2026 10:05:04 GMT</pubDate>
-      <description><![CDATA[This is a minor patch release of uSync.Complete for Umbraco v18, it fixes some UI issues present in the v18.0.0 release
-
-
-# What's changed 
- - UI: — Licence status not showing (<usync-licence-status> rendered empty)
--  UI: — Publisher "UI settings" button toggles overlapping / broken layout
- - UI: Rounded corners on the UI-page example buttons
-]]></description>
     </item>
   </channel>
 </rss>
