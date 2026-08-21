@@ -167,5 +167,11 @@
     "title": "Translation Manager Automate",
     "category": "uSync.Automate Extensions",
     "githubRepo": "Jumoo/Jumoo.TranslationManager.Automate"
+  },
+  {
+    "nugetId": "Umbraco.Community.PowerToys",
+    "title": "PowerToys",
+    "category": "Other",
+    "githubRepo": "Jumoo/umbraco.community.powertoys"
   }
 ]
