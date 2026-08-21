@@ -5,10 +5,10 @@
     "category": "Other",
     "repo": "Jumoo/umbraco.community.powertoys",
     "version": "17.0.0-rc1",
-    "publishedAt": "2026-08-21T13:53:09.28+00:00",
+    "publishedAt": "2026-08-21T13:30:06Z",
     "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.PowerToys/17.0.0-rc1",
-    "githubUrl": "https://github.com/Jumoo/umbraco.community.powertoys/releases",
-    "notes": null,
+    "githubUrl": "https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0-rc1",
+    "notes": "First release candidate for Umbraco 17.\r\n\r\n### Added\r\n\r\n- Power Toys dashboard in the Umbraco Settings section, with a `powerToy` extension type and shared context/condition so other packages can register their own tools without touching this package's code.\r\n- Built-in power toys:\r\n  - Navbar Clock - shows the current time in the backoffice header.\r\n  - Dashboard Manager - lists installed dashboards and lets you hide (or bring back) individual ones.\r\n  - Login Customizer - customizes the backoffice login screen's images and password reset option.\r\n  - Help Menu Editor - hides built-in help menu links, adds your own, or disables the help menu.\r\n  - Environment Indicator - colours (and optionally labels) the backoffice header by matching the current URL against a list of environments.\r\n  - Theme Maker - lists installed backoffice themes and lets you add your own custom themes.\r\n  - Logo Changer - customizes the backoffice logo.\r\n- Backup/restore of all power toy settings.\r\n",
     "prerelease": true,
     "umbracoMajor": 17
   },
