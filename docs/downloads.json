@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T12:55:54.997Z",
+  "generatedAt": "2026-08-21T14:23:40.401Z",
   "packages": [
     {
       "package": "uSync",
@@ -5714,6 +5714,17 @@
         {
           "version": "17.0.0-rc1",
           "downloads": 42
+        }
+      ]
+    },
+    {
+      "package": "Umbraco.Community.PowerToys",
+      "title": "PowerToys",
+      "totalDownloads": 0,
+      "versions": [
+        {
+          "version": "17.0.0-rc1",
+          "downloads": 0
         }
       ]
     }

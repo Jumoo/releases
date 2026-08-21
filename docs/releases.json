@@ -1,5 +1,18 @@
 [
   {
+    "package": "Umbraco.Community.PowerToys",
+    "title": "PowerToys",
+    "category": "Other",
+    "repo": "Jumoo/umbraco.community.powertoys",
+    "version": "17.0.0-rc1",
+    "publishedAt": "2026-08-21T13:53:09.28+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.PowerToys/17.0.0-rc1",
+    "githubUrl": "https://github.com/Jumoo/umbraco.community.powertoys/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.UmbracoAI",
     "title": "UmbracoAI Connector",
     "category": "Translation Connectors",

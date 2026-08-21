@@ -5,6 +5,13 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>PowerToys 17.0.0-rc1</title>
+      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases</guid>
+      <pubDate>Fri, 21 Aug 2026 13:53:09 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>UmbracoAI Connector 17.1.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.0</guid>
@@ -790,13 +797,6 @@ Not user facing, but new in this release:
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</guid>
       <pubDate>Fri, 10 Jul 2026 10:26:59 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync Forms 18.0.1</title>
-      <link>https://github.com/KevinJump/uSync.Forms/releases</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync.Forms/releases</guid>
-      <pubDate>Wed, 08 Jul 2026 11:09:23 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>
