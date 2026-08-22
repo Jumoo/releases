@@ -409,37 +409,80 @@ async function fetchLatestGithubRelease(repo) {
   }
 }
 
-// Number of commits the default branch is ahead of a given tag.
-async function fetchCommitsSince(repo, tag, defaultBranch) {
+async function fetchBranches(repo) {
   try {
-    const compare = await fetchJson(
-      `https://api.github.com/repos/${repo}/compare/${encodeURIComponent(tag)}...${encodeURIComponent(defaultBranch)}`,
+    return await fetchJson(`https://api.github.com/repos/${repo}/branches?per_page=100`, githubHeaders());
+  } catch (err) {
+    console.warn(`  GitHub branches fetch failed for ${repo}: ${err.message}`);
+    return [];
+  }
+}
+
+async function fetchCompare(repo, base, head) {
+  try {
+    return await fetchJson(
+      `https://api.github.com/repos/${repo}/compare/${encodeURIComponent(base)}...${encodeURIComponent(head)}`,
       githubHeaders()
     );
-    return compare.ahead_by ?? null;
   } catch (err) {
-    console.warn(`  GitHub compare fetch failed for ${repo} (${tag}...${defaultBranch}): ${err.message}`);
+    console.warn(`  GitHub compare fetch failed for ${repo} (${base}...${head}): ${err.message}`);
     return null;
   }
 }
 
-// For each package, how far its default branch has drifted from its last
-// tagged GitHub release - surfaces packages that aren't set up with
+// Only consider long-lived mainline branches ("main", "master", "v17/main",
+// etc.) as release branches. Short-lived branches (dependabot bumps, fix/*,
+// feature/*) often sit just a commit or two past an old tag purely because
+// they were cut recently and abandoned there - without this filter they'd
+// win the "fewest commits ahead" tie-break below even though they're not
+// where the package is actually maintained.
+function isMainlineBranch(name) {
+  return /^(main|master)$/i.test(name) || /^v?\d+(\.\d+)?\/(main|master)$/i.test(name);
+}
+
+// Releases aren't always cut from the repo's current default branch (e.g. a
+// package on an LTS default like v17/main can still ship a v18.0.1 release
+// off v18/main). Comparing a tag against the wrong branch produces a
+// meaningless commit count once the branches have diverged, so instead find
+// which mainline branch the tag actually sits on: the branch where the tag
+// is a direct ancestor (behind_by === 0), picking the one with the fewest
+// commits ahead if more than one qualifies (the most immediate/closest
+// branch).
+async function findReleaseBranch(repo, tag, branches) {
+  const candidates = await Promise.all(
+    branches.filter((b) => isMainlineBranch(b.name)).map(async (b) => {
+      const compare = await fetchCompare(repo, tag, b.name);
+      if (!compare || compare.behind_by !== 0) return null;
+      const lastCommit = compare.commits?.at(-1);
+      return {
+        branch: b.name,
+        aheadBy: compare.ahead_by ?? 0,
+        lastCommitDate: lastCommit?.commit?.committer?.date ?? lastCommit?.commit?.author?.date ?? null,
+      };
+    })
+  );
+  const found = candidates.filter(Boolean).sort((a, b) => a.aheadBy - b.aheadBy);
+  return found[0] ?? null;
+}
+
+// For each package, how far the branch its last release was actually cut
+// from has drifted since - surfaces packages that aren't set up with
 // auto-release/tagging (no releases at all) alongside ones that are just
 // due a release.
 async function buildActivity(packages) {
   const out = [];
   for (const pkg of packages) {
     console.log(`Fetching activity for ${pkg.nugetId} / ${pkg.githubRepo}...`);
-    const [repoInfo, latestRelease] = await Promise.all([
+    const [repoInfo, latestRelease, branches] = await Promise.all([
       fetchGithubRepoInfo(pkg.githubRepo),
       fetchLatestGithubRelease(pkg.githubRepo),
+      fetchBranches(pkg.githubRepo),
     ]);
 
     if (!repoInfo) continue;
 
-    const commitsSince = latestRelease
-      ? await fetchCommitsSince(pkg.githubRepo, latestRelease.tag, repoInfo.defaultBranch)
+    const releaseBranch = latestRelease
+      ? await findReleaseBranch(pkg.githubRepo, latestRelease.tag, branches)
       : null;
 
     out.push({
@@ -448,11 +491,17 @@ async function buildActivity(packages) {
       category: pkg.category || "",
       repo: pkg.githubRepo,
       defaultBranch: repoInfo.defaultBranch,
-      lastCommitDate: repoInfo.lastCommitDate,
       lastReleaseTag: latestRelease?.tag ?? null,
       lastReleaseDate: latestRelease?.publishedAt ?? null,
       lastReleaseUrl: latestRelease?.htmlUrl ?? null,
-      commitsSince,
+      releaseBranch: releaseBranch?.branch ?? null,
+      commitsSince: releaseBranch?.aheadBy ?? null,
+      // compare's commit list is empty when ahead_by is 0 (nothing to list),
+      // so fall back to the release date itself in that case.
+      lastCommitDate:
+        releaseBranch?.lastCommitDate ??
+        (releaseBranch?.aheadBy === 0 ? latestRelease?.publishedAt : null) ??
+        repoInfo.lastCommitDate,
     });
   }
   return out;

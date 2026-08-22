@@ -43,13 +43,13 @@ Categories listed there are shown in that order, before any unlisted categories 
 
 ## Activity page
 
-`activity.html` lists, per package, how many commits sit on the GitHub repo's default branch since its last tagged release — a quick way to spot packages that are overdue a release. For each package the fetch script:
+`activity.html` lists, per package, how many commits sit on the branch its last release was actually cut from, since that release — a quick way to spot packages that are overdue a release. Releases aren't always cut from the repo's current default branch: a package might default to an LTS branch (e.g. `v17/main`) while its latest tagged release shipped from a newer one (e.g. `v18.0.1` off `v18/main`) — comparing against the wrong branch would produce a meaningless count once the two have diverged. So for each package the fetch script:
 
-1. Reads the repo's actual `default_branch` from the GitHub API, rather than guessing between `main`/`v17/main`/`v18/main` — whatever branch the repo currently points at is used automatically.
-2. Fetches the most recent GitHub release (if any).
-3. Compares that release's tag against the default branch to get a commit count and the branch's last commit date.
+1. Fetches the most recent GitHub release (if any) and the repo's branches.
+2. Finds which branch that release's tag actually sits on — the branch where the tag is a direct ancestor, picking the closest one (fewest commits ahead) if more than one qualifies.
+3. Uses that branch (not necessarily the repo's `default_branch`) to get the commit count and last commit date.
 
-Packages whose repo has no GitHub release at all (no auto-release/tagging configured) are called out separately as "no tagged releases" instead of a commit count, since there's no tag to measure from.
+The site flags a package with "on `<branch>`" next to its release when that release branch differs from the repo's current default, so it's clear at a glance when the two disagree. Packages whose repo has no GitHub release at all (no auto-release/tagging configured) are called out separately as "no tagged releases" instead of a commit count, since there's no tag to measure from.
 
 ## Private repos
 

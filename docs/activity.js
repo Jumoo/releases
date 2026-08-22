@@ -40,10 +40,24 @@ function renderActivityTable(rows) {
     const releaseCell = p.lastReleaseTag
       ? `<a href="${escapeHtml(p.lastReleaseUrl)}" target="_blank" rel="noopener">${escapeHtml(p.lastReleaseTag)}</a>`
       : '<span class="badge badge-untagged">untagged</span>';
-    const commitsCell = p.commitsSince === null ? "—" : p.commitsSince;
+
+    // Flag when the release was cut from a branch other than the repo's
+    // current default (e.g. a v18.0.1 release cut from v18/main on a repo
+    // whose default is the v17/main LTS branch) - the commit count below is
+    // against that release branch, not the default one.
+    const branchNote =
+      p.releaseBranch && p.releaseBranch !== p.defaultBranch
+        ? ` <span class="branch-note" title="Released from ${escapeHtml(p.releaseBranch)} - the repo's default branch is ${escapeHtml(p.defaultBranch)}">on ${escapeHtml(p.releaseBranch)}</span>`
+        : "";
+
+    const commitsCell =
+      p.commitsSince === null
+        ? "—"
+        : `<span title="${escapeHtml(String(p.commitsSince))} commit(s) on ${escapeHtml(p.releaseBranch ?? "")} since ${escapeHtml(p.lastReleaseTag ?? "")}">${p.commitsSince}</span>`;
+
     tr.innerHTML = `
       <td><a href="package.html?name=${encodeURIComponent(p.package)}">${escapeHtml(p.title)}</a></td>
-      <td>${releaseCell}</td>
+      <td>${releaseCell}${branchNote}</td>
       <td>${formatDate(p.lastReleaseDate)}</td>
       <td>${commitsCell}</td>
       <td>${formatDate(p.lastCommitDate)}</td>
