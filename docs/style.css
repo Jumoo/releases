@@ -465,6 +465,18 @@ footer {
   letter-spacing: 0.03em;
 }
 
+.badge-untagged {
+  color: var(--muted);
+  border-color: var(--muted);
+  margin-left: 0;
+  margin-right: 0.4rem;
+}
+
+.branch-note {
+  color: var(--pre-badge);
+  font-size: 0.8em;
+}
+
 .sparkline-cell {
   width: 150px;
 }

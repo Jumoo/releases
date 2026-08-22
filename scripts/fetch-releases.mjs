@@ -132,9 +132,14 @@ async function fetchNugetDownloads(pkg) {
   };
 }
 
-async function fetchGithubReleases(repo) {
+function githubHeaders() {
   const headers = { Accept: "application/vnd.github+json" };
   if (GH_TOKEN) headers.Authorization = `Bearer ${GH_TOKEN}`;
+  return headers;
+}
+
+async function fetchGithubReleases(repo) {
+  const headers = githubHeaders();
 
   try {
     const releases = await fetchJson(
@@ -373,6 +378,135 @@ async function updateDownloadsHistory(packagesDownloads) {
   return history;
 }
 
+// Repo's default branch (whatever the repo is actually pointed at - main,
+// v18/main, etc. - so packages don't need to be manually flagged with which
+// branch to follow) plus the tip commit date of that branch.
+async function fetchGithubRepoInfo(repo) {
+  try {
+    const info = await fetchJson(`https://api.github.com/repos/${repo}`, githubHeaders());
+    return { defaultBranch: info.default_branch, lastCommitDate: info.pushed_at };
+  } catch (err) {
+    console.warn(`  GitHub repo info fetch failed for ${repo}: ${err.message}`);
+    return null;
+  }
+}
+
+// The most recent GitHub release (by publish date, including pre-releases -
+// unlike releases/latest, which skips pre-releases). Returns null for repos
+// that haven't tagged a GitHub release yet (no auto-release/tagging set up).
+async function fetchLatestGithubRelease(repo) {
+  try {
+    const releases = await fetchJson(
+      `https://api.github.com/repos/${repo}/releases?per_page=1`,
+      githubHeaders()
+    );
+    const r = releases[0];
+    if (!r) return null;
+    return { tag: r.tag_name, publishedAt: r.published_at, htmlUrl: r.html_url };
+  } catch (err) {
+    console.warn(`  GitHub latest release fetch failed for ${repo}: ${err.message}`);
+    return null;
+  }
+}
+
+async function fetchBranches(repo) {
+  try {
+    return await fetchJson(`https://api.github.com/repos/${repo}/branches?per_page=100`, githubHeaders());
+  } catch (err) {
+    console.warn(`  GitHub branches fetch failed for ${repo}: ${err.message}`);
+    return [];
+  }
+}
+
+async function fetchCompare(repo, base, head) {
+  try {
+    return await fetchJson(
+      `https://api.github.com/repos/${repo}/compare/${encodeURIComponent(base)}...${encodeURIComponent(head)}`,
+      githubHeaders()
+    );
+  } catch (err) {
+    console.warn(`  GitHub compare fetch failed for ${repo} (${base}...${head}): ${err.message}`);
+    return null;
+  }
+}
+
+// Only consider long-lived mainline branches ("main", "master", "v17/main",
+// etc.) as release branches. Short-lived branches (dependabot bumps, fix/*,
+// feature/*) often sit just a commit or two past an old tag purely because
+// they were cut recently and abandoned there - without this filter they'd
+// win the "fewest commits ahead" tie-break below even though they're not
+// where the package is actually maintained.
+function isMainlineBranch(name) {
+  return /^(main|master)$/i.test(name) || /^v?\d+(\.\d+)?\/(main|master)$/i.test(name);
+}
+
+// Releases aren't always cut from the repo's current default branch (e.g. a
+// package on an LTS default like v17/main can still ship a v18.0.1 release
+// off v18/main). Comparing a tag against the wrong branch produces a
+// meaningless commit count once the branches have diverged, so instead find
+// which mainline branch the tag actually sits on: the branch where the tag
+// is a direct ancestor (behind_by === 0), picking the one with the fewest
+// commits ahead if more than one qualifies (the most immediate/closest
+// branch).
+async function findReleaseBranch(repo, tag, branches) {
+  const candidates = await Promise.all(
+    branches.filter((b) => isMainlineBranch(b.name)).map(async (b) => {
+      const compare = await fetchCompare(repo, tag, b.name);
+      if (!compare || compare.behind_by !== 0) return null;
+      const lastCommit = compare.commits?.at(-1);
+      return {
+        branch: b.name,
+        aheadBy: compare.ahead_by ?? 0,
+        lastCommitDate: lastCommit?.commit?.committer?.date ?? lastCommit?.commit?.author?.date ?? null,
+      };
+    })
+  );
+  const found = candidates.filter(Boolean).sort((a, b) => a.aheadBy - b.aheadBy);
+  return found[0] ?? null;
+}
+
+// For each package, how far the branch its last release was actually cut
+// from has drifted since - surfaces packages that aren't set up with
+// auto-release/tagging (no releases at all) alongside ones that are just
+// due a release.
+async function buildActivity(packages) {
+  const out = [];
+  for (const pkg of packages) {
+    console.log(`Fetching activity for ${pkg.nugetId} / ${pkg.githubRepo}...`);
+    const [repoInfo, latestRelease, branches] = await Promise.all([
+      fetchGithubRepoInfo(pkg.githubRepo),
+      fetchLatestGithubRelease(pkg.githubRepo),
+      fetchBranches(pkg.githubRepo),
+    ]);
+
+    if (!repoInfo) continue;
+
+    const releaseBranch = latestRelease
+      ? await findReleaseBranch(pkg.githubRepo, latestRelease.tag, branches)
+      : null;
+
+    out.push({
+      package: pkg.nugetId,
+      title: pkg.title || pkg.nugetId,
+      category: pkg.category || "",
+      repo: pkg.githubRepo,
+      defaultBranch: repoInfo.defaultBranch,
+      lastReleaseTag: latestRelease?.tag ?? null,
+      lastReleaseDate: latestRelease?.publishedAt ?? null,
+      lastReleaseUrl: latestRelease?.htmlUrl ?? null,
+      releaseBranch: releaseBranch?.branch ?? null,
+      commitsSince: releaseBranch?.aheadBy ?? null,
+      // compare's commit list is empty when ahead_by is 0 (nothing to list),
+      // so fall back to the release date itself in that case.
+      lastCommitDate:
+        releaseBranch?.lastCommitDate ??
+        (releaseBranch?.aheadBy === 0 ? latestRelease?.publishedAt : null) ??
+        repoInfo.lastCommitDate,
+    });
+  }
+  return out;
+}
+
 async function main() {
   const packages = await readPackages();
   const all = [];
@@ -402,6 +536,15 @@ async function main() {
   console.log(`Wrote downloads for ${downloads.length} packages to ${outDownloads}`);
 
   await updateDownloadsHistory(downloads);
+
+  const activity = await buildActivity(packages);
+  const outActivity = path.join(ROOT, "docs", "activity.json");
+  await writeFile(
+    outActivity,
+    JSON.stringify({ generatedAt: new Date().toISOString(), packages: activity }, null, 2) + "\n",
+    "utf8"
+  );
+  console.log(`Wrote activity for ${activity.length} packages to ${outActivity}`);
 }
 
 main().catch((err) => {
