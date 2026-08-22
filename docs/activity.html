@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Package releases — Jumoo Releases</title>
+  <title>Activity — Jumoo Releases</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" />
@@ -13,32 +13,32 @@
   <header>
     <nav class="site-nav site-nav-top">
       <a href="https://changes.jumoo.co.uk">changes</a>
-      <a href="https://releases.jumoo.co.uk" class="current">releases</a>
+      <a href="https://releases.jumoo.co.uk">releases</a>
       <a href="versions.html">versions</a>
       <a href="stats.html">stats</a>
-      <a href="activity.html">activity</a>
+      <a href="activity.html" class="current">activity</a>
     </nav>
     <p class="back-link"><a href="index.html">&larr; All packages</a></p>
-    <h1 id="package-title">Loading…</h1>
-    <p class="subtitle" id="package-subtitle"></p>
+    <h1>Activity</h1>
+    <p class="subtitle">Commits on each package's default branch since its last tagged GitHub release</p>
   </header>
 
-  <main id="feed">
-    <p id="status">Loading releases…</p>
+  <main id="activity-main">
+    <p id="status">Loading activity…</p>
   </main>
 
   <footer>
-    <p>Generated automatically from NuGet and GitHub release data.</p>
+    <p>"No tagged releases" means the repo doesn't have GitHub release tagging set up yet - the commit count can't be measured. Generated automatically from GitHub data.</p>
     <nav class="site-nav">
       <a href="https://changes.jumoo.co.uk">changes</a>
-      <a href="https://releases.jumoo.co.uk" class="current">releases</a>
+      <a href="https://releases.jumoo.co.uk">releases</a>
       <a href="versions.html">versions</a>
       <a href="stats.html">stats</a>
-      <a href="activity.html">activity</a>
+      <a href="activity.html" class="current">activity</a>
     </nav>
   </footer>
 
   <script src="common.js"></script>
-  <script src="package.js"></script>
+  <script src="activity.js"></script>
 </body>
 </html>

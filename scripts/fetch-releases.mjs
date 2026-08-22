@@ -132,9 +132,14 @@ async function fetchNugetDownloads(pkg) {
   };
 }
 
-async function fetchGithubReleases(repo) {
+function githubHeaders() {
   const headers = { Accept: "application/vnd.github+json" };
   if (GH_TOKEN) headers.Authorization = `Bearer ${GH_TOKEN}`;
+  return headers;
+}
+
+async function fetchGithubReleases(repo) {
+  const headers = githubHeaders();
 
   try {
     const releases = await fetchJson(
@@ -373,6 +378,86 @@ async function updateDownloadsHistory(packagesDownloads) {
   return history;
 }
 
+// Repo's default branch (whatever the repo is actually pointed at - main,
+// v18/main, etc. - so packages don't need to be manually flagged with which
+// branch to follow) plus the tip commit date of that branch.
+async function fetchGithubRepoInfo(repo) {
+  try {
+    const info = await fetchJson(`https://api.github.com/repos/${repo}`, githubHeaders());
+    return { defaultBranch: info.default_branch, lastCommitDate: info.pushed_at };
+  } catch (err) {
+    console.warn(`  GitHub repo info fetch failed for ${repo}: ${err.message}`);
+    return null;
+  }
+}
+
+// The most recent GitHub release (by publish date, including pre-releases -
+// unlike releases/latest, which skips pre-releases). Returns null for repos
+// that haven't tagged a GitHub release yet (no auto-release/tagging set up).
+async function fetchLatestGithubRelease(repo) {
+  try {
+    const releases = await fetchJson(
+      `https://api.github.com/repos/${repo}/releases?per_page=1`,
+      githubHeaders()
+    );
+    const r = releases[0];
+    if (!r) return null;
+    return { tag: r.tag_name, publishedAt: r.published_at, htmlUrl: r.html_url };
+  } catch (err) {
+    console.warn(`  GitHub latest release fetch failed for ${repo}: ${err.message}`);
+    return null;
+  }
+}
+
+// Number of commits the default branch is ahead of a given tag.
+async function fetchCommitsSince(repo, tag, defaultBranch) {
+  try {
+    const compare = await fetchJson(
+      `https://api.github.com/repos/${repo}/compare/${encodeURIComponent(tag)}...${encodeURIComponent(defaultBranch)}`,
+      githubHeaders()
+    );
+    return compare.ahead_by ?? null;
+  } catch (err) {
+    console.warn(`  GitHub compare fetch failed for ${repo} (${tag}...${defaultBranch}): ${err.message}`);
+    return null;
+  }
+}
+
+// For each package, how far its default branch has drifted from its last
+// tagged GitHub release - surfaces packages that aren't set up with
+// auto-release/tagging (no releases at all) alongside ones that are just
+// due a release.
+async function buildActivity(packages) {
+  const out = [];
+  for (const pkg of packages) {
+    console.log(`Fetching activity for ${pkg.nugetId} / ${pkg.githubRepo}...`);
+    const [repoInfo, latestRelease] = await Promise.all([
+      fetchGithubRepoInfo(pkg.githubRepo),
+      fetchLatestGithubRelease(pkg.githubRepo),
+    ]);
+
+    if (!repoInfo) continue;
+
+    const commitsSince = latestRelease
+      ? await fetchCommitsSince(pkg.githubRepo, latestRelease.tag, repoInfo.defaultBranch)
+      : null;
+
+    out.push({
+      package: pkg.nugetId,
+      title: pkg.title || pkg.nugetId,
+      category: pkg.category || "",
+      repo: pkg.githubRepo,
+      defaultBranch: repoInfo.defaultBranch,
+      lastCommitDate: repoInfo.lastCommitDate,
+      lastReleaseTag: latestRelease?.tag ?? null,
+      lastReleaseDate: latestRelease?.publishedAt ?? null,
+      lastReleaseUrl: latestRelease?.htmlUrl ?? null,
+      commitsSince,
+    });
+  }
+  return out;
+}
+
 async function main() {
   const packages = await readPackages();
   const all = [];
@@ -402,6 +487,15 @@ async function main() {
   console.log(`Wrote downloads for ${downloads.length} packages to ${outDownloads}`);
 
   await updateDownloadsHistory(downloads);
+
+  const activity = await buildActivity(packages);
+  const outActivity = path.join(ROOT, "docs", "activity.json");
+  await writeFile(
+    outActivity,
+    JSON.stringify({ generatedAt: new Date().toISOString(), packages: activity }, null, 2) + "\n",
+    "utf8"
+  );
+  console.log(`Wrote activity for ${activity.length} packages to ${outActivity}`);
 }
 
 main().catch((err) => {
