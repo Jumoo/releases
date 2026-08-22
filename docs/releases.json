@@ -10270,19 +10270,6 @@
     "umbracoMajor": 10
   },
   {
-    "package": "Jumoo.TranslationManager.Publicis",
-    "title": "Publicis Connector",
-    "category": "Translation Connectors",
-    "repo": "Jumoo/TranslatePlus-Connector",
-    "version": "10.0.0-rc1",
-    "publishedAt": "2023-08-22T09:43:40.197+00:00",
-    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.TranslatePlus/10.0.0-rc1",
-    "githubUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases",
-    "notes": null,
-    "prerelease": true,
-    "umbracoMajor": 9
-  },
-  {
     "package": "Jumoo.TranslationManager.DeepL",
     "title": "DeepL Connector",
     "category": "Translation Connectors",
