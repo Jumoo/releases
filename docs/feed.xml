@@ -5,6 +5,28 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync Hangfire 0.17.3</title>
+      <link>https://github.com/Jumoo/uSync.Hangfire/releases/tag/v0.17.3</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Hangfire/releases/tag/v0.17.3</guid>
+      <pubDate>Sat, 22 Aug 2026 08:50:58 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add re-entrancy guard around ProcessPipeline by @KevinJump in https://github.com/Jumoo/uSync.Hangfire/pull/7
+* Derive publisher options from the flags parameter by @KevinJump in https://github.com/Jumoo/uSync.Hangfire/pull/8
+* Route publisher strategy alias off PublishMode by @KevinJump in https://github.com/Jumoo/uSync.Hangfire/pull/9
+* Schedule restore point jobs against IRestorePointScheduler by @KevinJump in https://github.com/Jumoo/uSync.Hangfire/pull/10
+* Add repository standards and CI/CD workflows by @KevinJump in https://github.com/Jumoo/uSync.Hangfire/pull/11
+* Bump actions/upload-artifact from 4 to 7 by @dependabot[bot] in https://github.com/Jumoo/uSync.Hangfire/pull/12
+* Bump actions/setup-dotnet from 5 to 6 by @dependabot[bot] in https://github.com/Jumoo/uSync.Hangfire/pull/13
+* Bump actions/checkout from 5 to 7 by @dependabot[bot] in https://github.com/Jumoo/uSync.Hangfire/pull/14
+* Bump gittools/actions from 3 to 4 by @dependabot[bot] in https://github.com/Jumoo/uSync.Hangfire/pull/15
+* Bump the nuget-dependencies group with 1 update by @dependabot[bot] in https://github.com/Jumoo/uSync.Hangfire/pull/16
+
+## New Contributors
+* @dependabot[bot] made their first contribution in https://github.com/Jumoo/uSync.Hangfire/pull/12
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Hangfire/compare/0.17.1...v0.17.3]]></description>
+    </item>
+    <item>
       <title>PowerToys 17.0.0-rc1</title>
       <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0-rc1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0-rc1</guid>
@@ -334,13 +356,6 @@ Both action packages share loop-protection against uSync/Automate cascades (a si
 
 - `uSync.Automate.Actions.Complete`'s push/pull/restore-point actions run inline and block the workflow step for as long as the pipeline takes - size step timeouts accordingly for large trees.
 - See `UPSTREAM-REQUESTS.md` for documented friction points against `Umbraco.Automate.Core`, `uSync`, `uSync.Complete` and `Jumoo.Processing.Core` found while building this.]]></description>
-    </item>
-    <item>
-      <title>uSync Hangfire 0.17.3</title>
-      <link>https://github.com/Jumoo/uSync.Hangfire/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Hangfire/releases</guid>
-      <pubDate>Thu, 13 Aug 2026 08:48:21 GMT</pubDate>
-      <description><![CDATA[]]></description>
     </item>
     <item>
       <title>uSync 18.1.0</title>

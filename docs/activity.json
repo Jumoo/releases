@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T08:48:36.072Z",
+  "generatedAt": "2026-08-22T08:52:17.128Z",
   "packages": [
     {
       "package": "uSync",
@@ -85,12 +85,12 @@
       "category": "uSync Addon",
       "repo": "Jumoo/uSync.Hangfire",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "0.17.2",
-      "lastReleaseDate": "2026-01-20T10:54:45Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Hangfire/releases/tag/0.17.2",
+      "lastReleaseTag": "v0.17.3",
+      "lastReleaseDate": "2026-08-22T08:50:58Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Hangfire/releases/tag/v0.17.3",
       "releaseBranch": "v17/main",
-      "commitsSince": 24,
-      "lastCommitDate": "2026-08-13T08:45:24Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-08-22T08:50:58Z"
     },
     {
       "package": "Jumoo.TranslationManager",
@@ -336,8 +336,8 @@
       "lastReleaseDate": "2026-08-21T13:30:06Z",
       "lastReleaseUrl": "https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0-rc1",
       "releaseBranch": "v17/main",
-      "commitsSince": 4,
-      "lastCommitDate": "2026-08-22T08:23:19Z"
+      "commitsSince": 5,
+      "lastCommitDate": "2026-08-22T08:48:51Z"
     }
   ]
 }

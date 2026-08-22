@@ -1,5 +1,18 @@
 [
   {
+    "package": "uSync.Hangfire",
+    "title": "uSync Hangfire",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.Hangfire",
+    "version": "0.17.3",
+    "publishedAt": "2026-08-22T08:50:58Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Hangfire/0.17.3",
+    "githubUrl": "https://github.com/Jumoo/uSync.Hangfire/releases/tag/v0.17.3",
+    "notes": "## What's Changed\r\n* Add re-entrancy guard around ProcessPipeline by @KevinJump in https://github.com/Jumoo/uSync.Hangfire/pull/7\r\n* Derive publisher options from the flags parameter by @KevinJump in https://github.com/Jumoo/uSync.Hangfire/pull/8\r\n* Route publisher strategy alias off PublishMode by @KevinJump in https://github.com/Jumoo/uSync.Hangfire/pull/9\r\n* Schedule restore point jobs against IRestorePointScheduler by @KevinJump in https://github.com/Jumoo/uSync.Hangfire/pull/10\r\n* Add repository standards and CI/CD workflows by @KevinJump in https://github.com/Jumoo/uSync.Hangfire/pull/11\r\n* Bump actions/upload-artifact from 4 to 7 by @dependabot[bot] in https://github.com/Jumoo/uSync.Hangfire/pull/12\r\n* Bump actions/setup-dotnet from 5 to 6 by @dependabot[bot] in https://github.com/Jumoo/uSync.Hangfire/pull/13\r\n* Bump actions/checkout from 5 to 7 by @dependabot[bot] in https://github.com/Jumoo/uSync.Hangfire/pull/14\r\n* Bump gittools/actions from 3 to 4 by @dependabot[bot] in https://github.com/Jumoo/uSync.Hangfire/pull/15\r\n* Bump the nuget-dependencies group with 1 update by @dependabot[bot] in https://github.com/Jumoo/uSync.Hangfire/pull/16\r\n\r\n## New Contributors\r\n* @dependabot[bot] made their first contribution in https://github.com/Jumoo/uSync.Hangfire/pull/12\r\n\r\n**Full Changelog**: https://github.com/Jumoo/uSync.Hangfire/compare/0.17.1...v0.17.3",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Umbraco.Community.PowerToys",
     "title": "PowerToys",
     "category": "Other",
@@ -218,19 +231,6 @@
     "githubUrl": "https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.0-beta1",
     "notes": "First beta release. Umbraco.Automate integration for uSync and uSync.Complete, targeting Umbraco 17 / .NET 10.\n\n## Packages\n\n- **uSync.Automate** - syncs Automate's own workspaces, workspace groups and automations as uSync XML files.\n- **uSync.Automate.Actions** - run a uSync export, import or report from an Automate workflow (`uSync.export`, `uSync.import`, `uSync.report`), or target a single item (`uSync.exportItem`, `uSync.importItem`); triggers for uSync import/export/report start/complete and per-item import/export events.\n- **uSync.Automate.Actions.Complete** *(new)* - Automate actions/triggers for uSync.Complete's publisher:\n  - `uSyncComplete.push` / `uSyncComplete.pull` - push or pull content/media to another server, by item key.\n  - `uSyncComplete.pushSettings` / `uSyncComplete.pullSettings` - push or pull a single settings item (document type, data type, template, member, or a third-party entity type) by UDI entity type + key.\n  - `uSyncComplete.createRestorePoint` - take a restore point on the target before applying changes.\n  - `uSyncComplete.publishReceived` trigger - fires when this site finishes receiving a push/pull from another server.\n\nBoth action packages share loop-protection against uSync/Automate cascades (a single-flight operation gate, and automation-originated events skipped by default) - see each package's readme for details and limits.\n\n## CI/CD\n\n- PR builds and pushes to `main` now build and test both `uSync.Automate.Tests` and `uSync.Automate.Tests.Complete`.\n- Release workflow packs and publishes all three nupkgs to NuGet via trusted publishing (OIDC, no stored API key), triggered by pushing a `v*` tag.\n- CodeQL workflow is present but currently disabled (commented out) - this repo is private and code scanning needs GitHub Advanced Security, which isn't available without GitHub Teams yet.\n\n## Known limitations\n\n- `uSync.Automate.Actions.Complete`'s push/pull/restore-point actions run inline and block the workflow step for as long as the pipeline takes - size step timeouts accordingly for large trees.\n- See `UPSTREAM-REQUESTS.md` for documented friction points against `Umbraco.Automate.Core`, `uSync`, `uSync.Complete` and `Jumoo.Processing.Core` found while building this.",
     "prerelease": true,
-    "umbracoMajor": 17
-  },
-  {
-    "package": "uSync.Hangfire",
-    "title": "uSync Hangfire",
-    "category": "uSync Addon",
-    "repo": "Jumoo/uSync.Hangfire",
-    "version": "0.17.3",
-    "publishedAt": "2026-08-13T08:48:21.503+00:00",
-    "nugetUrl": "https://www.nuget.org/packages/uSync.Hangfire/0.17.3",
-    "githubUrl": "https://github.com/Jumoo/uSync.Hangfire/releases",
-    "notes": null,
-    "prerelease": false,
     "umbracoMajor": 17
   },
   {
