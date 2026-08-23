@@ -1,5 +1,18 @@
 [
   {
+    "package": "Jumoo.TranslationManager.Publicis",
+    "title": "Publicis Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/TranslatePlus-Connector",
+    "version": "17.0.0-rc4",
+    "publishedAt": "2026-08-23T17:41:27Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Publicis/17.0.0-rc4",
+    "githubUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0-rc4",
+    "notes": "",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Umbraco.Community.PowerToys",
     "title": "PowerToys",
     "category": "Other",
@@ -479,19 +492,6 @@
     "notes": null,
     "prerelease": false,
     "umbracoMajor": 18
-  },
-  {
-    "package": "Jumoo.TranslationManager.Publicis",
-    "title": "Publicis Connector",
-    "category": "Translation Connectors",
-    "repo": "Jumoo/TranslatePlus-Connector",
-    "version": "17.0.0-rc4",
-    "publishedAt": "2026-07-16T07:34:28.043+00:00",
-    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Publicis/17.0.0-rc4",
-    "githubUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases",
-    "notes": null,
-    "prerelease": true,
-    "umbracoMajor": 17
   },
   {
     "package": "Jumoo.TranslationManager.Publicis",
