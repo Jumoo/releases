@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T18:35:24.688Z",
+  "generatedAt": "2026-08-23T18:59:26.959Z",
   "packages": [
     {
       "package": "uSync",
@@ -228,12 +228,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Passthrough.Connector",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": null,
-      "lastReleaseDate": null,
-      "lastReleaseUrl": null,
-      "releaseBranch": null,
-      "commitsSince": null,
-      "lastCommitDate": "2026-08-06T11:17:08Z"
+      "lastReleaseTag": "v18.0.0",
+      "lastReleaseDate": "2026-08-23T18:56:37Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Passthrough.Connector/releases/tag/v18.0.0",
+      "releaseBranch": "v18/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-08-23T18:56:37Z"
     },
     {
       "package": "Jumoo.TranslationManager.CrowdIn",
@@ -247,19 +247,6 @@
       "releaseBranch": "v18/main",
       "commitsSince": 0,
       "lastCommitDate": "2026-08-23T17:51:11Z"
-    },
-    {
-      "package": "Jumoo.TranslationManager.LanguageWire",
-      "title": "LanguageWire Connector",
-      "category": "Translation Connectors",
-      "repo": "Jumoo/Jumoo.TranslationManager.LanguageWire",
-      "defaultBranch": "master",
-      "lastReleaseTag": null,
-      "lastReleaseDate": null,
-      "lastReleaseUrl": null,
-      "releaseBranch": null,
-      "commitsSince": null,
-      "lastCommitDate": "2024-03-05T17:45:56Z"
     },
     {
       "package": "Jumoo.TranslationManager.GlobalLink",

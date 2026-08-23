@@ -5,6 +5,13 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Passthrough Connector 18.0.0</title>
+      <link>https://github.com/Jumoo/Passthrough.Connector/releases/tag/v18.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Passthrough.Connector/releases/tag/v18.0.0</guid>
+      <pubDate>Sun, 23 Aug 2026 18:56:37 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>CrowdIn Connector 18.0.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.0.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.0.0</guid>
@@ -144,15 +151,15 @@ This release adds an **AI Tool** — `translate_page` — that lets Umbraco Copi
     </item>
     <item>
       <title>LanguageWire Connector 17.0.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.LanguageWire/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.LanguageWire/releases</guid>
+      <link>https://github.com/Jumoo/LanguageWire.Connector/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases</guid>
       <pubDate>Wed, 19 Aug 2026 11:04:07 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
       <title>LanguageWire Connector 17.0.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.LanguageWire/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.LanguageWire/releases</guid>
+      <link>https://github.com/Jumoo/LanguageWire.Connector/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases</guid>
       <pubDate>Wed, 19 Aug 2026 10:07:06 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
@@ -838,13 +845,6 @@ Not user facing, but new in this release:
       <link>https://github.com/Jumoo/Xliff.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases</guid>
       <pubDate>Fri, 10 Jul 2026 10:27:02 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Passthrough Connector 18.0.0</title>
-      <link>https://github.com/Jumoo/Passthrough.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Passthrough.Connector/releases</guid>
-      <pubDate>Fri, 10 Jul 2026 10:27:01 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
     <item>
