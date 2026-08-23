@@ -1,5 +1,18 @@
 [
   {
+    "package": "Umbraco.Community.PowerToys",
+    "title": "PowerToys",
+    "category": "Other",
+    "repo": "Jumoo/umbraco.community.powertoys",
+    "version": "17.0.0-rc2",
+    "publishedAt": "2026-08-23T09:59:42Z",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.PowerToys/17.0.0-rc2",
+    "githubUrl": "https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0-rc2",
+    "notes": "Second release candidate for Umbraco 17.\n\n### Added\n\n- Per-section drag-and-drop sorting for dashboards in the Dashboard Manager, with a \"Reset order\" button that only appears once a section's order has been customized. ([#47](https://github.com/Jumoo/umbraco.community.powertoys/pull/47))\n- Drag-and-drop sorting for the Environment Indicator's environment list. ([#44](https://github.com/Jumoo/umbraco.community.powertoys/pull/44))\n- Power toy settings and the enabled flag can now be locked via `appsettings.json`. ([#45](https://github.com/Jumoo/umbraco.community.powertoys/pull/45))\n- Environment Indicator can match the current environment using the dotnet `environmentName` as well as by URL. ([#40](https://github.com/Jumoo/umbraco.community.powertoys/pull/40))\n\n### Fixed\n\n- Dashboard Manager's default dashboard order now uses each dashboard's registered weight. ([#47](https://github.com/Jumoo/umbraco.community.powertoys/pull/47))\n- Drag placeholder styling, and switched to `uui-color-swatch` for colour pickers. ([#46](https://github.com/Jumoo/umbraco.community.powertoys/pull/46))\n\n### Docs\n\n- Added a reminder to run `npm install` and `npm run build` to generate the required `wwwroot` assets. ([#41](https://github.com/Jumoo/umbraco.community.powertoys/pull/41))\n- Added a dashboard screenshot to the README and marketplace listing. ([#39](https://github.com/Jumoo/umbraco.community.powertoys/pull/39))\n\n**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.0.0-rc1...v17.0.0-rc2\n",
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync.Hangfire",
     "title": "uSync Hangfire",
     "category": "uSync Addon",

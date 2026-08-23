@@ -5,6 +5,33 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>PowerToys 17.0.0-rc2</title>
+      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0-rc2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0-rc2</guid>
+      <pubDate>Sun, 23 Aug 2026 09:59:42 GMT</pubDate>
+      <description><![CDATA[Second release candidate for Umbraco 17.
+
+### Added
+
+- Per-section drag-and-drop sorting for dashboards in the Dashboard Manager, with a "Reset order" button that only appears once a section's order has been customized. ([#47](https://github.com/Jumoo/umbraco.community.powertoys/pull/47))
+- Drag-and-drop sorting for the Environment Indicator's environment list. ([#44](https://github.com/Jumoo/umbraco.community.powertoys/pull/44))
+- Power toy settings and the enabled flag can now be locked via `appsettings.json`. ([#45](https://github.com/Jumoo/umbraco.community.powertoys/pull/45))
+- Environment Indicator can match the current environment using the dotnet `environmentName` as well as by URL. ([#40](https://github.com/Jumoo/umbraco.community.powertoys/pull/40))
+
+### Fixed
+
+- Dashboard Manager's default dashboard order now uses each dashboard's registered weight. ([#47](https://github.com/Jumoo/umbraco.community.powertoys/pull/47))
+- Drag placeholder styling, and switched to `uui-color-swatch` for colour pickers. ([#46](https://github.com/Jumoo/umbraco.community.powertoys/pull/46))
+
+### Docs
+
+- Added a reminder to run `npm install` and `npm run build` to generate the required `wwwroot` assets. ([#41](https://github.com/Jumoo/umbraco.community.powertoys/pull/41))
+- Added a dashboard screenshot to the README and marketplace listing. ([#39](https://github.com/Jumoo/umbraco.community.powertoys/pull/39))
+
+**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.0.0-rc1...v17.0.0-rc2
+]]></description>
+    </item>
+    <item>
       <title>uSync Hangfire 0.17.3</title>
       <link>https://github.com/Jumoo/uSync.Hangfire/releases/tag/v0.17.3</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Hangfire/releases/tag/v0.17.3</guid>
@@ -819,13 +846,6 @@ Not user facing, but new in this release:
       <link>https://github.com/Jumoo/Google.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases</guid>
       <pubDate>Fri, 10 Jul 2026 10:27:00 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>DeepL Connector 18.0.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</guid>
-      <pubDate>Fri, 10 Jul 2026 10:26:59 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>
