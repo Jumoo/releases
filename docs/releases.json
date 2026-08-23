@@ -1,5 +1,44 @@
 [
   {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "CrowdIn Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "18.0.0",
+    "publishedAt": "2026-08-23T17:51:11Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/18.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.0.0",
+    "notes": "",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager.Microsoft",
+    "title": "Microsoft Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Microsoft.Connector",
+    "version": "17.1.0-rc1",
+    "publishedAt": "2026-08-23T17:49:36Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Microsoft/17.1.0-rc1",
+    "githubUrl": "https://github.com/Jumoo/Microsoft.Connector/releases/tag/v17.1.0-rc1",
+    "notes": "\r\n# What's new\r\nSupport for batch submission via the translation api ",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager.DeepL",
+    "title": "DeepL Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL",
+    "version": "18.0.0",
+    "publishedAt": "2026-08-23T17:46:25Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.DeepL/18.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.0.0",
+    "notes": "## What's Changed\r\n* Dev/glossaries by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/1\r\n\r\n\r\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/commits/v18.0.0",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
     "package": "Jumoo.TranslationManager.Publicis",
     "title": "Publicis Connector",
     "category": "Translation Connectors",
@@ -286,19 +325,6 @@
     "umbracoMajor": 18
   },
   {
-    "package": "Jumoo.TranslationManager.CrowdIn",
-    "title": "CrowdIn Connector",
-    "category": "Translation Connectors",
-    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
-    "version": "18.0.0",
-    "publishedAt": "2026-08-11T13:06:38.533+00:00",
-    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/18.0.0",
-    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases",
-    "notes": null,
-    "prerelease": false,
-    "umbracoMajor": 18
-  },
-  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -387,19 +413,6 @@
     "githubUrl": "https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.1",
     "notes": "A fix release for connector settings, which had drifted apart across the three places that\r\ndefined them, plus the first release built and published by the new CI pipeline.\r\n\r\n## ⚠️ Upgrading\r\n\r\n**Re-tick \"Blank Targets\" if you use it.** The checkbox in Advanced Settings saved under a\r\nsetting name the connector never read, so it has never had any effect. It now works — which\r\nmeans if you had it ticked, the option was not actually being applied, and you should tick\r\nit again and save.\r\n\r\n**Check your Split HTML and Remove Blank Values settings.** On a site that had never saved\r\nconnector settings, the config screen displayed these as *on* while the connector ran with\r\nthem *off*. What the screen shows now matches what a submit actually uses, so these may read\r\ndifferently to before. Nothing about how your jobs are processed has changed — only the\r\ndisplay was wrong.\r\n\r\n## Fixed\r\n\r\n- The **Blank Targets** option in Advanced Settings saved to `blankTargets`, while the\r\n  connector reads `blankTarget`. The option had no effect.\r\n- The config screen's defaults disagreed with the connector's. **Split HTML** and **Remove\r\n  Blank Values** displayed as on when the connector's defaults are off, only 9 of the 20\r\n  settings were covered, and **Target Mode** was returned in a form the dropdown could not\r\n  match, so it never pre-selected.\r\n- The backoffice package manifest used the connector's display name as its alias.\r\n\r\n## Added\r\n\r\n- **Submitted jobs now record the settings they were sent with.** A cog in the top right of\r\n  the XLIFF panel shows the format, folder, target mode, language mappings and every\r\n  formatting option that applied to that job. Jobs submitted before this release have no\r\n  record, so they show no cog and look exactly as they did.\r\n- The same cog on the pending view shows the options a job *will* be sent with.\r\n\r\n## Changed\r\n\r\n- Every connector setting now lives in one place, `XliffConnectorOptions`, which owns the\r\n  values, their defaults, and the parsing of the delimited ones (language mappings, text\r\n  replacements, inline codes). The settings were previously loaded and defaulted\r\n  independently in three places, which is how the mismatches above arose.\r\n- The config screen is handed the *effective* settings — what is saved, with the connector\r\n  defaults filled in for anything that is not — rather than a partial set.\r\n- Duplicate find-keys in **Replacements** now take the last value instead of throwing.\r\n\r\n## Build and repository\r\n\r\nNot user facing, but new in this release:\r\n\r\n- CI on every pull request and push, and a package build that produces a testable package\r\n  for each commit on `main`.\r\n- Releases publish to NuGet from a `v{version}` tag, authenticated with\r\n  [trusted publishing](https://learn.microsoft.com/en-us/nuget/nuget-org/trusted-publishing)\r\n  rather than a stored API key.\r\n- Standard repository files — `README`, `CHANGELOG`, `SECURITY`, `CODE_OF_CONDUCT`,\r\n  `LICENSE` (MPL-2.0), `.editorconfig`, issue and PR templates, and dependabot.\r\n- The package build now builds the backoffice client before packing. Previously nothing\r\n  guaranteed the published package contained the client assets.\r\n\r\n**Full changelog**: https://github.com/Jumoo/Xliff.Connector/compare/v17.0.0...v17.0.1\r\n",
     "prerelease": false,
-    "umbracoMajor": 17
-  },
-  {
-    "package": "Jumoo.TranslationManager.Microsoft",
-    "title": "Microsoft Connector",
-    "category": "Translation Connectors",
-    "repo": "Jumoo/Microsoft.Connector",
-    "version": "17.1.0-rc1",
-    "publishedAt": "2026-08-04T11:14:06.573+00:00",
-    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Microsoft/17.1.0-rc1",
-    "githubUrl": "https://github.com/Jumoo/Microsoft.Connector/releases",
-    "notes": null,
-    "prerelease": true,
     "umbracoMajor": 17
   },
   {
@@ -645,19 +658,6 @@
     "publishedAt": "2026-07-10T10:27:00.37+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Google/18.0.0",
     "githubUrl": "https://github.com/Jumoo/Google.Connector/releases",
-    "notes": null,
-    "prerelease": false,
-    "umbracoMajor": 18
-  },
-  {
-    "package": "Jumoo.TranslationManager.DeepL",
-    "title": "DeepL Connector",
-    "category": "Translation Connectors",
-    "repo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL",
-    "version": "18.0.0",
-    "publishedAt": "2026-07-10T10:26:59.82+00:00",
-    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.DeepL/18.0.0",
-    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases",
     "notes": null,
     "prerelease": false,
     "umbracoMajor": 18

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T17:45:10.080Z",
+  "generatedAt": "2026-08-23T18:35:24.688Z",
   "packages": [
     {
       "package": "uSync",
@@ -176,12 +176,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL",
       "defaultBranch": "v18/main",
-      "lastReleaseTag": null,
-      "lastReleaseDate": null,
-      "lastReleaseUrl": null,
-      "releaseBranch": null,
-      "commitsSince": null,
-      "lastCommitDate": "2026-08-23T17:43:36Z"
+      "lastReleaseTag": "v18.0.0",
+      "lastReleaseDate": "2026-08-23T17:46:25Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.0.0",
+      "releaseBranch": "v18/main",
+      "commitsSince": 9,
+      "lastCommitDate": "2026-08-10T13:50:46Z"
     },
     {
       "package": "Jumoo.TranslationManager.Google",
@@ -215,12 +215,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Microsoft.Connector",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": null,
-      "lastReleaseDate": null,
-      "lastReleaseUrl": null,
-      "releaseBranch": null,
-      "commitsSince": null,
-      "lastCommitDate": "2026-08-13T03:34:39Z"
+      "lastReleaseTag": "v17.1.0-rc1",
+      "lastReleaseDate": "2026-08-23T17:49:36Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Microsoft.Connector/releases/tag/v17.1.0-rc1",
+      "releaseBranch": "v17/main",
+      "commitsSince": 11,
+      "lastCommitDate": "2026-08-06T10:56:27Z"
     },
     {
       "package": "Jumoo.TranslationManager.Passthrough",
@@ -240,13 +240,13 @@
       "title": "CrowdIn Connector",
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
-      "defaultBranch": "master",
-      "lastReleaseTag": null,
-      "lastReleaseDate": null,
-      "lastReleaseUrl": null,
-      "releaseBranch": null,
-      "commitsSince": null,
-      "lastCommitDate": "2026-08-11T14:13:36Z"
+      "defaultBranch": "v18/main",
+      "lastReleaseTag": "v18.0.0",
+      "lastReleaseDate": "2026-08-23T17:51:11Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.0.0",
+      "releaseBranch": "v18/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-08-23T17:51:11Z"
     },
     {
       "package": "Jumoo.TranslationManager.LanguageWire",

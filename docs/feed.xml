@@ -5,6 +5,33 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>CrowdIn Connector 18.0.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.0.0</guid>
+      <pubDate>Sun, 23 Aug 2026 17:51:11 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>Microsoft Connector 17.1.0-rc1</title>
+      <link>https://github.com/Jumoo/Microsoft.Connector/releases/tag/v17.1.0-rc1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases/tag/v17.1.0-rc1</guid>
+      <pubDate>Sun, 23 Aug 2026 17:49:36 GMT</pubDate>
+      <description><![CDATA[
+# What's new
+Support for batch submission via the translation api ]]></description>
+    </item>
+    <item>
+      <title>DeepL Connector 18.0.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.0.0</guid>
+      <pubDate>Sun, 23 Aug 2026 17:46:25 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Dev/glossaries by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/1
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/commits/v18.0.0]]></description>
+    </item>
+    <item>
       <title>Publicis Connector 17.0.0-rc4</title>
       <link>https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0-rc4</link>
       <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0-rc4</guid>
@@ -446,13 +473,6 @@ Both action packages share loop-protection against uSync/Automate cascades (a si
 ]]></description>
     </item>
     <item>
-      <title>CrowdIn Connector 18.0.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases</guid>
-      <pubDate>Tue, 11 Aug 2026 13:06:38 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
       <title>Translation Manager 17.7.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.0</guid>
@@ -679,13 +699,6 @@ Not user facing, but new in this release:
 ]]></description>
     </item>
     <item>
-      <title>Microsoft Connector 17.1.0-rc1</title>
-      <link>https://github.com/Jumoo/Microsoft.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases</guid>
-      <pubDate>Tue, 04 Aug 2026 11:14:06 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
       <title>Linked Pages 18.0.3</title>
       <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</guid>
@@ -838,13 +851,6 @@ Not user facing, but new in this release:
       <title>Microsoft Connector 18.0.0</title>
       <link>https://github.com/Jumoo/Microsoft.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases</guid>
-      <pubDate>Fri, 10 Jul 2026 10:27:00 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Google Connector 18.0.0</title>
-      <link>https://github.com/Jumoo/Google.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases</guid>
       <pubDate>Fri, 10 Jul 2026 10:27:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
