@@ -5,6 +5,19 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Linked Pages 18.0.0</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.0</guid>
+      <pubDate>Sun, 23 Aug 2026 19:07:29 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: ensured to read relation type from config by @bielu in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/17
+
+## New Contributors
+* @bielu made their first contribution in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/17
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/release/10.0.0...v18.0.0]]></description>
+    </item>
+    <item>
       <title>Passthrough Connector 18.0.0</title>
       <link>https://github.com/Jumoo/Passthrough.Connector/releases/tag/v18.0.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Passthrough.Connector/releases/tag/v18.0.0</guid>
@@ -845,13 +858,6 @@ Not user facing, but new in this release:
       <link>https://github.com/Jumoo/Xliff.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases</guid>
       <pubDate>Fri, 10 Jul 2026 10:27:02 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Microsoft Connector 18.0.0</title>
-      <link>https://github.com/Jumoo/Microsoft.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases</guid>
-      <pubDate>Fri, 10 Jul 2026 10:27:00 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>

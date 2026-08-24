@@ -1,5 +1,18 @@
 [
   {
+    "package": "Umbraco.Community.LinkedPages",
+    "title": "Linked Pages",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.LinkedPages",
+    "version": "18.0.0",
+    "publishedAt": "2026-08-23T19:07:29Z",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.LinkedPages/18.0.0",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.0",
+    "notes": "## What's Changed\n* fix: ensured to read relation type from config by @bielu in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/17\n\n## New Contributors\n* @bielu made their first contribution in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/17\n\n**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/release/10.0.0...v18.0.0",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
     "package": "Jumoo.TranslationManager.Passthrough",
     "title": "Passthrough Connector",
     "category": "Translation Connectors",
@@ -762,19 +775,6 @@
     "publishedAt": "2026-06-30T13:35:38.173+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/18.0.0",
     "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases",
-    "notes": null,
-    "prerelease": false,
-    "umbracoMajor": 18
-  },
-  {
-    "package": "Umbraco.Community.LinkedPages",
-    "title": "Linked Pages",
-    "category": "Other",
-    "repo": "Jumoo/Our.Umbraco.LinkedPages",
-    "version": "18.0.0",
-    "publishedAt": "2026-06-30T10:38:42.323+00:00",
-    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.LinkedPages/18.0.0",
-    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases",
     "notes": null,
     "prerelease": false,
     "umbracoMajor": 18
