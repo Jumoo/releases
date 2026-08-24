@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T12:58:41.231Z",
+  "generatedAt": "2026-08-24T18:47:10.456Z",
   "packages": [
     {
       "package": "uSync",
@@ -175,7 +175,7 @@
       "title": "DeepL Connector",
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL",
-      "defaultBranch": "v18/main",
+      "defaultBranch": "v17/main",
       "lastReleaseTag": "v18.0.0",
       "lastReleaseDate": "2026-08-23T17:46:25Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.0.0",
