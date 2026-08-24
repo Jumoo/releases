@@ -1,5 +1,57 @@
 [
   {
+    "package": "Jumoo.TranslationManager.Microsoft",
+    "title": "Microsoft Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Microsoft.Connector",
+    "version": "18.1.0",
+    "publishedAt": "2026-08-24T10:43:28Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Microsoft/18.1.0",
+    "githubUrl": "https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.1.0",
+    "notes": "## What's Changed\n* Add per-language Custom Translator category (glossary) mappings by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/1\n* Add repository standards and CI/CD scaffolding by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/2\n* Bump vite-plugin-checker from 0.6.4 to 0.14.5 in /Jumoo.TranslationManager.Microsoft/microsoft-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/3\n* Bump @rollup/plugin-node-resolve from 15.3.1 to 16.0.3 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/4\n* Bump typescript from 5.9.3 to 7.0.2 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/6\n* Bump vite from 5.4.21 to 8.2.0 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/5\n* Add ask-user batch mode and submitted-view debug info by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/8\n* Bump vite from 8.2.0 to 8.2.1 in /Jumoo.TranslationManager.Microsoft/microsoft-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/7\n* Sync v17 features into v18 for parity by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/9\n\n## New Contributors\n* @KevinJump made their first contribution in https://github.com/Jumoo/Microsoft.Connector/pull/1\n* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Microsoft.Connector/pull/3\n\n**Full Changelog**: https://github.com/Jumoo/Microsoft.Connector/commits/release/v18.1.0",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager.Microsoft",
+    "title": "Microsoft Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Microsoft.Connector",
+    "version": "17.1.0",
+    "publishedAt": "2026-08-24T08:25:36Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Microsoft/17.1.0",
+    "githubUrl": "https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v17.1.0",
+    "notes": "## What's Changed\n* Add repository standards and CI/CD scaffolding by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/2\n* Bump vite-plugin-checker from 0.6.4 to 0.14.5 in /Jumoo.TranslationManager.Microsoft/microsoft-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/3\n* Bump @rollup/plugin-node-resolve from 15.3.1 to 16.0.3 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/4\n* Bump typescript from 5.9.3 to 7.0.2 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/6\n* Bump vite from 5.4.21 to 8.2.0 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/5\n* Add ask-user batch mode and submitted-view debug info by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/8\n* Bump vite from 8.2.0 to 8.2.1 in /Jumoo.TranslationManager.Microsoft/microsoft-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/7\n\n## New Contributors\n* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Microsoft.Connector/pull/3\n\n**Full Changelog**: https://github.com/Jumoo/Microsoft.Connector/compare/v17.1.0-rc1...release/v17.1.0",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "18.1.1",
+    "publishedAt": "2026-08-24T07:02:24Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/18.1.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.1.1",
+    "notes": "## What's Changed\n* Write batch-translated values to translation memory by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/30\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.1.0...v18.1.1",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.4.2",
+    "publishedAt": "2026-08-24T07:00:02Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.4.2",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.4.2",
+    "notes": "## What's Changed\n* Write batch-translated values to translation memory by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/31\n* Bump the npm-dependencies group in /Jumoo.TranslationManager.AI/ai-client with 5 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/29\n\n## New Contributors\n* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/29\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.4.1...v17.4.2",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Umbraco.Community.LinkedPages",
     "title": "Linked Pages",
     "category": "Other",

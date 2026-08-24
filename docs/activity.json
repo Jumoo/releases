@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T07:06:51.197Z",
+  "generatedAt": "2026-08-24T11:23:33.261Z",
   "packages": [
     {
       "package": "uSync",
@@ -215,12 +215,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Microsoft.Connector",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.1.0-rc1",
-      "lastReleaseDate": "2026-08-23T17:49:36Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Microsoft.Connector/releases/tag/v17.1.0-rc1",
-      "releaseBranch": "v17/main",
-      "commitsSince": 11,
-      "lastCommitDate": "2026-08-06T10:56:27Z"
+      "lastReleaseTag": "release/v18.1.0",
+      "lastReleaseDate": "2026-08-24T10:43:28Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.1.0",
+      "releaseBranch": "v18/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-08-24T10:43:28Z"
     },
     {
       "package": "Jumoo.TranslationManager.Passthrough",

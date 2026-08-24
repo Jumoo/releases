@@ -5,6 +5,72 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Microsoft Connector 18.1.0</title>
+      <link>https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.1.0</guid>
+      <pubDate>Mon, 24 Aug 2026 10:43:28 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add per-language Custom Translator category (glossary) mappings by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/1
+* Add repository standards and CI/CD scaffolding by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/2
+* Bump vite-plugin-checker from 0.6.4 to 0.14.5 in /Jumoo.TranslationManager.Microsoft/microsoft-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/3
+* Bump @rollup/plugin-node-resolve from 15.3.1 to 16.0.3 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/4
+* Bump typescript from 5.9.3 to 7.0.2 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/6
+* Bump vite from 5.4.21 to 8.2.0 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/5
+* Add ask-user batch mode and submitted-view debug info by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/8
+* Bump vite from 8.2.0 to 8.2.1 in /Jumoo.TranslationManager.Microsoft/microsoft-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/7
+* Sync v17 features into v18 for parity by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/9
+
+## New Contributors
+* @KevinJump made their first contribution in https://github.com/Jumoo/Microsoft.Connector/pull/1
+* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Microsoft.Connector/pull/3
+
+**Full Changelog**: https://github.com/Jumoo/Microsoft.Connector/commits/release/v18.1.0]]></description>
+    </item>
+    <item>
+      <title>Microsoft Connector 17.1.0</title>
+      <link>https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v17.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v17.1.0</guid>
+      <pubDate>Mon, 24 Aug 2026 08:25:36 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add repository standards and CI/CD scaffolding by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/2
+* Bump vite-plugin-checker from 0.6.4 to 0.14.5 in /Jumoo.TranslationManager.Microsoft/microsoft-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/3
+* Bump @rollup/plugin-node-resolve from 15.3.1 to 16.0.3 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/4
+* Bump typescript from 5.9.3 to 7.0.2 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/6
+* Bump vite from 5.4.21 to 8.2.0 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/5
+* Add ask-user batch mode and submitted-view debug info by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/8
+* Bump vite from 8.2.0 to 8.2.1 in /Jumoo.TranslationManager.Microsoft/microsoft-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/7
+
+## New Contributors
+* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Microsoft.Connector/pull/3
+
+**Full Changelog**: https://github.com/Jumoo/Microsoft.Connector/compare/v17.1.0-rc1...release/v17.1.0]]></description>
+    </item>
+    <item>
+      <title>AI Connector 18.1.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.1.1</guid>
+      <pubDate>Mon, 24 Aug 2026 07:02:24 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Write batch-translated values to translation memory by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/30
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.1.0...v18.1.1]]></description>
+    </item>
+    <item>
+      <title>AI Connector 17.4.2</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.4.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.4.2</guid>
+      <pubDate>Mon, 24 Aug 2026 07:00:02 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Write batch-translated values to translation memory by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/31
+* Bump the npm-dependencies group in /Jumoo.TranslationManager.AI/ai-client with 5 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/29
+
+## New Contributors
+* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/29
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.4.1...v17.4.2]]></description>
+    </item>
+    <item>
       <title>Linked Pages 18.0.0</title>
       <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.0</guid>
@@ -831,34 +897,6 @@ Not user facing, but new in this release:
 **Dependencies**
 - Bumped `vite`, `postcss`, `js-yaml`, `@hey-api/openapi-ts`, `markdown-it`, `uuid`, `fast-uri` and `@umbraco-cms/backoffice` across the management client and history client projects.
 ]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.5.3</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
-      <pubDate>Fri, 10 Jul 2026 15:36:30 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 18.0.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
-      <pubDate>Fri, 10 Jul 2026 10:27:13 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>AI Connector 18.0.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</guid>
-      <pubDate>Fri, 10 Jul 2026 10:27:02 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Xliff Connector 18.0.0</title>
-      <link>https://github.com/Jumoo/Xliff.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases</guid>
-      <pubDate>Fri, 10 Jul 2026 10:27:02 GMT</pubDate>
-      <description><![CDATA[]]></description>
     </item>
   </channel>
 </rss>
