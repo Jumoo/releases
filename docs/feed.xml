@@ -675,10 +675,16 @@ Both action packages share loop-protection against uSync/Automate cascades (a si
     </item>
     <item>
       <title>Jumoo.Processing 18.1.0</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases</guid>
-      <pubDate>Tue, 11 Aug 2026 15:06:46 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.1.0</guid>
+      <pubDate>Tue, 11 Aug 2026 15:15:13 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Treat an already-published npm version as success by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/8
+* Publish NuGet packages to nuget.org via trusted publishing by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/9
+* Update changelog for 18.1.0 by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/10
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/compare/release/v18.1.0-rc1...release/v18.1.0]]></description>
     </item>
     <item>
       <title>Jumoo.Processing 18.1.0-rc4</title>
