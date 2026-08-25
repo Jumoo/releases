@@ -1,5 +1,31 @@
 [
   {
+    "package": "Jumoo.TranslationManager",
+    "title": "Translation Manager",
+    "category": "",
+    "repo": "Jumoo/Jumoo.TranslationManager.Issues",
+    "version": "18.1.2",
+    "publishedAt": "2026-08-24T20:39:21Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/18.1.2",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.1.2",
+    "notes": "Translation memory correctness fixes, a job-cancel crash guard, and a provider-selection validation fix.\n\n## What's fixed\n\n- **Translation memory correctness.** Approved translation memory could silently revert to pending when shared source text was re-translated by another node, and editing a single value on a node deleted translation memory for every other property on that node. Node approval also failed to promote memory for shared text owned by a different node's reference.\n- **Job cancel/submit crash guard.** `TranslationJobService.Cancel` and `MachineConnectorBase.SubmitInternal` could throw a `NullReferenceException` when acting on a job whose `Nodes` collection wasn't loaded. Cancel now self-heals by reloading nodes from the database.\n- **Job creation validation.** The choose-provider step in job creation didn't validate connector selection before enabling Next, so clicking Next while the connector was still resolving (e.g. a set with no default connector) could save a job with no provider set.\n- **Log noise.** Benign \"no translation set applies to this save\" cases (invariant doctypes, culture-only saves) no longer log at warning level, and dirty-culture scanning is skipped for doctypes that don't vary by culture.\n\n## Other\n\n- Build: bump `Jumoo.TranslationManager.Microsoft` to 18.1.0, `Jumoo.TranslationManager.AI` to 18.1.1, and `Jumoo.Processing` to 18.1.0\n\n---\n\nPublished to NuGet.",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager",
+    "title": "Translation Manager",
+    "category": "",
+    "repo": "Jumoo/Jumoo.TranslationManager.Issues",
+    "version": "17.7.2",
+    "publishedAt": "2026-08-24T20:27:47Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.7.2",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.2",
+    "notes": "Translation memory correctness fixes, job-creation validation, clearer error reporting, and a log-noise fix.\n\n## What's fixed\n\n- **Translation memory correctness.** Approved translation memory could silently revert to pending when shared source text was re-translated by another node, and editing a single value on a node deleted translation memory for every other property on that node. Node approval also failed to promote memory for shared text owned by a different node's reference.\n- **Job creation validation.** The choose-provider step in job creation didn't validate connector selection before enabling Next, so clicking Next while the connector was still resolving (e.g. a set with no default connector) could save a job with no provider set.\n- **Clearer job-check errors.** Checking a job manually could show two notifications — a generic one and a warning that lost the actual server-side detail. Now a single warning uses the real error title/detail from the API, and the same error is also shown as a persistent box on the job page until a successful check or navigation away.\n- **Log noise.** Benign \"no translation set applies to this save\" cases (invariant doctypes, culture-only saves) no longer log at warning level, and dirty-culture scanning is skipped for doctypes that don't vary by culture.\n\n## Other\n\n- Build: update connector dependency versions (Microsoft, Jumoo.TranslationManager.AI)\n\n---\n\nPublished to NuGet.",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.Microsoft",
     "title": "Microsoft Connector",
     "category": "Translation Connectors",

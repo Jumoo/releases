@@ -5,6 +5,50 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Translation Manager 18.1.2</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.1.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.1.2</guid>
+      <pubDate>Mon, 24 Aug 2026 20:39:21 GMT</pubDate>
+      <description><![CDATA[Translation memory correctness fixes, a job-cancel crash guard, and a provider-selection validation fix.
+
+## What's fixed
+
+- **Translation memory correctness.** Approved translation memory could silently revert to pending when shared source text was re-translated by another node, and editing a single value on a node deleted translation memory for every other property on that node. Node approval also failed to promote memory for shared text owned by a different node's reference.
+- **Job cancel/submit crash guard.** `TranslationJobService.Cancel` and `MachineConnectorBase.SubmitInternal` could throw a `NullReferenceException` when acting on a job whose `Nodes` collection wasn't loaded. Cancel now self-heals by reloading nodes from the database.
+- **Job creation validation.** The choose-provider step in job creation didn't validate connector selection before enabling Next, so clicking Next while the connector was still resolving (e.g. a set with no default connector) could save a job with no provider set.
+- **Log noise.** Benign "no translation set applies to this save" cases (invariant doctypes, culture-only saves) no longer log at warning level, and dirty-culture scanning is skipped for doctypes that don't vary by culture.
+
+## Other
+
+- Build: bump `Jumoo.TranslationManager.Microsoft` to 18.1.0, `Jumoo.TranslationManager.AI` to 18.1.1, and `Jumoo.Processing` to 18.1.0
+
+---
+
+Published to NuGet.]]></description>
+    </item>
+    <item>
+      <title>Translation Manager 17.7.2</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.2</guid>
+      <pubDate>Mon, 24 Aug 2026 20:27:47 GMT</pubDate>
+      <description><![CDATA[Translation memory correctness fixes, job-creation validation, clearer error reporting, and a log-noise fix.
+
+## What's fixed
+
+- **Translation memory correctness.** Approved translation memory could silently revert to pending when shared source text was re-translated by another node, and editing a single value on a node deleted translation memory for every other property on that node. Node approval also failed to promote memory for shared text owned by a different node's reference.
+- **Job creation validation.** The choose-provider step in job creation didn't validate connector selection before enabling Next, so clicking Next while the connector was still resolving (e.g. a set with no default connector) could save a job with no provider set.
+- **Clearer job-check errors.** Checking a job manually could show two notifications — a generic one and a warning that lost the actual server-side detail. Now a single warning uses the real error title/detail from the API, and the same error is also shown as a persistent box on the job page until a successful check or navigation away.
+- **Log noise.** Benign "no translation set applies to this save" cases (invariant doctypes, culture-only saves) no longer log at warning level, and dirty-culture scanning is skipped for doctypes that don't vary by culture.
+
+## Other
+
+- Build: update connector dependency versions (Microsoft, Jumoo.TranslationManager.AI)
+
+---
+
+Published to NuGet.]]></description>
+    </item>
+    <item>
       <title>Microsoft Connector 18.1.0</title>
       <link>https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.1.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.1.0</guid>
@@ -853,50 +897,6 @@ Not user facing, but new in this release:
       <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases</guid>
       <pubDate>Tue, 14 Jul 2026 12:57:37 GMT</pubDate>
       <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 17.3.11</title>
-      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases</guid>
-      <pubDate>Mon, 13 Jul 2026 10:35:44 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync 17.3.6</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v17.3.6</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.3.6</guid>
-      <pubDate>Mon, 13 Jul 2026 09:53:39 GMT</pubDate>
-      <description><![CDATA[This is a minor update to uSync for Umbraco v17 - it contains some fixes and updates to improve performance and fix some block rendering
-
-> [!NOTE] 
-> These release notes also cover v17.3.4 and v17.3.5 which contained the block rendering fixes.
-
-## uSync 17.3.6
-
-**Performance**
-- Reduced allocations across value comparison and hashing: JSON comparisons now use byte spans instead of allocating UTF-16 strings ([[#976](https://github.com/Jumoo/uSync/pull/976)](https://github.com/Jumoo/uSync/pull/976)), stack-allocated spans replace heap arrays in hot paths ([[#981](https://github.com/Jumoo/uSync/pull/981)](https://github.com/Jumoo/uSync/pull/981)), and `XElementExtensions` value conversion/hashing was optimised ([[#988](https://github.com/Jumoo/uSync/pull/988)](https://github.com/Jumoo/uSync/pull/988)).
-- Object conversion consolidated onto `TryGetValueAs` with a `JsonElement` pre-check ([[#987](https://github.com/Jumoo/uSync/pull/987)](https://github.com/Jumoo/uSync/pull/987)).
-- Clean operations now stream item keys instead of doing a full XML parse ([[#989](https://github.com/Jumoo/uSync/pull/989)](https://github.com/Jumoo/uSync/pull/989)).
-- Handler runtime-cache is now scoped per operation, and cleanup is skipped for flat/GUID setups where it isn't needed ([[#990](https://github.com/Jumoo/uSync/pull/990)](https://github.com/Jumoo/uSync/pull/990)).
-- Batched content/media saves during import for a further import performance improvement ([[#991](https://github.com/Jumoo/uSync/pull/991)](https://github.com/Jumoo/uSync/pull/991), [[#994](https://github.com/Jumoo/uSync/pull/994)](https://github.com/Jumoo/uSync/pull/994)).
-
-**Fixes**
-- Pre-empt `InvalidCastException`s in `TryConvertTo` ([[#986](https://github.com/Jumoo/uSync/pull/986)](https://github.com/Jumoo/uSync/pull/986), issue [[#304](https://github.com/Jumoo/uSync.Complete.Issues/issues/304)](https://github.com/Jumoo/uSync.Complete.Issues/issues/304)).
-- Fixed blueprint path/parent resolution, and missing containers are now auto-created ([[#985](https://github.com/Jumoo/uSync/pull/985)](https://github.com/Jumoo/uSync/pull/985)).
-- Reverted block-value encoding change from an earlier build that broke rendering ([[#963](https://github.com/Jumoo/uSync/pull/963)](https://github.com/Jumoo/uSync/pull/963), issue [[#958](https://github.com/Jumoo/uSync.Complete.Issues/issues/958)](https://github.com/Jumoo/uSync.Complete.Issues/issues/958)).
-- Fixed double-encoding of non-string JSON values in nested blocks, and added a dedicated `SingleBlock` mapper ([[#955](https://github.com/Jumoo/uSync/pull/955)](https://github.com/Jumoo/uSync/pull/955)).
-- Split the image upload and image cropper mappers so uploads are handled correctly in media ([[#959](https://github.com/Jumoo/uSync/pull/959)](https://github.com/Jumoo/uSync/pull/959)).
-- Clean now writes files even when a folder has no children, so the last remaining items still get deleted ([[#964](https://github.com/Jumoo/uSync/pull/964)](https://github.com/Jumoo/uSync/pull/964), issue [[#297](https://github.com/Jumoo/uSync.Complete.Issues/issues/297)](https://github.com/Jumoo/uSync.Complete.Issues/issues/297)).
-- Swapped renamed-alias order to match the expected (old, new) convention ([[#961](https://github.com/Jumoo/uSync/pull/961)](https://github.com/Jumoo/uSync/pull/961)).
-- Replaced an obsolete `pagedChildren` call on the content handler ([[#965](https://github.com/Jumoo/uSync/pull/965)](https://github.com/Jumoo/uSync/pull/965)).
-- uSync now checks the backoffice is present before registering itself, so it no longer tries to load on non-backoffice servers ([[#962](https://github.com/Jumoo/uSync/pull/962)](https://github.com/Jumoo/uSync/pull/962)).
-
-**Localization**
-- Added fallback defaults for missing translations and translated the UI into 5 additional languages ([[#972](https://github.com/Jumoo/uSync/pull/972)](https://github.com/Jumoo/uSync/pull/972)).
-
-**Dependencies**
-- Bumped `vite`, `postcss`, `js-yaml`, `@hey-api/openapi-ts`, `markdown-it`, `uuid`, `fast-uri` and `@umbraco-cms/backoffice` across the management client and history client projects.
-]]></description>
     </item>
   </channel>
 </rss>
