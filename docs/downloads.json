@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T14:08:32.057Z",
+  "generatedAt": "2026-08-25T16:04:00.886Z",
   "packages": [
     {
       "package": "uSync",
@@ -893,6 +893,10 @@
         {
           "version": "17.3.7",
           "downloads": 2791
+        },
+        {
+          "version": "17.3.8",
+          "downloads": 0
         },
         {
           "version": "18.0.0-rc1",
@@ -5633,6 +5637,10 @@
         {
           "version": "18.0.3",
           "downloads": 105
+        },
+        {
+          "version": "18.0.4",
+          "downloads": 0
         }
       ]
     },
@@ -5710,7 +5718,7 @@
           "downloads": 4973
         },
         {
-          "version": "17.1.1",
+          "version": "17.1.4",
           "downloads": 0
         },
         {
@@ -5757,6 +5765,168 @@
         {
           "version": "17.0.0-rc2",
           "downloads": 35
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.Processing",
+      "title": "Jumoo.Processing",
+      "totalDownloads": 126450,
+      "versions": [
+        {
+          "version": "1.0.6",
+          "downloads": 924
+        },
+        {
+          "version": "1.0.7",
+          "downloads": 3538
+        },
+        {
+          "version": "2.0.0",
+          "downloads": 1556
+        },
+        {
+          "version": "2.1.0",
+          "downloads": 1781
+        },
+        {
+          "version": "2.2.0",
+          "downloads": 2775
+        },
+        {
+          "version": "2.2.1",
+          "downloads": 18369
+        },
+        {
+          "version": "16.0.0",
+          "downloads": 10330
+        },
+        {
+          "version": "16.0.3",
+          "downloads": 1328
+        },
+        {
+          "version": "16.0.4",
+          "downloads": 3147
+        },
+        {
+          "version": "16.0.5",
+          "downloads": 7427
+        },
+        {
+          "version": "17.0.0-beta",
+          "downloads": 247
+        },
+        {
+          "version": "17.0.0-rc1",
+          "downloads": 251
+        },
+        {
+          "version": "17.0.0-rc3",
+          "downloads": 543
+        },
+        {
+          "version": "17.0.0-rc4",
+          "downloads": 626
+        },
+        {
+          "version": "17.0.0",
+          "downloads": 31536
+        },
+        {
+          "version": "17.3.0",
+          "downloads": 8633
+        },
+        {
+          "version": "17.3.1",
+          "downloads": 6254
+        },
+        {
+          "version": "17.3.2",
+          "downloads": 15493
+        },
+        {
+          "version": "17.3.3",
+          "downloads": 2111
+        },
+        {
+          "version": "17.3.4",
+          "downloads": 7211
+        },
+        {
+          "version": "17.4.0-rc1",
+          "downloads": 0
+        },
+        {
+          "version": "18.0.0",
+          "downloads": 841
+        },
+        {
+          "version": "18.0.1",
+          "downloads": 1079
+        },
+        {
+          "version": "18.1.0-rc4",
+          "downloads": 86
+        },
+        {
+          "version": "18.1.0",
+          "downloads": 364
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.Json",
+      "title": "Jumoo.Json",
+      "totalDownloads": 97627,
+      "versions": [
+        {
+          "version": "1.0.0-rc2",
+          "downloads": 193
+        },
+        {
+          "version": "16.0.0",
+          "downloads": 21479
+        },
+        {
+          "version": "17.0.0-beta",
+          "downloads": 306
+        },
+        {
+          "version": "17.0.0-rc1",
+          "downloads": 373
+        },
+        {
+          "version": "17.0.0-rc3",
+          "downloads": 444
+        },
+        {
+          "version": "17.0.0-rc4",
+          "downloads": 699
+        },
+        {
+          "version": "17.0.0",
+          "downloads": 45227
+        },
+        {
+          "version": "17.0.1",
+          "downloads": 17208
+        },
+        {
+          "version": "17.0.2",
+          "downloads": 7210
+        },
+        {
+          "version": "18.0.0",
+          "downloads": 1062
+        },
+        {
+          "version": "18.0.1",
+          "downloads": 1078
+        },
+        {
+          "version": "18.0.3",
+          "downloads": 2348
         }
       ]
     }

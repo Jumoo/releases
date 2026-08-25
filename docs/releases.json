@@ -1,16 +1,55 @@
 [
   {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "version": "17.3.8",
+    "publishedAt": "2026-08-25T15:50:15Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/17.3.8",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.3.8",
+    "notes": "## What's Changed\n* Add non-breaking async callback surface to uSyncCallbacks by @KevinJump in https://github.com/KevinJump/uSync/pull/1049\n\n\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.3.7...v17.3.8",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.4.0-rc1",
+    "publishedAt": "2026-08-25T15:42:17.757+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.4.0-rc1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Our.Umbraco.MaintenanceMode",
     "title": "Maintenance Mode",
     "category": "Other",
     "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
-    "version": "17.1.1",
-    "publishedAt": "2026-08-25T13:26:41Z",
-    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/17.1.1",
-    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.1.1",
-    "notes": "## What's Changed\n* updated to v17 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/71\n* V17/well known by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/73\n* IP Address Override by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/75\n* fixed incorrect use of british spelling of colour in settings button by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/78\n* Port CI/CD, repo standards, and site-lock features from v18/main by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/82\n\n\n**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v16.0.0...v17.1.1",
+    "version": "17.1.4",
+    "publishedAt": "2026-08-25T15:00:35Z",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/17.1.4",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.1.4",
+    "notes": "## What's Changed\n* Pack and push Core/Client/Assets as their own NuGet packages by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/92\n\n\n**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v17.1.3...v17.1.4",
     "prerelease": false,
     "umbracoMajor": 17
+  },
+  {
+    "package": "Umbraco.Community.LinkedPages",
+    "title": "Linked Pages",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.LinkedPages",
+    "version": "18.0.4",
+    "publishedAt": "2026-08-25T14:19:39Z",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.LinkedPages/18.0.4",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.4",
+    "notes": "## What's Changed\n* chore: add open-source governance docs and CI workflow by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/21\n* Bump esbuild from 0.27.4 to 0.28.1 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/22\n* Bump @hey-api/openapi-ts from 0.97.0 to 0.97.3 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/23\n* Bump ws from 7.5.10 to 7.5.13 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/24\n* Bump postcss from 8.5.8 to 8.5.24 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/25\n* Add standard repository files and CI/CD workflows by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/26\n\n## New Contributors\n* @henryjump made their first contribution in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/21\n\n**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/v18.0.0...v18.0.4",
+    "prerelease": false,
+    "umbracoMajor": 18
   },
   {
     "package": "uSync.Migrations",
@@ -468,6 +507,32 @@
     "umbracoMajor": 18
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "18.1.0",
+    "publishedAt": "2026-08-11T15:06:46.12+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/18.1.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "18.1.0-rc4",
+    "publishedAt": "2026-08-11T14:54:22.59+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/18.1.0-rc4",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 18
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -557,6 +622,19 @@
     "notes": "A fix release for connector settings, which had drifted apart across the three places that\r\ndefined them, plus the first release built and published by the new CI pipeline.\r\n\r\n## ⚠️ Upgrading\r\n\r\n**Re-tick \"Blank Targets\" if you use it.** The checkbox in Advanced Settings saved under a\r\nsetting name the connector never read, so it has never had any effect. It now works — which\r\nmeans if you had it ticked, the option was not actually being applied, and you should tick\r\nit again and save.\r\n\r\n**Check your Split HTML and Remove Blank Values settings.** On a site that had never saved\r\nconnector settings, the config screen displayed these as *on* while the connector ran with\r\nthem *off*. What the screen shows now matches what a submit actually uses, so these may read\r\ndifferently to before. Nothing about how your jobs are processed has changed — only the\r\ndisplay was wrong.\r\n\r\n## Fixed\r\n\r\n- The **Blank Targets** option in Advanced Settings saved to `blankTargets`, while the\r\n  connector reads `blankTarget`. The option had no effect.\r\n- The config screen's defaults disagreed with the connector's. **Split HTML** and **Remove\r\n  Blank Values** displayed as on when the connector's defaults are off, only 9 of the 20\r\n  settings were covered, and **Target Mode** was returned in a form the dropdown could not\r\n  match, so it never pre-selected.\r\n- The backoffice package manifest used the connector's display name as its alias.\r\n\r\n## Added\r\n\r\n- **Submitted jobs now record the settings they were sent with.** A cog in the top right of\r\n  the XLIFF panel shows the format, folder, target mode, language mappings and every\r\n  formatting option that applied to that job. Jobs submitted before this release have no\r\n  record, so they show no cog and look exactly as they did.\r\n- The same cog on the pending view shows the options a job *will* be sent with.\r\n\r\n## Changed\r\n\r\n- Every connector setting now lives in one place, `XliffConnectorOptions`, which owns the\r\n  values, their defaults, and the parsing of the delimited ones (language mappings, text\r\n  replacements, inline codes). The settings were previously loaded and defaulted\r\n  independently in three places, which is how the mismatches above arose.\r\n- The config screen is handed the *effective* settings — what is saved, with the connector\r\n  defaults filled in for anything that is not — rather than a partial set.\r\n- Duplicate find-keys in **Replacements** now take the last value instead of throwing.\r\n\r\n## Build and repository\r\n\r\nNot user facing, but new in this release:\r\n\r\n- CI on every pull request and push, and a package build that produces a testable package\r\n  for each commit on `main`.\r\n- Releases publish to NuGet from a `v{version}` tag, authenticated with\r\n  [trusted publishing](https://learn.microsoft.com/en-us/nuget/nuget-org/trusted-publishing)\r\n  rather than a stored API key.\r\n- Standard repository files — `README`, `CHANGELOG`, `SECURITY`, `CODE_OF_CONDUCT`,\r\n  `LICENSE` (MPL-2.0), `.editorconfig`, issue and PR templates, and dependabot.\r\n- The package build now builds the backoffice client before packing. Previously nothing\r\n  guaranteed the published package contained the client assets.\r\n\r\n**Full changelog**: https://github.com/Jumoo/Xliff.Connector/compare/v17.0.0...v17.0.1\r\n",
     "prerelease": false,
     "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Json",
+    "version": "18.0.3",
+    "publishedAt": "2026-07-28T14:54:47.033+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Json/18.0.3",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Json/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 18
   },
   {
     "package": "Umbraco.Community.LinkedPages",
@@ -689,6 +767,32 @@
     "umbracoMajor": 17
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "18.0.1",
+    "publishedAt": "2026-07-13T10:55:31.647+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/18.0.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Json",
+    "version": "18.0.1",
+    "publishedAt": "2026-07-13T10:52:33.37+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Json/18.0.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Json/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "",
@@ -697,6 +801,32 @@
     "publishedAt": "2026-07-13T10:35:44.113+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/17.3.11",
     "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.3.4",
+    "publishedAt": "2026-07-13T10:34:14.17+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.3.4",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Json",
+    "version": "17.0.2",
+    "publishedAt": "2026-07-13T10:33:24.653+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Json/17.0.2",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Json/releases",
     "notes": null,
     "prerelease": false,
     "umbracoMajor": 17
@@ -871,6 +1001,32 @@
     "umbracoMajor": 18
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "18.0.0",
+    "publishedAt": "2026-07-03T15:33:56.517+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/18.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Json",
+    "version": "18.0.0",
+    "publishedAt": "2026-07-03T15:30:12.267+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Json/18.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Json/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -931,6 +1087,19 @@
     "publishedAt": "2026-06-29T14:21:10.903+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.4.5",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.3.3",
+    "publishedAt": "2026-06-29T14:19:39.063+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.3.3",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
     "notes": null,
     "prerelease": false,
     "umbracoMajor": 17
@@ -1248,6 +1417,32 @@
     "umbracoMajor": 17
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.3.2",
+    "publishedAt": "2026-05-15T09:13:00.13+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.3.2",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Json",
+    "version": "17.0.1",
+    "publishedAt": "2026-05-15T09:11:47.11+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Json/17.0.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Json/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "",
@@ -1521,6 +1716,19 @@
     "umbracoMajor": 17
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.3.1",
+    "publishedAt": "2026-04-24T13:47:17.337+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.3.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.CrowdIn",
     "title": "CrowdIn Connector",
     "category": "Translation Connectors",
@@ -1647,6 +1855,19 @@
     "nugetUrl": "https://www.nuget.org/packages/uSync/17.3.0",
     "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.3.0",
     "notes": "This is a major point release update for uSync for Umbraco v17. it contains quite a few updates, fixes and performance improvements.\r\n\r\n> [!WARNING]\r\n> This release jumps two point releases (there is no v17.1 or v17.2) because it has a dependency on Umbraco v17.3 and we figure the easiest way to mange that is to keep the release versions in sync.\r\n\r\n## Highlights \r\n\r\n### Client auth updates.\r\nThere are a couple of small changes in v17.3 that we wanted to support. We have for example moved the client authentication to the newer `umbHttpClient.getConfig()` methods to match the newer [extension templates](https://github.com/umbraco/Umbraco-CMS/blob/main/templates/UmbracoExtension/Client/src/hey-api.ts) - moving to 17.3 also allows us to move our version of `@hey-api/openapi-ts` independently of Umbraco which means we can update for some critical vulnerabilities. \r\n\r\n### Changing HMAC Key support\r\nWe have added support for changing HMAC image keys, The umbraco recommendation is that these keys match across your site installations, but if you are moving between clients, or projects or for some other reason you might not have these values match and incline images inside RTE blocks for example will have the wrong HMAC value assigned to them - off by default uSync can go in an update these HMAC values so you can sync stuff across non-matching installations. \r\n\r\n### Performance. \r\nWe asked AI . _\"Analyse this code base for any performance improvements, ignore the minor improvements in things like string allocation and concentrate on any potential reduction in database calls or file IO that could be improved upon\"_ #924.\r\n\r\nThis gave us some nice pointers. Most of these updates are around file IO, and file parsing, it didn't reduce and DB calls within the code. \r\n\r\nFor example there is now some parallelism in how we read in files (https://github.com/KevinJump/uSync/blob/v17/main/uSync.BackOffice/Services/SyncFileService.cs#L493-L520) which does give some measurable improvements in the read time of large folder structures. \r\n\r\n\r\n## Updates\r\n* 💨 A few IO improvements based on suggestions from AI prompts. by @KevinJump in https://github.com/KevinJump/uSync/pull/924\r\n* ⭐  V17/17.3 hmac image url updates by @KevinJump in https://github.com/KevinJump/uSync/pull/946\r\n* ⚙️  Update so we can disable history via config and not show in ui by @KevinJump in https://github.com/KevinJump/uSync/pull/936\r\n* ⚙️Add single export method to service. by @KevinJump in https://github.com/KevinJump/uSync/pull/937\r\n* ⚙️ Remove version/user from logs, for cleaner log files. by @KevinJump in https://github.com/KevinJump/uSync/pull/943\r\n* 💨 V17/logging guards by @KevinJump in https://github.com/KevinJump/uSync/pull/916\r\n* 💨 Demote some log info to log debug lines. by @KevinJump in https://github.com/KevinJump/uSync/pull/944\r\n\r\n## uSync.Migrations changes\r\n_These changes help the new uSync.Migrations integrate into the usync processes better._ \r\n* v17/migrations - delegate tracking out of core. by @KevinJump in https://github.com/KevinJump/uSync/pull/921\r\n* V17/community migrations by @KevinJump in https://github.com/KevinJump/uSync/pull/914\r\n* Cleanup the legacy tab, so it aligns more with what uSync.Migrations … by @KevinJump in https://github.com/KevinJump/uSync/pull/918\r\n* V17/nested content by @KevinJump in https://github.com/KevinJump/uSync/pull/903\r\n* Fix RichTextMigration tests: toolbar extraction always returning empty by @Copilot in https://github.com/KevinJump/uSync/pull/907\r\n\r\n## Fixes\r\n* 🐛 Fixes typo in setting screen #911 by @KevinJump in https://github.com/KevinJump/uSync/pull/941\r\n* 🐛 Fix  - remove tab when deleted from file fixes: #923 by @KevinJump in https://github.com/KevinJump/uSync/pull/940\r\n* 🐛 Fixes #910 - adds date to export filename by @KevinJump in https://github.com/KevinJump/uSync/pull/942\r\n* 🐛 Fix: Cannot create templates during sync when running in production mode (Umbraco 17.3+) by @KevinJump in https://github.com/KevinJump/uSync/pull/938\r\n* 🐛 Revert \"Fix: Cannot create templates during sync when running in production mode (Umbraco 17.3+) (#938)\" by @KevinJump in https://github.com/KevinJump/uSync/pull/939\r\n\r\n## Dependency Updates\r\n* Bump rollup from 4.21.2 to 4.59.0 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/900\r\n* Bump minimatch from 3.1.2 to 3.1.5 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/901\r\n* Bump dompurify from 3.3.0 to 3.3.3 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/912\r\n* Bump dompurify from 3.3.0 to 3.3.3 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/913\r\n* Bump picomatch from 4.0.3 to 4.0.4 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/920\r\n* Bump defu from 6.1.4 to 6.1.6 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/927\r\n* Bump vite from 8.0.1 to 8.0.5 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/928\r\n* Bump vite from 8.0.3 to 8.0.5 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/929\r\n* Bump lodash and @microsoft/api-extractor in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/931\r\n* Bump handlebars, @hey-api/openapi-ts and @umbraco-cms/backoffice in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/930\r\n* Bump defu from 6.1.4 to 6.1.6 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/932\r\n* Bump rollup from 4.50.1 to 4.59.0 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/902\r\n* update the dependencies by @KevinJump in https://github.com/KevinJump/uSync/pull/933\r\n* update eslint package. by @KevinJump in https://github.com/KevinJump/uSync/pull/934\r\n* update .net packages to v17.3 umbraco dependencies by @KevinJump in https://github.com/KevinJump/uSync/pull/935\r\n* Package updates by @KevinJump in https://github.com/KevinJump/uSync/pull/915\r\n* V17/history dependency updates by @KevinJump in https://github.com/KevinJump/uSync/pull/922\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.0.4...v17.3.0\r\n\r\n---\r\n\r\n## Installing \r\nYou can get into your project via nuget. \r\n\r\n```bash\r\ndotnet add package usync --version 17.3.0\r\n```\r\n\r\nor add it directly to the csproj file.\r\n\r\n```xml\r\n<PackageReference Include=\"uSync\" Version=\"17.3.0\" />\r\n```\r\n\r\nIf you are using centralized package management, the version entry is what gets updated \r\n\r\n```xml\r\n <PackageVersion Include=\"uSync\" Version=\"17.3.0\" />\r\n```\r\n\r\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.3.0",
+    "publishedAt": "2026-04-14T10:28:03.083+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.3.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
     "prerelease": false,
     "umbracoMajor": 17
   },
@@ -2626,6 +2847,19 @@
     "umbracoMajor": 17
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.0.0",
+    "publishedAt": "2025-11-27T07:28:33.243+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.Google",
     "title": "Google Connector",
     "category": "Translation Connectors",
@@ -2634,6 +2868,19 @@
     "publishedAt": "2025-11-27T07:28:24.293+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Google/17.0.0",
     "githubUrl": "https://github.com/Jumoo/Google.Connector/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Json",
+    "version": "17.0.0",
+    "publishedAt": "2025-11-27T07:28:21.733+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Json/17.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Json/releases",
     "notes": null,
     "prerelease": false,
     "umbracoMajor": 17
@@ -2795,6 +3042,19 @@
     "umbracoMajor": 17
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.0.0-rc4",
+    "publishedAt": "2025-11-25T09:10:12.677+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.0.0-rc4",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.Google",
     "title": "Google Connector",
     "category": "Translation Connectors",
@@ -2803,6 +3063,19 @@
     "publishedAt": "2025-11-25T09:10:01.94+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Google/17.0.0-rc4",
     "githubUrl": "https://github.com/Jumoo/Google.Connector/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Json",
+    "version": "17.0.0-rc4",
+    "publishedAt": "2025-11-25T09:09:58.127+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Json/17.0.0-rc4",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Json/releases",
     "notes": null,
     "prerelease": true,
     "umbracoMajor": 17
@@ -2847,6 +3120,32 @@
     "umbracoMajor": 17
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.0.0-rc3",
+    "publishedAt": "2025-11-20T11:29:17.943+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.0.0-rc3",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Json",
+    "version": "17.0.0-rc3",
+    "publishedAt": "2025-11-20T11:23:34.107+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Json/17.0.0-rc3",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Json/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -2883,6 +3182,32 @@
     "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.0.0-rc2",
     "notes": "This is the second release candidate for uSync for Umbraco v17 - it is built against the Umbraco v17.0.0-rc2 release. \r\n\r\n## What's Changed (since the beta).\r\n* pull v16/main into v17/main by @KevinJump in https://github.com/KevinJump/uSync/pull/836\r\n* V17/background processing by @KevinJump in https://github.com/KevinJump/uSync/pull/837\r\n* V17/fix tab group on focus by @KevinJump in https://github.com/KevinJump/uSync/pull/839\r\n* V17/history by @henryjump in https://github.com/KevinJump/uSync/pull/844\r\n* V17/history package update by @henryjump in https://github.com/KevinJump/uSync/pull/845\r\n* Clean up legacy code (v13 client, etc) by @KevinJump in https://github.com/KevinJump/uSync/pull/846\r\n* V17/umb rc2 by @KevinJump in https://github.com/KevinJump/uSync/pull/849\r\n* V17/rte block import fix by @KevinJump in https://github.com/KevinJump/uSync/pull/850\r\n* rc2 versioning by @KevinJump in https://github.com/KevinJump/uSync/pull/851\r\n\r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.0.0-beta...v17.0.0-rc2",
     "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.0.0-rc1",
+    "publishedAt": "2025-11-08T08:21:55.55+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.0.0-rc1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Json",
+    "version": "17.0.0-rc1",
+    "publishedAt": "2025-11-08T08:08:15.617+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Json/17.0.0-rc1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Json/releases",
+    "notes": null,
+    "prerelease": true,
     "umbracoMajor": 17
   },
   {
@@ -3159,6 +3484,32 @@
     "umbracoMajor": 16
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.0.0-beta",
+    "publishedAt": "2025-10-23T08:47:36.99+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.0.0-beta",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Json",
+    "version": "17.0.0-beta",
+    "publishedAt": "2025-10-23T08:39:18.303+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Json/17.0.0-beta",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Json/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.Xliff",
     "title": "Xliff Connector",
     "category": "Translation Connectors",
@@ -3311,6 +3662,19 @@
     "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/16.1.1",
     "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v16.1.1",
     "notes": "This is a minor update for uSync.Complete for Umbraco v16 it contains a fix for the restore points feature when used during the Exporter 'import' process\r\n\r\n# What's new\r\n- 🐛 Fix : Import process always creates a restore point even when item is unticked. \r\n- 🐛 Fix: Importer restore point includes media items when it shouldn't \r\n\r\nThese fixes are specific to restore points and the usSnc.Exporter feature you should update if you use this feature to import as it will speed up imports when you don't want a restore point creating.\r\n\r\n",
+    "prerelease": false,
+    "umbracoMajor": 16
+  },
+  {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "16.0.5",
+    "publishedAt": "2025-10-16T15:39:27.907+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/16.0.5",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
     "prerelease": false,
     "umbracoMajor": 16
   },
@@ -3549,6 +3913,19 @@
     "umbracoMajor": 16
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "16.0.4",
+    "publishedAt": "2025-09-08T12:40:39.693+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/16.0.4",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 16
+  },
+  {
     "package": "Jumoo.TranslationManager.CrowdIn",
     "title": "CrowdIn Connector",
     "category": "Translation Connectors",
@@ -3623,6 +4000,19 @@
     "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/16.0.5",
     "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v16.0.5",
     "notes": "This is a patch release of uSync.Complete for Umbraco v16, it contains updated dependencies (usync and jumoo.processing) and patches to some minor issues. \r\n\r\n# What's new\r\n- UI Improvements to the licening pages\r\n\r\n- FIX: Restore points now use their own handler set (so default set doesn't don't change / break it's behavior)\r\n- FIX: Siteseed startup now links to the proper pages in the back office\r\n- FIX: Reporting element of a push now updates the progress bar properly.\r\n\r\n- Update uSync to 16.0.3 \r\n- Update Jumoo.Processing to 16.0.3\r\n\r\n\r\n# Getting\r\nInstall via your favorite command line,\r\n\r\n```bat\r\ndotnet add package uSync.Complete --version 16.0.5\r\n```\r\n\r\nor directly into your .csproj file.\r\n```xml\r\n<PackageReference Include=\"uSync.Complete\" Version=\"16.0.5\" />\r\n```\r\n\r\n> [!NOTE]\r\n> For Standard Term Release (STS) we are following a practice of little and often, we will release tested fixes as soon as practical rather than wating for a rollup, this means there might be many small 'patch' releases during this time, but fixes will be public quicker\r\n>\r\n> When we return to Long Term Support (LTS) releases we will move to a slower cadence where fixes will be rolled up into larger releases\r\n",
+    "prerelease": false,
+    "umbracoMajor": 16
+  },
+  {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "16.0.3",
+    "publishedAt": "2025-08-22T11:08:29.97+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/16.0.3",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
     "prerelease": false,
     "umbracoMajor": 16
   },
@@ -4329,6 +4719,19 @@
     "umbracoMajor": 16
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "16.0.0",
+    "publishedAt": "2025-06-12T07:31:53.14+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/16.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 16
+  },
+  {
     "package": "Jumoo.TranslationManager.Passthrough",
     "title": "Passthrough Connector",
     "category": "Translation Connectors",
@@ -4339,6 +4742,32 @@
     "githubUrl": "https://github.com/Jumoo/Passthrough.Connector/releases",
     "notes": null,
     "prerelease": false,
+    "umbracoMajor": 16
+  },
+  {
+    "package": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Json",
+    "version": "16.0.0",
+    "publishedAt": "2025-06-12T07:31:41.493+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Json/16.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Json/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 16
+  },
+  {
+    "package": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Json",
+    "version": "1.0.0-rc2",
+    "publishedAt": "2025-06-06T13:07:15.277+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Json/1.0.0-rc2",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Json/releases",
+    "notes": null,
+    "prerelease": true,
     "umbracoMajor": 16
   },
   {
@@ -5005,6 +5434,19 @@
     "umbracoMajor": 15
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "2.2.1",
+    "publishedAt": "2025-03-18T13:08:20.09+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/2.2.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 2
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -5291,6 +5733,19 @@
     "umbracoMajor": 15
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "2.2.0",
+    "publishedAt": "2025-02-15T13:07:29.803+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/2.2.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 2
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "",
@@ -5549,6 +6004,19 @@
     "notes": "This is the v15.1.0 release of uSync for Umbraco v15.1 - it contains updates for uSync to work with the latest release of Umbraco. \r\n\r\n# What's new\r\n- ⭐ Groups result boxes . Making it easier to see changes by type on an import\r\n- ⭐  Support  Remote Management API calls for uSync methods\r\n- ⭐ Improved styling and layout for imports and change lists\r\n\r\n\r\n![image](https://github.com/user-attachments/assets/b78c3309-f1c6-4bc3-b4f8-90d433f8cc4a)\r\n\r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v15.0.2...v15/15.1-dev",
     "prerelease": false,
     "umbracoMajor": 15
+  },
+  {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "2.1.0",
+    "publishedAt": "2024-12-11T12:50:53.65+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/2.1.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 2
   },
   {
     "package": "uSync",
@@ -6084,6 +6552,19 @@
     "umbracoMajor": 15
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "2.0.0",
+    "publishedAt": "2024-11-14T08:27:42.91+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/2.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 2
+  },
+  {
     "package": "Jumoo.TranslationManager.GlobalLink",
     "title": "GlobalLink Connector",
     "category": "Translation Connectors",
@@ -6448,6 +6929,19 @@
     "umbracoMajor": 14
   },
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "1.0.7",
+    "publishedAt": "2024-09-25T13:51:50.573+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/1.0.7",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 1
+  },
+  {
     "package": "Jumoo.TranslationManager.LanguageWire",
     "title": "LanguageWire Connector",
     "category": "Translation Connectors",
@@ -6498,6 +6992,19 @@
     "notes": null,
     "prerelease": false,
     "umbracoMajor": 14
+  },
+  {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "1.0.6",
+    "publishedAt": "2024-09-16T12:58:53.633+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/1.0.6",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 1
   },
   {
     "package": "uSync",
@@ -13330,10 +13837,10 @@
     "category": "",
     "repo": "KevinJump/uSync",
     "version": "8.11.1",
-    "publishedAt": "2022-07-13T08:42:04Z",
+    "publishedAt": "2022-07-13T08:33:05.787+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync/8.11.1",
-    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v8.11.1",
-    "notes": "This is a minor patch to Umbraco 8.11.x branch that addresses an issue that can occur with MultiUrl picker values when stored in nested or block content.\r\n\r\n# Issues\r\n - #400 Issues with MultiUrl Pickers and Blocks \r\n\r\n# More \r\nThe issue occurs if you have single-pick multi-url pickers inside block or nested content and no values are selected, uSync prior to this version would serialize the value out as an empty string \"\". Within the back office the blocks and content would still render, on the front end your would get a null reference exception if your code attempted to access the values inside the mult-url picker properties. \r\n\r\nN.B this null reference error is fixed in Umbraco 8.18 and above. \r\n\r\nThis patch would only be required if running less than Umbraco 8.18\r\n\r\n",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases",
+    "notes": null,
     "prerelease": false,
     "umbracoMajor": 8
   },

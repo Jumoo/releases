@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-08-25T14:08:52.417Z",
+  "generatedAt": "2026-08-25T16:04:23.211Z",
   "packages": [
     {
       "package": "uSync",
       "title": "uSync",
       "category": "",
       "repo": "KevinJump/uSync",
-      "defaultBranch": "v18/main",
-      "lastReleaseTag": "v18.1.1",
-      "lastReleaseDate": "2026-08-17T11:22:51Z",
-      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.1.1",
-      "releaseBranch": "v18/main",
+      "defaultBranch": "v17/main",
+      "lastReleaseTag": "v17.3.8",
+      "lastReleaseDate": "2026-08-25T15:50:15Z",
+      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.3.8",
+      "releaseBranch": "v17/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-08-17T11:22:51Z"
+      "lastCommitDate": "2026-08-25T15:50:15Z"
     },
     {
       "package": "uSync.Complete",
@@ -267,12 +267,12 @@
       "category": "Other",
       "repo": "Jumoo/Our.Umbraco.LinkedPages",
       "defaultBranch": "v18/main",
-      "lastReleaseTag": "v18.0.0",
-      "lastReleaseDate": "2026-08-23T19:07:29Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.0",
+      "lastReleaseTag": "v18.0.4",
+      "lastReleaseDate": "2026-08-25T14:19:39Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.4",
       "releaseBranch": "v18/main",
-      "commitsSince": 10,
-      "lastCommitDate": "2026-07-28T10:20:04Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-08-25T14:19:39Z"
     },
     {
       "package": "Our.Umbraco.MaintenanceMode",
@@ -280,12 +280,12 @@
       "category": "Other",
       "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.1.1",
-      "lastReleaseDate": "2026-08-25T13:26:41Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.1.1",
+      "lastReleaseTag": "v17.1.4",
+      "lastReleaseDate": "2026-08-25T15:00:35Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.1.4",
       "releaseBranch": "v17/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-08-25T13:26:41Z"
+      "lastCommitDate": "2026-08-25T15:00:35Z"
     },
     {
       "package": "uSync.Automate",
@@ -325,6 +325,19 @@
       "releaseBranch": "v17/main",
       "commitsSince": 4,
       "lastCommitDate": "2026-08-23T12:10:51Z"
+    },
+    {
+      "package": "Jumoo.Json",
+      "title": "Jumoo.Json",
+      "category": "Other",
+      "repo": "Jumoo/Jumoo.Json",
+      "defaultBranch": "v18/main",
+      "lastReleaseTag": null,
+      "lastReleaseDate": null,
+      "lastReleaseUrl": null,
+      "releaseBranch": null,
+      "commitsSince": null,
+      "lastCommitDate": "2026-08-25T08:43:21Z"
     }
   ]
 }

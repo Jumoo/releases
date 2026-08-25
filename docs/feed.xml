@@ -5,19 +5,51 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
-      <title>Maintenance Mode 17.1.1</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.1.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.1.1</guid>
-      <pubDate>Tue, 25 Aug 2026 13:26:41 GMT</pubDate>
+      <title>uSync 17.3.8</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v17.3.8</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.3.8</guid>
+      <pubDate>Tue, 25 Aug 2026 15:50:15 GMT</pubDate>
       <description><![CDATA[## What's Changed
-* updated to v17 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/71
-* V17/well known by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/73
-* IP Address Override by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/75
-* fixed incorrect use of british spelling of colour in settings button by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/78
-* Port CI/CD, repo standards, and site-lock features from v18/main by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/82
+* Add non-breaking async callback surface to uSyncCallbacks by @KevinJump in https://github.com/KevinJump/uSync/pull/1049
 
 
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v16.0.0...v17.1.1]]></description>
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.3.7...v17.3.8]]></description>
+    </item>
+    <item>
+      <title>Jumoo.Processing 17.4.0-rc1</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases</guid>
+      <pubDate>Tue, 25 Aug 2026 15:42:17 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>Maintenance Mode 17.1.4</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.1.4</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.1.4</guid>
+      <pubDate>Tue, 25 Aug 2026 15:00:35 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Pack and push Core/Client/Assets as their own NuGet packages by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/92
+
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v17.1.3...v17.1.4]]></description>
+    </item>
+    <item>
+      <title>Linked Pages 18.0.4</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.4</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.4</guid>
+      <pubDate>Tue, 25 Aug 2026 14:19:39 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* chore: add open-source governance docs and CI workflow by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/21
+* Bump esbuild from 0.27.4 to 0.28.1 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/22
+* Bump @hey-api/openapi-ts from 0.97.0 to 0.97.3 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/23
+* Bump ws from 7.5.10 to 7.5.13 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/24
+* Bump postcss from 8.5.8 to 8.5.24 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/25
+* Add standard repository files and CI/CD workflows by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/26
+
+## New Contributors
+* @henryjump made their first contribution in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/21
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/v18.0.0...v18.0.4]]></description>
     </item>
     <item>
       <title>uSync Migrations 17.0.2</title>
@@ -642,6 +674,20 @@ Both action packages share loop-protection against uSync/Automate cascades (a si
 ]]></description>
     </item>
     <item>
+      <title>Jumoo.Processing 18.1.0</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases</guid>
+      <pubDate>Tue, 11 Aug 2026 15:06:46 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>Jumoo.Processing 18.1.0-rc4</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases</guid>
+      <pubDate>Tue, 11 Aug 2026 14:54:22 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>Translation Manager 17.7.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.0</guid>
@@ -868,52 +914,17 @@ Not user facing, but new in this release:
 ]]></description>
     </item>
     <item>
+      <title>Jumoo.Json 18.0.3</title>
+      <link>https://github.com/Jumoo/Jumoo.Json/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Json/releases</guid>
+      <pubDate>Tue, 28 Jul 2026 14:54:47 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>Linked Pages 18.0.3</title>
       <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</guid>
       <pubDate>Mon, 27 Jul 2026 14:32:27 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Linked Pages 18.0.2</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</guid>
-      <pubDate>Mon, 27 Jul 2026 14:05:47 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 18.0.3</title>
-      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases</guid>
-      <pubDate>Wed, 22 Jul 2026 11:24:02 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync 18.0.3</title>
-      <link>https://github.com/KevinJump/uSync/releases</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases</guid>
-      <pubDate>Wed, 22 Jul 2026 11:09:33 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.6.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
-      <pubDate>Wed, 22 Jul 2026 09:40:58 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Linked Pages 18.0.1</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</guid>
-      <pubDate>Tue, 21 Jul 2026 13:35:02 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Maintenance Mode 18.1.0</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases</guid>
-      <pubDate>Tue, 21 Jul 2026 10:50:21 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>
