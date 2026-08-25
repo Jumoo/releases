@@ -173,5 +173,17 @@
     "title": "PowerToys",
     "category": "Other",
     "githubRepo": "Jumoo/umbraco.community.powertoys"
+  },
+  {
+    "nugetId": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "githubRepo": "Jumoo/Jumoo.Processing"
+  },
+  {
+    "nugetId": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "githubRepo": "Jumoo/Jumoo.Json"
   }
 ]
