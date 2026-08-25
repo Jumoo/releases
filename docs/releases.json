@@ -1,5 +1,18 @@
 [
   {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "CrowdIn Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "17.1.1",
+    "publishedAt": "2026-08-25T10:35:27Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/17.1.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.1.1",
+    "notes": "## What's Changed\n* Bring v18/main's repository standards and CI/CD across to v17/main by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/1\n\n## New Contributors\n* @henryjump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/1\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/commits/v17.1.1",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
