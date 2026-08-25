@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T12:55:15.750Z",
+  "generatedAt": "2026-08-25T14:08:52.417Z",
   "packages": [
     {
       "package": "uSync",
@@ -280,12 +280,12 @@
       "category": "Other",
       "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v16.0.0",
-      "lastReleaseDate": "2025-09-18T13:54:05Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v16.0.0",
-      "releaseBranch": "main",
-      "commitsSince": 1,
-      "lastCommitDate": "2025-09-29T10:16:00Z"
+      "lastReleaseTag": "v17.1.1",
+      "lastReleaseDate": "2026-08-25T13:26:41Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.1.1",
+      "releaseBranch": "v17/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-08-25T13:26:41Z"
     },
     {
       "package": "uSync.Automate",

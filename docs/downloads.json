@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T12:54:55.807Z",
+  "generatedAt": "2026-08-25T14:08:32.057Z",
   "packages": [
     {
       "package": "uSync",
@@ -1828,6 +1828,10 @@
         {
           "version": "17.0.0",
           "downloads": 3199
+        },
+        {
+          "version": "17.0.2",
+          "downloads": 0
         }
       ]
     },
@@ -5704,6 +5708,10 @@
         {
           "version": "17.1.0",
           "downloads": 4973
+        },
+        {
+          "version": "17.1.1",
+          "downloads": 0
         },
         {
           "version": "18.0.0",

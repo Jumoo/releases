@@ -1,5 +1,31 @@
 [
   {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "17.1.1",
+    "publishedAt": "2026-08-25T13:26:41Z",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/17.1.1",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.1.1",
+    "notes": "## What's Changed\n* updated to v17 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/71\n* V17/well known by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/73\n* IP Address Override by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/75\n* fixed incorrect use of british spelling of colour in settings button by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/78\n* Port CI/CD, repo standards, and site-lock features from v18/main by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/82\n\n\n**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v16.0.0...v17.1.1",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "17.0.2",
+    "publishedAt": "2026-08-25T12:49:59Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/17.0.2",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/v17.0.2",
+    "notes": "## What's Changed\n* Build and pack the backoffice client's assets by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/324\n\n\n**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/v17.0.1...v17.0.2",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.CrowdIn",
     "title": "CrowdIn Connector",
     "category": "Translation Connectors",
