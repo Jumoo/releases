@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T10:49:01.249Z",
+  "generatedAt": "2026-08-25T12:55:15.750Z",
   "packages": [
     {
       "package": "uSync",
@@ -72,12 +72,12 @@
       "category": "uSync Addon",
       "repo": "Jumoo/uSyncMigrations",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.0.0-rc1",
-      "lastReleaseDate": "2026-03-20T18:35:11Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/v17.0.0-rc1",
+      "lastReleaseTag": "v17.0.2",
+      "lastReleaseDate": "2026-08-25T12:49:59Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/v17.0.2",
       "releaseBranch": "v17/main",
-      "commitsSince": 9,
-      "lastCommitDate": "2026-04-14T10:52:49Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-08-25T12:49:59Z"
     },
     {
       "package": "uSync.Hangfire",
