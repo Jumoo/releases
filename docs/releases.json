@@ -1,5 +1,18 @@
 [
   {
+    "package": "uSync.Complete",
+    "title": "uSync Complete",
+    "category": "",
+    "repo": "Jumoo/uSync.Complete.Issues",
+    "version": "17.4.0",
+    "publishedAt": "2026-08-26T06:49:40Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/17.4.0",
+    "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.0",
+    "notes": "This release brings the restore point pipeline up to the same live-progress and background-queue improvements from v18, plus a batch of smaller fixes and backports that shipped in the v17.3.9-17.3.11 patch releases along the way.\n\n### Added\n- Snapshots: item-level progress for restore point create/restore/report now reaches the backoffice UI. The progress callbacks were never wired into the underlying sync pack request, so they were previously no-ops.\n- Snapshots: `uSync:Publisher:Settings:RestorePointIncludeMedia` (default `false`) - restore points created on request from a remote server no longer copy the whole media library before every push unless this is turned on.\n- Snapshots: a cleanup job now removes restore point working folders left behind by runs that never finished. Controlled by `uSync:Restore:Settings:KeepWorkingFoldersForHours` (default 24, `0` disables it).\n- Publisher: a per-server **Hide \"Compare\" tab** UI setting, for target sites that block being embedded in an iframe (backported from v18).\n\n### Fixed\n- Publisher: server-to-server requests now honour `uSync:Publisher:Settings:RequestTimeout` again. The setting had been ignored since v15, so requests were silently capped at 100 seconds instead of the configured value.\n- Snapshots: restore point archives are now built on disk instead of in memory, so a whole-site restore point no longer risks taking the process down on larger sites.\n- Snapshots: the restore point working folder is only deleted once its archive is confirmed stored, so a failure mid-write no longer loses both.\n- Snapshots: `uSync:Restore:Settings:RestoreGroups` now applies when a restore point is created and restored, not just when it's reported on. Default is now `All` to match what restore points actually capture.\n- Snapshots/Exporter: media writes no longer block on each other, so one stalled write (a slow blob store, say) can no longer hold up every import behind it.\n- Snapshots: restore point compression and cache saves now run on a dedicated background queue instead of Umbraco's own shared task queue, so a slow compression job can no longer block Umbraco's own background work (and vice versa).\n- #308 - Publisher: pressing Cancel on the \"unsaved changes\" dialog when pushing to a server no longer opened the push dialog anyway (backported from v18).\n- #306 - Publisher: the scheduled publish date is now normalised to UTC before being written into the pack, fixing schedules landing offset on servers with a non-zero timezone.\n- Publisher: after a **Pull from server**, an open content editor now refreshes automatically instead of showing the pre-pull data (backported from v18).\n- Startup now checks whether the backoffice is included in the site before loading uSync.Complete.\n- Caching turned off for v17.4/5, using `Clear` instead of `ClearKey`.\n\n### Changed\n- Updated to uSync 17.3.8 and Jumoo.Processing 17.4.0: restore point progress notifications are now sent asynchronously instead of blocking, and an abandoned restore point request now stops the pipeline cleanly instead of running to completion regardless.\n- Migrated hosted services to `RecurringBackgroundJobBase` and tidied up JSON options / dependencies.\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.Processing",
     "title": "Jumoo.Processing",
     "category": "Other",
@@ -16853,10 +16866,10 @@
     "category": "",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.6.2",
-    "publishedAt": "2020-06-03T10:41:13Z",
+    "publishedAt": "2020-06-03T10:38:39.56+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/8.6.2",
-    "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v8.6.2",
-    "notes": "## Release Notes\r\nThis is a base patch release to ensure that uSync.Complete installs with the latest version of uSync (v8.6.3) - there are no updates to the code past v8.6.1.1 - but we wanted to ensure that new installations got the benefit of the patches in uSync 8.6.3 (see [release notes](https://github.com/KevinJump/uSync8/releases/tag/v8.6.3) for info). \r\n\r\n- #34 Update uSync Dependencies to latest (8.6.3)\r\n- #29 fix when using app_data and long file names, temp storage can fail (from 8.6.1.1)\r\n\r\n# Installing\r\nThe recommended way to install uSync.Complete is via Nuget as part of your websites visual studio project:\r\n\r\n```\r\nPM>install-package uSync.Complete\r\n```\r\n\r\n## Note\r\nuSync 8.6.x will work with all version of Umbraco v8.0 upwards. However, we recommend you update your Umbraco installations to latest versions where possible, because there are a lot of performance and cache fixes in version past 8.4.x",
+    "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases",
+    "notes": null,
     "prerelease": false,
     "umbracoMajor": 8
   },

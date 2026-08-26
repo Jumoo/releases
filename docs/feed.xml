@@ -5,6 +5,37 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync Complete 17.4.0</title>
+      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.0</guid>
+      <pubDate>Wed, 26 Aug 2026 06:49:40 GMT</pubDate>
+      <description><![CDATA[This release brings the restore point pipeline up to the same live-progress and background-queue improvements from v18, plus a batch of smaller fixes and backports that shipped in the v17.3.9-17.3.11 patch releases along the way.
+
+### Added
+- Snapshots: item-level progress for restore point create/restore/report now reaches the backoffice UI. The progress callbacks were never wired into the underlying sync pack request, so they were previously no-ops.
+- Snapshots: `uSync:Publisher:Settings:RestorePointIncludeMedia` (default `false`) - restore points created on request from a remote server no longer copy the whole media library before every push unless this is turned on.
+- Snapshots: a cleanup job now removes restore point working folders left behind by runs that never finished. Controlled by `uSync:Restore:Settings:KeepWorkingFoldersForHours` (default 24, `0` disables it).
+- Publisher: a per-server **Hide "Compare" tab** UI setting, for target sites that block being embedded in an iframe (backported from v18).
+
+### Fixed
+- Publisher: server-to-server requests now honour `uSync:Publisher:Settings:RequestTimeout` again. The setting had been ignored since v15, so requests were silently capped at 100 seconds instead of the configured value.
+- Snapshots: restore point archives are now built on disk instead of in memory, so a whole-site restore point no longer risks taking the process down on larger sites.
+- Snapshots: the restore point working folder is only deleted once its archive is confirmed stored, so a failure mid-write no longer loses both.
+- Snapshots: `uSync:Restore:Settings:RestoreGroups` now applies when a restore point is created and restored, not just when it's reported on. Default is now `All` to match what restore points actually capture.
+- Snapshots/Exporter: media writes no longer block on each other, so one stalled write (a slow blob store, say) can no longer hold up every import behind it.
+- Snapshots: restore point compression and cache saves now run on a dedicated background queue instead of Umbraco's own shared task queue, so a slow compression job can no longer block Umbraco's own background work (and vice versa).
+- #308 - Publisher: pressing Cancel on the "unsaved changes" dialog when pushing to a server no longer opened the push dialog anyway (backported from v18).
+- #306 - Publisher: the scheduled publish date is now normalised to UTC before being written into the pack, fixing schedules landing offset on servers with a non-zero timezone.
+- Publisher: after a **Pull from server**, an open content editor now refreshes automatically instead of showing the pre-pull data (backported from v18).
+- Startup now checks whether the backoffice is included in the site before loading uSync.Complete.
+- Caching turned off for v17.4/5, using `Clear` instead of `ClearKey`.
+
+### Changed
+- Updated to uSync 17.3.8 and Jumoo.Processing 17.4.0: restore point progress notifications are now sent asynchronously instead of blocking, and an abandoned restore point request now stops the pipeline cleanly instead of running to completion regardless.
+- Migrated hosted services to `RecurringBackgroundJobBase` and tidied up JSON options / dependencies.
+]]></description>
+    </item>
+    <item>
       <title>Jumoo.Processing 17.4.0</title>
       <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.0</guid>
@@ -930,13 +961,6 @@ Not user facing, but new in this release:
 
 **Full changelog**: https://github.com/Jumoo/Xliff.Connector/compare/v17.0.0...v17.0.1
 ]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Json 18.0.3</title>
-      <link>https://github.com/Jumoo/Jumoo.Json/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Json/releases</guid>
-      <pubDate>Tue, 28 Jul 2026 14:54:47 GMT</pubDate>
-      <description><![CDATA[]]></description>
     </item>
   </channel>
 </rss>
