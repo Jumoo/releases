@@ -29,6 +29,25 @@ header {
   padding: 2rem 1.25rem 1rem;
 }
 
+.site-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 0.75rem;
+}
+
+.site-title {
+  font-weight: bold;
+  color: var(--fg);
+  text-decoration: none;
+  font-size: 0.9em;
+  letter-spacing: 0.02em;
+}
+
+.site-title:hover {
+  color: var(--accent);
+}
+
 header h1 {
   margin: 0 0 0.25rem;
   font-size: 1.4rem;
@@ -54,20 +73,6 @@ header h1 {
 
 .rss-link:hover {
   text-decoration: underline;
-}
-
-.back-link {
-  margin: 0 0 0.5rem;
-  font-size: 0.9em;
-}
-
-.back-link a {
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.back-link a:hover {
-  color: var(--accent);
 }
 
 main {
@@ -344,7 +349,7 @@ footer {
 .site-nav-top {
   justify-content: flex-end;
   gap: 0.85rem;
-  margin: 0 0 0.75rem;
+  margin: 0;
   font-size: 0.8em;
 }
 
