@@ -197,9 +197,37 @@ async function fetchEol() {
   }
 }
 
+// Returns { details, body }: `details` is the collapsible <details> element
+// to append to the page, `body` is where callers should append their
+// section's content. `open` controls whether it starts expanded.
+function section(title, subtitle, open) {
+  const details = document.createElement("details");
+  details.className = "stats-section";
+  details.open = Boolean(open);
+
+  const summary = document.createElement("summary");
+  summary.className = "stats-section-title";
+  summary.textContent = title;
+  details.appendChild(summary);
+
+  const body = document.createElement("div");
+  body.className = "stats-section-body";
+  details.appendChild(body);
+
+  if (subtitle) {
+    const p = document.createElement("p");
+    p.className = "stats-section-subtitle";
+    p.textContent = subtitle;
+    body.appendChild(p);
+  }
+
+  return { details, body };
+}
+
 // Optional, hand-maintained list of categories in display order (see
 // docs/categories.json). Categories not listed fall back to the default
 // most-recently-released-first order, after all listed categories.
+
 async function fetchCategoryOrder() {
   try {
     const res = await fetch("categories.json", { cache: "no-store" });

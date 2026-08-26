@@ -24,33 +24,6 @@ async function fetchDownloadsHistory() {
   }
 }
 
-// Returns { details, body }: `details` is the collapsible <details> element
-// to append to the page, `body` is where callers should append their
-// section's content. `open` controls whether it starts expanded.
-function section(title, subtitle, open) {
-  const details = document.createElement("details");
-  details.className = "stats-section";
-  details.open = Boolean(open);
-
-  const summary = document.createElement("summary");
-  summary.className = "stats-section-title";
-  summary.textContent = title;
-  details.appendChild(summary);
-
-  const body = document.createElement("div");
-  body.className = "stats-section-body";
-  details.appendChild(body);
-
-  if (subtitle) {
-    const p = document.createElement("p");
-    p.className = "stats-section-subtitle";
-    p.textContent = subtitle;
-    body.appendChild(p);
-  }
-
-  return { details, body };
-}
-
 // --- Trivia + big counter ---------------------------------------------
 
 function weekdayName(dayIndex) {
