@@ -5,6 +5,78 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>PowerToys 17.0.0</title>
+      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0</guid>
+      <pubDate>Wed, 26 Aug 2026 09:14:49 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add Jekyll docs site for GitHub Pages by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/48
+* Update dashboard docs link and add version to footer by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/49
+* Fix Dashboard Manager re-entrant registration console errors by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/51
+
+
+**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.0.0-rc2...v17.0.0]]></description>
+    </item>
+    <item>
+      <title>Translation Manager Automate 17.0.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0</guid>
+      <pubDate>Wed, 26 Aug 2026 09:13:38 GMT</pubDate>
+      <description><![CDATA[**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Automate/commits/v17.0.0]]></description>
+    </item>
+    <item>
+      <title>uSync Automate 17.0.0</title>
+      <link>https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.0</guid>
+      <pubDate>Wed, 26 Aug 2026 09:12:16 GMT</pubDate>
+      <description><![CDATA[**Full Changelog**: https://github.com/Jumoo/uSync.Automate/compare/v17.0.0-beta1...v17.0.0]]></description>
+    </item>
+    <item>
+      <title>uSync Complete 18.1.1</title>
+      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.1.1</guid>
+      <pubDate>Wed, 26 Aug 2026 09:08:02 GMT</pubDate>
+      <description><![CDATA[# v18.1.1
+
+A dependency and reliability release: uSync and Jumoo.Processing are bumped to pick up
+async progress callbacks and cooperative cancellation, and a Publisher UI bug around the
+"unsaved changes" dialog is fixed.
+
+## Changed
+
+- Bumped uSync to 18.1.2 and Jumoo.Processing to 18.1.1. Publisher's SignalR progress
+  callbacks now use the async delegates from uSync 18.1.2 instead of blocking with
+  `.Wait()`, and `CreateRestorePoint` threads the request's `CancellationToken` through
+  to `IPipelineService.Process` so an abandoned request stops the pipeline early instead
+  of continuing to completion.
+
+## Fixed
+
+- Publisher: pressing Cancel on the "unsaved changes" dialog when pushing to a server no
+  longer opened the push dialog anyway. The dialog now offers **Cancel** / **Ignore, push
+  saved version** / **Save and Publish locally**, and each option is honoured correctly
+  (issue #308).
+]]></description>
+    </item>
+    <item>
+      <title>uSync 18.1.2</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.2</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.2</guid>
+      <pubDate>Wed, 26 Aug 2026 07:28:03 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Merge v17/main into v18/main (2026-08-26) by @KevinJump in https://github.com/KevinJump/uSync/pull/1050
+
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.1.1...v18.1.2]]></description>
+    </item>
+    <item>
+      <title>Jumoo.Processing 18.1.1</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases</guid>
+      <pubDate>Wed, 26 Aug 2026 07:16:37 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>uSync Complete 17.4.0</title>
       <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.0</guid>
@@ -762,204 +834,6 @@ The new approve/publish permissions are migrated automatically on upgrade — th
 ---
 
 Published to NuGet.
-]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 18.1.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.1.0</guid>
-      <pubDate>Tue, 11 Aug 2026 11:46:12 GMT</pubDate>
-      <description><![CDATA[This release adds **translate in place**, splits translation approval from publishing so a third party can handle translations without publish rights, and improves the HTML editing experience with a rich text editor.
-
-## ⚠️ Behaviour change on upgrade
-
-Mutating job/node/set/memory/connector endpoints previously only required generic backoffice access. They now require the appropriate translation permission — a group holding only `jumoo-send-to-translation` can no longer archive, remove or reset jobs, or edit sets.
-
-The new approve/publish permissions are migrated automatically on upgrade — the admin group and every group that already held `jumoo-manage-translation` are granted both, so no one loses access and there's nothing you need to do. The one exception is a group that was set up with `jumoo-send-to-translation` only and no manage permission: those groups will see the tightened endpoint checks above, since they never held broader access to begin with.
-
-## What's changed
-
-- **Translate in place.** Translate a node's own content into another language with no configured Translation Set — it overwrites the content in place and saves a new version to refine, publish, or roll back. Works for both culture-varying and invariant document types. Off by default behind a new "Translate in place" setting. Fixes #95.
-
-- **Split approve and publish permissions.** A translator can now be given rights to approve translated content without also being able to publish it back to the site, so a third party can do the translation work without publish access. Fixes #101.
-
-- **Write endpoints now check translation permissions.** Job, node, set, memory, and connector-settings endpoints previously allowed any authenticated backoffice user through; they now require the relevant translation permission.
-
-- **Edit HTML values with a rich text editor.** The raw-markup textarea used for HTML translation values is replaced with a Tiptap rich text editor (with a source-view toggle for markup the toolbar doesn't cover).
-
-- **"Lock connector" option on translation sets.** A set's default connector is now a starting point rather than the only option — untick "Lock connector" to let editors choose any active connector when creating a job.
-
-- **Settings page rework.** Two-column layout, "Translate on save" renamed to "Pending Translations", and the translate-in-place toggle is now surfaced on the page.
-
-- **Fixed approved node memories being deleted** in some cases.
-
-- Bumped the Xliff connector dependency to 18.0.1.
-
----
-
-Not yet published to NuGet — this tag marks the source at release time; packages will follow once pushed.
-]]></description>
-    </item>
-    <item>
-      <title>AI Connector 18.1.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.1.0</guid>
-      <pubDate>Tue, 11 Aug 2026 10:56:24 GMT</pubDate>
-      <description><![CDATA[Fixes and updates since v18.0.0 (10 Jul 2026).
-
-- Port Claude translator fixes and model-listing from v17: fixes a `MissingMethodException` in `ClaudeAITranslator`, fixes a top_k/temperature/top_p deprecation error on newer Claude models, and implements `IAIConfigTranslator` so Claude can list models from the Anthropic API. (#21)
-- Let translators build their own batch request bodies, fixing a max-tokens issue in batch submissions. (#27)
-- Bring repository standards and CI/CD in line with Xliff.Connector. (#20)
-- Keep the local dev server URL out of the generated client. (#22)
-- Bump the ai-client npm dependencies, hold typescript at 5.x. (#23)]]></description>
-    </item>
-    <item>
-      <title>AI Connector 17.4.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.4.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.4.1</guid>
-      <pubDate>Tue, 11 Aug 2026 10:38:08 GMT</pubDate>
-      <description><![CDATA[## Changes since v17.3.5
-
-- Let translators build their own batch request bodies (#28) — fixes the OpenAI batch endpoint rejecting every line with "Unsupported parameter: 'max_tokens'", plus two related batch-entry defects (duplicate `custom_id`, unmatchable html paths).
-- Implement `IAIConfigTranslator` for Claude, list models from the Anthropic API (#19)
-- Fix `ClaudeAITranslator` `MissingMethodException` by bypassing the M.E.AI bridge
-- Fix `top_k`/`temperature`/`top_p` deprecation error on newer Claude models
-- Stop dependabot proposing TypeScript 7
-- CI/CD and repository standards brought in line with Xliff.Connector; ai-client dependency fixes
-
-🤖 Generated with [Claude Code](https://claude.com/claude-code)]]></description>
-    </item>
-    <item>
-      <title>AI Connector 17.4.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</guid>
-      <pubDate>Thu, 06 Aug 2026 15:37:21 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Xliff Connector 18.0.1</title>
-      <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.1</guid>
-      <pubDate>Thu, 06 Aug 2026 06:12:02 GMT</pubDate>
-      <description><![CDATA[### Upgrading
-
-- **Re-tick "Blank Targets" if you use it.** The checkbox saved under a setting name the
-  connector never read, so it has never had any effect. It works now, which means the option
-  was not being applied before and needs ticking again.
-- **Split HTML and Remove Blank Values may display differently.** On a site that had never
-  saved connector settings, the config screen showed these as on while the connector ran
-  with them off. The screen now matches what a submit uses. Job processing is unchanged —
-  only the display was wrong.
-
-### Added
-
-- Umbraco 18 support — `net10.0`, the 18.0.0 Translation Manager packages, and a backoffice
-  client regenerated against the Umbraco 18 management API.
-- Repository standards: `LICENSE`, `README.md`, `CHANGELOG.md`, `SECURITY.md`,
-  `CODE_OF_CONDUCT.md`, `.editorconfig`, `global.json`, `Directory.Build.props`,
-  `GitVersion.yml`, dependabot, and issue and PR templates.
-- CI workflows — PR build, package build, release, and CodeQL. The package build runs the
-  client build before packing, so the produced package actually contains the backoffice
-  assets.
-- Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated
-  behind the `nuget` GitHub environment and authenticated with trusted publishing (OIDC)
-  rather than a stored API key.
-- `XliffConnectorOptions`, holding every connector setting, its default, and the parsing of
-  the delimited ones in one place.
-- Submitted jobs record the settings they were sent with, shown behind a cog in the pending
-  and submitted views.
-
-### Changed
-
-- `GetOptionsAsync` returns the effective settings — saved values with the connector defaults
-  filled in — rather than a partial dictionary with its own set of defaults.
-- Duplicate keys in `replacements` are now last-wins rather than throwing.
-- `Active()` returns true before `Reload()` has run, because the options object carries a
-  default folder. It previously returned false until the first reload.
-- "Include Target Values" only shows for XLIFF 2.1, where it applies.
-
-### Fixed
-
-- Connector settings are read from configuration rather than from the job's provider
-  properties, which nothing set client side and which therefore arrived empty.
-- The "blank targets" checkbox in the advanced config modal saved `blankTargets`, a key
-  nothing read. Existing installs need to re-tick it once.
-- Config view defaults contradicted the connector: `split` and `removeBlanks` showed as on
-  while the connector ran them off, and `targetMode` came back as an enum where the views
-  expect `""`, `"Blank"` or `"Source"`.
-- The package manifest alias was set to the connector name rather than its alias.
-- `npm run format` failed on every file on Windows — prettier defaulted to LF line endings
-  against a CRLF working tree.
-- The entry point script had no cache-busting query string, so a browser could keep serving
-  a stale cached `xliff.js` after an upgrade. It's now requested as `xliff.js?v={version}`.
-
-**Full Changelog**: https://github.com/Jumoo/Xliff.Connector/blob/v18/main/CHANGELOG.md
-]]></description>
-    </item>
-    <item>
-      <title>Xliff Connector 17.0.1</title>
-      <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.1</guid>
-      <pubDate>Wed, 05 Aug 2026 16:59:23 GMT</pubDate>
-      <description><![CDATA[A fix release for connector settings, which had drifted apart across the three places that
-defined them, plus the first release built and published by the new CI pipeline.
-
-## ⚠️ Upgrading
-
-**Re-tick "Blank Targets" if you use it.** The checkbox in Advanced Settings saved under a
-setting name the connector never read, so it has never had any effect. It now works — which
-means if you had it ticked, the option was not actually being applied, and you should tick
-it again and save.
-
-**Check your Split HTML and Remove Blank Values settings.** On a site that had never saved
-connector settings, the config screen displayed these as *on* while the connector ran with
-them *off*. What the screen shows now matches what a submit actually uses, so these may read
-differently to before. Nothing about how your jobs are processed has changed — only the
-display was wrong.
-
-## Fixed
-
-- The **Blank Targets** option in Advanced Settings saved to `blankTargets`, while the
-  connector reads `blankTarget`. The option had no effect.
-- The config screen's defaults disagreed with the connector's. **Split HTML** and **Remove
-  Blank Values** displayed as on when the connector's defaults are off, only 9 of the 20
-  settings were covered, and **Target Mode** was returned in a form the dropdown could not
-  match, so it never pre-selected.
-- The backoffice package manifest used the connector's display name as its alias.
-
-## Added
-
-- **Submitted jobs now record the settings they were sent with.** A cog in the top right of
-  the XLIFF panel shows the format, folder, target mode, language mappings and every
-  formatting option that applied to that job. Jobs submitted before this release have no
-  record, so they show no cog and look exactly as they did.
-- The same cog on the pending view shows the options a job *will* be sent with.
-
-## Changed
-
-- Every connector setting now lives in one place, `XliffConnectorOptions`, which owns the
-  values, their defaults, and the parsing of the delimited ones (language mappings, text
-  replacements, inline codes). The settings were previously loaded and defaulted
-  independently in three places, which is how the mismatches above arose.
-- The config screen is handed the *effective* settings — what is saved, with the connector
-  defaults filled in for anything that is not — rather than a partial set.
-- Duplicate find-keys in **Replacements** now take the last value instead of throwing.
-
-## Build and repository
-
-Not user facing, but new in this release:
-
-- CI on every pull request and push, and a package build that produces a testable package
-  for each commit on `main`.
-- Releases publish to NuGet from a `v{version}` tag, authenticated with
-  [trusted publishing](https://learn.microsoft.com/en-us/nuget/nuget-org/trusted-publishing)
-  rather than a stored API key.
-- Standard repository files — `README`, `CHANGELOG`, `SECURITY`, `CODE_OF_CONDUCT`,
-  `LICENSE` (MPL-2.0), `.editorconfig`, issue and PR templates, and dependabot.
-- The package build now builds the backoffice client before packing. Previously nothing
-  guaranteed the published package contained the client assets.
-
-**Full changelog**: https://github.com/Jumoo/Xliff.Connector/compare/v17.0.0...v17.0.1
 ]]></description>
     </item>
   </channel>
