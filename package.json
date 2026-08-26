@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "fetch": "node scripts/fetch-releases.mjs",
+    "fetch:engagement": "node scripts/fetch-engagement.mjs",
     "dev": "http-server docs -p 4173 -c-1"
   },
   "devDependencies": {

@@ -1,8 +1,8 @@
 // One-off historical seed for docs/engagement.json (issues/PRs/commits per
 // package per month). Paginates each repo's full issue+PR history and the
-// last 52 weeks of commit activity, and writes a monthly-bucketed summary
-// plus a `syncedThrough` cursor that scripts/fetch-engagement.mjs uses for
-// cheap incremental updates afterwards.
+// last 52 weeks of commit activity, and writes a monthly-bucketed summary.
+// After this, scripts/fetch-engagement.mjs keeps the trailing ~13 months
+// fresh on a schedule without re-paging full history.
 //
 // Run once, manually: node scripts/seed-engagement.mjs
 //
