@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T09:30:19.040Z",
+  "generatedAt": "2026-08-26T13:01:02.833Z",
   "packages": [
     {
       "package": "uSync",
@@ -297,8 +297,8 @@
       "lastReleaseDate": "2026-08-26T09:12:16Z",
       "lastReleaseUrl": "https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.0",
       "releaseBranch": "main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-08-26T09:12:16Z"
+      "commitsSince": 1,
+      "lastCommitDate": "2026-08-26T10:36:48Z"
     },
     {
       "package": "Jumoo.TranslationManager.Automate",
@@ -310,8 +310,8 @@
       "lastReleaseDate": "2026-08-26T09:13:38Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0",
       "releaseBranch": "main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-08-26T09:13:38Z"
+      "commitsSince": 1,
+      "lastCommitDate": "2026-08-26T10:38:22Z"
     },
     {
       "package": "Umbraco.Community.PowerToys",
