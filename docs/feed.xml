@@ -5,6 +5,21 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync CLI 17.0.0</title>
+      <link>https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.0.0</guid>
+      <pubDate>Wed, 26 Aug 2026 16:39:47 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* add setup package. by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/13
+* if the server url isn't passed in the parameters, look in config, to see if you can find it. by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/12
+* Migrate to Umbraco/uSync v17 (net10.0) by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/16
+* Sync v16/main into v17/main by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/17
+* Add dependabot config by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/18
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.CommandLine/compare/v16.0.0...v17.0.0]]></description>
+    </item>
+    <item>
       <title>PowerToys 17.0.0</title>
       <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0</guid>
@@ -807,34 +822,6 @@ Both action packages share loop-protection against uSync/Automate cascades (a si
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases</guid>
       <pubDate>Tue, 11 Aug 2026 14:54:22 GMT</pubDate>
       <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.7.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.0</guid>
-      <pubDate>Tue, 11 Aug 2026 11:49:04 GMT</pubDate>
-      <description><![CDATA[This release splits translation approval from publishing so a third party can handle translations without publish rights, adds a "Lock connector" option to translation sets, and closes a gap where mutating API endpoints didn't check translation permissions at all.
-
-## ⚠️ Behaviour change on upgrade
-
-Mutating job/node/set/memory/connector endpoints previously only required generic backoffice access. They now require the appropriate translation permission — a group holding only `jumoo-send-to-translation` can no longer archive, remove or reset jobs, or edit sets.
-
-The new approve/publish permissions are migrated automatically on upgrade — the admin group and every group that already held `jumoo-manage-translation` are granted both, so no one loses access and there's nothing you need to do. The one exception is a group that was set up with `jumoo-send-to-translation` only and no manage permission: those groups will see the tightened endpoint checks above, since they never held broader access to begin with.
-
-## What's changed
-
-- **Split approve and publish permissions.** A translator can now be given rights to approve translated content without also being able to publish it back to the site, so a third party can do the translation work without publish access. Fixes #101.
-
-- **Write endpoints now check translation permissions.** Job, node, set, memory, and connector-settings endpoints previously allowed any authenticated backoffice user through; they now require the relevant translation permission.
-
-- **"Lock connector" option on translation sets.** A set's default connector is now a starting point rather than the only option — untick "Lock connector" to let editors choose any active connector when creating a job.
-
-- Bumped the Microsoft, Xliff, Jumoo.TranslationManager.AI, Jumoo.Processing, and Jumoo.Json dependencies.
-
----
-
-Published to NuGet.
-]]></description>
     </item>
   </channel>
 </rss>

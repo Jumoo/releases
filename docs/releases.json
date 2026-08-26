@@ -1,5 +1,18 @@
 [
   {
+    "package": "uSync.Cli",
+    "title": "uSync CLI",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.CommandLine",
+    "version": "17.0.0",
+    "publishedAt": "2026-08-26T16:39:47Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Cli/17.0.0",
+    "githubUrl": "https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.0.0",
+    "notes": "## What's Changed\n* add setup package. by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/13\n* if the server url isn't passed in the parameters, look in config, to see if you can find it. by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/12\n* Migrate to Umbraco/uSync v17 (net10.0) by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/16\n* Sync v16/main into v17/main by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/17\n* Add dependabot config by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/18\n\n\n**Full Changelog**: https://github.com/Jumoo/uSync.CommandLine/compare/v16.0.0...v17.0.0",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Umbraco.Community.PowerToys",
     "title": "PowerToys",
     "category": "Other",
