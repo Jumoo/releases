@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T19:14:18.465Z",
+  "generatedAt": "2026-08-26T19:53:08.204Z",
   "packages": [
     {
       "package": "uSync",
@@ -240,7 +240,7 @@
       "title": "CrowdIn Connector",
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
-      "defaultBranch": "v18/main",
+      "defaultBranch": "v17/main",
       "lastReleaseTag": "v17.1.1",
       "lastReleaseDate": "2026-08-25T10:35:27Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.1.1",
@@ -266,7 +266,7 @@
       "title": "Linked Pages",
       "category": "Other",
       "repo": "Jumoo/Our.Umbraco.LinkedPages",
-      "defaultBranch": "v18/main",
+      "defaultBranch": "v17/main",
       "lastReleaseTag": "v18.0.4",
       "lastReleaseDate": "2026-08-25T14:19:39Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.4",
@@ -344,13 +344,13 @@
       "title": "Jumoo.Json",
       "category": "Other",
       "repo": "Jumoo/Jumoo.Json",
-      "defaultBranch": "v18/main",
+      "defaultBranch": "v17/main",
       "lastReleaseTag": null,
       "lastReleaseDate": null,
       "lastReleaseUrl": null,
       "releaseBranch": null,
       "commitsSince": null,
-      "lastCommitDate": "2026-08-25T08:43:21Z"
+      "lastCommitDate": "2026-08-26T19:41:40Z"
     }
   ]
 }
