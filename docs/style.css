@@ -7,6 +7,7 @@
   --accent: #5b9dff;
   --border: #1c2740;
   --pre-badge: #e8a94b;
+  --highlight: #3ddc97;
 }
 
 * {
@@ -293,12 +294,13 @@ main {
 
 .version-chip {
   display: inline-block;
-  border: 1px solid var(--border);
+  border: 1px solid var(--highlight);
   border-radius: 4px;
   padding: 0.25rem 0.55rem;
   font-size: 0.85em;
+  font-weight: bold;
   background: var(--bg-raised);
-  color: var(--fg);
+  color: var(--highlight);
   text-decoration: none;
 }
 
@@ -431,6 +433,7 @@ footer {
 .trivia-value {
   font-weight: bold;
   font-size: 1.15rem;
+  color: var(--highlight);
 }
 
 .trivia-label {

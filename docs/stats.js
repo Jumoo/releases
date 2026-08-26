@@ -1,8 +1,8 @@
 const mainEl = document.getElementById("stats-main");
 const statusEl = document.getElementById("status");
 
-const CHART_COLORS = ["#5b9dff", "#e8a94b", "#5bd9a4", "#e05b8f", "#9d7bff", "#7d8eb5"];
-const LEGACY_COLORS = { supported: "#5bd9a4", eol: "#e05b8f" };
+const CHART_COLORS = ["#5b9dff", "#e8a94b", "#3ddc97", "#e05b8f", "#9d7bff", "#7d8eb5"];
+const LEGACY_COLORS = { supported: "#3ddc97", eol: "#e05b8f" };
 
 async function fetchDownloads() {
   try {
@@ -213,7 +213,7 @@ function renderSparkline(container, packageId, history) {
       labels: rows.map((r) => r.date),
       datasets: [{
         data: rows.map((r) => r.totalDownloads),
-        borderColor: CHART_COLORS[0],
+        borderColor: "#3ddc97",
         borderWidth: 1.5,
         pointRadius: 0,
         tension: 0.2,
