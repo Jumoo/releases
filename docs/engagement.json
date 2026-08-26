@@ -1,0 +1,7373 @@
+{
+  "generatedAt": "2026-08-26T18:52:30.048Z",
+  "packages": [
+    {
+      "package": "uSync",
+      "syncedThrough": "2026-08-26T07:08:02Z",
+      "months": [
+        {
+          "month": "2019-01",
+          "issuesOpened": 3,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-02",
+          "issuesOpened": 5,
+          "issuesClosed": 2,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2019-03",
+          "issuesOpened": 3,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-04",
+          "issuesOpened": 5,
+          "issuesClosed": 4,
+          "prsOpened": 2,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2019-05",
+          "issuesOpened": 7,
+          "issuesClosed": 2,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2019-06",
+          "issuesOpened": 2,
+          "issuesClosed": 5,
+          "prsOpened": 2,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2019-07",
+          "issuesOpened": 3,
+          "issuesClosed": 2,
+          "prsOpened": 2,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2019-08",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-09",
+          "issuesOpened": 15,
+          "issuesClosed": 19,
+          "prsOpened": 4,
+          "prsMerged": 4,
+          "commits": 0
+        },
+        {
+          "month": "2019-10",
+          "issuesOpened": 7,
+          "issuesClosed": 5,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-11",
+          "issuesOpened": 4,
+          "issuesClosed": 6,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-12",
+          "issuesOpened": 3,
+          "issuesClosed": 3,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2020-01",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-02",
+          "issuesOpened": 9,
+          "issuesClosed": 9,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2020-03",
+          "issuesOpened": 4,
+          "issuesClosed": 4,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2020-04",
+          "issuesOpened": 3,
+          "issuesClosed": 2,
+          "prsOpened": 3,
+          "prsMerged": 3,
+          "commits": 0
+        },
+        {
+          "month": "2020-05",
+          "issuesOpened": 7,
+          "issuesClosed": 7,
+          "prsOpened": 6,
+          "prsMerged": 6,
+          "commits": 0
+        },
+        {
+          "month": "2020-06",
+          "issuesOpened": 10,
+          "issuesClosed": 5,
+          "prsOpened": 5,
+          "prsMerged": 5,
+          "commits": 0
+        },
+        {
+          "month": "2020-07",
+          "issuesOpened": 13,
+          "issuesClosed": 14,
+          "prsOpened": 7,
+          "prsMerged": 7,
+          "commits": 0
+        },
+        {
+          "month": "2020-08",
+          "issuesOpened": 6,
+          "issuesClosed": 14,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2020-09",
+          "issuesOpened": 9,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-10",
+          "issuesOpened": 20,
+          "issuesClosed": 15,
+          "prsOpened": 3,
+          "prsMerged": 3,
+          "commits": 0
+        },
+        {
+          "month": "2020-11",
+          "issuesOpened": 5,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-12",
+          "issuesOpened": 2,
+          "issuesClosed": 7,
+          "prsOpened": 2,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2021-01",
+          "issuesOpened": 9,
+          "issuesClosed": 7,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-02",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-03",
+          "issuesOpened": 8,
+          "issuesClosed": 11,
+          "prsOpened": 3,
+          "prsMerged": 3,
+          "commits": 0
+        },
+        {
+          "month": "2021-04",
+          "issuesOpened": 10,
+          "issuesClosed": 8,
+          "prsOpened": 3,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2021-05",
+          "issuesOpened": 10,
+          "issuesClosed": 3,
+          "prsOpened": 2,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2021-06",
+          "issuesOpened": 6,
+          "issuesClosed": 8,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-07",
+          "issuesOpened": 9,
+          "issuesClosed": 9,
+          "prsOpened": 4,
+          "prsMerged": 3,
+          "commits": 0
+        },
+        {
+          "month": "2021-08",
+          "issuesOpened": 6,
+          "issuesClosed": 4,
+          "prsOpened": 4,
+          "prsMerged": 5,
+          "commits": 0
+        },
+        {
+          "month": "2021-09",
+          "issuesOpened": 7,
+          "issuesClosed": 5,
+          "prsOpened": 5,
+          "prsMerged": 3,
+          "commits": 0
+        },
+        {
+          "month": "2021-10",
+          "issuesOpened": 21,
+          "issuesClosed": 20,
+          "prsOpened": 7,
+          "prsMerged": 8,
+          "commits": 0
+        },
+        {
+          "month": "2021-11",
+          "issuesOpened": 4,
+          "issuesClosed": 11,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2021-12",
+          "issuesOpened": 5,
+          "issuesClosed": 1,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-01",
+          "issuesOpened": 9,
+          "issuesClosed": 3,
+          "prsOpened": 3,
+          "prsMerged": 3,
+          "commits": 0
+        },
+        {
+          "month": "2022-02",
+          "issuesOpened": 15,
+          "issuesClosed": 40,
+          "prsOpened": 8,
+          "prsMerged": 5,
+          "commits": 0
+        },
+        {
+          "month": "2022-03",
+          "issuesOpened": 13,
+          "issuesClosed": 14,
+          "prsOpened": 6,
+          "prsMerged": 8,
+          "commits": 0
+        },
+        {
+          "month": "2022-04",
+          "issuesOpened": 3,
+          "issuesClosed": 3,
+          "prsOpened": 4,
+          "prsMerged": 4,
+          "commits": 0
+        },
+        {
+          "month": "2022-05",
+          "issuesOpened": 3,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-06",
+          "issuesOpened": 4,
+          "issuesClosed": 2,
+          "prsOpened": 3,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2022-07",
+          "issuesOpened": 6,
+          "issuesClosed": 5,
+          "prsOpened": 4,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2022-08",
+          "issuesOpened": 4,
+          "issuesClosed": 5,
+          "prsOpened": 2,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2022-09",
+          "issuesOpened": 3,
+          "issuesClosed": 2,
+          "prsOpened": 1,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2022-10",
+          "issuesOpened": 5,
+          "issuesClosed": 3,
+          "prsOpened": 2,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-11",
+          "issuesOpened": 6,
+          "issuesClosed": 0,
+          "prsOpened": 16,
+          "prsMerged": 16,
+          "commits": 0
+        },
+        {
+          "month": "2022-12",
+          "issuesOpened": 5,
+          "issuesClosed": 0,
+          "prsOpened": 4,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2023-01",
+          "issuesOpened": 3,
+          "issuesClosed": 11,
+          "prsOpened": 3,
+          "prsMerged": 5,
+          "commits": 0
+        },
+        {
+          "month": "2023-02",
+          "issuesOpened": 5,
+          "issuesClosed": 7,
+          "prsOpened": 4,
+          "prsMerged": 4,
+          "commits": 0
+        },
+        {
+          "month": "2023-03",
+          "issuesOpened": 7,
+          "issuesClosed": 4,
+          "prsOpened": 8,
+          "prsMerged": 6,
+          "commits": 0
+        },
+        {
+          "month": "2023-04",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-05",
+          "issuesOpened": 4,
+          "issuesClosed": 4,
+          "prsOpened": 5,
+          "prsMerged": 6,
+          "commits": 0
+        },
+        {
+          "month": "2023-06",
+          "issuesOpened": 2,
+          "issuesClosed": 6,
+          "prsOpened": 4,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2023-07",
+          "issuesOpened": 4,
+          "issuesClosed": 2,
+          "prsOpened": 10,
+          "prsMerged": 5,
+          "commits": 0
+        },
+        {
+          "month": "2023-08",
+          "issuesOpened": 2,
+          "issuesClosed": 4,
+          "prsOpened": 8,
+          "prsMerged": 7,
+          "commits": 0
+        },
+        {
+          "month": "2023-09",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 9,
+          "prsMerged": 7,
+          "commits": 0
+        },
+        {
+          "month": "2023-10",
+          "issuesOpened": 8,
+          "issuesClosed": 9,
+          "prsOpened": 6,
+          "prsMerged": 6,
+          "commits": 0
+        },
+        {
+          "month": "2023-11",
+          "issuesOpened": 5,
+          "issuesClosed": 4,
+          "prsOpened": 2,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2023-12",
+          "issuesOpened": 4,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-01",
+          "issuesOpened": 3,
+          "issuesClosed": 2,
+          "prsOpened": 3,
+          "prsMerged": 3,
+          "commits": 0
+        },
+        {
+          "month": "2024-02",
+          "issuesOpened": 4,
+          "issuesClosed": 1,
+          "prsOpened": 7,
+          "prsMerged": 5,
+          "commits": 0
+        },
+        {
+          "month": "2024-03",
+          "issuesOpened": 12,
+          "issuesClosed": 10,
+          "prsOpened": 5,
+          "prsMerged": 4,
+          "commits": 0
+        },
+        {
+          "month": "2024-04",
+          "issuesOpened": 10,
+          "issuesClosed": 11,
+          "prsOpened": 16,
+          "prsMerged": 12,
+          "commits": 0
+        },
+        {
+          "month": "2024-05",
+          "issuesOpened": 8,
+          "issuesClosed": 5,
+          "prsOpened": 2,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2024-06",
+          "issuesOpened": 5,
+          "issuesClosed": 6,
+          "prsOpened": 2,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2024-07",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-08",
+          "issuesOpened": 6,
+          "issuesClosed": 4,
+          "prsOpened": 4,
+          "prsMerged": 3,
+          "commits": 0
+        },
+        {
+          "month": "2024-09",
+          "issuesOpened": 6,
+          "issuesClosed": 2,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-10",
+          "issuesOpened": 4,
+          "issuesClosed": 2,
+          "prsOpened": 2,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-11",
+          "issuesOpened": 5,
+          "issuesClosed": 6,
+          "prsOpened": 2,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2024-12",
+          "issuesOpened": 2,
+          "issuesClosed": 1,
+          "prsOpened": 5,
+          "prsMerged": 5,
+          "commits": 0
+        },
+        {
+          "month": "2025-01",
+          "issuesOpened": 4,
+          "issuesClosed": 20,
+          "prsOpened": 3,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2025-02",
+          "issuesOpened": 4,
+          "issuesClosed": 3,
+          "prsOpened": 20,
+          "prsMerged": 20,
+          "commits": 0
+        },
+        {
+          "month": "2025-03",
+          "issuesOpened": 6,
+          "issuesClosed": 4,
+          "prsOpened": 12,
+          "prsMerged": 10,
+          "commits": 0
+        },
+        {
+          "month": "2025-04",
+          "issuesOpened": 5,
+          "issuesClosed": 3,
+          "prsOpened": 5,
+          "prsMerged": 4,
+          "commits": 0
+        },
+        {
+          "month": "2025-05",
+          "issuesOpened": 5,
+          "issuesClosed": 3,
+          "prsOpened": 6,
+          "prsMerged": 7,
+          "commits": 0
+        },
+        {
+          "month": "2025-06",
+          "issuesOpened": 2,
+          "issuesClosed": 3,
+          "prsOpened": 4,
+          "prsMerged": 3,
+          "commits": 0
+        },
+        {
+          "month": "2025-07",
+          "issuesOpened": 3,
+          "issuesClosed": 3,
+          "prsOpened": 10,
+          "prsMerged": 9,
+          "commits": 0
+        },
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 5,
+          "prsMerged": 5,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 4,
+          "issuesClosed": 3,
+          "prsOpened": 10,
+          "prsMerged": 8,
+          "commits": 18
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 4,
+          "issuesClosed": 1,
+          "prsOpened": 31,
+          "prsMerged": 25,
+          "commits": 31
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 7,
+          "issuesClosed": 5,
+          "prsOpened": 15,
+          "prsMerged": 12,
+          "commits": 14
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 3,
+          "prsMerged": 2,
+          "commits": 2
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 4,
+          "issuesClosed": 4,
+          "prsOpened": 9,
+          "prsMerged": 7,
+          "commits": 4
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 1,
+          "issuesClosed": 5,
+          "prsOpened": 17,
+          "prsMerged": 13,
+          "commits": 14
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 6,
+          "issuesClosed": 2,
+          "prsOpened": 17,
+          "prsMerged": 15,
+          "commits": 14
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 3,
+          "issuesClosed": 5,
+          "prsOpened": 24,
+          "prsMerged": 25,
+          "commits": 26
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 6,
+          "prsMerged": 2,
+          "commits": 3
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 16,
+          "prsMerged": 16,
+          "commits": 13
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 5,
+          "issuesClosed": 10,
+          "prsOpened": 36,
+          "prsMerged": 30,
+          "commits": 17
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 3,
+          "issuesClosed": 2,
+          "prsOpened": 30,
+          "prsMerged": 27,
+          "commits": 13
+        }
+      ]
+    },
+    {
+      "package": "uSync.Complete",
+      "syncedThrough": "2026-08-19T16:20:55Z",
+      "months": [
+        {
+          "month": "2019-08",
+          "issuesOpened": 3,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-09",
+          "issuesOpened": 10,
+          "issuesClosed": 5,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-10",
+          "issuesOpened": 3,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-11",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-01",
+          "issuesOpened": 2,
+          "issuesClosed": 4,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-03",
+          "issuesOpened": 3,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-04",
+          "issuesOpened": 4,
+          "issuesClosed": 4,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-05",
+          "issuesOpened": 6,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-06",
+          "issuesOpened": 22,
+          "issuesClosed": 19,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-07",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-08",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-09",
+          "issuesOpened": 2,
+          "issuesClosed": 5,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-10",
+          "issuesOpened": 9,
+          "issuesClosed": 7,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-11",
+          "issuesOpened": 5,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-12",
+          "issuesOpened": 4,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-01",
+          "issuesOpened": 5,
+          "issuesClosed": 12,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-02",
+          "issuesOpened": 5,
+          "issuesClosed": 4,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-03",
+          "issuesOpened": 11,
+          "issuesClosed": 9,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-04",
+          "issuesOpened": 14,
+          "issuesClosed": 13,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-05",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-06",
+          "issuesOpened": 7,
+          "issuesClosed": 5,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-07",
+          "issuesOpened": 4,
+          "issuesClosed": 5,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-08",
+          "issuesOpened": 3,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-09",
+          "issuesOpened": 7,
+          "issuesClosed": 4,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-10",
+          "issuesOpened": 3,
+          "issuesClosed": 7,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-11",
+          "issuesOpened": 9,
+          "issuesClosed": 7,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-12",
+          "issuesOpened": 4,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-01",
+          "issuesOpened": 9,
+          "issuesClosed": 11,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-02",
+          "issuesOpened": 6,
+          "issuesClosed": 15,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-03",
+          "issuesOpened": 6,
+          "issuesClosed": 5,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-04",
+          "issuesOpened": 3,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-05",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-06",
+          "issuesOpened": 4,
+          "issuesClosed": 4,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-07",
+          "issuesOpened": 4,
+          "issuesClosed": 7,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-08",
+          "issuesOpened": 1,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-09",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-11",
+          "issuesOpened": 4,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-12",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-01",
+          "issuesOpened": 0,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-02",
+          "issuesOpened": 1,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-03",
+          "issuesOpened": 4,
+          "issuesClosed": 4,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-04",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-05",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-06",
+          "issuesOpened": 3,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-07",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-08",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-10",
+          "issuesOpened": 3,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-11",
+          "issuesOpened": 8,
+          "issuesClosed": 7,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-12",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-01",
+          "issuesOpened": 3,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-02",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-03",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-04",
+          "issuesOpened": 6,
+          "issuesClosed": 5,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-05",
+          "issuesOpened": 3,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-07",
+          "issuesOpened": 4,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-08",
+          "issuesOpened": 3,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-09",
+          "issuesOpened": 3,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-10",
+          "issuesOpened": 3,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-11",
+          "issuesOpened": 5,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-12",
+          "issuesOpened": 3,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-01",
+          "issuesOpened": 2,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-02",
+          "issuesOpened": 3,
+          "issuesClosed": 6,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-03",
+          "issuesOpened": 3,
+          "issuesClosed": 4,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-04",
+          "issuesOpened": 4,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-05",
+          "issuesOpened": 5,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-06",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-07",
+          "issuesOpened": 3,
+          "issuesClosed": 5,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-08",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 3,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 2,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 5,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 2,
+          "issuesClosed": 4,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 4,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 6,
+          "issuesClosed": 6,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 4,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        }
+      ]
+    },
+    {
+      "package": "uSync.Forms",
+      "syncedThrough": "2026-08-25T06:27:59Z",
+      "months": [
+        {
+          "month": "2021-07",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-09",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 2,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2021-10",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-11",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-02",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-06",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-12",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2023-01",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2023-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-01",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-04",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-09",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-10",
+          "issuesOpened": 2,
+          "issuesClosed": 5,
+          "prsOpened": 3,
+          "prsMerged": 4,
+          "commits": 0
+        },
+        {
+          "month": "2024-11",
+          "issuesOpened": 3,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-12",
+          "issuesOpened": 0,
+          "issuesClosed": 5,
+          "prsOpened": 1,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2025-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 3,
+          "prsMerged": 2,
+          "commits": 6
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 5
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 1
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 25,
+          "prsMerged": 5,
+          "commits": 13
+        }
+      ]
+    },
+    {
+      "package": "uSync.Umbraco.Commerce",
+      "syncedThrough": "2026-08-13T15:20:35Z",
+      "months": [
+        {
+          "month": "2023-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 2,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2023-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2024-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 2,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-08",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 3
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 3
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 2
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 3,
+          "prsMerged": 3,
+          "commits": 4
+        }
+      ]
+    },
+    {
+      "package": "uSync.Cli",
+      "syncedThrough": "2026-08-26T16:58:11Z",
+      "months": [
+        {
+          "month": "2023-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2023-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 2,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2023-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-08",
+          "issuesOpened": 2,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-09",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 2,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2023-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-02",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-05",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-08",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-11",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2025-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 2,
+          "prsMerged": 2,
+          "commits": 13
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 3,
+          "prsMerged": 4,
+          "commits": 3
+        }
+      ]
+    },
+    {
+      "package": "uSync.Migrations",
+      "syncedThrough": "2026-08-25T14:00:49Z",
+      "months": [
+        {
+          "month": "2022-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2022-11",
+          "issuesOpened": 8,
+          "issuesClosed": 5,
+          "prsOpened": 36,
+          "prsMerged": 34,
+          "commits": 0
+        },
+        {
+          "month": "2022-12",
+          "issuesOpened": 5,
+          "issuesClosed": 2,
+          "prsOpened": 15,
+          "prsMerged": 16,
+          "commits": 0
+        },
+        {
+          "month": "2023-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-02",
+          "issuesOpened": 1,
+          "issuesClosed": 3,
+          "prsOpened": 4,
+          "prsMerged": 4,
+          "commits": 0
+        },
+        {
+          "month": "2023-03",
+          "issuesOpened": 10,
+          "issuesClosed": 1,
+          "prsOpened": 16,
+          "prsMerged": 13,
+          "commits": 0
+        },
+        {
+          "month": "2023-04",
+          "issuesOpened": 3,
+          "issuesClosed": 3,
+          "prsOpened": 12,
+          "prsMerged": 12,
+          "commits": 0
+        },
+        {
+          "month": "2023-05",
+          "issuesOpened": 4,
+          "issuesClosed": 0,
+          "prsOpened": 8,
+          "prsMerged": 9,
+          "commits": 0
+        },
+        {
+          "month": "2023-06",
+          "issuesOpened": 9,
+          "issuesClosed": 2,
+          "prsOpened": 14,
+          "prsMerged": 9,
+          "commits": 0
+        },
+        {
+          "month": "2023-07",
+          "issuesOpened": 7,
+          "issuesClosed": 2,
+          "prsOpened": 9,
+          "prsMerged": 11,
+          "commits": 0
+        },
+        {
+          "month": "2023-08",
+          "issuesOpened": 3,
+          "issuesClosed": 6,
+          "prsOpened": 27,
+          "prsMerged": 24,
+          "commits": 0
+        },
+        {
+          "month": "2023-09",
+          "issuesOpened": 4,
+          "issuesClosed": 1,
+          "prsOpened": 11,
+          "prsMerged": 13,
+          "commits": 0
+        },
+        {
+          "month": "2023-10",
+          "issuesOpened": 2,
+          "issuesClosed": 3,
+          "prsOpened": 11,
+          "prsMerged": 6,
+          "commits": 0
+        },
+        {
+          "month": "2023-11",
+          "issuesOpened": 8,
+          "issuesClosed": 5,
+          "prsOpened": 10,
+          "prsMerged": 11,
+          "commits": 0
+        },
+        {
+          "month": "2023-12",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 6,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2024-03",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-04",
+          "issuesOpened": 2,
+          "issuesClosed": 1,
+          "prsOpened": 1,
+          "prsMerged": 5,
+          "commits": 0
+        },
+        {
+          "month": "2024-05",
+          "issuesOpened": 3,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-06",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-07",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-08",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-09",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-10",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 4,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-11",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-12",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-02",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 2,
+          "prsMerged": 5,
+          "commits": 0
+        },
+        {
+          "month": "2025-03",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 4,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-06",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 3,
+          "prsMerged": 8,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 1,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 28
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 1,
+          "commits": 2
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 1
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 6,
+          "prsMerged": 3,
+          "commits": 4
+        }
+      ]
+    },
+    {
+      "package": "uSync.Hangfire",
+      "syncedThrough": "2026-08-13T08:29:18Z",
+      "months": [
+        {
+          "month": "2025-05",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 6
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 4,
+          "issuesClosed": 4,
+          "prsOpened": 10,
+          "prsMerged": 10,
+          "commits": 14
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager",
+      "syncedThrough": "2026-08-24T21:11:51Z",
+      "months": [
+        {
+          "month": "2021-03",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-04",
+          "issuesOpened": 7,
+          "issuesClosed": 6,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-06",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-07",
+          "issuesOpened": 2,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-08",
+          "issuesOpened": 3,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-09",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-10",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-01",
+          "issuesOpened": 2,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-03",
+          "issuesOpened": 5,
+          "issuesClosed": 5,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-04",
+          "issuesOpened": 6,
+          "issuesClosed": 6,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-06",
+          "issuesOpened": 6,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-07",
+          "issuesOpened": 5,
+          "issuesClosed": 6,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-08",
+          "issuesOpened": 3,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-09",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-10",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-11",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-02",
+          "issuesOpened": 0,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-03",
+          "issuesOpened": 0,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-04",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-06",
+          "issuesOpened": 2,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-08",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-10",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-11",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-01",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-02",
+          "issuesOpened": 2,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-04",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-05",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-06",
+          "issuesOpened": 0,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-07",
+          "issuesOpened": 3,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-08",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-09",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-03",
+          "issuesOpened": 2,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-06",
+          "issuesOpened": 3,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-07",
+          "issuesOpened": 1,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 4,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 4,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 3,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 2,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 5,
+          "issuesClosed": 4,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 6,
+          "issuesClosed": 5,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 2
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 3
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 4,
+          "issuesClosed": 9,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 6
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.AI",
+      "syncedThrough": "2026-08-24T06:53:45Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 17
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 3,
+          "prsMerged": 3,
+          "commits": 26
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 14
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 2
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 3,
+          "prsMerged": 2,
+          "commits": 7
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 2,
+          "prsMerged": 2,
+          "commits": 5
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 5
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 6
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 1
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 2,
+          "prsOpened": 21,
+          "prsMerged": 12,
+          "commits": 11
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.CSV",
+      "syncedThrough": "2026-08-24T06:29:50Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 3
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 6
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 1
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 2,
+          "prsMerged": 0,
+          "commits": 2
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.UmbracoAI",
+      "syncedThrough": "2026-08-26T10:45:12Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 1
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 9,
+          "prsMerged": 6,
+          "commits": 9
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.SmartCat",
+      "syncedThrough": "2026-08-25T16:56:32Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 7,
+          "prsMerged": 0,
+          "commits": 2
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.Publicis",
+      "syncedThrough": "2026-07-15T10:08:21Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 7
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.DeepL",
+      "syncedThrough": "2026-08-24T15:18:12Z",
+      "months": [
+        {
+          "month": "2024-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2024-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 7
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 3
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 9
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 14,
+          "prsMerged": 11,
+          "commits": 7
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.Google",
+      "syncedThrough": "2026-08-21T17:14:50Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 6
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 5,
+          "prsMerged": 2,
+          "commits": 13
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.Xliff",
+      "syncedThrough": "2026-08-26T01:44:35Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 2
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 21,
+          "prsMerged": 16,
+          "commits": 17
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.Microsoft",
+      "syncedThrough": "2026-08-24T10:41:30Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 3
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 4
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 8,
+          "prsMerged": 8,
+          "commits": 11
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.Passthrough",
+      "syncedThrough": "2026-08-20T14:35:43Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 5,
+          "prsMerged": 1,
+          "commits": 1
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.CrowdIn",
+      "syncedThrough": "2026-08-25T22:45:51Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 2
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 2
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 3
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 1
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 2
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 4,
+          "prsMerged": 1,
+          "commits": 1
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.LanguageWire",
+      "syncedThrough": "2026-08-25T11:56:14Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 13,
+          "prsMerged": 8,
+          "commits": 29
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.GlobalLink",
+      "syncedThrough": "2026-08-26T11:25:17Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 1
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 2
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 2
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 10,
+          "prsMerged": 4,
+          "commits": 5
+        }
+      ]
+    },
+    {
+      "package": "Umbraco.Community.LinkedPages",
+      "syncedThrough": "2026-08-25T14:14:54Z",
+      "months": [
+        {
+          "month": "2018-09",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 2,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2021-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 3,
+          "prsMerged": 3,
+          "commits": 0
+        },
+        {
+          "month": "2022-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-12",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-07",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-09",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2023-10",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-11",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-01",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 3
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 5,
+          "prsMerged": 5,
+          "commits": 13
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 10,
+          "prsMerged": 1,
+          "commits": 1
+        }
+      ]
+    },
+    {
+      "package": "Our.Umbraco.MaintenanceMode",
+      "syncedThrough": "2026-08-25T14:59:16Z",
+      "months": [
+        {
+          "month": "2017-11",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2017-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-02",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-11",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2018-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-11",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2019-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-04",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 4,
+          "prsMerged": 4,
+          "commits": 0
+        },
+        {
+          "month": "2020-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2020-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2021-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 2,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2021-04",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-05",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2021-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-02",
+          "issuesOpened": 0,
+          "issuesClosed": 1,
+          "prsOpened": 10,
+          "prsMerged": 7,
+          "commits": 0
+        },
+        {
+          "month": "2022-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-05",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-06",
+          "issuesOpened": 4,
+          "issuesClosed": 3,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-07",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-10",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2022-12",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-04",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 4,
+          "prsMerged": 2,
+          "commits": 0
+        },
+        {
+          "month": "2023-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-06",
+          "issuesOpened": 0,
+          "issuesClosed": 2,
+          "prsOpened": 0,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2023-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2023-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2024-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2024-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 3,
+          "prsMerged": 1,
+          "commits": 0
+        },
+        {
+          "month": "2024-09",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 3,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 5,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2024-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-04",
+          "issuesOpened": 2,
+          "issuesClosed": 2,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 4,
+          "prsMerged": 1,
+          "commits": 4
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 2,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 1
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 2,
+          "issuesClosed": 9,
+          "prsOpened": 5,
+          "prsMerged": 3,
+          "commits": 5
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 1,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 1,
+          "issuesClosed": 1,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 1
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 0,
+          "commits": 1
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 1,
+          "prsMerged": 1,
+          "commits": 9
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 12,
+          "prsMerged": 4,
+          "commits": 6
+        }
+      ]
+    },
+    {
+      "package": "uSync.Automate",
+      "syncedThrough": "2026-08-20T02:38:22Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 10,
+          "prsMerged": 0,
+          "commits": 18
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.TranslationManager.Automate",
+      "syncedThrough": "2026-08-25T12:07:55Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 6,
+          "prsMerged": 0,
+          "commits": 3
+        }
+      ]
+    },
+    {
+      "package": "Umbraco.Community.PowerToys",
+      "syncedThrough": "2026-08-26T17:12:19Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 9,
+          "issuesClosed": 9,
+          "prsOpened": 42,
+          "prsMerged": 40,
+          "commits": 60
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.Processing",
+      "syncedThrough": "2026-08-26T11:10:09Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 1
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 8
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 5
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 3
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 8,
+          "prsMerged": 8,
+          "commits": 1
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 8,
+          "prsMerged": 5,
+          "commits": 2
+        }
+      ]
+    },
+    {
+      "package": "Jumoo.Json",
+      "syncedThrough": "2026-08-25T08:43:22Z",
+      "months": [
+        {
+          "month": "2025-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-09",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2025-10",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 3
+        },
+        {
+          "month": "2025-11",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 3
+        },
+        {
+          "month": "2025-12",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-01",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-02",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-03",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-04",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 0
+        },
+        {
+          "month": "2026-05",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 2
+        },
+        {
+          "month": "2026-06",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 0,
+          "prsMerged": 0,
+          "commits": 4
+        },
+        {
+          "month": "2026-07",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 11,
+          "prsMerged": 10,
+          "commits": 17
+        },
+        {
+          "month": "2026-08",
+          "issuesOpened": 0,
+          "issuesClosed": 0,
+          "prsOpened": 4,
+          "prsMerged": 4,
+          "commits": 4
+        }
+      ]
+    }
+  ]
+}
