@@ -5,6 +5,18 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Jumoo.Processing 17.4.0</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.0</guid>
+      <pubDate>Tue, 25 Aug 2026 19:40:28 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add cancellation token support and prune the pipeline cache table by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/11
+* Bring v18/main's CI/CD pipeline and repository standards to v17/main by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/12
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/commits/release/v17.4.0]]></description>
+    </item>
+    <item>
       <title>uSync 17.3.8</title>
       <link>https://github.com/KevinJump/uSync/releases/tag/v17.3.8</link>
       <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.3.8</guid>
@@ -924,13 +936,6 @@ Not user facing, but new in this release:
       <link>https://github.com/Jumoo/Jumoo.Json/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Json/releases</guid>
       <pubDate>Tue, 28 Jul 2026 14:54:47 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Linked Pages 18.0.3</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases</guid>
-      <pubDate>Mon, 27 Jul 2026 14:32:27 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>

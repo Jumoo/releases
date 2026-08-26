@@ -1,5 +1,18 @@
 [
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.4.0",
+    "publishedAt": "2026-08-25T19:40:28Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.4.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.0",
+    "notes": "## What's Changed\n* Add cancellation token support and prune the pipeline cache table by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/11\n* Bring v18/main's CI/CD pipeline and repository standards to v17/main by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/12\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/commits/release/v17.4.0",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
