@@ -2,6 +2,7 @@ const feedEl = document.getElementById("feed");
 const statusEl = document.getElementById("status");
 const titleEl = document.getElementById("package-title");
 const subtitleEl = document.getElementById("package-subtitle");
+const versionsEl = document.getElementById("package-versions");
 
 const params = new URLSearchParams(location.search);
 const packageId = params.get("name") || "";
@@ -13,7 +14,7 @@ async function loadPackage() {
   }
 
   try {
-    const releases = await fetchReleases();
+    const [releases, eol] = await Promise.all([fetchReleases(), fetchEol()]);
     const packageReleases = releases.filter((r) => r.package === packageId);
 
     if (packageReleases.length === 0) {
@@ -27,6 +28,11 @@ async function loadPackage() {
     const repo = packageReleases[0].repo;
     subtitleEl.innerHTML = `<a href="https://github.com/${escapeHtml(repo)}" target="_blank" rel="noopener">${escapeHtml(repo)}</a> on GitHub &middot; <a href="https://www.nuget.org/packages/${escapeHtml(packageId)}" target="_blank" rel="noopener">${escapeHtml(packageId)}</a> on NuGet`;
     document.title = `${displayTitle} — Jumoo Releases`;
+
+    versionsEl.innerHTML = "";
+    for (const r of highestPerMajor(packageReleases)) {
+      versionsEl.appendChild(renderVersionChip(r, isMajorSupported(effectiveMajor(r), eol)));
+    }
 
     feedEl.innerHTML = "";
     for (const r of packageReleases) {

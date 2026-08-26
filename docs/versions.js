@@ -1,17 +1,6 @@
 const feedEl = document.getElementById("feed");
 const statusEl = document.getElementById("status");
 
-function renderVersionChip(release, supported) {
-  const el = document.createElement("a");
-  el.className = "version-chip";
-  if (!supported) el.className += " version-chip-eol";
-  else if (release.prerelease) el.className += " version-chip-pre";
-  el.href = `package.html?name=${encodeURIComponent(release.package)}#${releaseAnchorId(release.version)}`;
-  el.title = `${release.version} — ${formatDate(release.publishedAt)}${supported ? "" : " (end of life)"}`;
-  el.textContent = `v${release.version}`;
-  return el;
-}
-
 function renderVersionGroup(group, eol) {
   const majors = highestPerMajor(group.releases);
   if (majors.length === 0) return null;

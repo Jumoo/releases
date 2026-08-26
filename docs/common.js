@@ -69,6 +69,17 @@ function releaseAnchorId(version) {
   return `v${version}`;
 }
 
+function renderVersionChip(release, supported) {
+  const el = document.createElement("a");
+  el.className = "version-chip";
+  if (!supported) el.className += " version-chip-eol";
+  else if (release.prerelease) el.className += " version-chip-pre";
+  el.href = `package.html?name=${encodeURIComponent(release.package)}#${releaseAnchorId(release.version)}`;
+  el.title = `${release.version} — ${formatDate(release.publishedAt)}${supported ? "" : " (end of life)"}`;
+  el.textContent = `v${release.version}`;
+  return el;
+}
+
 function renderRelease(r) {
   const el = document.createElement("article");
   el.className = "release";
