@@ -1,7 +1,7 @@
 const mainEl = document.getElementById("activity-main");
 const statusEl = document.getElementById("status");
 
-const ENGAGEMENT_COLORS = { issuesOpened: "#5b9dff", prsMerged: "#3ddc97", commits: "#9d7bff" };
+const ENGAGEMENT_COLORS = { issuesOpened: "#5b9dff", issuesClosed: "#e8a94b", prsMerged: "#3ddc97", commits: "#9d7bff" };
 
 async function fetchActivity() {
   const res = await fetch("activity.json", { cache: "no-store" });
@@ -44,16 +44,18 @@ function formatMonth(monthStr) {
 // {month -> {issuesOpened, prsMerged, commits}} map, plus a grand total
 // across all months. Shared by the trivia cards, the chart, and the table.
 function sumEngagementByMonth(engagementPackages, months) {
-  const byMonth = new Map(months.map((m) => [m, { issuesOpened: 0, prsMerged: 0, commits: 0 }]));
-  const grand = { issuesOpened: 0, prsMerged: 0, commits: 0 };
+  const byMonth = new Map(months.map((m) => [m, { issuesOpened: 0, issuesClosed: 0, prsMerged: 0, commits: 0 }]));
+  const grand = { issuesOpened: 0, issuesClosed: 0, prsMerged: 0, commits: 0 };
   for (const pkg of engagementPackages) {
     for (const row of pkg.months) {
       const bucket = byMonth.get(row.month);
       if (!bucket) continue;
       bucket.issuesOpened += row.issuesOpened;
+      bucket.issuesClosed += row.issuesClosed;
       bucket.prsMerged += row.prsMerged;
       bucket.commits += row.commits;
       grand.issuesOpened += row.issuesOpened;
+      grand.issuesClosed += row.issuesClosed;
       grand.prsMerged += row.prsMerged;
       grand.commits += row.commits;
     }
@@ -95,6 +97,7 @@ function renderAtAGlance(engagement) {
 
   const trivia = [
     { label: "Issues opened (12mo)", value: grand.issuesOpened },
+    { label: "Issues closed (12mo)", value: grand.issuesClosed },
     { label: "PRs merged (12mo)", value: grand.prsMerged },
     { label: `${month ? formatMonth(month) : "Busiest month"}'s activity`, value: busiestMonthTotal >= 0 ? busiestMonthTotal : "—" },
     { label: "PRs merged (all-time)", value: allTimePrsMerged.toLocaleString() },
@@ -127,6 +130,7 @@ function renderEngagementChart(engagementPackages) {
       labels: months,
       datasets: [
         { label: "Issues opened", data: months.map((m) => totals.get(m).issuesOpened), backgroundColor: ENGAGEMENT_COLORS.issuesOpened },
+        { label: "Issues closed", data: months.map((m) => totals.get(m).issuesClosed), backgroundColor: ENGAGEMENT_COLORS.issuesClosed },
         { label: "PRs merged", data: months.map((m) => totals.get(m).prsMerged), backgroundColor: ENGAGEMENT_COLORS.prsMerged },
         { label: "Commits", data: months.map((m) => totals.get(m).commits), backgroundColor: ENGAGEMENT_COLORS.commits },
       ],
@@ -146,10 +150,11 @@ function renderEngagementChart(engagementPackages) {
 function renderEngagementTable(engagementPackages, titleByPackage) {
   const months = new Set(lastNMonths(12));
   const rows = engagementPackages.map((pkg) => {
-    const totals = { issuesOpened: 0, prsMerged: 0, commits: 0 };
+    const totals = { issuesOpened: 0, issuesClosed: 0, prsMerged: 0, commits: 0 };
     for (const row of pkg.months) {
       if (!months.has(row.month)) continue;
       totals.issuesOpened += row.issuesOpened;
+      totals.issuesClosed += row.issuesClosed;
       totals.prsMerged += row.prsMerged;
       totals.commits += row.commits;
     }
@@ -164,6 +169,7 @@ function renderEngagementTable(engagementPackages, titleByPackage) {
       <tr>
         <th>Package</th>
         <th title="Issues opened in the last 12 months">Issues opened</th>
+        <th title="Issues closed in the last 12 months">Issues closed</th>
         <th title="Pull requests merged in the last 12 months">PRs merged</th>
         <th title="Commits on the default branch in the last 12 months">Commits</th>
       </tr>
@@ -172,7 +178,7 @@ function renderEngagementTable(engagementPackages, titleByPackage) {
       ${rows
         .map(
           (r) =>
-            `<tr><td><a href="package.html?name=${encodeURIComponent(r.package)}">${escapeHtml(r.title)}</a></td><td>${r.issuesOpened}</td><td>${r.prsMerged}</td><td>${r.commits}</td></tr>`
+            `<tr><td><a href="package.html?name=${encodeURIComponent(r.package)}">${escapeHtml(r.title)}</a></td><td>${r.issuesOpened}</td><td>${r.issuesClosed}</td><td>${r.prsMerged}</td><td>${r.commits}</td></tr>`
         )
         .join("")}
     </tbody>
