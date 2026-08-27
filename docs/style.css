@@ -343,9 +343,17 @@ footer {
 footer > p {
   text-align: center;
   font-style: italic;
+  margin: 0 0 0.5rem;
+}
+
+footer > p:last-of-type {
   padding-bottom: 1.25rem;
   margin-bottom: 1.25rem;
   border-bottom: 1px solid var(--border);
+}
+
+footer > p a {
+  color: var(--accent);
 }
 
 .site-nav {

@@ -38,7 +38,7 @@ function renderTrivia(releases, downloads) {
   const counter = document.createElement("div");
   counter.className = "big-counter";
   counter.textContent = totalDownloads > 0
-    ? `${totalDownloads.toLocaleString()} downloads`
+    ? `${totalDownloads.toLocaleString()} downloads *`
     : "Download counts not yet available";
   el.appendChild(counter);
 
