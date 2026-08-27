@@ -34,10 +34,6 @@ function lastNMonths(n) {
   return months;
 }
 
-function formatMonth(monthStr) {
-  return new Date(`${monthStr}-01T00:00:00Z`).toLocaleDateString(undefined, { year: "numeric", month: "long", timeZone: "UTC" });
-}
-
 // --- At a glance ----------------------------------------------------------
 
 // Sums each package's monthly rows falling within `months` into one
@@ -63,28 +59,10 @@ function sumEngagementByMonth(engagementPackages, months) {
   return { byMonth, grand };
 }
 
-// Busiest single month, site-wide, across all activity types - just a fun
-// number, not something to act on.
-function busiestMonth(engagementPackages) {
-  const monthTotals = new Map();
-  for (const pkg of engagementPackages) {
-    for (const row of pkg.months) {
-      const total = row.issuesOpened + row.prsMerged + row.commits;
-      monthTotals.set(row.month, (monthTotals.get(row.month) ?? 0) + total);
-    }
-  }
-  const [month, total] = [...monthTotals.entries()].reduce(
-    (best, entry) => (entry[1] > best[1] ? entry : best),
-    [null, -1]
-  );
-  return { month, total };
-}
-
 function renderAtAGlance(engagement) {
   const { details, body: el } = section("At a glance", null, true);
 
   const { grand } = sumEngagementByMonth(engagement.packages, lastNMonths(12));
-  const { month, total: busiestMonthTotal } = busiestMonth(engagement.packages);
   const allTimePrsMerged = engagement.packages.reduce(
     (sum, pkg) => sum + pkg.months.reduce((s, m) => s + m.prsMerged, 0),
     0
@@ -99,7 +77,6 @@ function renderAtAGlance(engagement) {
     { label: "Issues opened (12mo)", value: grand.issuesOpened },
     { label: "Issues closed (12mo)", value: grand.issuesClosed },
     { label: "PRs merged (12mo)", value: grand.prsMerged },
-    { label: `${month ? formatMonth(month) : "Busiest month"}'s activity`, value: busiestMonthTotal >= 0 ? busiestMonthTotal : "—" },
     { label: "PRs merged (all-time)", value: allTimePrsMerged.toLocaleString() },
   ];
 
