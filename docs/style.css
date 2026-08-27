@@ -36,16 +36,17 @@ header {
   margin: 0 0 0.75rem;
 }
 
-.site-title {
-  font-weight: bold;
-  color: var(--fg);
-  text-decoration: none;
-  font-size: 0.9em;
-  letter-spacing: 0.02em;
+.site-icon {
+  display: block;
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) invert(1);
+  opacity: 0.75;
+  transition: opacity 0.15s;
 }
 
-.site-title:hover {
-  color: var(--accent);
+.site-icon:hover {
+  opacity: 1;
 }
 
 header h1 {
@@ -339,6 +340,14 @@ footer {
   font-size: 0.85em;
 }
 
+footer > p {
+  text-align: center;
+  font-style: italic;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
 .site-nav {
   margin-top: 0.5rem;
   display: flex;
@@ -351,6 +360,24 @@ footer {
   gap: 0.85rem;
   margin: 0;
   font-size: 0.8em;
+}
+
+.footer-logo {
+  display: block;
+  margin: 0 auto 0.75rem;
+  width: 130px;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.footer-logo:hover {
+  opacity: 1;
+}
+
+.footer-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .site-nav a {
