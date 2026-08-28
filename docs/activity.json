@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T10:42:38.804Z",
+  "generatedAt": "2026-08-28T21:59:59.527Z",
   "packages": [
     {
       "package": "uSync",
@@ -130,19 +130,6 @@
       "releaseBranch": "v18/main",
       "commitsSince": 0,
       "lastCommitDate": "2026-08-17T10:44:25Z"
-    },
-    {
-      "package": "Jumoo.TranslationManager.UmbracoAI",
-      "title": "UmbracoAI Connector",
-      "category": "Translation Connectors",
-      "repo": "Jumoo/Jumoo.TranslationManager.UmbracoAI",
-      "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.1.0",
-      "lastReleaseDate": "2026-08-20T13:57:07Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.0",
-      "releaseBranch": "v17/main",
-      "commitsSince": 1,
-      "lastCommitDate": "2026-08-20T14:07:27Z"
     },
     {
       "package": "Jumoo.TranslationManager.SmartCat",

@@ -441,37 +441,17 @@ Support for batch submission via the translation api ]]></description>
     </item>
     <item>
       <title>UmbracoAI Connector 17.1.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.0</guid>
-      <pubDate>Thu, 20 Aug 2026 13:57:07 GMT</pubDate>
-      <description><![CDATA[## Highlights
-
-This release adds an **AI Tool** — `translate_page` — that lets Umbraco Copilot trigger a Translation Manager translation job directly from the backoffice chat panel. An editor can ask to translate the page they're on (optionally with its children, and optionally publish the result) without leaving it or knowing anything about Translation Manager's workspace; if a page has more than one target language configured, the tool asks the assistant to relay a clarifying question instead of guessing. Because it creates and submits a normal Translation Manager job under the hood, chat-triggered translations get the same translation memory reuse, review/approval workflow, and workspace visibility as a job created by hand — see [docs/tools.md](https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/blob/v17/main/docs/tools.md) for the full write-up, including screenshots of both flows.
-
-## What's Changed
-* Add translate_page Umbraco.AI tool by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/8
-* Add docs/tools.md describing the translate_page AI Tool by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/9
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/compare/v17.0.0...v17.1.0
-]]></description>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases</guid>
+      <pubDate>Thu, 20 Aug 2026 13:57:57 GMT</pubDate>
+      <description><![CDATA[]]></description>
     </item>
     <item>
       <title>UmbracoAI Connector 17.0.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.0.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.0.0</guid>
-      <pubDate>Thu, 20 Aug 2026 11:42:54 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* chore: bring repository standards and CI/CD in line with the other connectors by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/2
-* chore: bump to the latest Umbraco 17.x, Umbraco.AI, and Translation Manager AI packages by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/6
-* Remove unused hey-api devDependencies by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/7
-* chore(deps-dev): Bump vite from 7.3.1 to 8.2.1 in /src/Jumoo.TranslationManager.UmbracoAi/Client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/5
-
-## New Contributors
-* @KevinJump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/2
-* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/5
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/commits/v17.0.0]]></description>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases</guid>
+      <pubDate>Thu, 20 Aug 2026 11:43:47 GMT</pubDate>
+      <description><![CDATA[]]></description>
     </item>
     <item>
       <title>LanguageWire Connector 17.0.1</title>
