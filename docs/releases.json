@@ -1,5 +1,31 @@
 [
   {
+    "package": "Jumoo.TranslationManager.DeepL",
+    "title": "DeepL Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL",
+    "version": "18.1.0",
+    "publishedAt": "2026-09-01T20:42:44Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.DeepL/18.1.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.1.0",
+    "notes": "## What's Changed\n* Whitespace fixes in DeepLTranslationService (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/7\n* Add repository standards and CI/CD to v18 (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/8\n* Bump chalk to 6.0.0 and typescript to 7.0.2 (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/10\n* Stop per-developer test site config from leaking into deepl-client commits by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/11\n* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/17\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v18.0.0...v18.1.0",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager",
+    "title": "Translation Manager",
+    "category": "",
+    "repo": "Jumoo/Jumoo.TranslationManager.Issues",
+    "version": "18.2.0",
+    "publishedAt": "2026-09-01T16:34:26.493+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/18.2.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",

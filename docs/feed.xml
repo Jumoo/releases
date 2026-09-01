@@ -5,6 +5,28 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>DeepL Connector 18.1.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.1.0</guid>
+      <pubDate>Tue, 01 Sep 2026 20:42:44 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Whitespace fixes in DeepLTranslationService (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/7
+* Add repository standards and CI/CD to v18 (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/8
+* Bump chalk to 6.0.0 and typescript to 7.0.2 (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/10
+* Stop per-developer test site config from leaking into deepl-client commits by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/11
+* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/17
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v18.0.0...v18.1.0]]></description>
+    </item>
+    <item>
+      <title>Translation Manager 18.2.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
+      <pubDate>Tue, 01 Sep 2026 16:34:26 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>Translation Manager 17.8.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.0</guid>
@@ -693,49 +715,6 @@ See [CHANGELOG.md](https://github.com/Jumoo/Jumoo.TranslationManager.CSV/blob/v1
 
 **Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.3.6...v17.3.7
 ]]></description>
-    </item>
-    <item>
-      <title>Google Connector 17.1.0-beta</title>
-      <link>https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0-beta</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0-beta</guid>
-      <pubDate>Fri, 14 Aug 2026 15:09:48 GMT</pubDate>
-      <description><![CDATA[Beta release adding Cloud Translation v3 support and batch translation, on top of the existing v2 (Basic) API-key connector.
-
-## Added
-- Cloud Translation v3 (Advanced) support alongside the existing v2 API-key path — paste a Google Cloud service account JSON into the config page to switch a connector to v3, no settings migration needed. Existing API-key-only installs keep working unchanged.
-- Glossaries, model selection (NMT / Translation LLM), and regional/multi-regional endpoint selection — all v3-only.
-- Batch translation via `batchTranslateText`, backed by a configured Google Cloud Storage bucket. See [`BATCH-SETUP.md`](https://github.com/Jumoo/Google.Connector/blob/main/Jumoo.TranslationManager.Google/BATCH-SETUP.md) for the GCS/IAM setup this needs — genuinely fiddly, worth reading before enabling it.
-- "Test connection" and live batch-status "Check now" buttons in the backoffice, calling the connector's own API via a generated TypeScript client.
-- Language mapping and glossary-mapping editors in the config view.
-
-## Fixed
-- `CanTranslate` returned `false` for almost every real culture (compared two-letter codes against full culture names).
-- Language codes were truncated to two characters, breaking anything needing a region subtag (`zh-Hant`, `pt-BR`, etc).
-- The backoffice manifest's package alias was the connector's display name instead of its actual alias.
-- The config view bundled its own copy of Lit instead of the shared backoffice one.
-- Settings are now trimmed — a stray copy-pasted space in a bucket name produced an opaque error from Google.
-- Batch translation was sending an invalid `mime_type`, and several failure points logged nothing at all.
-
-Full changelog: [CHANGELOG.md](https://github.com/Jumoo/Google.Connector/blob/main/CHANGELOG.md)
-
-This is a **beta** release — flag anything odd on the [issue tracker](https://github.com/Jumoo/Jumoo.TranslationManager.Issues).]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 18.1.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.1.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.1.1</guid>
-      <pubDate>Fri, 14 Aug 2026 14:11:02 GMT</pubDate>
-      <description><![CDATA[Fixes a rich text property crash caused by empty markup round-tripping as `null` after translation.
-
-## What's fixed
-
-- **Empty RTE markup no longer breaks the node.** A rich text property with empty markup (for example, a block-only rich text value with no plain text) could come back from translation stored as `{"markup": null, "blocks": ...}` instead of `{"markup": "", "blocks": ...}`. That made the content node unopenable in the backoffice.
-
-If you have content already affected by this, the stored property value will need `"markup": null` corrected back to `"markup": ""`.
-
----
-
-Published to NuGet.]]></description>
     </item>
   </channel>
 </rss>
