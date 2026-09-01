@@ -5,6 +5,115 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Translation Manager 17.8.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.0</guid>
+      <pubDate>Tue, 01 Sep 2026 16:03:41 GMT</pubDate>
+      <description><![CDATA[This release adds a **bulk translation dashboard** to the Content section for sending multiple items into a single translation job, along with a small connector settings tidy-up.
+
+## What's changed
+
+- **Bulk translation dashboard.** Pick several content items at once from a new dashboard in the Content section, using the standard document tree picker. Review what you've selected — name, path, translation set, and whether children are included — then send them all into one translation job. The job-creation screen now lists out the content being sent whenever more than one item is involved, so a multi-item send is never a guessing game.
+- Bumped connector dependency versions.
+
+---
+
+Published to NuGet.
+]]></description>
+    </item>
+    <item>
+      <title>CrowdIn Connector 17.2.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.0</guid>
+      <pubDate>Tue, 01 Sep 2026 14:57:27 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add IOptionsTranslationProvider implementation with OptionsDetailLevel support by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/6
+
+## New Contributors
+* @KevinJump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/6
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/compare/v17.1.1...v17.2.0]]></description>
+    </item>
+    <item>
+      <title>GlobalLink Connector 17.1.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.0</guid>
+      <pubDate>Tue, 01 Sep 2026 14:57:19 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Tidy up repo for v17 release: docs, CI/CD, and cleanup by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/2
+* Move project and client code into src/ by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/6
+* Bump the npm-dependencies group in /src/Jumoo.TranslationManager.GlobalLink/globallink-client with 4 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/7
+* Bump @rollup/plugin-node-resolve from 15.3.1 to 16.0.3 in /src/Jumoo.TranslationManager.GlobalLink/globallink-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/9
+* Add IOptionsTranslationProvider with OptionsDetailLevel support by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/11
+
+## New Contributors
+* @KevinJump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/2
+* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/7
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/compare/9.0.2...v17.1.0]]></description>
+    </item>
+    <item>
+      <title>LanguageWire Connector 17.1.0</title>
+      <link>https://github.com/Jumoo/LanguageWire.Connector/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases</guid>
+      <pubDate>Tue, 01 Sep 2026 14:48:02 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>AI Connector 17.5.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.5.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.5.0</guid>
+      <pubDate>Tue, 01 Sep 2026 14:40:02 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add IOptionsTranslationProvider with OptionsDetailLevel support by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/34
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.4.2...v17.5.0]]></description>
+    </item>
+    <item>
+      <title>Microsoft Connector 17.2.0</title>
+      <link>https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v17.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v17.2.0</guid>
+      <pubDate>Tue, 01 Sep 2026 14:39:55 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add IOptionsTranslationProvider with OptionsDetailLevel support by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/11
+
+
+**Full Changelog**: https://github.com/Jumoo/Microsoft.Connector/compare/release/v17.1.0...release/v17.2.0]]></description>
+    </item>
+    <item>
+      <title>Google Connector 17.1.0</title>
+      <link>https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0</guid>
+      <pubDate>Tue, 01 Sep 2026 14:39:50 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add IOptionsTranslationProvider with OptionsDetailLevel support by @KevinJump in https://github.com/Jumoo/Google.Connector/pull/6
+
+
+**Full Changelog**: https://github.com/Jumoo/Google.Connector/compare/v17.1.0-beta...v17.1.0]]></description>
+    </item>
+    <item>
+      <title>DeepL Connector 17.2.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.2.0</guid>
+      <pubDate>Tue, 01 Sep 2026 14:38:00 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Dev/glossaries by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/1
+* V17/base class by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/2
+* Add repository standards and CI/CD, matching Xliff.Connector by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/3
+* Bump @hey-api/openapi-ts from 0.95.0 to 0.99.0 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/4
+* Bump chalk from 5.6.2 to 6.0.0 in /Jumoo.TranslationManager.DeepL/deepl-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/5
+* Bump typescript from 6.0.3 to 7.0.2 in /Jumoo.TranslationManager.DeepL/deepl-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/6
+* Stop per-developer test site config from leaking into commits by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/15
+* Bump vite from 8.2.0 to 8.2.2 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group across 1 directory by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/14
+* Add IOptionsTranslationProvider with OptionsDetailLevel support by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/16
+
+## New Contributors
+* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/4
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/commits/v17.2.0]]></description>
+    </item>
+    <item>
       <title>uSync CLI 17.0.0</title>
       <link>https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.0.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.0.0</guid>
@@ -627,181 +736,6 @@ If you have content already affected by this, the stored property value will nee
 ---
 
 Published to NuGet.]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.7.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.1</guid>
-      <pubDate>Fri, 14 Aug 2026 13:58:28 GMT</pubDate>
-      <description><![CDATA[Fixes a rich text property crash caused by empty markup round-tripping as `null` after translation.
-
-## What's fixed
-
-- **Empty RTE markup no longer breaks the node.** A rich text property with empty markup (for example, a block-only rich text value with no plain text) could come back from translation stored as `{"markup": null, "blocks": ...}` instead of `{"markup": "", "blocks": ...}`. That made the content node unopenable in the backoffice, failing with `ArgumentNullException: Value cannot be null. (Parameter 'input')` from `RichTextPropertyValueEditor.ToEditor`.
-
-If you have content already affected by this, the stored property value will need `"markup": null` corrected back to `"markup": ""`.
-
----
-
-Published to NuGet.]]></description>
-    </item>
-    <item>
-      <title>uSync Commerce 17.1.0</title>
-      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v17.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v17.1.0</guid>
-      <pubDate>Thu, 13 Aug 2026 15:28:03 GMT</pubDate>
-      <description><![CDATA[First non-rc release of the 17.x line (Umbraco 17 / net10.0).
-
-### Added
-
-- Repository standards: `LICENSE.md`, `README.md`, `CHANGELOG.md`, `SECURITY.md`,
-  `CODE_OF_CONDUCT.md`, `.editorconfig`, `.gitattributes`, `global.json`, `Directory.Build.props`,
-  `GitVersion.yml`, dependabot, and issue and PR templates.
-- CI workflows — PR build, package build, and release. CodeQL is present but disabled by default
-  (see the workflow for why).
-- Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated behind the
-  `nuget` GitHub environment and authenticated with trusted publishing (OIDC) rather than a
-  stored API key.
-- `packages.lock.json`, so a transitive dependency update can't change what a build restores
-  without a commit.
-
-### Fixed
-
-- Tax class country/region tax rates were never restored on import: the serializer wrote them
-  under a `<TaxClasses>` element but read them back looking for `<TaxRates>`, so import always saw
-  an empty list and cleared every existing override instead of restoring it (#10).
-- The exported country/region tax rate value itself round-tripped as `0`, because it was serialized
-  via `TaxRate.ToString()` (`"20.00%"`) instead of the underlying decimal value, which then failed
-  to parse back on import. Tax codes are now round-tripped too.
-- `ShippingMethodSerializer` never removed a country/region shipping allowance that had been
-  removed from the XML, due to a collection-diff comparing the live list against itself instead of
-  against the incoming XML values.
-
-**Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/blob/v17/main/CHANGELOG.md]]></description>
-    </item>
-    <item>
-      <title>GlobalLink Connector 17.0.0-rc1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.0.0-rc1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.0.0-rc1</guid>
-      <pubDate>Thu, 13 Aug 2026 10:42:16 GMT</pubDate>
-      <description><![CDATA[First release candidate for the Umbraco 17 / Translation Manager v17 line.
-
-See [CHANGELOG.md](https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/blob/v17/main/CHANGELOG.md#1700) for details.
-
-## Highlights
-
-- Umbraco 17 (`net10.0`) support, with a backoffice client rewritten in Lit/TypeScript/Vite,
-  replacing the old AngularJS `App_Plugins` UI.
-- Repository brought up to Jumoo's standard release scaffolding: docs, CI/CD (PR build,
-  package build, tag-triggered NuGet release via trusted publishing, CodeQL), dependabot.
-- Project and client code moved into `src/Jumoo.TranslationManager.GlobalLink/`.
-
-This is a release candidate - please test against a real Umbraco 17 site and GlobalLink
-account before relying on it in production.]]></description>
-    </item>
-    <item>
-      <title>uSync Automate 17.0.0-beta1</title>
-      <link>https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.0-beta1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.0-beta1</guid>
-      <pubDate>Thu, 13 Aug 2026 09:55:06 GMT</pubDate>
-      <description><![CDATA[First beta release. Umbraco.Automate integration for uSync and uSync.Complete, targeting Umbraco 17 / .NET 10.
-
-## Packages
-
-- **uSync.Automate** - syncs Automate's own workspaces, workspace groups and automations as uSync XML files.
-- **uSync.Automate.Actions** - run a uSync export, import or report from an Automate workflow (`uSync.export`, `uSync.import`, `uSync.report`), or target a single item (`uSync.exportItem`, `uSync.importItem`); triggers for uSync import/export/report start/complete and per-item import/export events.
-- **uSync.Automate.Actions.Complete** *(new)* - Automate actions/triggers for uSync.Complete's publisher:
-  - `uSyncComplete.push` / `uSyncComplete.pull` - push or pull content/media to another server, by item key.
-  - `uSyncComplete.pushSettings` / `uSyncComplete.pullSettings` - push or pull a single settings item (document type, data type, template, member, or a third-party entity type) by UDI entity type + key.
-  - `uSyncComplete.createRestorePoint` - take a restore point on the target before applying changes.
-  - `uSyncComplete.publishReceived` trigger - fires when this site finishes receiving a push/pull from another server.
-
-Both action packages share loop-protection against uSync/Automate cascades (a single-flight operation gate, and automation-originated events skipped by default) - see each package's readme for details and limits.
-
-## CI/CD
-
-- PR builds and pushes to `main` now build and test both `uSync.Automate.Tests` and `uSync.Automate.Tests.Complete`.
-- Release workflow packs and publishes all three nupkgs to NuGet via trusted publishing (OIDC, no stored API key), triggered by pushing a `v*` tag.
-- CodeQL workflow is present but currently disabled (commented out) - this repo is private and code scanning needs GitHub Advanced Security, which isn't available without GitHub Teams yet.
-
-## Known limitations
-
-- `uSync.Automate.Actions.Complete`'s push/pull/restore-point actions run inline and block the workflow step for as long as the pipeline takes - size step timeouts accordingly for large trees.
-- See `UPSTREAM-REQUESTS.md` for documented friction points against `Umbraco.Automate.Core`, `uSync`, `uSync.Complete` and `Jumoo.Processing.Core` found while building this.]]></description>
-    </item>
-    <item>
-      <title>uSync 18.1.0</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.0</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.0</guid>
-      <pubDate>Wed, 12 Aug 2026 09:38:19 GMT</pubDate>
-      <description><![CDATA[This is a minor update to uSync for Umbraco 18 — an opt-in import performance cache, a double-export fix for save-and-publish, several allocation/perf improvements ported from v17, and a move to the `Jumoo.Json` package for JSON handling.
-
-## uSync 18.1.0
-
-**Added**
-- **Opt-in import state cache — `uSync:Settings:CacheImportState` (default `false`).** uSync normally decides whether an item has changed by loading it, serializing it, and hashing it — every item, every run. With this on, uSync remembers the hash of items it has already confirmed match, so unchanged items are skipped without a database lookup or re-serialize on the next run. The first run after enabling it is no faster than before; the benefit lands on the second run. Read [`docs/perf/state-cache.md`](https://github.com/KevinJump/uSync/blob/v18/main/docs/perf/state-cache.md) before enabling it, especially the limitations section. ([#1016](https://github.com/KevinJump/uSync/pull/1016))
-- **Extender API:** the cancelable per-item notifications gain an optional `Message` (used instead of uSync's generic cancel message) and, on the import/report ones, `Force`, so a subscriber can stand down when the user has asked for a forced import.
-
-**Fixed**
-- **Content and Library items are no longer exported twice by one editor action.** Umbraco 18.1 raises the saved notification for a save-and-publish as well as the published one ([umbraco/Umbraco-CMS#23523](https://github.com/umbraco/Umbraco-CMS/issues/23523)); uSync now shares a record of exported items across the notifications for one operation, so each item is exported once. ([#1018](https://github.com/KevinJump/uSync/pull/1018))
-- `HandlerSettings.Clone()` no longer drops `CreateClean` and `FullFileOnDifference` — handlers that set either value in their own block are now honoured.
-- Property values containing a quote, backslash or control character are now converted to valid JSON (previously produced invalid JSON in the string fallback). Inherited with the move to `Jumoo.Json`.
-- Restored backoffice guard and content paging fixes that were dropped in the v17 → v18 merge. ([#1012](https://github.com/KevinJump/uSync/pull/1012))
-
-**Performance**
-- Ported the v17 allocation work: fewer redundant dictionary lookups on hot paths, and `internal`/`private` classes are now `sealed` so the JIT can devirtualize their calls. No behavioural changes. ([#1019](https://github.com/KevinJump/uSync/pull/1019), [#1020](https://github.com/KevinJump/uSync/pull/1020))
-  > **Extender API:** `SyncHandlerRoot.SyncChangeInfo` is now `sealed` (still `protected`, so handlers can still construct/return one from `IsItemCurrentAsync`, just not derive from it).
-- **Handler settings now inherit from `HandlerDefaults`.** A handler's own settings block is layered over the set's defaults instead of replacing them wholesale, so it only needs to specify what it wants to change. ([#1001](https://github.com/KevinJump/uSync/pull/1001))
-  > **Breaking:** a handler block that previously reset settings back to built-in defaults will now inherit the set's `HandlerDefaults` instead. Review any set mixing `HandlerDefaults` with per-handler blocks.
-- **JSON helpers now come from the `Jumoo.Json` package**, replacing uSync's own copy which had drifted behind it. `uSync.Core.Extensions.JsonTextExtensions` still works but is `[Obsolete]` (removed in v20) — switch to `using Jumoo.Json;`. Note `TryGetPropertyAsObject` → `TryGetPropertyAsJsonObject`, `GetPropertyAsObject` → `GetPropertyAsJsonObject`, and missing/null values now return `null` instead of `string.Empty`. ([#1014](https://github.com/KevinJump/uSync/pull/1014), [#1015](https://github.com/KevinJump/uSync/pull/1015))
-- Removed three O(n²) lookups from import (duplicate-key/"keys to keep" checks now use set lookups; second-pass content/media imports index the action list once instead of scanning it per item). ([#1017](https://github.com/KevinJump/uSync/pull/1017))
-  > Actions updated by a second pass are now updated in place, keeping their original position in the results list, rather than being moved to the end. Only display/reporting order is affected.
-  > **Extender API:** `List<uSyncAction>.CreateActionIndex()` and a matching `UpdateActions(index, key, handlerAlias, attempt)` overload are new.
-- Serializing, comparing and expanding large property values allocates far less, some previously on the large object heap. Inherited with the move to `Jumoo.Json`.
-
-**Extender API**
-- `ISyncManagementService` gains `UnpackStreamAsync(Stream)`; the synchronous `UnpackStream(Stream)` is now obsolete (removed in v19). ([#1005](https://github.com/KevinJump/uSync/pull/1005))
-
-**Cleanup**
-- Cleared the remaining build warnings left over from the Umbraco 18 upgrade: replaced `ITemplate.MasterTemplateAlias` with `LayoutTemplateAlias`, and inlined the legacy `{localLink:x}` parsing Umbraco is removing in v18. No behavioural changes. ([#1002](https://github.com/KevinJump/uSync/pull/1002), [#1003](https://github.com/KevinJump/uSync/pull/1003), [#1004](https://github.com/KevinJump/uSync/pull/1004))
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.0.3...v18.1.0
-]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 18.1.0</title>
-      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.1.0</guid>
-      <pubDate>Wed, 12 Aug 2026 09:34:36 GMT</pubDate>
-      <description><![CDATA[This release brings two features across from the v17 line — background restore point compression with status tracking, and a per-server "Hide Compare tab" setting — plus a fix for scheduled publishes landing an hour (or more) out on servers with a non-zero UTC offset.
-
-### Added
-- Publisher: a per-server **Hide "Compare" tab** UI setting. When a target site blocks being embedded in an iframe (`X-Frame-Options` / CSP `frame-ancestors`), the visual Compare tab only rendered a browser security error — enabling this option hides the Compare tab for that server so the change view opens straight on **Details**.
-- Snapshots: restore point compression now runs in the background instead of blocking the request thread, so creating a restore point returns as soon as the snapshot is taken. A **Pending / Complete / Failed** status is tracked and shown in the restore point dashboard; Restore is disabled until a point reaches Complete, and pending points are no longer treated as orphaned by `Scan()`.
-
-### Fixed
-- #306 - Publisher: the scheduled publish date from the push dialog is now normalised to UTC before being written into the pack, fixing schedules landing offset by the server's UTC offset on servers with a non-zero timezone.
-]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Processing 18.1.0</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.1.0</guid>
-      <pubDate>Tue, 11 Aug 2026 15:15:13 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Treat an already-published npm version as success by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/8
-* Publish NuGet packages to nuget.org via trusted publishing by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/9
-* Update changelog for 18.1.0 by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/10
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/compare/release/v18.1.0-rc1...release/v18.1.0]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Processing 18.1.0-rc4</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases</guid>
-      <pubDate>Tue, 11 Aug 2026 14:54:22 GMT</pubDate>
-      <description><![CDATA[]]></description>
     </item>
   </channel>
 </rss>

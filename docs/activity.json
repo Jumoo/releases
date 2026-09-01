@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T11:24:11.248Z",
+  "generatedAt": "2026-09-01T16:20:22.257Z",
   "packages": [
     {
       "package": "uSync",
@@ -98,12 +98,12 @@
       "category": "",
       "repo": "Jumoo/Jumoo.TranslationManager.Issues",
       "defaultBranch": "main",
-      "lastReleaseTag": "v18.1.2",
-      "lastReleaseDate": "2026-08-24T20:39:21Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.1.2",
+      "lastReleaseTag": "v17.8.0",
+      "lastReleaseDate": "2026-09-01T16:03:41Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.0",
       "releaseBranch": "main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-08-24T20:39:21Z"
+      "lastCommitDate": "2026-09-01T16:03:41Z"
     },
     {
       "package": "Jumoo.TranslationManager.AI",
@@ -111,12 +111,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.AI",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.4.2",
-      "lastReleaseDate": "2026-08-24T07:00:02Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.4.2",
+      "lastReleaseTag": "v17.5.0",
+      "lastReleaseDate": "2026-09-01T14:40:02Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.5.0",
       "releaseBranch": "v17/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-08-24T07:00:02Z"
+      "lastCommitDate": "2026-09-01T14:40:02Z"
     },
     {
       "package": "Jumoo.TranslationManager.CSV",
@@ -163,12 +163,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.0.0",
-      "lastReleaseDate": "2026-08-23T17:46:25Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.0.0",
-      "releaseBranch": "v18/main",
-      "commitsSince": 9,
-      "lastCommitDate": "2026-08-10T13:50:46Z"
+      "lastReleaseTag": "v17.2.0",
+      "lastReleaseDate": "2026-09-01T14:38:00Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.2.0",
+      "releaseBranch": "v17/main",
+      "commitsSince": 2,
+      "lastCommitDate": "2026-09-01T14:42:31Z"
     },
     {
       "package": "Jumoo.TranslationManager.Google",
@@ -176,12 +176,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Google.Connector",
       "defaultBranch": "main",
-      "lastReleaseTag": "v17.1.0-beta",
-      "lastReleaseDate": "2026-08-14T15:09:48Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0-beta",
+      "lastReleaseTag": "v17.1.0",
+      "lastReleaseDate": "2026-09-01T14:39:50Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0",
       "releaseBranch": "main",
-      "commitsSince": 1,
-      "lastCommitDate": "2026-08-14T15:14:48Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-09-01T14:39:50Z"
     },
     {
       "package": "Jumoo.TranslationManager.Xliff",
@@ -202,12 +202,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Microsoft.Connector",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "release/v18.1.0",
-      "lastReleaseDate": "2026-08-24T10:43:28Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.1.0",
-      "releaseBranch": "v18/main",
+      "lastReleaseTag": "release/v17.2.0",
+      "lastReleaseDate": "2026-09-01T14:39:55Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v17.2.0",
+      "releaseBranch": "v17/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-08-24T10:43:28Z"
+      "lastCommitDate": "2026-09-01T14:39:55Z"
     },
     {
       "package": "Jumoo.TranslationManager.Passthrough",
@@ -228,12 +228,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.1.1",
-      "lastReleaseDate": "2026-08-25T10:35:27Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.1.1",
+      "lastReleaseTag": "v17.2.0",
+      "lastReleaseDate": "2026-09-01T14:57:27Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.0",
       "releaseBranch": "v17/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-08-25T10:35:27Z"
+      "lastCommitDate": "2026-09-01T14:57:27Z"
     },
     {
       "package": "Jumoo.TranslationManager.GlobalLink",
@@ -241,12 +241,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.GlobalLink",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.0.0-rc1",
-      "lastReleaseDate": "2026-08-13T10:42:16Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.0.0-rc1",
+      "lastReleaseTag": "v17.1.0",
+      "lastReleaseDate": "2026-09-01T14:57:19Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.0",
       "releaseBranch": "v17/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-08-13T10:42:16Z"
+      "lastCommitDate": "2026-09-01T14:57:19Z"
     },
     {
       "package": "Umbraco.Community.LinkedPages",
