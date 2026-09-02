@@ -1,5 +1,31 @@
 [
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "18.2.0",
+    "publishedAt": "2026-09-01T21:37:23Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/18.2.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.2.0",
+    "notes": "## What's Changed\n* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/35\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.1.1...v18.2.0",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager.Microsoft",
+    "title": "Microsoft Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Microsoft.Connector",
+    "version": "18.2.0",
+    "publishedAt": "2026-09-01T21:35:23Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Microsoft/18.2.0",
+    "githubUrl": "https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.2.0",
+    "notes": "## What's Changed\n* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/12\n\n\n**Full Changelog**: https://github.com/Jumoo/Microsoft.Connector/compare/release/v18.1.0...release/v18.2.0",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
     "package": "Jumoo.TranslationManager.DeepL",
     "title": "DeepL Connector",
     "category": "Translation Connectors",

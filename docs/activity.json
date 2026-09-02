@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T20:49:52.627Z",
+  "generatedAt": "2026-09-02T03:48:49.661Z",
   "packages": [
     {
       "package": "uSync",
@@ -111,12 +111,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.AI",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.5.0",
-      "lastReleaseDate": "2026-09-01T14:40:02Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.5.0",
-      "releaseBranch": "v17/main",
+      "lastReleaseTag": "v18.2.0",
+      "lastReleaseDate": "2026-09-01T21:37:23Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.2.0",
+      "releaseBranch": "v18/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-09-01T14:40:02Z"
+      "lastCommitDate": "2026-09-01T21:37:23Z"
     },
     {
       "package": "Jumoo.TranslationManager.CSV",
@@ -202,12 +202,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Microsoft.Connector",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "release/v17.2.0",
-      "lastReleaseDate": "2026-09-01T14:39:55Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v17.2.0",
-      "releaseBranch": "v17/main",
+      "lastReleaseTag": "release/v18.2.0",
+      "lastReleaseDate": "2026-09-01T21:35:23Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.2.0",
+      "releaseBranch": "v18/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-09-01T14:39:55Z"
+      "lastCommitDate": "2026-09-01T21:35:23Z"
     },
     {
       "package": "Jumoo.TranslationManager.Passthrough",

@@ -5,6 +5,28 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>AI Connector 18.2.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.2.0</guid>
+      <pubDate>Tue, 01 Sep 2026 21:37:23 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/35
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.1.1...v18.2.0]]></description>
+    </item>
+    <item>
+      <title>Microsoft Connector 18.2.0</title>
+      <link>https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.2.0</guid>
+      <pubDate>Tue, 01 Sep 2026 21:35:23 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/12
+
+
+**Full Changelog**: https://github.com/Jumoo/Microsoft.Connector/compare/release/v18.1.0...release/v18.2.0]]></description>
+    </item>
+    <item>
       <title>DeepL Connector 18.1.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.1.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.1.0</guid>
@@ -673,48 +695,6 @@ editorconfig, global.json, Directory.Build.props, GitVersion.yml) and CI/CD work
 Jumoo's other Translation Manager connectors.
 
 See [CHANGELOG.md](https://github.com/Jumoo/Jumoo.TranslationManager.CSV/blob/v18/main/CHANGELOG.md) for details.]]></description>
-    </item>
-    <item>
-      <title>CSV Connector 18.0.0-beta1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases</guid>
-      <pubDate>Mon, 17 Aug 2026 10:32:41 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync 17.3.7</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v17.3.7</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.3.7</guid>
-      <pubDate>Mon, 17 Aug 2026 09:39:43 GMT</pubDate>
-      <description><![CDATA[## Release
-
-- v17.3.7 build files (package version bumps)
-
-## Fixes
-
-- Fix discarded save-attempt results across remaining serializers (#1041)
-- Fix silently discarded save failures in Language/DictionaryItem/Webhook serializers (#1039)
-- Save blueprints via `SaveBlueprint` on the bulk save path (#1037)
-- Fix: move property out of group on import (#1009, #1010)
-
-## Performance
-
-- Use new `Lock` & make internal/private classes sealed to avoid virtual dispatch (#998)
-- Avoid some unneeded dictionary operations (#997)
-
-## Dependencies
-
-- Bump postcss from 8.5.15 to 8.5.26 in /uSync.History/history-client (#1023)
-- Bump fast-uri in /uSync.Backoffice.Management.Client/usync-assets (#1021, #1008)
-- Bump ws from 7.5.10 to 7.5.11 in /uSync.History/history-client (#995)
-- Bump ws in /uSync.Backoffice.Management.Client/usync-assets (#1013)
-- Bump @hey-api/openapi-ts in /uSync.History/history-client (#978)
-- Bump js-yaml and @hey-api/openapi-ts (#1011)
-- Bump linkify-it in /uSync.Backoffice.Management.Client/usync-assets (#1007)
-- Bump brace-expansion in /uSync.Backoffice.Management.Client/usync-assets (#999)
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.3.6...v17.3.7
-]]></description>
     </item>
   </channel>
 </rss>
