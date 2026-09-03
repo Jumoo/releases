@@ -5,6 +5,13 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Translation Manager 18.2.1-alpha01</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
+      <pubDate>Thu, 03 Sep 2026 16:35:09 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>Translation Manager 17.8.1</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.1</guid>
@@ -683,20 +690,6 @@ Release candidate — API and settings surface may still change before v17.0.0 f
 - Dependency bumps (chalk, vite-plugin-dts, and a few NuGet/npm dependency-group updates).
 - CI/CD: nightly builds are now automatically published to the [Azure Artifacts nightly feed](https://pkgs.dev.azure.com/jumoo/Public/_packaging/nightly/nuget/v3/index.json) on every push to this branch.
 ]]></description>
-    </item>
-    <item>
-      <title>CSV Connector 18.0.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v18.0.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v18.0.0</guid>
-      <pubDate>Mon, 17 Aug 2026 10:44:25 GMT</pubDate>
-      <description><![CDATA[Umbraco 18 release.
-
-Adds repository standards (LICENSE, CHANGELOG, SECURITY, CODE_OF_CONDUCT, CLAUDE.md,
-editorconfig, global.json, Directory.Build.props, GitVersion.yml) and CI/CD workflows
-(PR build, package build, release, CodeQL), matching the conventions used across
-Jumoo's other Translation Manager connectors.
-
-See [CHANGELOG.md](https://github.com/Jumoo/Jumoo.TranslationManager.CSV/blob/v18/main/CHANGELOG.md) for details.]]></description>
     </item>
   </channel>
 </rss>
