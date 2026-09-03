@@ -1,5 +1,18 @@
 [
   {
+    "package": "Jumoo.TranslationManager",
+    "title": "Translation Manager",
+    "category": "",
+    "repo": "Jumoo/Jumoo.TranslationManager.Issues",
+    "version": "17.8.1",
+    "publishedAt": "2026-09-03T16:00:49Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.8.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.1",
+    "notes": "This release fixes an install problem some sites hit on 17.8.0, and adds a couple of small quality-of-life improvements.\n\n## What's changed\n\n- **Install fix.** 17.8.0's core package accidentally pulled in a set of unused ASP.NET Core dependencies it never needed, which caused installation to fail on some sites. Our build pipeline now pins an exact .NET SDK version and verifies the full dependency graph on every build, so this can't recur unnoticed.\n- On a fresh install with no translation set configured yet, Translation Manager now guesses and selects a starter set for you automatically.\n- The create-job dialog now auto-selects the connector when a translation set only has one available, instead of leaving it unselected.\n\nIf you hit install problems on 17.8.0, upgrading to 17.8.1 should resolve them.\n\n---\n\nPublished to NuGet.",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.AI",
     "title": "AI Connector",
     "category": "Translation Connectors",
@@ -50,19 +63,6 @@
     "notes": null,
     "prerelease": false,
     "umbracoMajor": 18
-  },
-  {
-    "package": "Jumoo.TranslationManager",
-    "title": "Translation Manager",
-    "category": "",
-    "repo": "Jumoo/Jumoo.TranslationManager.Issues",
-    "version": "17.8.0",
-    "publishedAt": "2026-09-01T16:03:41Z",
-    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.8.0",
-    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.0",
-    "notes": "This release adds a **bulk translation dashboard** to the Content section for sending multiple items into a single translation job, along with a small connector settings tidy-up.\r\n\r\n## What's changed\r\n\r\n- **Bulk translation dashboard.** Pick several content items at once from a new dashboard in the Content section, using the standard document tree picker. Review what you've selected — name, path, translation set, and whether children are included — then send them all into one translation job. The job-creation screen now lists out the content being sent whenever more than one item is involved, so a multi-item send is never a guessing game.\r\n- Bumped connector dependency versions.\r\n\r\n---\r\n\r\nPublished to NuGet.\r\n",
-    "prerelease": false,
-    "umbracoMajor": 17
   },
   {
     "package": "Jumoo.TranslationManager.CrowdIn",

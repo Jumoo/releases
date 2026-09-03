@@ -5,6 +5,25 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Translation Manager 17.8.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.1</guid>
+      <pubDate>Thu, 03 Sep 2026 16:00:49 GMT</pubDate>
+      <description><![CDATA[This release fixes an install problem some sites hit on 17.8.0, and adds a couple of small quality-of-life improvements.
+
+## What's changed
+
+- **Install fix.** 17.8.0's core package accidentally pulled in a set of unused ASP.NET Core dependencies it never needed, which caused installation to fail on some sites. Our build pipeline now pins an exact .NET SDK version and verifies the full dependency graph on every build, so this can't recur unnoticed.
+- On a fresh install with no translation set configured yet, Translation Manager now guesses and selects a starter set for you automatically.
+- The create-job dialog now auto-selects the connector when a translation set only has one available, instead of leaving it unselected.
+
+If you hit install problems on 17.8.0, upgrading to 17.8.1 should resolve them.
+
+---
+
+Published to NuGet.]]></description>
+    </item>
+    <item>
       <title>AI Connector 18.2.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.2.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.2.0</guid>
@@ -47,23 +66,6 @@
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
       <pubDate>Tue, 01 Sep 2026 16:34:26 GMT</pubDate>
       <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.8.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.0</guid>
-      <pubDate>Tue, 01 Sep 2026 16:03:41 GMT</pubDate>
-      <description><![CDATA[This release adds a **bulk translation dashboard** to the Content section for sending multiple items into a single translation job, along with a small connector settings tidy-up.
-
-## What's changed
-
-- **Bulk translation dashboard.** Pick several content items at once from a new dashboard in the Content section, using the standard document tree picker. Review what you've selected — name, path, translation set, and whether children are included — then send them all into one translation job. The job-creation screen now lists out the content being sent whenever more than one item is involved, so a multi-item send is never a guessing game.
-- Bumped connector dependency versions.
-
----
-
-Published to NuGet.
-]]></description>
     </item>
     <item>
       <title>CrowdIn Connector 17.2.0</title>
