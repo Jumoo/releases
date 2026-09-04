@@ -5,6 +5,29 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Translation Manager 18.2.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.2.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.2.1</guid>
+      <pubDate>Fri, 04 Sep 2026 07:13:58 GMT</pubDate>
+      <description><![CDATA[Fixes carried forward from the v17 line: a first-install translation set guess, a connector auto-select fix, and a licence-check identification header.
+
+- Fix: 18.2.0's build could pull in unused ASP.NET Core dependencies that broke installation on some sites; the build pipeline now pins an exact .NET SDK version and verifies its full dependency graph on every release, so this can't recur unnoticed
+- Add: on a fresh install with no translation set configured yet, Translation Manager now guesses and selects a starter set automatically
+- Fix: the create-job dialog now auto-selects the connector when a translation set has only one available, instead of leaving it unselected (fixes #94)
+- Fix: licence check requests now identify themselves with a Translation Manager user agent header instead of .NET's default]]></description>
+    </item>
+    <item>
+      <title>Translation Manager 18.2.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.2.0</guid>
+      <pubDate>Fri, 04 Sep 2026 07:13:57 GMT</pubDate>
+      <description><![CDATA[A bulk translation dashboard for the Content section, and access-level aware connector settings.
+
+- Add: bulk translation dashboard in the Content section — pick a page tree and language, review what's pending, and send it all to translation in one go
+- Improve: connector settings lookups now respect the current user's Settings-section access, so job creation only requests the detail it actually needs
+- Fix: a manual job check failure now shows one clear error instead of a generic message]]></description>
+    </item>
+    <item>
       <title>Translation Manager 18.2.1-alpha01</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
@@ -66,13 +89,6 @@ Published to NuGet.]]></description>
 
 
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v18.0.0...v18.1.0]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 18.2.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases</guid>
-      <pubDate>Tue, 01 Sep 2026 16:34:26 GMT</pubDate>
-      <description><![CDATA[]]></description>
     </item>
     <item>
       <title>CrowdIn Connector 17.2.0</title>
@@ -672,23 +688,6 @@ Guards against `Content Published` → translate → approve/publish → `Conten
 
 ### Status
 Release candidate — API and settings surface may still change before v17.0.0 final. Feedback welcome via [issues](https://github.com/Jumoo/Jumoo.TranslationManager.Automate/issues).
-]]></description>
-    </item>
-    <item>
-      <title>uSync 18.1.1</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.1</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.1</guid>
-      <pubDate>Mon, 17 Aug 2026 11:22:51 GMT</pubDate>
-      <description><![CDATA[## Fixes
-
-- **Import**: fixed a property that's been moved out of all groups (an empty tab, no matching `<Tabs>` entry) not actually persisting that move on import — it took a second import to stick. ([#1043](https://github.com/KevinJump/uSync/pull/1043))
-- **Reliability**: save failures rejected by Umbraco (e.g. an invalid ISO code, a rejected content/media/template save) were previously discarded silently, so a failed import step could still get reported as a success. These now surface as proper import failures across Language, DictionaryItem, Webhook, ContentType/MediaType/MemberType, DataType, Domain, Template, Media, and Content serializers. ([#1040](https://github.com/KevinJump/uSync/pull/1040), [#1042](https://github.com/KevinJump/uSync/pull/1042))
-- **Blueprints**: fixed bulk-imported content blueprints being saved through the wrong path, which silently corrupted their object type and caused duplicate-key errors on the next import. Blueprints saved during the second-pass bulk import now go through `SaveBlueprint` like a normal single-item save. ([#1035](https://github.com/KevinJump/uSync/pull/1035))
-
-## Other
-
-- Dependency bumps (chalk, vite-plugin-dts, and a few NuGet/npm dependency-group updates).
-- CI/CD: nightly builds are now automatically published to the [Azure Artifacts nightly feed](https://pkgs.dev.azure.com/jumoo/Public/_packaging/nightly/nuget/v3/index.json) on every push to this branch.
 ]]></description>
     </item>
   </channel>
