@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T03:47:47.843Z",
+  "generatedAt": "2026-09-05T10:17:42.091Z",
   "packages": [
     {
       "package": "uSync",
@@ -323,8 +323,8 @@
       "lastReleaseDate": "2026-08-25T19:40:28Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.0",
       "releaseBranch": "v17/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-08-25T19:40:28Z"
+      "commitsSince": 28,
+      "lastCommitDate": "2026-09-05T09:12:44Z"
     },
     {
       "package": "Jumoo.Json",
