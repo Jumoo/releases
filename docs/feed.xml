@@ -5,6 +5,17 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync Complete 17.4.1</title>
+      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.1</guid>
+      <pubDate>Mon, 07 Sep 2026 15:45:33 GMT</pubDate>
+      <description><![CDATA[A small patch release fixing a server-to-server authentication bug for sites using Umbraco's Basic Auth shared-secret bypass.
+
+### Fixed
+- Publisher: server-to-server push requests no longer fail with `401 The request requires user authentication` on a target site that has Umbraco's Basic Auth shared-secret bypass configured (`Umbraco:CMS:BasicAuthSettings:SharedSecret`). The header carrying the shared secret was being built with the wrong key/value pairing and then silently overwritten before the request went out, so the target rejected the push as unauthenticated even when the secret was configured correctly on both servers.
+]]></description>
+    </item>
+    <item>
       <title>Translation Manager 17.8.2</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.2</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.2</guid>
@@ -655,13 +666,6 @@ Support for batch submission via the translation api ]]></description>
       <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases</guid>
       <pubDate>Wed, 19 Aug 2026 10:07:06 GMT</pubDate>
       <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>SmartCat Connector 17.0.0-rc1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0-rc1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0-rc1</guid>
-      <pubDate>Tue, 18 Aug 2026 14:51:07 GMT</pubDate>
-      <description><![CDATA[**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/commits/v17.0.0-rc1]]></description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T12:02:47.548Z",
+  "generatedAt": "2026-09-07T21:21:12.252Z",
   "packages": [
     {
       "package": "uSync",
@@ -149,13 +149,13 @@
       "title": "Publicis Connector",
       "category": "Translation Connectors",
       "repo": "Jumoo/TranslatePlus-Connector",
-      "defaultBranch": "main",
+      "defaultBranch": "v17/main",
       "lastReleaseTag": "v17.0.0-rc4",
       "lastReleaseDate": "2026-08-23T17:41:27Z",
       "lastReleaseUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0-rc4",
-      "releaseBranch": "main",
-      "commitsSince": 1,
-      "lastCommitDate": "2026-07-16T12:03:21Z"
+      "releaseBranch": "v17/main",
+      "commitsSince": 8,
+      "lastCommitDate": "2026-09-07T14:17:04Z"
     },
     {
       "package": "Jumoo.TranslationManager.DeepL",
@@ -337,7 +337,7 @@
       "lastReleaseUrl": null,
       "releaseBranch": null,
       "commitsSince": null,
-      "lastCommitDate": "2026-09-07T11:01:47Z"
+      "lastCommitDate": "2026-09-07T13:09:41Z"
     }
   ]
 }
