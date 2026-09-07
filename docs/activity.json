@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T03:50:48.983Z",
+  "generatedAt": "2026-09-07T12:02:47.548Z",
   "packages": [
     {
       "package": "uSync",
@@ -98,12 +98,12 @@
       "category": "",
       "repo": "Jumoo/Jumoo.TranslationManager.Issues",
       "defaultBranch": "main",
-      "lastReleaseTag": "v18.2.1",
-      "lastReleaseDate": "2026-09-04T07:13:58Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.2.1",
+      "lastReleaseTag": "v17.8.2",
+      "lastReleaseDate": "2026-09-07T09:42:50Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.2",
       "releaseBranch": "main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-09-04T07:13:58Z"
+      "lastCommitDate": "2026-09-07T09:42:50Z"
     },
     {
       "package": "Jumoo.TranslationManager.AI",
@@ -323,8 +323,8 @@
       "lastReleaseDate": "2026-08-25T19:40:28Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.0",
       "releaseBranch": "v17/main",
-      "commitsSince": 32,
-      "lastCommitDate": "2026-09-05T19:02:39Z"
+      "commitsSince": 39,
+      "lastCommitDate": "2026-09-07T10:17:03Z"
     },
     {
       "package": "Jumoo.Json",
@@ -337,7 +337,7 @@
       "lastReleaseUrl": null,
       "releaseBranch": null,
       "commitsSince": null,
-      "lastCommitDate": "2026-08-26T19:41:40Z"
+      "lastCommitDate": "2026-09-07T11:01:47Z"
     }
   ]
 }

@@ -5,6 +5,17 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Translation Manager 17.8.2</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.2</guid>
+      <pubDate>Mon, 07 Sep 2026 09:42:50 GMT</pubDate>
+      <description><![CDATA[A clone-to-language action, and a fix for sites also running uSync.Complete.
+
+- Add: for a language with no translation yet, clone the content you're currently viewing straight into it, skipping the translation job pipeline entirely — the same one-click clone action from v13, now in the v17 backoffice
+- Fix: installing Translation Manager alongside uSync.Complete 17.4.0 could produce a `400 - Read unrecognized type discriminator id 'TranslationProcessingOptions'` error on translation requests. Both packages share an underlying dependency, and a version mismatch between them was the cause — now resolved
+- Fix: the licence check requests Translation Manager makes now identify themselves properly, matching uSync.Complete's behaviour]]></description>
+    </item>
+    <item>
       <title>Translation Manager 18.2.1</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.2.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.2.1</guid>
@@ -651,44 +662,6 @@ Support for batch submission via the translation api ]]></description>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0-rc1</guid>
       <pubDate>Tue, 18 Aug 2026 14:51:07 GMT</pubDate>
       <description><![CDATA[**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/commits/v17.0.0-rc1]]></description>
-    </item>
-    <item>
-      <title>Translation Manager Automate 17.0.0-rc1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0-rc1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0-rc1</guid>
-      <pubDate>Tue, 18 Aug 2026 10:20:05 GMT</pubDate>
-      <description><![CDATA[## Jumoo.TranslationManager.Automate v17.0.0-rc1
-
-> [!NOTE]
-> This package replaces `Jumoo.TranslationManager.Automations`, which we will be delisting from NuGet soon.
-
-First release candidate. Adds Translation Manager support to [Umbraco Automate](https://jumoo.co.uk/): create, submit and approve Translation Manager jobs from Automate workflows, and start workflows from translation events.
-
-The classic use case — when content is published, translate it — is a no-code automation: `Content Published` → `Translate Content` → `Check Translation Job` → `Approve Translation Job`.
-
-### Actions
-- **Translate Content** (`translationManager.translateContent`) — creates translation nodes across matching translation sets and submits one job per target culture. Supports culture/set/connector filters, force-retranslate, and optional synchronous approve+publish.
-- **Check Translation Job** (`translationManager.checkJob`) — polls a connector for job status; branches directly on outcome, enabling translate → sleep → check → approve polling loops.
-- **Approve Translation Job** (`translationManager.approveJob`) — approves a job and optionally publishes translated content, with per-node authorization checks against the running service account.
-
-### Triggers
-- Translation Job Submitted
-- Translation Received
-- Translation Job Approved
-- Translation Published
-
-Only past-tense Translation Manager events are exposed; each shares filtering by set, culture, connector, and error state.
-
-### Loop protection
-Guards against `Content Published` → translate → approve/publish → `Content Published` cycles: approval always runs synchronously on the triggering thread, trigger settings default to skipping automation-originated cycles, and an in-process gate suppresses this package's own triggers while it is actively writing a translation.
-
-### Requirements
-- Umbraco 17, .NET 10
-- [Umbraco.Automate](https://jumoo.co.uk/) and [Jumoo.TranslationManager](https://jumoo.co.uk/TranslationManager)
-
-### Status
-Release candidate — API and settings surface may still change before v17.0.0 final. Feedback welcome via [issues](https://github.com/Jumoo/Jumoo.TranslationManager.Automate/issues).
-]]></description>
     </item>
   </channel>
 </rss>
