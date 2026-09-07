@@ -13949,6 +13949,32 @@
     "umbracoMajor": 10
   },
   {
+    "package": "Jumoo.TranslationManager.Publicis",
+    "title": "Publicis Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/TranslatePlus-Connector",
+    "version": "2.0.9",
+    "publishedAt": "2022-09-06T13:20:37.723+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Providers.TranslatePlus/2.0.9",
+    "githubUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 2
+  },
+  {
+    "package": "Jumoo.TranslationManager.Publicis",
+    "title": "Publicis Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/TranslatePlus-Connector",
+    "version": "2.0.8",
+    "publishedAt": "2022-08-25T11:54:57.927+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Providers.TranslatePlus/2.0.8",
+    "githubUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 2
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
@@ -17004,6 +17030,19 @@
     "umbracoMajor": 8
   },
   {
+    "package": "Jumoo.TranslationManager.Publicis",
+    "title": "Publicis Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/TranslatePlus-Connector",
+    "version": "2.0.6",
+    "publishedAt": "2020-08-27T06:55:59.97+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Providers.TranslatePlus/2.0.6",
+    "githubUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 2
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "",
@@ -17342,6 +17381,32 @@
     "umbracoMajor": 2
   },
   {
+    "package": "Jumoo.TranslationManager.Publicis",
+    "title": "Publicis Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/TranslatePlus-Connector",
+    "version": "2.0.5",
+    "publishedAt": "2020-03-23T15:33:35.593+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Providers.TranslatePlus/2.0.5",
+    "githubUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 2
+  },
+  {
+    "package": "Jumoo.TranslationManager.Publicis",
+    "title": "Publicis Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/TranslatePlus-Connector",
+    "version": "2.0.4",
+    "publishedAt": "2020-03-23T15:27:26.48+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Providers.TranslatePlus/2.0.4",
+    "githubUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 2
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "",
@@ -17366,6 +17431,19 @@
     "notes": null,
     "prerelease": false,
     "umbracoMajor": 8
+  },
+  {
+    "package": "Jumoo.TranslationManager.Publicis",
+    "title": "Publicis Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/TranslatePlus-Connector",
+    "version": "2.0.3",
+    "publishedAt": "2020-03-18T10:52:20.463+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Providers.TranslatePlus/2.0.3",
+    "githubUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 2
   },
   {
     "package": "Jumoo.TranslationManager",
@@ -18676,6 +18754,19 @@
     "publishedAt": "2018-08-22T08:58:49.527+00:00",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/2.0.1",
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 2
+  },
+  {
+    "package": "Jumoo.TranslationManager.Publicis",
+    "title": "Publicis Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/TranslatePlus-Connector",
+    "version": "2.0.1",
+    "publishedAt": "2018-08-22T08:58:24.793+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Providers.TranslatePlus/2.0.1",
+    "githubUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases",
     "notes": null,
     "prerelease": false,
     "umbracoMajor": 2
