@@ -1,5 +1,18 @@
 [
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.4.1",
+    "publishedAt": "2026-09-08T07:25:41Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.4.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.1",
+    "notes": "## What's Changed\n* Simplify and streamline Jumoo.Processing.Core by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/17\n* Make the queue's Scheduled column consistently UTC by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/18\n* Remove and demote dead public API surface, verified against uSync and Translation Manager by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/19\n* Publish nightly builds to the R2/Sleet feed by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/20\n* Use the shared nightly-feed-config action by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/21\n* docs: Add design note on the polymorphic options discriminator bug by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/22\n* docs: Correct branch policy in CLAUDE.md by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/23\n* Add opt-in IProcessingOptions type registry and discriminator attribute by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/24\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/compare/release/v17.4.0...release/v17.4.1\n\n## What's Changed\n* Simplify and streamline Jumoo.Processing.Core by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/17\n* Make the queue's Scheduled column consistently UTC by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/18\n* Remove and demote dead public API surface, verified against uSync and Translation Manager by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/19\n* Publish nightly builds to the R2/Sleet feed by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/20\n* Use the shared nightly-feed-config action by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/21\n* docs: Add design note on the polymorphic options discriminator bug by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/22\n* docs: Correct branch policy in CLAUDE.md by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/23\n* Add opt-in IProcessingOptions type registry and discriminator attribute by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/24\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/compare/release/v17.4.0...release/v17.4.1",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T03:54:29.107Z",
+  "generatedAt": "2026-09-08T10:57:08.979Z",
   "packages": [
     {
       "package": "uSync",
@@ -11,8 +11,8 @@
       "lastReleaseDate": "2026-08-26T07:28:03Z",
       "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.1.2",
       "releaseBranch": "v18/main",
-      "commitsSince": 1,
-      "lastCommitDate": "2026-08-27T10:23:47Z"
+      "commitsSince": 9,
+      "lastCommitDate": "2026-09-08T10:02:36Z"
     },
     {
       "package": "uSync.Complete",
@@ -319,12 +319,12 @@
       "category": "Other",
       "repo": "Jumoo/Jumoo.Processing",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "release/v17.4.0",
-      "lastReleaseDate": "2026-08-25T19:40:28Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.0",
+      "lastReleaseTag": "release/v17.4.1",
+      "lastReleaseDate": "2026-09-08T07:25:41Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.1",
       "releaseBranch": "v17/main",
-      "commitsSince": 39,
-      "lastCommitDate": "2026-09-07T10:17:03Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-09-08T07:25:41Z"
     },
     {
       "package": "Jumoo.Json",

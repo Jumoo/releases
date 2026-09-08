@@ -5,6 +5,37 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Jumoo.Processing 17.4.1</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.1</guid>
+      <pubDate>Tue, 08 Sep 2026 07:25:41 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Simplify and streamline Jumoo.Processing.Core by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/17
+* Make the queue's Scheduled column consistently UTC by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/18
+* Remove and demote dead public API surface, verified against uSync and Translation Manager by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/19
+* Publish nightly builds to the R2/Sleet feed by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/20
+* Use the shared nightly-feed-config action by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/21
+* docs: Add design note on the polymorphic options discriminator bug by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/22
+* docs: Correct branch policy in CLAUDE.md by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/23
+* Add opt-in IProcessingOptions type registry and discriminator attribute by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/24
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/compare/release/v17.4.0...release/v17.4.1
+
+## What's Changed
+* Simplify and streamline Jumoo.Processing.Core by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/17
+* Make the queue's Scheduled column consistently UTC by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/18
+* Remove and demote dead public API surface, verified against uSync and Translation Manager by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/19
+* Publish nightly builds to the R2/Sleet feed by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/20
+* Use the shared nightly-feed-config action by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/21
+* docs: Add design note on the polymorphic options discriminator bug by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/22
+* docs: Correct branch policy in CLAUDE.md by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/23
+* Add opt-in IProcessingOptions type registry and discriminator attribute by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/24
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/compare/release/v17.4.0...release/v17.4.1]]></description>
+    </item>
+    <item>
       <title>uSync Complete 17.4.1</title>
       <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.1</guid>
@@ -658,13 +689,6 @@ Support for batch submission via the translation api ]]></description>
       <link>https://github.com/Jumoo/LanguageWire.Connector/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases</guid>
       <pubDate>Wed, 19 Aug 2026 11:04:07 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>LanguageWire Connector 17.0.0</title>
-      <link>https://github.com/Jumoo/LanguageWire.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases</guid>
-      <pubDate>Wed, 19 Aug 2026 10:07:06 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>
