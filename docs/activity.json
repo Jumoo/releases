@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T04:24:55.974Z",
+  "generatedAt": "2026-09-10T16:18:27.044Z",
   "packages": [
     {
       "package": "uSync",
@@ -11,8 +11,8 @@
       "lastReleaseDate": "2026-09-08T14:20:49Z",
       "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.4.0",
       "releaseBranch": "v17/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-09-08T14:20:49Z"
+      "commitsSince": 2,
+      "lastCommitDate": "2026-09-10T10:27:50Z"
     },
     {
       "package": "uSync.Complete",
@@ -154,8 +154,8 @@
       "lastReleaseDate": "2026-08-23T17:41:27Z",
       "lastReleaseUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0-rc4",
       "releaseBranch": "v17/main",
-      "commitsSince": 8,
-      "lastCommitDate": "2026-09-07T14:17:04Z"
+      "commitsSince": 9,
+      "lastCommitDate": "2026-09-10T10:51:33Z"
     },
     {
       "package": "Jumoo.TranslationManager.DeepL",
@@ -180,8 +180,8 @@
       "lastReleaseDate": "2026-09-01T14:39:50Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.0",
       "releaseBranch": "main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-09-01T14:39:50Z"
+      "commitsSince": 1,
+      "lastCommitDate": "2026-09-10T10:51:33Z"
     },
     {
       "package": "Jumoo.TranslationManager.Xliff",
@@ -232,8 +232,8 @@
       "lastReleaseDate": "2026-09-01T14:57:27Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.0",
       "releaseBranch": "v17/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-09-01T14:57:27Z"
+      "commitsSince": 1,
+      "lastCommitDate": "2026-09-10T10:51:33Z"
     },
     {
       "package": "Jumoo.TranslationManager.GlobalLink",
@@ -244,7 +244,7 @@
       "lastReleaseTag": "v17.1.0",
       "lastReleaseDate": "2026-09-01T14:57:19Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.0",
-      "releaseBranch": "v17/main",
+      "releaseBranch": "v18/main",
       "commitsSince": 0,
       "lastCommitDate": "2026-09-01T14:57:19Z"
     },
