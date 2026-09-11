@@ -1,5 +1,70 @@
 [
   {
+    "package": "uSync.Migrations",
+    "title": "uSync Migrations",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSyncMigrations",
+    "version": "17.0.3",
+    "publishedAt": "2026-09-11T13:04:33Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Migrations/17.0.3",
+    "githubUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/v17.0.3",
+    "notes": "## What's Changed\n* Fix RTE datatype import crash on empty/whitespace blocks config by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/331\n\n\n**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/v17.0.2...v17.0.3",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager",
+    "title": "Translation Manager",
+    "category": "",
+    "repo": "Jumoo/Jumoo.TranslationManager.Issues",
+    "version": "17.9.0",
+    "publishedAt": "2026-09-11T12:34:49Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.9.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.9.0",
+    "notes": "A glossary for consistent terminology, granular Translation Memory permissions, and a round of translation-correctness fixes.\n\n- Add: Glossary — a global list of terminology, managed from its own item in the Translations section. Add terms with a value (or a \"do not translate\" flag) per installed language, and import/export as CSV (one language pair at a time - a worksheet a translator can fill in) or TBX across every language at once, for termbases exported from another tool. The glossary section only appears once a connector that reads it is configured - right now that's the AI connector; DeepL, Google and Microsoft glossary support is still on the way\n- Add: two new granular permissions, \"View glossary\" and \"View translation memory\" - a user needs both translation-section access and the specific permission to see either. Administrators get both automatically on upgrade; any other group that wants them needs to be granted explicitly. As with any permission change, it only reaches an already-signed-in session at their next sign-in\n- Improve: Translation Memory moved from Settings into the Translations section, alongside Glossary, with its own on/off toggle and item counts on the dashboard\n- Fix: creating a translation could get stuck with an unhelpful internal error if you pressed Create before choosing a connector - the button now stays disabled until one's selected\n- Fix: a batch job that came back only partly translated (some content pre-filled from translation memory, the rest still out with the provider) could get stuck showing as fully reviewed with no way to check the rest back in\n- Fix: content with nothing translatable (every page unpublished, or nothing to translate at all) used to produce a hollow, confusing job, or fail outright - it now completes cleanly and says \"Nothing to translate\"\n- Fix: a translation set with \"Hide version choice\" ticked silently defaulted new jobs to published-only content; new jobs now default to the latest content regardless\n- Fix: job submission could fail with \"Failed to submit job\" if certain internal data had been stored as an empty string rather than blank\n- Build: the AI connector (17.6.0) adds retry-on-failure for transient errors, a redesigned Prompt Builder, Fast/Balanced/Quality presets per translator, and support for the new glossary",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.6.0",
+    "publishedAt": "2026-09-11T11:21:03Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.6.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.6.0",
+    "notes": "## What's Changed\n* Add translator capabilities, fix segment-alignment bug, wire up retry by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/36\n* Remove dead Throttle setting, fix nucleusSampling key mismatch by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/37\n* Widen prompt tokens, add prompt preview/presets/lint, prompt-preview endpoints by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/38\n* Add structured-output fast path to all seven translators by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/39\n* Rework AI connector config UI: advanced modal, header actions, debug toggle by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/40\n* Make request block sizing configurable, raise defaults by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/41\n* Add model presets: quick-apply Fast/Balanced/Quality tuning per translator by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/42\n* Add Prompt Builder: sectioned prompt editor with raw-edit escape hatch by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/43\n* Add glossary support (§4) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/44\n* Fix batch status not persisted when a batch completes by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/46\n* Implement IGlossaryAwareProvider and surface Use Glossary in the Prompt Builder by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/45\n* build(deps): Range-pin core dependencies instead of an exact version by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/47\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.5.0...v17.6.0",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.6.0-alpha02",
+    "publishedAt": "2026-09-11T10:09:44.777+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.6.0-alpha02",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.6.0-alpha01",
+    "publishedAt": "2026-09-11T08:14:04.59+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.6.0-alpha01",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -75,19 +140,6 @@
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.2.0",
     "notes": "A bulk translation dashboard for the Content section, and access-level aware connector settings.\n\n- Add: bulk translation dashboard in the Content section — pick a page tree and language, review what's pending, and send it all to translation in one go\n- Improve: connector settings lookups now respect the current user's Settings-section access, so job creation only requests the detail it actually needs\n- Fix: a manual job check failure now shows one clear error instead of a generic message",
     "prerelease": false,
-    "umbracoMajor": 18
-  },
-  {
-    "package": "Jumoo.TranslationManager",
-    "title": "Translation Manager",
-    "category": "",
-    "repo": "Jumoo/Jumoo.TranslationManager.Issues",
-    "version": "18.2.1-alpha01",
-    "publishedAt": "2026-09-03T16:35:09.843+00:00",
-    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/18.2.1-alpha01",
-    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases",
-    "notes": null,
-    "prerelease": true,
     "umbracoMajor": 18
   },
   {
