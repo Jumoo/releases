@@ -5,6 +5,66 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync 18.1.3</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.3</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.3</guid>
+      <pubDate>Mon, 14 Sep 2026 10:40:23 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Port today's v17 update: revive uSync.Community.DataTypeSerializers (#1052) by @KevinJump in https://github.com/KevinJump/uSync/pull/1053
+* Merge v17 into v18 (2026-09-08) by @KevinJump in https://github.com/KevinJump/uSync/pull/1072
+* Merge v17 into v18 (2026-09-08) by @KevinJump in https://github.com/KevinJump/uSync/pull/1081
+* Merge v17 into v18 (2026-09-12) by @KevinJump in https://github.com/KevinJump/uSync/pull/1086
+* Rename package-build.yml to prerelease.yml, manual trigger only by @KevinJump in https://github.com/KevinJump/uSync/pull/1087
+
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.1.2...v18.1.3]]></description>
+    </item>
+    <item>
+      <title>uSync 17.4.1</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v17.4.1</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.4.1</guid>
+      <pubDate>Mon, 14 Sep 2026 10:25:57 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Convert nightly build workflow to manual prerelease trigger by @KevinJump in https://github.com/KevinJump/uSync/pull/1082
+* [AMEND] Make bad file name blocklist configurable by @NikRimington in https://github.com/KevinJump/uSync/pull/1085
+
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.4.0...v17.4.1]]></description>
+    </item>
+    <item>
+      <title>AI Connector 18.3.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.3.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.3.0</guid>
+      <pubDate>Mon, 14 Sep 2026 10:18:59 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Bring repository standards and CI/CD in line with Xliff.Connector by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/20
+* Port Claude translator fixes and model-listing from v17 by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/21
+* Keep the local dev server URL out of the generated client by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/22
+* Bump the ai-client npm dependencies, hold typescript at 5.x by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/23
+* Let translators build their own batch request bodies by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/27
+* Write batch-translated values to translation memory by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/30
+* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/35
+* Merge v17 into v18 (2026-09-11) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/48
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.6.0...v18.3.0]]></description>
+    </item>
+    <item>
+      <title>Translation Manager 18.3.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.3.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.3.0</guid>
+      <pubDate>Mon, 14 Sep 2026 09:49:34 GMT</pubDate>
+      <description><![CDATA[A global Glossary for keeping terminology consistent across translations, granular permissions for Glossary and Translation Memory, and a round of reliability fixes.
+
+- Add: Glossary — a global list of terminology you control per language pair, importable/exportable as CSV, so translations use your preferred wording instead of the connector's own choice
+- Add: `jumoo-view-glossary` and `jumoo-view-translation-memory` permissions, so access to these areas can be granted independently of general backoffice access
+- Fix: a partially-approved translation job could show the wrong status, or let a node be approved before it was actually ready
+- Fix: jobs with nothing left to translate now show a normal "nothing to do" message instead of an error
+- Fix: the create-job dialog now requires a connector to be selected before you can continue
+- Fix: duplicate labels on the glossary on/off toggles
+- Improve: translation requests now retry only on genuine transient network failures, reducing unnecessary retries]]></description>
+    </item>
+    <item>
       <title>uSync Migrations 17.0.3</title>
       <link>https://github.com/Jumoo/uSyncMigrations/releases/tag/v17.0.3</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSyncMigrations/releases/tag/v17.0.3</guid>
@@ -667,60 +727,6 @@ Published to NuGet.]]></description>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.0.0</guid>
       <pubDate>Sun, 23 Aug 2026 17:51:11 GMT</pubDate>
       <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Microsoft Connector 17.1.0-rc1</title>
-      <link>https://github.com/Jumoo/Microsoft.Connector/releases/tag/v17.1.0-rc1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases/tag/v17.1.0-rc1</guid>
-      <pubDate>Sun, 23 Aug 2026 17:49:36 GMT</pubDate>
-      <description><![CDATA[
-# What's new
-Support for batch submission via the translation api ]]></description>
-    </item>
-    <item>
-      <title>DeepL Connector 18.0.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.0.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.0.0</guid>
-      <pubDate>Sun, 23 Aug 2026 17:46:25 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Dev/glossaries by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/1
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/commits/v18.0.0]]></description>
-    </item>
-    <item>
-      <title>Publicis Connector 17.0.0-rc4</title>
-      <link>https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0-rc4</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0-rc4</guid>
-      <pubDate>Sun, 23 Aug 2026 17:41:27 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>PowerToys 17.0.0-rc2</title>
-      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0-rc2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0-rc2</guid>
-      <pubDate>Sun, 23 Aug 2026 09:59:42 GMT</pubDate>
-      <description><![CDATA[Second release candidate for Umbraco 17.
-
-### Added
-
-- Per-section drag-and-drop sorting for dashboards in the Dashboard Manager, with a "Reset order" button that only appears once a section's order has been customized. ([#47](https://github.com/Jumoo/umbraco.community.powertoys/pull/47))
-- Drag-and-drop sorting for the Environment Indicator's environment list. ([#44](https://github.com/Jumoo/umbraco.community.powertoys/pull/44))
-- Power toy settings and the enabled flag can now be locked via `appsettings.json`. ([#45](https://github.com/Jumoo/umbraco.community.powertoys/pull/45))
-- Environment Indicator can match the current environment using the dotnet `environmentName` as well as by URL. ([#40](https://github.com/Jumoo/umbraco.community.powertoys/pull/40))
-
-### Fixed
-
-- Dashboard Manager's default dashboard order now uses each dashboard's registered weight. ([#47](https://github.com/Jumoo/umbraco.community.powertoys/pull/47))
-- Drag placeholder styling, and switched to `uui-color-swatch` for colour pickers. ([#46](https://github.com/Jumoo/umbraco.community.powertoys/pull/46))
-
-### Docs
-
-- Added a reminder to run `npm install` and `npm run build` to generate the required `wwwroot` assets. ([#41](https://github.com/Jumoo/umbraco.community.powertoys/pull/41))
-- Added a dashboard screenshot to the README and marketplace listing. ([#39](https://github.com/Jumoo/umbraco.community.powertoys/pull/39))
-
-**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.0.0-rc1...v17.0.0-rc2
-]]></description>
     </item>
   </channel>
 </rss>
