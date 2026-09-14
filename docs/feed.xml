@@ -5,6 +5,45 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync Complete 17.4.2</title>
+      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.2</guid>
+      <pubDate>Mon, 14 Sep 2026 14:48:06 GMT</pubDate>
+      <description><![CDATA[# v17.4.2
+
+A performance and reliability release: pushing and pulling scale much better on large
+sites, and a handful of bugs affecting paged file transfers and content syncing are
+fixed.
+
+## Fixed
+
+- Publisher: a paged file push no longer re-sends the entire file set on every page.
+  A paging bug meant each page copied and transferred every file rather than just its
+  own slice, so a push spanning several pages uploaded the whole file set that many
+  times over.
+- Publisher: media items renamed then imported are no longer left behind under their
+  old file names. Reporting is paged, and each page's list of renames was overwriting
+  the previous one, so only the final page's renames were ever cleaned up.
+- When more than one configured replacement pattern matched a file (for example
+  `_ViewImports.cshtml` assembly rewriting), only the last matching pattern was
+  applied — each replacement was written to disk immediately from the original file
+  content, silently discarding any earlier substitution.
+- `PushFiles` now carries the same large-upload handling as the other server-to-server
+  endpoints (`PushPack`, `PushMedia`, `PushInlineMedia`).
+
+## Changed
+
+- Working out what needs to sync now scales much better with the number of items
+  involved, with far fewer database queries during large syncs.
+- Memory and CPU use during export/import (file hashing, comparison, and zip creation)
+  has been reduced, with no change to existing sync pack contents.
+- Server-to-server push/pull requests no longer buffer entire request/response bodies
+  in memory, reducing memory pressure on large transfers.
+- The remote content/media browser used when choosing what to push or pull now issues
+  far fewer database queries per page.
+]]></description>
+    </item>
+    <item>
       <title>uSync 18.1.3</title>
       <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.3</link>
       <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.3</guid>
@@ -719,13 +758,6 @@ Published to NuGet.]]></description>
       <link>https://github.com/Jumoo/Passthrough.Connector/releases/tag/v18.0.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Passthrough.Connector/releases/tag/v18.0.0</guid>
       <pubDate>Sun, 23 Aug 2026 18:56:37 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>CrowdIn Connector 18.0.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.0.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.0.0</guid>
-      <pubDate>Sun, 23 Aug 2026 17:51:11 GMT</pubDate>
       <description><![CDATA[]]></description>
     </item>
   </channel>

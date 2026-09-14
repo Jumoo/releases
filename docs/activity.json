@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T11:00:24.925Z",
+  "generatedAt": "2026-09-14T18:02:11.269Z",
   "packages": [
     {
       "package": "uSync",
@@ -244,9 +244,9 @@
       "lastReleaseTag": "v17.1.0",
       "lastReleaseDate": "2026-09-01T14:57:19Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.0",
-      "releaseBranch": "v18/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-09-01T14:57:19Z"
+      "releaseBranch": "v17/main",
+      "commitsSince": 5,
+      "lastCommitDate": "2026-09-14T14:04:53Z"
     },
     {
       "package": "Umbraco.Community.LinkedPages",

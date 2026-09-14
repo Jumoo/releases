@@ -1,5 +1,18 @@
 [
   {
+    "package": "uSync.Complete",
+    "title": "uSync Complete",
+    "category": "",
+    "repo": "Jumoo/uSync.Complete.Issues",
+    "version": "17.4.2",
+    "publishedAt": "2026-09-14T14:48:06Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/17.4.2",
+    "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.2",
+    "notes": "# v17.4.2\n\nA performance and reliability release: pushing and pulling scale much better on large\nsites, and a handful of bugs affecting paged file transfers and content syncing are\nfixed.\n\n## Fixed\n\n- Publisher: a paged file push no longer re-sends the entire file set on every page.\n  A paging bug meant each page copied and transferred every file rather than just its\n  own slice, so a push spanning several pages uploaded the whole file set that many\n  times over.\n- Publisher: media items renamed then imported are no longer left behind under their\n  old file names. Reporting is paged, and each page's list of renames was overwriting\n  the previous one, so only the final page's renames were ever cleaned up.\n- When more than one configured replacement pattern matched a file (for example\n  `_ViewImports.cshtml` assembly rewriting), only the last matching pattern was\n  applied — each replacement was written to disk immediately from the original file\n  content, silently discarding any earlier substitution.\n- `PushFiles` now carries the same large-upload handling as the other server-to-server\n  endpoints (`PushPack`, `PushMedia`, `PushInlineMedia`).\n\n## Changed\n\n- Working out what needs to sync now scales much better with the number of items\n  involved, with far fewer database queries during large syncs.\n- Memory and CPU use during export/import (file hashing, comparison, and zip creation)\n  has been reduced, with no change to existing sync pack contents.\n- Server-to-server push/pull requests no longer buffer entire request/response bodies\n  in memory, reducing memory pressure on large transfers.\n- The remote content/media browser used when choosing what to push or pull now issues\n  far fewer database queries per page.\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -17204,11 +17217,11 @@
     "category": "",
     "repo": "Jumoo/uSync.Complete.Issues",
     "version": "8.7.0-rc",
-    "publishedAt": "2020-08-26T10:00:47Z",
+    "publishedAt": "2020-08-26T09:50:47.483+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/8.7.0-rc",
-    "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v8.7.0-rc",
-    "notes": "this is the release candidate for uSync.Complete with full support for Umbraco 8.7 and the block editors.\r\n\r\nFor more info see our blog: https://blog.jumoo.co.uk/2020/uSync-8-7-Release-Candidate/\r\n\r\n(full release notes will be updated on final release)\r\n\r\n# Installing\r\nThe recommended way to install uSync.Complete is via Nuget as part of your websites visual studio project:\r\n\r\n```\r\nPM>install-package uSync.Complete -version 8.7.0-rc\r\n```\r\n\r\n## Note\r\nuSync 8.7.x will work with all version of Umbraco v8.0 upwards. However, we recommend you update your Umbraco installations to latest versions where possible, because there are a lot of performance and cache fixes in version past 8.4.x\r\n",
-    "prerelease": false,
+    "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases",
+    "notes": null,
+    "prerelease": true,
     "umbracoMajor": 8
   },
   {
