@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T13:06:40.852Z",
+  "generatedAt": "2026-09-15T13:20:16.773Z",
   "packages": [
     {
       "package": "uSync",
@@ -18,14 +18,14 @@
       "package": "uSync.Complete",
       "title": "uSync Complete",
       "category": "",
-      "repo": "Jumoo/uSync.Complete.Issues",
-      "defaultBranch": "main",
-      "lastReleaseTag": "v18.1.3",
-      "lastReleaseDate": "2026-09-14T19:39:17Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.1.3",
-      "releaseBranch": "main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-09-14T19:39:17Z"
+      "repo": "Jumoo/uSync.Complete",
+      "defaultBranch": "v17/main",
+      "lastReleaseTag": "release/v18.1.3",
+      "lastReleaseDate": "2026-09-14T19:33:59Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.1.3",
+      "releaseBranch": "v18/main",
+      "commitsSince": 1,
+      "lastCommitDate": "2026-09-14T19:38:57Z"
     },
     {
       "package": "uSync.Forms",
@@ -96,14 +96,14 @@
       "package": "Jumoo.TranslationManager",
       "title": "Translation Manager",
       "category": "",
-      "repo": "Jumoo/Jumoo.TranslationManager.Issues",
-      "defaultBranch": "main",
+      "repo": "Jumoo/Jumoo.TranslationManager",
+      "defaultBranch": "v17/main",
       "lastReleaseTag": "v18.3.0",
-      "lastReleaseDate": "2026-09-14T09:49:34Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.3.0",
-      "releaseBranch": "main",
+      "lastReleaseDate": "2026-09-14T09:47:14Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.0",
+      "releaseBranch": "v18/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-09-14T09:49:34Z"
+      "lastCommitDate": "2026-09-14T09:47:14Z"
     },
     {
       "package": "Jumoo.TranslationManager.AI",
@@ -247,19 +247,6 @@
       "releaseBranch": "v17/main",
       "commitsSince": 1,
       "lastCommitDate": "2026-09-10T10:51:33Z"
-    },
-    {
-      "package": "Jumoo.TranslationManager.LanguageWire",
-      "title": "LanguageWire Connector",
-      "category": "Translation Connectors",
-      "repo": "Jumoo/LanguageWire.Connector",
-      "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.1.0",
-      "lastReleaseDate": "2026-09-01T14:46:54Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.0",
-      "releaseBranch": "v17/main",
-      "commitsSince": 1,
-      "lastCommitDate": "2026-09-10T10:51:38Z"
     },
     {
       "package": "Jumoo.TranslationManager.GlobalLink",

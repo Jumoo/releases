@@ -35,96 +35,95 @@
     </item>
     <item>
       <title>uSync Complete 18.1.3</title>
-      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.1.3</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.1.3</guid>
-      <pubDate>Mon, 14 Sep 2026 19:39:17 GMT</pubDate>
-      <description><![CDATA[# v18.1.3
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.1.3</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.1.3</guid>
+      <pubDate>Mon, 14 Sep 2026 19:33:59 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Port publisher timeout, restore-point hardening, and progress-callback fixes from v17 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/26
+* Add GitHub Actions CI/CD to v18/main, matching v17/main by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/27
+* Merge v17/main into v18/main (2026-09-07) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/31
+* Merge v17 into v18 (2026-09-14) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/60
 
-A performance and reliability release, bringing v17's recent fixes and performance work
-forward to v18: pushing and pulling scale much better on large sites, restore points and
-media syncing are more reliable, and a background job now tidies up abandoned temp
-folders left behind by interrupted server-to-server transfers.
 
-## Changed
+**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.4.2...release/v18.1.3
 
-- Bumped uSync, uSync.BackOffice and uSync.BackOffice.Management.Api to 18.1.3.
-- Working out what needs to sync now scales much better with the number of items
-  involved, with far fewer database queries during large syncs.
-- Memory and CPU use during export/import (file hashing, comparison, and zip creation)
-  has been reduced, with no change to existing sync pack contents.
-- Server-to-server push/pull requests no longer buffer entire request/response bodies
-  in memory, reducing memory pressure on large transfers.
-- The remote content/media browser used when choosing what to push or pull now issues
-  far fewer database queries per page.
+## What's Changed
+* Port publisher timeout, restore-point hardening, and progress-callback fixes from v17 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/26
+* Add GitHub Actions CI/CD to v18/main, matching v17/main by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/27
+* Merge v17/main into v18/main (2026-09-07) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/31
+* Merge v17 into v18 (2026-09-14) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/60
 
-## Added
 
-- A background job that automatically removes abandoned temporary pack/receive folders
-  left behind when a remote clean-up request couldn't reach the target server (for
-  example, a restart mid-push). Controlled via `uSync:TempFolderCleanup:Enabled`
-  (default `true`) and `uSync:TempFolderCleanup:CutOffHours` (default `24`).
-
-## Fixed
-
-- Publisher: server-to-server requests now honour `uSync:Publisher:Settings:RequestTimeout`
-  again. Every request — restore point steps, sync pack uploads, imports — was silently
-  capped at 100 seconds instead of the configured value. Set it to `0` for no limit.
-- Restore point archives are now built on disk instead of in memory, so creating a
-  restore point of a large site no longer risks taking the process down.
-- The restore point working folder is only deleted once its archive is confirmed
-  stored, so a failure at that point no longer leaves neither the folder nor the zip.
-- Media writes no longer wait forever on each other — one stalled write could
-  previously block every media import that followed it.
-- A paged file push no longer re-sends the entire file set on every page. A paging bug
-  meant each page copied and transferred every file rather than just its own slice, so
-  a push spanning several pages uploaded the whole file set that many times over.
-- Media items renamed then imported are no longer left behind under their old file
-  names.
-- `PushFiles` now carries the same large-upload handling as the other server-to-server
-  endpoints (`PushPack`, `PushMedia`, `PushInlineMedia`).
-- The two Publisher temp-folder health checks, which had been disabled and
-  non-functional since Umbraco 14's backoffice rewrite, are removed — the temp folder
-  cleanup job above replaces what they were for.
-]]></description>
+**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.4.2...release/v18.1.3]]></description>
     </item>
     <item>
       <title>uSync Complete 17.4.2</title>
-      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.2</guid>
-      <pubDate>Mon, 14 Sep 2026 14:48:06 GMT</pubDate>
-      <description><![CDATA[# v17.4.2
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.4.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.4.2</guid>
+      <pubDate>Mon, 14 Sep 2026 14:39:52 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Use a HashSet for dependency membership checks by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/37
+* Flush the dependency cache once per run, not once per page by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/38
+* Batch the child dependency tree walk by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/39
+* Read content length from headers instead of buffering the body by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/40
+* Stream pull responses instead of copying them to a byte array by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/41
+* Add the missing DisableFormValueModelBinding guard to PushFiles by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/42
+* Fetch the required media and file lists once per push by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/43
+* Fix two paging bugs in the sync pack service by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/44
+* Reduce file hashing, comparison and zip costs in the pack file service by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/45
+* Stop reading the safe media names file twice by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/46
+* Cut the per-row queries and repeated work out of the item browser by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/47
+* Stop blocking a thread on the licence check for every API call by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/48
+* Delete queue rows in one statement instead of one at a time by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/49
+* Batch data type lookups and stop re-walking shared compositions by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/50
+* Cut repeated per-page work out of the sync pack service by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/51
+* Trim repeated enumeration and per-item allocations by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/52
+* Resolve media items in one query per page instead of one each by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/53
+* Serialise request payloads straight to bytes and fix the log health check scan by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/54
+* Add a background job to sweep abandoned pack folders by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/55
+* Remove dead uSync Publisher folder health checks by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/56
+* Stop opening every archive to reconcile restore points by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/57
+* Bump uSync core dependencies to v17.4.1 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/58
+* Bump VersionPrefix to 17.4.2 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/59
+* Bump the nuget-dependencies group with 2 updates by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/36
+* Bump vite-plugin-dts from 5.0.3 to 5.1.0 in /uSync.Publisher.Client/usync-publisher-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/35
+* Bump vite-plugin-dts from 5.0.3 to 5.1.0 in /uSync.Expansions.Client/usync-expansions-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/34
+* Bump vite-plugin-dts from 5.0.3 to 5.1.0 in /uSync.Exporter.Client/usync-exporter-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/33
 
-A performance and reliability release: pushing and pulling scale much better on large
-sites, and a handful of bugs affecting paged file transfers and content syncing are
-fixed.
 
-## Fixed
+**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.4.1...release/v17.4.2
 
-- Publisher: a paged file push no longer re-sends the entire file set on every page.
-  A paging bug meant each page copied and transferred every file rather than just its
-  own slice, so a push spanning several pages uploaded the whole file set that many
-  times over.
-- Publisher: media items renamed then imported are no longer left behind under their
-  old file names. Reporting is paged, and each page's list of renames was overwriting
-  the previous one, so only the final page's renames were ever cleaned up.
-- When more than one configured replacement pattern matched a file (for example
-  `_ViewImports.cshtml` assembly rewriting), only the last matching pattern was
-  applied — each replacement was written to disk immediately from the original file
-  content, silently discarding any earlier substitution.
-- `PushFiles` now carries the same large-upload handling as the other server-to-server
-  endpoints (`PushPack`, `PushMedia`, `PushInlineMedia`).
+## What's Changed
+* Use a HashSet for dependency membership checks by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/37
+* Flush the dependency cache once per run, not once per page by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/38
+* Batch the child dependency tree walk by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/39
+* Read content length from headers instead of buffering the body by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/40
+* Stream pull responses instead of copying them to a byte array by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/41
+* Add the missing DisableFormValueModelBinding guard to PushFiles by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/42
+* Fetch the required media and file lists once per push by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/43
+* Fix two paging bugs in the sync pack service by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/44
+* Reduce file hashing, comparison and zip costs in the pack file service by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/45
+* Stop reading the safe media names file twice by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/46
+* Cut the per-row queries and repeated work out of the item browser by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/47
+* Stop blocking a thread on the licence check for every API call by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/48
+* Delete queue rows in one statement instead of one at a time by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/49
+* Batch data type lookups and stop re-walking shared compositions by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/50
+* Cut repeated per-page work out of the sync pack service by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/51
+* Trim repeated enumeration and per-item allocations by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/52
+* Resolve media items in one query per page instead of one each by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/53
+* Serialise request payloads straight to bytes and fix the log health check scan by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/54
+* Add a background job to sweep abandoned pack folders by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/55
+* Remove dead uSync Publisher folder health checks by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/56
+* Stop opening every archive to reconcile restore points by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/57
+* Bump uSync core dependencies to v17.4.1 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/58
+* Bump VersionPrefix to 17.4.2 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/59
+* Bump the nuget-dependencies group with 2 updates by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/36
+* Bump vite-plugin-dts from 5.0.3 to 5.1.0 in /uSync.Publisher.Client/usync-publisher-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/35
+* Bump vite-plugin-dts from 5.0.3 to 5.1.0 in /uSync.Expansions.Client/usync-expansions-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/34
+* Bump vite-plugin-dts from 5.0.3 to 5.1.0 in /uSync.Exporter.Client/usync-exporter-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/33
 
-## Changed
 
-- Working out what needs to sync now scales much better with the number of items
-  involved, with far fewer database queries during large syncs.
-- Memory and CPU use during export/import (file hashing, comparison, and zip creation)
-  has been reduced, with no change to existing sync pack contents.
-- Server-to-server push/pull requests no longer buffer entire request/response bodies
-  in memory, reducing memory pressure on large transfers.
-- The remote content/media browser used when choosing what to push or pull now issues
-  far fewer database queries per page.
-]]></description>
+**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.4.1...release/v17.4.2]]></description>
     </item>
     <item>
       <title>uSync 18.1.3</title>
@@ -173,18 +172,23 @@ fixed.
     </item>
     <item>
       <title>Translation Manager 18.3.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.3.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.3.0</guid>
-      <pubDate>Mon, 14 Sep 2026 09:49:34 GMT</pubDate>
-      <description><![CDATA[A global Glossary for keeping terminology consistent across translations, granular permissions for Glossary and Translation Memory, and a round of reliability fixes.
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.0</guid>
+      <pubDate>Mon, 14 Sep 2026 09:47:14 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Merge v17 into v18 (2026-08-28) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/5
+* feat(frontend): Add bulk translation dashboard to the Content section by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/6
+* docs(release): Record Library bulk translation dashboard scoping notes by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/7
+* Merge v17 into v18 (2026-09-03) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/21
+* Merge v17 into v18 (2026-09-04) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/23
+* Merge v17 into v18 (2026-09-04) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/25
+* Merge v17 into v18 (2026-09-09) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/30
+* Merge v17 into v18 (2026-09-09) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/33
+* Merge v17 into v18 (2026-09-09) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/38
+* Merge v17 into v18 (2026-09-11) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/41
 
-- Add: Glossary — a global list of terminology you control per language pair, importable/exportable as CSV, so translations use your preferred wording instead of the connector's own choice
-- Add: `jumoo-view-glossary` and `jumoo-view-translation-memory` permissions, so access to these areas can be granted independently of general backoffice access
-- Fix: a partially-approved translation job could show the wrong status, or let a node be approved before it was actually ready
-- Fix: jobs with nothing left to translate now show a normal "nothing to do" message instead of an error
-- Fix: the create-job dialog now requires a connector to be selected before you can continue
-- Fix: duplicate labels on the glossary on/off toggles
-- Improve: translation requests now retry only on genuine transient network failures, reducing unnecessary retries]]></description>
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.9.0...v18.3.0]]></description>
     </item>
     <item>
       <title>uSync Migrations 17.0.3</title>
@@ -199,20 +203,49 @@ fixed.
     </item>
     <item>
       <title>Translation Manager 17.9.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.9.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.9.0</guid>
-      <pubDate>Fri, 11 Sep 2026 12:34:49 GMT</pubDate>
-      <description><![CDATA[A glossary for consistent terminology, granular Translation Memory permissions, and a round of translation-correctness fixes.
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.0</guid>
+      <pubDate>Fri, 11 Sep 2026 11:36:37 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* feat: Add Glossary by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/18
+* fix(ui): Default new translation jobs to the latest content by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/29
+* feat(ui): Show connector version in the diagnostics view by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/31
+* Warn which connectors support the glossary by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/32
+* Move Translation Memory to the Translations section by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/34
+* Gate ClientComposer on the backoffice being enabled by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/35
+* Gate Glossary/Memory menu items on client-side permission, not just the API by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/36
+* Add Glossary/Memory item counts to the Translations dashboard by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/37
+* feat(core): Add optional Polly retry pipeline to machine connector base by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/39
+* ci(release): Split NuGet release into core and main scopes by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/40
+* build(deps-dev): bump vite-plugin-dts from 4.5.4 to 5.0.3 in /Jumoo.TranslationManager.Client/translation-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager/pull/11
+* build(deps-dev): bump @rollup/plugin-node-resolve from 15.2.3 to 16.0.3 in /Jumoo.TranslationManager.Client/translation-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager/pull/10
+* Bump coverlet.collector and 3 others by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager/pull/43
+* ci: Make Build and Package a manual workflow by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/48
+* Bump NUnit3TestAdapter from 3.17.0 to 6.3.0 by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager/pull/16
+* Bump NUnit from 3.14.0 to 4.6.1 by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager/pull/15
+* chore(deps-dev): Bump the npm-dependencies group across 1 directory with 7 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager/pull/42
+* fix(core): Skip empty translation nodes and soften no-content result by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/47
+* fix(core): Tolerate empty-string JSON columns in Map.FromJson by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/46
+* Fix partial-batch translation job status and approval handling by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/49
+* fix(core): Keep partially-approved jobs checkable while nodes are in progress by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/50
+* feat(core): Move the glossary resolve helper into GlossaryService by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/51
+* fix(connector): Narrow the default retry predicate to transient transport failures by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/52
+* feat(connector): Add opt-in LoadBaseSettingsAsync helper for machine options by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/53
+* build: Gate pack on connector API compatibility with the last release by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/54
+* test(core): Cover the two new view permissions by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/55
+* fix(api): Regenerate the client and repair the hey-api runtime config path by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/56
+* fix(frontend): Show Glossary and Memory to administrators regardless of stale claims by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/57
+* fix(frontend): Require a connector before Create in the content-app dialog by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/58
+* fix(ui): Stop the glossary toggles rendering their label twice by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/59
+* build(deps): Re-pin AI connector to the 17.6.0-alpha01 release by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/60
+* build(deps): Re-pin AI connector to 17.6.0-alpha02 with a bounded range by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/61
+* Revert admin-bypass on the Glossary/Memory view permission by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/62
+* build(deps): Re-pin AI connector to the real 17.6.0 release by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/63
 
-- Add: Glossary — a global list of terminology, managed from its own item in the Translations section. Add terms with a value (or a "do not translate" flag) per installed language, and import/export as CSV (one language pair at a time - a worksheet a translator can fill in) or TBX across every language at once, for termbases exported from another tool. The glossary section only appears once a connector that reads it is configured - right now that's the AI connector; DeepL, Google and Microsoft glossary support is still on the way
-- Add: two new granular permissions, "View glossary" and "View translation memory" - a user needs both translation-section access and the specific permission to see either. Administrators get both automatically on upgrade; any other group that wants them needs to be granted explicitly. As with any permission change, it only reaches an already-signed-in session at their next sign-in
-- Improve: Translation Memory moved from Settings into the Translations section, alongside Glossary, with its own on/off toggle and item counts on the dashboard
-- Fix: creating a translation could get stuck with an unhelpful internal error if you pressed Create before choosing a connector - the button now stays disabled until one's selected
-- Fix: a batch job that came back only partly translated (some content pre-filled from translation memory, the rest still out with the provider) could get stuck showing as fully reviewed with no way to check the rest back in
-- Fix: content with nothing translatable (every page unpublished, or nothing to translate at all) used to produce a hollow, confusing job, or fail outright - it now completes cleanly and says "Nothing to translate"
-- Fix: a translation set with "Hide version choice" ticked silently defaulted new jobs to published-only content; new jobs now default to the latest content regardless
-- Fix: job submission could fail with "Failed to submit job" if certain internal data had been stored as an empty string rather than blank
-- Build: the AI connector (17.6.0) adds retry-on-failure for transient errors, a redesigned Prompt Builder, Fast/Balanced/Quality presets per translator, and support for the new glossary]]></description>
+## New Contributors
+* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager/pull/11
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.8.2...v17.9.0]]></description>
     </item>
     <item>
       <title>AI Connector 17.6.0</title>
@@ -321,67 +354,57 @@ fixed.
     </item>
     <item>
       <title>uSync Complete 17.4.1</title>
-      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.1</guid>
-      <pubDate>Mon, 07 Sep 2026 15:45:33 GMT</pubDate>
-      <description><![CDATA[A small patch release fixing a server-to-server authentication bug for sites using Umbraco's Basic Auth shared-secret bypass.
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.4.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.4.1</guid>
+      <pubDate>Mon, 07 Sep 2026 15:42:14 GMT</pubDate>
+      <description><![CDATA[- Fix: server-to-server push requests no longer fail with `401 The request requires user authentication` when the target site has Umbraco's Basic Auth shared-secret bypass configured. The header carrying the shared secret was being mis-paired and then overwritten with the wrong value before the request went out, so the target rejected it as unauthenticated even when the secret was configured correctly on both servers
 
-### Fixed
-- Publisher: server-to-server push requests no longer fail with `401 The request requires user authentication` on a target site that has Umbraco's Basic Auth shared-secret bypass configured (`Umbraco:CMS:BasicAuthSettings:SharedSecret`). The header carrying the shared secret was being built with the wrong key/value pairing and then silently overwritten before the request went out, so the target rejected the push as unauthenticated even when the secret was configured correctly on both servers.
+Full changelog: https://github.com/Jumoo/uSync.Complete/blob/v17/main/CHANGELOG.md
 ]]></description>
     </item>
     <item>
       <title>Translation Manager 17.8.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.2</guid>
-      <pubDate>Mon, 07 Sep 2026 09:42:50 GMT</pubDate>
-      <description><![CDATA[A clone-to-language action, and a fix for sites also running uSync.Complete.
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.8.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.8.2</guid>
+      <pubDate>Mon, 07 Sep 2026 09:40:24 GMT</pubDate>
+      <description><![CDATA[A clone-to-language action for untranslated variants, and a dependency fix for sites also running uSync.Complete.
 
-- Add: for a language with no translation yet, clone the content you're currently viewing straight into it, skipping the translation job pipeline entirely — the same one-click clone action from v13, now in the v17 backoffice
-- Fix: installing Translation Manager alongside uSync.Complete 17.4.0 could produce a `400 - Read unrecognized type discriminator id 'TranslationProcessingOptions'` error on translation requests. Both packages share an underlying dependency, and a version mismatch between them was the cause — now resolved
-- Fix: the licence check requests Translation Manager makes now identify themselves properly, matching uSync.Complete's behaviour]]></description>
+- Add: clone the currently viewed variant's content straight into a language with no translation yet, skipping the translation job pipeline entirely — porting the v13 clone button to the v17 backoffice. A notification confirms success or failure, and the new Clone action is styled distinctly from Create so the two read as primary vs secondary
+- Fix: sites running Translation Manager alongside uSync.Complete 17.4.0 could hit `400 - Read unrecognized type discriminator id 'TranslationProcessingOptions'` on translation requests — both packages depend on Jumoo.Processing, and a version mismatch between them meant two separate copies of it got loaded, so the runtime discriminator scan Jumoo.Processing uses for polymorphic options types missed ours. Aligning Translation Manager's Jumoo.Processing reference with uSync.Complete's (17.4.0) fixes it
+- Fix: the subscription and domain licence checkers now send a user agent header on requests to check.jumoo.co.uk, matching uSync.Complete's licence checker setup
+- Build: publish nightly builds to nightly.jumoo.uk]]></description>
     </item>
     <item>
       <title>Translation Manager 18.2.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.2.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.2.1</guid>
-      <pubDate>Fri, 04 Sep 2026 07:13:58 GMT</pubDate>
-      <description><![CDATA[Fixes carried forward from the v17 line: a first-install translation set guess, a connector auto-select fix, and a licence-check identification header.
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.2.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.2.1</guid>
+      <pubDate>Fri, 04 Sep 2026 07:06:11 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix(ci): Wire release.yml up to NuGet trusted publishing by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/2
+* Add bulk translation dashboard to the Content section by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/3
+* Add access-level aware provider options lookup by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/4
+* fix(ui): Select the sole connector when a set has no default configured by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/17
+* feat(core): Guess a starter translation set on first install by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/19
+* chore: Pin the transitive dependency graph and exact SDK version by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/20
+* Merge v17 into v18 (2026-09-03) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/21
+* fix(core): Add user agent header to licence check HTTP clients by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/22
+* Merge v17 into v18 (2026-09-04) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/23
 
-- Fix: 18.2.0's build could pull in unused ASP.NET Core dependencies that broke installation on some sites; the build pipeline now pins an exact .NET SDK version and verifies its full dependency graph on every release, so this can't recur unnoticed
-- Add: on a fresh install with no translation set configured yet, Translation Manager now guesses and selects a starter set automatically
-- Fix: the create-job dialog now auto-selects the connector when a translation set has only one available, instead of leaving it unselected (fixes #94)
-- Fix: licence check requests now identify themselves with a Translation Manager user agent header instead of .NET's default]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 18.2.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.2.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.2.0</guid>
-      <pubDate>Fri, 04 Sep 2026 07:13:57 GMT</pubDate>
-      <description><![CDATA[A bulk translation dashboard for the Content section, and access-level aware connector settings.
 
-- Add: bulk translation dashboard in the Content section — pick a page tree and language, review what's pending, and send it all to translation in one go
-- Improve: connector settings lookups now respect the current user's Settings-section access, so job creation only requests the detail it actually needs
-- Fix: a manual job check failure now shows one clear error instead of a generic message]]></description>
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v18.2.0...v18.2.1]]></description>
     </item>
     <item>
       <title>Translation Manager 17.8.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.8.1</guid>
-      <pubDate>Thu, 03 Sep 2026 16:00:49 GMT</pubDate>
-      <description><![CDATA[This release fixes an install problem some sites hit on 17.8.0, and adds a couple of small quality-of-life improvements.
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.8.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.8.1</guid>
+      <pubDate>Thu, 03 Sep 2026 15:54:36 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix(ui): Select the sole connector when a set has no default configured by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/17
+* feat(core): Guess a starter translation set on first install by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/19
+* chore: Pin the transitive dependency graph and exact SDK version by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/20
 
-## What's changed
 
-- **Install fix.** 17.8.0's core package accidentally pulled in a set of unused ASP.NET Core dependencies it never needed, which caused installation to fail on some sites. Our build pipeline now pins an exact .NET SDK version and verifies the full dependency graph on every build, so this can't recur unnoticed.
-- On a fresh install with no translation set configured yet, Translation Manager now guesses and selects a starter set for you automatically.
-- The create-job dialog now auto-selects the connector when a translation set only has one available, instead of leaving it unselected.
-
-If you hit install problems on 17.8.0, upgrading to 17.8.1 should resolve them.
-
----
-
-Published to NuGet.]]></description>
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.8.0...v17.8.1]]></description>
     </item>
     <item>
       <title>AI Connector 18.2.0</title>
@@ -421,6 +444,19 @@ Published to NuGet.]]></description>
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v18.0.0...v18.1.0]]></description>
     </item>
     <item>
+      <title>Translation Manager 18.2.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.2.0</guid>
+      <pubDate>Tue, 01 Sep 2026 16:29:31 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Merge v17 into v18 (2026-08-28) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/5
+* feat(frontend): Add bulk translation dashboard to the Content section by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/6
+* docs(release): Record Library bulk translation dashboard scoping notes by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/7
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.5.2...v18.2.0]]></description>
+    </item>
+    <item>
       <title>CrowdIn Connector 17.2.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.0</guid>
@@ -453,14 +489,10 @@ Published to NuGet.]]></description>
     </item>
     <item>
       <title>LanguageWire Connector 17.1.0</title>
-      <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.0</guid>
-      <pubDate>Tue, 01 Sep 2026 14:46:54 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Add IOptionsTranslationProvider implementation with OptionsDetailLevel support by @KevinJump in https://github.com/Jumoo/LanguageWire.Connector/pull/14
-
-
-**Full Changelog**: https://github.com/Jumoo/LanguageWire.Connector/compare/v17.0.1...v17.1.0]]></description>
+      <link>https://github.com/Jumoo/LanguageWire.Connector/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases</guid>
+      <pubDate>Tue, 01 Sep 2026 14:48:02 GMT</pubDate>
+      <description><![CDATA[]]></description>
     </item>
     <item>
       <title>AI Connector 17.5.0</title>
@@ -560,30 +592,10 @@ Published to NuGet.]]></description>
     </item>
     <item>
       <title>uSync Complete 18.1.1</title>
-      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.1.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.1.1</guid>
-      <pubDate>Wed, 26 Aug 2026 09:08:02 GMT</pubDate>
-      <description><![CDATA[# v18.1.1
-
-A dependency and reliability release: uSync and Jumoo.Processing are bumped to pick up
-async progress callbacks and cooperative cancellation, and a Publisher UI bug around the
-"unsaved changes" dialog is fixed.
-
-## Changed
-
-- Bumped uSync to 18.1.2 and Jumoo.Processing to 18.1.1. Publisher's SignalR progress
-  callbacks now use the async delegates from uSync 18.1.2 instead of blocking with
-  `.Wait()`, and `CreateRestorePoint` threads the request's `CancellationToken` through
-  to `IPipelineService.Process` so an abandoned request stops the pipeline early instead
-  of continuing to completion.
-
-## Fixed
-
-- Publisher: pressing Cancel on the "unsaved changes" dialog when pushing to a server no
-  longer opened the push dialog anyway. The dialog now offers **Cancel** / **Ignore, push
-  saved version** / **Save and Publish locally**, and each option is honoured correctly
-  (issue #308).
-]]></description>
+      <link>https://github.com/Jumoo/uSync.Complete/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
+      <pubDate>Wed, 26 Aug 2026 09:06:22 GMT</pubDate>
+      <description><![CDATA[]]></description>
     </item>
     <item>
       <title>uSync 18.1.2</title>
@@ -605,34 +617,10 @@ async progress callbacks and cooperative cancellation, and a Publisher UI bug ar
     </item>
     <item>
       <title>uSync Complete 17.4.0</title>
-      <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v17.4.0</guid>
-      <pubDate>Wed, 26 Aug 2026 06:49:40 GMT</pubDate>
-      <description><![CDATA[This release brings the restore point pipeline up to the same live-progress and background-queue improvements from v18, plus a batch of smaller fixes and backports that shipped in the v17.3.9-17.3.11 patch releases along the way.
-
-### Added
-- Snapshots: item-level progress for restore point create/restore/report now reaches the backoffice UI. The progress callbacks were never wired into the underlying sync pack request, so they were previously no-ops.
-- Snapshots: `uSync:Publisher:Settings:RestorePointIncludeMedia` (default `false`) - restore points created on request from a remote server no longer copy the whole media library before every push unless this is turned on.
-- Snapshots: a cleanup job now removes restore point working folders left behind by runs that never finished. Controlled by `uSync:Restore:Settings:KeepWorkingFoldersForHours` (default 24, `0` disables it).
-- Publisher: a per-server **Hide "Compare" tab** UI setting, for target sites that block being embedded in an iframe (backported from v18).
-
-### Fixed
-- Publisher: server-to-server requests now honour `uSync:Publisher:Settings:RequestTimeout` again. The setting had been ignored since v15, so requests were silently capped at 100 seconds instead of the configured value.
-- Snapshots: restore point archives are now built on disk instead of in memory, so a whole-site restore point no longer risks taking the process down on larger sites.
-- Snapshots: the restore point working folder is only deleted once its archive is confirmed stored, so a failure mid-write no longer loses both.
-- Snapshots: `uSync:Restore:Settings:RestoreGroups` now applies when a restore point is created and restored, not just when it's reported on. Default is now `All` to match what restore points actually capture.
-- Snapshots/Exporter: media writes no longer block on each other, so one stalled write (a slow blob store, say) can no longer hold up every import behind it.
-- Snapshots: restore point compression and cache saves now run on a dedicated background queue instead of Umbraco's own shared task queue, so a slow compression job can no longer block Umbraco's own background work (and vice versa).
-- #308 - Publisher: pressing Cancel on the "unsaved changes" dialog when pushing to a server no longer opened the push dialog anyway (backported from v18).
-- #306 - Publisher: the scheduled publish date is now normalised to UTC before being written into the pack, fixing schedules landing offset on servers with a non-zero timezone.
-- Publisher: after a **Pull from server**, an open content editor now refreshes automatically instead of showing the pre-pull data (backported from v18).
-- Startup now checks whether the backoffice is included in the site before loading uSync.Complete.
-- Caching turned off for v17.4/5, using `Clear` instead of `ClearKey`.
-
-### Changed
-- Updated to uSync 17.3.8 and Jumoo.Processing 17.4.0: restore point progress notifications are now sent asynchronously instead of blocking, and an abandoned restore point request now stops the pipeline cleanly instead of running to completion regardless.
-- Migrated hosted services to `RecurringBackgroundJobBase` and tidied up JSON options / dependencies.
-]]></description>
+      <link>https://github.com/Jumoo/uSync.Complete/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
+      <pubDate>Wed, 26 Aug 2026 06:46:20 GMT</pubDate>
+      <description><![CDATA[]]></description>
     </item>
     <item>
       <title>Jumoo.Processing 17.4.0</title>
@@ -719,47 +707,17 @@ async progress callbacks and cooperative cancellation, and a Publisher UI bug ar
     </item>
     <item>
       <title>Translation Manager 18.1.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.1.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v18.1.2</guid>
-      <pubDate>Mon, 24 Aug 2026 20:39:21 GMT</pubDate>
-      <description><![CDATA[Translation memory correctness fixes, a job-cancel crash guard, and a provider-selection validation fix.
-
-## What's fixed
-
-- **Translation memory correctness.** Approved translation memory could silently revert to pending when shared source text was re-translated by another node, and editing a single value on a node deleted translation memory for every other property on that node. Node approval also failed to promote memory for shared text owned by a different node's reference.
-- **Job cancel/submit crash guard.** `TranslationJobService.Cancel` and `MachineConnectorBase.SubmitInternal` could throw a `NullReferenceException` when acting on a job whose `Nodes` collection wasn't loaded. Cancel now self-heals by reloading nodes from the database.
-- **Job creation validation.** The choose-provider step in job creation didn't validate connector selection before enabling Next, so clicking Next while the connector was still resolving (e.g. a set with no default connector) could save a job with no provider set.
-- **Log noise.** Benign "no translation set applies to this save" cases (invariant doctypes, culture-only saves) no longer log at warning level, and dirty-culture scanning is skipped for doctypes that don't vary by culture.
-
-## Other
-
-- Build: bump `Jumoo.TranslationManager.Microsoft` to 18.1.0, `Jumoo.TranslationManager.AI` to 18.1.1, and `Jumoo.Processing` to 18.1.0
-
----
-
-Published to NuGet.]]></description>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases</guid>
+      <pubDate>Mon, 24 Aug 2026 20:36:58 GMT</pubDate>
+      <description><![CDATA[]]></description>
     </item>
     <item>
       <title>Translation Manager 17.7.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Issues/releases/tag/v17.7.2</guid>
-      <pubDate>Mon, 24 Aug 2026 20:27:47 GMT</pubDate>
-      <description><![CDATA[Translation memory correctness fixes, job-creation validation, clearer error reporting, and a log-noise fix.
-
-## What's fixed
-
-- **Translation memory correctness.** Approved translation memory could silently revert to pending when shared source text was re-translated by another node, and editing a single value on a node deleted translation memory for every other property on that node. Node approval also failed to promote memory for shared text owned by a different node's reference.
-- **Job creation validation.** The choose-provider step in job creation didn't validate connector selection before enabling Next, so clicking Next while the connector was still resolving (e.g. a set with no default connector) could save a job with no provider set.
-- **Clearer job-check errors.** Checking a job manually could show two notifications — a generic one and a warning that lost the actual server-side detail. Now a single warning uses the real error title/detail from the API, and the same error is also shown as a persistent box on the job page until a successful check or navigation away.
-- **Log noise.** Benign "no translation set applies to this save" cases (invariant doctypes, culture-only saves) no longer log at warning level, and dirty-culture scanning is skipped for doctypes that don't vary by culture.
-
-## Other
-
-- Build: update connector dependency versions (Microsoft, Jumoo.TranslationManager.AI)
-
----
-
-Published to NuGet.]]></description>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases</guid>
+      <pubDate>Mon, 24 Aug 2026 20:23:06 GMT</pubDate>
+      <description><![CDATA[]]></description>
     </item>
     <item>
       <title>Microsoft Connector 18.1.0</title>
