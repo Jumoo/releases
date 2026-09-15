@@ -5,6 +5,17 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>DeepL Connector 17.3.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.3.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.3.0</guid>
+      <pubDate>Tue, 15 Sep 2026 14:57:13 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Prototype: IGlossaryPushProvider against DeepL's classic glossary API by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/19
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.2.0...v17.3.0]]></description>
+    </item>
+    <item>
       <title>uSync 18.1.4</title>
       <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.4</link>
       <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.4</guid>
@@ -489,10 +500,14 @@ Full changelog: https://github.com/Jumoo/uSync.Complete/blob/v17/main/CHANGELOG.
     </item>
     <item>
       <title>LanguageWire Connector 17.1.0</title>
-      <link>https://github.com/Jumoo/LanguageWire.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases</guid>
-      <pubDate>Tue, 01 Sep 2026 14:48:02 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.0</guid>
+      <pubDate>Tue, 01 Sep 2026 14:46:54 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add IOptionsTranslationProvider implementation with OptionsDetailLevel support by @KevinJump in https://github.com/Jumoo/LanguageWire.Connector/pull/14
+
+
+**Full Changelog**: https://github.com/Jumoo/LanguageWire.Connector/compare/v17.0.1...v17.1.0]]></description>
     </item>
     <item>
       <title>AI Connector 17.5.0</title>
@@ -759,17 +774,6 @@ Full changelog: https://github.com/Jumoo/uSync.Complete/blob/v17/main/CHANGELOG.
 * @dependabot[bot] made their first contribution in https://github.com/Jumoo/Microsoft.Connector/pull/3
 
 **Full Changelog**: https://github.com/Jumoo/Microsoft.Connector/compare/v17.1.0-rc1...release/v17.1.0]]></description>
-    </item>
-    <item>
-      <title>AI Connector 18.1.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.1.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.1.1</guid>
-      <pubDate>Mon, 24 Aug 2026 07:02:24 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Write batch-translated values to translation memory by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/30
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.1.0...v18.1.1]]></description>
     </item>
   </channel>
 </rss>

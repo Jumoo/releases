@@ -1,5 +1,18 @@
 [
   {
+    "package": "Jumoo.TranslationManager.DeepL",
+    "title": "DeepL Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL",
+    "version": "17.3.0",
+    "publishedAt": "2026-09-15T14:57:13Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.DeepL/17.3.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.3.0",
+    "notes": "## What's Changed\n* Prototype: IGlossaryPushProvider against DeepL's classic glossary API by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/19\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.2.0...v17.3.0",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -330,10 +343,10 @@
     "category": "Translation Connectors",
     "repo": "Jumoo/LanguageWire.Connector",
     "version": "17.1.0",
-    "publishedAt": "2026-09-01T14:48:02.723+00:00",
+    "publishedAt": "2026-09-01T14:46:54Z",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.LanguageWire/17.1.0",
-    "githubUrl": "https://github.com/Jumoo/LanguageWire.Connector/releases",
-    "notes": null,
+    "githubUrl": "https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.0",
+    "notes": "## What's Changed\n* Add IOptionsTranslationProvider implementation with OptionsDetailLevel support by @KevinJump in https://github.com/Jumoo/LanguageWire.Connector/pull/14\n\n\n**Full Changelog**: https://github.com/Jumoo/LanguageWire.Connector/compare/v17.0.1...v17.1.0",
     "prerelease": false,
     "umbracoMajor": 17
   },
@@ -824,10 +837,10 @@
     "category": "Translation Connectors",
     "repo": "Jumoo/LanguageWire.Connector",
     "version": "17.0.0",
-    "publishedAt": "2026-08-19T10:07:06.28+00:00",
+    "publishedAt": "2026-08-19T10:10:36Z",
     "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.LanguageWire/17.0.0",
-    "githubUrl": "https://github.com/Jumoo/LanguageWire.Connector/releases",
-    "notes": null,
+    "githubUrl": "https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.0.0",
+    "notes": "Initial v17.0.0 release of the LanguageWire connector for Umbraco 17 Translation Manager.\n\n### Highlights\n\n- Language mapping settings now use dropdowns for both sides — source languages come from Umbraco's installed languages, target languages from LanguageWire's supported languages list — instead of free-text fields.\n- New **Language Status** check on the config page: flags any installed language that can't be resolved (directly or via a mapping) to a valid LanguageWire language, with a warning banner and a per-language status list.\n- Submitted job view now shows the job's stage and any error message returned by LanguageWire, plus a manual refresh button and automatic polling every 5 minutes.\n- UI polish: debug JSON moved into its own box, reworked layout of the submitted view (inline project link, reordered fields, blank-value indicators), and tightened property spacing on the simple pending view.\n",
     "prerelease": false,
     "umbracoMajor": 17
   },
