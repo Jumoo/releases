@@ -1,5 +1,31 @@
 [
   {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "version": "18.1.4",
+    "publishedAt": "2026-09-15T11:25:26Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/18.1.4",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.1.4",
+    "notes": "## What's Changed\n* Build and verify the History client's assets in CI by @KevinJump in https://github.com/KevinJump/uSync/pull/1093\n* fix(startup): honour the configured export group by @KevinJump in https://github.com/KevinJump/uSync/pull/1094\n* Respect handler import rules when cleaning missing items by @KevinJump in https://github.com/KevinJump/uSync/pull/1095\n\n\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.1.3...v18.1.4",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "version": "17.4.2",
+    "publishedAt": "2026-09-15T11:23:49Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/17.4.2",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.4.2",
+    "notes": "## What's Changed\n* fix(startup): honour the ExportAtStartup group by @jamiehdev in https://github.com/KevinJump/uSync/pull/1089\n* fix(history): build client assets before packaging by @jamiehdev in https://github.com/KevinJump/uSync/pull/1091\n* Respect handler import rules when cleaning missing items by @KevinJump in https://github.com/KevinJump/uSync/pull/1092\n* Bring CI workflows in step with v18 by @KevinJump in https://github.com/KevinJump/uSync/pull/1096\n\n## New Contributors\n* @jamiehdev made their first contribution in https://github.com/KevinJump/uSync/pull/1089\n\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.4.1...v17.4.2",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "",
@@ -14253,10 +14279,10 @@
     "category": "",
     "repo": "KevinJump/uSync",
     "version": "10.1.0",
-    "publishedAt": "2022-08-04T10:46:13Z",
+    "publishedAt": "2022-08-04T10:45:42.37+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync/10.1.0",
-    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v10.1.0",
-    "notes": "This is a patch release of uSync for Umbraco 10 - it contains some fixes and features to support new features in Umbraco 10.1.0.\r\n\r\n_**TL:DR** There are no major issues, v10.1 is backwards compatible with Umbraco 10.0._\r\n\r\n## Sync Fixes\r\n- V10/multi picker fix by @KevinJump in https://github.com/KevinJump/uSync/pull/401\r\n- Fix - Null check on Member tracker can cause issues when reporting on Member syncs \r\n- #406 Tab sort order is not enough to ensure tabs are always sorted \r\n\r\n## UI Fixes\r\n- Update link to the docs in the settings.controller.js by @erikjanwestendorp in https://github.com/KevinJump/uSync/pull/403\r\n- Sims can no longer WooHoo in the Elevator with a Sim who is on a different floor.\r\n- Update the link to the format change list to v10 repo\r\n\r\n## Features \r\n- Support for Umbraco 10.1 production mode, (read only files) in template syncing\r\n- Json Serialization cleanup (#402)\r\n- Enable FailOnWarning setting so we fail if properties can't be set. by @KevinJump in https://github.com/KevinJump/uSync/pull/395\r\n- Disable dashboard option #409\r\n- Update Import options so methods calling import can choose not to pause the export processes while doing so.\r\n\r\n## New Contributors\r\n* @erikjanwestendorp made their first contribution in https://github.com/KevinJump/uSync/pull/403\r\n\r\n---\r\n\r\n## Installing \r\n\r\n```\r\ndotnet add package uSync -v 10.1.0\r\n```\r\n\r\n---\r\n\r\n## Upgrading v9 to v10\r\nMigrating from uSync v9 to uSync 10 shouldn't be to hard, \r\n\r\n- none of the file formats for the uSync files have changes\r\n- All the same features exist for uSync 10 as did for uSync 9\r\n\r\nWe have moved to using a Razor class library for the static files (so javascript, html) that is used in the backoffice for uSync and as such **uSync will nolonger put any files in app_plugins/uSync** -\r\n\r\nAfter upgrading to uSync 10 you shoud either: \r\n    A. Remove all uSync files from app_plugins\r\n   or \r\n    B. run `dotnet clean` the the clean up will remove the files for you. \r\n\r\nAfter upgrade uSync should still be there and everything will sync like just before. \r\n\r\n## Migrating v8 to v10 \r\n\r\nIf you are migrating a site from v8 to v10 then there will be code changes etc you will need to make to your views and custom code, but **if you want to import all of your settings and content uSync will do that for you.**\r\n\r\nuSync 8 will store data in `/usync/v8`  if you copy / rename this folder to `/uSync/v9` then uSync 9 and 10 will import the settings and content into your new v9 or v10 site\r\n\r\n#uSyncAllTheThings \r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v10.0.0...v10.1.0",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases",
+    "notes": null,
     "prerelease": false,
     "umbracoMajor": 10
   },
@@ -14586,19 +14612,6 @@
     "umbracoMajor": 10
   },
   {
-    "package": "uSync",
-    "title": "uSync",
-    "category": "",
-    "repo": "KevinJump/uSync",
-    "version": "10.0.0",
-    "publishedAt": "2022-06-18T16:17:16Z",
-    "nugetUrl": "https://www.nuget.org/packages/uSync/10.0.0",
-    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v10.0.0",
-    "notes": "This is the uSync 10 release which is the major release to be in sync with Umbraco 10. It contains changes to the code base so that uSync carries on syncing all the things\r\n\r\n# Updates\r\n - Change to the way scheduled content is serialized\r\n - porting the uSync.BackOffice.StaticAssets library to a Razor Class Library Package so the files are not in `App_Plugins` anymore\r\n - clean-up of obsoleted calls to Umbraco libraries \r\n\r\n## What's Changed\r\n* Updated NuGet README with v10 by @leekelleher in https://github.com/KevinJump/uSync/pull/393\r\n\r\n---\r\n\r\n## Installing \r\n\r\n```\r\ndotnet add package uSync -v 10.0.0\r\n```\r\n\r\n---\r\n\r\n## Upgrading v9 to v10\r\nMigrating from uSync v9 to uSync 10 shouldn't be to hard, \r\n\r\n- none of the file formats for the uSync files have changes\r\n- All the same features exist for uSync 10 as did for uSync 9\r\n\r\nWe have moved to using a Razor class library for the static files (so javascript, html) that is used in the backoffice for uSync and as such **uSync will nolonger put any files in app_plugins/uSync** -\r\n\r\nAfter upgrading to uSync 10 you shoud either: \r\n    A. Remove all uSync files from app_plugins\r\n   or \r\n    B. run `dotnet clean` the the clean up will remove the files for you. \r\n\r\nAfter upgrade uSync should still be there and everything will sync like just before. \r\n\r\n## Migrating v8 to v10 \r\n\r\nIf you are migrating a site from v8 to v10 then there will be code changes etc you will need to make to your views and custom code, but **if you want to import all of your settings and content uSync will do that for you.**\r\n\r\nuSync 8 will store data in `/usync/v8`  if you copy / rename this folder to `/uSync/v9` then uSync 9 and 10 will import the settings and content into your new v9 or v10 site\r\n\r\n#uSyncAllTheThings \r\n\r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v9.4.0...v10.0.0",
-    "prerelease": false,
-    "umbracoMajor": 10
-  },
-  {
     "package": "Our.Umbraco.MaintenanceMode",
     "title": "Maintenance Mode",
     "category": "Other",
@@ -14698,6 +14711,19 @@
     "publishedAt": "2022-06-16T13:32:18.583+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/10.0.0",
     "githubUrl": "https://github.com/Jumoo/uSync.Complete.Issues/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 10
+  },
+  {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "version": "10.0.0",
+    "publishedAt": "2022-06-16T11:26:11.637+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/10.0.0",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases",
     "notes": null,
     "prerelease": false,
     "umbracoMajor": 10

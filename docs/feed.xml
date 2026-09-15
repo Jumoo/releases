@@ -5,6 +5,35 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync 18.1.4</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.4</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.4</guid>
+      <pubDate>Tue, 15 Sep 2026 11:25:26 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Build and verify the History client's assets in CI by @KevinJump in https://github.com/KevinJump/uSync/pull/1093
+* fix(startup): honour the configured export group by @KevinJump in https://github.com/KevinJump/uSync/pull/1094
+* Respect handler import rules when cleaning missing items by @KevinJump in https://github.com/KevinJump/uSync/pull/1095
+
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.1.3...v18.1.4]]></description>
+    </item>
+    <item>
+      <title>uSync 17.4.2</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v17.4.2</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.4.2</guid>
+      <pubDate>Tue, 15 Sep 2026 11:23:49 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix(startup): honour the ExportAtStartup group by @jamiehdev in https://github.com/KevinJump/uSync/pull/1089
+* fix(history): build client assets before packaging by @jamiehdev in https://github.com/KevinJump/uSync/pull/1091
+* Respect handler import rules when cleaning missing items by @KevinJump in https://github.com/KevinJump/uSync/pull/1092
+* Bring CI workflows in step with v18 by @KevinJump in https://github.com/KevinJump/uSync/pull/1096
+
+## New Contributors
+* @jamiehdev made their first contribution in https://github.com/KevinJump/uSync/pull/1089
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.4.1...v17.4.2]]></description>
+    </item>
+    <item>
       <title>uSync Complete 18.1.3</title>
       <link>https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.1.3</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete.Issues/releases/tag/v18.1.3</guid>
@@ -779,33 +808,6 @@ Published to NuGet.]]></description>
 
 
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.1.0...v18.1.1]]></description>
-    </item>
-    <item>
-      <title>AI Connector 17.4.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.4.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.4.2</guid>
-      <pubDate>Mon, 24 Aug 2026 07:00:02 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Write batch-translated values to translation memory by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/31
-* Bump the npm-dependencies group in /Jumoo.TranslationManager.AI/ai-client with 5 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/29
-
-## New Contributors
-* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/29
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.4.1...v17.4.2]]></description>
-    </item>
-    <item>
-      <title>Linked Pages 18.0.0</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.0</guid>
-      <pubDate>Sun, 23 Aug 2026 19:07:29 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* fix: ensured to read relation type from config by @bielu in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/17
-
-## New Contributors
-* @bielu made their first contribution in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/17
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/release/10.0.0...v18.0.0]]></description>
     </item>
   </channel>
 </rss>
