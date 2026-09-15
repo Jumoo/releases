@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-15T11:51:20.188Z",
+  "generatedAt": "2026-09-15T13:06:57.663Z",
   "packages": [
     {
       "package": "uSync",
-      "syncedThrough": "2026-09-15T11:50:25.065Z",
+      "syncedThrough": "2026-09-15T13:06:44.133Z",
       "months": [
         {
           "month": "2019-01",
@@ -753,7 +753,7 @@
     },
     {
       "package": "uSync.Complete",
-      "syncedThrough": "2026-09-15T11:50:29.032Z",
+      "syncedThrough": "2026-09-15T13:06:44.949Z",
       "months": [
         {
           "month": "2019-08",
@@ -1447,7 +1447,7 @@
     },
     {
       "package": "uSync.Forms",
-      "syncedThrough": "2026-09-15T11:50:33.129Z",
+      "syncedThrough": "2026-09-15T13:06:45.715Z",
       "months": [
         {
           "month": "2021-07",
@@ -1957,7 +1957,7 @@
     },
     {
       "package": "uSync.Umbraco.Commerce",
-      "syncedThrough": "2026-09-15T11:50:37.044Z",
+      "syncedThrough": "2026-09-15T13:06:46.360Z",
       "months": [
         {
           "month": "2023-07",
@@ -2275,7 +2275,7 @@
     },
     {
       "package": "uSync.Cli",
-      "syncedThrough": "2026-09-15T11:50:40.940Z",
+      "syncedThrough": "2026-09-15T13:06:47.100Z",
       "months": [
         {
           "month": "2023-01",
@@ -2641,7 +2641,7 @@
     },
     {
       "package": "uSync.Migrations",
-      "syncedThrough": "2026-09-15T11:50:45.203Z",
+      "syncedThrough": "2026-09-15T13:06:48.055Z",
       "months": [
         {
           "month": "2022-10",
@@ -3031,7 +3031,7 @@
     },
     {
       "package": "uSync.Hangfire",
-      "syncedThrough": "2026-09-15T11:50:49.198Z",
+      "syncedThrough": "2026-09-15T13:06:48.763Z",
       "months": [
         {
           "month": "2025-05",
@@ -3173,7 +3173,7 @@
     },
     {
       "package": "Jumoo.TranslationManager",
-      "syncedThrough": "2026-09-15T11:50:53.283Z",
+      "syncedThrough": "2026-09-15T13:06:49.549Z",
       "months": [
         {
           "month": "2021-03",
@@ -5257,7 +5257,7 @@
     },
     {
       "package": "Umbraco.Community.LinkedPages",
-      "syncedThrough": "2026-09-15T11:50:59.827Z",
+      "syncedThrough": "2026-09-15T13:06:53.915Z",
       "months": [
         {
           "month": "2018-09",
@@ -6039,7 +6039,7 @@
     },
     {
       "package": "Our.Umbraco.MaintenanceMode",
-      "syncedThrough": "2026-09-15T11:51:03.889Z",
+      "syncedThrough": "2026-09-15T13:06:54.647Z",
       "months": [
         {
           "month": "2017-11",
@@ -6901,7 +6901,7 @@
     },
     {
       "package": "uSync.Automate",
-      "syncedThrough": "2026-09-15T11:51:07.892Z",
+      "syncedThrough": "2026-09-15T13:06:55.342Z",
       "months": [
         {
           "month": "2025-08",
@@ -7019,7 +7019,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.Automate",
-      "syncedThrough": "2026-09-15T11:51:11.762Z",
+      "syncedThrough": "2026-09-15T13:06:55.964Z",
       "months": [
         {
           "month": "2025-08",
@@ -7129,7 +7129,7 @@
           "month": "2026-09",
           "issuesOpened": 0,
           "issuesClosed": 0,
-          "prsOpened": 0,
+          "prsOpened": 1,
           "prsMerged": 0,
           "commits": 0
         }
@@ -7137,7 +7137,7 @@
     },
     {
       "package": "Umbraco.Community.PowerToys",
-      "syncedThrough": "2026-09-15T11:51:15.837Z",
+      "syncedThrough": "2026-09-15T13:06:56.873Z",
       "months": [
         {
           "month": "2025-08",
@@ -7365,7 +7365,7 @@
     },
     {
       "package": "Jumoo.Json",
-      "syncedThrough": "2026-09-15T11:51:20.187Z",
+      "syncedThrough": "2026-09-15T13:06:57.663Z",
       "months": [
         {
           "month": "2025-08",

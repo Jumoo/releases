@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T11:50:18.622Z",
+  "generatedAt": "2026-09-15T13:06:40.852Z",
   "packages": [
     {
       "package": "uSync",
@@ -132,6 +132,19 @@
       "lastCommitDate": "2026-08-17T10:44:25Z"
     },
     {
+      "package": "Jumoo.TranslationManager.UmbracoAI",
+      "title": "UmbracoAI Connector",
+      "category": "Translation Connectors",
+      "repo": "Jumoo/Jumoo.TranslationManager.UmbracoAI",
+      "defaultBranch": "v17/main",
+      "lastReleaseTag": "v17.1.0",
+      "lastReleaseDate": "2026-08-20T13:57:07Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.0",
+      "releaseBranch": "v18/main",
+      "commitsSince": 1,
+      "lastCommitDate": "2026-08-20T14:07:27Z"
+    },
+    {
       "package": "Jumoo.TranslationManager.SmartCat",
       "title": "SmartCat Connector",
       "category": "Translation Connectors",
@@ -234,6 +247,19 @@
       "releaseBranch": "v17/main",
       "commitsSince": 1,
       "lastCommitDate": "2026-09-10T10:51:33Z"
+    },
+    {
+      "package": "Jumoo.TranslationManager.LanguageWire",
+      "title": "LanguageWire Connector",
+      "category": "Translation Connectors",
+      "repo": "Jumoo/LanguageWire.Connector",
+      "defaultBranch": "v17/main",
+      "lastReleaseTag": "v17.1.0",
+      "lastReleaseDate": "2026-09-01T14:46:54Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.0",
+      "releaseBranch": "v17/main",
+      "commitsSince": 1,
+      "lastCommitDate": "2026-09-10T10:51:38Z"
     },
     {
       "package": "Jumoo.TranslationManager.GlobalLink",
