@@ -419,15 +419,20 @@ async function fetchBranches(repo) {
 }
 
 async function fetchCompare(repo, base, head) {
-  try {
-    return await fetchJson(
-      `https://api.github.com/repos/${repo}/compare/${encodeURIComponent(base)}...${encodeURIComponent(head)}`,
-      githubHeaders()
-    );
-  } catch (err) {
-    console.warn(`  GitHub compare fetch failed for ${repo} (${base}...${head}): ${err.message}`);
+  const url = `https://api.github.com/repos/${repo}/compare/${encodeURIComponent(base)}...${encodeURIComponent(head)}`;
+  const res = await fetch(url, { headers: githubHeaders() });
+  if (res.ok) return res.json();
+
+  // A tag and a mainline branch with unrelated histories (e.g. an orphaned
+  // branch, or a tag cut from a different mainline) 404 with "no common
+  // ancestor" - that's findReleaseBranch ruling out a candidate, not a
+  // fetch error, so don't warn about it.
+  const body = await res.json().catch(() => null);
+  if (res.status === 404 && /no common ancestor/i.test(body?.message ?? "")) {
     return null;
   }
+  console.warn(`  GitHub compare fetch failed for ${repo} (${base}...${head}): ${res.status} ${res.statusText} fetching ${url}`);
+  return null;
 }
 
 // Only consider long-lived mainline branches ("main", "master", "v17/main",
