@@ -453,10 +453,14 @@ Published to NuGet.]]></description>
     </item>
     <item>
       <title>LanguageWire Connector 17.1.0</title>
-      <link>https://github.com/Jumoo/LanguageWire.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases</guid>
-      <pubDate>Tue, 01 Sep 2026 14:48:02 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.0</guid>
+      <pubDate>Tue, 01 Sep 2026 14:46:54 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add IOptionsTranslationProvider implementation with OptionsDetailLevel support by @KevinJump in https://github.com/Jumoo/LanguageWire.Connector/pull/14
+
+
+**Full Changelog**: https://github.com/Jumoo/LanguageWire.Connector/compare/v17.0.1...v17.1.0]]></description>
     </item>
     <item>
       <title>AI Connector 17.5.0</title>
