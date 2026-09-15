@@ -32,7 +32,12 @@
       },
       "githubRepo": {
         "type": "string",
-        "description": "owner/repo for the matching GitHub releases.",
+        "description": "owner/repo for releases, branches, and commits (the code repo).",
+        "pattern": "^[^/\\s]+/[^/\\s]+$"
+      },
+      "issuesRepo": {
+        "type": "string",
+        "description": "owner/repo for issues and PRs, when different from githubRepo - e.g. a package whose code lives in a private repo but whose issues are tracked in a separate public *.Issues repo. Omit if issues/PRs live in githubRepo itself.",
         "pattern": "^[^/\\s]+/[^/\\s]+$"
       }
     }

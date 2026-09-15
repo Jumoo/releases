@@ -27,7 +27,8 @@ Add an entry to `data/packages.json`. Its shape is described by [`data/packages.
 - `aliasNugetIds` — optional list of prior NuGet IDs the package has shipped under (e.g. after a rename); their version history and download counts are fetched and merged into `nugetId`'s totals. Omit if the package has never changed ID.
 - `title` — display name shown on the site; falls back to `nugetId` if omitted.
 - `category` — groups packages into sections on the homepage (e.g. "uSync", "Integrations"); omit it to leave a package uncategorized — uncategorized packages are listed first, with no heading.
-- `githubRepo` — `owner/repo` for the matching GitHub releases.
+- `githubRepo` — `owner/repo` for releases, branches, and commits (the code repo).
+- `issuesRepo` — optional `owner/repo` for issues and PRs, when different from `githubRepo` — e.g. a package whose code lives in a private repo but whose issues are tracked in a separate public `*.Issues` repo. Omit if issues/PRs live in `githubRepo` itself.
 
 No code changes needed — the next scheduled run (or a manual `workflow_dispatch`) will pick it up.
 

@@ -9,7 +9,8 @@
     "nugetId": "uSync.Complete",
     "title": "uSync Complete",
     "category": "",
-    "githubRepo": "Jumoo/uSync.Complete.Issues"
+    "githubRepo": "Jumoo/uSync.Complete",
+    "issuesRepo": "Jumoo/uSync.Complete.Issues"
   },
   {
     "nugetId": "uSync.Forms",
@@ -45,7 +46,8 @@
     "nugetId": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
-    "githubRepo": "Jumoo/Jumoo.TranslationManager.Issues"
+    "githubRepo": "Jumoo/Jumoo.TranslationManager",
+    "issuesRepo": "Jumoo/Jumoo.TranslationManager.Issues"
   },
   {
     "nugetId": "Jumoo.TranslationManager.AI",

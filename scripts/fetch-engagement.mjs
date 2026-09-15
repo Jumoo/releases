@@ -136,12 +136,15 @@ async function fetchCommitActivity(repo, buckets) {
 }
 
 async function refreshPackage(pkg, months) {
-  console.log(`Refreshing ${pkg.nugetId} / ${pkg.githubRepo}...`);
+  const issuesRepo = pkg.issuesRepo ?? pkg.githubRepo;
+  console.log(
+    `Refreshing ${pkg.nugetId} / ${pkg.githubRepo}${issuesRepo !== pkg.githubRepo ? ` (issues: ${issuesRepo})` : ""}...`
+  );
   const buckets = new Map(months.map((m) => [m, emptyBucket()]));
   const windowStart = `${months[0]}-01T00:00:00Z`;
 
   try {
-    await fetchIssuesAndPrs(pkg.githubRepo, windowStart, buckets);
+    await fetchIssuesAndPrs(issuesRepo, windowStart, buckets);
     await fetchCommitActivity(pkg.githubRepo, buckets);
   } catch (err) {
     console.warn(`  Failed to refresh ${pkg.githubRepo}: ${err.message}`);

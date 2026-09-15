@@ -129,7 +129,10 @@ function fillGaps(buckets) {
 }
 
 async function seedPackage(pkg) {
-  console.log(`Seeding ${pkg.nugetId} / ${pkg.githubRepo}...`);
+  const issuesRepo = pkg.issuesRepo ?? pkg.githubRepo;
+  console.log(
+    `Seeding ${pkg.nugetId} / ${pkg.githubRepo}${issuesRepo !== pkg.githubRepo ? ` (issues: ${issuesRepo})` : ""}...`
+  );
   const buckets = new Map();
   const get = (month) => {
     if (!buckets.has(month)) buckets.set(month, emptyBucket());
@@ -138,7 +141,7 @@ async function seedPackage(pkg) {
   // Proxy so callers can do buckets.get(month) without pre-creating it.
   const bucketsProxy = { get, has: () => true };
 
-  const latestUpdatedAt = await fetchIssuesAndPrs(pkg.githubRepo, bucketsProxy);
+  const latestUpdatedAt = await fetchIssuesAndPrs(issuesRepo, bucketsProxy);
   await fetchCommitActivity(pkg.githubRepo, bucketsProxy);
   fillGaps(buckets);
 
