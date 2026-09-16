@@ -1,5 +1,31 @@
 [
   {
+    "package": "Jumoo.TranslationManager",
+    "title": "Translation Manager",
+    "category": "",
+    "repo": "Jumoo/Jumoo.TranslationManager",
+    "version": "18.3.1",
+    "publishedAt": "2026-09-16T10:08:35Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/18.3.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.1",
+    "notes": "## What's Changed\n* fix(api): Compare against the site's own culture when deduping SiteIds by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/65\n* fix(api): Clone sets before shaping them for a response by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/66\n* Merge v17 into v18 (2026-09-16) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/67\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v18.3.0...v18.3.1",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager",
+    "title": "Translation Manager",
+    "category": "",
+    "repo": "Jumoo/Jumoo.TranslationManager",
+    "version": "17.9.1",
+    "publishedAt": "2026-09-16T10:01:17Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager/17.9.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.1",
+    "notes": "## What's Changed\n* fix(api): Compare against the site's own culture when deduping SiteIds by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/65\n* fix(api): Clone sets before shaping them for a response by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/66\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.9.0...v17.9.1",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.DeepL",
     "title": "DeepL Connector",
     "category": "Translation Connectors",

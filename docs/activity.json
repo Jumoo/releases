@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T04:38:06.826Z",
+  "generatedAt": "2026-09-16T16:42:43.428Z",
   "packages": [
     {
       "package": "uSync",
@@ -98,12 +98,12 @@
       "category": "",
       "repo": "Jumoo/Jumoo.TranslationManager",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.3.0",
-      "lastReleaseDate": "2026-09-14T09:47:14Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.0",
+      "lastReleaseTag": "v18.3.1",
+      "lastReleaseDate": "2026-09-16T10:08:35Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.1",
       "releaseBranch": "v18/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-09-14T09:47:14Z"
+      "lastCommitDate": "2026-09-16T10:08:35Z"
     },
     {
       "package": "Jumoo.TranslationManager.AI",

@@ -5,6 +5,31 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Translation Manager 18.3.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.1</guid>
+      <pubDate>Wed, 16 Sep 2026 10:08:35 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix(api): Compare against the site's own culture when deduping SiteIds by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/65
+* fix(api): Clone sets before shaping them for a response by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/66
+* Merge v17 into v18 (2026-09-16) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/67
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v18.3.0...v18.3.1]]></description>
+    </item>
+    <item>
+      <title>Translation Manager 17.9.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.1</guid>
+      <pubDate>Wed, 16 Sep 2026 10:01:17 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix(api): Compare against the site's own culture when deduping SiteIds by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/65
+* fix(api): Clone sets before shaping them for a response by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/66
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.9.0...v17.9.1]]></description>
+    </item>
+    <item>
       <title>DeepL Connector 17.3.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.3.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.3.0</guid>
@@ -733,47 +758,6 @@ Full changelog: https://github.com/Jumoo/uSync.Complete/blob/v17/main/CHANGELOG.
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases</guid>
       <pubDate>Mon, 24 Aug 2026 20:23:06 GMT</pubDate>
       <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Microsoft Connector 18.1.0</title>
-      <link>https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.1.0</guid>
-      <pubDate>Mon, 24 Aug 2026 10:43:28 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Add per-language Custom Translator category (glossary) mappings by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/1
-* Add repository standards and CI/CD scaffolding by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/2
-* Bump vite-plugin-checker from 0.6.4 to 0.14.5 in /Jumoo.TranslationManager.Microsoft/microsoft-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/3
-* Bump @rollup/plugin-node-resolve from 15.3.1 to 16.0.3 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/4
-* Bump typescript from 5.9.3 to 7.0.2 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/6
-* Bump vite from 5.4.21 to 8.2.0 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/5
-* Add ask-user batch mode and submitted-view debug info by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/8
-* Bump vite from 8.2.0 to 8.2.1 in /Jumoo.TranslationManager.Microsoft/microsoft-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/7
-* Sync v17 features into v18 for parity by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/9
-
-## New Contributors
-* @KevinJump made their first contribution in https://github.com/Jumoo/Microsoft.Connector/pull/1
-* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Microsoft.Connector/pull/3
-
-**Full Changelog**: https://github.com/Jumoo/Microsoft.Connector/commits/release/v18.1.0]]></description>
-    </item>
-    <item>
-      <title>Microsoft Connector 17.1.0</title>
-      <link>https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v17.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v17.1.0</guid>
-      <pubDate>Mon, 24 Aug 2026 08:25:36 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Add repository standards and CI/CD scaffolding by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/2
-* Bump vite-plugin-checker from 0.6.4 to 0.14.5 in /Jumoo.TranslationManager.Microsoft/microsoft-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/3
-* Bump @rollup/plugin-node-resolve from 15.3.1 to 16.0.3 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/4
-* Bump typescript from 5.9.3 to 7.0.2 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/6
-* Bump vite from 5.4.21 to 8.2.0 in /Jumoo.TranslationManager.Microsoft/microsoft-client by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/5
-* Add ask-user batch mode and submitted-view debug info by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/8
-* Bump vite from 8.2.0 to 8.2.1 in /Jumoo.TranslationManager.Microsoft/microsoft-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Microsoft.Connector/pull/7
-
-## New Contributors
-* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Microsoft.Connector/pull/3
-
-**Full Changelog**: https://github.com/Jumoo/Microsoft.Connector/compare/v17.1.0-rc1...release/v17.1.0]]></description>
     </item>
   </channel>
 </rss>
