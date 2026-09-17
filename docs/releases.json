@@ -1,5 +1,31 @@
 [
   {
+    "package": "uSync.Complete",
+    "title": "uSync Complete",
+    "category": "",
+    "repo": "Jumoo/uSync.Complete",
+    "version": "18.1.4",
+    "publishedAt": "2026-09-17T10:58:30Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/18.1.4",
+    "githubUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.1.4",
+    "notes": "## What's Changed\n* Add delete server to the publisher workspace actions menu by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/62\n* Fix missing dependency flag and publicAccess action-merge collision by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/63\n* Fix member group picker not populating exporter selection by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/64\n* Fix PublicAccess sync priority to run after content by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/65\n* Exclude actions folder from Exporter package export by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/66\n* Add push/pull menu actions to Members and Member Groups by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/67\n* Let users pick which servers to sync, fix settings sync wiping other servers by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/73\n* Bump vite from 8.2.2 to 8.3.0 in /uSync.Exporter.Client/usync-exporter-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/68\n* Bump vite from 8.2.2 to 8.3.0 in /uSync.Publisher.Client/usync-publisher-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/69\n* Bump vite from 8.2.2 to 8.3.0 in /uSync.Expansions.Client/usync-expansions-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/70\n* Bump vite from 8.2.2 to 8.3.0 in /uSync.Snapshots.Client/usync-snapshots-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/71\n* Bump the nuget-dependencies group with 1 update by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/72\n* Merge v17/main into v18/main (2026-09-17) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/74\n\n\n**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v18.1.3...release/v18.1.4\n\n## What's Changed\n* Add delete server to the publisher workspace actions menu by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/62\n* Fix missing dependency flag and publicAccess action-merge collision by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/63\n* Fix member group picker not populating exporter selection by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/64\n* Fix PublicAccess sync priority to run after content by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/65\n* Exclude actions folder from Exporter package export by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/66\n* Add push/pull menu actions to Members and Member Groups by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/67\n* Let users pick which servers to sync, fix settings sync wiping other servers by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/73\n* Bump vite from 8.2.2 to 8.3.0 in /uSync.Exporter.Client/usync-exporter-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/68\n* Bump vite from 8.2.2 to 8.3.0 in /uSync.Publisher.Client/usync-publisher-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/69\n* Bump vite from 8.2.2 to 8.3.0 in /uSync.Expansions.Client/usync-expansions-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/70\n* Bump vite from 8.2.2 to 8.3.0 in /uSync.Snapshots.Client/usync-snapshots-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/71\n* Bump the nuget-dependencies group with 1 update by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/72\n* Merge v17/main into v18/main (2026-09-17) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/74\n\n\n**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v18.1.3...release/v18.1.4",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "uSync.Complete",
+    "title": "uSync Complete",
+    "category": "",
+    "repo": "Jumoo/uSync.Complete",
+    "version": "17.4.3",
+    "publishedAt": "2026-09-17T10:14:27.553+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/17.4.3",
+    "githubUrl": "https://github.com/Jumoo/uSync.Complete/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",

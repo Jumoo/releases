@@ -5,6 +5,54 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync Complete 18.1.4</title>
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.1.4</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.1.4</guid>
+      <pubDate>Thu, 17 Sep 2026 10:58:30 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add delete server to the publisher workspace actions menu by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/62
+* Fix missing dependency flag and publicAccess action-merge collision by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/63
+* Fix member group picker not populating exporter selection by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/64
+* Fix PublicAccess sync priority to run after content by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/65
+* Exclude actions folder from Exporter package export by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/66
+* Add push/pull menu actions to Members and Member Groups by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/67
+* Let users pick which servers to sync, fix settings sync wiping other servers by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/73
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Exporter.Client/usync-exporter-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/68
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Publisher.Client/usync-publisher-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/69
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Expansions.Client/usync-expansions-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/70
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Snapshots.Client/usync-snapshots-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/71
+* Bump the nuget-dependencies group with 1 update by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/72
+* Merge v17/main into v18/main (2026-09-17) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/74
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v18.1.3...release/v18.1.4
+
+## What's Changed
+* Add delete server to the publisher workspace actions menu by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/62
+* Fix missing dependency flag and publicAccess action-merge collision by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/63
+* Fix member group picker not populating exporter selection by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/64
+* Fix PublicAccess sync priority to run after content by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/65
+* Exclude actions folder from Exporter package export by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/66
+* Add push/pull menu actions to Members and Member Groups by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/67
+* Let users pick which servers to sync, fix settings sync wiping other servers by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/73
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Exporter.Client/usync-exporter-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/68
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Publisher.Client/usync-publisher-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/69
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Expansions.Client/usync-expansions-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/70
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Snapshots.Client/usync-snapshots-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/71
+* Bump the nuget-dependencies group with 1 update by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/72
+* Merge v17/main into v18/main (2026-09-17) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/74
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v18.1.3...release/v18.1.4]]></description>
+    </item>
+    <item>
+      <title>uSync Complete 17.4.3</title>
+      <link>https://github.com/Jumoo/uSync.Complete/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
+      <pubDate>Thu, 17 Sep 2026 10:14:27 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
       <title>Translation Manager 18.3.1</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.1</guid>
@@ -744,20 +792,6 @@ Full changelog: https://github.com/Jumoo/uSync.Complete/blob/v17/main/CHANGELOG.
 * @henryjump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/1
 
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/commits/v17.1.1]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 18.1.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases</guid>
-      <pubDate>Mon, 24 Aug 2026 20:36:58 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.7.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases</guid>
-      <pubDate>Mon, 24 Aug 2026 20:23:06 GMT</pubDate>
-      <description><![CDATA[]]></description>
     </item>
   </channel>
 </rss>
