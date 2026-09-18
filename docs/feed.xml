@@ -5,6 +5,25 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Jumoo.Processing 17.4.2</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.2</guid>
+      <pubDate>Fri, 18 Sep 2026 08:55:22 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Don't let one broken pipeline processor fail host startup by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/26
+* Node identity, queue claim and SignalR backplane for load balancing by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/29
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/compare/release/v17.4.1...release/v17.4.2
+
+## What's Changed
+* Don't let one broken pipeline processor fail host startup by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/26
+* Node identity, queue claim and SignalR backplane for load balancing by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/29
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/compare/release/v17.4.1...release/v17.4.2]]></description>
+    </item>
+    <item>
       <title>uSync Complete 18.1.4</title>
       <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.1.4</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.1.4</guid>
@@ -779,19 +798,6 @@ Full changelog: https://github.com/Jumoo/uSync.Complete/blob/v17/main/CHANGELOG.
 
 
 **Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/v17.0.1...v17.0.2]]></description>
-    </item>
-    <item>
-      <title>CrowdIn Connector 17.1.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.1.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.1.1</guid>
-      <pubDate>Tue, 25 Aug 2026 10:35:27 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Bring v18/main's repository standards and CI/CD across to v17/main by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/1
-
-## New Contributors
-* @henryjump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/1
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/commits/v17.1.1]]></description>
     </item>
   </channel>
 </rss>
