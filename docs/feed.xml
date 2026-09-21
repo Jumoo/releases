@@ -5,6 +5,140 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Translation Manager 17.9.2</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.2</guid>
+      <pubDate>Mon, 21 Sep 2026 16:32:58 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix(core): Gate core boot on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/71
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.9.1...v17.9.2]]></description>
+    </item>
+    <item>
+      <title>Passthrough Connector 17.0.1</title>
+      <link>https://github.com/Jumoo/Passthrough.Connector/releases/tag/v17.0.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Passthrough.Connector/releases/tag/v17.0.1</guid>
+      <pubDate>Mon, 21 Sep 2026 15:23:43 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Bring repository standards and CI/CD in line with Xliff.Connector by @KevinJump in https://github.com/Jumoo/Passthrough.Connector/pull/1
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Passthrough.Connector/pull/7
+
+
+**Full Changelog**: https://github.com/Jumoo/Passthrough.Connector/compare/v17.0.0...v17.0.1]]></description>
+    </item>
+    <item>
+      <title>Passthrough Connector 17.0.0</title>
+      <link>https://github.com/Jumoo/Passthrough.Connector/releases/tag/v17.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Passthrough.Connector/releases/tag/v17.0.0</guid>
+      <pubDate>Mon, 21 Sep 2026 15:23:42 GMT</pubDate>
+      <description><![CDATA[Backfilled release tag — this version was already published to NuGet from commit 5927b2d but never tagged.]]></description>
+    </item>
+    <item>
+      <title>Xliff Connector 17.0.2</title>
+      <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.2</guid>
+      <pubDate>Mon, 21 Sep 2026 15:18:32 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Bump the working version to 17.0.2 by @KevinJump in https://github.com/Jumoo/Xliff.Connector/pull/9
+* Correct the nuget environment note, point issues at the public repo by @KevinJump in https://github.com/Jumoo/Xliff.Connector/pull/10
+* Update the docs for the v17/main rename by @KevinJump in https://github.com/Jumoo/Xliff.Connector/pull/14
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Xliff.Connector/pull/23
+
+
+**Full Changelog**: https://github.com/Jumoo/Xliff.Connector/compare/v17.0.1...v17.0.2]]></description>
+    </item>
+    <item>
+      <title>Microsoft Connector 17.2.1</title>
+      <link>https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v17.2.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v17.2.1</guid>
+      <pubDate>Mon, 21 Sep 2026 15:17:56 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/13
+
+
+**Full Changelog**: https://github.com/Jumoo/Microsoft.Connector/compare/release/v17.2.0...release/v17.2.1]]></description>
+    </item>
+    <item>
+      <title>LanguageWire Connector 17.1.1</title>
+      <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.1</guid>
+      <pubDate>Mon, 21 Sep 2026 15:17:17 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/LanguageWire.Connector/pull/17
+
+
+**Full Changelog**: https://github.com/Jumoo/LanguageWire.Connector/compare/v17.1.0...v17.1.1]]></description>
+    </item>
+    <item>
+      <title>GlobalLink Connector 17.1.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.1</guid>
+      <pubDate>Mon, 21 Sep 2026 15:16:54 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Bump vite from 8.2.1 to 8.2.2 in /src/Jumoo.TranslationManager.GlobalLink/globallink-client in the npm-dependencies group across 1 directory by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/10
+* Scope the prerelease tag lookup to the current major by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/14
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/17
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/compare/v17.1.0...v17.1.1]]></description>
+    </item>
+    <item>
+      <title>UmbracoAI Connector 17.1.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.1</guid>
+      <pubDate>Mon, 21 Sep 2026 15:16:30 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/pull/11
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/compare/v17.1.0...v17.1.1]]></description>
+    </item>
+    <item>
+      <title>CrowdIn Connector 17.2.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.1</guid>
+      <pubDate>Mon, 21 Sep 2026 15:16:14 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/8
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/compare/v17.2.0...v17.2.1]]></description>
+    </item>
+    <item>
+      <title>AI Connector 17.6.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.6.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.6.1</guid>
+      <pubDate>Mon, 21 Sep 2026 15:15:52 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/50
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.6.0...v17.6.1]]></description>
+    </item>
+    <item>
+      <title>Google Connector 17.1.1</title>
+      <link>https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.1</guid>
+      <pubDate>Mon, 21 Sep 2026 15:15:27 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Google.Connector/pull/8
+
+
+**Full Changelog**: https://github.com/Jumoo/Google.Connector/compare/v17.1.0...v17.1.1]]></description>
+    </item>
+    <item>
+      <title>DeepL Connector 17.3.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.3.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.3.1</guid>
+      <pubDate>Mon, 21 Sep 2026 15:15:06 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/22
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.3.0...v17.3.1]]></description>
+    </item>
+    <item>
       <title>Jumoo.Processing 17.4.2</title>
       <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.2</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.2</guid>
@@ -682,122 +816,6 @@ Full changelog: https://github.com/Jumoo/uSync.Complete/blob/v17/main/CHANGELOG.
 
 
 **Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.0.0-rc2...v17.0.0]]></description>
-    </item>
-    <item>
-      <title>Translation Manager Automate 17.0.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0</guid>
-      <pubDate>Wed, 26 Aug 2026 09:13:38 GMT</pubDate>
-      <description><![CDATA[**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Automate/commits/v17.0.0]]></description>
-    </item>
-    <item>
-      <title>uSync Automate 17.0.0</title>
-      <link>https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.0</guid>
-      <pubDate>Wed, 26 Aug 2026 09:12:16 GMT</pubDate>
-      <description><![CDATA[**Full Changelog**: https://github.com/Jumoo/uSync.Automate/compare/v17.0.0-beta1...v17.0.0]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 18.1.1</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
-      <pubDate>Wed, 26 Aug 2026 09:06:22 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync 18.1.2</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.2</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.2</guid>
-      <pubDate>Wed, 26 Aug 2026 07:28:03 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Merge v17/main into v18/main (2026-08-26) by @KevinJump in https://github.com/KevinJump/uSync/pull/1050
-
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.1.1...v18.1.2]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Processing 18.1.1</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases</guid>
-      <pubDate>Wed, 26 Aug 2026 07:16:37 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 17.4.0</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
-      <pubDate>Wed, 26 Aug 2026 06:46:20 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Processing 17.4.0</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.4.0</guid>
-      <pubDate>Tue, 25 Aug 2026 19:40:28 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Add cancellation token support and prune the pipeline cache table by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/11
-* Bring v18/main's CI/CD pipeline and repository standards to v17/main by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/12
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/commits/release/v17.4.0]]></description>
-    </item>
-    <item>
-      <title>uSync 17.3.8</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v17.3.8</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.3.8</guid>
-      <pubDate>Tue, 25 Aug 2026 15:50:15 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Add non-breaking async callback surface to uSyncCallbacks by @KevinJump in https://github.com/KevinJump/uSync/pull/1049
-
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.3.7...v17.3.8]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Processing 17.4.0-rc1</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases</guid>
-      <pubDate>Tue, 25 Aug 2026 15:42:17 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>Maintenance Mode 17.1.4</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.1.4</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.1.4</guid>
-      <pubDate>Tue, 25 Aug 2026 15:00:35 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Pack and push Core/Client/Assets as their own NuGet packages by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/92
-
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v17.1.3...v17.1.4]]></description>
-    </item>
-    <item>
-      <title>Linked Pages 18.0.4</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.4</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.4</guid>
-      <pubDate>Tue, 25 Aug 2026 14:19:39 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* chore: add open-source governance docs and CI workflow by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/21
-* Bump esbuild from 0.27.4 to 0.28.1 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/22
-* Bump @hey-api/openapi-ts from 0.97.0 to 0.97.3 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/23
-* Bump ws from 7.5.10 to 7.5.13 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/24
-* Bump postcss from 8.5.8 to 8.5.24 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/25
-* Add standard repository files and CI/CD workflows by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/26
-
-## New Contributors
-* @henryjump made their first contribution in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/21
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/v18.0.0...v18.0.4]]></description>
-    </item>
-    <item>
-      <title>uSync Migrations 17.0.2</title>
-      <link>https://github.com/Jumoo/uSyncMigrations/releases/tag/v17.0.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSyncMigrations/releases/tag/v17.0.2</guid>
-      <pubDate>Tue, 25 Aug 2026 12:49:59 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Build and pack the backoffice client's assets by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/324
-
-
-**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/v17.0.1...v17.0.2]]></description>
     </item>
   </channel>
 </rss>
