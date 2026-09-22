@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-22T04:38:50.030Z",
+  "generatedAt": "2026-09-22T16:49:08.244Z",
   "packages": [
     {
       "package": "uSync",
-      "syncedThrough": "2026-09-22T04:38:40.183Z",
+      "syncedThrough": "2026-09-22T16:48:06.902Z",
       "months": [
         {
           "month": "2019-01",
@@ -753,7 +753,7 @@
     },
     {
       "package": "uSync.Complete",
-      "syncedThrough": "2026-09-22T04:38:40.804Z",
+      "syncedThrough": "2026-09-22T16:48:11.296Z",
       "months": [
         {
           "month": "2019-08",
@@ -1447,7 +1447,7 @@
     },
     {
       "package": "uSync.Forms",
-      "syncedThrough": "2026-09-22T04:38:41.386Z",
+      "syncedThrough": "2026-09-22T16:48:15.539Z",
       "months": [
         {
           "month": "2021-07",
@@ -1957,7 +1957,7 @@
     },
     {
       "package": "uSync.Umbraco.Commerce",
-      "syncedThrough": "2026-09-22T04:38:41.924Z",
+      "syncedThrough": "2026-09-22T16:48:20.092Z",
       "months": [
         {
           "month": "2023-07",
@@ -2275,7 +2275,7 @@
     },
     {
       "package": "uSync.Cli",
-      "syncedThrough": "2026-09-22T04:38:42.430Z",
+      "syncedThrough": "2026-09-22T16:48:24.807Z",
       "months": [
         {
           "month": "2023-01",
@@ -2641,7 +2641,7 @@
     },
     {
       "package": "uSync.Migrations",
-      "syncedThrough": "2026-09-22T04:38:43.188Z",
+      "syncedThrough": "2026-09-22T16:48:29.501Z",
       "months": [
         {
           "month": "2022-10",
@@ -3031,7 +3031,7 @@
     },
     {
       "package": "uSync.Hangfire",
-      "syncedThrough": "2026-09-22T04:38:43.755Z",
+      "syncedThrough": "2026-09-22T16:48:33.988Z",
       "months": [
         {
           "month": "2025-05",
@@ -3173,7 +3173,7 @@
     },
     {
       "package": "Jumoo.TranslationManager",
-      "syncedThrough": "2026-09-22T04:38:44.383Z",
+      "syncedThrough": "2026-09-22T16:48:38.463Z",
       "months": [
         {
           "month": "2021-03",
@@ -3706,10 +3706,10 @@
         {
           "month": "2026-09",
           "issuesOpened": 0,
-          "issuesClosed": 0,
+          "issuesClosed": 1,
           "prsOpened": 1,
           "prsMerged": 1,
-          "commits": 103
+          "commits": 109
         }
       ]
     },
@@ -5257,7 +5257,7 @@
     },
     {
       "package": "Umbraco.Community.LinkedPages",
-      "syncedThrough": "2026-09-22T04:38:46.800Z",
+      "syncedThrough": "2026-09-22T16:48:45.877Z",
       "months": [
         {
           "month": "2018-09",
@@ -6039,7 +6039,7 @@
     },
     {
       "package": "Our.Umbraco.MaintenanceMode",
-      "syncedThrough": "2026-09-22T04:38:47.494Z",
+      "syncedThrough": "2026-09-22T16:48:50.427Z",
       "months": [
         {
           "month": "2017-11",
@@ -6901,7 +6901,7 @@
     },
     {
       "package": "uSync.Automate",
-      "syncedThrough": "2026-09-22T04:38:48.029Z",
+      "syncedThrough": "2026-09-22T16:48:54.757Z",
       "months": [
         {
           "month": "2025-08",
@@ -7019,7 +7019,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.Automate",
-      "syncedThrough": "2026-09-22T04:38:48.536Z",
+      "syncedThrough": "2026-09-22T16:48:58.857Z",
       "months": [
         {
           "month": "2025-08",
@@ -7129,7 +7129,7 @@
           "month": "2026-09",
           "issuesOpened": 0,
           "issuesClosed": 0,
-          "prsOpened": 1,
+          "prsOpened": 2,
           "prsMerged": 0,
           "commits": 0
         }
@@ -7137,7 +7137,7 @@
     },
     {
       "package": "Umbraco.Community.PowerToys",
-      "syncedThrough": "2026-09-22T04:38:49.262Z",
+      "syncedThrough": "2026-09-22T16:49:03.451Z",
       "months": [
         {
           "month": "2025-08",
@@ -7365,7 +7365,7 @@
     },
     {
       "package": "Jumoo.Json",
-      "syncedThrough": "2026-09-22T04:38:50.030Z",
+      "syncedThrough": "2026-09-22T16:49:08.244Z",
       "months": [
         {
           "month": "2025-08",
@@ -7475,7 +7475,7 @@
           "month": "2026-09",
           "issuesOpened": 0,
           "issuesClosed": 0,
-          "prsOpened": 7,
+          "prsOpened": 8,
           "prsMerged": 2,
           "commits": 1
         }
