@@ -5,6 +5,58 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Jumoo.Processing 18.2.0</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.2.0</guid>
+      <pubDate>Thu, 24 Sep 2026 10:33:05 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* rc1 build (with improved Jumoo.Json core) by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/1
+* Document the move from Azure DevOps to GitHub by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/2
+* CI safety net + repo hygiene (phases 1 and 2) by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/3
+* Versioning: make release/v* tags authoritative, migrate to GitVersion 6 by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/4
+* Release from CI on a tag; retire the local packaging script by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/5
+* Quality gates: coverage visibility, linting, C# formatting, npm audit by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/6
+* Take the release version from the tag, so RCs work by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/7
+* Treat an already-published npm version as success by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/8
+* Publish NuGet packages to nuget.org via trusted publishing by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/9
+* Update changelog for 18.1.0 by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/10
+* Add cancellation token support and prune the pipeline cache table by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/16
+* Merge v17/main into v18/main (2026-09-14) by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/27
+* Merge v17/main into v18/main (2026-09-24) by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/30
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/compare/release/v17.4.2...release/v18.2.0
+
+## What's Changed
+* rc1 build (with improved Jumoo.Json core) by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/1
+* Document the move from Azure DevOps to GitHub by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/2
+* CI safety net + repo hygiene (phases 1 and 2) by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/3
+* Versioning: make release/v* tags authoritative, migrate to GitVersion 6 by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/4
+* Release from CI on a tag; retire the local packaging script by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/5
+* Quality gates: coverage visibility, linting, C# formatting, npm audit by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/6
+* Take the release version from the tag, so RCs work by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/7
+* Treat an already-published npm version as success by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/8
+* Publish NuGet packages to nuget.org via trusted publishing by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/9
+* Update changelog for 18.1.0 by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/10
+* Add cancellation token support and prune the pipeline cache table by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/16
+* Merge v17/main into v18/main (2026-09-14) by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/27
+* Merge v17/main into v18/main (2026-09-24) by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/30
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/compare/release/v17.4.2...release/v18.2.0]]></description>
+    </item>
+    <item>
+      <title>Jumoo.Processing 18.1.1</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.1.1</guid>
+      <pubDate>Thu, 24 Sep 2026 10:29:56 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add cancellation token support and prune the pipeline cache table by @KevinJump in https://github.com/Jumoo/Jumoo.Processing/pull/16
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/compare/release/v18.1.0...release/v18.1.1]]></description>
+    </item>
+    <item>
       <title>uSync Complete 17.4.3</title>
       <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.4.3</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.4.3</guid>
@@ -851,42 +903,6 @@ Full changelog: https://github.com/Jumoo/uSync.Complete/blob/v17/main/CHANGELOG.
 
 
 **Full Changelog**: https://github.com/Jumoo/Google.Connector/compare/v17.1.0-beta...v17.1.0]]></description>
-    </item>
-    <item>
-      <title>DeepL Connector 17.2.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.2.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.2.0</guid>
-      <pubDate>Tue, 01 Sep 2026 14:38:00 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Dev/glossaries by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/1
-* V17/base class by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/2
-* Add repository standards and CI/CD, matching Xliff.Connector by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/3
-* Bump @hey-api/openapi-ts from 0.95.0 to 0.99.0 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/4
-* Bump chalk from 5.6.2 to 6.0.0 in /Jumoo.TranslationManager.DeepL/deepl-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/5
-* Bump typescript from 6.0.3 to 7.0.2 in /Jumoo.TranslationManager.DeepL/deepl-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/6
-* Stop per-developer test site config from leaking into commits by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/15
-* Bump vite from 8.2.0 to 8.2.2 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group across 1 directory by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/14
-* Add IOptionsTranslationProvider with OptionsDetailLevel support by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/16
-
-## New Contributors
-* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/4
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/commits/v17.2.0]]></description>
-    </item>
-    <item>
-      <title>uSync CLI 17.0.0</title>
-      <link>https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.0.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.0.0</guid>
-      <pubDate>Wed, 26 Aug 2026 16:39:47 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* add setup package. by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/13
-* if the server url isn't passed in the parameters, look in config, to see if you can find it. by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/12
-* Migrate to Umbraco/uSync v17 (net10.0) by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/16
-* Sync v16/main into v17/main by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/17
-* Add dependabot config by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/18
-
-
-**Full Changelog**: https://github.com/Jumoo/uSync.CommandLine/compare/v16.0.0...v17.0.0]]></description>
     </item>
   </channel>
 </rss>
