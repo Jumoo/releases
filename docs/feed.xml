@@ -93,33 +93,7 @@
 
 
 Dependency updates for the backoffice client packages are also included.
-
-
-## What's Changed
-* Server affinity: stage 1 of load-balancing support by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/61
-* Adopt explicit IProcessingOptions discriminator registration by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/75
-* Fix uSync.Snapshots localization not loading for default 'en' culture by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/76
-* Simplify unsaved-changes confirm dialog options by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/77
-* Harden publisher HMAC authentication (no wire-format changes) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/78
-* Add server capability negotiation, starting with host signing by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/79
-* Remember a nonce for as long as its signature stays valid by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/80
-* Sign the request body and fix the URL canonicalisation (signed-request-v2) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/81
-* Add list view to Publisher content/media browsers by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/83
-* Add paging, sorting, search, and URL persistence to the Publisher browser by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/84
-* Add server identifier header app to Publisher by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/85
-* 17.5.0 release review fixes by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/86
-* 17.5.0 release review follow-ups by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/87
-* v17.5.0 — server affinity, publisher auth hardening, request signing v2 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/82
-* Default the appearance of newly added servers by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/88
-* Page restore point and snapshot exports through content and media by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/89
-* Bump prettier from 3.9.6 to 3.9.8 in /uSync.Snapshots.Client/usync-snapshots-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/90
-* Bump the npm-dependencies group in /uSync.Exporter.Client/usync-exporter-assets with 2 updates by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/91
-* Bump the npm-dependencies group in /uSync.Publisher.Client/usync-publisher-assets with 2 updates by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/92
-* Bump the npm-dependencies group in /uSync.Expansions.Client/usync-expansions-assets with 2 updates by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/93
-* Stop probing the default server for capabilities by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/94
-
-
-**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.4.3...release/v17.5.0-rc1]]></description>
+]]></description>
     </item>
     <item>
       <title>Translation Manager 17.9.2</title>
