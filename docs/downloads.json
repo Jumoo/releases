@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-23T16:44:27.223Z",
+  "generatedAt": "2026-09-24T04:31:51.236Z",
   "packages": [
     {
       "package": "uSync",
       "title": "uSync",
-      "totalDownloads": 7026126,
+      "totalDownloads": 7028322,
       "versions": [
         {
           "version": "1.5.2",
@@ -152,7 +152,7 @@
         },
         {
           "version": "3.3.4.740",
-          "downloads": 63833
+          "downloads": 63834
         },
         {
           "version": "4.0.0.760",
@@ -160,11 +160,11 @@
         },
         {
           "version": "4.0.1",
-          "downloads": 7337
+          "downloads": 7339
         },
         {
           "version": "4.0.2",
-          "downloads": 111412
+          "downloads": 111414
         },
         {
           "version": "4.0.4",
@@ -172,19 +172,19 @@
         },
         {
           "version": "4.0.5",
-          "downloads": 192288
+          "downloads": 192289
         },
         {
           "version": "4.0.8",
-          "downloads": 21189
+          "downloads": 21191
         },
         {
           "version": "4.0.9",
-          "downloads": 73056
+          "downloads": 73057
         },
         {
           "version": "4.0.10",
-          "downloads": 96286
+          "downloads": 96287
         },
         {
           "version": "4.0.13",
@@ -192,15 +192,15 @@
         },
         {
           "version": "4.0.14",
-          "downloads": 252916
+          "downloads": 252918
         },
         {
           "version": "4.0.15",
-          "downloads": 123275
+          "downloads": 123276
         },
         {
           "version": "4.0.16",
-          "downloads": 88874
+          "downloads": 88876
         },
         {
           "version": "8.0.0-rc1",
@@ -232,7 +232,7 @@
         },
         {
           "version": "8.2.2",
-          "downloads": 16132
+          "downloads": 16134
         },
         {
           "version": "8.2.3",
@@ -244,7 +244,7 @@
         },
         {
           "version": "8.3.0",
-          "downloads": 20282
+          "downloads": 20283
         },
         {
           "version": "8.3.1",
@@ -260,11 +260,11 @@
         },
         {
           "version": "8.4.3",
-          "downloads": 17305
+          "downloads": 17310
         },
         {
           "version": "8.5.0",
-          "downloads": 53418
+          "downloads": 53419
         },
         {
           "version": "8.5.1",
@@ -276,7 +276,7 @@
         },
         {
           "version": "8.6.1",
-          "downloads": 30466
+          "downloads": 30469
         },
         {
           "version": "8.6.2",
@@ -308,7 +308,7 @@
         },
         {
           "version": "8.7.2",
-          "downloads": 81908
+          "downloads": 81910
         },
         {
           "version": "8.8.1",
@@ -316,11 +316,11 @@
         },
         {
           "version": "8.8.3",
-          "downloads": 73171
+          "downloads": 73173
         },
         {
           "version": "8.8.4",
-          "downloads": 20107
+          "downloads": 20108
         },
         {
           "version": "8.8.5",
@@ -332,7 +332,7 @@
         },
         {
           "version": "8.9.1",
-          "downloads": 60383
+          "downloads": 60384
         },
         {
           "version": "8.9.2",
@@ -348,7 +348,7 @@
         },
         {
           "version": "8.9.5",
-          "downloads": 44398
+          "downloads": 44399
         },
         {
           "version": "8.9.6",
@@ -368,15 +368,15 @@
         },
         {
           "version": "8.10.2",
-          "downloads": 19729
+          "downloads": 19731
         },
         {
           "version": "8.10.4",
-          "downloads": 38449
+          "downloads": 38452
         },
         {
           "version": "8.10.5",
-          "downloads": 23901
+          "downloads": 23908
         },
         {
           "version": "8.10.6",
@@ -384,15 +384,15 @@
         },
         {
           "version": "8.10.7",
-          "downloads": 279880
+          "downloads": 279963
         },
         {
           "version": "8.11.0",
-          "downloads": 109266
+          "downloads": 109279
         },
         {
           "version": "8.11.1",
-          "downloads": 27265
+          "downloads": 27266
         },
         {
           "version": "8.11.2",
@@ -408,19 +408,19 @@
         },
         {
           "version": "8.11.5",
-          "downloads": 2125
+          "downloads": 2126
         },
         {
           "version": "8.11.6",
-          "downloads": 36894
+          "downloads": 36902
         },
         {
           "version": "8.11.7",
-          "downloads": 47612
+          "downloads": 47636
         },
         {
           "version": "8.11.8",
-          "downloads": 32876
+          "downloads": 32894
         },
         {
           "version": "9.0.0",
@@ -460,7 +460,7 @@
         },
         {
           "version": "9.4.0",
-          "downloads": 92500
+          "downloads": 92501
         },
         {
           "version": "10.0.0-beta1",
@@ -472,15 +472,15 @@
         },
         {
           "version": "10.0.0",
-          "downloads": 73783
+          "downloads": 73789
         },
         {
           "version": "10.1.0",
-          "downloads": 83825
+          "downloads": 83841
         },
         {
           "version": "10.2.0",
-          "downloads": 24672
+          "downloads": 24673
         },
         {
           "version": "10.2.1",
@@ -488,7 +488,7 @@
         },
         {
           "version": "10.3.0",
-          "downloads": 119593
+          "downloads": 119603
         },
         {
           "version": "10.3.1-beta001",
@@ -496,7 +496,7 @@
         },
         {
           "version": "10.3.2",
-          "downloads": 57923
+          "downloads": 57924
         },
         {
           "version": "10.3.3",
@@ -508,19 +508,19 @@
         },
         {
           "version": "10.5.0",
-          "downloads": 41643
+          "downloads": 41644
         },
         {
           "version": "10.6.0",
-          "downloads": 14669
+          "downloads": 14670
         },
         {
           "version": "10.6.1",
-          "downloads": 123062
+          "downloads": 123087
         },
         {
           "version": "10.6.2",
-          "downloads": 36913
+          "downloads": 36917
         },
         {
           "version": "10.7.0",
@@ -536,7 +536,7 @@
         },
         {
           "version": "10.7.3",
-          "downloads": 60540
+          "downloads": 60551
         },
         {
           "version": "11.0.0-rc3",
@@ -560,7 +560,7 @@
         },
         {
           "version": "11.1.0",
-          "downloads": 43837
+          "downloads": 43838
         },
         {
           "version": "11.2.0",
@@ -568,7 +568,7 @@
         },
         {
           "version": "11.2.1",
-          "downloads": 61348
+          "downloads": 61349
         },
         {
           "version": "12.0.0-rc1",
@@ -576,11 +576,11 @@
         },
         {
           "version": "12.0.2",
-          "downloads": 45249
+          "downloads": 45257
         },
         {
           "version": "12.1.0",
-          "downloads": 62324
+          "downloads": 62325
         },
         {
           "version": "12.2.0-rc1",
@@ -596,7 +596,7 @@
         },
         {
           "version": "12.2.2",
-          "downloads": 98703
+          "downloads": 98704
         },
         {
           "version": "12.2.3",
@@ -604,7 +604,7 @@
         },
         {
           "version": "12.2.4",
-          "downloads": 12558
+          "downloads": 12559
         },
         {
           "version": "13.0.0-rc1",
@@ -616,11 +616,11 @@
         },
         {
           "version": "13.0.0",
-          "downloads": 68427
+          "downloads": 68451
         },
         {
           "version": "13.0.1",
-          "downloads": 77205
+          "downloads": 77208
         },
         {
           "version": "13.1.0-beta01",
@@ -628,11 +628,11 @@
         },
         {
           "version": "13.1.0",
-          "downloads": 43058
+          "downloads": 43075
         },
         {
           "version": "13.1.1",
-          "downloads": 15870
+          "downloads": 15883
         },
         {
           "version": "13.1.2",
@@ -640,7 +640,7 @@
         },
         {
           "version": "13.1.3",
-          "downloads": 83395
+          "downloads": 83427
         },
         {
           "version": "13.2.0",
@@ -652,39 +652,39 @@
         },
         {
           "version": "13.2.2",
-          "downloads": 45907
+          "downloads": 45910
         },
         {
           "version": "13.2.3",
-          "downloads": 86695
+          "downloads": 86723
         },
         {
           "version": "13.2.4",
-          "downloads": 97194
+          "downloads": 97226
         },
         {
           "version": "13.2.5",
-          "downloads": 266954
+          "downloads": 266999
         },
         {
           "version": "13.2.6",
-          "downloads": 176971
+          "downloads": 176995
         },
         {
           "version": "13.2.7",
-          "downloads": 176502
+          "downloads": 176569
         },
         {
           "version": "13.3.0",
-          "downloads": 3749
+          "downloads": 3753
         },
         {
           "version": "13.3.1",
-          "downloads": 70082
+          "downloads": 70096
         },
         {
           "version": "13.3.2",
-          "downloads": 177218
+          "downloads": 177445
         },
         {
           "version": "14.0.0-rc1",
@@ -700,7 +700,7 @@
         },
         {
           "version": "14.0.0",
-          "downloads": 13693
+          "downloads": 13694
         },
         {
           "version": "14.0.1-preview001",
@@ -708,63 +708,63 @@
         },
         {
           "version": "14.2.0",
-          "downloads": 10061
+          "downloads": 10063
         },
         {
           "version": "14.2.1",
-          "downloads": 3055
+          "downloads": 3056
         },
         {
           "version": "14.2.2",
-          "downloads": 13255
+          "downloads": 13258
         },
         {
           "version": "14.2.3",
-          "downloads": 29178
+          "downloads": 29183
         },
         {
           "version": "15.0.0",
-          "downloads": 3679
+          "downloads": 3680
         },
         {
           "version": "15.0.1",
-          "downloads": 6621
+          "downloads": 6622
         },
         {
           "version": "15.0.2",
-          "downloads": 4237
+          "downloads": 4238
         },
         {
           "version": "15.1.0",
-          "downloads": 10209
+          "downloads": 10212
         },
         {
           "version": "15.1.1",
-          "downloads": 12289
+          "downloads": 12291
         },
         {
           "version": "15.1.2",
-          "downloads": 6452
+          "downloads": 6453
         },
         {
           "version": "15.1.3",
-          "downloads": 5700
+          "downloads": 5701
         },
         {
           "version": "15.1.5",
-          "downloads": 12806
+          "downloads": 12807
         },
         {
           "version": "15.1.6",
-          "downloads": 23043
+          "downloads": 23044
         },
         {
           "version": "15.1.8",
-          "downloads": 20151
+          "downloads": 20153
         },
         {
           "version": "15.1.9",
-          "downloads": 13017
+          "downloads": 13019
         },
         {
           "version": "16.0.0-beta01",
@@ -784,35 +784,35 @@
         },
         {
           "version": "16.0.0",
-          "downloads": 25538
+          "downloads": 25539
         },
         {
           "version": "16.0.1",
-          "downloads": 3108
+          "downloads": 3109
         },
         {
           "version": "16.0.2",
-          "downloads": 28736
+          "downloads": 28742
         },
         {
           "version": "16.0.3",
-          "downloads": 2064
+          "downloads": 2065
         },
         {
           "version": "16.0.4",
-          "downloads": 18711
+          "downloads": 18714
         },
         {
           "version": "16.0.5",
-          "downloads": 8721
+          "downloads": 8722
         },
         {
           "version": "16.0.8",
-          "downloads": 5582
+          "downloads": 5583
         },
         {
           "version": "16.1.0",
-          "downloads": 72521
+          "downloads": 72568
         },
         {
           "version": "16.2.0-beta01",
@@ -840,19 +840,19 @@
         },
         {
           "version": "17.0.0",
-          "downloads": 17173
+          "downloads": 17187
         },
         {
           "version": "17.0.1",
-          "downloads": 29920
+          "downloads": 29926
         },
         {
           "version": "17.0.2",
-          "downloads": 40015
+          "downloads": 40045
         },
         {
           "version": "17.0.4",
-          "downloads": 64184
+          "downloads": 64253
         },
         {
           "version": "17.1.0-rc1",
@@ -860,15 +860,15 @@
         },
         {
           "version": "17.3.0",
-          "downloads": 23561
+          "downloads": 23574
         },
         {
           "version": "17.3.1",
-          "downloads": 27728
+          "downloads": 27764
         },
         {
           "version": "17.3.2",
-          "downloads": 35521
+          "downloads": 35570
         },
         {
           "version": "17.3.3-rc",
@@ -876,39 +876,39 @@
         },
         {
           "version": "17.3.3",
-          "downloads": 1755
+          "downloads": 1768
         },
         {
           "version": "17.3.4",
-          "downloads": 2618
+          "downloads": 2623
         },
         {
           "version": "17.3.5",
-          "downloads": 51235
+          "downloads": 51562
         },
         {
           "version": "17.3.6",
-          "downloads": 31418
+          "downloads": 31579
         },
         {
           "version": "17.3.7",
-          "downloads": 9223
+          "downloads": 9316
         },
         {
           "version": "17.3.8",
-          "downloads": 8634
+          "downloads": 8707
         },
         {
           "version": "17.4.0",
-          "downloads": 1865
+          "downloads": 1889
         },
         {
           "version": "17.4.1",
-          "downloads": 834
+          "downloads": 849
         },
         {
           "version": "17.4.2",
-          "downloads": 1963
+          "downloads": 2131
         },
         {
           "version": "18.0.0-rc1",
@@ -916,42 +916,42 @@
         },
         {
           "version": "18.0.0",
-          "downloads": 4046
+          "downloads": 4059
         },
         {
           "version": "18.0.1",
-          "downloads": 2273
+          "downloads": 2275
         },
         {
           "version": "18.0.3",
-          "downloads": 5734
+          "downloads": 5752
         },
         {
           "version": "18.1.0",
-          "downloads": 2633
+          "downloads": 2648
         },
         {
           "version": "18.1.1",
-          "downloads": 3002
+          "downloads": 3009
         },
         {
           "version": "18.1.2",
-          "downloads": 5768
+          "downloads": 5803
         },
         {
           "version": "18.1.3",
-          "downloads": 696
+          "downloads": 710
         },
         {
           "version": "18.1.4",
-          "downloads": 1552
+          "downloads": 1637
         }
       ]
     },
     {
       "package": "uSync.Complete",
       "title": "uSync Complete",
-      "totalDownloads": 1537681,
+      "totalDownloads": 1538265,
       "versions": [
         {
           "version": "8.2.0-beta1",
@@ -999,7 +999,7 @@
         },
         {
           "version": "8.5.0.1",
-          "downloads": 2283
+          "downloads": 2284
         },
         {
           "version": "8.5.1",
@@ -1043,7 +1043,7 @@
         },
         {
           "version": "8.8.1",
-          "downloads": 2952
+          "downloads": 2953
         },
         {
           "version": "8.8.3",
@@ -1107,7 +1107,7 @@
         },
         {
           "version": "8.11.2",
-          "downloads": 6514
+          "downloads": 6516
         },
         {
           "version": "8.11.3",
@@ -1131,7 +1131,7 @@
         },
         {
           "version": "8.11.7",
-          "downloads": 267037
+          "downloads": 267121
         },
         {
           "version": "8.11.8",
@@ -1155,7 +1155,7 @@
         },
         {
           "version": "8.11.13",
-          "downloads": 9763
+          "downloads": 9765
         },
         {
           "version": "8.11.14",
@@ -1167,7 +1167,7 @@
         },
         {
           "version": "9.0.1",
-          "downloads": 1932
+          "downloads": 1933
         },
         {
           "version": "9.0.4",
@@ -1179,7 +1179,7 @@
         },
         {
           "version": "9.1.0",
-          "downloads": 2334
+          "downloads": 2335
         },
         {
           "version": "9.2.0",
@@ -1211,7 +1211,7 @@
         },
         {
           "version": "10.3.0",
-          "downloads": 30432
+          "downloads": 30434
         },
         {
           "version": "10.4.0",
@@ -1247,11 +1247,11 @@
         },
         {
           "version": "10.7.3",
-          "downloads": 9622
+          "downloads": 9623
         },
         {
           "version": "10.7.4",
-          "downloads": 7238
+          "downloads": 7240
         },
         {
           "version": "11.0.0",
@@ -1267,7 +1267,7 @@
         },
         {
           "version": "11.1.0",
-          "downloads": 17418
+          "downloads": 17419
         },
         {
           "version": "11.2.0",
@@ -1299,7 +1299,7 @@
         },
         {
           "version": "12.2.3",
-          "downloads": 7696
+          "downloads": 7697
         },
         {
           "version": "12.2.5",
@@ -1311,7 +1311,7 @@
         },
         {
           "version": "13.0.0-rc3",
-          "downloads": 265
+          "downloads": 266
         },
         {
           "version": "13.0.0",
@@ -1339,35 +1339,35 @@
         },
         {
           "version": "13.1.3",
-          "downloads": 36188
+          "downloads": 36202
         },
         {
           "version": "13.1.4",
-          "downloads": 27578
+          "downloads": 27586
         },
         {
           "version": "13.1.5",
-          "downloads": 26614
+          "downloads": 26616
         },
         {
           "version": "13.1.6",
-          "downloads": 9699
+          "downloads": 9700
         },
         {
           "version": "13.1.7",
-          "downloads": 34644
+          "downloads": 34655
         },
         {
           "version": "13.1.8",
-          "downloads": 56669
+          "downloads": 56680
         },
         {
           "version": "13.1.9",
-          "downloads": 53869
+          "downloads": 53877
         },
         {
           "version": "13.1.10",
-          "downloads": 44501
+          "downloads": 44509
         },
         {
           "version": "13.2.0",
@@ -1375,19 +1375,19 @@
         },
         {
           "version": "13.2.1",
-          "downloads": 19255
+          "downloads": 19256
         },
         {
           "version": "13.2.2",
-          "downloads": 20987
+          "downloads": 20998
         },
         {
           "version": "13.2.3",
-          "downloads": 43808
+          "downloads": 43823
         },
         {
           "version": "13.2.4",
-          "downloads": 15767
+          "downloads": 15853
         },
         {
           "version": "14.0.0-preview001",
@@ -1399,7 +1399,7 @@
         },
         {
           "version": "14.2.1",
-          "downloads": 3154
+          "downloads": 3156
         },
         {
           "version": "15.0.0",
@@ -1495,7 +1495,7 @@
         },
         {
           "version": "17.0.1",
-          "downloads": 12609
+          "downloads": 12612
         },
         {
           "version": "17.1.0-rc1",
@@ -1511,23 +1511,23 @@
         },
         {
           "version": "17.1.2",
-          "downloads": 694
+          "downloads": 695
         },
         {
           "version": "17.1.3",
-          "downloads": 8981
+          "downloads": 9008
         },
         {
           "version": "17.3.0",
-          "downloads": 2424
+          "downloads": 2425
         },
         {
           "version": "17.3.1",
-          "downloads": 3628
+          "downloads": 3631
         },
         {
           "version": "17.3.2",
-          "downloads": 3848
+          "downloads": 3852
         },
         {
           "version": "17.3.3-rc",
@@ -1543,11 +1543,11 @@
         },
         {
           "version": "17.3.6",
-          "downloads": 6925
+          "downloads": 6931
         },
         {
           "version": "17.3.7",
-          "downloads": 622
+          "downloads": 629
         },
         {
           "version": "17.3.8",
@@ -1555,31 +1555,31 @@
         },
         {
           "version": "17.3.9",
-          "downloads": 6583
+          "downloads": 6590
         },
         {
           "version": "17.3.10",
-          "downloads": 4330
+          "downloads": 4360
         },
         {
           "version": "17.3.11",
-          "downloads": 12516
+          "downloads": 12576
         },
         {
           "version": "17.4.0",
-          "downloads": 1724
+          "downloads": 1743
         },
         {
           "version": "17.4.1",
-          "downloads": 811
+          "downloads": 819
         },
         {
           "version": "17.4.2",
-          "downloads": 328
+          "downloads": 338
         },
         {
           "version": "17.4.3",
-          "downloads": 544
+          "downloads": 629
         },
         {
           "version": "18.0.0",
@@ -1595,11 +1595,11 @@
         },
         {
           "version": "18.1.0",
-          "downloads": 444
+          "downloads": 445
         },
         {
           "version": "18.1.1",
-          "downloads": 971
+          "downloads": 975
         },
         {
           "version": "18.1.3",
@@ -1607,14 +1607,14 @@
         },
         {
           "version": "18.1.4",
-          "downloads": 180
+          "downloads": 210
         }
       ]
     },
     {
       "package": "uSync.Forms",
       "title": "uSync Forms",
-      "totalDownloads": 445156,
+      "totalDownloads": 445312,
       "versions": [
         {
           "version": "8.0.0-rc1",
@@ -1642,7 +1642,7 @@
         },
         {
           "version": "10.0.1",
-          "downloads": 53573
+          "downloads": 53574
         },
         {
           "version": "12.0.0",
@@ -1654,11 +1654,11 @@
         },
         {
           "version": "13.0.0",
-          "downloads": 19149
+          "downloads": 19152
         },
         {
           "version": "13.2.0",
-          "downloads": 20770
+          "downloads": 20771
         },
         {
           "version": "13.3.0",
@@ -1666,7 +1666,7 @@
         },
         {
           "version": "13.4.0",
-          "downloads": 4364
+          "downloads": 4365
         },
         {
           "version": "13.4.1",
@@ -1674,19 +1674,19 @@
         },
         {
           "version": "13.4.2",
-          "downloads": 10916
+          "downloads": 10918
         },
         {
           "version": "13.4.4",
-          "downloads": 68990
+          "downloads": 69001
         },
         {
           "version": "13.4.5",
-          "downloads": 6210
+          "downloads": 6212
         },
         {
           "version": "13.4.6",
-          "downloads": 37453
+          "downloads": 37531
         },
         {
           "version": "15.0.0",
@@ -1706,7 +1706,7 @@
         },
         {
           "version": "16.0.2",
-          "downloads": 4030
+          "downloads": 4033
         },
         {
           "version": "17.0.0-rc2",
@@ -1718,11 +1718,11 @@
         },
         {
           "version": "17.0.0",
-          "downloads": 20696
+          "downloads": 20703
         },
         {
           "version": "17.1.0",
-          "downloads": 10893
+          "downloads": 10934
         },
         {
           "version": "18.0.0",
@@ -1730,14 +1730,14 @@
         },
         {
           "version": "18.0.1",
-          "downloads": 1609
+          "downloads": 1615
         }
       ]
     },
     {
       "package": "uSync.Umbraco.Commerce",
       "title": "uSync Commerce",
-      "totalDownloads": 10129,
+      "totalDownloads": 10150,
       "versions": [
         {
           "version": "12.0.0-rc1",
@@ -1753,7 +1753,7 @@
         },
         {
           "version": "13.1.0-rc1",
-          "downloads": 5888
+          "downloads": 5889
         },
         {
           "version": "13.2.0-rc1",
@@ -1761,11 +1761,11 @@
         },
         {
           "version": "13.3.0-rc1",
-          "downloads": 1026
+          "downloads": 1040
         },
         {
           "version": "17.0.0-rc1",
-          "downloads": 917
+          "downloads": 920
         },
         {
           "version": "17.1.0-rc1",
@@ -1773,14 +1773,14 @@
         },
         {
           "version": "17.1.0",
-          "downloads": 221
+          "downloads": 224
         }
       ]
     },
     {
       "package": "uSync.Cli",
       "title": "uSync CLI",
-      "totalDownloads": 34089,
+      "totalDownloads": 34100,
       "versions": [
         {
           "version": "10.0.0",
@@ -1804,7 +1804,7 @@
         },
         {
           "version": "13.1.0",
-          "downloads": 8556
+          "downloads": 8557
         },
         {
           "version": "15.0.0-beta1",
@@ -1824,7 +1824,7 @@
         },
         {
           "version": "16.1.0",
-          "downloads": 4135
+          "downloads": 4145
         },
         {
           "version": "17.0.0",
@@ -1835,7 +1835,7 @@
     {
       "package": "uSync.Migrations",
       "title": "uSync Migrations",
-      "totalDownloads": 99040,
+      "totalDownloads": 99101,
       "versions": [
         {
           "version": "4.0.0-beta001",
@@ -1883,26 +1883,26 @@
         },
         {
           "version": "17.0.0-rc1",
-          "downloads": 439
+          "downloads": 440
         },
         {
           "version": "17.0.0",
-          "downloads": 4238
+          "downloads": 4246
         },
         {
           "version": "17.0.2",
-          "downloads": 403
+          "downloads": 405
         },
         {
           "version": "17.0.3",
-          "downloads": 190
+          "downloads": 194
         }
       ]
     },
     {
       "package": "uSync.Hangfire",
       "title": "uSync Hangfire",
-      "totalDownloads": 1253,
+      "totalDownloads": 1255,
       "versions": [
         {
           "version": "0.1.0",
@@ -1918,14 +1918,14 @@
         },
         {
           "version": "0.17.3",
-          "downloads": 192
+          "downloads": 194
         }
       ]
     },
     {
       "package": "Jumoo.TranslationManager",
       "title": "Translation Manager",
-      "totalDownloads": 446062,
+      "totalDownloads": 446166,
       "versions": [
         {
           "version": "2.0.0-Beta2",
@@ -2029,7 +2029,7 @@
         },
         {
           "version": "2.4.7",
-          "downloads": 1496
+          "downloads": 1497
         },
         {
           "version": "2.4.8",
@@ -2037,7 +2037,7 @@
         },
         {
           "version": "2.4.10",
-          "downloads": 1365
+          "downloads": 1366
         },
         {
           "version": "2.4.11",
@@ -2089,7 +2089,7 @@
         },
         {
           "version": "8.1.0",
-          "downloads": 1474
+          "downloads": 1475
         },
         {
           "version": "8.1.1",
@@ -2201,7 +2201,7 @@
         },
         {
           "version": "8.5.0",
-          "downloads": 4092
+          "downloads": 4093
         },
         {
           "version": "8.5.2",
@@ -2265,7 +2265,7 @@
         },
         {
           "version": "8.7.9",
-          "downloads": 36634
+          "downloads": 36649
         },
         {
           "version": "8.7.10",
@@ -2341,7 +2341,7 @@
         },
         {
           "version": "9.1.7",
-          "downloads": 1011
+          "downloads": 1012
         },
         {
           "version": "10.0.0",
@@ -2417,7 +2417,7 @@
         },
         {
           "version": "10.5.7",
-          "downloads": 4978
+          "downloads": 4981
         },
         {
           "version": "10.6.0",
@@ -2449,7 +2449,7 @@
         },
         {
           "version": "11.0.2",
-          "downloads": 2718
+          "downloads": 2719
         },
         {
           "version": "11.2.0-beta01",
@@ -2497,7 +2497,7 @@
         },
         {
           "version": "12.5.4",
-          "downloads": 899
+          "downloads": 900
         },
         {
           "version": "12.5.5",
@@ -2541,7 +2541,7 @@
         },
         {
           "version": "13.0.3",
-          "downloads": 12344
+          "downloads": 12345
         },
         {
           "version": "13.0.4",
@@ -2565,11 +2565,11 @@
         },
         {
           "version": "13.1.3",
-          "downloads": 10354
+          "downloads": 10358
         },
         {
           "version": "13.1.4",
-          "downloads": 4479
+          "downloads": 4480
         },
         {
           "version": "13.2.4",
@@ -2597,7 +2597,7 @@
         },
         {
           "version": "13.2.9",
-          "downloads": 4939
+          "downloads": 4944
         },
         {
           "version": "13.2.10",
@@ -2609,7 +2609,7 @@
         },
         {
           "version": "13.2.12",
-          "downloads": 6686
+          "downloads": 6690
         },
         {
           "version": "13.2.13",
@@ -2617,7 +2617,7 @@
         },
         {
           "version": "13.2.14",
-          "downloads": 6805
+          "downloads": 6808
         },
         {
           "version": "13.2.16",
@@ -2629,11 +2629,11 @@
         },
         {
           "version": "13.2.18",
-          "downloads": 899
+          "downloads": 900
         },
         {
           "version": "13.2.19",
-          "downloads": 6480
+          "downloads": 6487
         },
         {
           "version": "13.2.20",
@@ -2645,11 +2645,11 @@
         },
         {
           "version": "13.2.23",
-          "downloads": 1648
+          "downloads": 1651
         },
         {
           "version": "14.0.1",
-          "downloads": 550
+          "downloads": 552
         },
         {
           "version": "14.0.4",
@@ -2709,7 +2709,7 @@
         },
         {
           "version": "16.1.3",
-          "downloads": 2352
+          "downloads": 2354
         },
         {
           "version": "17.0.0-rc1",
@@ -2757,19 +2757,19 @@
         },
         {
           "version": "17.2.5",
-          "downloads": 2179
+          "downloads": 2187
         },
         {
           "version": "17.3.0",
-          "downloads": 1372
+          "downloads": 1373
         },
         {
           "version": "17.3.1",
-          "downloads": 1272
+          "downloads": 1273
         },
         {
           "version": "17.3.2",
-          "downloads": 2017
+          "downloads": 2022
         },
         {
           "version": "17.3.3",
@@ -2777,11 +2777,11 @@
         },
         {
           "version": "17.4.0",
-          "downloads": 631
+          "downloads": 633
         },
         {
           "version": "17.4.1",
-          "downloads": 285
+          "downloads": 286
         },
         {
           "version": "17.4.2",
@@ -2809,27 +2809,27 @@
         },
         {
           "version": "17.5.2",
-          "downloads": 678
+          "downloads": 679
         },
         {
           "version": "17.5.3",
-          "downloads": 654
+          "downloads": 658
         },
         {
           "version": "17.6.0",
-          "downloads": 1141
+          "downloads": 1144
         },
         {
           "version": "17.7.0",
-          "downloads": 247
+          "downloads": 248
         },
         {
           "version": "17.7.1",
-          "downloads": 432
+          "downloads": 436
         },
         {
           "version": "17.7.2",
-          "downloads": 249
+          "downloads": 250
         },
         {
           "version": "17.8.1",
@@ -2837,31 +2837,31 @@
         },
         {
           "version": "17.8.2",
-          "downloads": 170
+          "downloads": 172
         },
         {
           "version": "17.9.0",
-          "downloads": 114
+          "downloads": 115
         },
         {
           "version": "17.9.1",
-          "downloads": 160
+          "downloads": 161
         },
         {
           "version": "17.9.2",
-          "downloads": 91
+          "downloads": 93
         },
         {
           "version": "18.0.0",
-          "downloads": 335
+          "downloads": 336
         },
         {
           "version": "18.1.0",
-          "downloads": 135
+          "downloads": 136
         },
         {
           "version": "18.1.1",
-          "downloads": 247
+          "downloads": 248
         },
         {
           "version": "18.1.2",
@@ -2881,14 +2881,14 @@
         },
         {
           "version": "18.3.1",
-          "downloads": 118
+          "downloads": 121
         }
       ]
     },
     {
       "package": "Jumoo.TranslationManager.CSV",
       "title": "CSV Connector",
-      "totalDownloads": 451,
+      "totalDownloads": 452,
       "versions": [
         {
           "version": "17.0.0-beta",
@@ -2904,14 +2904,14 @@
         },
         {
           "version": "18.0.0",
-          "downloads": 114
+          "downloads": 115
         }
       ]
     },
     {
       "package": "Jumoo.TranslationManager.UmbracoAI",
       "title": "UmbracoAI Connector",
-      "totalDownloads": 1080,
+      "totalDownloads": 1104,
       "versions": [
         {
           "version": "1.0.0",
@@ -2919,15 +2919,15 @@
         },
         {
           "version": "17.0.0",
-          "downloads": 108
+          "downloads": 109
         },
         {
           "version": "17.1.0",
-          "downloads": 152
+          "downloads": 155
         },
         {
           "version": "17.1.1",
-          "downloads": 56
+          "downloads": 76
         }
       ]
     },
@@ -3008,7 +3008,7 @@
     {
       "package": "Jumoo.TranslationManager.DeepL",
       "title": "DeepL Connector",
-      "totalDownloads": 100902,
+      "totalDownloads": 100956,
       "versions": [
         {
           "version": "17.0.0-rc1",
@@ -3024,23 +3024,23 @@
         },
         {
           "version": "17.0.1",
-          "downloads": 314
+          "downloads": 315
         },
         {
           "version": "17.0.2",
-          "downloads": 4475
+          "downloads": 4483
         },
         {
           "version": "17.0.3",
-          "downloads": 1489
+          "downloads": 1490
         },
         {
           "version": "17.0.5",
-          "downloads": 3934
+          "downloads": 3940
         },
         {
           "version": "17.1.0",
-          "downloads": 603
+          "downloads": 605
         },
         {
           "version": "17.1.1",
@@ -3052,11 +3052,11 @@
         },
         {
           "version": "17.1.3",
-          "downloads": 3259
+          "downloads": 3270
         },
         {
           "version": "17.2.0",
-          "downloads": 474
+          "downloads": 476
         },
         {
           "version": "17.3.0",
@@ -3064,15 +3064,15 @@
         },
         {
           "version": "17.3.1",
-          "downloads": 81
+          "downloads": 85
         },
         {
           "version": "18.0.0",
-          "downloads": 592
+          "downloads": 593
         },
         {
           "version": "18.1.0",
-          "downloads": 278
+          "downloads": 280
         },
         {
           "version": "9.0.5",
@@ -3276,15 +3276,15 @@
         },
         {
           "version": "12.5.1",
-          "downloads": 1580
+          "downloads": 1581
         },
         {
           "version": "12.5.2",
-          "downloads": 4298
+          "downloads": 4305
         },
         {
           "version": "13.0.0",
-          "downloads": 4373
+          "downloads": 4379
         },
         {
           "version": "15.0.0",
@@ -3296,7 +3296,7 @@
         },
         {
           "version": "16.0.0",
-          "downloads": 1980
+          "downloads": 1982
         },
         {
           "version": "16.0.1-rc-1",
@@ -3323,7 +3323,7 @@
     {
       "package": "Jumoo.TranslationManager.Google",
       "title": "Google Connector",
-      "totalDownloads": 263996,
+      "totalDownloads": 264085,
       "versions": [
         {
           "version": "17.0.0-rc1",
@@ -3335,27 +3335,27 @@
         },
         {
           "version": "17.0.0",
-          "downloads": 15216
+          "downloads": 15244
         },
         {
           "version": "17.1.0-beta",
-          "downloads": 108
+          "downloads": 109
         },
         {
           "version": "17.1.0",
-          "downloads": 476
+          "downloads": 478
         },
         {
           "version": "17.1.1",
-          "downloads": 85
+          "downloads": 87
         },
         {
           "version": "18.0.0",
-          "downloads": 768
+          "downloads": 771
         },
         {
           "version": "8.0.0",
-          "downloads": 38681
+          "downloads": 38696
         },
         {
           "version": "8.1.0",
@@ -3503,11 +3503,11 @@
         },
         {
           "version": "10.5.6",
-          "downloads": 428
+          "downloads": 429
         },
         {
           "version": "10.5.7",
-          "downloads": 4990
+          "downloads": 4993
         },
         {
           "version": "10.6.0",
@@ -3595,7 +3595,7 @@
         },
         {
           "version": "12.5.4",
-          "downloads": 968
+          "downloads": 969
         },
         {
           "version": "12.5.5",
@@ -3639,7 +3639,7 @@
         },
         {
           "version": "13.0.3",
-          "downloads": 12380
+          "downloads": 12381
         },
         {
           "version": "13.0.4",
@@ -3671,7 +3671,7 @@
         },
         {
           "version": "13.1.3",
-          "downloads": 10295
+          "downloads": 10297
         },
         {
           "version": "13.1.4",
@@ -3691,7 +3691,7 @@
         },
         {
           "version": "13.2.6",
-          "downloads": 6291
+          "downloads": 6292
         },
         {
           "version": "13.2.7",
@@ -3703,7 +3703,7 @@
         },
         {
           "version": "13.2.9",
-          "downloads": 4754
+          "downloads": 4759
         },
         {
           "version": "13.2.10",
@@ -3715,7 +3715,7 @@
         },
         {
           "version": "13.2.12",
-          "downloads": 6607
+          "downloads": 6611
         },
         {
           "version": "13.2.13",
@@ -3723,7 +3723,7 @@
         },
         {
           "version": "13.2.14",
-          "downloads": 6723
+          "downloads": 6726
         },
         {
           "version": "13.2.16",
@@ -3739,7 +3739,7 @@
         },
         {
           "version": "13.2.19",
-          "downloads": 6350
+          "downloads": 6357
         },
         {
           "version": "13.2.20",
@@ -3751,15 +3751,15 @@
         },
         {
           "version": "13.2.23",
-          "downloads": 1631
+          "downloads": 1635
         },
         {
           "version": "14.0.0",
-          "downloads": 467
+          "downloads": 469
         },
         {
           "version": "14.0.1",
-          "downloads": 479
+          "downloads": 481
         },
         {
           "version": "14.0.4",
@@ -3823,7 +3823,7 @@
         },
         {
           "version": "16.1.3",
-          "downloads": 2387
+          "downloads": 2389
         },
         {
           "version": "2.0.0-Beta2",
@@ -3838,7 +3838,7 @@
     {
       "package": "Jumoo.TranslationManager.Xliff",
       "title": "Xliff Connector",
-      "totalDownloads": 363231,
+      "totalDownloads": 363320,
       "versions": [
         {
           "version": "17.0.0-rc1",
@@ -3850,23 +3850,23 @@
         },
         {
           "version": "17.0.0",
-          "downloads": 14714
+          "downloads": 14738
         },
         {
           "version": "17.0.1",
-          "downloads": 1110
+          "downloads": 1118
         },
         {
           "version": "17.0.2",
-          "downloads": 81
+          "downloads": 83
         },
         {
           "version": "18.0.0",
-          "downloads": 303
+          "downloads": 304
         },
         {
           "version": "18.0.1",
-          "downloads": 560
+          "downloads": 564
         },
         {
           "version": "8.0.0-rc1",
@@ -3930,7 +3930,7 @@
         },
         {
           "version": "8.7.3",
-          "downloads": 37147
+          "downloads": 37162
         },
         {
           "version": "8.7.3.1",
@@ -4094,7 +4094,7 @@
         },
         {
           "version": "10.5.7",
-          "downloads": 5006
+          "downloads": 5009
         },
         {
           "version": "10.6.0",
@@ -4182,7 +4182,7 @@
         },
         {
           "version": "12.5.4",
-          "downloads": 929
+          "downloads": 930
         },
         {
           "version": "12.5.5",
@@ -4226,7 +4226,7 @@
         },
         {
           "version": "13.0.3",
-          "downloads": 12379
+          "downloads": 12380
         },
         {
           "version": "13.0.4",
@@ -4258,7 +4258,7 @@
         },
         {
           "version": "13.1.3",
-          "downloads": 10225
+          "downloads": 10227
         },
         {
           "version": "13.1.4",
@@ -4290,7 +4290,7 @@
         },
         {
           "version": "13.2.9",
-          "downloads": 4763
+          "downloads": 4769
         },
         {
           "version": "13.2.10",
@@ -4302,7 +4302,7 @@
         },
         {
           "version": "13.2.12",
-          "downloads": 6565
+          "downloads": 6568
         },
         {
           "version": "13.2.13",
@@ -4310,7 +4310,7 @@
         },
         {
           "version": "13.2.14",
-          "downloads": 6718
+          "downloads": 6721
         },
         {
           "version": "13.2.16",
@@ -4326,7 +4326,7 @@
         },
         {
           "version": "13.2.19",
-          "downloads": 6372
+          "downloads": 6379
         },
         {
           "version": "13.2.20",
@@ -4338,15 +4338,15 @@
         },
         {
           "version": "13.2.23",
-          "downloads": 1609
+          "downloads": 1611
         },
         {
           "version": "14.0.0",
-          "downloads": 461
+          "downloads": 463
         },
         {
           "version": "14.0.1",
-          "downloads": 473
+          "downloads": 475
         },
         {
           "version": "14.0.4",
@@ -4410,7 +4410,7 @@
         },
         {
           "version": "16.1.3",
-          "downloads": 2434
+          "downloads": 2437
         },
         {
           "version": "2.0.0-Beta2",
@@ -4473,7 +4473,7 @@
     {
       "package": "Jumoo.TranslationManager.Microsoft",
       "title": "Microsoft Connector",
-      "totalDownloads": 239123,
+      "totalDownloads": 239193,
       "versions": [
         {
           "version": "17.0.0-rc1",
@@ -4485,15 +4485,15 @@
         },
         {
           "version": "17.0.0",
-          "downloads": 13074
+          "downloads": 13091
         },
         {
           "version": "17.0.1",
-          "downloads": 2127
+          "downloads": 2134
         },
         {
           "version": "17.0.2",
-          "downloads": 602
+          "downloads": 605
         },
         {
           "version": "17.1.0-rc1",
@@ -4501,19 +4501,19 @@
         },
         {
           "version": "17.1.0",
-          "downloads": 267
+          "downloads": 268
         },
         {
           "version": "17.2.0",
-          "downloads": 470
+          "downloads": 472
         },
         {
           "version": "17.2.1",
-          "downloads": 81
+          "downloads": 83
         },
         {
           "version": "18.0.0",
-          "downloads": 491
+          "downloads": 492
         },
         {
           "version": "18.1.0",
@@ -4521,7 +4521,7 @@
         },
         {
           "version": "18.2.0",
-          "downloads": 277
+          "downloads": 280
         },
         {
           "version": "8.0.0-rc1",
@@ -4689,7 +4689,7 @@
         },
         {
           "version": "10.5.7",
-          "downloads": 4940
+          "downloads": 4943
         },
         {
           "version": "10.6.0",
@@ -4777,7 +4777,7 @@
         },
         {
           "version": "12.5.4",
-          "downloads": 903
+          "downloads": 904
         },
         {
           "version": "12.5.5",
@@ -4821,7 +4821,7 @@
         },
         {
           "version": "13.0.3",
-          "downloads": 12329
+          "downloads": 12330
         },
         {
           "version": "13.0.4",
@@ -4853,7 +4853,7 @@
         },
         {
           "version": "13.1.3",
-          "downloads": 10194
+          "downloads": 10196
         },
         {
           "version": "13.1.4",
@@ -4885,7 +4885,7 @@
         },
         {
           "version": "13.2.9",
-          "downloads": 4748
+          "downloads": 4753
         },
         {
           "version": "13.2.10",
@@ -4897,7 +4897,7 @@
         },
         {
           "version": "13.2.12",
-          "downloads": 6550
+          "downloads": 6553
         },
         {
           "version": "13.2.13",
@@ -4905,7 +4905,7 @@
         },
         {
           "version": "13.2.14",
-          "downloads": 6688
+          "downloads": 6691
         },
         {
           "version": "13.2.16",
@@ -4921,7 +4921,7 @@
         },
         {
           "version": "13.2.19",
-          "downloads": 6316
+          "downloads": 6322
         },
         {
           "version": "13.2.20",
@@ -4933,15 +4933,15 @@
         },
         {
           "version": "13.2.23",
-          "downloads": 1619
+          "downloads": 1622
         },
         {
           "version": "14.0.0",
-          "downloads": 437
+          "downloads": 439
         },
         {
           "version": "14.0.1",
-          "downloads": 473
+          "downloads": 475
         },
         {
           "version": "14.0.4",
@@ -5005,7 +5005,7 @@
         },
         {
           "version": "16.1.3",
-          "downloads": 2398
+          "downloads": 2400
         },
         {
           "version": "2.0.0-Beta2",
@@ -5025,7 +5025,7 @@
         },
         {
           "version": "2.2.0",
-          "downloads": 1542
+          "downloads": 1543
         },
         {
           "version": "2.2.1",
@@ -5044,7 +5044,7 @@
     {
       "package": "Jumoo.TranslationManager.Passthrough",
       "title": "Passthrough Connector",
-      "totalDownloads": 237057,
+      "totalDownloads": 237139,
       "versions": [
         {
           "version": "17.0.0-rc1",
@@ -5056,15 +5056,15 @@
         },
         {
           "version": "17.0.0",
-          "downloads": 15597
+          "downloads": 15627
         },
         {
           "version": "17.0.1",
-          "downloads": 105
+          "downloads": 117
         },
         {
           "version": "18.0.0",
-          "downloads": 741
+          "downloads": 745
         },
         {
           "version": "8.0.0",
@@ -5196,7 +5196,7 @@
         },
         {
           "version": "10.4.2",
-          "downloads": 2046
+          "downloads": 2047
         },
         {
           "version": "10.5.2",
@@ -5220,7 +5220,7 @@
         },
         {
           "version": "10.5.7",
-          "downloads": 4983
+          "downloads": 4986
         },
         {
           "version": "10.6.0",
@@ -5308,7 +5308,7 @@
         },
         {
           "version": "12.5.4",
-          "downloads": 999
+          "downloads": 1000
         },
         {
           "version": "12.5.5",
@@ -5352,7 +5352,7 @@
         },
         {
           "version": "13.0.3",
-          "downloads": 12406
+          "downloads": 12407
         },
         {
           "version": "13.0.4",
@@ -5384,7 +5384,7 @@
         },
         {
           "version": "13.1.3",
-          "downloads": 10270
+          "downloads": 10273
         },
         {
           "version": "13.1.4",
@@ -5416,7 +5416,7 @@
         },
         {
           "version": "13.2.9",
-          "downloads": 4770
+          "downloads": 4775
         },
         {
           "version": "13.2.10",
@@ -5428,7 +5428,7 @@
         },
         {
           "version": "13.2.12",
-          "downloads": 6576
+          "downloads": 6579
         },
         {
           "version": "13.2.13",
@@ -5436,7 +5436,7 @@
         },
         {
           "version": "13.2.14",
-          "downloads": 6723
+          "downloads": 6726
         },
         {
           "version": "13.2.16",
@@ -5452,7 +5452,7 @@
         },
         {
           "version": "13.2.19",
-          "downloads": 6309
+          "downloads": 6316
         },
         {
           "version": "13.2.20",
@@ -5464,15 +5464,15 @@
         },
         {
           "version": "13.2.23",
-          "downloads": 1618
+          "downloads": 1620
         },
         {
           "version": "14.0.0",
-          "downloads": 473
+          "downloads": 475
         },
         {
           "version": "14.0.1",
-          "downloads": 500
+          "downloads": 502
         },
         {
           "version": "14.0.4",
@@ -5536,14 +5536,14 @@
         },
         {
           "version": "16.1.3",
-          "downloads": 2409
+          "downloads": 2412
         }
       ]
     },
     {
       "package": "Jumoo.TranslationManager.CrowdIn",
       "title": "CrowdIn Connector",
-      "totalDownloads": 12565,
+      "totalDownloads": 12585,
       "versions": [
         {
           "version": "9.0.0",
@@ -5579,15 +5579,15 @@
         },
         {
           "version": "9.0.10",
-          "downloads": 3747
+          "downloads": 3749
         },
         {
           "version": "16.0.0",
-          "downloads": 298
+          "downloads": 300
         },
         {
           "version": "16.0.1",
-          "downloads": 461
+          "downloads": 463
         },
         {
           "version": "17.0.0-rc1",
@@ -5599,34 +5599,34 @@
         },
         {
           "version": "17.0.0",
-          "downloads": 161
+          "downloads": 163
         },
         {
           "version": "17.1.0",
-          "downloads": 339
+          "downloads": 342
         },
         {
           "version": "17.1.1",
-          "downloads": 104
+          "downloads": 106
         },
         {
           "version": "17.2.0",
-          "downloads": 86
+          "downloads": 88
         },
         {
           "version": "17.2.1",
-          "downloads": 76
+          "downloads": 78
         },
         {
           "version": "18.0.0",
-          "downloads": 118
+          "downloads": 121
         }
       ]
     },
     {
       "package": "Jumoo.TranslationManager.LanguageWire",
       "title": "LanguageWire Connector",
-      "totalDownloads": 29586,
+      "totalDownloads": 29609,
       "versions": [
         {
           "version": "9.1.1",
@@ -5670,7 +5670,7 @@
         },
         {
           "version": "10.0.2",
-          "downloads": 3899
+          "downloads": 3901
         },
         {
           "version": "11.0.0",
@@ -5706,14 +5706,14 @@
         },
         {
           "version": "17.1.1",
-          "downloads": 57
+          "downloads": 78
         }
       ]
     },
     {
       "package": "Jumoo.TranslationManager.GlobalLink",
       "title": "GlobalLink Connector",
-      "totalDownloads": 8388,
+      "totalDownloads": 8389,
       "versions": [
         {
           "version": "9.0.0",
@@ -5753,7 +5753,7 @@
         },
         {
           "version": "17.0.0-rc1",
-          "downloads": 104
+          "downloads": 105
         },
         {
           "version": "17.1.0",
@@ -5784,11 +5784,11 @@
     {
       "package": "Umbraco.Community.LinkedPages",
       "title": "Linked Pages",
-      "totalDownloads": 1045,
+      "totalDownloads": 1048,
       "versions": [
         {
           "version": "17.0.0",
-          "downloads": 446
+          "downloads": 448
         },
         {
           "version": "18.0.0",
@@ -5808,14 +5808,14 @@
         },
         {
           "version": "18.0.4",
-          "downloads": 108
+          "downloads": 109
         }
       ]
     },
     {
       "package": "Our.Umbraco.MaintenanceMode",
       "title": "Maintenance Mode",
-      "totalDownloads": 73187,
+      "totalDownloads": 73260,
       "versions": [
         {
           "version": "2.0.1",
@@ -5831,7 +5831,7 @@
         },
         {
           "version": "10.1.0",
-          "downloads": 541
+          "downloads": 542
         },
         {
           "version": "10.1.1",
@@ -5839,11 +5839,11 @@
         },
         {
           "version": "10.2.0",
-          "downloads": 9036
+          "downloads": 9037
         },
         {
           "version": "10.2.1",
-          "downloads": 10051
+          "downloads": 10060
         },
         {
           "version": "14.0.0-beta001",
@@ -5883,41 +5883,41 @@
         },
         {
           "version": "17.1.0",
-          "downloads": 7627
+          "downloads": 7649
         },
         {
           "version": "17.1.4",
-          "downloads": 356
+          "downloads": 391
         },
         {
           "version": "18.0.0",
-          "downloads": 210
+          "downloads": 211
         },
         {
           "version": "18.1.0",
-          "downloads": 610
+          "downloads": 612
         }
       ]
     },
     {
       "package": "uSync.Automate",
       "title": "uSync Automate",
-      "totalDownloads": 229,
+      "totalDownloads": 237,
       "versions": [
         {
           "version": "17.0.0-beta1",
-          "downloads": 108
+          "downloads": 110
         },
         {
           "version": "17.0.0",
-          "downloads": 121
+          "downloads": 127
         }
       ]
     },
     {
       "package": "Jumoo.TranslationManager.Automate",
       "title": "Translation Manager Automate",
-      "totalDownloads": 201,
+      "totalDownloads": 202,
       "versions": [
         {
           "version": "17.0.0-rc1",
@@ -5925,14 +5925,14 @@
         },
         {
           "version": "17.0.0",
-          "downloads": 103
+          "downloads": 104
         }
       ]
     },
     {
       "package": "Umbraco.Community.PowerToys",
       "title": "PowerToys",
-      "totalDownloads": 377,
+      "totalDownloads": 378,
       "versions": [
         {
           "version": "17.0.0-rc1",
@@ -5944,14 +5944,14 @@
         },
         {
           "version": "17.0.0",
-          "downloads": 99
+          "downloads": 100
         }
       ]
     },
     {
       "package": "Jumoo.Processing",
       "title": "Jumoo.Processing",
-      "totalDownloads": 147711,
+      "totalDownloads": 148074,
       "versions": [
         {
           "version": "1.0.6",
@@ -5959,7 +5959,7 @@
         },
         {
           "version": "1.0.7",
-          "downloads": 3581
+          "downloads": 3583
         },
         {
           "version": "2.0.0",
@@ -5979,7 +5979,7 @@
         },
         {
           "version": "16.0.0",
-          "downloads": 10486
+          "downloads": 10488
         },
         {
           "version": "16.0.3",
@@ -6011,27 +6011,27 @@
         },
         {
           "version": "17.0.0",
-          "downloads": 33073
+          "downloads": 33112
         },
         {
           "version": "17.3.0",
-          "downloads": 9189
+          "downloads": 9197
         },
         {
           "version": "17.3.1",
-          "downloads": 7220
+          "downloads": 7227
         },
         {
           "version": "17.3.2",
-          "downloads": 19104
+          "downloads": 19154
         },
         {
           "version": "17.3.3",
-          "downloads": 2909
+          "downloads": 2922
         },
         {
           "version": "17.3.4",
-          "downloads": 13758
+          "downloads": 13826
         },
         {
           "version": "17.4.0-rc1",
@@ -6039,7 +6039,7 @@
         },
         {
           "version": "17.4.0",
-          "downloads": 4129
+          "downloads": 4252
         },
         {
           "version": "17.4.1",
@@ -6047,11 +6047,11 @@
         },
         {
           "version": "17.4.2",
-          "downloads": 75
+          "downloads": 95
         },
         {
           "version": "18.0.0",
-          "downloads": 992
+          "downloads": 993
         },
         {
           "version": "18.0.1",
@@ -6059,22 +6059,22 @@
         },
         {
           "version": "18.1.0-rc4",
-          "downloads": 102
+          "downloads": 103
         },
         {
           "version": "18.1.0",
-          "downloads": 667
+          "downloads": 668
         },
         {
           "version": "18.1.1",
-          "downloads": 1696
+          "downloads": 1724
         }
       ]
     },
     {
       "package": "Jumoo.Json",
       "title": "Jumoo.Json",
-      "totalDownloads": 125651,
+      "totalDownloads": 126098,
       "versions": [
         {
           "version": "1.0.0-rc2",
@@ -6082,7 +6082,7 @@
         },
         {
           "version": "16.0.0",
-          "downloads": 21804
+          "downloads": 21806
         },
         {
           "version": "17.0.0-beta",
@@ -6102,19 +6102,19 @@
         },
         {
           "version": "17.0.0",
-          "downloads": 48255
+          "downloads": 48309
         },
         {
           "version": "17.0.1",
-          "downloads": 21608
+          "downloads": 21671
         },
         {
           "version": "17.0.2",
-          "downloads": 17644
+          "downloads": 17841
         },
         {
           "version": "18.0.0",
-          "downloads": 1311
+          "downloads": 1312
         },
         {
           "version": "18.0.1",
@@ -6122,7 +6122,7 @@
         },
         {
           "version": "18.0.3",
-          "downloads": 11840
+          "downloads": 11970
         }
       ]
     }
