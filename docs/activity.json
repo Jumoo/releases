@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T04:43:31.837Z",
+  "generatedAt": "2026-09-25T17:03:30.095Z",
   "packages": [
     {
       "package": "uSync",
@@ -24,8 +24,8 @@
       "lastReleaseDate": "2026-09-24T09:49:46Z",
       "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.5.0-rc1",
       "releaseBranch": "v17/main",
-      "commitsSince": 13,
-      "lastCommitDate": "2026-09-24T15:28:11Z"
+      "commitsSince": 33,
+      "lastCommitDate": "2026-09-25T12:28:11Z"
     },
     {
       "package": "uSync.Forms",
