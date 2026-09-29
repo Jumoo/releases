@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T05:33:40.020Z",
+  "generatedAt": "2026-09-29T18:01:51.756Z",
   "packages": [
     {
       "package": "uSync",
@@ -36,9 +36,9 @@
       "lastReleaseTag": "v17.1.0",
       "lastReleaseDate": "2026-06-16T08:46:51Z",
       "lastReleaseUrl": "https://github.com/KevinJump/uSync.Forms/releases/tag/v17.1.0",
-      "releaseBranch": "v18/main",
-      "commitsSince": 4,
-      "lastCommitDate": "2026-08-18T06:38:01Z"
+      "releaseBranch": "v17/main",
+      "commitsSince": 24,
+      "lastCommitDate": "2026-09-29T09:40:07Z"
     },
     {
       "package": "uSync.Umbraco.Commerce",
@@ -363,7 +363,7 @@
       "lastReleaseUrl": null,
       "releaseBranch": null,
       "commitsSince": null,
-      "lastCommitDate": "2026-09-22T08:25:17Z"
+      "lastCommitDate": "2026-09-29T09:29:33Z"
     }
   ]
 }
