@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T17:57:12.943Z",
+  "generatedAt": "2026-09-30T19:46:28.455Z",
   "packages": [
     {
       "package": "uSync",
@@ -7,12 +7,12 @@
       "category": "",
       "repo": "KevinJump/uSync",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.4.3",
-      "lastReleaseDate": "2026-09-30T12:40:56Z",
-      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.4.3",
-      "releaseBranch": "v17/main",
-      "commitsSince": 5,
-      "lastCommitDate": "2026-09-30T14:49:44Z"
+      "lastReleaseTag": "v18.1.5",
+      "lastReleaseDate": "2026-09-30T18:09:24Z",
+      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.1.5",
+      "releaseBranch": "v18/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-09-30T18:09:24Z"
     },
     {
       "package": "uSync.Complete",
@@ -20,12 +20,12 @@
       "category": "",
       "repo": "Jumoo/uSync.Complete",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "release/v17.5.0",
-      "lastReleaseDate": "2026-09-30T13:57:48Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.5.0",
-      "releaseBranch": "v17/main",
+      "lastReleaseTag": "release/v18.2.0",
+      "lastReleaseDate": "2026-09-30T19:31:24Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.2.0",
+      "releaseBranch": "v18/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-09-30T13:57:48Z"
+      "lastCommitDate": "2026-09-30T19:31:24Z"
     },
     {
       "package": "uSync.Forms",
