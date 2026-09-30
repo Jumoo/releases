@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-30T05:22:18.518Z",
+  "generatedAt": "2026-09-30T14:02:47.801Z",
   "packages": [
     {
       "package": "uSync",
-      "syncedThrough": "2026-09-30T05:22:06.778Z",
+      "syncedThrough": "2026-09-30T14:01:37.934Z",
       "months": [
         {
           "month": "2019-01",
@@ -743,17 +743,17 @@
         },
         {
           "month": "2026-09",
-          "issuesOpened": 6,
-          "issuesClosed": 16,
-          "prsOpened": 32,
-          "prsMerged": 31,
-          "commits": 28
+          "issuesOpened": 7,
+          "issuesClosed": 18,
+          "prsOpened": 39,
+          "prsMerged": 38,
+          "commits": 36
         }
       ]
     },
     {
       "package": "uSync.Complete",
-      "syncedThrough": "2026-09-30T05:22:07.574Z",
+      "syncedThrough": "2026-09-30T14:01:48.854Z",
       "months": [
         {
           "month": "2019-08",
@@ -1441,13 +1441,13 @@
           "issuesClosed": 30,
           "prsOpened": 0,
           "prsMerged": 0,
-          "commits": 152
+          "commits": 154
         }
       ]
     },
     {
       "package": "uSync.Forms",
-      "syncedThrough": "2026-09-30T05:22:08.220Z",
+      "syncedThrough": "2026-09-30T14:01:59.437Z",
       "months": [
         {
           "month": "2021-07",
@@ -1957,7 +1957,7 @@
     },
     {
       "package": "uSync.Umbraco.Commerce",
-      "syncedThrough": "2026-09-30T05:22:08.796Z",
+      "syncedThrough": "2026-09-30T14:02:03.406Z",
       "months": [
         {
           "month": "2023-07",
@@ -2275,7 +2275,7 @@
     },
     {
       "package": "uSync.Cli",
-      "syncedThrough": "2026-09-30T05:22:09.438Z",
+      "syncedThrough": "2026-09-30T14:02:07.486Z",
       "months": [
         {
           "month": "2023-01",
@@ -2641,7 +2641,7 @@
     },
     {
       "package": "uSync.Migrations",
-      "syncedThrough": "2026-09-30T05:22:10.323Z",
+      "syncedThrough": "2026-09-30T14:02:11.915Z",
       "months": [
         {
           "month": "2022-10",
@@ -3031,7 +3031,7 @@
     },
     {
       "package": "uSync.Hangfire",
-      "syncedThrough": "2026-09-30T05:22:10.942Z",
+      "syncedThrough": "2026-09-30T14:02:16.282Z",
       "months": [
         {
           "month": "2025-05",
@@ -3173,7 +3173,7 @@
     },
     {
       "package": "Jumoo.TranslationManager",
-      "syncedThrough": "2026-09-30T05:22:11.722Z",
+      "syncedThrough": "2026-09-30T14:02:20.371Z",
       "months": [
         {
           "month": "2021-03",
@@ -3709,7 +3709,7 @@
           "issuesClosed": 3,
           "prsOpened": 1,
           "prsMerged": 1,
-          "commits": 111
+          "commits": 120
         }
       ]
     },
@@ -5257,7 +5257,7 @@
     },
     {
       "package": "Umbraco.Community.LinkedPages",
-      "syncedThrough": "2026-09-30T05:22:14.881Z",
+      "syncedThrough": "2026-09-30T14:02:26.827Z",
       "months": [
         {
           "month": "2018-09",
@@ -6039,7 +6039,7 @@
     },
     {
       "package": "Our.Umbraco.MaintenanceMode",
-      "syncedThrough": "2026-09-30T05:22:15.746Z",
+      "syncedThrough": "2026-09-30T14:02:31.122Z",
       "months": [
         {
           "month": "2017-11",
@@ -6901,7 +6901,7 @@
     },
     {
       "package": "uSync.Automate",
-      "syncedThrough": "2026-09-30T05:22:16.320Z",
+      "syncedThrough": "2026-09-30T14:02:35.201Z",
       "months": [
         {
           "month": "2025-08",
@@ -7019,7 +7019,7 @@
     },
     {
       "package": "Jumoo.TranslationManager.Automate",
-      "syncedThrough": "2026-09-30T05:22:16.860Z",
+      "syncedThrough": "2026-09-30T14:02:39.176Z",
       "months": [
         {
           "month": "2025-08",
@@ -7137,7 +7137,7 @@
     },
     {
       "package": "Umbraco.Community.PowerToys",
-      "syncedThrough": "2026-09-30T05:22:17.635Z",
+      "syncedThrough": "2026-09-30T14:02:43.456Z",
       "months": [
         {
           "month": "2025-08",
@@ -7365,7 +7365,7 @@
     },
     {
       "package": "Jumoo.Json",
-      "syncedThrough": "2026-09-30T05:22:18.518Z",
+      "syncedThrough": "2026-09-30T14:02:47.801Z",
       "months": [
         {
           "month": "2025-08",

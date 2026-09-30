@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T05:22:03.406Z",
+  "generatedAt": "2026-09-30T14:01:31.131Z",
   "packages": [
     {
       "package": "uSync",
@@ -7,12 +7,12 @@
       "category": "",
       "repo": "KevinJump/uSync",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.1.4",
-      "lastReleaseDate": "2026-09-15T11:25:26Z",
-      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.1.4",
-      "releaseBranch": "v18/main",
+      "lastReleaseTag": "v17.4.3",
+      "lastReleaseDate": "2026-09-30T12:40:56Z",
+      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.4.3",
+      "releaseBranch": "v17/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-09-15T11:25:26Z"
+      "lastCommitDate": "2026-09-30T12:40:56Z"
     },
     {
       "package": "uSync.Complete",
@@ -20,12 +20,12 @@
       "category": "",
       "repo": "Jumoo/uSync.Complete",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "release/v17.5.0-rc1",
-      "lastReleaseDate": "2026-09-24T09:49:46Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.5.0-rc1",
+      "lastReleaseTag": "release/v17.5.0",
+      "lastReleaseDate": "2026-09-30T13:57:48Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.5.0",
       "releaseBranch": "v17/main",
-      "commitsSince": 33,
-      "lastCommitDate": "2026-09-25T12:28:11Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-09-30T13:57:48Z"
     },
     {
       "package": "uSync.Forms",
@@ -98,12 +98,12 @@
       "category": "",
       "repo": "Jumoo/Jumoo.TranslationManager",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.9.2",
-      "lastReleaseDate": "2026-09-21T16:32:58Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.2",
+      "lastReleaseTag": "v17.9.3",
+      "lastReleaseDate": "2026-09-30T13:17:10Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.3",
       "releaseBranch": "v17/main",
-      "commitsSince": 15,
-      "lastCommitDate": "2026-09-24T11:45:08Z"
+      "commitsSince": 8,
+      "lastCommitDate": "2026-09-30T13:38:06Z"
     },
     {
       "package": "Jumoo.TranslationManager.AI",
