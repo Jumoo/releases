@@ -5,6 +5,50 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>AI Connector 17.7.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.0</guid>
+      <pubDate>Fri, 02 Oct 2026 11:59:34 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: stop SDK retries stacking and give AI requests realistic timeouts by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/54
+* feat: gather a node's values into shared translation requests by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/55
+* Bump prettier from 3.9.6 to 3.9.8 in /Jumoo.TranslationManager.AI/ai-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/52
+* Bump vite from 6.4.3 to 8.3.0 in /Jumoo.TranslationManager.AI/ai-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/49
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.6.1...v17.7.0]]></description>
+    </item>
+    <item>
+      <title>DeepL Connector 18.2.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.0</guid>
+      <pubDate>Fri, 02 Oct 2026 09:41:21 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Whitespace fixes in DeepLTranslationService (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/7
+* Add repository standards and CI/CD to v18 (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/8
+* Bump chalk to 6.0.0 and typescript to 7.0.2 (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/10
+* Stop per-developer test site config from leaking into deepl-client commits by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/11
+* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/17
+* Merge v17 into v18 (2026-09-15) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/20
+* fix: gate composer registrations on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/23
+* Merge v17 into v18 (2026-09-30) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/24
+* Merge v17 into v18 (2026-10-02) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/26
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.4.0...v18.2.0]]></description>
+    </item>
+    <item>
+      <title>DeepL Connector 17.4.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.0</guid>
+      <pubDate>Fri, 02 Oct 2026 09:25:53 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* feat(provider): Retry transient DeepL failures via Polly by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/18
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.3.1...v17.4.0]]></description>
+    </item>
+    <item>
       <title>uSync Complete 18.2.0</title>
       <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.2.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.2.0</guid>
@@ -996,45 +1040,6 @@ Full changelog: https://github.com/Jumoo/uSync.Complete/blob/v17/main/CHANGELOG.
 
 
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.1.1...v18.2.0]]></description>
-    </item>
-    <item>
-      <title>Microsoft Connector 18.2.0</title>
-      <link>https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.2.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.2.0</guid>
-      <pubDate>Tue, 01 Sep 2026 21:35:23 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Microsoft.Connector/pull/12
-
-
-**Full Changelog**: https://github.com/Jumoo/Microsoft.Connector/compare/release/v18.1.0...release/v18.2.0]]></description>
-    </item>
-    <item>
-      <title>DeepL Connector 18.1.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.1.0</guid>
-      <pubDate>Tue, 01 Sep 2026 20:42:44 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Whitespace fixes in DeepLTranslationService (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/7
-* Add repository standards and CI/CD to v18 (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/8
-* Bump chalk to 6.0.0 and typescript to 7.0.2 (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/10
-* Stop per-developer test site config from leaking into deepl-client commits by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/11
-* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/17
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v18.0.0...v18.1.0]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 18.2.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.2.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.2.0</guid>
-      <pubDate>Tue, 01 Sep 2026 16:29:31 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Merge v17 into v18 (2026-08-28) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/5
-* feat(frontend): Add bulk translation dashboard to the Content section by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/6
-* docs(release): Record Library bulk translation dashboard scoping notes by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/7
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.5.2...v18.2.0]]></description>
     </item>
   </channel>
 </rss>
