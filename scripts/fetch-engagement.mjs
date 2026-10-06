@@ -132,9 +132,16 @@ async function fetchCommitActivity(repo, buckets) {
     }
     return;
   }
-  console.warn(`  Gave up waiting on commit stats for ${repo}`);
+  throw new Error(`gave up waiting on commit stats for ${repo}`);
 }
 
+const ISSUE_FIELDS = ["issuesOpened", "issuesClosed", "prsOpened", "prsMerged"];
+const COMMIT_FIELDS = ["commits"];
+
+// Issues and commits are fetched independently so one failing (e.g. a token
+// that can read a private repo's code but not its issues) doesn't stop the
+// other refreshing. Returns the fresh buckets plus the fields that did
+// refresh - main() keeps the existing values for any that didn't.
 async function refreshPackage(pkg, months) {
   const issuesRepo = pkg.issuesRepo ?? pkg.githubRepo;
   console.log(
@@ -142,16 +149,23 @@ async function refreshPackage(pkg, months) {
   );
   const buckets = new Map(months.map((m) => [m, emptyBucket()]));
   const windowStart = `${months[0]}-01T00:00:00Z`;
+  const refreshedFields = [];
 
   try {
     await fetchIssuesAndPrs(issuesRepo, windowStart, buckets);
-    await fetchCommitActivity(pkg.githubRepo, buckets);
+    refreshedFields.push(...ISSUE_FIELDS);
   } catch (err) {
-    console.warn(`  Failed to refresh ${pkg.githubRepo}: ${err.message}`);
-    return null;
+    console.warn(`  Failed to refresh issues for ${issuesRepo}: ${err.message}`);
   }
 
-  return buckets;
+  try {
+    await fetchCommitActivity(pkg.githubRepo, buckets);
+    refreshedFields.push(...COMMIT_FIELDS);
+  } catch (err) {
+    console.warn(`  Failed to refresh commits for ${pkg.githubRepo}: ${err.message}`);
+  }
+
+  return { buckets, refreshedFields };
 }
 
 async function main() {
@@ -160,12 +174,17 @@ async function main() {
   const byPackage = new Map(engagement.packages.map((p) => [p.package, p]));
 
   for (const pkg of packages) {
-    const freshBuckets = await refreshPackage(pkg, months);
-    if (!freshBuckets) continue;
+    const { buckets: freshBuckets, refreshedFields } = await refreshPackage(pkg, months);
+    if (refreshedFields.length === 0) continue;
 
     const existing = byPackage.get(pkg.nugetId);
+    const existingByMonth = new Map((existing?.months ?? []).map((m) => [m.month, m]));
     const olderMonths = (existing?.months ?? []).filter((m) => !months.includes(m.month));
-    const refreshedMonths = months.map((month) => ({ month, ...freshBuckets.get(month) }));
+    const refreshedMonths = months.map((month) => {
+      const merged = { month, ...emptyBucket(), ...existingByMonth.get(month) };
+      for (const field of refreshedFields) merged[field] = freshBuckets.get(month)[field];
+      return merged;
+    });
     const merged = [...olderMonths, ...refreshedMonths].sort((a, b) => a.month.localeCompare(b.month));
 
     byPackage.set(pkg.nugetId, {
