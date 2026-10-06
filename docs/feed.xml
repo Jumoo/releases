@@ -5,6 +5,17 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Publicis Connector 17.0.0</title>
+      <link>https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0</guid>
+      <pubDate>Tue, 06 Oct 2026 10:39:32 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Make the Publicis menu icon monochrome by @henryjump in https://github.com/Jumoo/TranslatePlus-Connector/pull/17
+
+
+**Full Changelog**: https://github.com/Jumoo/TranslatePlus-Connector/compare/v17.0.0-rc5...v17.0.0]]></description>
+    </item>
+    <item>
       <title>AI Connector 17.7.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.0</guid>
@@ -1029,17 +1040,6 @@ Full changelog: https://github.com/Jumoo/uSync.Complete/blob/v17/main/CHANGELOG.
 
 
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.8.0...v17.8.1]]></description>
-    </item>
-    <item>
-      <title>AI Connector 18.2.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.2.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.2.0</guid>
-      <pubDate>Tue, 01 Sep 2026 21:37:23 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/35
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.1.1...v18.2.0]]></description>
     </item>
   </channel>
 </rss>

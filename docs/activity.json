@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T06:06:28.450Z",
+  "generatedAt": "2026-10-06T11:03:03.669Z",
   "packages": [
     {
       "package": "uSync",
@@ -24,8 +24,8 @@
       "lastReleaseDate": "2026-09-30T19:31:24Z",
       "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.2.0",
       "releaseBranch": "v18/main",
-      "commitsSince": 34,
-      "lastCommitDate": "2026-10-05T10:09:51Z"
+      "commitsSince": 38,
+      "lastCommitDate": "2026-10-06T08:33:23Z"
     },
     {
       "package": "uSync.Forms",
@@ -36,9 +36,9 @@
       "lastReleaseTag": "v17.1.0",
       "lastReleaseDate": "2026-06-16T08:46:51Z",
       "lastReleaseUrl": "https://github.com/KevinJump/uSync.Forms/releases/tag/v17.1.0",
-      "releaseBranch": "v17/main",
-      "commitsSince": 24,
-      "lastCommitDate": "2026-09-29T09:40:07Z"
+      "releaseBranch": "v18/main",
+      "commitsSince": 31,
+      "lastCommitDate": "2026-09-29T09:59:41Z"
     },
     {
       "package": "uSync.Umbraco.Commerce",
@@ -163,12 +163,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/TranslatePlus-Connector",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.0.0-rc4",
-      "lastReleaseDate": "2026-08-23T17:41:27Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0-rc4",
+      "lastReleaseTag": "v17.0.0",
+      "lastReleaseDate": "2026-10-06T10:39:32Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0",
       "releaseBranch": "v17/main",
-      "commitsSince": 11,
-      "lastCommitDate": "2026-09-21T15:10:09Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-06T10:39:32Z"
     },
     {
       "package": "Jumoo.TranslationManager.DeepL",
@@ -363,7 +363,7 @@
       "lastReleaseUrl": null,
       "releaseBranch": null,
       "commitsSince": null,
-      "lastCommitDate": "2026-09-29T09:29:33Z"
+      "lastCommitDate": "2026-10-06T08:34:17Z"
     }
   ]
 }
