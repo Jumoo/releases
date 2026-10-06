@@ -61,7 +61,12 @@ async function fetchJson(url) {
     await new Promise((r) => setTimeout(r, waitMs));
   }
   if (!res.ok) {
-    throw new Error(`${res.status} ${res.statusText} fetching ${url}`);
+    // GitHub says why in the body, and for a token missing a permission names
+    // the ones that would work in x-accepted-github-permissions.
+    const message = await res.json().then((body) => body?.message, () => null);
+    const accepted = res.headers.get("x-accepted-github-permissions");
+    const detail = [message, accepted && `needs: ${accepted}`].filter(Boolean).join("; ");
+    throw new Error(`${res.status} ${res.statusText} fetching ${url}${detail ? ` (${detail})` : ""}`);
   }
   return { json: await res.json(), res };
 }
