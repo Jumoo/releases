@@ -5,6 +5,20 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>SmartCat Connector 17.0.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0</guid>
+      <pubDate>Tue, 06 Oct 2026 17:22:28 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Prepare 17.0.0: RestSharp 114 security update, log fix, changelog by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/pull/9
+* ci: replace package build with manual prerelease to the nightly feed by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/pull/10
+
+## New Contributors
+* @henryjump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/pull/9
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/compare/v17.0.0-rc1...v17.0.0]]></description>
+    </item>
+    <item>
       <title>Publicis Connector 17.0.0</title>
       <link>https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0</guid>
@@ -1027,19 +1041,6 @@ Full changelog: https://github.com/Jumoo/uSync.Complete/blob/v17/main/CHANGELOG.
 
 
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v18.2.0...v18.2.1]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.8.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.8.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.8.1</guid>
-      <pubDate>Thu, 03 Sep 2026 15:54:36 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* fix(ui): Select the sole connector when a set has no default configured by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/17
-* feat(core): Guess a starter translation set on first install by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/19
-* chore: Pin the transitive dependency graph and exact SDK version by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/20
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.8.0...v17.8.1]]></description>
     </item>
   </channel>
 </rss>
