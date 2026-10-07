@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T10:41:27.768Z",
+  "generatedAt": "2026-10-07T18:49:53.122Z",
   "packages": [
     {
       "package": "uSync",
@@ -102,8 +102,8 @@
       "lastReleaseDate": "2026-09-30T17:53:42Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.2",
       "releaseBranch": "v18/main",
-      "commitsSince": 12,
-      "lastCommitDate": "2026-10-05T14:26:50Z"
+      "commitsSince": 18,
+      "lastCommitDate": "2026-10-07T16:24:03Z"
     },
     {
       "package": "Jumoo.TranslationManager.AI",
@@ -115,8 +115,8 @@
       "lastReleaseDate": "2026-10-02T11:59:34Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.0",
       "releaseBranch": "v17/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-10-02T11:59:34Z"
+      "commitsSince": 2,
+      "lastCommitDate": "2026-10-07T12:56:51Z"
     },
     {
       "package": "Jumoo.TranslationManager.CSV",
