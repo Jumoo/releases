@@ -5,6 +5,68 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync Forms 18.1.0</title>
+      <link>https://github.com/KevinJump/uSync.Forms/releases/tag/v18.1.0</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync.Forms/releases/tag/v18.1.0</guid>
+      <pubDate>Wed, 07 Oct 2026 10:24:48 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Bump vite from 7.3.6 to 8.2.1 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/36
+* Bump vite from 7.3.6 to 8.2.1 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/39
+* Bump gittools/actions from 3 to 4 by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/49
+* Bump vite from 8.2.1 to 8.2.2 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/57
+* Bump vite from 8.2.1 to 8.2.2 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/58
+* Bump vite from 8.2.2 to 8.3.1 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/61
+* Bump vite from 8.2.2 to 8.3.1 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/62
+* Ignore TypeScript major bumps in dependabot by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/63
+* Merge v17/main into v18/main (2026-09-29) by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/64
+* Bump vite from 8.3.1 to 8.3.2 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/65
+* Bump vite from 8.3.1 to 8.3.2 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/66
+* Refresh client lockfiles to clear dependabot alerts by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/67
+* Fix form import correctness and redundant Forms API calls by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/68
+* Fix nested folder push and tidy form export lookups by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/69
+* Sync the remaining form settings and keep folder ids on path fallback by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/70
+* Housekeeping: remove dead files, tidy client bundle and build metadata by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/71
+* Keep the client source json files out of the uSync.Forms package by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/72
+* Add a manual prerelease workflow for the nightly feed by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/73
+* Report the real version for uSync.Forms.Complete and add an upgrade note by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/74
+* Merge v17/main into v18/main (2026-10-07) by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/75
+
+## New Contributors
+* @dependabot[bot] made their first contribution in https://github.com/KevinJump/uSync.Forms/pull/36
+
+**Full Changelog**: https://github.com/KevinJump/uSync.Forms/compare/v18.0.1...v18.1.0]]></description>
+    </item>
+    <item>
+      <title>uSync Forms 17.2.0</title>
+      <link>https://github.com/KevinJump/uSync.Forms/releases/tag/v17.2.0</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync.Forms/releases/tag/v17.2.0</guid>
+      <pubDate>Wed, 07 Oct 2026 09:31:03 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Bump vite from 7.3.6 to 8.2.1 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/36
+* Bump vite from 7.3.6 to 8.2.1 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/39
+* Bump gittools/actions from 3 to 4 by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/49
+* Bump vite from 8.2.1 to 8.2.2 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/57
+* Bump vite from 8.2.1 to 8.2.2 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/58
+* Bump vite from 8.2.2 to 8.3.1 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/61
+* Bump vite from 8.2.2 to 8.3.1 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/62
+* Ignore TypeScript major bumps in dependabot by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/63
+* Bump vite from 8.3.1 to 8.3.2 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/65
+* Bump vite from 8.3.1 to 8.3.2 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/66
+* Refresh client lockfiles to clear dependabot alerts by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/67
+* Fix form import correctness and redundant Forms API calls by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/68
+* Fix nested folder push and tidy form export lookups by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/69
+* Sync the remaining form settings and keep folder ids on path fallback by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/70
+* Housekeeping: remove dead files, tidy client bundle and build metadata by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/71
+* Keep the client source json files out of the uSync.Forms package by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/72
+* Add a manual prerelease workflow for the nightly feed by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/73
+* Report the real version for uSync.Forms.Complete and add an upgrade note by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/74
+
+## New Contributors
+* @dependabot[bot] made their first contribution in https://github.com/KevinJump/uSync.Forms/pull/36
+
+**Full Changelog**: https://github.com/KevinJump/uSync.Forms/compare/v17.1.0...v17.2.0]]></description>
+    </item>
+    <item>
       <title>SmartCat Connector 17.0.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0</guid>
@@ -1010,37 +1072,6 @@ Dependency updates for the backoffice client packages are also included.
 
 Full changelog: https://github.com/Jumoo/uSync.Complete/blob/v17/main/CHANGELOG.md
 ]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.8.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.8.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.8.2</guid>
-      <pubDate>Mon, 07 Sep 2026 09:40:24 GMT</pubDate>
-      <description><![CDATA[A clone-to-language action for untranslated variants, and a dependency fix for sites also running uSync.Complete.
-
-- Add: clone the currently viewed variant's content straight into a language with no translation yet, skipping the translation job pipeline entirely — porting the v13 clone button to the v17 backoffice. A notification confirms success or failure, and the new Clone action is styled distinctly from Create so the two read as primary vs secondary
-- Fix: sites running Translation Manager alongside uSync.Complete 17.4.0 could hit `400 - Read unrecognized type discriminator id 'TranslationProcessingOptions'` on translation requests — both packages depend on Jumoo.Processing, and a version mismatch between them meant two separate copies of it got loaded, so the runtime discriminator scan Jumoo.Processing uses for polymorphic options types missed ours. Aligning Translation Manager's Jumoo.Processing reference with uSync.Complete's (17.4.0) fixes it
-- Fix: the subscription and domain licence checkers now send a user agent header on requests to check.jumoo.co.uk, matching uSync.Complete's licence checker setup
-- Build: publish nightly builds to nightly.jumoo.uk]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 18.2.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.2.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.2.1</guid>
-      <pubDate>Fri, 04 Sep 2026 07:06:11 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* fix(ci): Wire release.yml up to NuGet trusted publishing by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/2
-* Add bulk translation dashboard to the Content section by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/3
-* Add access-level aware provider options lookup by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/4
-* fix(ui): Select the sole connector when a set has no default configured by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/17
-* feat(core): Guess a starter translation set on first install by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/19
-* chore: Pin the transitive dependency graph and exact SDK version by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/20
-* Merge v17 into v18 (2026-09-03) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/21
-* fix(core): Add user agent header to licence check HTTP clients by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/22
-* Merge v17 into v18 (2026-09-04) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/23
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v18.2.0...v18.2.1]]></description>
     </item>
   </channel>
 </rss>
