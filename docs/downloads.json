@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T05:50:00.277Z",
+  "generatedAt": "2026-10-08T15:04:02.902Z",
   "packages": [
     {
       "package": "uSync",
@@ -1947,6 +1947,17 @@
         {
           "version": "0.17.3",
           "downloads": 196
+        }
+      ]
+    },
+    {
+      "package": "uSync.AI",
+      "title": "uSync AI",
+      "totalDownloads": 0,
+      "versions": [
+        {
+          "version": "17.0.0",
+          "downloads": 0
         }
       ]
     },

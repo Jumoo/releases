@@ -5,6 +5,58 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync AI 17.0.0</title>
+      <link>https://github.com/Jumoo/uSync.AI/releases/tag/v17.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.AI/releases/tag/v17.0.0</guid>
+      <pubDate>Thu, 08 Oct 2026 14:56:32 GMT</pubDate>
+      <description><![CDATA[First release of uSync.AI: uSync support for [Umbraco.AI](https://docs.umbraco.com/ai-in-umbraco) on Umbraco 17.
+
+## Packages
+
+| Package | What it does |
+| --- | --- |
+| `uSync.AI` | Installs everything below except the uSync.Complete parts |
+| `uSync.AI.Sync` | Syncs Umbraco.AI connections, guardrails, contexts, profiles and settings |
+| `uSync.AI.Prompt` | Syncs Umbraco.AI prompts |
+| `uSync.AI.Agent` | Syncs Umbraco.AI agents |
+| `uSync.AI.Tools` | Agent tools for uSync report, export and import |
+| `uSync.AI.Complete` | Push and pull AI items with uSync.Complete, and agent tools for the publisher |
+| `uSync.Complete.AI` | Installs `uSync.AI` and `uSync.AI.Complete` |
+
+Connection API keys are not written to disk by default; see the `uSync.AI.Sync` readme.
+
+Requires Umbraco 17.5+, Umbraco.AI 17.5.2+ and uSync 17.4.3+ (uSync.Complete 17.5.0+ for the Complete packages).
+
+
+## What's Changed
+* Add uSync.AI.Sync: sync Umbraco.AI settings by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/4
+* Add uSync.AI.Prompt: sync Umbraco.AI prompts by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/5
+* Add uSync.AI.Agent: sync Umbraco.AI agents by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/6
+* Add uSync.AI.Tools: agent tools for uSync by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/7
+* Document the uSync.AI meta package and add marketplace files by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/8
+* Push and pull AI items with uSync.Complete by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/9
+* Add agent tools for the uSync.Complete publisher by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/14
+* Bump NUnit from 4.3.2 to 5.0.0 by @dependabot[bot] in https://github.com/Jumoo/uSync.AI/pull/3
+* Bump coverlet.collector from 8.0.1 to 10.1.0 by @dependabot[bot] in https://github.com/Jumoo/uSync.AI/pull/2
+* Bump vite from 7.3.7 to 8.3.2 in /uSync.AI.Complete/complete-client by @dependabot[bot] in https://github.com/Jumoo/uSync.AI/pull/10
+* Bump vite from 7.3.7 to 8.3.2 in /uSync.AI.Sync/ai-client by @dependabot[bot] in https://github.com/Jumoo/uSync.AI/pull/13
+* Set DateCreated on prompts created by an import by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/16
+* Bump Microsoft.NET.Test.Sdk, Moq and NUnit3TestAdapter by @dependabot[bot] in https://github.com/Jumoo/uSync.AI/pull/15
+* Let API keys sync without writing encrypted values by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/17
+* Turn CodeQL back on and gate releases now the repo is public by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/18
+* Let prereleases build before the first release is tagged by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/19
+* Check out the nightly feed action with a PAT by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/20
+* Write an empty config for a standard agent saved without one by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/21
+* Send an AI item's dependencies with it by default by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/22
+* Clear uSync.Complete's dependency cache when an AI item changes by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/23
+
+## New Contributors
+* @KevinJump made their first contribution in https://github.com/Jumoo/uSync.AI/pull/4
+* @dependabot[bot] made their first contribution in https://github.com/Jumoo/uSync.AI/pull/3
+
+**Full Changelog**: https://github.com/Jumoo/uSync.AI/commits/v17.0.0]]></description>
+    </item>
+    <item>
       <title>uSync Forms 18.1.0</title>
       <link>https://github.com/KevinJump/uSync.Forms/releases/tag/v18.1.0</link>
       <guid isPermaLink="true">https://github.com/KevinJump/uSync.Forms/releases/tag/v18.1.0</guid>
@@ -1062,16 +1114,6 @@ Dependency updates for the backoffice client packages are also included.
 
 
 **Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/compare/release/v17.4.0...release/v17.4.1]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 17.4.1</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.4.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.4.1</guid>
-      <pubDate>Mon, 07 Sep 2026 15:42:14 GMT</pubDate>
-      <description><![CDATA[- Fix: server-to-server push requests no longer fail with `401 The request requires user authentication` when the target site has Umbraco's Basic Auth shared-secret bypass configured. The header carrying the shared secret was being mis-paired and then overwritten with the wrong value before the request went out, so the target rejected it as unauthenticated even when the secret was configured correctly on both servers
-
-Full changelog: https://github.com/Jumoo/uSync.Complete/blob/v17/main/CHANGELOG.md
-]]></description>
     </item>
   </channel>
 </rss>
