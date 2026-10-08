@@ -43,6 +43,12 @@
     "githubRepo": "Jumoo/uSync.Hangfire"
   },
   {
+    "nugetId": "uSync.AI",
+    "title": "uSync AI",
+    "category": "uSync Addon",
+    "githubRepo": "Jumoo/uSync.AI"
+  },
+  {
     "nugetId": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
