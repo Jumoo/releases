@@ -1,5 +1,18 @@
 [
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.5.0-rc1",
+    "publishedAt": "2026-10-10T21:10:30.787+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.5.0-rc1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync.AI",
     "title": "uSync AI",
     "category": "uSync Addon",
