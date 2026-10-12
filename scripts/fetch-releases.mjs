@@ -94,8 +94,19 @@ function flattenDependencies(dependencyGroups) {
 // NuGet's search API (unlike the registration API) exposes download
 // counts: a package-level total plus a per-version breakdown. Both are
 // cumulative-to-date, not a live install count.
+//
+// NuGet runs two search replicas and their download stats can drift apart:
+// in Sept 2026 usnc froze for weeks while ussc kept updating. Query both and
+// keep whichever reports more downloads, since counts only ever go up.
+const NUGET_SEARCH_HOSTS = ["azuresearch-usnc.nuget.org", "azuresearch-ussc.nuget.org"];
+
 async function fetchNugetDownloadsForId(nugetId) {
-  const url = `https://azuresearch-usnc.nuget.org/query?q=packageid:${encodeURIComponent(nugetId)}&prerelease=true`;
+  const results = await Promise.all(NUGET_SEARCH_HOSTS.map((host) => fetchNugetDownloadsFromHost(host, nugetId)));
+  return results.filter(Boolean).reduce((best, r) => (!best || r.totalDownloads > best.totalDownloads ? r : best), null);
+}
+
+async function fetchNugetDownloadsFromHost(host, nugetId) {
+  const url = `https://${host}/query?q=packageid:${encodeURIComponent(nugetId)}&prerelease=true`;
   try {
     const result = await fetchJson(url);
     const entry = result.data?.find((d) => d.id.toLowerCase() === nugetId.toLowerCase()) ?? result.data?.[0];
@@ -105,7 +116,7 @@ async function fetchNugetDownloadsForId(nugetId) {
       versions: (entry.versions ?? []).map((v) => ({ version: v.version, downloads: v.downloads ?? 0 })),
     };
   } catch (err) {
-    console.warn(`  NuGet downloads fetch failed for ${nugetId}: ${err.message}`);
+    console.warn(`  NuGet downloads fetch failed for ${nugetId} (${host}): ${err.message}`);
     return null;
   }
 }
