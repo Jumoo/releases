@@ -5,6 +5,38 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>AI Connector 18.4.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.0</guid>
+      <pubDate>Mon, 12 Oct 2026 10:18:41 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/50
+* fix: gate composer registrations on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/51
+* Merge v17 into v18 (2026-09-30) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/53
+* fix: stop SDK retries stacking and give AI requests realistic timeouts by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/54
+* feat: gather a node's values into shared translation requests by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/55
+* Bump prettier from 3.9.6 to 3.9.8 in /Jumoo.TranslationManager.AI/ai-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/52
+* Bump vite from 6.4.3 to 8.3.0 in /Jumoo.TranslationManager.AI/ai-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/49
+* Merge v17 into v18 (2026-10-02) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/56
+* feat: retry a short translation in smaller pieces by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/57
+* Merge v17 into v18 (2026-10-12) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/59
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.3.0...v18.4.0
+]]></description>
+    </item>
+    <item>
+      <title>AI Connector 17.7.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.1</guid>
+      <pubDate>Mon, 12 Oct 2026 09:44:05 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* feat: retry a short translation in smaller pieces by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/57
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.7.0...v17.7.1]]></description>
+    </item>
+    <item>
       <title>Jumoo.Processing 17.5.0-rc1</title>
       <link>https://github.com/Jumoo/Jumoo.Processing/releases</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases</guid>
@@ -1045,51 +1077,6 @@ Dependency updates for the backoffice client packages are also included.
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</guid>
       <pubDate>Fri, 11 Sep 2026 10:09:44 GMT</pubDate>
       <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>AI Connector 17.6.0-alpha01</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</guid>
-      <pubDate>Fri, 11 Sep 2026 08:14:04 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync 17.4.0</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v17.4.0</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.4.0</guid>
-      <pubDate>Tue, 08 Sep 2026 14:20:49 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-
-### Features
-* Revive uSync.Community.DataTypeSerializers by @KevinJump in https://github.com/KevinJump/uSync/pull/1052
-* Fix and finish background processing mode (opt-in) by @KevinJump in https://github.com/KevinJump/uSync/pull/1054
-* Support a load-balanced backoffice in Background processing mode by @KevinJump in https://github.com/KevinJump/uSync/pull/1055
-* Get template content from the template service, and fix the compiled-views fallback by @KevinJump in https://github.com/KevinJump/uSync/pull/1059
-* Structured diff for JSON/block changes in the change view by @KevinJump in https://github.com/KevinJump/uSync/pull/1060
-
-### Fixes
-* Fix cross-platform path handling and env casing bug found testing ubuntu-latest by @KevinJump in https://github.com/KevinJump/uSync/pull/1079
-
-### Package & repo admin
-* Run PR build/test and package workflows on v17/main by @KevinJump in https://github.com/KevinJump/uSync/pull/1056
-* Fix GitVersion branch regex to match v17/main by @KevinJump in https://github.com/KevinJump/uSync/pull/1058
-* Bump @hey-api/openapi-ts from 0.97.0 to 0.97.3 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1057
-* Publish nightly builds to the Jumoo nightly feed by @KevinJump in https://github.com/KevinJump/uSync/pull/1068
-* Use a PAT to fetch nightly-feed-config outside the Jumoo org by @KevinJump in https://github.com/KevinJump/uSync/pull/1069
-* Bump @humanfs/node from 0.16.7 to 0.16.8 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1064
-* Bump fast-uri from 3.1.5 to 3.1.7 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1063
-* Bump @tiptap/core from 3.22.2 to 3.31.0 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1061
-* Bump @tiptap/core and related Tiptap extensions in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1062
-* Remove stale root package-lock.json by @KevinJump in https://github.com/KevinJump/uSync/pull/1070
-* Pack the main uSync and uSync.History packages for the nightly feed by @KevinJump in https://github.com/KevinJump/uSync/pull/1071
-* Fix npm dependabot alerts in usync-assets and history-client by @KevinJump in https://github.com/KevinJump/uSync/pull/1073
-* Remove duplicate nuget packaging in package-build workflow by @KevinJump in https://github.com/KevinJump/uSync/pull/1074
-* Switch CodeQL to default setup, remove advanced-setup workflow by @KevinJump in https://github.com/KevinJump/uSync/pull/1075
-* Modernize workflow caching and cleanup by @KevinJump in https://github.com/KevinJump/uSync/pull/1076
-* Add release.yml, ported from v18/main by @KevinJump in https://github.com/KevinJump/uSync/pull/1080
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.3.8...v17.4.0
-]]></description>
     </item>
   </channel>
 </rss>

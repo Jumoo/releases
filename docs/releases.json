@@ -1,5 +1,31 @@
 [
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "18.4.0",
+    "publishedAt": "2026-10-12T10:18:41Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/18.4.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.0",
+    "notes": "## What's Changed\n* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/50\n* fix: gate composer registrations on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/51\n* Merge v17 into v18 (2026-09-30) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/53\n* fix: stop SDK retries stacking and give AI requests realistic timeouts by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/54\n* feat: gather a node's values into shared translation requests by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/55\n* Bump prettier from 3.9.6 to 3.9.8 in /Jumoo.TranslationManager.AI/ai-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/52\n* Bump vite from 6.4.3 to 8.3.0 in /Jumoo.TranslationManager.AI/ai-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/49\n* Merge v17 into v18 (2026-10-02) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/56\n* feat: retry a short translation in smaller pieces by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/57\n* Merge v17 into v18 (2026-10-12) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/59\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.3.0...v18.4.0\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.7.1",
+    "publishedAt": "2026-10-12T09:44:05Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.7.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.1",
+    "notes": "## What's Changed\n* feat: retry a short translation in smaller pieces by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/57\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.7.0...v17.7.1",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.Processing",
     "title": "Jumoo.Processing",
     "category": "Other",
