@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T15:09:41.468Z",
+  "generatedAt": "2026-10-13T19:12:16.236Z",
   "packages": [
     {
       "package": "uSync",
@@ -25,7 +25,7 @@
       "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.6.0-rc1",
       "releaseBranch": null,
       "commitsSince": null,
-      "lastCommitDate": "2026-10-13T14:37:03Z"
+      "lastCommitDate": "2026-10-13T16:36:39Z"
     },
     {
       "package": "uSync.Forms",
@@ -50,8 +50,8 @@
       "lastReleaseDate": "2026-10-13T11:38:41Z",
       "lastReleaseUrl": "https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.0",
       "releaseBranch": "v18/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-10-13T11:38:41Z"
+      "commitsSince": 12,
+      "lastCommitDate": "2026-10-13T17:04:38Z"
     },
     {
       "package": "uSync.Cli",
@@ -271,8 +271,8 @@
       "lastReleaseDate": "2026-09-21T15:17:17Z",
       "lastReleaseUrl": "https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.1",
       "releaseBranch": "v17/main",
-      "commitsSince": 8,
-      "lastCommitDate": "2026-10-13T13:30:29Z"
+      "commitsSince": 9,
+      "lastCommitDate": "2026-10-13T16:32:18Z"
     },
     {
       "package": "Jumoo.TranslationManager.GlobalLink",
@@ -349,8 +349,8 @@
       "lastReleaseDate": "2026-08-26T09:14:49Z",
       "lastReleaseUrl": "https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.0.0",
       "releaseBranch": "v17/main",
-      "commitsSince": 8,
-      "lastCommitDate": "2026-10-13T12:01:41Z"
+      "commitsSince": 10,
+      "lastCommitDate": "2026-10-13T16:37:03Z"
     },
     {
       "package": "Jumoo.Processing",
@@ -363,7 +363,7 @@
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.0-rc2",
       "releaseBranch": null,
       "commitsSince": null,
-      "lastCommitDate": "2026-10-13T13:52:49Z"
+      "lastCommitDate": "2026-10-13T16:35:59Z"
     },
     {
       "package": "Jumoo.Json",
