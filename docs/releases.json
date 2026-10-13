@@ -1,5 +1,83 @@
 [
   {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "18.1.1",
+    "publishedAt": "2026-10-13T13:50:48Z",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/18.1.1",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.1.1",
+    "notes": "## What's Changed\n* Add standard repository documents and CI/CD workflows by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/81\n* Port CI/CD, repo standards, and site-lock features from v18/main by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/82\n* Build Core and Client projects explicitly in CI workflows by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/89\n* Pack and push Core/Client/Assets as their own NuGet packages by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/92\n* Updating dashboard label to be consistent with other dashboard labels by @SamuelJForrest in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/79\n* Merge v17/main into v18/main (2026-10-13) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/103\n* Triage dependabot updates (#101) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/104\n* Bump the npm-dependencies group in /Our.Umbraco.MaintenanceMode.Client/maintenance-client with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/105\n* Bump prosemirror-view from 1.41.3 to 1.42.6 in /Our.Umbraco.MaintenanceMode.Client/maintenance-client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/106\n* Bump markdown-it from 14.1.0 to 14.3.2 in /Our.Umbraco.MaintenanceMode.Client/maintenance-client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/108\n* Merge v17/main into v18/main (2026-10-13) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/110\n* Changelog and version for 18.1.1 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/111\n\n## New Contributors\n* @SamuelJForrest made their first contribution in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/79\n\n**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v18.1.0...v18.1.1",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "uSync.Umbraco.Commerce",
+    "title": "uSync Commerce",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.Umbraco.Commerce",
+    "version": "18.0.0",
+    "publishedAt": "2026-10-13T11:38:41Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Umbraco.Commerce/18.0.0",
+    "githubUrl": "https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.0",
+    "notes": "First release of the 18.x line (Umbraco 18 / Umbraco Commerce 18 / net10.0).\n\n### Added\n\n- Umbraco / Umbraco Commerce 18 support — `Umbraco.Commerce`, `uSync.Core` and `uSync.BackOffice`\n  bumped to 18.1.0. No code changes were needed; the APIs this package uses were unchanged\n  between the 17.x and 18.x lines.\n- Repository standards: `LICENSE.md`, `README.md`, `CHANGELOG.md`, `SECURITY.md`,\n  `CODE_OF_CONDUCT.md`, `.editorconfig`, `.gitattributes`, `global.json`, `Directory.Build.props`,\n  `GitVersion.yml`, dependabot, and issue and PR templates.\n- CI workflows — PR build, package build, and release. CodeQL is present but disabled by default\n  (see the workflow for why).\n- Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated behind the\n  `nuget` GitHub environment and authenticated with trusted publishing (OIDC) rather than a\n  stored API key.\n- `packages.lock.json`, so a transitive dependency update can't change what a build restores\n  without a commit.\n\n### Fixed\n\n- Tax class country/region tax rates were never restored on import: the serializer wrote them\n  under a `<TaxClasses>` element but read them back looking for `<TaxRates>`, so import always saw\n  an empty list and cleared every existing override instead of restoring it (#10).\n- The exported country/region tax rate value itself round-tripped as `0`, because it was serialized\n  via `TaxRate.ToString()` (`\"20.00%\"`) instead of the underlying decimal value, which then failed\n  to parse back on import. Tax codes are now round-tripped too.\n- `ShippingMethodSerializer` never removed a country/region shipping allowance that had been\n  removed from the XML, due to a collection-diff comparing the live list against itself instead of\n  against the incoming XML values.\n\n**Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/blob/v18/main/CHANGELOG.md\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager.Xliff",
+    "title": "Xliff Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Xliff.Connector",
+    "version": "18.0.2",
+    "publishedAt": "2026-10-13T10:53:55Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Xliff/18.0.2",
+    "githubUrl": "https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.2",
+    "notes": "### Fixed\n\n- `ConnectorSetup` now gates its registrations on the Umbraco backoffice being enabled,\n  matching the check Translation Manager core applies in its own composers, so the connector\n  no longer tries to register on a website-only boot.\n\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "CrowdIn Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "18.1.0",
+    "publishedAt": "2026-10-13T10:30:14Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/18.1.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.0",
+    "notes": "### Added\n\n- `IOptionsTranslationProvider.GetOptions(OptionsDetailLevel)` support — withholds the CrowdIn\n  access token when only a partial view of the connector's options is needed (e.g. during job\n  creation).\n- Repository standards: `LICENSE.txt`, `README.md`, `CHANGELOG.md`, `SECURITY.md`,\n  `CODE_OF_CONDUCT.md`, `.editorconfig`, `global.json`, `Directory.Build.props`,\n  `GitVersion.yml`, `nuget.config`, dependabot, and issue and PR templates.\n- `nuget.config` pins the restore sources and adds package source mapping, so only\n  `Jumoo.*` may come from the nightly feed and everything else comes from nuget.org.\n- CI workflows — PR build, package build, release, and CodeQL. The package build runs the\n  client build before packing, so the produced package actually contains the backoffice\n  assets.\n- Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated\n  behind the `nuget` GitHub environment and authenticated with trusted publishing (OIDC)\n  rather than a stored API key.\n\n### Fixed\n\n- `CrowdInComposer` now gates its registrations on the Umbraco backoffice being enabled,\n  matching the check Translation Manager core applies in its own composers, so the connector\n  no longer tries to register on a website-only boot.\n\n### Changed\n\n- Now requires Translation Manager 18.2.0 or later (`Jumoo.TranslationManager.Core` and\n  `.Serializers`, previously 18.0.0).\n\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager.Microsoft",
+    "title": "Microsoft Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Microsoft.Connector",
+    "version": "18.2.1",
+    "publishedAt": "2026-10-13T10:30:12Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Microsoft/18.2.1",
+    "githubUrl": "https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.2.1",
+    "notes": "### Fixed\n\n- `ConnectorComposer` now gates its registrations on the Umbraco backoffice being enabled,\n  matching the check Translation Manager core applies in its own composers, so the connector\n  no longer tries to register on a website-only boot.\n\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager.Passthrough",
+    "title": "Passthrough Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Passthrough.Connector",
+    "version": "18.0.1",
+    "publishedAt": "2026-10-13T10:30:09Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Passthrough/18.0.1",
+    "githubUrl": "https://github.com/Jumoo/Passthrough.Connector/releases/tag/v18.0.1",
+    "notes": "### Fixed\n\n- `ConnectorComposer` now gates its registrations on the Umbraco backoffice being enabled,\n  matching the check Translation Manager core applies in its own composers, so the connector\n  no longer tries to register on a website-only boot.\n\n### Changed\n\n- Brings the v17 repository standards and CI/CD across to the 18 line. Releases now publish to\n  NuGet from a `v{version}` tag, authenticated with trusted publishing (OIDC).\n\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "",
@@ -3469,19 +3547,6 @@
     "notes": null,
     "prerelease": true,
     "umbracoMajor": 17
-  },
-  {
-    "package": "uSync",
-    "title": "uSync",
-    "category": "",
-    "repo": "KevinJump/uSync",
-    "version": "16.2.0-beta01",
-    "publishedAt": "2026-01-13T12:26:20.32+00:00",
-    "nugetUrl": "https://www.nuget.org/packages/uSync/16.2.0-beta01",
-    "githubUrl": "https://github.com/KevinJump/uSync/releases",
-    "notes": null,
-    "prerelease": true,
-    "umbracoMajor": 16
   },
   {
     "package": "Our.Umbraco.MaintenanceMode",

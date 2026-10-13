@@ -5,6 +5,147 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Maintenance Mode 18.1.1</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.1.1</guid>
+      <pubDate>Tue, 13 Oct 2026 13:50:48 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add standard repository documents and CI/CD workflows by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/81
+* Port CI/CD, repo standards, and site-lock features from v18/main by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/82
+* Build Core and Client projects explicitly in CI workflows by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/89
+* Pack and push Core/Client/Assets as their own NuGet packages by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/92
+* Updating dashboard label to be consistent with other dashboard labels by @SamuelJForrest in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/79
+* Merge v17/main into v18/main (2026-10-13) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/103
+* Triage dependabot updates (#101) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/104
+* Bump the npm-dependencies group in /Our.Umbraco.MaintenanceMode.Client/maintenance-client with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/105
+* Bump prosemirror-view from 1.41.3 to 1.42.6 in /Our.Umbraco.MaintenanceMode.Client/maintenance-client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/106
+* Bump markdown-it from 14.1.0 to 14.3.2 in /Our.Umbraco.MaintenanceMode.Client/maintenance-client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/108
+* Merge v17/main into v18/main (2026-10-13) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/110
+* Changelog and version for 18.1.1 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/111
+
+## New Contributors
+* @SamuelJForrest made their first contribution in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/79
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v18.1.0...v18.1.1]]></description>
+    </item>
+    <item>
+      <title>uSync Commerce 18.0.0</title>
+      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.0</guid>
+      <pubDate>Tue, 13 Oct 2026 11:38:41 GMT</pubDate>
+      <description><![CDATA[First release of the 18.x line (Umbraco 18 / Umbraco Commerce 18 / net10.0).
+
+### Added
+
+- Umbraco / Umbraco Commerce 18 support — `Umbraco.Commerce`, `uSync.Core` and `uSync.BackOffice`
+  bumped to 18.1.0. No code changes were needed; the APIs this package uses were unchanged
+  between the 17.x and 18.x lines.
+- Repository standards: `LICENSE.md`, `README.md`, `CHANGELOG.md`, `SECURITY.md`,
+  `CODE_OF_CONDUCT.md`, `.editorconfig`, `.gitattributes`, `global.json`, `Directory.Build.props`,
+  `GitVersion.yml`, dependabot, and issue and PR templates.
+- CI workflows — PR build, package build, and release. CodeQL is present but disabled by default
+  (see the workflow for why).
+- Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated behind the
+  `nuget` GitHub environment and authenticated with trusted publishing (OIDC) rather than a
+  stored API key.
+- `packages.lock.json`, so a transitive dependency update can't change what a build restores
+  without a commit.
+
+### Fixed
+
+- Tax class country/region tax rates were never restored on import: the serializer wrote them
+  under a `<TaxClasses>` element but read them back looking for `<TaxRates>`, so import always saw
+  an empty list and cleared every existing override instead of restoring it (#10).
+- The exported country/region tax rate value itself round-tripped as `0`, because it was serialized
+  via `TaxRate.ToString()` (`"20.00%"`) instead of the underlying decimal value, which then failed
+  to parse back on import. Tax codes are now round-tripped too.
+- `ShippingMethodSerializer` never removed a country/region shipping allowance that had been
+  removed from the XML, due to a collection-diff comparing the live list against itself instead of
+  against the incoming XML values.
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/blob/v18/main/CHANGELOG.md
+]]></description>
+    </item>
+    <item>
+      <title>Xliff Connector 18.0.2</title>
+      <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.2</guid>
+      <pubDate>Tue, 13 Oct 2026 10:53:55 GMT</pubDate>
+      <description><![CDATA[### Fixed
+
+- `ConnectorSetup` now gates its registrations on the Umbraco backoffice being enabled,
+  matching the check Translation Manager core applies in its own composers, so the connector
+  no longer tries to register on a website-only boot.
+
+]]></description>
+    </item>
+    <item>
+      <title>CrowdIn Connector 18.1.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.0</guid>
+      <pubDate>Tue, 13 Oct 2026 10:30:14 GMT</pubDate>
+      <description><![CDATA[### Added
+
+- `IOptionsTranslationProvider.GetOptions(OptionsDetailLevel)` support — withholds the CrowdIn
+  access token when only a partial view of the connector's options is needed (e.g. during job
+  creation).
+- Repository standards: `LICENSE.txt`, `README.md`, `CHANGELOG.md`, `SECURITY.md`,
+  `CODE_OF_CONDUCT.md`, `.editorconfig`, `global.json`, `Directory.Build.props`,
+  `GitVersion.yml`, `nuget.config`, dependabot, and issue and PR templates.
+- `nuget.config` pins the restore sources and adds package source mapping, so only
+  `Jumoo.*` may come from the nightly feed and everything else comes from nuget.org.
+- CI workflows — PR build, package build, release, and CodeQL. The package build runs the
+  client build before packing, so the produced package actually contains the backoffice
+  assets.
+- Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated
+  behind the `nuget` GitHub environment and authenticated with trusted publishing (OIDC)
+  rather than a stored API key.
+
+### Fixed
+
+- `CrowdInComposer` now gates its registrations on the Umbraco backoffice being enabled,
+  matching the check Translation Manager core applies in its own composers, so the connector
+  no longer tries to register on a website-only boot.
+
+### Changed
+
+- Now requires Translation Manager 18.2.0 or later (`Jumoo.TranslationManager.Core` and
+  `.Serializers`, previously 18.0.0).
+
+]]></description>
+    </item>
+    <item>
+      <title>Microsoft Connector 18.2.1</title>
+      <link>https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.2.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.2.1</guid>
+      <pubDate>Tue, 13 Oct 2026 10:30:12 GMT</pubDate>
+      <description><![CDATA[### Fixed
+
+- `ConnectorComposer` now gates its registrations on the Umbraco backoffice being enabled,
+  matching the check Translation Manager core applies in its own composers, so the connector
+  no longer tries to register on a website-only boot.
+
+]]></description>
+    </item>
+    <item>
+      <title>Passthrough Connector 18.0.1</title>
+      <link>https://github.com/Jumoo/Passthrough.Connector/releases/tag/v18.0.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Passthrough.Connector/releases/tag/v18.0.1</guid>
+      <pubDate>Tue, 13 Oct 2026 10:30:09 GMT</pubDate>
+      <description><![CDATA[### Fixed
+
+- `ConnectorComposer` now gates its registrations on the Umbraco backoffice being enabled,
+  matching the check Translation Manager core applies in its own composers, so the connector
+  no longer tries to register on a website-only boot.
+
+### Changed
+
+- Brings the v17 repository standards and CI/CD across to the 18 line. Releases now publish to
+  NuGet from a `v{version}` tag, authenticated with trusted publishing (OIDC).
+
+]]></description>
+    </item>
+    <item>
       <title>uSync Complete 17.6.0-rc1</title>
       <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.6.0-rc1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.6.0-rc1</guid>
@@ -1046,128 +1187,6 @@ Dependency updates for the backoffice client packages are also included.
 
 
 **Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.4.1...release/v17.4.2]]></description>
-    </item>
-    <item>
-      <title>uSync 18.1.3</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.3</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.3</guid>
-      <pubDate>Mon, 14 Sep 2026 10:40:23 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Port today's v17 update: revive uSync.Community.DataTypeSerializers (#1052) by @KevinJump in https://github.com/KevinJump/uSync/pull/1053
-* Merge v17 into v18 (2026-09-08) by @KevinJump in https://github.com/KevinJump/uSync/pull/1072
-* Merge v17 into v18 (2026-09-08) by @KevinJump in https://github.com/KevinJump/uSync/pull/1081
-* Merge v17 into v18 (2026-09-12) by @KevinJump in https://github.com/KevinJump/uSync/pull/1086
-* Rename package-build.yml to prerelease.yml, manual trigger only by @KevinJump in https://github.com/KevinJump/uSync/pull/1087
-
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.1.2...v18.1.3]]></description>
-    </item>
-    <item>
-      <title>uSync 17.4.1</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v17.4.1</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.4.1</guid>
-      <pubDate>Mon, 14 Sep 2026 10:25:57 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Convert nightly build workflow to manual prerelease trigger by @KevinJump in https://github.com/KevinJump/uSync/pull/1082
-* [AMEND] Make bad file name blocklist configurable by @NikRimington in https://github.com/KevinJump/uSync/pull/1085
-
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.4.0...v17.4.1]]></description>
-    </item>
-    <item>
-      <title>AI Connector 18.3.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.3.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.3.0</guid>
-      <pubDate>Mon, 14 Sep 2026 10:18:59 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Bring repository standards and CI/CD in line with Xliff.Connector by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/20
-* Port Claude translator fixes and model-listing from v17 by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/21
-* Keep the local dev server URL out of the generated client by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/22
-* Bump the ai-client npm dependencies, hold typescript at 5.x by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/23
-* Let translators build their own batch request bodies by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/27
-* Write batch-translated values to translation memory by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/30
-* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/35
-* Merge v17 into v18 (2026-09-11) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/48
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.6.0...v18.3.0]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 18.3.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.0</guid>
-      <pubDate>Mon, 14 Sep 2026 09:47:14 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Merge v17 into v18 (2026-08-28) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/5
-* feat(frontend): Add bulk translation dashboard to the Content section by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/6
-* docs(release): Record Library bulk translation dashboard scoping notes by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/7
-* Merge v17 into v18 (2026-09-03) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/21
-* Merge v17 into v18 (2026-09-04) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/23
-* Merge v17 into v18 (2026-09-04) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/25
-* Merge v17 into v18 (2026-09-09) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/30
-* Merge v17 into v18 (2026-09-09) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/33
-* Merge v17 into v18 (2026-09-09) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/38
-* Merge v17 into v18 (2026-09-11) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/41
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.9.0...v18.3.0]]></description>
-    </item>
-    <item>
-      <title>uSync Migrations 17.0.3</title>
-      <link>https://github.com/Jumoo/uSyncMigrations/releases/tag/v17.0.3</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSyncMigrations/releases/tag/v17.0.3</guid>
-      <pubDate>Fri, 11 Sep 2026 13:04:33 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Fix RTE datatype import crash on empty/whitespace blocks config by @KevinJump in https://github.com/Jumoo/uSyncMigrations/pull/331
-
-
-**Full Changelog**: https://github.com/Jumoo/uSyncMigrations/compare/v17.0.2...v17.0.3]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.9.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.0</guid>
-      <pubDate>Fri, 11 Sep 2026 11:36:37 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* feat: Add Glossary by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/18
-* fix(ui): Default new translation jobs to the latest content by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/29
-* feat(ui): Show connector version in the diagnostics view by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/31
-* Warn which connectors support the glossary by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/32
-* Move Translation Memory to the Translations section by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/34
-* Gate ClientComposer on the backoffice being enabled by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/35
-* Gate Glossary/Memory menu items on client-side permission, not just the API by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/36
-* Add Glossary/Memory item counts to the Translations dashboard by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/37
-* feat(core): Add optional Polly retry pipeline to machine connector base by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/39
-* ci(release): Split NuGet release into core and main scopes by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/40
-* build(deps-dev): bump vite-plugin-dts from 4.5.4 to 5.0.3 in /Jumoo.TranslationManager.Client/translation-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager/pull/11
-* build(deps-dev): bump @rollup/plugin-node-resolve from 15.2.3 to 16.0.3 in /Jumoo.TranslationManager.Client/translation-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager/pull/10
-* Bump coverlet.collector and 3 others by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager/pull/43
-* ci: Make Build and Package a manual workflow by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/48
-* Bump NUnit3TestAdapter from 3.17.0 to 6.3.0 by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager/pull/16
-* Bump NUnit from 3.14.0 to 4.6.1 by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager/pull/15
-* chore(deps-dev): Bump the npm-dependencies group across 1 directory with 7 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager/pull/42
-* fix(core): Skip empty translation nodes and soften no-content result by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/47
-* fix(core): Tolerate empty-string JSON columns in Map.FromJson by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/46
-* Fix partial-batch translation job status and approval handling by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/49
-* fix(core): Keep partially-approved jobs checkable while nodes are in progress by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/50
-* feat(core): Move the glossary resolve helper into GlossaryService by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/51
-* fix(connector): Narrow the default retry predicate to transient transport failures by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/52
-* feat(connector): Add opt-in LoadBaseSettingsAsync helper for machine options by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/53
-* build: Gate pack on connector API compatibility with the last release by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/54
-* test(core): Cover the two new view permissions by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/55
-* fix(api): Regenerate the client and repair the hey-api runtime config path by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/56
-* fix(frontend): Show Glossary and Memory to administrators regardless of stale claims by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/57
-* fix(frontend): Require a connector before Create in the content-app dialog by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/58
-* fix(ui): Stop the glossary toggles rendering their label twice by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/59
-* build(deps): Re-pin AI connector to the 17.6.0-alpha01 release by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/60
-* build(deps): Re-pin AI connector to 17.6.0-alpha02 with a bounded range by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/61
-* Revert admin-bypass on the Glossary/Memory view permission by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/62
-* build(deps): Re-pin AI connector to the real 17.6.0 release by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/63
-
-## New Contributors
-* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager/pull/11
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.8.2...v17.9.0]]></description>
     </item>
   </channel>
 </rss>
