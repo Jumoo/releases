@@ -1,5 +1,31 @@
 [
   {
+    "package": "uSync.Umbraco.Commerce",
+    "title": "uSync Commerce",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.Umbraco.Commerce",
+    "version": "18.0.1",
+    "publishedAt": "2026-10-14T10:32:29Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Umbraco.Commerce/18.0.1",
+    "githubUrl": "https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.1",
+    "notes": "## What's Changed\n* Fix localization path casing in umbraco-package.json by @KevinJump in https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/17\n* Fix store permissions not exported or imported by @KevinJump in https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/18\n* Fix location names containing '/' creating extra folders by @KevinJump in https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/19\n\n\n**Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/compare/v18.0.0...v18.0.1\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "uSync.Umbraco.Commerce",
+    "title": "uSync Commerce",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.Umbraco.Commerce",
+    "version": "17.1.1",
+    "publishedAt": "2026-10-14T10:31:59Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Umbraco.Commerce/17.1.1",
+    "githubUrl": "https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v17.1.1",
+    "notes": "### Added\n\n- `umbraco-marketplace.json`, so the package has a listing on the Umbraco Marketplace.\n\n### Fixed\n\n- The backoffice localization file 404'd on case-sensitive filesystems (Linux/macOS), so the\n  Settings tree showed raw keys like `#uSync_section`: `umbraco-package.json` referenced\n  `Localization/en.js` but the file ships as `localization/en.js` ([#15](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/15)).\n- Store permissions (allowed users and user roles) were never exported, and an import then cleared\n  them on the target. Umbraco Commerce stores these by user / user group key, but the serializer\n  looked them up by int id and alias. Export now resolves the keys to usernames and group aliases,\n  and import maps them back to keys ([#14](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/14)).\n- A location whose name contained `/` (or another character not allowed in file names) was\n  exported into an extra sub-folder rather than as a single file. Those characters are now replaced\n  with `-` in the file name ([#9](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/9)).\n\n\n**Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/blob/v17/main/CHANGELOG.md\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Our.Umbraco.MaintenanceMode",
     "title": "Maintenance Mode",
     "category": "Other",

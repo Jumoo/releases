@@ -5,6 +5,46 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync Commerce 18.0.1</title>
+      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.1</guid>
+      <pubDate>Wed, 14 Oct 2026 10:32:29 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Fix localization path casing in umbraco-package.json by @KevinJump in https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/17
+* Fix store permissions not exported or imported by @KevinJump in https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/18
+* Fix location names containing '/' creating extra folders by @KevinJump in https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/19
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/compare/v18.0.0...v18.0.1
+]]></description>
+    </item>
+    <item>
+      <title>uSync Commerce 17.1.1</title>
+      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v17.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v17.1.1</guid>
+      <pubDate>Wed, 14 Oct 2026 10:31:59 GMT</pubDate>
+      <description><![CDATA[### Added
+
+- `umbraco-marketplace.json`, so the package has a listing on the Umbraco Marketplace.
+
+### Fixed
+
+- The backoffice localization file 404'd on case-sensitive filesystems (Linux/macOS), so the
+  Settings tree showed raw keys like `#uSync_section`: `umbraco-package.json` referenced
+  `Localization/en.js` but the file ships as `localization/en.js` ([#15](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/15)).
+- Store permissions (allowed users and user roles) were never exported, and an import then cleared
+  them on the target. Umbraco Commerce stores these by user / user group key, but the serializer
+  looked them up by int id and alias. Export now resolves the keys to usernames and group aliases,
+  and import maps them back to keys ([#14](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/14)).
+- A location whose name contained `/` (or another character not allowed in file names) was
+  exported into an extra sub-folder rather than as a single file. Those characters are now replaced
+  with `-` in the file name ([#9](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/9)).
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/blob/v17/main/CHANGELOG.md
+]]></description>
+    </item>
+    <item>
       <title>Maintenance Mode 18.1.1</title>
       <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.1.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.1.1</guid>
@@ -1095,98 +1135,6 @@ Dependency updates for the backoffice client packages are also included.
 * @jamiehdev made their first contribution in https://github.com/KevinJump/uSync/pull/1089
 
 **Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.4.1...v17.4.2]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 18.1.3</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.1.3</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.1.3</guid>
-      <pubDate>Mon, 14 Sep 2026 19:33:59 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Port publisher timeout, restore-point hardening, and progress-callback fixes from v17 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/26
-* Add GitHub Actions CI/CD to v18/main, matching v17/main by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/27
-* Merge v17/main into v18/main (2026-09-07) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/31
-* Merge v17 into v18 (2026-09-14) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/60
-
-
-**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.4.2...release/v18.1.3
-
-## What's Changed
-* Port publisher timeout, restore-point hardening, and progress-callback fixes from v17 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/26
-* Add GitHub Actions CI/CD to v18/main, matching v17/main by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/27
-* Merge v17/main into v18/main (2026-09-07) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/31
-* Merge v17 into v18 (2026-09-14) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/60
-
-
-**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.4.2...release/v18.1.3]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 17.4.2</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.4.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.4.2</guid>
-      <pubDate>Mon, 14 Sep 2026 14:39:52 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Use a HashSet for dependency membership checks by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/37
-* Flush the dependency cache once per run, not once per page by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/38
-* Batch the child dependency tree walk by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/39
-* Read content length from headers instead of buffering the body by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/40
-* Stream pull responses instead of copying them to a byte array by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/41
-* Add the missing DisableFormValueModelBinding guard to PushFiles by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/42
-* Fetch the required media and file lists once per push by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/43
-* Fix two paging bugs in the sync pack service by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/44
-* Reduce file hashing, comparison and zip costs in the pack file service by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/45
-* Stop reading the safe media names file twice by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/46
-* Cut the per-row queries and repeated work out of the item browser by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/47
-* Stop blocking a thread on the licence check for every API call by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/48
-* Delete queue rows in one statement instead of one at a time by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/49
-* Batch data type lookups and stop re-walking shared compositions by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/50
-* Cut repeated per-page work out of the sync pack service by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/51
-* Trim repeated enumeration and per-item allocations by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/52
-* Resolve media items in one query per page instead of one each by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/53
-* Serialise request payloads straight to bytes and fix the log health check scan by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/54
-* Add a background job to sweep abandoned pack folders by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/55
-* Remove dead uSync Publisher folder health checks by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/56
-* Stop opening every archive to reconcile restore points by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/57
-* Bump uSync core dependencies to v17.4.1 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/58
-* Bump VersionPrefix to 17.4.2 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/59
-* Bump the nuget-dependencies group with 2 updates by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/36
-* Bump vite-plugin-dts from 5.0.3 to 5.1.0 in /uSync.Publisher.Client/usync-publisher-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/35
-* Bump vite-plugin-dts from 5.0.3 to 5.1.0 in /uSync.Expansions.Client/usync-expansions-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/34
-* Bump vite-plugin-dts from 5.0.3 to 5.1.0 in /uSync.Exporter.Client/usync-exporter-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/33
-
-
-**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.4.1...release/v17.4.2
-
-## What's Changed
-* Use a HashSet for dependency membership checks by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/37
-* Flush the dependency cache once per run, not once per page by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/38
-* Batch the child dependency tree walk by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/39
-* Read content length from headers instead of buffering the body by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/40
-* Stream pull responses instead of copying them to a byte array by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/41
-* Add the missing DisableFormValueModelBinding guard to PushFiles by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/42
-* Fetch the required media and file lists once per push by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/43
-* Fix two paging bugs in the sync pack service by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/44
-* Reduce file hashing, comparison and zip costs in the pack file service by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/45
-* Stop reading the safe media names file twice by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/46
-* Cut the per-row queries and repeated work out of the item browser by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/47
-* Stop blocking a thread on the licence check for every API call by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/48
-* Delete queue rows in one statement instead of one at a time by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/49
-* Batch data type lookups and stop re-walking shared compositions by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/50
-* Cut repeated per-page work out of the sync pack service by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/51
-* Trim repeated enumeration and per-item allocations by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/52
-* Resolve media items in one query per page instead of one each by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/53
-* Serialise request payloads straight to bytes and fix the log health check scan by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/54
-* Add a background job to sweep abandoned pack folders by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/55
-* Remove dead uSync Publisher folder health checks by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/56
-* Stop opening every archive to reconcile restore points by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/57
-* Bump uSync core dependencies to v17.4.1 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/58
-* Bump VersionPrefix to 17.4.2 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/59
-* Bump the nuget-dependencies group with 2 updates by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/36
-* Bump vite-plugin-dts from 5.0.3 to 5.1.0 in /uSync.Publisher.Client/usync-publisher-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/35
-* Bump vite-plugin-dts from 5.0.3 to 5.1.0 in /uSync.Expansions.Client/usync-expansions-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/34
-* Bump vite-plugin-dts from 5.0.3 to 5.1.0 in /uSync.Exporter.Client/usync-exporter-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/33
-
-
-**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.4.1...release/v17.4.2]]></description>
     </item>
   </channel>
 </rss>
