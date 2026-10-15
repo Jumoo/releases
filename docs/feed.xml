@@ -5,6 +5,62 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Publicis Connector 17.0.1</title>
+      <link>https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.1</guid>
+      <pubDate>Thu, 15 Oct 2026 13:38:39 GMT</pubDate>
+      <description><![CDATA[### Changed
+
+- The connector now logs why a Publicis job item isn't collected. An order with no items, or an item that isn't ready yet, is logged at Information with the order, item, language, job and status. An item that returns no file, or a translation that fails to load into the job, is logged as a Warning. Before this, those cases were skipped silently, so a job that never received its translation left nothing in the site's logs.
+
+**Full Changelog**: https://github.com/Jumoo/TranslatePlus-Connector/compare/v17.0.0...v17.0.1
+]]></description>
+    </item>
+    <item>
+      <title>LanguageWire Connector 17.1.2</title>
+      <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.2</guid>
+      <pubDate>Thu, 15 Oct 2026 13:38:39 GMT</pubDate>
+      <description><![CDATA[### Fixed
+
+- When the connector's template isn't locked, the pending job view now applies the configured default service as soon as it loads, instead of only when the template or service picker is changed. The view also no longer writes the job options to the browser console.
+
+**Full Changelog**: https://github.com/Jumoo/LanguageWire.Connector/compare/v17.1.1...v17.1.2
+]]></description>
+    </item>
+    <item>
+      <title>PowerToys 17.2.0</title>
+      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.2.0</guid>
+      <pubDate>Thu, 15 Oct 2026 09:19:39 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add screenshots to the BackChat and Tasks docs by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/67
+* Add the Keyboard Shortcuts power toy by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/69
+* Add custom keyboard shortcuts by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/71
+
+
+**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.1.0...v17.2.0]]></description>
+    </item>
+    <item>
+      <title>PowerToys 17.1.0</title>
+      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.1.0</guid>
+      <pubDate>Thu, 15 Oct 2026 07:18:50 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Ignore TypeScript >=6 and @hey-api/* in dependabot by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/55
+* Bump actions/setup-dotnet from 4 to 6 by @dependabot[bot] in https://github.com/Jumoo/umbraco.community.powertoys/pull/53
+* Bump the minor-and-patch group in /src/PowerToys/Client with 2 updates by @dependabot[bot] in https://github.com/Jumoo/umbraco.community.powertoys/pull/56
+* Clear js-yaml and @tiptap/core security alerts by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/57
+* Remove the browser testing rule now held in jumoo-context by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/59
+* Add the Chat power toy (from BackChat) by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/63
+* Add the Tasks power toy (from BackChat) by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/64
+* Dock the BackChat and Tasks panels beside the page by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/65
+* Add content reviews to the Tasks power toy (from BackChat) by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/66
+
+
+**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.0.0...v17.1.0]]></description>
+    </item>
+    <item>
       <title>uSync Commerce 18.0.1</title>
       <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.1</guid>
@@ -1083,58 +1139,6 @@ Dependency updates for the backoffice client packages are also included.
 
 
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v18.3.0...v18.3.1]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.9.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.1</guid>
-      <pubDate>Wed, 16 Sep 2026 10:01:17 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* fix(api): Compare against the site's own culture when deduping SiteIds by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/65
-* fix(api): Clone sets before shaping them for a response by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/66
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.9.0...v17.9.1]]></description>
-    </item>
-    <item>
-      <title>DeepL Connector 17.3.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.3.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.3.0</guid>
-      <pubDate>Tue, 15 Sep 2026 14:57:13 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Prototype: IGlossaryPushProvider against DeepL's classic glossary API by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/19
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.2.0...v17.3.0]]></description>
-    </item>
-    <item>
-      <title>uSync 18.1.4</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.4</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.4</guid>
-      <pubDate>Tue, 15 Sep 2026 11:25:26 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Build and verify the History client's assets in CI by @KevinJump in https://github.com/KevinJump/uSync/pull/1093
-* fix(startup): honour the configured export group by @KevinJump in https://github.com/KevinJump/uSync/pull/1094
-* Respect handler import rules when cleaning missing items by @KevinJump in https://github.com/KevinJump/uSync/pull/1095
-
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.1.3...v18.1.4]]></description>
-    </item>
-    <item>
-      <title>uSync 17.4.2</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v17.4.2</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.4.2</guid>
-      <pubDate>Tue, 15 Sep 2026 11:23:49 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* fix(startup): honour the ExportAtStartup group by @jamiehdev in https://github.com/KevinJump/uSync/pull/1089
-* fix(history): build client assets before packaging by @jamiehdev in https://github.com/KevinJump/uSync/pull/1091
-* Respect handler import rules when cleaning missing items by @KevinJump in https://github.com/KevinJump/uSync/pull/1092
-* Bring CI workflows in step with v18 by @KevinJump in https://github.com/KevinJump/uSync/pull/1096
-
-## New Contributors
-* @jamiehdev made their first contribution in https://github.com/KevinJump/uSync/pull/1089
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.4.1...v17.4.2]]></description>
     </item>
   </channel>
 </rss>

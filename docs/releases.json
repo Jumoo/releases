@@ -1,5 +1,57 @@
 [
   {
+    "package": "Jumoo.TranslationManager.Publicis",
+    "title": "Publicis Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/TranslatePlus-Connector",
+    "version": "17.0.1",
+    "publishedAt": "2026-10-15T13:38:39Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Publicis/17.0.1",
+    "githubUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.1",
+    "notes": "### Changed\n\n- The connector now logs why a Publicis job item isn't collected. An order with no items, or an item that isn't ready yet, is logged at Information with the order, item, language, job and status. An item that returns no file, or a translation that fails to load into the job, is logged as a Warning. Before this, those cases were skipped silently, so a job that never received its translation left nothing in the site's logs.\n\n**Full Changelog**: https://github.com/Jumoo/TranslatePlus-Connector/compare/v17.0.0...v17.0.1\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager.LanguageWire",
+    "title": "LanguageWire Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/LanguageWire.Connector",
+    "version": "17.1.2",
+    "publishedAt": "2026-10-15T13:38:39Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.LanguageWire/17.1.2",
+    "githubUrl": "https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.2",
+    "notes": "### Fixed\n\n- When the connector's template isn't locked, the pending job view now applies the configured default service as soon as it loads, instead of only when the template or service picker is changed. The view also no longer writes the job options to the browser console.\n\n**Full Changelog**: https://github.com/Jumoo/LanguageWire.Connector/compare/v17.1.1...v17.1.2\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Umbraco.Community.PowerToys",
+    "title": "PowerToys",
+    "category": "Other",
+    "repo": "Jumoo/umbraco.community.powertoys",
+    "version": "17.2.0",
+    "publishedAt": "2026-10-15T09:19:39Z",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.PowerToys/17.2.0",
+    "githubUrl": "https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.2.0",
+    "notes": "## What's Changed\n* Add screenshots to the BackChat and Tasks docs by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/67\n* Add the Keyboard Shortcuts power toy by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/69\n* Add custom keyboard shortcuts by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/71\n\n\n**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.1.0...v17.2.0",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Umbraco.Community.PowerToys",
+    "title": "PowerToys",
+    "category": "Other",
+    "repo": "Jumoo/umbraco.community.powertoys",
+    "version": "17.1.0",
+    "publishedAt": "2026-10-15T07:18:50Z",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.PowerToys/17.1.0",
+    "githubUrl": "https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.1.0",
+    "notes": "## What's Changed\n* Ignore TypeScript >=6 and @hey-api/* in dependabot by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/55\n* Bump actions/setup-dotnet from 4 to 6 by @dependabot[bot] in https://github.com/Jumoo/umbraco.community.powertoys/pull/53\n* Bump the minor-and-patch group in /src/PowerToys/Client with 2 updates by @dependabot[bot] in https://github.com/Jumoo/umbraco.community.powertoys/pull/56\n* Clear js-yaml and @tiptap/core security alerts by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/57\n* Remove the browser testing rule now held in jumoo-context by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/59\n* Add the Chat power toy (from BackChat) by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/63\n* Add the Tasks power toy (from BackChat) by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/64\n* Dock the BackChat and Tasks panels beside the page by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/65\n* Add content reviews to the Tasks power toy (from BackChat) by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/66\n\n\n**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.0.0...v17.1.0",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync.Umbraco.Commerce",
     "title": "uSync Commerce",
     "category": "uSync Addon",
