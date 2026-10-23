@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T04:32:21.339Z",
+  "generatedAt": "2026-10-23T16:56:08.686Z",
   "packages": [
     {
       "package": "uSync",
@@ -25,7 +25,7 @@
       "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.6.0-rc1",
       "releaseBranch": null,
       "commitsSince": null,
-      "lastCommitDate": "2026-10-15T15:20:03Z"
+      "lastCommitDate": "2026-10-23T10:49:16Z"
     },
     {
       "package": "uSync.Forms",
@@ -111,12 +111,12 @@
       "category": "",
       "repo": "Jumoo/Jumoo.TranslationManager",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.3.2",
-      "lastReleaseDate": "2026-09-30T17:53:42Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.2",
-      "releaseBranch": "v18/main",
-      "commitsSince": 47,
-      "lastCommitDate": "2026-10-15T06:13:13Z"
+      "lastReleaseTag": "v17.9.4",
+      "lastReleaseDate": "2026-10-23T11:23:09Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.4",
+      "releaseBranch": "v17/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-23T11:23:09Z"
     },
     {
       "package": "Jumoo.TranslationManager.AI",

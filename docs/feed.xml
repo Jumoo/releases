@@ -5,6 +5,26 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Translation Manager 17.9.4</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.4</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.4</guid>
+      <pubDate>Fri, 23 Oct 2026 11:23:09 GMT</pubDate>
+      <description><![CDATA[- Fix: a block containing a culture-variant nested block list (or a culture-variant rich text editor with blocks), sitting on an invariant block property on a culture-variant page, wasn't fully translated. The items inside the nested list (and the blocks inside the rich text) weren't sent for translation, and on 17.9.x the nested items weren't exposed in the target language either, so they showed as drafts there and didn't render
+- Add: a "Save only (do not publish)" option under "Automatic approval" in a translation set's processing options. Since background approval was added, auto-approve has always published; with this on, auto-approved translations are saved as drafts instead, so a translator can check them before they go live
+- Add: `Translation:ContinueOnApprovalError` (appsettings only, off by default). When it's on, approving a job skips any item that fails to save or publish, records the error in the job history, and carries on with the rest, so only the broken items are left to approve again. Background approval already skipped failed items (Jumoo/Jumoo.TranslationManager.Issues#81)
+- Add: when items are skipped this way, the approval results dialog now lists them (across every page of the approval) and counts only the items that were actually approved. Before, it reported every selected item as approved
+- Change: a save or publish that fails without throwing an exception is now treated as a failed approval. This covers a notification handler cancelling it, the target's parent not being published in that culture, or invalid content. Before, these failures were ignored and the item was marked Approved even though nothing was published. With the setting above off, the approval now stops with the reason, which is also written to the job history. With it on, the item is skipped. A failed publish also rolls back the save, so the item's content is left as it was. **Connectors that call `TranslationJobService.Progress()` directly** (e.g. to auto-approve the items they've just imported) get this too: a failure that used to pass silently now throws, unless the site has `Translation:ContinueOnApprovalError` on
+- Change: the job-level approved/published notifications (`TranslationJobApprovedNotification` / `TranslationJobPublishedNotification`) and the "Approved"/"Published" job history entries now only happen once every item on the job is approved. Before, they fired for every page of a paged approval, and when only some of a job's items were approved. This applies to connectors calling `Progress()` directly as well. `TranslationJobPartialApprovalNotification` still fires for each batch, now with only the items that were actually approved (and not at all when none were)
+- Change: an item that approval leaves untouched - a `TranslationNodeApprovingNotification` handler cancelled it, or its source or target content can't be found - is now listed as skipped, with the reason in the job history. Before, it was counted (and reported) as approved
+- Add: for developers - `TranslationJobService.Progress(job, nodes, TranslationProgressOptions)` returns a `TranslationProgressResult` with the processed and failed items and the resulting job status, and `CheckAndUpdateJobStatusAsync` returns the status it sets. `TranslationProgressOptions.ContinueOnError` defaults to the site's `Translation:ContinueOnApprovalError` setting, which is also what the existing `Progress` overloads use. `ITranslationAprovalService.ApproveWithResultAsync` returns the items that were skipped. The existing `Progress` / `CheckAndUpdateJobStatus` / `ApproveAsync` signatures are unchanged, and `TranslationJobService` has a new constructor taking a `TranslationConfigService` (the old one is obsolete)
+- Fix: on a site upgraded from an older version, a property could be sent to translation twice, for example as two identical segments in an XLIFF file. This affected items that were already waiting for translation before the upgrade and were then updated. They now correct themselves the next time the item is updated (Jumoo/Jumoo.TranslationManager.Issues#87)
+- Fix: dates in the backoffice (the job view's items table and elsewhere) were shown in UTC rather than the editor's own time zone - an hour behind during BST, for example. The API now returns every date as UTC with its offset, so the browser shows local time
+- Fix: approving with "Approve in Background" ticked (with `Translation:backgroundApproval` on) left the approval dialog blank, both while the approval ran and after it finished. It now shows the progress and the results. The approval itself always worked
+- Build: Jumoo.Processing updated to 17.4.2 (and the `@jumoo/processing` npm minimum to 17.4.2), with Translation Manager's processing options registered with an explicit type discriminator. uSync.Complete uses the same library, so a site with uSync.Complete installed may also need its latest v17 release
+- Build: dependency updates (HtmlAgilityPack 1.13.1, prettier, vite, and the test packages)
+]]></description>
+    </item>
+    <item>
       <title>Publicis Connector 17.0.1</title>
       <link>https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.1</guid>
@@ -1126,19 +1146,6 @@ Dependency updates for the backoffice client packages are also included.
 
 
 **Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v18.1.3...release/v18.1.4]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 18.3.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.3.1</guid>
-      <pubDate>Wed, 16 Sep 2026 10:08:35 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* fix(api): Compare against the site's own culture when deduping SiteIds by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/65
-* fix(api): Clone sets before shaping them for a response by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/66
-* Merge v17 into v18 (2026-09-16) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/67
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v18.3.0...v18.3.1]]></description>
     </item>
   </channel>
 </rss>
