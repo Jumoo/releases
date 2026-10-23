@@ -62,17 +62,43 @@
     </item>
     <item>
       <title>uSync Commerce 18.0.1</title>
-      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases</guid>
-      <pubDate>Wed, 14 Oct 2026 10:32:02 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.1</guid>
+      <pubDate>Wed, 14 Oct 2026 10:32:29 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Fix localization path casing in umbraco-package.json by @KevinJump in https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/17
+* Fix store permissions not exported or imported by @KevinJump in https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/18
+* Fix location names containing '/' creating extra folders by @KevinJump in https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/19
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/compare/v18.0.0...v18.0.1
+]]></description>
     </item>
     <item>
       <title>uSync Commerce 17.1.1</title>
-      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases</guid>
-      <pubDate>Wed, 14 Oct 2026 10:31:41 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v17.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v17.1.1</guid>
+      <pubDate>Wed, 14 Oct 2026 10:31:59 GMT</pubDate>
+      <description><![CDATA[### Added
+
+- `umbraco-marketplace.json`, so the package has a listing on the Umbraco Marketplace.
+
+### Fixed
+
+- The backoffice localization file 404'd on case-sensitive filesystems (Linux/macOS), so the
+  Settings tree showed raw keys like `#uSync_section`: `umbraco-package.json` referenced
+  `Localization/en.js` but the file ships as `localization/en.js` ([#15](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/15)).
+- Store permissions (allowed users and user roles) were never exported, and an import then cleared
+  them on the target. Umbraco Commerce stores these by user / user group key, but the serializer
+  looked them up by int id and alias. Export now resolves the keys to usernames and group aliases,
+  and import maps them back to keys ([#14](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/14)).
+- A location whose name contained `/` (or another character not allowed in file names) was
+  exported into an extra sub-folder rather than as a single file. Those characters are now replaced
+  with `-` in the file name ([#9](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/9)).
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/blob/v17/main/CHANGELOG.md
+]]></description>
     </item>
     <item>
       <title>Maintenance Mode 18.1.1</title>
@@ -100,10 +126,41 @@
     </item>
     <item>
       <title>uSync Commerce 18.0.0</title>
-      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases</guid>
-      <pubDate>Tue, 13 Oct 2026 11:38:16 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.0</guid>
+      <pubDate>Tue, 13 Oct 2026 11:38:41 GMT</pubDate>
+      <description><![CDATA[First release of the 18.x line (Umbraco 18 / Umbraco Commerce 18 / net10.0).
+
+### Added
+
+- Umbraco / Umbraco Commerce 18 support — `Umbraco.Commerce`, `uSync.Core` and `uSync.BackOffice`
+  bumped to 18.1.0. No code changes were needed; the APIs this package uses were unchanged
+  between the 17.x and 18.x lines.
+- Repository standards: `LICENSE.md`, `README.md`, `CHANGELOG.md`, `SECURITY.md`,
+  `CODE_OF_CONDUCT.md`, `.editorconfig`, `.gitattributes`, `global.json`, `Directory.Build.props`,
+  `GitVersion.yml`, dependabot, and issue and PR templates.
+- CI workflows — PR build, package build, and release. CodeQL is present but disabled by default
+  (see the workflow for why).
+- Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated behind the
+  `nuget` GitHub environment and authenticated with trusted publishing (OIDC) rather than a
+  stored API key.
+- `packages.lock.json`, so a transitive dependency update can't change what a build restores
+  without a commit.
+
+### Fixed
+
+- Tax class country/region tax rates were never restored on import: the serializer wrote them
+  under a `<TaxClasses>` element but read them back looking for `<TaxRates>`, so import always saw
+  an empty list and cleared every existing override instead of restoring it (#10).
+- The exported country/region tax rate value itself round-tripped as `0`, because it was serialized
+  via `TaxRate.ToString()` (`"20.00%"`) instead of the underlying decimal value, which then failed
+  to parse back on import. Tax codes are now round-tripped too.
+- `ShippingMethodSerializer` never removed a country/region shipping allowance that had been
+  removed from the XML, due to a collection-diff comparing the live list against itself instead of
+  against the incoming XML values.
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/blob/v18/main/CHANGELOG.md
+]]></description>
     </item>
     <item>
       <title>Xliff Connector 18.0.2</title>
@@ -168,17 +225,69 @@
     </item>
     <item>
       <title>Passthrough Connector 18.0.1</title>
-      <link>https://github.com/Jumoo/Passthrough.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Passthrough.Connector/releases</guid>
-      <pubDate>Tue, 13 Oct 2026 10:29:10 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/Passthrough.Connector/releases/tag/v18.0.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Passthrough.Connector/releases/tag/v18.0.1</guid>
+      <pubDate>Tue, 13 Oct 2026 10:30:09 GMT</pubDate>
+      <description><![CDATA[### Fixed
+
+- `ConnectorComposer` now gates its registrations on the Umbraco backoffice being enabled,
+  matching the check Translation Manager core applies in its own composers, so the connector
+  no longer tries to register on a website-only boot.
+
+### Changed
+
+- Brings the v17 repository standards and CI/CD across to the 18 line. Releases now publish to
+  NuGet from a `v{version}` tag, authenticated with trusted publishing (OIDC).
+
+]]></description>
     </item>
     <item>
       <title>uSync Complete 17.6.0-rc1</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
-      <pubDate>Mon, 12 Oct 2026 15:33:47 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.6.0-rc1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.6.0-rc1</guid>
+      <pubDate>Mon, 12 Oct 2026 15:36:14 GMT</pubDate>
+      <description><![CDATA[Release candidate for 17.6.0.
+
+## What's changed
+
+- New in uSync.Publisher: approvals. A server can require approval for
+  content pushes and pulls to and from it. The push or pull stops after the
+  report until someone in the server's approver groups approves or declines
+  it. Turn it on with "Require approval" on the server's Permissions view,
+  where you also pick the approver groups (admins can always approve) and how
+  many days a request waits before it expires. Settings pushes and pulls are
+  not affected
+- When a push or pull is approved, uSync sends it again and re-checks the
+  target before applying it, and shows anything that changed since the
+  request was made
+- New Approvals dashboard in the Content section, with the requests waiting
+  for you, the requests you have made, and their history. It only appears
+  when approvals are in use
+- Approvers are emailed when a request needs them, and requesters when theirs
+  is decided or fails, when SMTP is configured. Each email can be overridden
+  by putting a template in `~/uSync/emails/`. Sites can also handle the new
+  `PublisherApprovalRequestedNotification`, `PublisherApprovalDecidedNotification`
+  and `PublisherApprovalFinishedNotification` to send them elsewhere
+- New single-call background API: `POST Publisher/Start` runs a push, pull or
+  settings push/pull, and `POST Exporter/Start` runs an export, in the
+  background. `GET Exporter/Download/{id}` downloads the finished export
+- The push and pull buttons now only appear for user groups whose default
+  permissions allow a push or pull
+- Fix: the push dialog no longer collapses to nothing in Safari 26.4, which
+  left the backoffice looking locked
+- Fix: progress during a push or pull updates as items are processed again,
+  including the "Uploading to server" and "Packing items" messages
+- The first step of a push or pull now says it is finding items, and how many
+  it found
+- Fix: import failures are now shown in the push and pull result
+- Fix: the TimeMachine timeline refreshes when you come back to it
+- Fix: the content browser card's focus ring no longer covers the Compare
+  button
+- Fix: Exporter's `GetExport` returns Not Found or Bad Request for an unknown
+  or invalid export, rather than a server error
+- Spelling and pluralisation fixes in Publisher result messages
+- Requires Jumoo.Processing 17.5.0-rc2
+]]></description>
     </item>
     <item>
       <title>Jumoo.Processing 17.5.0-rc2</title>
@@ -254,17 +363,35 @@
     </item>
     <item>
       <title>AI Connector 18.4.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</guid>
-      <pubDate>Mon, 12 Oct 2026 10:20:32 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.0</guid>
+      <pubDate>Mon, 12 Oct 2026 10:18:41 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/50
+* fix: gate composer registrations on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/51
+* Merge v17 into v18 (2026-09-30) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/53
+* fix: stop SDK retries stacking and give AI requests realistic timeouts by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/54
+* feat: gather a node's values into shared translation requests by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/55
+* Bump prettier from 3.9.6 to 3.9.8 in /Jumoo.TranslationManager.AI/ai-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/52
+* Bump vite from 6.4.3 to 8.3.0 in /Jumoo.TranslationManager.AI/ai-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/49
+* Merge v17 into v18 (2026-10-02) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/56
+* feat: retry a short translation in smaller pieces by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/57
+* Merge v17 into v18 (2026-10-12) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/59
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.3.0...v18.4.0
+]]></description>
     </item>
     <item>
       <title>AI Connector 17.7.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</guid>
-      <pubDate>Mon, 12 Oct 2026 09:45:05 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.1</guid>
+      <pubDate>Mon, 12 Oct 2026 09:44:05 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* feat: retry a short translation in smaller pieces by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/57
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.7.0...v17.7.1]]></description>
     </item>
     <item>
       <title>Jumoo.Processing 17.5.0-rc1</title>
@@ -275,10 +402,55 @@
     </item>
     <item>
       <title>uSync AI 17.0.0</title>
-      <link>https://github.com/Jumoo/uSync.AI/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.AI/releases</guid>
-      <pubDate>Thu, 08 Oct 2026 14:55:47 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/uSync.AI/releases/tag/v17.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.AI/releases/tag/v17.0.0</guid>
+      <pubDate>Thu, 08 Oct 2026 14:56:32 GMT</pubDate>
+      <description><![CDATA[First release of uSync.AI: uSync support for [Umbraco.AI](https://docs.umbraco.com/ai-in-umbraco) on Umbraco 17.
+
+## Packages
+
+| Package | What it does |
+| --- | --- |
+| `uSync.AI` | Installs everything below except the uSync.Complete parts |
+| `uSync.AI.Sync` | Syncs Umbraco.AI connections, guardrails, contexts, profiles and settings |
+| `uSync.AI.Prompt` | Syncs Umbraco.AI prompts |
+| `uSync.AI.Agent` | Syncs Umbraco.AI agents |
+| `uSync.AI.Tools` | Agent tools for uSync report, export and import |
+| `uSync.AI.Complete` | Push and pull AI items with uSync.Complete, and agent tools for the publisher |
+| `uSync.Complete.AI` | Installs `uSync.AI` and `uSync.AI.Complete` |
+
+Connection API keys are not written to disk by default; see the `uSync.AI.Sync` readme.
+
+Requires Umbraco 17.5+, Umbraco.AI 17.5.2+ and uSync 17.4.3+ (uSync.Complete 17.5.0+ for the Complete packages).
+
+
+## What's Changed
+* Add uSync.AI.Sync: sync Umbraco.AI settings by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/4
+* Add uSync.AI.Prompt: sync Umbraco.AI prompts by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/5
+* Add uSync.AI.Agent: sync Umbraco.AI agents by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/6
+* Add uSync.AI.Tools: agent tools for uSync by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/7
+* Document the uSync.AI meta package and add marketplace files by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/8
+* Push and pull AI items with uSync.Complete by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/9
+* Add agent tools for the uSync.Complete publisher by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/14
+* Bump NUnit from 4.3.2 to 5.0.0 by @dependabot[bot] in https://github.com/Jumoo/uSync.AI/pull/3
+* Bump coverlet.collector from 8.0.1 to 10.1.0 by @dependabot[bot] in https://github.com/Jumoo/uSync.AI/pull/2
+* Bump vite from 7.3.7 to 8.3.2 in /uSync.AI.Complete/complete-client by @dependabot[bot] in https://github.com/Jumoo/uSync.AI/pull/10
+* Bump vite from 7.3.7 to 8.3.2 in /uSync.AI.Sync/ai-client by @dependabot[bot] in https://github.com/Jumoo/uSync.AI/pull/13
+* Set DateCreated on prompts created by an import by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/16
+* Bump Microsoft.NET.Test.Sdk, Moq and NUnit3TestAdapter by @dependabot[bot] in https://github.com/Jumoo/uSync.AI/pull/15
+* Let API keys sync without writing encrypted values by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/17
+* Turn CodeQL back on and gate releases now the repo is public by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/18
+* Let prereleases build before the first release is tagged by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/19
+* Check out the nightly feed action with a PAT by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/20
+* Write an empty config for a standard agent saved without one by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/21
+* Send an AI item's dependencies with it by default by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/22
+* Clear uSync.Complete's dependency cache when an AI item changes by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/23
+
+## New Contributors
+* @KevinJump made their first contribution in https://github.com/Jumoo/uSync.AI/pull/4
+* @dependabot[bot] made their first contribution in https://github.com/Jumoo/uSync.AI/pull/3
+
+**Full Changelog**: https://github.com/Jumoo/uSync.AI/commits/v17.0.0]]></description>
     </item>
     <item>
       <title>uSync Forms 18.1.0</title>
@@ -369,31 +541,64 @@
     </item>
     <item>
       <title>AI Connector 17.7.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</guid>
-      <pubDate>Fri, 02 Oct 2026 12:01:07 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.0</guid>
+      <pubDate>Fri, 02 Oct 2026 11:59:34 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: stop SDK retries stacking and give AI requests realistic timeouts by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/54
+* feat: gather a node's values into shared translation requests by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/55
+* Bump prettier from 3.9.6 to 3.9.8 in /Jumoo.TranslationManager.AI/ai-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/52
+* Bump vite from 6.4.3 to 8.3.0 in /Jumoo.TranslationManager.AI/ai-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/49
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.6.1...v17.7.0]]></description>
     </item>
     <item>
       <title>DeepL Connector 18.2.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</guid>
-      <pubDate>Fri, 02 Oct 2026 09:42:41 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.0</guid>
+      <pubDate>Fri, 02 Oct 2026 09:41:21 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Whitespace fixes in DeepLTranslationService (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/7
+* Add repository standards and CI/CD to v18 (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/8
+* Bump chalk to 6.0.0 and typescript to 7.0.2 (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/10
+* Stop per-developer test site config from leaking into deepl-client commits by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/11
+* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/17
+* Merge v17 into v18 (2026-09-15) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/20
+* fix: gate composer registrations on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/23
+* Merge v17 into v18 (2026-09-30) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/24
+* Merge v17 into v18 (2026-10-02) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/26
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.4.0...v18.2.0]]></description>
     </item>
     <item>
       <title>DeepL Connector 17.4.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</guid>
-      <pubDate>Fri, 02 Oct 2026 09:27:22 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.0</guid>
+      <pubDate>Fri, 02 Oct 2026 09:25:53 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* feat(provider): Retry transient DeepL failures via Polly by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/18
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.3.1...v17.4.0]]></description>
     </item>
     <item>
       <title>uSync Complete 18.2.0</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
-      <pubDate>Wed, 30 Sep 2026 19:18:28 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.2.0</guid>
+      <pubDate>Wed, 30 Sep 2026 19:31:24 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Port publisher timeout, restore-point hardening, and progress-callback fixes from v17 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/26
+* Add GitHub Actions CI/CD to v18/main, matching v17/main by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/27
+* Merge v17/main into v18/main (2026-09-07) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/31
+* Merge v17 into v18 (2026-09-14) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/60
+* Merge v17/main into v18/main (2026-09-17) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/74
+* Merge v17/main into v18/main (2026-09-30) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/95
+* Date the 18.2.0 changelog entry for release day by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/109
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.5.0...release/v18.2.0]]></description>
     </item>
     <item>
       <title>uSync 18.1.5</title>
@@ -454,10 +659,100 @@ See [CHANGELOG.md](https://github.com/KevinJump/uSync/blob/v18/main/CHANGELOG.md
     </item>
     <item>
       <title>uSync Complete 17.5.0</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
-      <pubDate>Wed, 30 Sep 2026 13:49:05 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.5.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.5.0</guid>
+      <pubDate>Wed, 30 Sep 2026 13:57:48 GMT</pubDate>
+      <description><![CDATA[## What's changed
+
+- uSync.Publisher now handles load-balanced targets properly. A publish is a
+  multi-step conversation that keeps working state on whichever node is
+  handling it, so a load balancer moving a session between nodes partway
+  through would break it in ways that were hard to diagnose. Session requests
+  now carry an affinity cookie, and a session that loses affinity is detected
+  and reported rather than failing further down the line with an unrelated
+  looking error
+- New `uSync:Publisher:Settings:AffinityFailFast` (off by default) stops a
+  publish the moment affinity is lost, instead of letting it continue and fail
+  later
+- New `uSync:WorkingFolder:Path` sets where uSync keeps its working files, so
+  every server in a load-balanced site can share the same working folder
+- Fix: the temp folder cleanup job now runs on every server in a load-balanced
+  site. Previously it only ran on the scheduling publisher, so other servers'
+  temp folders were never cleaned
+- The server-to-server SignalR connection no longer waits SignalR's default 15
+  seconds before giving up on a server it cannot reach. The handshake fails
+  fast, a connection already known to be unreachable is not retried for the
+  rest of the session, and the server configuration page now warns when
+  server-to-server messaging cannot connect. A reconnect handler firing on
+  every closed connection turned out to be the actual source of the timeouts
+  and has been removed
+- The Publisher content and media browsers have a list view alongside the
+  grid, and every item shows whether it is in sync, out of sync or missing on
+  the other server
+- The Publisher browsers now page through large folders (previously only the
+  first 50 items were shown), can sort by name, type or last update, and can
+  search the current folder by name. Refreshing the page keeps your place
+- New optional server identifier in the backoffice header shows which server
+  you are logged into, using that server's name, icon and colour. Turn it on
+  with "Show server identifier" in the server's settings. A new "Apply server
+  colour to navbar" setting (on by default) controls the existing navbar
+  colouring
+- Fix: the Publisher browser and its Compare dialog could match every item in
+  a folder against the first changed item, showing the wrong status or
+  comparison
+- Added server-to-server capability negotiation. Servers now tell each other
+  what they support, so a publish can adapt to what the far end understands
+  instead of assuming
+- Fix: uSync.Snapshots labels no longer appear as raw keys (e.g.
+  `uSyncSnapshots_singleWarning`) in the backoffice. Its localisation file was
+  registered only for `en-US`, not the plain `en` the backoffice defaults to
+- Fix: the unsaved-changes dialog no longer offers a Cancel option that did
+  the same thing as dismissing it, and its remaining choices are easier to
+  read
+- Polymorphic processing options are now registered with an explicit
+  discriminator, matching the change in Jumoo.Processing. Only relevant if you
+  have your own `IProcessingOptions` implementation
+- Servers added through the Add server dialog now start with a random colour
+  from the server palette and the server identifier turned on. Existing
+  servers keep their current appearance
+- Fix: creating a restore point or snapshot on a large site no longer hangs
+  when it is hosted out of process in IIS. Content and media are now exported
+  in pages across several requests, instead of each in one long request that
+  IIS would abandon after its request timeout
+- Publisher servers can now be sorted. Use "Sort servers" on the Publisher
+  node in the uSync tree to set the order servers appear in, both in the tree
+  and wherever you pick a server to push to or pull from
+- Fix: saving a server no longer resets the server order if the list was
+  re-sorted while its settings were open
+- The server identifier is now on by default for a site that isn't in its own
+  server list, where it shows as "Local". Sites that have already saved their
+  Publisher settings keep their current setting. Saving the Publisher settings
+  no longer resets the default server's appearance
+- New: uSync.TimeMachine records what happens to a site as a timeline of
+  events, with a property level diff for each item, and lets you roll any of
+  those changes back. A back office save, a save and publish, or a whole uSync
+  import each show as one event. It is off by default; turn it on with
+  `uSync:TimeMachine:Enabled`. Events older than
+  `uSync:TimeMachine:RetentionDays` (default 30) are removed
+- Clicking the server identifier in the backoffice header opens a popover with
+  the current server and the servers it can push to or pull from, each with
+  its status and a link to open the same page on that server. "Server details"
+  opens a sidebar with more
+- Publisher sends sync packs between servers in parts, so a large push or pull
+  no longer has to fit in a single request, and a pull reports progress while
+  it fetches. New `uSync:Publisher:Settings:PackChunkSize` (files per part,
+  default 1000) and `PackChunkMaxBytes` (default 100MB) set the part size
+- Exporter downloads are written to disk rather than built in memory, so very
+  large exports can be downloaded
+- The Publisher dashboard has a "Server json" button that shows the current
+  server setup as json, ready to save as `usync-servers.json` to pre-seed the
+  servers on a new install
+- Fix: domains, relation types, webhooks, users and user groups show a label
+  in Publisher instead of a raw key such as `usyncpublish_IDomain`
+- Fix: spelling and grammar in the backoffice text
+- Updated to uSync 17.4.3
+
+]]></description>
     </item>
     <item>
       <title>Translation Manager 17.9.3</title>
@@ -548,11 +843,95 @@ See [CHANGELOG.md](https://github.com/KevinJump/uSync/blob/v18/main/CHANGELOG.md
 **Full Changelog**: https://github.com/Jumoo/Jumoo.Processing/compare/release/v18.1.0...release/v18.1.1]]></description>
     </item>
     <item>
+      <title>uSync Complete 17.4.3</title>
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.4.3</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.4.3</guid>
+      <pubDate>Thu, 24 Sep 2026 09:51:48 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add delete server to the publisher workspace actions menu by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/62
+* Fix missing dependency flag and publicAccess action-merge collision by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/63
+* Fix member group picker not populating exporter selection by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/64
+* Fix PublicAccess sync priority to run after content by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/65
+* Exclude actions folder from Exporter package export by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/66
+* Add push/pull menu actions to Members and Member Groups by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/67
+* Let users pick which servers to sync, fix settings sync wiping other servers by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/73
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Exporter.Client/usync-exporter-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/68
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Publisher.Client/usync-publisher-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/69
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Expansions.Client/usync-expansions-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/70
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Snapshots.Client/usync-snapshots-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/71
+* Bump the nuget-dependencies group with 1 update by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/72
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.4.2...release/v17.4.3]]></description>
+    </item>
+    <item>
       <title>uSync Complete 17.5.0-rc1</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
-      <pubDate>Thu, 24 Sep 2026 09:52:06 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.5.0-rc1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.5.0-rc1</guid>
+      <pubDate>Thu, 24 Sep 2026 09:49:46 GMT</pubDate>
+      <description><![CDATA[Release candidate for 17.5.0.
+
+## What's changed
+
+- uSync.Publisher now handles load-balanced targets properly. A publish is a
+  multi-step conversation that keeps working state on whichever node is
+  handling it, so a load balancer moving a session between nodes partway
+  through would break it in ways that were hard to diagnose. Session requests
+  now carry an affinity cookie, and a session that loses affinity is detected
+  and reported rather than failing further down the line with an unrelated
+  looking error
+- New `uSync:Publisher:Settings:AffinityFailFast` (off by default) stops a
+  publish the moment affinity is lost, instead of letting it continue and fail
+  later
+- New `uSync:WorkingFolder:Path` sets where uSync keeps its working files, so
+  every server in a load-balanced site can share the same working folder
+- Fix: the temp folder cleanup job now runs on every server in a load-balanced
+  site. Previously it only ran on the scheduling publisher, so other servers'
+  temp folders were never cleaned
+- The server-to-server SignalR connection no longer waits SignalR's default 15
+  seconds before giving up on a server it cannot reach. The handshake fails
+  fast, a connection already known to be unreachable is not retried for the
+  rest of the session, and the server configuration page now warns when
+  server-to-server messaging cannot connect. A reconnect handler firing on
+  every closed connection turned out to be the actual source of the timeouts
+  and has been removed
+- The Publisher content and media browsers have a list view alongside the
+  grid, and every item shows whether it is in sync, out of sync or missing on
+  the other server
+- The Publisher browsers now page through large folders (previously only the
+  first 50 items were shown), can sort by name, type or last update, and can
+  search the current folder by name. Refreshing the page keeps your place
+- New optional server identifier in the backoffice header shows which server
+  you are logged into, using that server's name, icon and colour. Turn it on
+  with "Show server identifier" in the server's settings. A new "Apply server
+  colour to navbar" setting (on by default) controls the existing navbar
+  colouring
+- Fix: the Publisher browser and its Compare dialog could match every item in
+  a folder against the first changed item, showing the wrong status or
+  comparison
+- Added server-to-server capability negotiation. Servers now tell each other
+  what they support, so a publish can adapt to what the far end understands
+  instead of assuming
+- Fix: uSync.Snapshots labels no longer appear as raw keys (e.g.
+  `uSyncSnapshots_singleWarning`) in the backoffice. Its localisation file was
+  registered only for `en-US`, not the plain `en` the backoffice defaults to
+- Fix: the unsaved-changes dialog no longer offers a Cancel option that did
+  the same thing as dismissing it, and its remaining choices are easier to
+  read
+- Polymorphic processing options are now registered with an explicit
+  discriminator, matching the change in Jumoo.Processing. Only relevant if you
+  have your own `IProcessingOptions` implementation
+- Servers added through the Add server dialog now start with a random colour
+  from the server palette and the server identifier turned on. Existing
+  servers keep their current appearance
+- Fix: creating a restore point or snapshot on a large site no longer hangs
+  when it is hosted out of process in IIS. Content and media are now exported
+  in pages across several requests, instead of each in one long request that
+  IIS would abandon after its request timeout
+
+
+Dependency updates for the backoffice client packages are also included.
+]]></description>
     </item>
     <item>
       <title>Translation Manager 17.9.2</title>
@@ -567,10 +946,22 @@ See [CHANGELOG.md](https://github.com/KevinJump/uSync/blob/v18/main/CHANGELOG.md
     </item>
     <item>
       <title>Passthrough Connector 17.0.1</title>
-      <link>https://github.com/Jumoo/Passthrough.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Passthrough.Connector/releases</guid>
-      <pubDate>Mon, 21 Sep 2026 15:33:56 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/Passthrough.Connector/releases/tag/v17.0.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Passthrough.Connector/releases/tag/v17.0.1</guid>
+      <pubDate>Mon, 21 Sep 2026 15:23:43 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Bring repository standards and CI/CD in line with Xliff.Connector by @KevinJump in https://github.com/Jumoo/Passthrough.Connector/pull/1
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Passthrough.Connector/pull/7
+
+
+**Full Changelog**: https://github.com/Jumoo/Passthrough.Connector/compare/v17.0.0...v17.0.1]]></description>
+    </item>
+    <item>
+      <title>Passthrough Connector 17.0.0</title>
+      <link>https://github.com/Jumoo/Passthrough.Connector/releases/tag/v17.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Passthrough.Connector/releases/tag/v17.0.0</guid>
+      <pubDate>Mon, 21 Sep 2026 15:23:42 GMT</pubDate>
+      <description><![CDATA[Backfilled release tag — this version was already published to NuGet from commit 5927b2d but never tagged.]]></description>
     </item>
     <item>
       <title>Xliff Connector 17.0.2</title>
@@ -609,13 +1000,6 @@ See [CHANGELOG.md](https://github.com/KevinJump/uSync/blob/v18/main/CHANGELOG.md
 **Full Changelog**: https://github.com/Jumoo/LanguageWire.Connector/compare/v17.1.0...v17.1.1]]></description>
     </item>
     <item>
-      <title>AI Connector 17.6.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases</guid>
-      <pubDate>Mon, 21 Sep 2026 15:17:05 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
       <title>GlobalLink Connector 17.1.1</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.1</guid>
@@ -629,13 +1013,6 @@ See [CHANGELOG.md](https://github.com/KevinJump/uSync/blob/v18/main/CHANGELOG.md
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/compare/v17.1.0...v17.1.1]]></description>
     </item>
     <item>
-      <title>DeepL Connector 17.3.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases</guid>
-      <pubDate>Mon, 21 Sep 2026 15:16:35 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
       <title>UmbracoAI Connector 17.1.1</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.1</guid>
@@ -647,13 +1024,6 @@ See [CHANGELOG.md](https://github.com/KevinJump/uSync/blob/v18/main/CHANGELOG.md
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/compare/v17.1.0...v17.1.1]]></description>
     </item>
     <item>
-      <title>Google Connector 17.1.1</title>
-      <link>https://github.com/Jumoo/Google.Connector/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases</guid>
-      <pubDate>Mon, 21 Sep 2026 15:16:28 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
       <title>CrowdIn Connector 17.2.1</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.1</guid>
@@ -663,6 +1033,39 @@ See [CHANGELOG.md](https://github.com/KevinJump/uSync/blob/v18/main/CHANGELOG.md
 
 
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/compare/v17.2.0...v17.2.1]]></description>
+    </item>
+    <item>
+      <title>AI Connector 17.6.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.6.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.6.1</guid>
+      <pubDate>Mon, 21 Sep 2026 15:15:52 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/50
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.6.0...v17.6.1]]></description>
+    </item>
+    <item>
+      <title>Google Connector 17.1.1</title>
+      <link>https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.1</guid>
+      <pubDate>Mon, 21 Sep 2026 15:15:27 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Google.Connector/pull/8
+
+
+**Full Changelog**: https://github.com/Jumoo/Google.Connector/compare/v17.1.0...v17.1.1]]></description>
+    </item>
+    <item>
+      <title>DeepL Connector 17.3.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.3.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.3.1</guid>
+      <pubDate>Mon, 21 Sep 2026 15:15:06 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* fix: gate composer on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/22
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.3.0...v17.3.1]]></description>
     </item>
     <item>
       <title>Jumoo.Processing 17.4.2</title>
@@ -685,17 +1088,44 @@ See [CHANGELOG.md](https://github.com/KevinJump/uSync/blob/v18/main/CHANGELOG.md
     </item>
     <item>
       <title>uSync Complete 18.1.4</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
-      <pubDate>Thu, 17 Sep 2026 11:01:23 GMT</pubDate>
-      <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 17.4.3</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
-      <pubDate>Thu, 17 Sep 2026 10:14:27 GMT</pubDate>
-      <description><![CDATA[]]></description>
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.1.4</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.1.4</guid>
+      <pubDate>Thu, 17 Sep 2026 10:58:30 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add delete server to the publisher workspace actions menu by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/62
+* Fix missing dependency flag and publicAccess action-merge collision by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/63
+* Fix member group picker not populating exporter selection by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/64
+* Fix PublicAccess sync priority to run after content by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/65
+* Exclude actions folder from Exporter package export by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/66
+* Add push/pull menu actions to Members and Member Groups by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/67
+* Let users pick which servers to sync, fix settings sync wiping other servers by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/73
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Exporter.Client/usync-exporter-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/68
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Publisher.Client/usync-publisher-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/69
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Expansions.Client/usync-expansions-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/70
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Snapshots.Client/usync-snapshots-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/71
+* Bump the nuget-dependencies group with 1 update by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/72
+* Merge v17/main into v18/main (2026-09-17) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/74
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v18.1.3...release/v18.1.4
+
+## What's Changed
+* Add delete server to the publisher workspace actions menu by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/62
+* Fix missing dependency flag and publicAccess action-merge collision by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/63
+* Fix member group picker not populating exporter selection by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/64
+* Fix PublicAccess sync priority to run after content by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/65
+* Exclude actions folder from Exporter package export by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/66
+* Add push/pull menu actions to Members and Member Groups by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/67
+* Let users pick which servers to sync, fix settings sync wiping other servers by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/73
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Exporter.Client/usync-exporter-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/68
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Publisher.Client/usync-publisher-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/69
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Expansions.Client/usync-expansions-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/70
+* Bump vite from 8.2.2 to 8.3.0 in /uSync.Snapshots.Client/usync-snapshots-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/71
+* Bump the nuget-dependencies group with 1 update by @dependabot[bot] in https://github.com/Jumoo/uSync.Complete/pull/72
+* Merge v17/main into v18/main (2026-09-17) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/74
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v18.1.3...release/v18.1.4]]></description>
     </item>
     <item>
       <title>Translation Manager 18.3.1</title>
@@ -709,18 +1139,6 @@ See [CHANGELOG.md](https://github.com/KevinJump/uSync/blob/v18/main/CHANGELOG.md
 
 
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v18.3.0...v18.3.1]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.9.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.1</guid>
-      <pubDate>Wed, 16 Sep 2026 10:01:17 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* fix(api): Compare against the site's own culture when deduping SiteIds by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/65
-* fix(api): Clone sets before shaping them for a response by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager/pull/66
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager/compare/v17.9.0...v17.9.1]]></description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T17:03:35.488Z",
+  "generatedAt": "2026-10-23T04:32:21.339Z",
   "packages": [
     {
       "package": "uSync",
@@ -20,9 +20,9 @@
       "category": "",
       "repo": "Jumoo/uSync.Complete",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": null,
-      "lastReleaseDate": null,
-      "lastReleaseUrl": null,
+      "lastReleaseTag": "release/v17.6.0-rc1",
+      "lastReleaseDate": "2026-10-12T15:36:14Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.6.0-rc1",
       "releaseBranch": null,
       "commitsSince": null,
       "lastCommitDate": "2026-10-15T15:20:03Z"
@@ -33,12 +33,12 @@
       "category": "uSync Addon",
       "repo": "KevinJump/uSync.Forms",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": null,
-      "lastReleaseDate": null,
-      "lastReleaseUrl": null,
-      "releaseBranch": null,
-      "commitsSince": null,
-      "lastCommitDate": "2026-10-13T16:33:32Z"
+      "lastReleaseTag": "v18.1.0",
+      "lastReleaseDate": "2026-10-07T10:24:48Z",
+      "lastReleaseUrl": "https://github.com/KevinJump/uSync.Forms/releases/tag/v18.1.0",
+      "releaseBranch": "v18/main",
+      "commitsSince": 2,
+      "lastCommitDate": "2026-10-08T13:23:28Z"
     },
     {
       "package": "uSync.Umbraco.Commerce",
@@ -137,12 +137,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.CSV",
       "defaultBranch": "v18/main",
-      "lastReleaseTag": null,
-      "lastReleaseDate": null,
-      "lastReleaseUrl": null,
-      "releaseBranch": null,
-      "commitsSince": null,
-      "lastCommitDate": "2026-10-13T12:43:21Z"
+      "lastReleaseTag": "v18.0.0",
+      "lastReleaseDate": "2026-08-17T10:44:25Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v18.0.0",
+      "releaseBranch": "v18/main",
+      "commitsSince": 8,
+      "lastCommitDate": "2026-10-13T12:43:19Z"
     },
     {
       "package": "Jumoo.TranslationManager.UmbracoAI",
@@ -150,12 +150,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.UmbracoAI",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": null,
-      "lastReleaseDate": null,
-      "lastReleaseUrl": null,
-      "releaseBranch": null,
-      "commitsSince": null,
-      "lastCommitDate": "2026-10-13T13:49:33Z"
+      "lastReleaseTag": "v17.1.1",
+      "lastReleaseDate": "2026-09-21T15:16:30Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.1",
+      "releaseBranch": "v17/main",
+      "commitsSince": 6,
+      "lastCommitDate": "2026-10-13T13:30:34Z"
     },
     {
       "package": "Jumoo.TranslationManager.SmartCat",
@@ -169,6 +169,32 @@
       "releaseBranch": "v17/main",
       "commitsSince": 2,
       "lastCommitDate": "2026-10-13T11:55:53Z"
+    },
+    {
+      "package": "Jumoo.TranslationManager.Publicis",
+      "title": "Publicis Connector",
+      "category": "Translation Connectors",
+      "repo": "Jumoo/TranslatePlus-Connector",
+      "defaultBranch": "v17/main",
+      "lastReleaseTag": "v17.0.1",
+      "lastReleaseDate": "2026-10-15T13:38:39Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.1",
+      "releaseBranch": "v17/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-15T13:38:39Z"
+    },
+    {
+      "package": "Jumoo.TranslationManager.DeepL",
+      "title": "DeepL Connector",
+      "category": "Translation Connectors",
+      "repo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL",
+      "defaultBranch": "v17/main",
+      "lastReleaseTag": "v18.2.0",
+      "lastReleaseDate": "2026-10-02T09:41:21Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.0",
+      "releaseBranch": "v18/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-02T09:41:21Z"
     },
     {
       "package": "Jumoo.TranslationManager.Google",
