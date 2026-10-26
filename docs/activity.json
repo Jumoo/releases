@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T00:53:33.434Z",
+  "generatedAt": "2026-10-26T13:55:26.529Z",
   "packages": [
     {
       "package": "uSync",
@@ -7,12 +7,12 @@
       "category": "",
       "repo": "KevinJump/uSync",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.1.5",
-      "lastReleaseDate": "2026-09-30T18:09:24Z",
-      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.1.5",
-      "releaseBranch": "v18/main",
-      "commitsSince": 28,
-      "lastCommitDate": "2026-10-13T10:59:20Z"
+      "lastReleaseTag": "v17.5.0",
+      "lastReleaseDate": "2026-10-26T11:30:52Z",
+      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.5.0",
+      "releaseBranch": "v17/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-26T11:30:52Z"
     },
     {
       "package": "uSync.Complete",
@@ -25,7 +25,7 @@
       "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.6.0-rc1",
       "releaseBranch": null,
       "commitsSince": null,
-      "lastCommitDate": "2026-10-23T10:49:16Z"
+      "lastCommitDate": "2026-10-26T13:54:49Z"
     },
     {
       "package": "uSync.Forms",
@@ -35,10 +35,10 @@
       "defaultBranch": "v17/main",
       "lastReleaseTag": "v18.1.0",
       "lastReleaseDate": "2026-10-07T10:24:48Z",
-      "lastReleaseUrl": "https://github.com/KevinJump/uSync.Forms/releases/tag/v18.1.0",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Forms/releases/tag/v18.1.0",
       "releaseBranch": "v18/main",
-      "commitsSince": 2,
-      "lastCommitDate": "2026-10-08T13:23:28Z"
+      "commitsSince": 12,
+      "lastCommitDate": "2026-10-26T13:54:32Z"
     },
     {
       "package": "uSync.Umbraco.Commerce",
@@ -50,8 +50,8 @@
       "lastReleaseDate": "2026-10-14T10:32:29Z",
       "lastReleaseUrl": "https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.1",
       "releaseBranch": "v18/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-10-14T10:32:29Z"
+      "commitsSince": 3,
+      "lastCommitDate": "2026-10-26T11:41:48Z"
     },
     {
       "package": "uSync.Cli",
@@ -76,8 +76,8 @@
       "lastReleaseDate": "2026-09-11T13:04:33Z",
       "lastReleaseUrl": "https://github.com/Jumoo/uSyncMigrations/releases/tag/v17.0.3",
       "releaseBranch": "v17/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-09-11T13:04:33Z"
+      "commitsSince": 6,
+      "lastCommitDate": "2026-10-26T11:41:32Z"
     },
     {
       "package": "uSync.Hangfire",
@@ -98,12 +98,12 @@
       "category": "uSync Addon",
       "repo": "Jumoo/uSync.AI",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.0.0",
-      "lastReleaseDate": "2026-10-08T14:56:32Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSync.AI/releases/tag/v17.0.0",
+      "lastReleaseTag": "v17.0.1",
+      "lastReleaseDate": "2026-10-26T11:35:53Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.AI/releases/tag/v17.0.1",
       "releaseBranch": "v17/main",
-      "commitsSince": 7,
-      "lastCommitDate": "2026-10-08T16:28:26Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-26T11:35:53Z"
     },
     {
       "package": "Jumoo.TranslationManager",
@@ -111,12 +111,12 @@
       "category": "",
       "repo": "Jumoo/Jumoo.TranslationManager",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.9.4",
-      "lastReleaseDate": "2026-10-23T11:23:09Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.9.4",
+      "lastReleaseTag": "v17.10.0",
+      "lastReleaseDate": "2026-10-26T12:26:28Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.10.0",
       "releaseBranch": "v17/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-10-23T11:23:09Z"
+      "lastCommitDate": "2026-10-26T12:26:28Z"
     },
     {
       "package": "Jumoo.TranslationManager.AI",
@@ -128,8 +128,8 @@
       "lastReleaseDate": "2026-10-12T10:18:41Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.0",
       "releaseBranch": "v18/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-10-12T10:18:41Z"
+      "commitsSince": 6,
+      "lastCommitDate": "2026-10-26T11:41:40Z"
     },
     {
       "package": "Jumoo.TranslationManager.CSV",
@@ -137,12 +137,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.CSV",
       "defaultBranch": "v18/main",
-      "lastReleaseTag": "v18.0.0",
-      "lastReleaseDate": "2026-08-17T10:44:25Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v18.0.0",
+      "lastReleaseTag": "v18.0.1",
+      "lastReleaseDate": "2026-10-26T11:22:41Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v18.0.1",
       "releaseBranch": "v18/main",
-      "commitsSince": 8,
-      "lastCommitDate": "2026-10-13T12:43:19Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-26T11:22:41Z"
     },
     {
       "package": "Jumoo.TranslationManager.UmbracoAI",
@@ -180,8 +180,8 @@
       "lastReleaseDate": "2026-10-15T13:38:39Z",
       "lastReleaseUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.1",
       "releaseBranch": "v17/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-10-15T13:38:39Z"
+      "commitsSince": 4,
+      "lastCommitDate": "2026-10-26T11:12:17Z"
     },
     {
       "package": "Jumoo.TranslationManager.DeepL",
@@ -193,8 +193,8 @@
       "lastReleaseDate": "2026-10-02T09:41:21Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.0",
       "releaseBranch": "v18/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-10-02T09:41:21Z"
+      "commitsSince": 7,
+      "lastCommitDate": "2026-10-26T11:41:44Z"
     },
     {
       "package": "Jumoo.TranslationManager.Google",
@@ -202,12 +202,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Google.Connector",
       "defaultBranch": "main",
-      "lastReleaseTag": "v17.1.1",
-      "lastReleaseDate": "2026-09-21T15:15:27Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.1",
-      "releaseBranch": "main",
-      "commitsSince": 2,
-      "lastCommitDate": "2026-10-13T11:55:27Z"
+      "lastReleaseTag": "v18.0.1",
+      "lastReleaseDate": "2026-10-26T11:39:00Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Google.Connector/releases/tag/v18.0.1",
+      "releaseBranch": "v18/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-26T11:39:00Z"
     },
     {
       "package": "Jumoo.TranslationManager.Xliff",
@@ -267,12 +267,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/LanguageWire.Connector",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.1.2",
-      "lastReleaseDate": "2026-10-15T13:38:39Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.2",
-      "releaseBranch": "v17/main",
+      "lastReleaseTag": "v18.0.0",
+      "lastReleaseDate": "2026-10-26T11:44:32Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v18.0.0",
+      "releaseBranch": "v18/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-10-15T13:38:39Z"
+      "lastCommitDate": "2026-10-26T11:44:32Z"
     },
     {
       "package": "Jumoo.TranslationManager.GlobalLink",
@@ -280,12 +280,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.GlobalLink",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.1.1",
-      "lastReleaseDate": "2026-09-21T15:16:54Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.1",
-      "releaseBranch": "v17/main",
-      "commitsSince": 6,
-      "lastCommitDate": "2026-10-13T13:30:22Z"
+      "lastReleaseTag": "v18.0.0",
+      "lastReleaseDate": "2026-10-26T11:39:00Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v18.0.0",
+      "releaseBranch": "v18/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-26T11:39:00Z"
     },
     {
       "package": "Umbraco.Community.LinkedPages",
@@ -293,12 +293,12 @@
       "category": "Other",
       "repo": "Jumoo/Our.Umbraco.LinkedPages",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.0.4",
-      "lastReleaseDate": "2026-08-25T14:19:39Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.4",
+      "lastReleaseTag": "v18.0.5",
+      "lastReleaseDate": "2026-10-26T11:37:18Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.5",
       "releaseBranch": "v18/main",
-      "commitsSince": 11,
-      "lastCommitDate": "2026-10-14T10:56:05Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-26T11:37:18Z"
     },
     {
       "package": "Our.Umbraco.MaintenanceMode",
@@ -306,12 +306,12 @@
       "category": "Other",
       "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.1.1",
-      "lastReleaseDate": "2026-10-13T13:50:48Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.1.1",
+      "lastReleaseTag": "v18.2.0",
+      "lastReleaseDate": "2026-10-26T11:55:38Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.0",
       "releaseBranch": "v18/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-10-13T13:50:48Z"
+      "lastCommitDate": "2026-10-26T11:55:38Z"
     },
     {
       "package": "uSync.Automate",
@@ -319,12 +319,12 @@
       "category": "uSync.Automate Extensions",
       "repo": "Jumoo/uSync.Automate",
       "defaultBranch": "main",
-      "lastReleaseTag": "v17.0.0",
-      "lastReleaseDate": "2026-08-26T09:12:16Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.0",
+      "lastReleaseTag": "v17.0.1",
+      "lastReleaseDate": "2026-10-26T11:38:50Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.1",
       "releaseBranch": "main",
-      "commitsSince": 13,
-      "lastCommitDate": "2026-10-13T12:20:31Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-26T11:38:50Z"
     },
     {
       "package": "Jumoo.TranslationManager.Automate",
@@ -332,12 +332,12 @@
       "category": "uSync.Automate Extensions",
       "repo": "Jumoo/Jumoo.TranslationManager.Automate",
       "defaultBranch": "main",
-      "lastReleaseTag": "v17.0.0",
-      "lastReleaseDate": "2026-08-26T09:13:38Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.0",
+      "lastReleaseTag": "v17.0.1",
+      "lastReleaseDate": "2026-10-26T11:38:50Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.1",
       "releaseBranch": "main",
-      "commitsSince": 3,
-      "lastCommitDate": "2026-10-13T11:48:55Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-26T11:38:50Z"
     },
     {
       "package": "Umbraco.Community.PowerToys",
@@ -358,12 +358,12 @@
       "category": "Other",
       "repo": "Jumoo/Jumoo.Processing",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "release/v17.5.0-rc2",
-      "lastReleaseDate": "2026-10-12T13:06:38Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.0-rc2",
-      "releaseBranch": null,
-      "commitsSince": null,
-      "lastCommitDate": "2026-10-21T11:07:04Z"
+      "lastReleaseTag": "release/v17.5.0",
+      "lastReleaseDate": "2026-10-26T10:49:10Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.0",
+      "releaseBranch": "v17/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-26T10:49:10Z"
     },
     {
       "package": "Jumoo.Json",
