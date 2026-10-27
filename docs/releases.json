@@ -1,5 +1,18 @@
 [
   {
+    "package": "uSync.Complete",
+    "title": "uSync Complete",
+    "category": "",
+    "repo": "Jumoo/uSync.Complete",
+    "version": "18.3.0",
+    "publishedAt": "2026-10-26T17:28:53Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/18.3.0",
+    "githubUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.3.0",
+    "notes": "Forward-ports v17.6.0 from v17/main.\n\n### Added\n- Publisher: approvals. A server can require approval for content pushes and\n  pulls; the push or pull stops after the report until someone in the\n  server's approver groups approves or declines it. Turn it on with \"Require\n  approval\" on the server's Permissions view. Settings pushes and pulls are\n  not affected\n- Publisher: an approved push or pull is sent again and the target re-checked\n  before anything is applied, showing anything that changed since the request\n- Publisher: Approvals dashboard in the Content section (requests waiting for\n  you, your requests, history), shown only when approvals are in use\n- Publisher: approval emails to approvers and requesters when SMTP is\n  configured, overridable with templates in `~/uSync/emails/`, plus\n  `PublisherApprovalRequestedNotification`, `PublisherApprovalDecidedNotification`\n  and `PublisherApprovalFinishedNotification`\n- Publisher: the Sync Queue. Turn on \"Allow queuing\" on a server's Permissions\n  view to get an \"Add to queue\" action and a per-user Sync Queue dashboard in\n  the Content section, for pushing several items, of any type, together\n- Single-call background API: `POST Publisher/Start` and `POST Exporter/Start`,\n  with `GET Exporter/Download/{id}` for a finished export\n- Background runs that are queued, scheduled or running can be cancelled from\n  the Background screen\n\n### Changed\n- Publisher: the push and pull buttons only appear for user groups whose\n  default permissions allow a push or pull\n- Publisher: a media file is not sent when the target already has an identical\n  copy at the same path; the media item is still synced\n- Publisher: the first step of a push or pull says it is finding items, and\n  how many it found\n- Publisher: the push, pull and add to queue actions sit in their own section\n  of the actions menu\n- The Restore points screen uses a workspace view\n- Bumped `jumoo.processing` to 18.3.0\n- Bumped uSync to 18.2.0\n\n### Fixed\n- Publisher: the push dialog no longer collapses to nothing in Safari 26.4\n- Publisher: progress during a push or pull updates as items are processed\n- Publisher: import failures are shown in the push and pull result\n- Publisher: pushing from the content editor no longer goes ahead when the\n  save and publish step is cancelled\n- Publisher: the current server is recognised when the site is reached over a\n  different scheme, port or letter case than its configured url\n- Importing user groups exported from Umbraco 13 keeps their permissions\n- Push and pull no longer fail on some hosts with \"The converter for derived\n  type 'System.Collections.IDictionary' does not support metadata writes or\n  reads\"\n- TimeMachine: the timeline refreshes when you come back to it\n- Exporter: `GetExport` returns Not Found or Bad Request for an unknown or\n  invalid export, rather than a server error\n- The Background screen shows its process and queue lists again\n- Publisher: spelling and pluralisation fixes in result messages\n\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
     "package": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",

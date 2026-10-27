@@ -5,6 +5,68 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync Complete 18.3.0</title>
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.3.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.3.0</guid>
+      <pubDate>Mon, 26 Oct 2026 17:28:53 GMT</pubDate>
+      <description><![CDATA[Forward-ports v17.6.0 from v17/main.
+
+### Added
+- Publisher: approvals. A server can require approval for content pushes and
+  pulls; the push or pull stops after the report until someone in the
+  server's approver groups approves or declines it. Turn it on with "Require
+  approval" on the server's Permissions view. Settings pushes and pulls are
+  not affected
+- Publisher: an approved push or pull is sent again and the target re-checked
+  before anything is applied, showing anything that changed since the request
+- Publisher: Approvals dashboard in the Content section (requests waiting for
+  you, your requests, history), shown only when approvals are in use
+- Publisher: approval emails to approvers and requesters when SMTP is
+  configured, overridable with templates in `~/uSync/emails/`, plus
+  `PublisherApprovalRequestedNotification`, `PublisherApprovalDecidedNotification`
+  and `PublisherApprovalFinishedNotification`
+- Publisher: the Sync Queue. Turn on "Allow queuing" on a server's Permissions
+  view to get an "Add to queue" action and a per-user Sync Queue dashboard in
+  the Content section, for pushing several items, of any type, together
+- Single-call background API: `POST Publisher/Start` and `POST Exporter/Start`,
+  with `GET Exporter/Download/{id}` for a finished export
+- Background runs that are queued, scheduled or running can be cancelled from
+  the Background screen
+
+### Changed
+- Publisher: the push and pull buttons only appear for user groups whose
+  default permissions allow a push or pull
+- Publisher: a media file is not sent when the target already has an identical
+  copy at the same path; the media item is still synced
+- Publisher: the first step of a push or pull says it is finding items, and
+  how many it found
+- Publisher: the push, pull and add to queue actions sit in their own section
+  of the actions menu
+- The Restore points screen uses a workspace view
+- Bumped `jumoo.processing` to 18.3.0
+- Bumped uSync to 18.2.0
+
+### Fixed
+- Publisher: the push dialog no longer collapses to nothing in Safari 26.4
+- Publisher: progress during a push or pull updates as items are processed
+- Publisher: import failures are shown in the push and pull result
+- Publisher: pushing from the content editor no longer goes ahead when the
+  save and publish step is cancelled
+- Publisher: the current server is recognised when the site is reached over a
+  different scheme, port or letter case than its configured url
+- Importing user groups exported from Umbraco 13 keeps their permissions
+- Push and pull no longer fail on some hosts with "The converter for derived
+  type 'System.Collections.IDictionary' does not support metadata writes or
+  reads"
+- TimeMachine: the timeline refreshes when you come back to it
+- Exporter: `GetExport` returns Not Found or Bad Request for an unknown or
+  invalid export, rather than a server error
+- The Background screen shows its process and queue lists again
+- Publisher: spelling and pluralisation fixes in result messages
+
+]]></description>
+    </item>
+    <item>
       <title>Translation Manager 18.4.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.4.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.4.0</guid>
@@ -1372,32 +1434,6 @@ Requires Umbraco 17.5+, Umbraco.AI 17.5.2+ and uSync 17.4.3+ (uSync.Complete 17.
 
 
 **Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.5.0...release/v18.2.0]]></description>
-    </item>
-    <item>
-      <title>uSync 18.1.5</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v18.1.5</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.1.5</guid>
-      <pubDate>Wed, 30 Sep 2026 18:09:24 GMT</pubDate>
-      <description><![CDATA[## Fixes
-
-* Imported block values match what Umbraco publishes, so invariant block editors holding culture-variant elements no longer show pending changes after import (#1098)
-* Keep the published cache current after content type imports on Umbraco 18.0–18.1: refresh the types that use a changed composition, and treat variance-only changes as structural. No effect from Umbraco 18.2 on (#1102)
-* Export culture codes in standard casing (`da-DK`), so files no longer change when Umbraco is upgraded (#1101)
-* The uSync History client loads the uSync client by its package name, so it resolves on case-sensitive file systems (#1105)
-
-## Build and CI
-
-* Build the release, the nightly prerelease and the PR build once, in one job, on Linux (#1105)
-* Allow prerelease builds from any branch to publish to the nightly feed (#1099)
-* Stamp the nightly version as the informational version in prerelease builds (#1107)
-* Bump brace-expansion in usync-assets (#1100)
-
-Forward merges from v17/main: #1103, #1104, #1106, #1108.
-
-See [CHANGELOG.md](https://github.com/KevinJump/uSync/blob/v18/main/CHANGELOG.md#1815---2026-09-30) for details.
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.1.4...v18.1.5
-]]></description>
     </item>
   </channel>
 </rss>
