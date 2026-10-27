@@ -1,5 +1,31 @@
 [
   {
+    "package": "uSync.Engage",
+    "title": "uSync Engage",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.Engage",
+    "version": "17.0.0-beta01",
+    "publishedAt": "2026-10-27T16:01:02Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Engage/17.0.0-beta01",
+    "githubUrl": "https://github.com/Jumoo/uSync.Engage/releases/tag/v17.0.0-beta01",
+    "notes": "**Full Changelog**: https://github.com/Jumoo/uSync.Engage/commits/v17.0.0-beta01",
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Umbraco.Community.LinkedPages",
+    "title": "Linked Pages",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.LinkedPages",
+    "version": "18.0.6",
+    "publishedAt": "2026-10-27T16:00:40Z",
+    "nugetUrl": "https://www.nuget.org/packages/Umbraco.Community.LinkedPages/18.0.6",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.6",
+    "notes": "## What's Changed\n* Drop Umbraco.Cms and DevelopmentMode.Backoffice package dependencies by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/51\n\n\n**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/v18.0.5...v18.0.6",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
     "package": "Jumoo.TranslationManager.AI",
     "title": "AI Connector",
     "category": "Translation Connectors",

@@ -5,6 +5,24 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync Engage 17.0.0-beta01</title>
+      <link>https://github.com/Jumoo/uSync.Engage/releases/tag/v17.0.0-beta01</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Engage/releases/tag/v17.0.0-beta01</guid>
+      <pubDate>Tue, 27 Oct 2026 16:01:02 GMT</pubDate>
+      <description><![CDATA[**Full Changelog**: https://github.com/Jumoo/uSync.Engage/commits/v17.0.0-beta01]]></description>
+    </item>
+    <item>
+      <title>Linked Pages 18.0.6</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.6</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.6</guid>
+      <pubDate>Tue, 27 Oct 2026 16:00:40 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Drop Umbraco.Cms and DevelopmentMode.Backoffice package dependencies by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/51
+
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/v18.0.5...v18.0.6]]></description>
+    </item>
+    <item>
       <title>AI Connector 18.4.1</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.1</guid>
@@ -1407,39 +1425,6 @@ Requires Umbraco 17.5+, Umbraco.AI 17.5.2+ and uSync 17.4.3+ (uSync.Complete 17.
 
 
 **Full Changelog**: https://github.com/Jumoo/TranslatePlus-Connector/compare/v17.0.0-rc5...v17.0.0]]></description>
-    </item>
-    <item>
-      <title>AI Connector 17.7.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.0</guid>
-      <pubDate>Fri, 02 Oct 2026 11:59:34 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* fix: stop SDK retries stacking and give AI requests realistic timeouts by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/54
-* feat: gather a node's values into shared translation requests by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/55
-* Bump prettier from 3.9.6 to 3.9.8 in /Jumoo.TranslationManager.AI/ai-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/52
-* Bump vite from 6.4.3 to 8.3.0 in /Jumoo.TranslationManager.AI/ai-client by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/49
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.6.1...v17.7.0]]></description>
-    </item>
-    <item>
-      <title>DeepL Connector 18.2.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.0</guid>
-      <pubDate>Fri, 02 Oct 2026 09:41:21 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Whitespace fixes in DeepLTranslationService (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/7
-* Add repository standards and CI/CD to v18 (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/8
-* Bump chalk to 6.0.0 and typescript to 7.0.2 (port from v17/main) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/10
-* Stop per-developer test site config from leaking into deepl-client commits by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/11
-* Merge v17 into v18 (2026-09-01) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/17
-* Merge v17 into v18 (2026-09-15) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/20
-* fix: gate composer registrations on backoffice availability by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/23
-* Merge v17 into v18 (2026-09-30) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/24
-* Merge v17 into v18 (2026-10-02) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/26
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.4.0...v18.2.0]]></description>
     </item>
   </channel>
 </rss>
