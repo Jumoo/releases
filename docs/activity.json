@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-27T00:51:53.146Z",
+  "generatedAt": "2026-10-27T12:31:36.402Z",
   "packages": [
     {
       "package": "uSync",
@@ -124,12 +124,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.AI",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.4.0",
-      "lastReleaseDate": "2026-10-12T10:18:41Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.0",
+      "lastReleaseTag": "v18.4.1",
+      "lastReleaseDate": "2026-10-27T08:22:40Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.1",
       "releaseBranch": "v18/main",
-      "commitsSince": 6,
-      "lastCommitDate": "2026-10-26T11:41:40Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-27T08:22:40Z"
     },
     {
       "package": "Jumoo.TranslationManager.CSV",

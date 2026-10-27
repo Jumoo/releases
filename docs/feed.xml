@@ -5,6 +5,40 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>AI Connector 18.4.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.1</guid>
+      <pubDate>Tue, 27 Oct 2026 08:22:40 GMT</pubDate>
+      <description><![CDATA[### Fixed
+
+- A long system prompt no longer fails the job with "String or binary data would be truncated
+  in table 'Translate_Jobs'". The job keeps a copy of the prompt for "View Prompt" in a column
+  that holds 2,048 characters; that copy is now cut to 500 characters when the job's details
+  won't fit, and a long list of batch errors is trimmed with a count of how many were dropped.
+  The full prompt is still sent to the model.
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.4.0...v18.4.1
+]]></description>
+    </item>
+    <item>
+      <title>AI Connector 17.7.2</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.2</guid>
+      <pubDate>Tue, 27 Oct 2026 08:14:04 GMT</pubDate>
+      <description><![CDATA[### Fixed
+
+- A long system prompt no longer fails the job with "String or binary data would be truncated
+  in table 'Translate_Jobs'". The job keeps a copy of the prompt for "View Prompt" in a column
+  that holds 2,048 characters; that copy is now cut to 500 characters when the job's details
+  won't fit, and a long list of batch errors is trimmed with a count of how many were dropped.
+  The full prompt is still sent to the model.
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.7.1...v17.7.2
+]]></description>
+    </item>
+    <item>
       <title>uSync Complete 18.3.0</title>
       <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.3.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.3.0</guid>
@@ -1406,34 +1440,6 @@ Requires Umbraco 17.5+, Umbraco.AI 17.5.2+ and uSync 17.4.3+ (uSync.Complete 17.
 
 
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.4.0...v18.2.0]]></description>
-    </item>
-    <item>
-      <title>DeepL Connector 17.4.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.0</guid>
-      <pubDate>Fri, 02 Oct 2026 09:25:53 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* feat(provider): Retry transient DeepL failures via Polly by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/18
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.3.1...v17.4.0]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 18.2.0</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.2.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.2.0</guid>
-      <pubDate>Wed, 30 Sep 2026 19:31:24 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Port publisher timeout, restore-point hardening, and progress-callback fixes from v17 by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/26
-* Add GitHub Actions CI/CD to v18/main, matching v17/main by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/27
-* Merge v17/main into v18/main (2026-09-07) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/31
-* Merge v17 into v18 (2026-09-14) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/60
-* Merge v17/main into v18/main (2026-09-17) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/74
-* Merge v17/main into v18/main (2026-09-30) by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/95
-* Date the 18.2.0 changelog entry for release day by @KevinJump in https://github.com/Jumoo/uSync.Complete/pull/109
-
-
-**Full Changelog**: https://github.com/Jumoo/uSync.Complete/compare/release/v17.5.0...release/v18.2.0]]></description>
     </item>
   </channel>
 </rss>

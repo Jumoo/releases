@@ -1,5 +1,31 @@
 [
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "18.4.1",
+    "publishedAt": "2026-10-27T08:22:40Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/18.4.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.1",
+    "notes": "### Fixed\n\n- A long system prompt no longer fails the job with \"String or binary data would be truncated\n  in table 'Translate_Jobs'\". The job keeps a copy of the prompt for \"View Prompt\" in a column\n  that holds 2,048 characters; that copy is now cut to 500 characters when the job's details\n  won't fit, and a long list of batch errors is trimmed with a count of how many were dropped.\n  The full prompt is still sent to the model.\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.4.0...v18.4.1\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.7.2",
+    "publishedAt": "2026-10-27T08:14:04Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.7.2",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.2",
+    "notes": "### Fixed\n\n- A long system prompt no longer fails the job with \"String or binary data would be truncated\n  in table 'Translate_Jobs'\". The job keeps a copy of the prompt for \"View Prompt\" in a column\n  that holds 2,048 characters; that copy is now cut to 500 characters when the job's details\n  won't fit, and a long list of batch errors is trimmed with a count of how many were dropped.\n  The full prompt is still sent to the model.\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.7.1...v17.7.2\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "",
