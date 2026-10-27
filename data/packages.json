@@ -49,6 +49,12 @@
     "githubRepo": "Jumoo/uSync.AI"
   },
   {
+    "nugetId": "uSync.Engage",
+    "title": "uSync Engage",
+    "category": "uSync Addon",
+    "githubRepo": "Jumoo/uSync.Engage"
+  },
+  {
     "nugetId": "Jumoo.TranslationManager",
     "title": "Translation Manager",
     "category": "",
