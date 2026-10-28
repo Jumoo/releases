@@ -5,6 +5,23 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Publicis Connector 17.0.2</title>
+      <link>https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.2</guid>
+      <pubDate>Tue, 27 Oct 2026 16:29:10 GMT</pubDate>
+      <description><![CDATA[### Fixed
+
+- A job submitted in the background could create two Publicis orders. If the scheduled check sent a job while its queued submission was still waiting, the queued submission sent it again, and the job could end up linked to the order Publicis wasn't working on. Each job is now reloaded before it is sent and skipped if it already has an order. A check that times out waiting for another check to finish now stops instead of running anyway, and the job is sent on the next scheduled check.
+
+### Changed
+
+- When a job is sent to Publicis, the connector logs the job and its Publicis order number at Information.
+- Dependency updates.
+
+**Full Changelog**: https://github.com/Jumoo/TranslatePlus-Connector/compare/v17.0.1...v17.0.2
+]]></description>
+    </item>
+    <item>
       <title>uSync Engage 17.0.0-beta01</title>
       <link>https://github.com/Jumoo/uSync.Engage/releases/tag/v17.0.0-beta01</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Engage/releases/tag/v17.0.0-beta01</guid>
@@ -1414,17 +1431,6 @@ Requires Umbraco 17.5+, Umbraco.AI 17.5.2+ and uSync 17.4.3+ (uSync.Complete 17.
 * @henryjump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/pull/9
 
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/compare/v17.0.0-rc1...v17.0.0]]></description>
-    </item>
-    <item>
-      <title>Publicis Connector 17.0.0</title>
-      <link>https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.0</guid>
-      <pubDate>Tue, 06 Oct 2026 10:39:32 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Make the Publicis menu icon monochrome by @henryjump in https://github.com/Jumoo/TranslatePlus-Connector/pull/17
-
-
-**Full Changelog**: https://github.com/Jumoo/TranslatePlus-Connector/compare/v17.0.0-rc5...v17.0.0]]></description>
     </item>
   </channel>
 </rss>

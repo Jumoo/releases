@@ -1,5 +1,18 @@
 [
   {
+    "package": "Jumoo.TranslationManager.Publicis",
+    "title": "Publicis Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/TranslatePlus-Connector",
+    "version": "17.0.2",
+    "publishedAt": "2026-10-27T16:29:10Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Publicis/17.0.2",
+    "githubUrl": "https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.2",
+    "notes": "### Fixed\n\n- A job submitted in the background could create two Publicis orders. If the scheduled check sent a job while its queued submission was still waiting, the queued submission sent it again, and the job could end up linked to the order Publicis wasn't working on. Each job is now reloaded before it is sent and skipped if it already has an order. A check that times out waiting for another check to finish now stops instead of running anyway, and the job is sent on the next scheduled check.\n\n### Changed\n\n- When a job is sent to Publicis, the connector logs the job and its Publicis order number at Information.\n- Dependency updates.\n\n**Full Changelog**: https://github.com/Jumoo/TranslatePlus-Connector/compare/v17.0.1...v17.0.2\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync.Engage",
     "title": "uSync Engage",
     "category": "uSync Addon",
