@@ -1,5 +1,18 @@
 [
   {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "version": "17.5.1",
+    "publishedAt": "2026-10-28T11:28:13Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/17.5.1",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.5.1",
+    "notes": "## Release notes\n\nSupports Umbraco 17.3 to 17.8.\n\n- **Member type compositions now import.** Member types lost their compositions on import, with no error reported (#1149).\n\n## What's Changed\n* Publish @jumoo/usync to npmjs.org with trusted publishing by @KevinJump in https://github.com/KevinJump/uSync/pull/1143\n* Import member type compositions (#1149) by @KevinJump in https://github.com/KevinJump/uSync/pull/1151\n\n\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.5.0...v17.5.1\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.Publicis",
     "title": "Publicis Connector",
     "category": "Translation Connectors",

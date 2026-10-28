@@ -5,6 +5,25 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync 17.5.1</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v17.5.1</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.5.1</guid>
+      <pubDate>Wed, 28 Oct 2026 11:28:13 GMT</pubDate>
+      <description><![CDATA[## Release notes
+
+Supports Umbraco 17.3 to 17.8.
+
+- **Member type compositions now import.** Member types lost their compositions on import, with no error reported (#1149).
+
+## What's Changed
+* Publish @jumoo/usync to npmjs.org with trusted publishing by @KevinJump in https://github.com/KevinJump/uSync/pull/1143
+* Import member type compositions (#1149) by @KevinJump in https://github.com/KevinJump/uSync/pull/1151
+
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.5.0...v17.5.1
+]]></description>
+    </item>
+    <item>
       <title>Publicis Connector 17.0.2</title>
       <link>https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.2</link>
       <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.2</guid>
@@ -1417,20 +1436,6 @@ Requires Umbraco 17.5+, Umbraco.AI 17.5.2+ and uSync 17.4.3+ (uSync.Complete 17.
 * @dependabot[bot] made their first contribution in https://github.com/KevinJump/uSync.Forms/pull/36
 
 **Full Changelog**: https://github.com/KevinJump/uSync.Forms/compare/v17.1.0...v17.2.0]]></description>
-    </item>
-    <item>
-      <title>SmartCat Connector 17.0.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.0</guid>
-      <pubDate>Tue, 06 Oct 2026 17:22:28 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Prepare 17.0.0: RestSharp 114 security update, log fix, changelog by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/pull/9
-* ci: replace package build with manual prerelease to the nightly feed by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/pull/10
-
-## New Contributors
-* @henryjump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/pull/9
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/compare/v17.0.0-rc1...v17.0.0]]></description>
     </item>
   </channel>
 </rss>
