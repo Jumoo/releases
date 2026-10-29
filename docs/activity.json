@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-28T17:08:53.715Z",
+  "generatedAt": "2026-10-29T00:39:44.952Z",
   "packages": [
     {
       "package": "uSync",
@@ -11,8 +11,8 @@
       "lastReleaseDate": "2026-10-28T17:03:19Z",
       "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v19.0.0-beta01",
       "releaseBranch": "v19/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-10-28T17:03:19Z"
+      "commitsSince": 4,
+      "lastCommitDate": "2026-10-28T17:26:07Z"
     },
     {
       "package": "uSync.Complete",
