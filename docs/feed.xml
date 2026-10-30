@@ -5,6 +5,47 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Jumoo.Processing 19.0.0-beta01</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-beta01</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-beta01</guid>
+      <pubDate>Thu, 29 Oct 2026 17:45:29 GMT</pubDate>
+      <description><![CDATA[
+First beta for Umbraco 19 (`19.0.0-beta1`). Includes everything in 18.3.0.
+
+### Breaking
+
+- **Targets .NET 11 and Umbraco 19.** `net11.0`, built with the .NET 11 RC3 SDK. The
+  `@jumoo/processing` npm package pins `@umbraco-cms/backoffice` `19.0.0-beta1`.
+- **`IPipelineProcessor.Create(string)` is removed**, along with the `PipelineProcessorBase`
+  override. Both had been marked for removal. `Create(string strategy, PipelineCreationOptions
+  creationOptions)` is now on `IPipelineProcessor` itself. Processors that inherit
+  `PipelineProcessorBase` and don't override `Create(string)` need no changes.
+
+### Changed
+
+- **The processing hub authenticates with the backoffice cookie.** Umbraco 19 removed the
+  client-side backoffice token, so the SignalR connection no longer sends one. `startHub(methods)`
+  replaces `startHub(token, methods)`.
+- **Pipelines survive a session timeout.** When the session times out partway through a run,
+  Umbraco 19 asks the user to sign in again but only re-sends GET requests. The pipeline's create,
+  update and process calls now wait for the sign-in and then retry, so the run carries on and
+  options saved just before Process are kept.
+- **Runtime async is on**, as it is in Umbraco 19 for the betas. Drop the flag in
+  `Directory.Build.props` if it causes problems.
+
+### Fixed
+
+- The step row in the pipeline error modal now has its label.
+
+### Deprecated
+
+- `IPipelineOptionsProcessor`. Its `Create` method is on `IPipelineProcessor` now. Will be removed
+  in v21.
+- `startHub(token, methods)` in the npm package. The token is ignored. Will be removed in v21.
+
+]]></description>
+    </item>
+    <item>
       <title>uSync 19.0.0-beta01</title>
       <link>https://github.com/KevinJump/uSync/releases/tag/v19.0.0-beta01</link>
       <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v19.0.0-beta01</guid>
@@ -1448,38 +1489,6 @@ Requires Umbraco 17.5+, Umbraco.AI 17.5.2+ and uSync 17.4.3+ (uSync.Complete 17.
 * @dependabot[bot] made their first contribution in https://github.com/Jumoo/uSync.AI/pull/3
 
 **Full Changelog**: https://github.com/Jumoo/uSync.AI/commits/v17.0.0]]></description>
-    </item>
-    <item>
-      <title>uSync Forms 18.1.0</title>
-      <link>https://github.com/Jumoo/uSync.Forms/releases/tag/v18.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Forms/releases/tag/v18.1.0</guid>
-      <pubDate>Wed, 07 Oct 2026 10:24:48 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Bump vite from 7.3.6 to 8.2.1 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/36
-* Bump vite from 7.3.6 to 8.2.1 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/39
-* Bump gittools/actions from 3 to 4 by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/49
-* Bump vite from 8.2.1 to 8.2.2 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/57
-* Bump vite from 8.2.1 to 8.2.2 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/58
-* Bump vite from 8.2.2 to 8.3.1 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/61
-* Bump vite from 8.2.2 to 8.3.1 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/62
-* Ignore TypeScript major bumps in dependabot by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/63
-* Merge v17/main into v18/main (2026-09-29) by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/64
-* Bump vite from 8.3.1 to 8.3.2 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/65
-* Bump vite from 8.3.1 to 8.3.2 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/66
-* Refresh client lockfiles to clear dependabot alerts by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/67
-* Fix form import correctness and redundant Forms API calls by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/68
-* Fix nested folder push and tidy form export lookups by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/69
-* Sync the remaining form settings and keep folder ids on path fallback by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/70
-* Housekeeping: remove dead files, tidy client bundle and build metadata by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/71
-* Keep the client source json files out of the uSync.Forms package by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/72
-* Add a manual prerelease workflow for the nightly feed by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/73
-* Report the real version for uSync.Forms.Complete and add an upgrade note by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/74
-* Merge v17/main into v18/main (2026-10-07) by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/75
-
-## New Contributors
-* @dependabot[bot] made their first contribution in https://github.com/KevinJump/uSync.Forms/pull/36
-
-**Full Changelog**: https://github.com/KevinJump/uSync.Forms/compare/v18.0.1...v18.1.0]]></description>
     </item>
   </channel>
 </rss>

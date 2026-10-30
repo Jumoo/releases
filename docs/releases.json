@@ -1,5 +1,18 @@
 [
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "19.0.0-beta01",
+    "publishedAt": "2026-10-29T17:45:29Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/19.0.0-beta01",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-beta01",
+    "notes": "\nFirst beta for Umbraco 19 (`19.0.0-beta1`). Includes everything in 18.3.0.\n\n### Breaking\n\n- **Targets .NET 11 and Umbraco 19.** `net11.0`, built with the .NET 11 RC3 SDK. The\n  `@jumoo/processing` npm package pins `@umbraco-cms/backoffice` `19.0.0-beta1`.\n- **`IPipelineProcessor.Create(string)` is removed**, along with the `PipelineProcessorBase`\n  override. Both had been marked for removal. `Create(string strategy, PipelineCreationOptions\n  creationOptions)` is now on `IPipelineProcessor` itself. Processors that inherit\n  `PipelineProcessorBase` and don't override `Create(string)` need no changes.\n\n### Changed\n\n- **The processing hub authenticates with the backoffice cookie.** Umbraco 19 removed the\n  client-side backoffice token, so the SignalR connection no longer sends one. `startHub(methods)`\n  replaces `startHub(token, methods)`.\n- **Pipelines survive a session timeout.** When the session times out partway through a run,\n  Umbraco 19 asks the user to sign in again but only re-sends GET requests. The pipeline's create,\n  update and process calls now wait for the sign-in and then retry, so the run carries on and\n  options saved just before Process are kept.\n- **Runtime async is on**, as it is in Umbraco 19 for the betas. Drop the flag in\n  `Directory.Build.props` if it causes problems.\n\n### Fixed\n\n- The step row in the pipeline error modal now has its label.\n\n### Deprecated\n\n- `IPipelineOptionsProcessor`. Its `Create` method is on `IPipelineProcessor` now. Will be removed\n  in v21.\n- `startHub(token, methods)` in the npm package. The token is ignored. Will be removed in v21.\n\n",
+    "prerelease": true,
+    "umbracoMajor": 19
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",

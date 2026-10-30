@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T12:23:04.206Z",
+  "generatedAt": "2026-10-30T00:40:31.685Z",
   "packages": [
     {
       "package": "uSync",
@@ -11,8 +11,8 @@
       "lastReleaseDate": "2026-10-28T17:03:19Z",
       "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v19.0.0-beta01",
       "releaseBranch": "v19/main",
-      "commitsSince": 4,
-      "lastCommitDate": "2026-10-28T17:26:07Z"
+      "commitsSince": 23,
+      "lastCommitDate": "2026-10-29T14:03:45Z"
     },
     {
       "package": "uSync.Complete",
@@ -124,12 +124,12 @@
       "category": "",
       "repo": "Jumoo/Jumoo.TranslationManager",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.4.0",
-      "lastReleaseDate": "2026-10-26T16:06:24Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.4.0",
-      "releaseBranch": "v18/main",
-      "commitsSince": 2,
-      "lastCommitDate": "2026-10-27T15:40:40Z"
+      "lastReleaseTag": "v19.0.0-beta01",
+      "lastReleaseDate": "2026-10-29T18:58:30Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v19.0.0-beta01",
+      "releaseBranch": "v19/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-10-29T18:58:30Z"
     },
     {
       "package": "Jumoo.TranslationManager.AI",
@@ -371,12 +371,12 @@
       "category": "Other",
       "repo": "Jumoo/Jumoo.Processing",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "release/v18.3.0",
-      "lastReleaseDate": "2026-10-26T14:27:39Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.0",
-      "releaseBranch": "v18/main",
+      "lastReleaseTag": "release/v19.0.0-beta01",
+      "lastReleaseDate": "2026-10-29T17:45:29Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-beta01",
+      "releaseBranch": "v19/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-10-26T14:27:39Z"
+      "lastCommitDate": "2026-10-29T17:45:29Z"
     },
     {
       "package": "Jumoo.Json",
