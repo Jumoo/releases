@@ -5,6 +5,93 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync 18.2.1</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v18.2.1</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.2.1</guid>
+      <pubDate>Sun, 01 Nov 2026 21:48:00 GMT</pubDate>
+      <description><![CDATA[## Release notes
+
+- **The uSync API now needs the uSync section.** The API uses the uSync section policy, so a user without that section can no longer call it (#1157).
+- **Culture and segment limited exports keep the right values.** Invariant items no longer lose their values, cleared culture values now sync, and values from other cultures or segments no longer leak in (#1183).
+- **Partial exports only claim shared values when they contain them.** `DefaultValues` is no longer stamped without the shared values (#1180).
+- **Items with a clean marker stay in the import order.** Deleting at the root could otherwise stop those items importing (#1182).
+- **Member type compositions now import** (#1149).
+- **Export all skips content outside the Include paths** (#1176).
+- **SignalR respects client negotiation settings** (#1169).
+- **Blueprint folder names can contain spaces** (#1153).
+
+## What's Changed
+* Publish @jumoo/usync to npmjs.org with trusted publishing by @KevinJump in https://github.com/KevinJump/uSync/pull/1143
+* Merge v17/main into v18/main (2026-10-26) by @KevinJump in https://github.com/KevinJump/uSync/pull/1146
+* Show 18.x as the dashboard version fallback on v18 by @henryjump in https://github.com/KevinJump/uSync/pull/1148
+* Import member type compositions (#1149) by @KevinJump in https://github.com/KevinJump/uSync/pull/1151
+* Keep the spaces in a blueprint folder name created on import by @KevinJump in https://github.com/KevinJump/uSync/pull/1153
+* Merge v17/main into v18/main (2026-10-28) by @KevinJump in https://github.com/KevinJump/uSync/pull/1154
+* Secure the uSync API with the uSync section policy by @KevinJump in https://github.com/KevinJump/uSync/pull/1157
+* Label PRs with their expected release (v17) by @KevinJump in https://github.com/KevinJump/uSync/pull/1159
+* Forward the release label workflow from v17 into v18 by @KevinJump in https://github.com/KevinJump/uSync/pull/1160
+* fix: respect SignalR skip client negotiation setting by @timoschraa in https://github.com/KevinJump/uSync/pull/1169
+* Merge v17/main into v18/main (2026-10-29) by @KevinJump in https://github.com/KevinJump/uSync/pull/1171
+* Bump actions/checkout from 4 to 7 by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1167
+* Bump Microsoft.SourceLink.GitHub from 10.0.402 to 10.0.403 by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1147
+* Bump vite from 8.3.4 to 8.3.5 in /uSync.History/history-client in the npm-dependencies group across 1 directory by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1145
+* Bump vite from 8.3.4 to 8.3.5 in /uSync.Backoffice.Management.Client/usync-assets in the npm-dependencies group across 1 directory by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1144
+* Merge v17/main into v18/main (2026-10-30) by @KevinJump in https://github.com/KevinJump/uSync/pull/1173
+* Add regression tests for CreateOnly content in reports by @KevinJump in https://github.com/KevinJump/uSync/pull/1175
+* Skip content outside the Include paths on export all by @KevinJump in https://github.com/KevinJump/uSync/pull/1176
+* Merge v17/main into v18/main (2026-10-30) by @KevinJump in https://github.com/KevinJump/uSync/pull/1177
+* Add regression tests for tab alias clashes and line endings by @KevinJump in https://github.com/KevinJump/uSync/pull/1179
+* Keep items that have a clean marker in the import order by @KevinJump in https://github.com/KevinJump/uSync/pull/1182
+* Only stamp DefaultValues when shared values are written by @johnkhigginson in https://github.com/KevinJump/uSync/pull/1181
+* Stop partial exports losing or misplacing property values by @KevinJump in https://github.com/KevinJump/uSync/pull/1184
+* Merge v17/main into v18/main (2026-11-01) by @KevinJump in https://github.com/KevinJump/uSync/pull/1185
+
+## New Contributors
+* @timoschraa made their first contribution in https://github.com/KevinJump/uSync/pull/1169
+* @johnkhigginson made their first contribution in https://github.com/KevinJump/uSync/pull/1181
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.2.0...v18.2.1
+]]></description>
+    </item>
+    <item>
+      <title>uSync 17.5.2</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v17.5.2</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.5.2</guid>
+      <pubDate>Sun, 01 Nov 2026 21:41:37 GMT</pubDate>
+      <description><![CDATA[## Release notes
+
+Supports Umbraco 17.3 to 17.8.
+
+- **Culture and segment limited exports keep the right values.** Invariant items no longer lose their values, cleared culture values now sync, and values from other cultures or segments no longer leak in (#1183).
+- **Partial exports only claim shared values when they contain them.** `DefaultValues` is no longer stamped without the shared values (#1180).
+- **Items with a clean marker stay in the import order.** Deleting at the root could otherwise stop those items importing (#1182).
+- **Export all skips content outside the Include paths** (#1176).
+- **SignalR respects client negotiation settings** (#1169).
+- **Blueprint folder names can contain spaces** (#1153).
+
+## What's Changed
+* Keep the spaces in a blueprint folder name created on import by @KevinJump in https://github.com/KevinJump/uSync/pull/1153
+* Label PRs with their expected release (v17) by @KevinJump in https://github.com/KevinJump/uSync/pull/1159
+* fix: respect SignalR skip client negotiation setting by @timoschraa in https://github.com/KevinJump/uSync/pull/1169
+* Bump actions/checkout from 4 to 7 by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1167
+* Bump Microsoft.SourceLink.GitHub from 10.0.402 to 10.0.403 by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1147
+* Bump vite from 8.3.4 to 8.3.5 in /uSync.History/history-client in the npm-dependencies group across 1 directory by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1145
+* Bump vite from 8.3.4 to 8.3.5 in /uSync.Backoffice.Management.Client/usync-assets in the npm-dependencies group across 1 directory by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1144
+* Add regression tests for CreateOnly content in reports by @KevinJump in https://github.com/KevinJump/uSync/pull/1175
+* Skip content outside the Include paths on export all by @KevinJump in https://github.com/KevinJump/uSync/pull/1176
+* Add regression tests for tab alias clashes and line endings by @KevinJump in https://github.com/KevinJump/uSync/pull/1179
+* Keep items that have a clean marker in the import order by @KevinJump in https://github.com/KevinJump/uSync/pull/1182
+* Only stamp DefaultValues when shared values are written by @johnkhigginson in https://github.com/KevinJump/uSync/pull/1181
+* Stop partial exports losing or misplacing property values by @KevinJump in https://github.com/KevinJump/uSync/pull/1184
+
+## New Contributors
+* @timoschraa made their first contribution in https://github.com/KevinJump/uSync/pull/1169
+* @johnkhigginson made their first contribution in https://github.com/KevinJump/uSync/pull/1181
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.5.1...v17.5.2
+]]></description>
+    </item>
+    <item>
       <title>Jumoo.Processing 18.3.1</title>
       <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.1</guid>
@@ -1292,54 +1379,6 @@ Supports Umbraco 17.3 to 17.8.
       <description><![CDATA[### Fixed
 
 - `ConnectorSetup` now gates its registrations on the Umbraco backoffice being enabled,
-  matching the check Translation Manager core applies in its own composers, so the connector
-  no longer tries to register on a website-only boot.
-
-]]></description>
-    </item>
-    <item>
-      <title>CrowdIn Connector 18.1.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.0</guid>
-      <pubDate>Tue, 13 Oct 2026 10:30:14 GMT</pubDate>
-      <description><![CDATA[### Added
-
-- `IOptionsTranslationProvider.GetOptions(OptionsDetailLevel)` support — withholds the CrowdIn
-  access token when only a partial view of the connector's options is needed (e.g. during job
-  creation).
-- Repository standards: `LICENSE.txt`, `README.md`, `CHANGELOG.md`, `SECURITY.md`,
-  `CODE_OF_CONDUCT.md`, `.editorconfig`, `global.json`, `Directory.Build.props`,
-  `GitVersion.yml`, `nuget.config`, dependabot, and issue and PR templates.
-- `nuget.config` pins the restore sources and adds package source mapping, so only
-  `Jumoo.*` may come from the nightly feed and everything else comes from nuget.org.
-- CI workflows — PR build, package build, release, and CodeQL. The package build runs the
-  client build before packing, so the produced package actually contains the backoffice
-  assets.
-- Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated
-  behind the `nuget` GitHub environment and authenticated with trusted publishing (OIDC)
-  rather than a stored API key.
-
-### Fixed
-
-- `CrowdInComposer` now gates its registrations on the Umbraco backoffice being enabled,
-  matching the check Translation Manager core applies in its own composers, so the connector
-  no longer tries to register on a website-only boot.
-
-### Changed
-
-- Now requires Translation Manager 18.2.0 or later (`Jumoo.TranslationManager.Core` and
-  `.Serializers`, previously 18.0.0).
-
-]]></description>
-    </item>
-    <item>
-      <title>Microsoft Connector 18.2.1</title>
-      <link>https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.2.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Microsoft.Connector/releases/tag/release/v18.2.1</guid>
-      <pubDate>Tue, 13 Oct 2026 10:30:12 GMT</pubDate>
-      <description><![CDATA[### Fixed
-
-- `ConnectorComposer` now gates its registrations on the Umbraco backoffice being enabled,
   matching the check Translation Manager core applies in its own composers, so the connector
   no longer tries to register on a website-only boot.
 

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-01T12:17:27.471Z",
+  "generatedAt": "2026-11-02T00:36:22.736Z",
   "packages": [
     {
       "package": "uSync",
@@ -7,12 +7,12 @@
       "category": "",
       "repo": "KevinJump/uSync",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v19.0.0-beta01",
-      "lastReleaseDate": "2026-10-28T17:03:19Z",
-      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v19.0.0-beta01",
-      "releaseBranch": "v19/main",
-      "commitsSince": 44,
-      "lastCommitDate": "2026-10-30T11:59:40Z"
+      "lastReleaseTag": "v18.2.1",
+      "lastReleaseDate": "2026-11-01T21:48:00Z",
+      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.2.1",
+      "releaseBranch": "v18/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-11-01T21:48:00Z"
     },
     {
       "package": "uSync.Complete",
@@ -24,8 +24,8 @@
       "lastReleaseDate": "2026-10-26T17:28:53Z",
       "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.3.0",
       "releaseBranch": "v18/main",
-      "commitsSince": 9,
-      "lastCommitDate": "2026-10-31T19:02:32Z"
+      "commitsSince": 47,
+      "lastCommitDate": "2026-11-01T22:29:35Z"
     },
     {
       "package": "uSync.Forms",
