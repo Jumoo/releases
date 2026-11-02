@@ -5,6 +5,95 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Jumoo.Processing 17.5.2</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.2</guid>
+      <pubDate>Mon, 02 Nov 2026 12:19:30 GMT</pubDate>
+      <description><![CDATA[### Changed
+
+- The backoffice client authenticates through `configureClient()`, on `@hey-api/openapi-ts` 0.99.
+  This also binds Umbraco's default interceptors, so a 401 is retried and failed requests can show
+  error notifications where they didn't before.
+- The generated client's `PipelineRunRejectedReason` includes `NotWaiting`.
+
+### Fixed
+
+- A failed queue request shows an error notification and no longer leaves the queue list loading.
+  A failed refresh keeps the last list.
+
+]]></description>
+    </item>
+    <item>
+      <title>PowerToys 17.3.1</title>
+      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.3.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.3.1</guid>
+      <pubDate>Mon, 02 Nov 2026 11:51:42 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add screenshots to the Icon Colors docs page by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/74
+* Update the dashboard screenshot on the docs homepage by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/75
+* Bump vite from 8.3.4 to 8.3.5 in /src/PowerToys/Client in the minor-and-patch group by @dependabot[bot] in https://github.com/Jumoo/umbraco.community.powertoys/pull/72
+* Bump hey-api to 0.99 to clear the handlebars alerts by @henryjump in https://github.com/Jumoo/umbraco.community.powertoys/pull/76
+* Authenticate the client with configureClient only by @henryjump in https://github.com/Jumoo/umbraco.community.powertoys/pull/77
+
+## New Contributors
+* @henryjump made their first contribution in https://github.com/Jumoo/umbraco.community.powertoys/pull/76
+
+**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.3.0...v17.3.1]]></description>
+    </item>
+    <item>
+      <title>Maintenance Mode 17.3.0</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.3.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.3.0</guid>
+      <pubDate>Mon, 02 Nov 2026 11:51:40 GMT</pubDate>
+      <description><![CDATA[**Umbraco 16 is no longer supported.** This release targets Umbraco 10-13 and Umbraco 17.3.0 or later. Umbraco 16 sites should stay on 17.2.1.
+
+## What's Changed
+* Authenticate the client with configureClient, drop Umbraco 16 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/125
+* Release 17.3.0 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/127
+
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v17.2.1...v17.3.0
+]]></description>
+    </item>
+    <item>
+      <title>Linked Pages 17.1.0</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v17.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v17.1.0</guid>
+      <pubDate>Mon, 02 Nov 2026 11:51:39 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Bump vite from 8.3.4 to 8.3.5 in /src/Umbraco.Community.LinkedPages/Client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/52
+* Bump hey-api to 0.99 and override js-yaml to clear security alerts by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/53
+* Authenticate the client with configureClient (v17) by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/55
+
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/v17.0.1...v17.1.0]]></description>
+    </item>
+    <item>
+      <title>GlobalLink Connector 18.0.2</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v18.0.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v18.0.2</guid>
+      <pubDate>Mon, 02 Nov 2026 11:47:24 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/28
+* Merge v17/main into v18/main (2026-10-31) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/29
+* Merge v17/main into v18/main (2026-11-02) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/31
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/compare/v18.0.1...v18.0.2]]></description>
+    </item>
+    <item>
+      <title>GlobalLink Connector 17.1.3</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.3</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.3</guid>
+      <pubDate>Mon, 02 Nov 2026 11:47:22 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/28
+* Replace the hand-written client with a generated one (v17) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/pull/30
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/compare/v17.1.2...v17.1.3]]></description>
+    </item>
+    <item>
       <title>uSync 18.2.1</title>
       <link>https://github.com/KevinJump/uSync/releases/tag/v18.2.1</link>
       <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.2.1</guid>
@@ -1249,140 +1338,6 @@ Supports Umbraco 17.3 to 17.8.
 
 
 **Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.1.0...v17.2.0]]></description>
-    </item>
-    <item>
-      <title>PowerToys 17.1.0</title>
-      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.1.0</guid>
-      <pubDate>Thu, 15 Oct 2026 07:18:50 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Ignore TypeScript >=6 and @hey-api/* in dependabot by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/55
-* Bump actions/setup-dotnet from 4 to 6 by @dependabot[bot] in https://github.com/Jumoo/umbraco.community.powertoys/pull/53
-* Bump the minor-and-patch group in /src/PowerToys/Client with 2 updates by @dependabot[bot] in https://github.com/Jumoo/umbraco.community.powertoys/pull/56
-* Clear js-yaml and @tiptap/core security alerts by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/57
-* Remove the browser testing rule now held in jumoo-context by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/59
-* Add the Chat power toy (from BackChat) by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/63
-* Add the Tasks power toy (from BackChat) by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/64
-* Dock the BackChat and Tasks panels beside the page by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/65
-* Add content reviews to the Tasks power toy (from BackChat) by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/66
-
-
-**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.0.0...v17.1.0]]></description>
-    </item>
-    <item>
-      <title>uSync Commerce 18.0.1</title>
-      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.1</guid>
-      <pubDate>Wed, 14 Oct 2026 10:32:29 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Fix localization path casing in umbraco-package.json by @KevinJump in https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/17
-* Fix store permissions not exported or imported by @KevinJump in https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/18
-* Fix location names containing '/' creating extra folders by @KevinJump in https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/19
-
-
-**Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/compare/v18.0.0...v18.0.1
-]]></description>
-    </item>
-    <item>
-      <title>uSync Commerce 17.1.1</title>
-      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v17.1.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v17.1.1</guid>
-      <pubDate>Wed, 14 Oct 2026 10:31:59 GMT</pubDate>
-      <description><![CDATA[### Added
-
-- `umbraco-marketplace.json`, so the package has a listing on the Umbraco Marketplace.
-
-### Fixed
-
-- The backoffice localization file 404'd on case-sensitive filesystems (Linux/macOS), so the
-  Settings tree showed raw keys like `#uSync_section`: `umbraco-package.json` referenced
-  `Localization/en.js` but the file ships as `localization/en.js` ([#15](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/15)).
-- Store permissions (allowed users and user roles) were never exported, and an import then cleared
-  them on the target. Umbraco Commerce stores these by user / user group key, but the serializer
-  looked them up by int id and alias. Export now resolves the keys to usernames and group aliases,
-  and import maps them back to keys ([#14](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/14)).
-- A location whose name contained `/` (or another character not allowed in file names) was
-  exported into an extra sub-folder rather than as a single file. Those characters are now replaced
-  with `-` in the file name ([#9](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/9)).
-
-
-**Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/blob/v17/main/CHANGELOG.md
-]]></description>
-    </item>
-    <item>
-      <title>Maintenance Mode 18.1.1</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.1.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.1.1</guid>
-      <pubDate>Tue, 13 Oct 2026 13:50:48 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Add standard repository documents and CI/CD workflows by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/81
-* Port CI/CD, repo standards, and site-lock features from v18/main by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/82
-* Build Core and Client projects explicitly in CI workflows by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/89
-* Pack and push Core/Client/Assets as their own NuGet packages by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/92
-* Updating dashboard label to be consistent with other dashboard labels by @SamuelJForrest in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/79
-* Merge v17/main into v18/main (2026-10-13) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/103
-* Triage dependabot updates (#101) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/104
-* Bump the npm-dependencies group in /Our.Umbraco.MaintenanceMode.Client/maintenance-client with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/105
-* Bump prosemirror-view from 1.41.3 to 1.42.6 in /Our.Umbraco.MaintenanceMode.Client/maintenance-client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/106
-* Bump markdown-it from 14.1.0 to 14.3.2 in /Our.Umbraco.MaintenanceMode.Client/maintenance-client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/108
-* Merge v17/main into v18/main (2026-10-13) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/110
-* Changelog and version for 18.1.1 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/111
-
-## New Contributors
-* @SamuelJForrest made their first contribution in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/79
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v18.1.0...v18.1.1]]></description>
-    </item>
-    <item>
-      <title>uSync Commerce 18.0.0</title>
-      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.0</guid>
-      <pubDate>Tue, 13 Oct 2026 11:38:41 GMT</pubDate>
-      <description><![CDATA[First release of the 18.x line (Umbraco 18 / Umbraco Commerce 18 / net10.0).
-
-### Added
-
-- Umbraco / Umbraco Commerce 18 support — `Umbraco.Commerce`, `uSync.Core` and `uSync.BackOffice`
-  bumped to 18.1.0. No code changes were needed; the APIs this package uses were unchanged
-  between the 17.x and 18.x lines.
-- Repository standards: `LICENSE.md`, `README.md`, `CHANGELOG.md`, `SECURITY.md`,
-  `CODE_OF_CONDUCT.md`, `.editorconfig`, `.gitattributes`, `global.json`, `Directory.Build.props`,
-  `GitVersion.yml`, dependabot, and issue and PR templates.
-- CI workflows — PR build, package build, and release. CodeQL is present but disabled by default
-  (see the workflow for why).
-- Releases publish to NuGet from a `v{version}` tag pushed on a release branch, gated behind the
-  `nuget` GitHub environment and authenticated with trusted publishing (OIDC) rather than a
-  stored API key.
-- `packages.lock.json`, so a transitive dependency update can't change what a build restores
-  without a commit.
-
-### Fixed
-
-- Tax class country/region tax rates were never restored on import: the serializer wrote them
-  under a `<TaxClasses>` element but read them back looking for `<TaxRates>`, so import always saw
-  an empty list and cleared every existing override instead of restoring it (#10).
-- The exported country/region tax rate value itself round-tripped as `0`, because it was serialized
-  via `TaxRate.ToString()` (`"20.00%"`) instead of the underlying decimal value, which then failed
-  to parse back on import. Tax codes are now round-tripped too.
-- `ShippingMethodSerializer` never removed a country/region shipping allowance that had been
-  removed from the XML, due to a collection-diff comparing the live list against itself instead of
-  against the incoming XML values.
-
-**Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/blob/v18/main/CHANGELOG.md
-]]></description>
-    </item>
-    <item>
-      <title>Xliff Connector 18.0.2</title>
-      <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.2</guid>
-      <pubDate>Tue, 13 Oct 2026 10:53:55 GMT</pubDate>
-      <description><![CDATA[### Fixed
-
-- `ConnectorSetup` now gates its registrations on the Umbraco backoffice being enabled,
-  matching the check Translation Manager core applies in its own composers, so the connector
-  no longer tries to register on a website-only boot.
-
-]]></description>
     </item>
   </channel>
 </rss>
