@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-02T12:20:24.726Z",
+  "generatedAt": "2026-11-03T00:33:21.378Z",
   "packages": [
     {
       "package": "uSync",
@@ -11,8 +11,8 @@
       "lastReleaseDate": "2026-11-01T21:48:00Z",
       "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.2.1",
       "releaseBranch": "v18/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-11-01T21:48:00Z"
+      "commitsSince": 5,
+      "lastCommitDate": "2026-11-02T16:24:43Z"
     },
     {
       "package": "uSync.Complete",
@@ -24,8 +24,8 @@
       "lastReleaseDate": "2026-10-26T17:28:53Z",
       "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.3.0",
       "releaseBranch": "v18/main",
-      "commitsSince": 47,
-      "lastCommitDate": "2026-11-01T22:29:35Z"
+      "commitsSince": 71,
+      "lastCommitDate": "2026-11-02T19:45:10Z"
     },
     {
       "package": "uSync.Forms",
@@ -128,8 +128,8 @@
       "lastReleaseDate": "2026-10-29T18:58:30Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v19.0.0-beta01",
       "releaseBranch": "v19/main",
-      "commitsSince": 8,
-      "lastCommitDate": "2026-10-31T19:28:55Z"
+      "commitsSince": 16,
+      "lastCommitDate": "2026-11-02T22:14:32Z"
     },
     {
       "package": "Jumoo.TranslationManager.AI",
@@ -371,12 +371,12 @@
       "category": "Other",
       "repo": "Jumoo/Jumoo.Processing",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "release/v17.5.2",
-      "lastReleaseDate": "2026-11-02T12:19:30Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.2",
-      "releaseBranch": "v17/main",
+      "lastReleaseTag": "release/v18.3.2",
+      "lastReleaseDate": "2026-11-02T12:20:53Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.2",
+      "releaseBranch": "v18/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-11-02T12:19:30Z"
+      "lastCommitDate": "2026-11-02T12:20:53Z"
     },
     {
       "package": "Jumoo.Json",
@@ -384,12 +384,12 @@
       "category": "Other",
       "repo": "Jumoo/Jumoo.Json",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": null,
-      "lastReleaseDate": null,
-      "lastReleaseUrl": null,
-      "releaseBranch": null,
-      "commitsSince": null,
-      "lastCommitDate": "2026-10-31T20:25:45Z"
+      "lastReleaseTag": "v19.0.0-beta1",
+      "lastReleaseDate": "2026-11-02T20:26:11Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Json/releases/tag/v19.0.0-beta1",
+      "releaseBranch": "v19/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-11-02T20:26:11Z"
     }
   ]
 }

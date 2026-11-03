@@ -5,6 +5,60 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Jumoo.Json 19.0.0-beta1</title>
+      <link>https://github.com/Jumoo/Jumoo.Json/releases/tag/v19.0.0-beta1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Json/releases/tag/v19.0.0-beta1</guid>
+      <pubDate>Mon, 02 Nov 2026 20:26:11 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Mark the unreleased changes as 18.0.3 by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/10
+* Add CodeQL code scanning by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/11
+* Bump github/codeql-action from 4 to 4.37.4 in the github-actions group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/12
+* Bump github/codeql-action from 4.37.4 to 4.37.6 in the github-actions group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/13
+* Bump the nuget-dependencies group with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/14
+* Bump github/codeql-action from 4.37.6 to 4.37.8 in the github-actions group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/15
+* Port v18 CI/CD pipeline to v17 by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/16
+* Add remaining CI/CD files (release, dependabot, templates) by @henryjump in https://github.com/Jumoo/Jumoo.Json/pull/17
+* Add NuGet release workflow, align CI/CD files with v17/main by @henryjump in https://github.com/Jumoo/Jumoo.Json/pull/22
+* Bump github/codeql-action from 4.37.8 to 4.37.9 in the github-actions group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/18
+* Bump the nuget-dependencies group with 1 update by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/24
+* Bump coverlet.collector to 10.1.0 and xunit.runner.visualstudio to 4.0.0 by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/26
+* Merge v17/main into v18/main (2026-09-29) by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/27
+* Bump github/codeql-action from 4.37.9 to 4.38.2 in the github-actions group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/28
+* Merge v17/main into v18/main (2026-10-13) by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/29
+* Bump github/codeql-action from 4.38.2 to 4.38.3 in the github-actions group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/31
+* Bump the nuget-dependencies group with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/30
+* Merge v17/main into v18/main (2026-10-31) by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/32
+* Target net11.0 and Umbraco 19.0.0-beta1 by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/33
+* Install the SDK before GitVersion in the package build by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/34
+
+## New Contributors
+* @henryjump made their first contribution in https://github.com/Jumoo/Jumoo.Json/pull/17
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.Json/compare/release/18.0.3...v19.0.0-beta1]]></description>
+    </item>
+    <item>
+      <title>Jumoo.Processing 18.3.2</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.2</guid>
+      <pubDate>Mon, 02 Nov 2026 12:20:53 GMT</pubDate>
+      <description><![CDATA[Includes the fixes in 17.5.2, merged forward from `v17/main`. v18 already authenticated through
+`configureClient()`.
+
+### Fixed
+
+- The generated client throws on a failed response, as it does on v17. Failed requests show an error
+  notification, and a `409` for a held concurrency key reaches the inline conflict message.
+- A failed queue request shows an error notification and no longer leaves the queue list loading.
+  A failed refresh keeps the last list.
+
+### Removed
+
+- The `SamplePipeline` types are gone from the generated client. They came from generating against
+  a Debug site, which includes the sample projects.
+
+]]></description>
+    </item>
+    <item>
       <title>Jumoo.Processing 17.5.2</title>
       <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.2</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.2</guid>
@@ -1313,31 +1367,6 @@ Supports Umbraco 17.3 to 17.8.
 
 **Full Changelog**: https://github.com/Jumoo/TranslatePlus-Connector/compare/v17.0.0...v17.0.1
 ]]></description>
-    </item>
-    <item>
-      <title>LanguageWire Connector 17.1.2</title>
-      <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.2</guid>
-      <pubDate>Thu, 15 Oct 2026 13:38:39 GMT</pubDate>
-      <description><![CDATA[### Fixed
-
-- When the connector's template isn't locked, the pending job view now applies the configured default service as soon as it loads, instead of only when the template or service picker is changed. The view also no longer writes the job options to the browser console.
-
-**Full Changelog**: https://github.com/Jumoo/LanguageWire.Connector/compare/v17.1.1...v17.1.2
-]]></description>
-    </item>
-    <item>
-      <title>PowerToys 17.2.0</title>
-      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.2.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.2.0</guid>
-      <pubDate>Thu, 15 Oct 2026 09:19:39 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Add screenshots to the BackChat and Tasks docs by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/67
-* Add the Keyboard Shortcuts power toy by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/69
-* Add custom keyboard shortcuts by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/71
-
-
-**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.1.0...v17.2.0]]></description>
     </item>
   </channel>
 </rss>
