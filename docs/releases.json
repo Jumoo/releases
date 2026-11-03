@@ -1,5 +1,57 @@
 [
   {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "version": "18.3.0",
+    "publishedAt": "2026-11-03T12:08:26Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/18.3.0",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.3.0",
+    "notes": "## What's Changed\n* Preview content and media imports with the real property editors by @KevinJump in https://github.com/KevinJump/uSync/pull/1168\n* Move the backoffice clients to configureClient by @KevinJump in https://github.com/KevinJump/uSync/pull/1186\n* Merge v17/main into v18/main (2026-11-02) by @KevinJump in https://github.com/KevinJump/uSync/pull/1187\n* Preview data type and content type imports with the real property editors by @KevinJump in https://github.com/KevinJump/uSync/pull/1166\n* Return a failed preview instead of a 500 when the dry run throws by @KevinJump in https://github.com/KevinJump/uSync/pull/1189\n* Merge v17/main into v18/main (2026-11-03) by @KevinJump in https://github.com/KevinJump/uSync/pull/1190\n* Update changelog for v18.3.0 release by @KevinJump in https://github.com/KevinJump/uSync/pull/1191\n\n\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.2.1...v18.3.0",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "version": "17.6.0",
+    "publishedAt": "2026-11-03T11:29:37Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/17.6.0",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.6.0",
+    "notes": "## What's Changed\n* Preview content and media imports with the real property editors by @KevinJump in https://github.com/KevinJump/uSync/pull/1168\n* Move the backoffice clients to configureClient by @KevinJump in https://github.com/KevinJump/uSync/pull/1186\n* Preview data type and content type imports with the real property editors by @KevinJump in https://github.com/KevinJump/uSync/pull/1166\n* Return a failed preview instead of a 500 when the dry run throws by @KevinJump in https://github.com/KevinJump/uSync/pull/1189\n\n\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.5.2...v17.6.0",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "17.3.1",
+    "publishedAt": "2026-11-03T11:14:31Z",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/17.3.1",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.3.1",
+    "notes": "## What's Changed\n* Fix unfrozen users being blocked by the freeze and lock by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/129\n* Release 17.3.1 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/131\n\n\n**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v17.3.0...v17.3.1",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "19.0.0-beta02",
+    "publishedAt": "2026-11-03T10:10:31Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/19.0.0-beta02",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-beta02",
+    "notes": "Second beta for Umbraco 19 (`19.0.0-beta1`).\r\n\r\n### Changed\r\n\r\n- **Depends on `Jumoo.Json` `19.0.0-beta1`.** `19.0.0-beta01` still depended on the v18 `Jumoo.Json` (`18.0.3`).\r\n",
+    "prerelease": true,
+    "umbracoMajor": 19
+  },
+  {
     "package": "Jumoo.Json",
     "title": "Jumoo.Json",
     "category": "Other",
@@ -14157,19 +14209,6 @@
     "umbracoMajor": 10
   },
   {
-    "package": "uSync",
-    "title": "uSync",
-    "category": "",
-    "repo": "KevinJump/uSync",
-    "version": "11.0.2",
-    "publishedAt": "2023-03-03T15:05:31Z",
-    "nugetUrl": "https://www.nuget.org/packages/uSync/11.0.2",
-    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v11.0.2",
-    "notes": "This is a minor patch release for uSync - for Umbraco 11 - it contains minor fixes. \r\n\r\nThis release contains only minor fixes or UI tweaks. \r\n\r\n## What's Changed\r\n* Fix for Reference conttrain error when updating dictionay items #463\r\n* make key comparison for dictionary items case insensivte #466\r\n* add a log search query for uSync log entries. by @KevinJump in https://github.com/KevinJump/uSync/pull/469\r\n* Fixed - blueprints not updating properties #468 (#470) by @KevinJump in https://github.com/KevinJump/uSync/pull/471\r\n* Adds KeepTemplates option #422 by @KevinJump in https://github.com/KevinJump/uSync/pull/472\r\n\r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v11.0.1...v11.0.2",
-    "prerelease": false,
-    "umbracoMajor": 11
-  },
-  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "",
@@ -14178,6 +14217,19 @@
     "publishedAt": "2023-03-03T14:58:44.813+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/11.0.2",
     "githubUrl": "https://github.com/Jumoo/uSync.Complete/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 11
+  },
+  {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "version": "11.0.2",
+    "publishedAt": "2023-03-03T14:18:35.777+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/11.0.2",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases",
     "notes": null,
     "prerelease": false,
     "umbracoMajor": 11
@@ -14617,10 +14669,10 @@
     "category": "",
     "repo": "KevinJump/uSync",
     "version": "11.0.1",
-    "publishedAt": "2023-01-12T10:32:32Z",
+    "publishedAt": "2023-01-12T10:32:03.827+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync/11.0.1",
-    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v11.0.1",
-    "notes": "This is a minor patch version of uSync for Umbraco 11 - it contains a few minor fixes and updates,\r\n\r\n# Fixes\r\n- #452 Fix null reference in DocTypeGridEditor when MultiUrlPickers are also null\r\n- #453 Fix Unable to deserialize a multiUrl picker inside a nested content item inside a DocTypeGridEditor\r\n- #458 Set media picker 3 start node \r\n- #461 Ensure tabs are imported in the correct order\r\n\r\n# Updates \r\n_(missed from original notes)_\r\n- #443 Action button allows you to import a single item during import \r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v11.0.0...v11.0.1",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases",
+    "notes": null,
     "prerelease": false,
     "umbracoMajor": 11
   },
