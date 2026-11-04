@@ -5,6 +5,67 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync 17.6.1</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v17.6.1</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.6.1</guid>
+      <pubDate>Tue, 03 Nov 2026 16:41:14 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Let callers choose where item previews come from by @KevinJump in https://github.com/KevinJump/uSync/pull/1192
+* Preview with the handler set the import uses by @KevinJump in https://github.com/KevinJump/uSync/pull/1193
+* Let callers set the preview's side headlines by @KevinJump in https://github.com/KevinJump/uSync/pull/1194
+* Source on the left and side colours in the item previews by @KevinJump in https://github.com/KevinJump/uSync/pull/1195
+
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.6.0...v17.6.1]]></description>
+    </item>
+    <item>
+      <title>AI Connector 17.7.3</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.3</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.3</guid>
+      <pubDate>Tue, 03 Nov 2026 14:47:33 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* build(deps-dev): Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.AI/ai-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/66
+* Update Translation Manager core packages to 17.10.0 by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/64
+* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/68
+* Secure the API and authenticate the client with configureClient by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/70
+* docs(release): Add 17.7.3 changelog entry by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/72
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.7.2...v17.7.3]]></description>
+    </item>
+    <item>
+      <title>Xliff Connector 17.0.3</title>
+      <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.3</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.3</guid>
+      <pubDate>Tue, 03 Nov 2026 14:47:29 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* docs: note ignored format setting in 17.0.1 changelog by @KevinJump in https://github.com/Jumoo/Xliff.Connector/pull/28
+* chore: roll up dependabot bumps, ignore typescript 6+ and hey-api by @KevinJump in https://github.com/Jumoo/Xliff.Connector/pull/29
+* Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.Xliff/xliff-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Xliff.Connector/pull/31
+* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Xliff.Connector/pull/33
+* Secure the API and authenticate the client with configureClient by @henryjump in https://github.com/Jumoo/Xliff.Connector/pull/35
+* docs(release): Add 17.0.3 changelog entry by @henryjump in https://github.com/Jumoo/Xliff.Connector/pull/37
+
+
+**Full Changelog**: https://github.com/Jumoo/Xliff.Connector/compare/v17.0.2...v17.0.3]]></description>
+    </item>
+    <item>
+      <title>DeepL Connector 17.4.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.1</guid>
+      <pubDate>Tue, 03 Nov 2026 14:47:26 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Bump the npm-dependencies group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/25
+* Bump vite from 8.3.2 to 8.3.4 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/27
+* Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/29
+* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/31
+* Authenticate the API client with configureClient by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/33
+* docs(release): Add 17.4.1 changelog entry by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/35
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.4.0...v17.4.1]]></description>
+    </item>
+    <item>
       <title>uSync 18.3.0</title>
       <link>https://github.com/KevinJump/uSync/releases/tag/v18.3.0</link>
       <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.3.0</guid>
@@ -20,20 +81,6 @@
 
 
 **Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.2.1...v18.3.0]]></description>
-    </item>
-    <item>
-      <title>uSync 17.6.0</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v17.6.0</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.6.0</guid>
-      <pubDate>Tue, 03 Nov 2026 11:29:37 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Preview content and media imports with the real property editors by @KevinJump in https://github.com/KevinJump/uSync/pull/1168
-* Move the backoffice clients to configureClient by @KevinJump in https://github.com/KevinJump/uSync/pull/1186
-* Preview data type and content type imports with the real property editors by @KevinJump in https://github.com/KevinJump/uSync/pull/1166
-* Return a failed preview instead of a 500 when the dry run throws by @KevinJump in https://github.com/KevinJump/uSync/pull/1189
-
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.5.2...v17.6.0]]></description>
     </item>
     <item>
       <title>Maintenance Mode 17.3.1</title>
@@ -1202,83 +1249,6 @@ is enabled.
 - CI/CD workflows brought over from the v18 line, and backoffice client dependency updates (vite 8, chalk 6).
 
 17.0.0 was published to NuGet from an untagged build; this is the first tagged v17 release.
-]]></description>
-    </item>
-    <item>
-      <title>Linked Pages 18.0.5</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.5</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.5</guid>
-      <pubDate>Mon, 26 Oct 2026 11:37:18 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* chore: roll up dependabot npm bumps, pin Umbraco to v17 by @KevinJump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/45
-* Bump chalk from 5.6.2 to 6.0.1 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/47
-* Bump vite from 7.3.7 to 8.3.4 in /src/Umbraco.Community.LinkedPages/Client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/46
-* Merge v17/main into v18/main (2026-10-14) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/49
-* Pin Umbraco references to [18.0.0, 19.0.0) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/50
-
-## New Contributors
-* @KevinJump made their first contribution in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/45
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/v18.0.4...v18.0.5]]></description>
-    </item>
-    <item>
-      <title>uSync AI 17.0.1</title>
-      <link>https://github.com/Jumoo/uSync.AI/releases/tag/v17.0.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.AI/releases/tag/v17.0.1</guid>
-      <pubDate>Mon, 26 Oct 2026 11:35:53 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Show readable AI handler names on the uSync dashboard by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/24
-* Use icon-wall-plug for AI connections by @KevinJump in https://github.com/Jumoo/uSync.AI/pull/25
-* Bump the npm-dependencies group across 2 directories with 1 update by @dependabot[bot] in https://github.com/Jumoo/uSync.AI/pull/26
-* Bump the nuget-dependencies group with 2 updates by @dependabot[bot] in https://github.com/Jumoo/uSync.AI/pull/27
-
-
-**Full Changelog**: https://github.com/Jumoo/uSync.AI/compare/v17.0.0...v17.0.1]]></description>
-    </item>
-    <item>
-      <title>uSync 17.5.0</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v17.5.0</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.5.0</guid>
-      <pubDate>Mon, 26 Oct 2026 11:30:52 GMT</pubDate>
-      <description><![CDATA[## Release notes
-
-Supports Umbraco 17.3 to 17.8.
-
-- **Umbraco 17.8: startup import on load-balanced sites.** From Umbraco 17.8 the server role is elected before uSync's startup import. On a load-balanced site using Umbraco's default election, `ImportAtStartup` now runs only on the elected SchedulingPublisher (or a Single server), not on every server. Sites that pin every server to SchedulingPublisher with a custom `IServerRoleAccessor` are unaffected. uSync now logs the server role on startup.
-- **Rich text dependencies** now include links written as `%7BlocalLink:…%7D` (URL-encoded braces).
-- **Live progress reconnects** after a server restart or network drop.
-- **Key changes** now also remove the old key's URL alias rows.
-
-## What's Changed
-* Build once, on Linux, in the prerelease, release and PR workflows by @KevinJump in https://github.com/KevinJump/uSync/pull/1105
-* Stamp the nightly version as the informational version in prerelease builds by @KevinJump in https://github.com/KevinJump/uSync/pull/1107
-* Add Playwright end-to-end tests for the uSync dashboard by @KevinJump in https://github.com/KevinJump/uSync/pull/1111
-* Correct the nightly feed checkout comment by @KevinJump in https://github.com/KevinJump/uSync/pull/1114
-* Clean up the uSync swagger doc: ImportSingle response and setting defaults by @KevinJump in https://github.com/KevinJump/uSync/pull/1116
-* Use Clear(key) for exact-key cache removal by @KevinJump in https://github.com/KevinJump/uSync/pull/1117
-* Fix import ordering overflow past 1000 siblings by @KevinJump in https://github.com/KevinJump/uSync/pull/1119
-* Bump source-map-js from 1.2.1 to 1.2.2 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1112
-* Bump prosemirror-view from 1.41.9 to 1.42.6 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1113
-* Bump dompurify and monaco-editor in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1109
-* Bump source-map-js from 1.2.1 to 1.2.2 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1121
-* Match URL-encoded localLink tags in RTE dependencies by @KevinJump in https://github.com/KevinJump/uSync/pull/1133
-* Log the server role at startup and document 17.8 election by @KevinJump in https://github.com/KevinJump/uSync/pull/1134
-* Reconnect the uSync SignalR hub automatically by @KevinJump in https://github.com/KevinJump/uSync/pull/1135
-* Clean URL alias rows for the old key on a content key change by @KevinJump in https://github.com/KevinJump/uSync/pull/1136
-* Bump actions/checkout from 4 to 7 by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1123
-* Bump the nuget-dependencies group with 4 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1131
-* Bump the npm-dependencies group in /uSync.Backoffice.Management.Client/usync-assets with 5 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1124
-* Bump the npm-dependencies group in /uSync.History/history-client with 4 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1125
-* Bump @rollup/plugin-node-resolve from 15.3.1 to 16.0.3 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1128
-* Bump vite-plugin-dts from 4.5.4 to 5.1.2 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1126
-* Bump chalk from 5.6.2 to 6.0.1 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1127
-* Bump eslint from 10.12.0 to 10.13.0 in /uSync.Backoffice.Management.Client/usync-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1138
-* Merge v17/main into v17/17.5.0 by @KevinJump in https://github.com/KevinJump/uSync/pull/1139
-* uSync 17.5.0: Umbraco 17.8 readiness by @KevinJump in https://github.com/KevinJump/uSync/pull/1137
-* Bump dompurify from 3.4.15 to 3.4.17 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1140
-* Bump dompurify from 3.4.16 to 3.4.17 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1141
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.4.3...v17.5.0
 ]]></description>
     </item>
   </channel>

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-03T12:19:25.899Z",
+  "generatedAt": "2026-11-04T00:33:01.607Z",
   "packages": [
     {
       "package": "uSync",
@@ -137,12 +137,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.AI",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.4.1",
-      "lastReleaseDate": "2026-10-27T08:22:40Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.1",
-      "releaseBranch": "v18/main",
-      "commitsSince": 15,
-      "lastCommitDate": "2026-11-02T12:09:47Z"
+      "lastReleaseTag": "v17.7.3",
+      "lastReleaseDate": "2026-11-03T14:47:33Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.3",
+      "releaseBranch": "v17/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-11-03T14:47:33Z"
     },
     {
       "package": "Jumoo.TranslationManager.CSV",
@@ -202,12 +202,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.2.0",
-      "lastReleaseDate": "2026-10-02T09:41:21Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.0",
-      "releaseBranch": "v18/main",
-      "commitsSince": 18,
-      "lastCommitDate": "2026-11-02T12:09:34Z"
+      "lastReleaseTag": "v17.4.1",
+      "lastReleaseDate": "2026-11-03T14:47:26Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.1",
+      "releaseBranch": "v17/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-11-03T14:47:26Z"
     },
     {
       "package": "Jumoo.TranslationManager.Google",
@@ -228,12 +228,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Xliff.Connector",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.0.2",
-      "lastReleaseDate": "2026-10-13T10:53:55Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.2",
-      "releaseBranch": "v18/main",
-      "commitsSince": 17,
-      "lastCommitDate": "2026-11-02T12:09:53Z"
+      "lastReleaseTag": "v17.0.3",
+      "lastReleaseDate": "2026-11-03T14:47:29Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.3",
+      "releaseBranch": "v17/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-11-03T14:47:29Z"
     },
     {
       "package": "Jumoo.TranslationManager.Microsoft",

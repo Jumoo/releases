@@ -4,6 +4,58 @@
     "title": "uSync",
     "category": "",
     "repo": "KevinJump/uSync",
+    "version": "17.6.1",
+    "publishedAt": "2026-11-03T16:41:14Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/17.6.1",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.6.1",
+    "notes": "## What's Changed\n* Let callers choose where item previews come from by @KevinJump in https://github.com/KevinJump/uSync/pull/1192\n* Preview with the handler set the import uses by @KevinJump in https://github.com/KevinJump/uSync/pull/1193\n* Let callers set the preview's side headlines by @KevinJump in https://github.com/KevinJump/uSync/pull/1194\n* Source on the left and side colours in the item previews by @KevinJump in https://github.com/KevinJump/uSync/pull/1195\n\n\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.6.0...v17.6.1",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.7.3",
+    "publishedAt": "2026-11-03T14:47:33Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.7.3",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.3",
+    "notes": "## What's Changed\n* build(deps-dev): Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.AI/ai-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/66\n* Update Translation Manager core packages to 17.10.0 by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/64\n* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/68\n* Secure the API and authenticate the client with configureClient by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/70\n* docs(release): Add 17.7.3 changelog entry by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/72\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.7.2...v17.7.3",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager.Xliff",
+    "title": "Xliff Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Xliff.Connector",
+    "version": "17.0.3",
+    "publishedAt": "2026-11-03T14:47:29Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Xliff/17.0.3",
+    "githubUrl": "https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.3",
+    "notes": "## What's Changed\n* docs: note ignored format setting in 17.0.1 changelog by @KevinJump in https://github.com/Jumoo/Xliff.Connector/pull/28\n* chore: roll up dependabot bumps, ignore typescript 6+ and hey-api by @KevinJump in https://github.com/Jumoo/Xliff.Connector/pull/29\n* Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.Xliff/xliff-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Xliff.Connector/pull/31\n* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Xliff.Connector/pull/33\n* Secure the API and authenticate the client with configureClient by @henryjump in https://github.com/Jumoo/Xliff.Connector/pull/35\n* docs(release): Add 17.0.3 changelog entry by @henryjump in https://github.com/Jumoo/Xliff.Connector/pull/37\n\n\n**Full Changelog**: https://github.com/Jumoo/Xliff.Connector/compare/v17.0.2...v17.0.3",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager.DeepL",
+    "title": "DeepL Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL",
+    "version": "17.4.1",
+    "publishedAt": "2026-11-03T14:47:26Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.DeepL/17.4.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.1",
+    "notes": "## What's Changed\n* Bump the npm-dependencies group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/25\n* Bump vite from 8.3.2 to 8.3.4 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/27\n* Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/29\n* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/31\n* Authenticate the API client with configureClient by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/33\n* docs(release): Add 17.4.1 changelog entry by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/35\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.4.0...v17.4.1",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
     "version": "18.3.0",
     "publishedAt": "2026-11-03T12:08:26Z",
     "nugetUrl": "https://www.nuget.org/packages/uSync/18.3.0",
@@ -11,19 +63,6 @@
     "notes": "## What's Changed\n* Preview content and media imports with the real property editors by @KevinJump in https://github.com/KevinJump/uSync/pull/1168\n* Move the backoffice clients to configureClient by @KevinJump in https://github.com/KevinJump/uSync/pull/1186\n* Merge v17/main into v18/main (2026-11-02) by @KevinJump in https://github.com/KevinJump/uSync/pull/1187\n* Preview data type and content type imports with the real property editors by @KevinJump in https://github.com/KevinJump/uSync/pull/1166\n* Return a failed preview instead of a 500 when the dry run throws by @KevinJump in https://github.com/KevinJump/uSync/pull/1189\n* Merge v17/main into v18/main (2026-11-03) by @KevinJump in https://github.com/KevinJump/uSync/pull/1190\n* Update changelog for v18.3.0 release by @KevinJump in https://github.com/KevinJump/uSync/pull/1191\n\n\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.2.1...v18.3.0",
     "prerelease": false,
     "umbracoMajor": 18
-  },
-  {
-    "package": "uSync",
-    "title": "uSync",
-    "category": "",
-    "repo": "KevinJump/uSync",
-    "version": "17.6.0",
-    "publishedAt": "2026-11-03T11:29:37Z",
-    "nugetUrl": "https://www.nuget.org/packages/uSync/17.6.0",
-    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v17.6.0",
-    "notes": "## What's Changed\n* Preview content and media imports with the real property editors by @KevinJump in https://github.com/KevinJump/uSync/pull/1168\n* Move the backoffice clients to configureClient by @KevinJump in https://github.com/KevinJump/uSync/pull/1186\n* Preview data type and content type imports with the real property editors by @KevinJump in https://github.com/KevinJump/uSync/pull/1166\n* Return a failed preview instead of a 500 when the dry run throws by @KevinJump in https://github.com/KevinJump/uSync/pull/1189\n\n\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.5.2...v17.6.0",
-    "prerelease": false,
-    "umbracoMajor": 17
   },
   {
     "package": "Our.Umbraco.MaintenanceMode",
@@ -14183,19 +14222,6 @@
     "umbracoMajor": 10
   },
   {
-    "package": "uSync",
-    "title": "uSync",
-    "category": "",
-    "repo": "KevinJump/uSync",
-    "version": "10.3.3",
-    "publishedAt": "2023-03-03T15:30:27Z",
-    "nugetUrl": "https://www.nuget.org/packages/uSync/10.3.3",
-    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v10.3.3",
-    "notes": "## What's Changed\r\n* V10/blueprint fix by @KevinJump in https://github.com/KevinJump/uSync/pull/470\r\n* Ensure Dates are formatted in and out of NestedContent blocks correctly. \r\n* Make key comparison for dictionary items case insensitive https://github.com/KevinJump/uSync/pull/466\r\n* Clean up Exceptions so they can be serialized to the dashboard consistently. \r\n\r\n\r\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v10.3.1...v10.3.3",
-    "prerelease": false,
-    "umbracoMajor": 10
-  },
-  {
     "package": "uSync.Complete",
     "title": "uSync Complete",
     "category": "",
@@ -14204,6 +14230,19 @@
     "publishedAt": "2023-03-03T15:29:48.4+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/10.4.1",
     "githubUrl": "https://github.com/Jumoo/uSync.Complete/releases",
+    "notes": null,
+    "prerelease": false,
+    "umbracoMajor": 10
+  },
+  {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "version": "10.3.3",
+    "publishedAt": "2023-03-03T15:20:31.39+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/10.3.3",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases",
     "notes": null,
     "prerelease": false,
     "umbracoMajor": 10
