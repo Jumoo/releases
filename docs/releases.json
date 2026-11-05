@@ -1,5 +1,44 @@
 [
   {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.5.3",
+    "publishedAt": "2026-11-04T14:44:59Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.5.3",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.3",
+    "notes": "### Added\n\n- The \"Already in progress\" panel offers **Clear it** when the run holding the target has been\n  Running with no progress for over five minutes. After a confirm it clears that run and starts\n  the new one. Until now a run that lost its browser kept the target locked for up to an hour, and\n  the only way out was Delete on the Background screen. Only the run's owner or an admin sees the\n  button.\n- The panel also has a **Try again** button and a \"Checked\" time. The panel doesn't refresh by\n  itself, so Try again re-checks: it starts the new run if the old one has finished, and otherwise\n  shows the latest status.\n\n### Changed\n\n- The conflict messages no longer suggest waiting on the panel or cancelling from it. They say to\n  try again once the other run has finished.\n\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "uSync.Complete",
+    "title": "uSync Complete",
+    "category": "",
+    "repo": "Jumoo/uSync.Complete",
+    "version": "13.4.0-final",
+    "publishedAt": "2026-11-04T13:04:44.263+00:00",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Complete/13.4.0-final",
+    "githubUrl": "https://github.com/Jumoo/uSync.Complete/releases",
+    "notes": null,
+    "prerelease": true,
+    "umbracoMajor": 13
+  },
+  {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "version": "13.4.0-final",
+    "publishedAt": "2026-11-04T12:27:10Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/13.4.0-final",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v13.4.0-final",
+    "notes": "This is a final release of uSync for Umbraco v13. It rolls up the fixes made since v13.3.2.\n\nIt is marked as a pre-release (`-final`), so NuGet won't pick it as the default update. If you're on Umbraco v13 and want these fixes, install `13.4.0-final` explicitly.\n\n## What's Changed\n* Check \"ShouldImport\" on all report steps by @KevinJump in https://github.com/KevinJump/uSync/pull/817\n* Use `Clear(key)` instead of `ClearByKey(key)` for exact-key cache removal by @AndersKaae in https://github.com/KevinJump/uSync/pull/1022\n* Make the bad file name list configurable (`AdditionalBadNames`, `IncludeWindowsReservedNames`) by @NikRimington in https://github.com/KevinJump/uSync/pull/1084\n* Fix content import ordering overflowing past 1000 siblings (mis-parented nodes) by @AndersKaae in https://github.com/KevinJump/uSync/pull/1118\n* Keep JSON booleans and numbers in block values as they are by @KevinJump in https://github.com/KevinJump/uSync/pull/1196\n* Match content and media by name when the name has spaces or symbols by @KevinJump in https://github.com/KevinJump/uSync/pull/1197 and https://github.com/KevinJump/uSync/pull/1199\n\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v13.3.2...v13.4.0-final\n",
+    "prerelease": true,
+    "umbracoMajor": 13
+  },
+  {
     "package": "uSync",
     "title": "uSync",
     "category": "",
@@ -14032,10 +14071,10 @@
     "category": "",
     "repo": "KevinJump/uSync",
     "version": "10.3.4",
-    "publishedAt": "2023-03-16T13:51:00Z",
+    "publishedAt": "2023-03-16T13:49:57.16+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync/10.3.4",
-    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v10.3.4",
-    "notes": "This is a minor patch fix for uSync. for Umbraco v10. It contains super small issues around firstboot \r\n# Fixes\r\n\r\n- 🐞(bug) - Firstboot fails if default language is changed in language config files.\r\n- 🗒️(doc) - Different spelling fix _(fixing the word 'different' across the code)_\r\n\r\n# Getting uSync .\r\n\r\n```\r\ndotnet add package uSync --version 10.3.4 \r\n```\r\n\r\n\r\n",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases",
+    "notes": null,
     "prerelease": false,
     "umbracoMajor": 10
   },

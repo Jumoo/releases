@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-04T12:19:46.928Z",
+  "generatedAt": "2026-11-05T00:34:06.415Z",
   "packages": [
     {
       "package": "uSync",
@@ -7,12 +7,12 @@
       "category": "",
       "repo": "KevinJump/uSync",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.3.0",
-      "lastReleaseDate": "2026-11-03T12:08:26Z",
-      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.3.0",
-      "releaseBranch": "v18/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-11-03T12:08:26Z"
+      "lastReleaseTag": "v13.4.0-final",
+      "lastReleaseDate": "2026-11-04T12:27:10Z",
+      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v13.4.0-final",
+      "releaseBranch": null,
+      "commitsSince": null,
+      "lastCommitDate": "2026-11-04T19:24:30Z"
     },
     {
       "package": "uSync.Complete",
@@ -371,12 +371,12 @@
       "category": "Other",
       "repo": "Jumoo/Jumoo.Processing",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "release/v19.0.0-beta02",
-      "lastReleaseDate": "2026-11-03T10:10:31Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-beta02",
-      "releaseBranch": "v19/main",
+      "lastReleaseTag": "release/v17.5.3",
+      "lastReleaseDate": "2026-11-04T14:44:59Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.3",
+      "releaseBranch": "v17/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-11-03T10:10:31Z"
+      "lastCommitDate": "2026-11-04T14:44:59Z"
     },
     {
       "package": "Jumoo.Json",

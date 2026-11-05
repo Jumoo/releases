@@ -5,6 +5,56 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Jumoo.Processing 17.5.3</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.3</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.3</guid>
+      <pubDate>Wed, 04 Nov 2026 14:44:59 GMT</pubDate>
+      <description><![CDATA[### Added
+
+- The "Already in progress" panel offers **Clear it** when the run holding the target has been
+  Running with no progress for over five minutes. After a confirm it clears that run and starts
+  the new one. Until now a run that lost its browser kept the target locked for up to an hour, and
+  the only way out was Delete on the Background screen. Only the run's owner or an admin sees the
+  button.
+- The panel also has a **Try again** button and a "Checked" time. The panel doesn't refresh by
+  itself, so Try again re-checks: it starts the new run if the old one has finished, and otherwise
+  shows the latest status.
+
+### Changed
+
+- The conflict messages no longer suggest waiting on the panel or cancelling from it. They say to
+  try again once the other run has finished.
+
+]]></description>
+    </item>
+    <item>
+      <title>uSync Complete 13.4.0-final</title>
+      <link>https://github.com/Jumoo/uSync.Complete/releases</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
+      <pubDate>Wed, 04 Nov 2026 13:04:44 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>uSync 13.4.0-final</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v13.4.0-final</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v13.4.0-final</guid>
+      <pubDate>Wed, 04 Nov 2026 12:27:10 GMT</pubDate>
+      <description><![CDATA[This is a final release of uSync for Umbraco v13. It rolls up the fixes made since v13.3.2.
+
+It is marked as a pre-release (`-final`), so NuGet won't pick it as the default update. If you're on Umbraco v13 and want these fixes, install `13.4.0-final` explicitly.
+
+## What's Changed
+* Check "ShouldImport" on all report steps by @KevinJump in https://github.com/KevinJump/uSync/pull/817
+* Use `Clear(key)` instead of `ClearByKey(key)` for exact-key cache removal by @AndersKaae in https://github.com/KevinJump/uSync/pull/1022
+* Make the bad file name list configurable (`AdditionalBadNames`, `IncludeWindowsReservedNames`) by @NikRimington in https://github.com/KevinJump/uSync/pull/1084
+* Fix content import ordering overflowing past 1000 siblings (mis-parented nodes) by @AndersKaae in https://github.com/KevinJump/uSync/pull/1118
+* Keep JSON booleans and numbers in block values as they are by @KevinJump in https://github.com/KevinJump/uSync/pull/1196
+* Match content and media by name when the name has spaces or symbols by @KevinJump in https://github.com/KevinJump/uSync/pull/1197 and https://github.com/KevinJump/uSync/pull/1199
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v13.3.2...v13.4.0-final
+]]></description>
+    </item>
+    <item>
       <title>uSync 17.6.1</title>
       <link>https://github.com/KevinJump/uSync/releases/tag/v17.6.1</link>
       <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.6.1</guid>
@@ -1188,67 +1238,6 @@ bundle + `entrypoints/` pattern used by other v18 connectors.
 Also includes the 17.1.1 fix: `GlobalLinkComposer` only registers when the Umbraco backoffice
 is enabled.
 
-]]></description>
-    </item>
-    <item>
-      <title>uSync Automate 17.0.1</title>
-      <link>https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Automate/releases/tag/v17.0.1</guid>
-      <pubDate>Mon, 26 Oct 2026 11:38:50 GMT</pubDate>
-      <description><![CDATA[### Fixed
-
-- The NuGet package's project URL now points at the GitHub repo.
-
-## What's Changed
-* Bump vite from 7.3.6 to 8.3.2 in /uSync.Automate/automate-client by @dependabot[bot] in https://github.com/Jumoo/uSync.Automate/pull/21
-* Bump test dependencies: NUnit 5, coverlet 10 and minor group by @KevinJump in https://github.com/Jumoo/uSync.Automate/pull/23
-* Bump GitHub Actions majors; ignore TypeScript >=6 and hey-api majors by @KevinJump in https://github.com/Jumoo/uSync.Automate/pull/24
-* Ignore @umbraco-cms/* in npm dependabot updates by @KevinJump in https://github.com/Jumoo/uSync.Automate/pull/27
-* Bump vite from 8.3.2 to 8.3.4 in /uSync.Automate/automate-client in the npm-dependencies group across 1 directory by @dependabot[bot] in https://github.com/Jumoo/uSync.Automate/pull/25
-* Bump NUnit3TestAdapter from 6.3.0 to 6.3.1 by @dependabot[bot] in https://github.com/Jumoo/uSync.Automate/pull/26
-* Bump the nuget-dependencies group with 1 update by @dependabot[bot] in https://github.com/Jumoo/uSync.Automate/pull/28
-
-## New Contributors
-* @dependabot[bot] made their first contribution in https://github.com/Jumoo/uSync.Automate/pull/21
-* @KevinJump made their first contribution in https://github.com/Jumoo/uSync.Automate/pull/23
-
-**Full Changelog**: https://github.com/Jumoo/uSync.Automate/compare/v17.0.0...v17.0.1
-]]></description>
-    </item>
-    <item>
-      <title>Translation Manager Automate 17.0.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Automate/releases/tag/v17.0.1</guid>
-      <pubDate>Mon, 26 Oct 2026 11:38:50 GMT</pubDate>
-      <description><![CDATA[### Fixed
-
-- The NuGet package's project URL now points at the GitHub repo.
-
-## What's Changed
-* Roll up dependabot test-dependency and actions bumps by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Automate/pull/12
-* Bump the nuget-dependencies group with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Automate/pull/13
-
-## New Contributors
-* @KevinJump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.Automate/pull/12
-* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.Automate/pull/13
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Automate/compare/v17.0.0...v17.0.1
-]]></description>
-    </item>
-    <item>
-      <title>Linked Pages 17.0.1</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v17.0.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v17.0.1</guid>
-      <pubDate>Mon, 26 Oct 2026 11:38:37 GMT</pubDate>
-      <description><![CDATA[### Fixed
-
-- Umbraco package references are pinned to the v17 line (`[17.0.0, 18.0.0)`), so the package can no longer resolve against Umbraco 18.
-
-### Changed
-
-- CI/CD workflows brought over from the v18 line, and backoffice client dependency updates (vite 8, chalk 6).
-
-17.0.0 was published to NuGet from an untagged build; this is the first tagged v17 release.
 ]]></description>
     </item>
   </channel>
