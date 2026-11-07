@@ -5,6 +5,51 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Jumoo.Processing 18.3.3</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.3</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.3</guid>
+      <pubDate>Fri, 06 Nov 2026 16:19:49 GMT</pubDate>
+      <description><![CDATA[Includes everything in 17.5.3, merged forward from `v17/main`.
+
+### Added
+
+- The "Already in progress" panel offers **Clear it** when the run holding the target has been
+  Running with no progress for over five minutes. After a confirm it clears that run and starts
+  the new one. Until now a run that lost its browser kept the target locked for up to an hour, and
+  the only way out was Delete on the Background screen. Only the run's owner or an admin sees the
+  button.
+- The panel also has a **Try again** button and a "Checked" time. The panel doesn't refresh by
+  itself, so Try again re-checks: it starts the new run if the old one has finished, and otherwise
+  shows the latest status.
+
+### Changed
+
+- The conflict messages no longer suggest waiting on the panel or cancelling from it. They say to
+  try again once the other run has finished.
+
+]]></description>
+    </item>
+    <item>
+      <title>Translation Manager 17.11.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.11.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.11.0</guid>
+      <pubDate>Fri, 06 Nov 2026 14:13:02 GMT</pubDate>
+      <description><![CDATA[- Add: translate in place. Turn it on with `"Translation": { "inPlaceTranslation": true }` to translate a document where it stands, with no translation set. A culture-varying document gets the target language alongside the source, and an invariant document overwrites its own values, saving a new version you can roll back. Library elements are v18 only (Jumoo/Jumoo.TranslationManager.Issues#95)
+- Fix: the Quick translate button never showed in the Languages box on a document's Translation view, because the box dropped its header actions unless it was collapsable
+- Fix: Clone to Language left a culture-variant Block List, Block Grid, Single Block or rich text block property's blocks in the source language. Their element values and expose entries kept the source culture, so on the target page the blocks showed as drafts with no content. An invariant block property on a culture-variant page (block level variance) wasn't cloned at all. Both are now cloned to the target language, including blocks nested inside other blocks
+- Change: the backoffice client now authenticates through Umbraco's `configureClient`, so a session that expires during a request asks you to sign in again instead of failing
+- Fix: translation memory slowed down a lot once it held many rows. With 500,000 rows, approving a job no longer scans the memory table for every translated value, and listing, counting and deleting memory now runs in the database rather than loading every row first. Paging a source, its counts and the sources list now take milliseconds instead of seconds. Deleting all memory on SQL Server now takes 6s instead of 93s (950s to under 1s on SQLite). A migration adds two indexes to the memory table, which took about a second at 500,000 rows (Jumoo/Jumoo.TranslationManager#154)
+- Fix: creating a job failed on SQL Server with "String or binary data would be truncated in table 'Translate_Jobs', column 'name'" when the job's name was longer than 255 characters, which a long page name could cause because the default job name starts with it. Job names are now cut to 255 characters (ending in `...`) when they're saved (Jumoo/Jumoo.TranslationManager#157)
+- Build: the bundled connectors are now DeepL 17.4.1, Xliff 17.0.3 and AI 17.7.3. Their backoffice clients sign in through Umbraco's `configureClient`, so a session that expires during a request asks you to sign in again instead of failing
+- Fix: when translating a page and its children, the suggested job name lost the page's name and started "& Children". It's now "{page name} & Children"
+- Add: when the licence key is for an older version of Translation Manager, the licence page shows a warning with a button to get a one-off temporary licence. If the licence is set in appsettings, nothing is saved and the page shows the new key and domains to copy there (Jumoo/Jumoo.TranslationManager#162)
+- Fix: a licence within a month of expiry was replaced with a blank one when the renewal check found no new key. The existing licence is now kept
+- Fix: saving Translation Manager's settings, licence, connector settings or translation sets returned a 403 unless the user's group had the "Manage translations" permission. These pages are in the Settings section, so anyone with access to that section can now save them
+- Add: a bell button in the job page footer resends the notification emails for the job's current stage, for when a translator has lost the original email. It shows once a job is past Submitted: received and reviewing jobs resend the Received email, approved and closed jobs the Approved one. It asks before sending, and if nothing goes out it says why (notifications off, no email set up, or no recipients for that stage). Only the email is resent, so nothing else that runs when a job is received, such as auto approval, runs again (Jumoo/Jumoo.TranslationManager.Issues#109)
+
+]]></description>
+    </item>
+    <item>
       <title>Jumoo.Processing 17.5.3</title>
       <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.3</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.3</guid>
@@ -1195,48 +1240,6 @@ Supports Umbraco 17.3 to 17.8.
 - Includes the 17.1.1 and 17.1.2 fixes: the composer only registers when the Umbraco backoffice is
   enabled, and the pending job view applies the default service on load when the template isn't
   locked.
-
-]]></description>
-    </item>
-    <item>
-      <title>Google Connector 18.0.1</title>
-      <link>https://github.com/Jumoo/Google.Connector/releases/tag/v18.0.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases/tag/v18.0.1</guid>
-      <pubDate>Mon, 26 Oct 2026 11:39:00 GMT</pubDate>
-      <description><![CDATA[
-### Fixed
-
-- `GoogleComposer` now gates its registrations on the Umbraco backoffice being enabled,
-  matching the check Translation Manager core applies in its own composers, so the connector
-  no longer tries to register on a website-only boot (also in 17.1.1).
-- The backoffice client's lock file was regenerated so it includes the v3/batch client
-  dependencies.
-
-### Changed
-
-- Dependency updates, and tighter dependabot ignores (TypeScript 6+, hey-api minors).
-
-]]></description>
-    </item>
-    <item>
-      <title>GlobalLink Connector 18.0.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v18.0.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v18.0.0</guid>
-      <pubDate>Mon, 26 Oct 2026 11:39:00 GMT</pubDate>
-      <description><![CDATA[
-Umbraco 18 support. Migrated onto the Umbraco 18 / `Jumoo.TranslationManager.Core` 18.2.0 and
-`@jumoo/translate` 18.x packages, added `nuget.config` and `CLAUDE.md` to match sibling
-connectors, moved the management API's OpenAPI document off Swashbuckle and onto
-`AddBackOfficeOpenApiDocument`, and restructured the backoffice client onto the
-bundle + `entrypoints/` pattern used by other v18 connectors.
-
-`IOptionsTranslationProvider.GetOptions(OptionsDetailLevel)` (added on the 17.x line in
-17.1.0, below) carries over unchanged — `Jumoo.TranslationManager.Core` 18.2.0 republished the
-`OptionsDetailLevel`-aware overload, so `GetOptions(OptionsDetailLevel level)` still withholds
-`username`/`password`/`connector` at `Partial` detail, same as on v17.
-
-Also includes the 17.1.1 fix: `GlobalLinkComposer` only registers when the Umbraco backoffice
-is enabled.
 
 ]]></description>
     </item>
