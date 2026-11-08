@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T12:17:15.425Z",
+  "generatedAt": "2026-11-08T00:37:01.391Z",
   "packages": [
     {
       "package": "uSync",
@@ -7,12 +7,12 @@
       "category": "",
       "repo": "KevinJump/uSync",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v13.4.0-final",
-      "lastReleaseDate": "2026-11-04T12:27:10Z",
-      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v13.4.0-final",
-      "releaseBranch": null,
-      "commitsSince": null,
-      "lastCommitDate": "2026-11-07T11:20:32Z"
+      "lastReleaseTag": "v18.3.1",
+      "lastReleaseDate": "2026-11-07T21:12:40Z",
+      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.3.1",
+      "releaseBranch": "v18/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-11-07T21:12:40Z"
     },
     {
       "package": "uSync.Complete",

@@ -5,6 +5,28 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync 18.3.1</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v18.3.1</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.3.1</guid>
+      <pubDate>Sat, 07 Nov 2026 21:12:40 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Let callers choose where item previews come from by @KevinJump in https://github.com/KevinJump/uSync/pull/1192
+* Preview with the handler set the import uses by @KevinJump in https://github.com/KevinJump/uSync/pull/1193
+* Let callers set the preview's side headlines by @KevinJump in https://github.com/KevinJump/uSync/pull/1194
+* Source on the left and side colours in the item previews by @KevinJump in https://github.com/KevinJump/uSync/pull/1195
+* Don't throw when a dependency lookup tries a non-container key as a folder by @KevinJump in https://github.com/KevinJump/uSync/pull/1202
+* Read the incoming template in a content preview from the file by @KevinJump in https://github.com/KevinJump/uSync/pull/1203
+* Label file groups in reports, and don't head a file change 'No changes' by @KevinJump in https://github.com/KevinJump/uSync/pull/1204
+* Name failed imports after the item, not its file by @KevinJump in https://github.com/KevinJump/uSync/pull/1205
+* Bump eslint from 10.13.0 to 10.14.0 in /uSync.Backoffice.Management.Client/usync-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1201
+* Merge v17/main into v18/main (2026-11-07) by @KevinJump in https://github.com/KevinJump/uSync/pull/1206
+* Resync usync-assets package-lock.json (v18) by @KevinJump in https://github.com/KevinJump/uSync/pull/1208
+* Update changelog for v18.3.1 release by @KevinJump in https://github.com/KevinJump/uSync/pull/1210
+
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.3.0...v18.3.1]]></description>
+    </item>
+    <item>
       <title>Jumoo.Processing 18.3.3</title>
       <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.3</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.3</guid>
@@ -1212,34 +1234,6 @@ Supports Umbraco 17.3 to 17.8.
 - `IPNetwork2` updated from 3.6.0 to 5.0.1 (#115). IP whitelist matching behaves the same.
 - Backoffice client dependency updates (vite, markdown-it, prosemirror-view and the
   npm-dependencies group). Dependabot no longer moves `typescript` to v6+ or bumps `@hey-api/*`.
-
-]]></description>
-    </item>
-    <item>
-      <title>LanguageWire Connector 18.0.0</title>
-      <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v18.0.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v18.0.0</guid>
-      <pubDate>Mon, 26 Oct 2026 11:44:32 GMT</pubDate>
-      <description><![CDATA[
-### Added
-
-- Umbraco 18 / net10.0 support (`v18/main`), forward-ported from `v17/main`.
-
-### Changed
-
-- `Umbraco.Cms.Web.Website` / `Umbraco.Cms.Api.Management` bumped to 18.0.2; `Jumoo.TranslationManager.Connectors`/`.Serializers` to 18.2.0.
-- The OpenAPI document registration moved from Swashbuckle (`IConfigureOptions<SwaggerGenOptions>`, `IDocumentFilter`) to Umbraco 18's `Microsoft.AspNetCore.OpenApi`-based `AddBackOfficeOpenApiDocument` builder — Swashbuckle types no longer exist in the Umbraco 18 API surface.
-- `IOptionsTranslationProvider.GetOptions(OptionsDetailLevel)` keeps its v17 behaviour: `Complete` returns `clientId`, `Partial` strips it. `Jumoo.TranslationManager.Core` 18.2.0 restored the `OptionsDetailLevel` overload that the first v18 port had to drop.
-- Frontend client restructured to the `bundle.ts` + `entrypoints/entrypoint.ts` + `entrypoints/manifest.ts` convention shared with sibling connectors; the generated API client is now authenticated via `UMB_AUTH_CONTEXT.configureClient(client)` instead of manually copying `getOpenApiConfiguration()`/`getLatestToken()` onto the client.
-- `typescript` pinned to `^5.9.3` (was `^6.0.3` on `v17/main`) — `@hey-api/openapi-ts` doesn't support TypeScript 7 yet, and `npm run generate-client` needs 5.x.
-- `@jumoo/translate`, `@umbraco-cms/backoffice`, `vite`, `@hey-api/openapi-ts` bumped to their 18.x/current equivalents.
-- `generate-openapi.js` now reads its swagger URL from a gitignored `.env` (`LANGUAGEWIRE_SWAGGER_URL`, see `.env.example`) instead of a hardcoded URL in `package.json`, and strips the fetched spec's `servers` entry before codegen so regenerating against a different developer's port doesn't diff the generated client.
-
-### Fixed
-
-- Includes the 17.1.1 and 17.1.2 fixes: the composer only registers when the Umbraco backoffice is
-  enabled, and the pending job view applies the default service on load when the template isn't
-  locked.
 
 ]]></description>
     </item>

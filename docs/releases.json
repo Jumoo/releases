@@ -1,5 +1,18 @@
 [
   {
+    "package": "uSync",
+    "title": "uSync",
+    "category": "",
+    "repo": "KevinJump/uSync",
+    "version": "18.3.1",
+    "publishedAt": "2026-11-07T21:12:40Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync/18.3.1",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.3.1",
+    "notes": "## What's Changed\n* Let callers choose where item previews come from by @KevinJump in https://github.com/KevinJump/uSync/pull/1192\n* Preview with the handler set the import uses by @KevinJump in https://github.com/KevinJump/uSync/pull/1193\n* Let callers set the preview's side headlines by @KevinJump in https://github.com/KevinJump/uSync/pull/1194\n* Source on the left and side colours in the item previews by @KevinJump in https://github.com/KevinJump/uSync/pull/1195\n* Don't throw when a dependency lookup tries a non-container key as a folder by @KevinJump in https://github.com/KevinJump/uSync/pull/1202\n* Read the incoming template in a content preview from the file by @KevinJump in https://github.com/KevinJump/uSync/pull/1203\n* Label file groups in reports, and don't head a file change 'No changes' by @KevinJump in https://github.com/KevinJump/uSync/pull/1204\n* Name failed imports after the item, not its file by @KevinJump in https://github.com/KevinJump/uSync/pull/1205\n* Bump eslint from 10.13.0 to 10.14.0 in /uSync.Backoffice.Management.Client/usync-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1201\n* Merge v17/main into v18/main (2026-11-07) by @KevinJump in https://github.com/KevinJump/uSync/pull/1206\n* Resync usync-assets package-lock.json (v18) by @KevinJump in https://github.com/KevinJump/uSync/pull/1208\n* Update changelog for v18.3.1 release by @KevinJump in https://github.com/KevinJump/uSync/pull/1210\n\n\n**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.3.0...v18.3.1",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
     "package": "Jumoo.Processing",
     "title": "Jumoo.Processing",
     "category": "Other",
@@ -14084,10 +14097,10 @@
     "category": "",
     "repo": "KevinJump/uSync",
     "version": "11.0.3",
-    "publishedAt": "2023-03-16T14:01:41Z",
+    "publishedAt": "2023-03-16T14:01:12.4+00:00",
     "nugetUrl": "https://www.nuget.org/packages/uSync/11.0.3",
-    "githubUrl": "https://github.com/KevinJump/uSync/releases/tag/v11.0.3",
-    "notes": "This is a minor patch release for uSync v11 (for Umbraco v11). It contains a fix for default languages when using first boot. \r\n\r\n# Fixes\r\n\r\n- 🐞(bug) - Firstboot fails if default language is changed in language config files.\r\n- 🐞(bug) - Errors don't show in report groups when every item of a type throws an error.\r\n- 📝 (doc) - Different spelling fix _(fixing the word 'different' across the code)_\r\n\r\n# Getting uSync .\r\n\r\n```\r\ndotnet add package uSync --version 11.0.3\r\n```\r\n",
+    "githubUrl": "https://github.com/KevinJump/uSync/releases",
+    "notes": null,
     "prerelease": false,
     "umbracoMajor": 11
   },
