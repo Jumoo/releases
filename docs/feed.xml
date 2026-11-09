@@ -5,6 +5,17 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>PowerToys 17.4.0</title>
+      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.4.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.4.0</guid>
+      <pubDate>Mon, 09 Nov 2026 12:44:15 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add the Tab Icons power toy by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/78
+
+
+**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.3.1...v17.4.0]]></description>
+    </item>
+    <item>
       <title>Maintenance Mode 18.2.2</title>
       <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.2</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.2</guid>
@@ -1108,25 +1119,6 @@ Importing data types from older files (without the Migrate tab) now follows Umbr
 * Remove members marked obsolete for v18 and v19 by @KevinJump in https://github.com/KevinJump/uSync/pull/1161
 
 **Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.2.0...v19.0.0-beta01
-]]></description>
-    </item>
-    <item>
-      <title>uSync 17.5.1</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v17.5.1</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.5.1</guid>
-      <pubDate>Wed, 28 Oct 2026 11:28:13 GMT</pubDate>
-      <description><![CDATA[## Release notes
-
-Supports Umbraco 17.3 to 17.8.
-
-- **Member type compositions now import.** Member types lost their compositions on import, with no error reported (#1149).
-
-## What's Changed
-* Publish @jumoo/usync to npmjs.org with trusted publishing by @KevinJump in https://github.com/KevinJump/uSync/pull/1143
-* Import member type compositions (#1149) by @KevinJump in https://github.com/KevinJump/uSync/pull/1151
-
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.5.0...v17.5.1
 ]]></description>
     </item>
   </channel>
