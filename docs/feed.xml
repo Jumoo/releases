@@ -5,6 +5,373 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Maintenance Mode 18.2.2</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.2</guid>
+      <pubDate>Mon, 09 Nov 2026 12:04:26 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Prepare 17.2.1 release by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/123
+* Authenticate the client with configureClient, drop Umbraco 16 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/125
+* Merge v17/main into v18/main (2026-11-02) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/126
+* Release 17.3.0 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/127
+* Fix unfrozen users being blocked by the freeze and lock by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/129
+* Release 17.3.1 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/131
+* Bump ws from 7.5.10 to 7.5.13 in /Our.Umbraco.MaintenanceMode.Client/maintenance-client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/128
+* Merge v17/main into v18/main (2026-11-06) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/132
+* Override js-yaml to 4.3.2 (Dependabot alert 233) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/133
+* Merge v17/main into v18/main (2026-11-09) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/135
+* Release 18.2.2 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/136
+
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v18.2.1...v18.2.2]]></description>
+    </item>
+    <item>
+      <title>Linked Pages 18.0.7</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.7</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.7</guid>
+      <pubDate>Mon, 09 Nov 2026 11:45:27 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Bump vite from 8.3.4 to 8.3.5 in /src/Umbraco.Community.LinkedPages/Client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/52
+* Bump hey-api to 0.99 and override js-yaml to clear security alerts by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/53
+* Merge v17/main into v18/main (2026-11-02) by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/54
+* Merge v17/main into v18/main (2026-11-02) by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/56
+
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/v18.0.6...v18.0.7]]></description>
+    </item>
+    <item>
+      <title>DeepL Connector 18.2.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.1</guid>
+      <pubDate>Mon, 09 Nov 2026 11:14:24 GMT</pubDate>
+      <description><![CDATA[## Changed
+
+- The connector's backoffice API client now authenticates through Umbraco's `configureClient`, so it always sends the current backoffice token, and a session that expires during a request asks you to sign in again instead of failing.
+- The backoffice client resolves `@jumoo/translate` from npmjs.org instead of Jumoo's Azure feed, and builds against `@jumoo/translate` 18.5.0.
+
+## What's Changed
+* Bump the npm-dependencies group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/25
+* Bump vite from 8.3.2 to 8.3.4 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/27
+* Merge v17/main into v18/main (2026-10-26) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/28
+* Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/29
+* Merge v17/main into v18/main (2026-10-31) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/30
+* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/31
+* Merge v17/main into v18/main (2026-10-31) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/32
+* Authenticate the API client with configureClient by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/33
+* Merge v17 fix/configure-client into v18/main (2026-11-02) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/34
+* docs(release): Add 17.4.1 changelog entry by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/35
+* Merge v17 into v18 (2026-11-06) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/36
+* Lock @jumoo/translate to 18.5.0 by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/37
+
+## New Contributors
+* @henryjump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/28
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v18.2.0...v18.2.1
+]]></description>
+    </item>
+    <item>
+      <title>Xliff Connector 18.0.3</title>
+      <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.3</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.3</guid>
+      <pubDate>Mon, 09 Nov 2026 11:14:16 GMT</pubDate>
+      <description><![CDATA[### Changed
+
+- The backoffice client is now built against `@jumoo/translate` 18.5.0 from npmjs.org, and
+  with vite 8.3.5. `@jumoo/translate` is supplied by Translation Manager at runtime, so this is
+  a build-only change: the connector behaves exactly as 18.0.2. The 18.x line has authenticated
+  through `configureClient` since 18.0.0; that change in 17.0.3 has no 18.x counterpart.
+]]></description>
+    </item>
+    <item>
+      <title>CrowdIn Connector 18.1.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.1</guid>
+      <pubDate>Mon, 09 Nov 2026 11:14:02 GMT</pubDate>
+      <description><![CDATA[
+## Fixed
+
+- The backoffice API client is now authenticated by calling `configureClient` on the auth
+  context in the entry point's `onInit`, and every generated operation carries its bearer
+  `security` requirement, replacing the `hey-api.ts` runtime config that copied
+  `umbHttpClient`'s settings
+  ([jumoo-context#138](https://github.com/Jumoo/jumoo-context/issues/138)).
+
+## Changed
+
+- Client build tooling: `@hey-api/openapi-ts` 0.99, lit 3.3.3, prettier 3.9.10, typescript
+  5.9.3 and vite 8.3.5, with the generated API client refreshed to match.
+- Dependabot no longer proposes typescript 6+ (not yet supported by `@hey-api/openapi-ts`)
+  or minor/major `@hey-api/*` bumps, which must track the Umbraco backoffice package.
+- `@jumoo/translate` now resolves from npmjs.org rather than a separate registry, locked at
+  18.5.0 ([jumoo-context#134](https://github.com/Jumoo/jumoo-context/issues/134)).
+
+
+## Pull requests
+* chore: roll up dependabot bumps, ignore typescript 6+ and hey-api by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/10
+* Merge v17/main into v18/main (dependabot triage) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/12
+* Bump typescript from 5.7.2 to 5.9.3 in /Jumoo.TranslationManager.CrowdIn/crowdin-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/11
+* Merge v17/main into v18/main (dependabot bumps) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/13
+* Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.CrowdIn/crowdin-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/14
+* Merge v17/main into v18/main (2026-10-31) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/15
+* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/16
+* Merge v17/main into v18/main (2026-10-31) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/17
+* Merge v17 fix/configure-client into v18/main (2026-11-02) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/19
+* Move the @jumoo/translate lock to 18.5.0 by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/20
+
+## New Contributors
+* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/11
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/compare/v18.1.0...v18.1.1
+]]></description>
+    </item>
+    <item>
+      <title>AI Connector 18.4.2</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.2</guid>
+      <pubDate>Mon, 09 Nov 2026 11:13:35 GMT</pubDate>
+      <description><![CDATA[### Changed
+
+- Requires Translation Manager 18.4.0 or later. The `Jumoo.TranslationManager.Core`,
+  `.Serializers` and `.Connectors` minimums were raised from 18.3.0 to 18.4.0.
+- The backoffice client is built against `@jumoo/translate` 18.5.0 from npmjs.org rather than
+  the Jumoo nightly feed. The connector behaves the same.
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.4.1...v18.4.2
+]]></description>
+    </item>
+    <item>
+      <title>LanguageWire Connector 18.0.3</title>
+      <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v18.0.3</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v18.0.3</guid>
+      <pubDate>Mon, 09 Nov 2026 11:13:33 GMT</pubDate>
+      <description><![CDATA[### Changed
+
+- The backoffice client authenticates only through Umbraco's `UMB_AUTH_CONTEXT.configureClient()`.
+  The token interceptor added in 18.0.2 is gone, so the client picks up Umbraco's 401 retry and
+  error notifications. The client is regenerated with `@hey-api/openapi-ts` 0.99 against the
+  Umbraco 18 OpenAPI document, which declares backoffice authentication on every operation.
+- `@jumoo/translate` now resolves from npmjs.org and is locked to 18.5.0, and `vite` is updated
+  to 8.3.5 (build only).
+
+]]></description>
+    </item>
+    <item>
+      <title>CSV Connector 18.0.2</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v18.0.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v18.0.2</guid>
+      <pubDate>Mon, 09 Nov 2026 11:13:26 GMT</pubDate>
+      <description><![CDATA[### Changed
+
+- The backoffice client's `@jumoo/translate` dependency now resolves from npmjs.org, locked
+  to 18.5.0. It previously came from the Azure DevOps nightly feed, which stops being
+  anonymously readable in 2027. 18.3.2 and 18.4.0 on npmjs.org ship without their type
+  declarations and fail the client build, so the lock skips them.
+- Brought forward the v17 move to `configureClient` for API authentication. v18 already
+  authenticated this way, so there is no behaviour change in this release line.
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CSV/compare/v18.0.1...v18.0.2]]></description>
+    </item>
+    <item>
+      <title>uSync 17.6.2</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v17.6.2</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.6.2</guid>
+      <pubDate>Mon, 09 Nov 2026 10:51:21 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Don't throw when a dependency lookup tries a non-container key as a folder by @KevinJump in https://github.com/KevinJump/uSync/pull/1202
+* Read the incoming template in a content preview from the file by @KevinJump in https://github.com/KevinJump/uSync/pull/1203
+* Label file groups in reports, and don't head a file change 'No changes' by @KevinJump in https://github.com/KevinJump/uSync/pull/1204
+* Name failed imports after the item, not its file by @KevinJump in https://github.com/KevinJump/uSync/pull/1205
+* Bump eslint from 10.13.0 to 10.14.0 in /uSync.Backoffice.Management.Client/usync-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1201
+
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.6.1...v17.6.2]]></description>
+    </item>
+    <item>
+      <title>LanguageWire Connector 17.1.4</title>
+      <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.4</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.4</guid>
+      <pubDate>Mon, 09 Nov 2026 10:46:40 GMT</pubDate>
+      <description><![CDATA[## Security
+
+The LanguageWire backoffice API now declares backoffice authentication on every operation, and the client authenticates through Umbraco's `UMB_AUTH_CONTEXT.configureClient()` instead of its own token interceptor (Jumoo/jumoo-context#138).
+
+
+
+## What's Changed
+* Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.LanguageWire/languagewire-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/LanguageWire.Connector/pull/34
+* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/LanguageWire.Connector/pull/36
+* Secure the API and authenticate the client with configureClient by @henryjump in https://github.com/Jumoo/LanguageWire.Connector/pull/38
+
+
+**Full Changelog**: https://github.com/Jumoo/LanguageWire.Connector/compare/v17.1.3...v17.1.4]]></description>
+    </item>
+    <item>
+      <title>CSV Connector 17.0.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v17.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v17.0.0</guid>
+      <pubDate>Mon, 09 Nov 2026 10:42:51 GMT</pubDate>
+      <description><![CDATA[First release of the CSV connector for Translation Manager v17 (Umbraco 17.3.0 and later).
+
+## Changes
+- The backoffice API is secured, and the client authenticates with the backoffice's `configureClient` (#11)
+- Fixed nodes without content being processed by the connector
+- Fixed uploading a new file resetting the submitted page
+- An upload now fails with an error when the CSV file has too many columns
+- Fixed the file extension on downloads, and a missing leading period in the extension setting
+- Fixed the line count in upload error messages
+- Package metadata now describes the CSV connector, and the client's json files no longer get added to the installing site (#14)
+
+## Requires
+- Jumoo.TranslationManager.Core / Serializers 17.2.2 or later
+- Umbraco.Cms 17.3.0 or later
+]]></description>
+    </item>
+    <item>
+      <title>SmartCat Connector 17.0.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.1</guid>
+      <pubDate>Mon, 09 Nov 2026 10:38:54 GMT</pubDate>
+      <description><![CDATA[## What's changed
+
+- **Authenticate the backoffice API client with `configureClient`** (#15, part of Jumoo/jumoo-context#138). Umbraco's `UMB_AUTH_CONTEXT.configureClient()` now runs from the entry point's `onInit`, replacing the hand-rolled hey-api runtime config. `@hey-api/openapi-ts` bumped to 0.99 and the client regenerated.
+- **RestSharp and RestSharp.Serializers.NewtonsoftJson 114.0.0 → 114.1.0** (#13). These are runtime dependencies of the connector.
+- `@jumoo/translate` now resolves from npmjs.org rather than the Azure feed (#14).
+- Client build tooling: prettier 3.9, vite 8.3.5 (#11, #12).
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/compare/v17.0.0...v17.0.1
+]]></description>
+    </item>
+    <item>
+      <title>CrowdIn Connector 17.2.2</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.2</guid>
+      <pubDate>Mon, 09 Nov 2026 10:38:53 GMT</pubDate>
+      <description><![CDATA[## Fixed
+
+- Authenticate the backoffice API client with `configureClient` in the entry point's `onInit`; every generated operation now carries its bearer `security` requirement (Jumoo/jumoo-context#138, Jumoo/Jumoo.TranslationManager.CrowdIn#18).
+
+## Changed — client dependencies and tooling
+
+- 96a2cd0 Dependabot roll-up: lit 3.3.3, prettier 3.9.10, vite 8.3.4; Dependabot ignores typescript 6+ and minor/major `@hey-api/*` bumps (#10)
+- bf0d0e3 typescript 5.9.3 (#11)
+- ea2f2d4 vite 8.3.5 (#14)
+- f5827e4 Resolve `@jumoo/translate` from npmjs.org (#16)
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/compare/v17.2.1...v17.2.2]]></description>
+    </item>
+    <item>
+      <title>Publicis Connector 17.0.3</title>
+      <link>https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.3</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.3</guid>
+      <pubDate>Mon, 09 Nov 2026 10:38:24 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/TranslatePlus-Connector/pull/27
+* Remove runtimeConfigPath now configureClient is in place by @henryjump in https://github.com/Jumoo/TranslatePlus-Connector/pull/29
+* Bump NSwag.ApiDescription.Client from 13.20.0 to 14.7.1 by @dependabot[bot] in https://github.com/Jumoo/TranslatePlus-Connector/pull/28
+
+
+**Full Changelog**: https://github.com/Jumoo/TranslatePlus-Connector/compare/v17.0.2...v17.0.3]]></description>
+    </item>
+    <item>
+      <title>Translation Manager 18.5.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.5.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.5.0</guid>
+      <pubDate>Mon, 09 Nov 2026 10:14:05 GMT</pubDate>
+      <description><![CDATA[Resend a job's notification emails, a temporary licence for older keys, a much faster translation memory, and Clone to Language fixes for block properties. Includes the fixes from v17 17.11.0.
+
+- Build: raise the bundled connector minimums to their latest v18 releases (Google 18.0.1, Microsoft 18.2.1, Xliff 18.0.2, Passthrough 18.0.1, DeepL 18.2.0, AI 18.4.1). NuGet picks the lowest matching version, so sites kept getting the older connectors, including Google 18.0.0 without the fix that only loads it when the backoffice is enabled
+
+- Fix: the `@jumoo/translate` npm package was missing most of its types in 18.3.2 and 18.4.0, including `dist/index.d.ts`, so packages building against it failed with `TS2307`
+- Fix: the Quick translate button never showed in the Languages box on a document's Translation view, because the box dropped its header actions unless it was collapsable
+- Fix: Clone to Language left a culture-variant Block List, Block Grid, Single Block or rich text block property's blocks in the source language. Their element values and expose entries kept the source culture, so on the target page the blocks showed as drafts with no content. An invariant block property on a culture-variant page (block level variance) wasn't cloned at all. Both are now cloned to the target language, including blocks nested inside other blocks
+- Fix: a failed backoffice API call now shows the error notification, and is treated as an error rather than an empty result. The v18 client wasn't generated with `throwOnError`, so errors were returned instead of thrown
+- Fix: translation memory slowed down a lot once it held many rows. With 500,000 rows, approving a job no longer scans the memory table for every translated value, and listing, counting and deleting memory now runs in the database rather than loading every row first. Paging a source, its counts and the sources list now take milliseconds instead of seconds. Deleting all memory on SQL Server now takes 6s instead of 93s (950s to under 1s on SQLite). A migration adds two indexes to the memory table, which took about a second at 500,000 rows (Jumoo/Jumoo.TranslationManager#154)
+- Fix: creating a job failed on SQL Server with "String or binary data would be truncated in table 'Translate_Jobs', column 'name'" when the job's name was longer than 255 characters, which a long page name could cause because the default job name starts with it. Job names are now cut to 255 characters (ending in `...`) when they're saved (Jumoo/Jumoo.TranslationManager#157)
+- Fix: when translating a page and its children, the suggested job name lost the page's name and started "& Children". It's now "{page name} & Children"
+- Add: when the licence key is for an older version of Translation Manager, the licence page shows a warning with a button to get a one-off temporary licence. If the licence is set in appsettings, nothing is saved and the page shows the new key and domains to copy there (Jumoo/Jumoo.TranslationManager#162)
+- Fix: a licence within a month of expiry was replaced with a blank one when the renewal check found no new key. The existing licence is now kept
+- Fix: saving Translation Manager's settings, licence, connector settings or translation sets returned a 403 unless the user's group had the "Manage translations" permission. These pages are in the Settings section, so anyone with access to that section can now save them
+- Add: a bell button in the job page footer resends the notification emails for the job's current stage, for when a translator has lost the original email. It shows once a job is past Submitted: received and reviewing jobs resend the Received email, approved and closed jobs the Approved one. It asks before sending, and if nothing goes out it says why (notifications off, no email set up, or no recipients for that stage). Only the email is resent, so nothing else that runs when a job is received, such as auto approval, runs again (Jumoo/Jumoo.TranslationManager.Issues#109)
+
+]]></description>
+    </item>
+    <item>
+      <title>uSync Complete 17.7.0</title>
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.7.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.7.0</guid>
+      <pubDate>Mon, 09 Nov 2026 10:03:19 GMT</pubDate>
+      <description><![CDATA[- New: the change details dialog on the Publisher, Exporter, snapshot,
+  restore point and TimeMachine rollback reports has a Side by side tab that
+  previews the item from what's being synced (the sync pack, snapshot,
+  restore point or rollback) rather than the site's uSync folders. Pushes
+  preview on the target server, when the target supports it
+- The dialog's tabs are now Side by side, Web page, Details. Both sides are
+  labelled Current and Incoming, with the site's name, and the incoming
+  side is on the left
+- New: the licence page can get a one-off 60 day temporary licence for keys
+  from older versions of uSync.Complete, while you upgrade
+- New: `uSyncPublisherActionCompletedNotification` is raised on the server
+  that started a push or pull when it finishes, from the push dialog,
+  headless or the background queue. It has the target server, the user,
+  the items pushed (with their children) and the per-item results,
+  dependencies included. `uSyncPublisher.Pipelines.Publish` gives the
+  Publisher pipeline's alias for code handling `PipelineFinishedNotification`
+- Fix: a settings push or pull only sends the website folders for the file
+  types you pick, so pushing stylesheets no longer sends `Views`
+- Fix: items pushed from the Sync Queue to a server that requires approval
+  are now removed from the queue once the approval goes through
+- Fix: items pushed from the Sync Queue to a server that already has them
+  are now removed from the queue, when the report finds no changes
+- New: a "Content & Media" server template, for sites that deploy settings
+  and files with uSync and source control. It is first in the list and
+  selected by default when you add a server
+- The "Content & Media & Settings" server template is now called
+  "Everything", and a new server set up from it includes settings and files
+  in its pushes and pulls. Servers you have already set up keep their
+  settings
+- Fix: the Web page tab now says when an item doesn't exist on the other
+  site yet, instead of saying there are no differences
+- Fix: when the Side by side tab can't preview an item, for example content whose
+  document type isn't on the other site yet, the tab says so instead of
+  not appearing
+- Fix: approvals only apply to content, media and member pushes and pulls.
+  Pushing or pulling settings from the Settings tree (document types,
+  templates, stylesheets and so on) no longer waits for approval, as the
+  approval setting says
+- Pushing or pulling a document, media or member type now always includes its
+  compositions, whether or not "Include dependencies" is on
+- New in uSync.Publisher: "Include shared values", an option on language
+  limited pushes and pulls. The report also says when shared values were not
+  compared
+- Fix: a root push with "Delete missing" ticked now deletes from the target
+  when `AllowDeletingOfOrphanedItemsFromRoot` is set, and only for the orphan
+  types
+- Fix: a full push no longer sends values for unpublished cultures
+- The backoffice screens now use Umbraco's own client setup, so a session that
+  expires during a request asks you to sign in again instead of failing
+- Publisher's language step now says that content that doesn't vary by language
+  is sent in full when only some languages are selected
+- Updated to Jumoo.Processing 17.5.3
+- Updated to uSync 17.6.1. This includes the uSync 17.5.2 fixes, which keep
+  the right values on culture and segment limited pushes, and import items
+  that have a clean marker
+- Fix: a push to a site in Production mode no longer lists website file changes
+  the site won't apply. The report shows a note when files are different instead
+- Fix: v17 servers can connect to each other when a URL rewrite rule or
+  middleware changes the case of the request path, as v13 servers could
+- Fix: v17 servers can connect to each other on sites where authentication
+  runs before Umbraco's pipeline in Program.cs
+- When a server turns down a connection, both servers now log the address
+  they used for the request, so the two can be compared
+- `MaxRequestBodySize` (Publisher and Exporter) now applies on IIS as well as
+  Kestrel, so large pushes and uploads on IIS only need `maxAllowedContentLength`
+  raised in web.config. It only raises the limit: a site that already allows
+  more keeps its own limit
+
+]]></description>
+    </item>
+    <item>
       <title>uSync Complete 18.4.0</title>
       <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.4.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.4.0</guid>
@@ -760,543 +1127,6 @@ Supports Umbraco 17.3 to 17.8.
 
 
 **Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.5.0...v17.5.1
-]]></description>
-    </item>
-    <item>
-      <title>Publicis Connector 17.0.2</title>
-      <link>https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.2</guid>
-      <pubDate>Tue, 27 Oct 2026 16:29:10 GMT</pubDate>
-      <description><![CDATA[### Fixed
-
-- A job submitted in the background could create two Publicis orders. If the scheduled check sent a job while its queued submission was still waiting, the queued submission sent it again, and the job could end up linked to the order Publicis wasn't working on. Each job is now reloaded before it is sent and skipped if it already has an order. A check that times out waiting for another check to finish now stops instead of running anyway, and the job is sent on the next scheduled check.
-
-### Changed
-
-- When a job is sent to Publicis, the connector logs the job and its Publicis order number at Information.
-- Dependency updates.
-
-**Full Changelog**: https://github.com/Jumoo/TranslatePlus-Connector/compare/v17.0.1...v17.0.2
-]]></description>
-    </item>
-    <item>
-      <title>uSync Engage 17.0.0-beta01</title>
-      <link>https://github.com/Jumoo/uSync.Engage/releases/tag/v17.0.0-beta01</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Engage/releases/tag/v17.0.0-beta01</guid>
-      <pubDate>Tue, 27 Oct 2026 16:01:02 GMT</pubDate>
-      <description><![CDATA[**Full Changelog**: https://github.com/Jumoo/uSync.Engage/commits/v17.0.0-beta01]]></description>
-    </item>
-    <item>
-      <title>Linked Pages 18.0.6</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.6</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.6</guid>
-      <pubDate>Tue, 27 Oct 2026 16:00:40 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Drop Umbraco.Cms and DevelopmentMode.Backoffice package dependencies by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/51
-
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/v18.0.5...v18.0.6]]></description>
-    </item>
-    <item>
-      <title>AI Connector 18.4.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.1</guid>
-      <pubDate>Tue, 27 Oct 2026 08:22:40 GMT</pubDate>
-      <description><![CDATA[### Fixed
-
-- A long system prompt no longer fails the job with "String or binary data would be truncated
-  in table 'Translate_Jobs'". The job keeps a copy of the prompt for "View Prompt" in a column
-  that holds 2,048 characters; that copy is now cut to 500 characters when the job's details
-  won't fit, and a long list of batch errors is trimmed with a count of how many were dropped.
-  The full prompt is still sent to the model.
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v18.4.0...v18.4.1
-]]></description>
-    </item>
-    <item>
-      <title>AI Connector 17.7.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.2</guid>
-      <pubDate>Tue, 27 Oct 2026 08:14:04 GMT</pubDate>
-      <description><![CDATA[### Fixed
-
-- A long system prompt no longer fails the job with "String or binary data would be truncated
-  in table 'Translate_Jobs'". The job keeps a copy of the prompt for "View Prompt" in a column
-  that holds 2,048 characters; that copy is now cut to 500 characters when the job's details
-  won't fit, and a long list of batch errors is trimmed with a count of how many were dropped.
-  The full prompt is still sent to the model.
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.7.1...v17.7.2
-]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 18.3.0</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.3.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.3.0</guid>
-      <pubDate>Mon, 26 Oct 2026 17:28:53 GMT</pubDate>
-      <description><![CDATA[Forward-ports v17.6.0 from v17/main.
-
-### Added
-- Publisher: approvals. A server can require approval for content pushes and
-  pulls; the push or pull stops after the report until someone in the
-  server's approver groups approves or declines it. Turn it on with "Require
-  approval" on the server's Permissions view. Settings pushes and pulls are
-  not affected
-- Publisher: an approved push or pull is sent again and the target re-checked
-  before anything is applied, showing anything that changed since the request
-- Publisher: Approvals dashboard in the Content section (requests waiting for
-  you, your requests, history), shown only when approvals are in use
-- Publisher: approval emails to approvers and requesters when SMTP is
-  configured, overridable with templates in `~/uSync/emails/`, plus
-  `PublisherApprovalRequestedNotification`, `PublisherApprovalDecidedNotification`
-  and `PublisherApprovalFinishedNotification`
-- Publisher: the Sync Queue. Turn on "Allow queuing" on a server's Permissions
-  view to get an "Add to queue" action and a per-user Sync Queue dashboard in
-  the Content section, for pushing several items, of any type, together
-- Single-call background API: `POST Publisher/Start` and `POST Exporter/Start`,
-  with `GET Exporter/Download/{id}` for a finished export
-- Background runs that are queued, scheduled or running can be cancelled from
-  the Background screen
-
-### Changed
-- Publisher: the push and pull buttons only appear for user groups whose
-  default permissions allow a push or pull
-- Publisher: a media file is not sent when the target already has an identical
-  copy at the same path; the media item is still synced
-- Publisher: the first step of a push or pull says it is finding items, and
-  how many it found
-- Publisher: the push, pull and add to queue actions sit in their own section
-  of the actions menu
-- The Restore points screen uses a workspace view
-- Bumped `jumoo.processing` to 18.3.0
-- Bumped uSync to 18.2.0
-
-### Fixed
-- Publisher: the push dialog no longer collapses to nothing in Safari 26.4
-- Publisher: progress during a push or pull updates as items are processed
-- Publisher: import failures are shown in the push and pull result
-- Publisher: pushing from the content editor no longer goes ahead when the
-  save and publish step is cancelled
-- Publisher: the current server is recognised when the site is reached over a
-  different scheme, port or letter case than its configured url
-- Importing user groups exported from Umbraco 13 keeps their permissions
-- Push and pull no longer fail on some hosts with "The converter for derived
-  type 'System.Collections.IDictionary' does not support metadata writes or
-  reads"
-- TimeMachine: the timeline refreshes when you come back to it
-- Exporter: `GetExport` returns Not Found or Bad Request for an unknown or
-  invalid export, rather than a server error
-- The Background screen shows its process and queue lists again
-- Publisher: spelling and pluralisation fixes in result messages
-
-]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 18.4.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.4.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.4.0</guid>
-      <pubDate>Mon, 26 Oct 2026 16:06:24 GMT</pubDate>
-      <description><![CDATA[Forward-ported from v17 (17.9.4 and 17.10.0): approval error handling and a save-only auto-approve option (Jumoo/Jumoo.TranslationManager#85), link updater fixes for separate-tree sites, and Jumoo.Processing 18.3.0. On v18 the save/publish checks also cover element items, which are saved through the same content accessor.
-
-- Add: `Translation:ContinueOnApprovalError` (appsettings only, off by default). When it's on, approving a job skips any item that fails to save or publish, records the error in the job history, and carries on with the rest, so only the broken items are left to approve again. Background approval already skipped failed items
-- Add: when items are skipped this way, the approval results dialog now lists them (across every page of the approval) and counts only the items that were actually approved. Before, it reported every selected item as approved
-- Change: a save or publish that fails without throwing an exception is now treated as a failed approval. This covers a notification handler cancelling it, the target's parent not being published in that culture, or invalid content. Before, these failures were ignored and the item was marked Approved even though nothing was published. With the setting above off, the approval now stops with the reason, which is also written to the job history. With it on, the item is skipped. A failed publish also rolls back the save, so the item's content is left as it was. **Connectors that call `TranslationJobService.Progress()` directly** (e.g. to auto-approve the items they've just imported) get this too: a failure that used to pass silently now throws, unless the site has `Translation:ContinueOnApprovalError` on
-- Change: the job-level approved/published notifications (`TranslationJobApprovedNotification` / `TranslationJobPublishedNotification`) and the "Approved"/"Published" job history entries now only happen once every item on the job is approved. Before, they fired for every page of a paged approval, and when only some of a job's items were approved. This applies to connectors calling `Progress()` directly as well. `TranslationJobPartialApprovalNotification` still fires for each batch, now with only the items that were actually approved (and not at all when none were)
-- Change: an item that approval leaves untouched - a `TranslationNodeApprovingNotification` handler cancelled it, or its source or target content can't be found - is now listed as skipped, with the reason in the job history. Before, it was counted (and reported) as approved
-- Add: for developers - `TranslationJobService.Progress(job, nodes, TranslationProgressOptions)` returns a `TranslationProgressResult` with the processed and failed items and the resulting job status, and `CheckAndUpdateJobStatusAsync` returns the status it sets. `TranslationProgressOptions.ContinueOnError` defaults to the site's `Translation:ContinueOnApprovalError` setting, which is also what the existing `Progress` overloads use. `ITranslationAprovalService.ApproveWithResultAsync` returns the items that were skipped. The existing `Progress` / `CheckAndUpdateJobStatus` / `ApproveAsync` signatures are unchanged, and `TranslationJobService` has a new constructor taking a `TranslationConfigService` (the old one is obsolete)
-- Fix: on a site upgraded from an older version, a property could be sent to translation twice, for example as two identical segments in an XLIFF file. This affected items that were already waiting for translation before the upgrade and were then updated. They now correct themselves the next time the item is updated (Jumoo/Jumoo.TranslationManager.Issues#87)
-- Fix: a block containing a culture-variant nested block list (or a culture-variant rich text editor with blocks), sitting on an invariant block property on a culture-variant page, wasn't fully translated. The items inside the nested list (and the blocks inside the rich text) weren't sent for translation, and the nested items weren't exposed in the target language either, so they showed as drafts there and didn't render (forward-ported from v17, Jumoo/Jumoo.TranslationManager#125)
-- Add: a "Save only (do not publish)" option under "Automatic approval" in a translation set's processing options. Since background approval was added, auto-approve has always published; with this on, auto-approved translations are saved as drafts instead, so a translator can check them before they go live
-- Fix: dates in the backoffice (the job view's items table and elsewhere) were shown in UTC rather than the editor's own time zone - an hour behind during BST, for example. The API now returns every date as UTC with its offset, so the browser shows local time
-- Fix: approving with "Approve in Background" ticked (with `Translation:backgroundApproval` on) left the approval dialog blank, both while the approval ran and after it finished. It now shows the progress and the results. The approval itself always worked
-- Fix: on a separate-tree set, links in rich text and Multi URL Picker properties on the translated page kept pointing at the master site's pages after approval. They're now updated to the related page on the target site. The picker links had never been updated (a check in the link updater was the wrong way round), and rich text links were missed because Umbraco stores the rich text html escaped inside its json value (Jumoo/Jumoo.TranslationManager.Issues#108)
-- Change: the link updater logs (at debug) each link it maps, and why it leaves one unchanged, and only logs "Updating property" when a value actually changed
-- Fix: translating a culture-variant block property no longer leaves the source language's element values (or expose entries) on the target page
-- Fix: links to content are now updated on the target site when the content's id is upper case or the link is url encoded (`%7BlocalLink:`), or written without a leading slash, matching how Umbraco itself reads them
-- Fix: links are kept when a translator edits a value in Translation Manager's rich text editor, which now has link and unlink buttons
-- Fix: on a fresh install where another package publishes content at startup (for example uSync with `ImportAtStartup`), Translation Manager no longer logs `no such table` errors for each item. Its content handlers now wait until its tables exist
-- Fix: background translation tasks that fail or are cancelled now show the error, instead of "Processing in background" forever
-- Fix: the "translation jobs created" headline is now localised
-- Add: a separator sits above Translation Manager's actions in the content actions menu
-- Build: Jumoo.Processing 18.3.0 (and `@jumoo/processing` ^18.3.0), which carries the background pipeline fixes from Processing 17.5.0. uSync.Complete uses the same library, so a site with uSync.Complete installed may also need its latest v18 release
-- Build: dependency updates (HtmlAgilityPack 1.13.1 lock files, Microsoft.NET.Test.Sdk 18.11.0)
-
-]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 17.6.0</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.6.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.6.0</guid>
-      <pubDate>Mon, 26 Oct 2026 15:46:25 GMT</pubDate>
-      <description><![CDATA[- New in uSync.Publisher: approvals. A server can require approval for
-  content pushes and pulls to and from it. The push or pull stops after the
-  report until someone in the server's approver groups approves or declines
-  it. Turn it on with "Require approval" on the server's Permissions view,
-  where you also pick the approver groups (admins can always approve) and how
-  many days a request waits before it expires. Settings pushes and pulls are
-  not affected
-- When a push or pull is approved, uSync sends it again and re-checks the
-  target before applying it, and shows anything that changed since the
-  request was made
-- New Approvals dashboard in the Content section, with the requests waiting
-  for you, the requests you have made, and their history. It only appears
-  when approvals are in use
-- Approvers are emailed when a request needs them, and requesters when theirs
-  is decided or fails, when SMTP is configured. Each email can be overridden
-  by putting a template in `~/uSync/emails/`. Sites can also handle the new
-  `PublisherApprovalRequestedNotification`, `PublisherApprovalDecidedNotification`
-  and `PublisherApprovalFinishedNotification` to send them elsewhere
-- New in uSync.Publisher: the Sync Queue. Turn on "Allow queuing" on a
-  server's Permissions view and items get an "Add to queue" action (also in
-  the content editor's push menu and on the content and media browser
-  dashboards). Each user has their own queue, shown on the new Sync Queue
-  dashboard in the Content section. Pick the items to send, choose whether
-  each one includes its children, and push them together through the usual
-  push dialog. Items leave the queue once their push goes through. The
-  action and dashboard only appear when a server allows queuing
-- New single-call background API: `POST Publisher/Start` runs a push, pull or
-  settings push/pull, and `POST Exporter/Start` runs an export, in the
-  background. `GET Exporter/Download/{id}` downloads the finished export
-- The push and pull buttons now only appear for user groups whose default
-  permissions allow a push or pull
-- uSync.Publisher no longer sends a media file when the target server already
-  has an identical copy at the same path. The media item is still synced.
-  Pushes and pulls between sites that share a media store (for example one
-  Azure Blob container) no longer upload files the other site can already
-  read
-- Fix: the push dialog no longer collapses to nothing in Safari 26.4, which
-  left the backoffice looking locked
-- Fix: progress during a push or pull updates as items are processed again,
-  including the "Uploading to server" and "Packing items" messages
-- The first step of a push or pull now says it is finding items, and how many
-  it found
-- Fix: import failures are now shown in the push and pull result
-- Fix: the TimeMachine timeline refreshes when you come back to it
-- Fix: the content browser card's focus ring no longer covers the Compare
-  button
-- Fix: Exporter's `GetExport` returns Not Found or Bad Request for an unknown
-  or invalid export, rather than a server error
-- Fix: pushing from the content editor no longer goes ahead when you cancel
-  the save and publish step, which pushed the previously published version
-- Fix: Publisher recognises the server it is running on when the site is
-  reached over a different scheme, port or letter case than its configured
-  url, and a server url no longer matches a different host that starts with
-  the same text
-- Fix: importing user groups exported from Umbraco 13 now maps their
-  permissions to the current permission names, so the groups keep their
-  permissions
-- Fix: push and pull no longer fail on some hosts with "The converter for
-  derived type 'System.Collections.IDictionary' does not support metadata
-  writes or reads"
-- Ready for Umbraco 17.8: the Publisher actions sit in their own section of
-  the actions menu, and the Restore points view no longer logs a deprecation
-  warning
-- Spelling and pluralisation fixes in Publisher result messages
-- Requires Jumoo.Processing 17.5.0 and uSync 17.5.0
-
-]]></description>
-    </item>
-    <item>
-      <title>uSync 18.2.0</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v18.2.0</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.2.0</guid>
-      <pubDate>Mon, 26 Oct 2026 15:30:35 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Add Playwright end-to-end tests for the uSync dashboard by @KevinJump in https://github.com/KevinJump/uSync/pull/1111
-* Correct the nightly feed checkout comment by @KevinJump in https://github.com/KevinJump/uSync/pull/1114
-* Correct the nightly feed checkout comment by @KevinJump in https://github.com/KevinJump/uSync/pull/1115
-* Clean up the uSync swagger doc: ImportSingle response and setting defaults by @KevinJump in https://github.com/KevinJump/uSync/pull/1116
-* Use Clear(key) for exact-key cache removal by @KevinJump in https://github.com/KevinJump/uSync/pull/1117
-* Fix import ordering overflow past 1000 siblings by @KevinJump in https://github.com/KevinJump/uSync/pull/1119
-* Merge v17/main into v18/main (2026-10-13) by @KevinJump in https://github.com/KevinJump/uSync/pull/1120
-* Bump source-map-js from 1.2.1 to 1.2.2 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1112
-* Bump prosemirror-view from 1.41.9 to 1.42.6 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1113
-* Bump dompurify and monaco-editor in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1109
-* Bump source-map-js from 1.2.1 to 1.2.2 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1121
-* Merge v17/main into v18/main (2026-10-13) by @KevinJump in https://github.com/KevinJump/uSync/pull/1122
-* Match URL-encoded localLink tags in RTE dependencies by @KevinJump in https://github.com/KevinJump/uSync/pull/1133
-* Log the server role at startup and document 17.8 election by @KevinJump in https://github.com/KevinJump/uSync/pull/1134
-* Reconnect the uSync SignalR hub automatically by @KevinJump in https://github.com/KevinJump/uSync/pull/1135
-* Clean URL alias rows for the old key on a content key change by @KevinJump in https://github.com/KevinJump/uSync/pull/1136
-* Bump actions/checkout from 4 to 7 by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1123
-* Bump the nuget-dependencies group with 4 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1131
-* Bump the npm-dependencies group in /uSync.Backoffice.Management.Client/usync-assets with 5 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1124
-* Bump the npm-dependencies group in /uSync.History/history-client with 4 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1125
-* Bump @rollup/plugin-node-resolve from 15.3.1 to 16.0.3 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1128
-* Bump vite-plugin-dts from 4.5.4 to 5.1.2 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1126
-* Bump chalk from 5.6.2 to 6.0.1 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1127
-* Bump eslint from 10.12.0 to 10.13.0 in /uSync.Backoffice.Management.Client/usync-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1138
-* Merge v17/main into v17/17.5.0 by @KevinJump in https://github.com/KevinJump/uSync/pull/1139
-* uSync 17.5.0: Umbraco 17.8 readiness by @KevinJump in https://github.com/KevinJump/uSync/pull/1137
-* Bump dompurify from 3.4.15 to 3.4.17 in /uSync.Backoffice.Management.Client/usync-assets by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1140
-* Bump dompurify from 3.4.16 to 3.4.17 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1141
-* Merge v17/main into v18/main (2026-10-26) by @KevinJump in https://github.com/KevinJump/uSync/pull/1142
-
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.1.5...v18.2.0]]></description>
-    </item>
-    <item>
-      <title>LanguageWire Connector 18.0.2</title>
-      <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v18.0.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v18.0.2</guid>
-      <pubDate>Mon, 26 Oct 2026 15:25:10 GMT</pubDate>
-      <description><![CDATA[
-### Fixed
-
-- The connector's backoffice views couldn't load their data: calls to the LanguageWire API went
-  out without the editor's sign-in token. The client now attaches the token to every call, as
-  the 17.x line already did.
-- A LanguageWire backoffice API call that isn't authenticated now returns a 403 error instead of
-  a 401. The backoffice treats any 401 as an expired session, so the failing calls above signed
-  the editor out (also in 17.1.3).
-
-]]></description>
-    </item>
-    <item>
-      <title>LanguageWire Connector 17.1.3</title>
-      <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.3</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.3</guid>
-      <pubDate>Mon, 26 Oct 2026 15:21:43 GMT</pubDate>
-      <description><![CDATA[
-### Fixed
-
-- A LanguageWire backoffice API call that isn't authenticated now returns a 403 error instead of
-  a 401. The backoffice treats any 401 as an expired session, so a single failed call from a
-  connector view could sign the editor out.
-
-]]></description>
-    </item>
-    <item>
-      <title>LanguageWire Connector 18.0.1</title>
-      <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v18.0.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v18.0.1</guid>
-      <pubDate>Mon, 26 Oct 2026 14:38:29 GMT</pubDate>
-      <description><![CDATA[
-### Fixed
-
-- The connector's settings, pending and submitted views were blank in the Umbraco 18 backoffice.
-  The client is built as a bundle, but it was registered as an entry point, so none of its
-  extensions loaded. It is now registered as a bundle.
-
-]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Processing 18.3.0</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.0</guid>
-      <pubDate>Mon, 26 Oct 2026 14:27:39 GMT</pubDate>
-      <description><![CDATA[Includes everything in 17.5.0, merged forward from `v17/main`.
-
-### Added
-
-- **Headless pipeline runs.** `IPipelineRunner` starts a pipeline in one call - created as a
-  background request, options applied, posted to the processing queue - and returns once it is
-  queued. Over the API: `POST StartPipeline` (`202` with the pipeline id and a status URL, `409`
-  with the running pipeline's id when the concurrency key is held), `GET PipelineStatus/{id}` and
-  `POST CancelPipeline/{id}`. Status reports `Queued`/`Running`/`Scheduled`/`Waiting`/`Completed`/
-  `Failed`/`Cancelled`; `complete` is only true once the run has finished (a `Waiting` run has not),
-  and errors carry the message, action and step but no stack trace.
-- **Cancel.** A new `Cancelled` pipeline status (added at the end of `PipelineStatus`, so existing
-  values don't move) and a `CancelRequested` flag on the pipeline state. Cancel is cooperative: it
-  takes effect before the next step, and the strategy's clean runs. The `@jumoo/processing` client
-  treats `Cancelled` like `Failed`. `PipelineCleanupJob` removes cancelled pipelines along with
-  completed and failed ones, and never removes waiting ones.
-- **Concurrency keys.** `IPipelineProcessor.GetConcurrencyKey(strategy, options)` (default `null`).
-  Every way of starting a pipeline gets the processor's key; while one pipeline holding a key is
-  `Running`, `Background` or `Scheduled`, another with the same key is refused, and a `Waiting` one
-  can't resume. Stored in a new indexed `ConcurrencyKey` column on `Jumoo_Pipelines`. An
-  interactive pipeline left `Running` by a closed browser stops holding its key after
-  `Jumoo:Processing:Pipelines:ConcurrencyKeyIdleTimeout` (default one hour). A background one
-  stops holding its key once nothing will run it - no queue row left, or one out of attempts -
-  and it has been quiet for a queue lease. The check and the save take the processing write
-  lock, so two nodes can't both get the same key.
-- **"Already running" is a 409 everywhere.** `CreatePipeline`, `UpdatePipeline` and
-  `ProcessPipeline` (resume) answer a held concurrency key with `409` and a
-  `PipelineConflictProblemDetails` body - a `ProblemDetails` with the holder's `runningPipelineId`
-  and the `concurrencyKey`, the same fields `StartPipeline`'s `409` carries. Every other failure is
-  still a `400`. In the backoffice, `<jumoo-pipeline>` shows an inline "Already running" state
-  (with the holder's status, when the user can see it) instead of an error toast over an empty
-  modal, and fires `pipeline-conflict`. `getPipelineConflict(error)` reads the
-  body off a failed request.
-- **Resume.** `IPipelineRunner.ResumeAsync(id, user, expectedAction)` moves a `Waiting` pipeline
-  on, onto the processing queue, so the rest of the run needs no browser - for an action with
-  `WaitOnAction` that waits on something outside the pipeline, such as an approval. Pass the
-  action it should be waiting at, and a second resume is refused with the new
-  `PipelineRunRejectedReason.NotWaiting`, so the run only moves on once. The status check, the
-  concurrency key and the move to the queue are one write. A default interface member, so existing
-  implementers still load.
-- **Pause, resume and finish notifications.** `PipelineWaitingNotification` when a top-level
-  pipeline stops at an action that waits, `PipelineResumedNotification` (with who resumed it) from
-  `ResumeAsync`, and `PipelineFinishedNotification` when one completes, fails or is cancelled.
-  Each is raised once, by the processing that got the pipeline there.
-- **`ProcessingConstants` is public**, so packages can write
-  `[ProcessingSwagger(ProcessingConstants.ApiName)]` rather than the literal `"processing"`.
-- **Run summaries.** `IPipelineProcessor.GetSummary(pipeline)` (default `null`) fills the status's
-  `summary`. Register your own `IPipelineRunSummary` type with `AddPipelineRunSummaryType<T>()`.
-- **Node affinity.** `IPipelineProcessor.RequiresNodeAffinity` (default `false`) keeps a
-  processor's background work on the node that queued it, for steps that keep working state on
-  local disk. Only that node can claim the pipeline's queue rows; if it stops heartbeating for a
-  queue lease, the pipeline fails with "Processing node lost". A default interface member, so
-  existing processors load unchanged.
-
-### Changed
-
-- **`@jumoo/processing` now publishes to npmjs.org**, not the Azure DevOps npm feed, which stops
-  being anonymously readable in 2027. Pin the major you need (`^18`); nightlies are on the
-  `next-18` dist-tag. Remove any `@jumoo:registry=` line from your `.npmrc`, then regenerate your
-  lock file.
-- **Pipelines are private to the user who started them.** `PipelineProcessorBase.CanAccessPipeline`
-  now allows the pipeline's creator or a member of the Umbraco admin group, rather than any
-  backoffice user. Pipelines with no recorded owner stay open as before. Processors that override
-  it and call `base` first inherit the change.
-- Options passed to `CreatePipeline` are applied before the pipeline is first saved, so the
-  concurrency key is checked at create.
-- A step that posts to the background straight into an action with `WaitOnAction` now leaves the
-  pipeline `Waiting`. It used to stay `Background` with nothing queued to run it.
-- A pipeline that stops at an action with `WaitOnAction` becomes a background request, wherever
-  it was started: it is waiting on something outside it, not on the browser, so closing the
-  `<jumoo-pipeline>` dialog no longer clears it. Actions with only an `Element` are unchanged.
-- **A failed step is no longer retried from the queue.** Retrying re-ran the same step and repeated
-  whatever it did before failing, so the queue row is now removed. Infrastructure failures
-  (pipeline not found, an exception outside the step) still retry with backoff.
-- The queue endpoints (`ListQueue`, `PeekItem`, `ProcessQueue`, `DeleteQueue`) now need the admin
-  group as well as backoffice access.
-- The queue worker runs as the user who started the pipeline.
-- `PipelineCleanupJob` runs the strategy's `Clean` before removing a finished pipeline, so working
-  files a strategy keeps on disk no longer outlive it.
-
-### Fixed
-
-- **"SQLite Error 6: database table is locked".** Every queue, status and pipeline-cache write now
-  takes a write lock in `umbracoLock` first, as Umbraco's own services do, so writers queue behind
-  each other instead of deadlocking.
-- Queue dates are returned as UTC, so a queued item's scheduled time no longer shows an hour out.
-
-]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 17.6.0-rc2</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.6.0-rc2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.6.0-rc2</guid>
-      <pubDate>Mon, 26 Oct 2026 14:01:59 GMT</pubDate>
-      <description><![CDATA[Release candidate for 17.6.0.
-
-## What's changed
-
-- New in uSync.Publisher: approvals. A server can require approval for
-  content pushes and pulls to and from it. The push or pull stops after the
-  report until someone in the server's approver groups approves or declines
-  it. Turn it on with "Require approval" on the server's Permissions view,
-  where you also pick the approver groups (admins can always approve) and how
-  many days a request waits before it expires. Settings pushes and pulls are
-  not affected
-- When a push or pull is approved, uSync sends it again and re-checks the
-  target before applying it, and shows anything that changed since the
-  request was made
-- New Approvals dashboard in the Content section, with the requests waiting
-  for you, the requests you have made, and their history. It only appears
-  when approvals are in use
-- Approvers are emailed when a request needs them, and requesters when theirs
-  is decided or fails, when SMTP is configured. Each email can be overridden
-  by putting a template in `~/uSync/emails/`. Sites can also handle the new
-  `PublisherApprovalRequestedNotification`, `PublisherApprovalDecidedNotification`
-  and `PublisherApprovalFinishedNotification` to send them elsewhere
-- New in uSync.Publisher: the Sync Queue. Turn on "Allow queuing" on a
-  server's Permissions view and items get an "Add to queue" action (also in
-  the content editor's push menu and on the content and media browser
-  dashboards). Each user has their own queue, shown on the new Sync Queue
-  dashboard in the Content section. Pick the items to send, choose whether
-  each one includes its children, and push them together through the usual
-  push dialog. Items leave the queue once their push goes through. The
-  action and dashboard only appear when a server allows queuing
-- New single-call background API: `POST Publisher/Start` runs a push, pull or
-  settings push/pull, and `POST Exporter/Start` runs an export, in the
-  background. `GET Exporter/Download/{id}` downloads the finished export
-- The push and pull buttons now only appear for user groups whose default
-  permissions allow a push or pull
-- uSync.Publisher no longer sends a media file when the target server already
-  has an identical copy at the same path. The media item is still synced.
-  Pushes and pulls between sites that share a media store (for example one
-  Azure Blob container) no longer upload files the other site can already
-  read
-- Fix: the push dialog no longer collapses to nothing in Safari 26.4, which
-  left the backoffice looking locked
-- Fix: progress during a push or pull updates as items are processed again,
-  including the "Uploading to server" and "Packing items" messages
-- The first step of a push or pull now says it is finding items, and how many
-  it found
-- Fix: import failures are now shown in the push and pull result
-- Fix: the TimeMachine timeline refreshes when you come back to it
-- Fix: the content browser card's focus ring no longer covers the Compare
-  button
-- Fix: Exporter's `GetExport` returns Not Found or Bad Request for an unknown
-  or invalid export, rather than a server error
-- Fix: pushing from the content editor no longer goes ahead when you cancel
-  the save and publish step, which pushed the previously published version
-- Fix: Publisher recognises the server it is running on when the site is
-  reached over a different scheme, port or letter case than its configured
-  url, and a server url no longer matches a different host that starts with
-  the same text
-- Fix: importing user groups exported from Umbraco 13 now maps their
-  permissions to the current permission names, so the groups keep their
-  permissions
-- Fix: push and pull no longer fail on some hosts with "The converter for
-  derived type 'System.Collections.IDictionary' does not support metadata
-  writes or reads"
-- Ready for Umbraco 17.8: the Publisher actions sit in their own section of
-  the actions menu, and the Restore points view no longer logs a deprecation
-  warning
-- Spelling and pluralisation fixes in Publisher result messages
-- Requires Jumoo.Processing 17.5.0 and uSync 17.5.0
-
-]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.10.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.10.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.10.0</guid>
-      <pubDate>Mon, 26 Oct 2026 12:26:28 GMT</pubDate>
-      <description><![CDATA[- Fix: on a separate-tree set, links in rich text and Multi URL Picker properties on the translated page kept pointing at the master site's pages after approval. They're now updated to the related page on the target site. The picker links had never been updated (a check in the link updater was the wrong way round), and rich text links were missed because Umbraco 17 stores the rich text html escaped inside its json value (Jumoo/Jumoo.TranslationManager.Issues#108)
-- Change: the link updater logs (at debug) each link it maps, and why it leaves one unchanged, and only logs "Updating property" when a value actually changed
-- Fix: translating a culture-variant block property no longer leaves the source language's element values (or expose entries) on the target page. They could show as source text if the element type was later made invariant
-- Fix: links to content are now updated on the target site when the content's id is upper case or the link is url encoded (`%7BlocalLink:`), or written without a leading slash, matching how Umbraco itself reads them
-- Fix: links are kept when a translator edits a value in Translation Manager's rich text editor, which now has link and unlink buttons
-- Fix: on a fresh install where another package publishes content at startup (for example uSync with `ImportAtStartup`), Translation Manager no longer logs `no such table` errors for each item. Its content handlers now wait until its tables exist
-- Fix: background translation tasks that fail or are cancelled now show the error, instead of "Processing in background" forever
-- Fix: the "translation jobs created" headline is now localised
-- Add: on Umbraco 17.8+, a separator sits above Translation Manager's actions in the content actions menu (ignored on earlier versions)
-- Build: Jumoo.Processing 17.5.0 (and `@jumoo/processing` 17.5.0). uSync.Complete uses the same library, so a site with uSync.Complete installed may also need its latest v17 release
-- Build: the bundled DeepL connector is now 17.4.0
-- Build: dependency updates (HtmlAgilityPack 1.13.1, vite, Microsoft.NET.Test.Sdk)
-
-]]></description>
-    </item>
-    <item>
-      <title>Maintenance Mode 18.2.0</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.0</guid>
-      <pubDate>Mon, 26 Oct 2026 11:55:38 GMT</pubDate>
-      <description><![CDATA[
-### Added
-
-- Opt-in anonymous status url, `/umbraco/maintenance/status`, returning only
-  `isInMaintenanceMode`, `isContentFrozen` and `isSiteLocked` for monitoring dashboards. Turned on
-  with the new **Public status url** option in the dashboard's advanced settings (#66).
-- Documentation for the Url and IP whitelists, and for Umbraco Cloud's `/umbraco-signin-oidc` login
-  callback. The dashboard descriptions now say both whitelists are comma-separated (#76).
-
-### Fixed
-
-- The unfreeze option's description showed a raw localization key, and the toggle repeated its
-  label.
-
-### Changed
-
-- `IPNetwork2` updated from 4.3.0 to 5.0.1 (#115). IP whitelist matching behaves the same.
-- Backoffice client dependency updates (vite).
-
 ]]></description>
     </item>
   </channel>
