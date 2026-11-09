@@ -5,6 +5,97 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync Complete 18.4.0</title>
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.4.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.4.0</guid>
+      <pubDate>Sun, 08 Nov 2026 12:25:25 GMT</pubDate>
+      <description><![CDATA[# v18.4.0
+
+Brings the v17.7.0 work forward to Umbraco 18. The headline is a Side by side
+preview in the change details dialog, which shows what an item will look like
+once it is synced. This release also adds a temporary licence for keys from
+older versions, a Content & Media server template, and a notification for
+code that needs to know when a push or pull has finished. It now requires
+uSync 18.3.1 or later.
+
+## Added
+
+- A Side by side tab in the change details dialog, on the Publisher,
+  Exporter, snapshot, restore point and TimeMachine rollback reports. It
+  previews the item from what is being synced (the sync pack, snapshot,
+  restore point or rollback) rather than from the site's uSync folders.
+  Pushes are previewed on the target server, when the target supports it.
+- The licence page can get a one-off 60 day temporary licence for a key from
+  an older version of uSync.Complete, so a site keeps working while you
+  upgrade the licence.
+- Publisher: a "Content & Media" server template, for sites that deploy
+  settings and files with uSync and source control. It is first in the list
+  and selected by default when you add a server.
+- Publisher: `uSyncPublisherActionCompletedNotification` is raised on the
+  server that started a push or pull, once it finishes. That covers the push
+  dialog, headless runs and the background queue. The notification has the
+  target server, the user, the items pushed (with their children) and the
+  result for each item, dependencies included. For code handling
+  `PipelineFinishedNotification`, `uSyncPublisher.Pipelines.Publish` gives
+  the Publisher pipeline's alias.
+- Publisher: an "Include shared values" option on language limited pushes and
+  pulls. The report says when shared values were not compared.
+
+## Changed
+
+- The change details dialog's tabs are now Side by side, Web page and
+  Details. Both sides are labelled Current and Incoming with the site's name,
+  and the incoming side is on the left.
+- Publisher: the "Content & Media & Settings" server template is now called
+  "Everything". A new server set up from it includes settings and files in
+  its pushes and pulls. Servers you have already set up keep their settings.
+- Publisher: when a server turns down a connection, both servers log the
+  address they used for the request, so the two can be compared.
+- `MaxRequestBodySize` (Publisher and Exporter) now applies on IIS as well as
+  Kestrel. Large pushes and uploads on IIS only need `maxAllowedContentLength`
+  raised in web.config. The setting only raises the limit, so a site that
+  already allows more keeps its own.
+
+## Fixed
+
+- Publisher: approvals only apply to content, media and member pushes and
+  pulls. Pushing or pulling settings from the Settings tree (document types,
+  templates, stylesheets and so on) no longer waits for approval.
+- Publisher: items pushed from the Sync Queue leave the queue once an
+  approval goes through, or when the report finds the target already has
+  them.
+- Publisher: a settings push or pull only sends the website folders for the
+  file types you pick, so pushing stylesheets no longer sends `Views`.
+- Publisher: a push to a site in Production mode no longer lists website file
+  changes that site won't apply. The report shows a note when files differ
+  instead.
+- Publisher: a root push with "Delete missing" ticked now deletes from the
+  target when `AllowDeletingOfOrphanedItemsFromRoot` is set, and only for the
+  orphan types.
+- Publisher: a full push no longer sends values for unpublished cultures.
+- Publisher: the language step says that content that doesn't vary by
+  language is sent in full when only some languages are selected.
+- Publisher: servers connect to each other when a URL rewrite rule or
+  middleware changes the case of the request path, and on sites where
+  authentication runs before Umbraco's pipeline in Program.cs.
+- Pushing or pulling a document, media or member type always includes its
+  compositions, whether or not "Include dependencies" is on.
+- The Web page tab says when an item doesn't exist on the other site yet,
+  instead of reporting no differences.
+- When the Side by side tab can't preview an item, for example content whose
+  document type isn't on the other site yet, the tab says so instead of
+  disappearing.
+- The backoffice screens show an error when an API request fails. Some
+  failures were silently ignored before.
+
+## Requirements
+
+- Umbraco 18.
+- uSync 18.3.1 or later.
+- Jumoo.Processing 18.3.2 (installed automatically).
+]]></description>
+    </item>
+    <item>
       <title>uSync 18.3.1</title>
       <link>https://github.com/KevinJump/uSync/releases/tag/v18.3.1</link>
       <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.3.1</guid>
@@ -1205,35 +1296,6 @@ Supports Umbraco 17.3 to 17.8.
 
 - `IPNetwork2` updated from 4.3.0 to 5.0.1 (#115). IP whitelist matching behaves the same.
 - Backoffice client dependency updates (vite).
-
-]]></description>
-    </item>
-    <item>
-      <title>Maintenance Mode 17.2.0</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.2.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.2.0</guid>
-      <pubDate>Mon, 26 Oct 2026 11:53:30 GMT</pubDate>
-      <description><![CDATA[
-### Added
-
-- Opt-in anonymous status url, `/umbraco/maintenance/status`, returning only
-  `isInMaintenanceMode`, `isContentFrozen` and `isSiteLocked` for monitoring dashboards. Turned on
-  with the new **Public status url** option in the dashboard's advanced settings (#66).
-- Documentation for the Url and IP whitelists, and for Umbraco Cloud's `/umbraco-signin-oidc` login
-  callback. The dashboard descriptions now say both whitelists are comma-separated (#76).
-
-### Fixed
-
-- The Maintenance Mode dashboard label is now consistent with other backoffice dashboard
-  labels (#79).
-- The unfreeze option's description showed a raw localization key, and the toggle repeated its
-  label.
-
-### Changed
-
-- `IPNetwork2` updated from 3.6.0 to 5.0.1 (#115). IP whitelist matching behaves the same.
-- Backoffice client dependency updates (vite, markdown-it, prosemirror-view and the
-  npm-dependencies group). Dependabot no longer moves `typescript` to v6+ or bumps `@hey-api/*`.
 
 ]]></description>
     </item>
