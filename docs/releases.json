@@ -1,5 +1,44 @@
 [
   {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "CrowdIn Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "18.1.2",
+    "publishedAt": "2026-11-09T15:01:59Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/18.1.2",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.2",
+    "notes": "## What's Changed\n* Fix default project setting not being read back after save by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/21\n* Merge v17/main into v18/main (2026-11-09) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/22\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/compare/v18.1.1...v18.1.2\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager.CrowdIn",
+    "title": "CrowdIn Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CrowdIn",
+    "version": "17.2.3",
+    "publishedAt": "2026-11-09T15:01:54Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CrowdIn/17.2.3",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.3",
+    "notes": "## What's Changed\n* Fix default project setting not being read back after save by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/21\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/compare/v17.2.2...v17.2.3",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.7.4",
+    "publishedAt": "2026-11-09T14:26:22Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.7.4",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.4",
+    "notes": "### Added\n\n- The backoffice client types are published to npmjs.org as `@jumoo/translate-ai`, so\n  connectors that extend the AI translator settings can build against them with a plain\n  `npm install @jumoo/translate-ai@^17`. v17 releases carry the `latest-17` dist-tag, and\n  nightly builds publish under `next-17`.\n\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Umbraco.Community.PowerToys",
     "title": "PowerToys",
     "category": "Other",

@@ -5,6 +5,44 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>CrowdIn Connector 18.1.2</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.2</guid>
+      <pubDate>Mon, 09 Nov 2026 15:01:59 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Fix default project setting not being read back after save by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/21
+* Merge v17/main into v18/main (2026-11-09) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/22
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/compare/v18.1.1...v18.1.2
+]]></description>
+    </item>
+    <item>
+      <title>CrowdIn Connector 17.2.3</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.3</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.3</guid>
+      <pubDate>Mon, 09 Nov 2026 15:01:54 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Fix default project setting not being read back after save by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/21
+
+
+**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/compare/v17.2.2...v17.2.3]]></description>
+    </item>
+    <item>
+      <title>AI Connector 17.7.4</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.4</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.4</guid>
+      <pubDate>Mon, 09 Nov 2026 14:26:22 GMT</pubDate>
+      <description><![CDATA[### Added
+
+- The backoffice client types are published to npmjs.org as `@jumoo/translate-ai`, so
+  connectors that extend the AI translator settings can build against them with a plain
+  `npm install @jumoo/translate-ai@^17`. v17 releases carry the `latest-17` dist-tag, and
+  nightly builds publish under `next-17`.
+
+]]></description>
+    </item>
+    <item>
       <title>PowerToys 17.4.0</title>
       <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.4.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.4.0</guid>
@@ -994,132 +1032,6 @@ Supports Umbraco 17.3 to 17.8.
 
 
 **Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v17.2.0...v17.2.1]]></description>
-    </item>
-    <item>
-      <title>PowerToys 17.3.0</title>
-      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.3.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.3.0</guid>
-      <pubDate>Fri, 30 Oct 2026 11:34:01 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Add the Icon Colors power toy by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/73
-
-
-**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.2.0...v17.3.0]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Processing 19.0.0-beta01</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-beta01</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-beta01</guid>
-      <pubDate>Thu, 29 Oct 2026 17:45:29 GMT</pubDate>
-      <description><![CDATA[
-First beta for Umbraco 19 (`19.0.0-beta1`). Includes everything in 18.3.0.
-
-### Breaking
-
-- **Targets .NET 11 and Umbraco 19.** `net11.0`, built with the .NET 11 RC3 SDK. The
-  `@jumoo/processing` npm package pins `@umbraco-cms/backoffice` `19.0.0-beta1`.
-- **`IPipelineProcessor.Create(string)` is removed**, along with the `PipelineProcessorBase`
-  override. Both had been marked for removal. `Create(string strategy, PipelineCreationOptions
-  creationOptions)` is now on `IPipelineProcessor` itself. Processors that inherit
-  `PipelineProcessorBase` and don't override `Create(string)` need no changes.
-
-### Changed
-
-- **The processing hub authenticates with the backoffice cookie.** Umbraco 19 removed the
-  client-side backoffice token, so the SignalR connection no longer sends one. `startHub(methods)`
-  replaces `startHub(token, methods)`.
-- **Pipelines survive a session timeout.** When the session times out partway through a run,
-  Umbraco 19 asks the user to sign in again but only re-sends GET requests. The pipeline's create,
-  update and process calls now wait for the sign-in and then retry, so the run carries on and
-  options saved just before Process are kept.
-- **Runtime async is on**, as it is in Umbraco 19 for the betas. Drop the flag in
-  `Directory.Build.props` if it causes problems.
-
-### Fixed
-
-- The step row in the pipeline error modal now has its label.
-
-### Deprecated
-
-- `IPipelineOptionsProcessor`. Its `Create` method is on `IPipelineProcessor` now. Will be removed
-  in v21.
-- `startHub(token, methods)` in the npm package. The token is ignored. Will be removed in v21.
-
-]]></description>
-    </item>
-    <item>
-      <title>uSync 19.0.0-beta01</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v19.0.0-beta01</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v19.0.0-beta01</guid>
-      <pubDate>Wed, 28 Oct 2026 17:03:19 GMT</pubDate>
-      <description><![CDATA[This is the first beta of uSync for Umbraco v19. It's built against Umbraco 19.0.0-beta1 on .NET 11.
-
-> [!WARNING]
-> This is a beta for testing against the Umbraco 19 betas. Don't run it on a production site.
-
-## Changes
-
-### uSync has its own Synchronisation section
-
-uSync now opens in its own **Synchronisation** section instead of the Settings tree.
-
-![The uSync dashboard in the Synchronisation section](https://github.com/KevinJump/uSync/releases/download/v19.0.0-beta01/usync19-section.png)
-
-- On first boot, uSync gives the new section to the **Administrators** group. Other groups don't get it automatically, so add it to any group that needs uSync (Users > User groups > Sections).
-- Users who don't have the section but do have **Settings** still see uSync in the Settings tree.
-- To go back to the old layout, set `uSync:Settings:MoveToSection` to `false`.
-- The uSync API now uses the same check. A user needs the Settings or Synchronisation section to call it. Before, any user with the Content section could call it. (#1156)
-
-### Migrating old editors as you copy a legacy folder
-
-When uSync finds a folder from an earlier version (e.g. `uSync/v18`), the Migrate tab lets you copy it into `uSync/v19`:
-
-![The Migrate tab showing a legacy uSync/v18 folder](https://github.com/KevinJump/uSync/releases/download/v19.0.0-beta01/usync19-migrate-tab.png)
-
-Umbraco 19 replaces some editors, and the copy can now migrate them. The dialog lists the migrations that apply to your files and how many data types each one changes. You choose which ones run:
-
-![The copy dialog listing the Multi Node Tree Picker, single media picker and single dropdown migrations](https://github.com/KevinJump/uSync/releases/download/v19.0.0-beta01/usync19-migrate-modal.png)
-
-- **Multi Node Tree Pickers** move to the Document, Media or Member picker that matches the tree they pick from. Start node, dynamic root, allowed types and min/max items carry over, and stored media values are converted to the media picker format.
-- **Single media pickers** (a Media Picker that doesn't allow multiple items) move to the new Single Media Picker.
-- **Single dropdowns** move to the new Single Dropdown.
-
-The migrations rewrite the files as they're copied, so the import that follows is a normal import. The editor changes, so templates and models will see a different model type. Values inside blocks and rich text aren't converted yet. (#1155)
-
-### Importing pre-v19 data type config
-
-Importing data types from older files (without the Migrate tab) now follows Umbraco 19's own migration. The config is updated and, where the config calls for it, the data type moves onto the new editor (e.g. a Media Picker with `multiple: false` becomes a Single Media Picker). The new v19 picker editors also have their own value and dependency mappers.
-
-### Other changes
-
-- Imports run as the user who started them, or the background user. Content is saved and published as the writer in the file, or the importing user, rather than always the super user.
-- Segment values sync as overrides of their culture. Duplicate block expose entries in old segment-era values are cleaned up on import.
-- A content schedule's invariant-for-variant flag is now exported and imported.
-- Library elements used in blocks are tracked as dependencies.
-- Blueprints are exported again when they or their folder are moved. Importing a blueprint for a content type that can't have blueprints now fails with a clear message.
-- Publish failure messages name the properties that failed validation.
-- SignalR and the uSync API accept Umbraco 19's cookie-based backoffice login.
-- `@jumoo/usync` (the client types other packages build against) is now published to npmjs.org. v19 prereleases use the `next-19` tag. (#1143)
-
-## Breaking
-
-- Members marked obsolete for removal in v18 or v19 have been removed. If your code builds on uSync's services, handlers, mappers or serializers, check the [changelog](https://github.com/KevinJump/uSync/blob/v19/main/CHANGELOG.md) for the full list and their replacements. Members marked for v20 are still there. (#1161)
-
-## Known issues
-
-- uSync still uses `Constants.Security.SuperUserId`, which Umbraco 19 marks obsolete. It works on 19.0.0-beta1 and will be updated in a later release. (#1162)
-
-## What's Changed
-* Publish @jumoo/usync to npmjs.org with trusted publishing by @KevinJump in https://github.com/KevinJump/uSync/pull/1143
-* Merge v17/main into v18/main (2026-10-26) by @KevinJump in https://github.com/KevinJump/uSync/pull/1146
-* Show 18.x as the dashboard version fallback on v18 by @henryjump in https://github.com/KevinJump/uSync/pull/1148
-* Migrate deprecated editors in the legacy flow by @KevinJump in https://github.com/KevinJump/uSync/pull/1155
-* Show uSync in its own section by default by @KevinJump in https://github.com/KevinJump/uSync/pull/1156
-* Label PRs with their expected release by @KevinJump in https://github.com/KevinJump/uSync/pull/1158
-* Remove members marked obsolete for v18 and v19 by @KevinJump in https://github.com/KevinJump/uSync/pull/1161
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.2.0...v19.0.0-beta01
-]]></description>
     </item>
   </channel>
 </rss>
