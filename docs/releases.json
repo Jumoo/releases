@@ -1,5 +1,44 @@
 [
   {
+    "package": "Our.Umbraco.MaintenanceMode",
+    "title": "Maintenance Mode",
+    "category": "Other",
+    "repo": "Jumoo/Our.Umbraco.MaintenanceMode",
+    "version": "19.0.0-beta01",
+    "publishedAt": "2026-11-10T11:44:44Z",
+    "nugetUrl": "https://www.nuget.org/packages/Our.Umbraco.MaintenanceMode/19.0.0-beta01",
+    "githubUrl": "https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v19.0.0-beta01",
+    "notes": "First build for Umbraco 19, a prerelease against Umbraco 19.0.0-beta1 on .NET 11. Use the 18.x releases on Umbraco 18.\n\n## What's Changed\n* Add Umbraco 19 beta support: net11.0, Umbraco.Cms 19.0.0-beta1, @umbraco-cms/backoffice 19.0.0-beta1 (21ec514)\n* Bump the entry point cache-buster for Umbraco 19 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/137\n* Block Library Elements while content is frozen or the site is locked by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/138\n* Merge v18/main into v19/main (2026-11-10) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/139\n* Release 19.0.0-beta01 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/140\n\n\n**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v18.2.2...v19.0.0-beta01\n",
+    "prerelease": true,
+    "umbracoMajor": 19
+  },
+  {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "18.3.4",
+    "publishedAt": "2026-11-10T11:42:28Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/18.3.4",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.4",
+    "notes": "Includes the fixes in 17.5.4, merged forward from `v17/main`.\n\n### Fixed\n\n- A pipeline whose step ran but whose results then couldn't be saved is now marked Failed, with\n  the save error in its details. Before, it stayed Running and kept the target locked, so the\n  next run was told one was already in progress. This covers a write lock timeout, a pipeline too\n  big to serialise, and a processor that throws while merging a step's results.\n- Saving a big pipeline no longer holds the processing write lock while it serialises. Other\n  processing writes are less likely to hit Umbraco's write lock timeout while a large pipeline\n  saves.\n\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.Processing",
+    "title": "Jumoo.Processing",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Processing",
+    "version": "17.5.4",
+    "publishedAt": "2026-11-10T11:28:39Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Processing/17.5.4",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.4",
+    "notes": "### Fixed\n\n- A pipeline whose step ran but whose results then couldn't be saved is now marked Failed, with\n  the save error in its details. Before, it stayed Running and kept the target locked, so the\n  next run was told one was already in progress. This covers a write lock timeout, a pipeline too\n  big to serialise, and a processor that throws while merging a step's results.\n- Saving a big pipeline no longer holds the processing write lock while it serialises. Other\n  processing writes are less likely to hit Umbraco's write lock timeout while a large pipeline\n  saves.\n\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.CrowdIn",
     "title": "CrowdIn Connector",
     "category": "Translation Connectors",

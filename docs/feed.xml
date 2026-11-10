@@ -5,6 +5,60 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Maintenance Mode 19.0.0-beta01</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v19.0.0-beta01</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v19.0.0-beta01</guid>
+      <pubDate>Tue, 10 Nov 2026 11:44:44 GMT</pubDate>
+      <description><![CDATA[First build for Umbraco 19, a prerelease against Umbraco 19.0.0-beta1 on .NET 11. Use the 18.x releases on Umbraco 18.
+
+## What's Changed
+* Add Umbraco 19 beta support: net11.0, Umbraco.Cms 19.0.0-beta1, @umbraco-cms/backoffice 19.0.0-beta1 (21ec514)
+* Bump the entry point cache-buster for Umbraco 19 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/137
+* Block Library Elements while content is frozen or the site is locked by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/138
+* Merge v18/main into v19/main (2026-11-10) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/139
+* Release 19.0.0-beta01 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/140
+
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v18.2.2...v19.0.0-beta01
+]]></description>
+    </item>
+    <item>
+      <title>Jumoo.Processing 18.3.4</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.4</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.4</guid>
+      <pubDate>Tue, 10 Nov 2026 11:42:28 GMT</pubDate>
+      <description><![CDATA[Includes the fixes in 17.5.4, merged forward from `v17/main`.
+
+### Fixed
+
+- A pipeline whose step ran but whose results then couldn't be saved is now marked Failed, with
+  the save error in its details. Before, it stayed Running and kept the target locked, so the
+  next run was told one was already in progress. This covers a write lock timeout, a pipeline too
+  big to serialise, and a processor that throws while merging a step's results.
+- Saving a big pipeline no longer holds the processing write lock while it serialises. Other
+  processing writes are less likely to hit Umbraco's write lock timeout while a large pipeline
+  saves.
+
+]]></description>
+    </item>
+    <item>
+      <title>Jumoo.Processing 17.5.4</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.4</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.4</guid>
+      <pubDate>Tue, 10 Nov 2026 11:28:39 GMT</pubDate>
+      <description><![CDATA[### Fixed
+
+- A pipeline whose step ran but whose results then couldn't be saved is now marked Failed, with
+  the save error in its details. Before, it stayed Running and kept the target locked, so the
+  next run was told one was already in progress. This covers a write lock timeout, a pipeline too
+  big to serialise, and a processor that throws while merging a step's results.
+- Saving a big pipeline no longer holds the processing write lock while it serialises. Other
+  processing writes are less likely to hit Umbraco's write lock timeout while a large pipeline
+  saves.
+
+]]></description>
+    </item>
+    <item>
       <title>CrowdIn Connector 18.1.2</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.2</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.2</guid>
@@ -992,46 +1046,6 @@ Supports Umbraco 17.3 to 17.8.
 - Opening the connector settings before GlobalLink credentials are saved no longer returns HTTP 500s or logs `Username is required`. The connector and file type lists come back empty until the credentials are set.
 - The connector name shows a three part version (`v18.0.1`), not four (`v18.0.1.0`).
 ]]></description>
-    </item>
-    <item>
-      <title>GlobalLink Connector 17.1.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.GlobalLink/releases/tag/v17.1.2</guid>
-      <pubDate>Sat, 31 Oct 2026 18:00:50 GMT</pubDate>
-      <description><![CDATA[### Fixed
-
-- Opening the connector settings before GlobalLink credentials are saved no longer returns HTTP 500s or logs `Username is required`. The connector and file type lists come back empty until the credentials are set.
-- The connector name shows a three part version (`v17.1.2`), not four (`v17.1.2.0`).
-]]></description>
-    </item>
-    <item>
-      <title>Maintenance Mode 18.2.1</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.1</guid>
-      <pubDate>Sat, 31 Oct 2026 15:59:34 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Prepare 17.2.0 release by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/117
-* Register the client as a backofficeEntryPoint by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/119
-* Merge v17/main into v18/main (2026-10-27) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/120
-* Make the toggle endpoints PUT, bump hey-api, strip line breaks from the debug log by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/121
-* Merge v17/main into v18/main (2026-10-31) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/122
-* Prepare 18.2.1 release by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/124
-
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v18.2.0...v18.2.1]]></description>
-    </item>
-    <item>
-      <title>Maintenance Mode 17.2.1</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.2.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.2.1</guid>
-      <pubDate>Sat, 31 Oct 2026 15:59:33 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Register the client as a backofficeEntryPoint by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/119
-* Make the toggle endpoints PUT, bump hey-api, strip line breaks from the debug log by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/121
-* Prepare 17.2.1 release by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/123
-
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v17.2.0...v17.2.1]]></description>
     </item>
   </channel>
 </rss>
