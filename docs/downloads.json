@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T12:18:28.094Z",
+  "generatedAt": "2026-11-11T00:33:28.317Z",
   "packages": [
     {
       "package": "uSync",
@@ -1658,6 +1658,10 @@
           "downloads": 112
         },
         {
+          "version": "17.7.2",
+          "downloads": 0
+        },
+        {
           "version": "18.0.0",
           "downloads": 291
         },
@@ -1696,6 +1700,10 @@
         {
           "version": "18.4.0",
           "downloads": 77
+        },
+        {
+          "version": "18.4.1",
+          "downloads": 0
         }
       ]
     },
@@ -1874,6 +1882,10 @@
         {
           "version": "17.1.1",
           "downloads": 181
+        },
+        {
+          "version": "17.1.2",
+          "downloads": 0
         },
         {
           "version": "18.0.0",
@@ -3000,6 +3012,10 @@
         {
           "version": "17.11.0",
           "downloads": 79
+        },
+        {
+          "version": "17.11.1",
+          "downloads": 0
         },
         {
           "version": "18.0.0",
@@ -6468,6 +6484,10 @@
           "downloads": 0
         },
         {
+          "version": "17.6.0",
+          "downloads": 0
+        },
+        {
           "version": "18.0.0",
           "downloads": 1276
         },
@@ -6512,12 +6532,20 @@
           "downloads": 0
         },
         {
+          "version": "18.4.0",
+          "downloads": 0
+        },
+        {
           "version": "19.0.0-beta01",
           "downloads": 120
         },
         {
           "version": "19.0.0-beta02",
           "downloads": 105
+        },
+        {
+          "version": "19.0.0-beta03",
+          "downloads": 0
         }
       ]
     },

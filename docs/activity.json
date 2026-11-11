@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T12:19:01.179Z",
+  "generatedAt": "2026-11-11T00:33:57.102Z",
   "packages": [
     {
       "package": "uSync",
@@ -20,12 +20,12 @@
       "category": "",
       "repo": "Jumoo/uSync.Complete",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "release/v18.4.0",
-      "lastReleaseDate": "2026-11-08T12:25:25Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.4.0",
+      "lastReleaseTag": "release/v18.4.1",
+      "lastReleaseDate": "2026-11-10T13:46:17Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.4.1",
       "releaseBranch": "v18/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-11-08T12:25:25Z"
+      "commitsSince": 9,
+      "lastCommitDate": "2026-11-10T22:06:52Z"
     },
     {
       "package": "uSync.Forms",
@@ -46,12 +46,12 @@
       "category": "uSync Addon",
       "repo": "Jumoo/uSync.Umbraco.Commerce",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.0.1",
-      "lastReleaseDate": "2026-10-14T10:32:29Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.1",
-      "releaseBranch": "v18/main",
-      "commitsSince": 3,
-      "lastCommitDate": "2026-10-26T11:41:48Z"
+      "lastReleaseTag": "v17.1.2",
+      "lastReleaseDate": "2026-11-10T15:53:15Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v17.1.2",
+      "releaseBranch": "v17/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-11-10T15:53:15Z"
     },
     {
       "package": "uSync.Cli",
@@ -371,12 +371,12 @@
       "category": "Other",
       "repo": "Jumoo/Jumoo.Processing",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "release/v18.3.4",
-      "lastReleaseDate": "2026-11-10T11:42:28Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.4",
+      "lastReleaseTag": "release/v18.4.0",
+      "lastReleaseDate": "2026-11-10T20:19:28Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.4.0",
       "releaseBranch": "v18/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-11-10T11:42:28Z"
+      "lastCommitDate": "2026-11-10T20:19:28Z"
     },
     {
       "package": "Jumoo.Json",
