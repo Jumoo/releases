@@ -5,6 +5,52 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>UmbracoAI Connector 17.3.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.3.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.3.0</guid>
+      <pubDate>Wed, 11 Nov 2026 10:29:47 GMT</pubDate>
+      <description><![CDATA[### Added
+
+- `Jumoo.UmbracoAI.Translations`: a new package that installs Translation Manager, Umbraco.AI and this connector in one step. On first boot it makes the Umbraco AI connector the default for the starter translation set Translation Manager creates.
+]]></description>
+    </item>
+    <item>
+      <title>UmbracoAI Connector 17.2.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.2.0</guid>
+      <pubDate>Wed, 11 Nov 2026 09:59:28 GMT</pubDate>
+      <description><![CDATA[### Changed
+
+- Requires `Jumoo.TranslationManager.AI` 17.6.0 or later (was 17.4.1).
+- `UmbracoAiTranslator`'s constructor takes three more dependencies
+  (`TranslationMemoryJobService`, `IHttpClientFactory`, `GlossaryService`) to match
+  `AITranslatorBase`. It's resolved through DI, so this only matters if you construct it yourself.
+
+### Fixed
+
+- The connector works with current Translation Manager again. It no longer throws
+  `MissingMethodException` at boot with Translation Manager 17.8.1 or later: it's now built
+  against `Jumoo.TranslationManager.AI` 17.6.0, after `AITranslatorBase`'s constructor changed.
+- Creating a job no longer fails with `Jumoo.TranslationManager.AI` 17.7 ("returned 1 translated
+  value(s) for N input value(s)"). The connector sends one Umbraco.AI request per string, so it
+  returns one result per input as the library requires.
+- Moved off Umbraco.AI's obsolete `GetChatResponseAsync(messages)` overload.
+
+]]></description>
+    </item>
+    <item>
+      <title>uSync CLI 17.1.0</title>
+      <link>https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.1.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.1.0</guid>
+      <pubDate>Wed, 11 Nov 2026 08:48:52 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Fix usync-ping last attempt result and readme ping example by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/22
+* Report progress and failures from usync-import/export, update packages by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/23
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.CommandLine/compare/v17.0.0...v17.1.0]]></description>
+    </item>
+    <item>
       <title>uSync Complete 17.7.2</title>
       <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.7.2</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.7.2</guid>
@@ -1018,51 +1064,6 @@ It is marked as a pre-release (`-final`), so NuGet won't pick it as the default 
   A failed refresh keeps the last list.
 
 ]]></description>
-    </item>
-    <item>
-      <title>PowerToys 17.3.1</title>
-      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.3.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.3.1</guid>
-      <pubDate>Mon, 02 Nov 2026 11:51:42 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Add screenshots to the Icon Colors docs page by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/74
-* Update the dashboard screenshot on the docs homepage by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/75
-* Bump vite from 8.3.4 to 8.3.5 in /src/PowerToys/Client in the minor-and-patch group by @dependabot[bot] in https://github.com/Jumoo/umbraco.community.powertoys/pull/72
-* Bump hey-api to 0.99 to clear the handlebars alerts by @henryjump in https://github.com/Jumoo/umbraco.community.powertoys/pull/76
-* Authenticate the client with configureClient only by @henryjump in https://github.com/Jumoo/umbraco.community.powertoys/pull/77
-
-## New Contributors
-* @henryjump made their first contribution in https://github.com/Jumoo/umbraco.community.powertoys/pull/76
-
-**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.3.0...v17.3.1]]></description>
-    </item>
-    <item>
-      <title>Maintenance Mode 17.3.0</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.3.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.3.0</guid>
-      <pubDate>Mon, 02 Nov 2026 11:51:40 GMT</pubDate>
-      <description><![CDATA[**Umbraco 16 is no longer supported.** This release targets Umbraco 10-13 and Umbraco 17.3.0 or later. Umbraco 16 sites should stay on 17.2.1.
-
-## What's Changed
-* Authenticate the client with configureClient, drop Umbraco 16 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/125
-* Release 17.3.0 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/127
-
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v17.2.1...v17.3.0
-]]></description>
-    </item>
-    <item>
-      <title>Linked Pages 17.1.0</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v17.1.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v17.1.0</guid>
-      <pubDate>Mon, 02 Nov 2026 11:51:39 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Bump vite from 8.3.4 to 8.3.5 in /src/Umbraco.Community.LinkedPages/Client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/52
-* Bump hey-api to 0.99 and override js-yaml to clear security alerts by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/53
-* Authenticate the client with configureClient (v17) by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/55
-
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/v17.0.1...v17.1.0]]></description>
     </item>
   </channel>
 </rss>

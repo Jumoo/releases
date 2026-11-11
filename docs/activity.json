@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T00:33:57.102Z",
+  "generatedAt": "2026-11-11T12:19:44.075Z",
   "packages": [
     {
       "package": "uSync",
@@ -59,12 +59,12 @@
       "category": "uSync Addon",
       "repo": "Jumoo/uSync.CommandLine",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.0.0",
-      "lastReleaseDate": "2026-08-26T16:39:47Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.0.0",
+      "lastReleaseTag": "v17.1.0",
+      "lastReleaseDate": "2026-11-11T08:48:52Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.1.0",
       "releaseBranch": "v17/main",
-      "commitsSince": 3,
-      "lastCommitDate": "2026-11-06T16:55:16Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-11-11T08:48:52Z"
     },
     {
       "package": "uSync.Migrations",
@@ -128,8 +128,8 @@
       "lastReleaseDate": "2026-11-10T12:08:37Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.11.1",
       "releaseBranch": "v17/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-11-10T12:08:37Z"
+      "commitsSince": 16,
+      "lastCommitDate": "2026-11-11T12:16:20Z"
     },
     {
       "package": "Jumoo.TranslationManager.AI",
@@ -163,12 +163,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.UmbracoAI",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.1.1",
-      "lastReleaseDate": "2026-09-21T15:16:30Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.1.1",
+      "lastReleaseTag": "v17.3.0",
+      "lastReleaseDate": "2026-11-11T10:29:47Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.3.0",
       "releaseBranch": "v17/main",
-      "commitsSince": 10,
-      "lastCommitDate": "2026-11-09T14:20:20Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-11-11T10:29:47Z"
     },
     {
       "package": "Jumoo.TranslationManager.SmartCat",
