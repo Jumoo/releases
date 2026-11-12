@@ -75,7 +75,7 @@
     "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v19.0.0-rc1",
     "notes": "\nRelease candidate for Umbraco 19. Includes everything in 18.5.0, merged forward from `v18/main`. The main Jumoo.TranslationManager package ships alongside the core packages, still bundling the v18 connectors, which run on Umbraco 19.0.0-rc1.\n\n- Build: Umbraco 19.0.0-rc1, Jumoo.Processing 19.0.0-rc2 (and `@jumoo/processing` ^19.0.0-rc2) and Jumoo.Json 19.0.0-rc1\n\n- Add: the translation coverage report works for Library element sets. It lists the elements under the set's folder and links each one to the element editor. Publishing an element now records its version per culture, the same way publishing a document does, so an element translated before a later change shows as out of date\n- Add: when Umbraco.AI is set up on the site and the Umbraco.AI connector (`Jumoo.TranslationManager.UmbracoAi`) isn't installed, the Connectors page has a banner across the top, and the bottom of the AI connector's settings page has a small \"Using Umbraco.AI?\" button. Both open a dialog about the connector, with a link to the setup guide. The `HideProviderBoxes` setting, which hides the connector adverts on the Connectors page, hides these too. Translation Manager checks for Umbraco.AI by type name and has no reference to it (Jumoo/Jumoo.TranslationManager#178)\n- Docs: the README and NuGet description name the Umbraco.AI connector, for sites that want to translate through their Umbraco.AI setup. The bundled AI connector is still the one most sites should use (Jumoo/Jumoo.TranslationManager#178)\n\n",
     "prerelease": true,
-    "umbracoMajor": 18
+    "umbracoMajor": 19
   },
   {
     "package": "Jumoo.Processing",
