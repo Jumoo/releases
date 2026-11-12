@@ -1,5 +1,18 @@
 [
   {
+    "package": "Jumoo.Json",
+    "title": "Jumoo.Json",
+    "category": "Other",
+    "repo": "Jumoo/Jumoo.Json",
+    "version": "19.0.0-rc1",
+    "publishedAt": "2026-11-12T11:56:54Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.Json/19.0.0-rc1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.Json/releases/tag/v19.0.0-rc1",
+    "notes": "## What's Changed\n* Move to Umbraco 19.0.0-rc1 by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/37\n\n\n**Full Changelog**: https://github.com/Jumoo/Jumoo.Json/compare/v19.0.0-beta1...v19.0.0-rc1",
+    "prerelease": true,
+    "umbracoMajor": 19
+  },
+  {
     "package": "Jumoo.TranslationManager.AI",
     "title": "AI Connector",
     "category": "Translation Connectors",
