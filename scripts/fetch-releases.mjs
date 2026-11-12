@@ -285,9 +285,16 @@ function resolveUmbracoMajors(releases, packages) {
       const lower = parseLowerBound(umbracoDep.range);
       if (lower) result = majorOf(lower);
     } else {
-      const hopDep = deps.find(
-        (d) => trackedIds.has(d.id.toLowerCase()) && d.id.toLowerCase() !== release.package.toLowerCase()
-      );
+      // Skip the package's own sub-packages (e.g. Jumoo.TranslationManager ->
+      // Jumoo.TranslationManager.AI): those are bundled add-ons versioned on
+      // their own cadence, not the platform it runs on. Following them
+      // labelled TranslationManager 19.0.0-rc1 as Umbraco 18 because the
+      // connectors hadn't been bumped yet.
+      const selfId = release.package.toLowerCase();
+      const hopDep = deps.find((d) => {
+        const id = d.id.toLowerCase();
+        return trackedIds.has(id) && id !== selfId && !id.startsWith(`${selfId}.`);
+      });
       if (hopDep) {
         const lower = parseLowerBound(hopDep.range);
         if (lower) {
