@@ -5,6 +5,182 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync Commerce 18.0.2</title>
+      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.2</guid>
+      <pubDate>Thu, 12 Nov 2026 15:49:34 GMT</pubDate>
+      <description><![CDATA[
+### Fixed
+
+- Shipping method prices were never synced: the export didn't write them, a price change didn't
+  change the file, and an import created the method with no prices. Prices are now exported and
+  imported, including dynamic and real-time calculation configs. A file exported before this fix
+  leaves the existing prices alone, and a file whose calculation mode differs from the method's is
+  skipped with a warning, because Umbraco Commerce only sets the mode when the method is created.
+  Every shipping method file changes on its first export after upgrading ([#23](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/23)).
+- Nothing was exported on save when the site called `AddUmbracoCommerce` itself in `Program.cs`
+  (as SQLite needs, for `AddSQLite()`). `AddUmbracoCommerce` only runs its setup callback on the
+  first call, so the package's save and delete handlers were dropped. They are now registered
+  against the existing Commerce builder, whichever order the calls run in ([#25](https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/25)).
+- An item deleted in Umbraco Commerce couldn't be added back by importing its file: the import
+  reported no change and the item stayed hidden. Umbraco Commerce keeps deleted items in the
+  database, and uSync treated them as still there. Deleted items are now ignored, and the import
+  creates the item again. Because the deleted item keeps its key, the new one gets a new key and is
+  matched by alias from then on. A deleted store can't be recreated this way, because other items
+  find their store by key, so its import fails with a message saying why ([#24](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/24)).
+
+]]></description>
+    </item>
+    <item>
+      <title>uSync Commerce 19.0.0-rc1</title>
+      <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v19.0.0-rc1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v19.0.0-rc1</guid>
+      <pubDate>Thu, 12 Nov 2026 15:42:10 GMT</pubDate>
+      <description><![CDATA[
+Release candidate for Umbraco 19. Includes everything in 18.0.1, and the fixes below that are
+still unreleased on the 18.x line.
+
+### Changed
+
+- Targets Umbraco 19 and .NET 11. Built against Umbraco 19.0.0-rc1, Umbraco Commerce 19.0.0-rc.1
+  and uSync 19.0.0-rc1. No code changes were needed.
+
+### Fixed
+
+- Shipping method prices were never synced: the export didn't write them, a price change didn't
+  change the file, and an import created the method with no prices. Prices are now exported and
+  imported, including dynamic and real-time calculation configs. A file exported before this fix
+  leaves the existing prices alone, and a file whose calculation mode differs from the method's is
+  skipped with a warning, because Umbraco Commerce only sets the mode when the method is created.
+  Every shipping method file changes on its first export after upgrading ([#23](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/23)).
+- Nothing was exported on save when the site called `AddUmbracoCommerce` itself in `Program.cs`
+  (as SQLite needs, for `AddSQLite()`). `AddUmbracoCommerce` only runs its setup callback on the
+  first call, so the package's save and delete handlers were dropped. They are now registered
+  against the existing Commerce builder, whichever order the calls run in ([#25](https://github.com/Jumoo/uSync.Umbraco.Commerce/pull/25)).
+- An item deleted in Umbraco Commerce couldn't be added back by importing its file: the import
+  reported no change and the item stayed hidden. Umbraco Commerce keeps deleted items in the
+  database, and uSync treated them as still there. Deleted items are now ignored, and the import
+  creates the item again. Because the deleted item keeps its key, the new one gets a new key and is
+  matched by alias from then on. A deleted store can't be recreated this way, because other items
+  find their store by key, so its import fails with a message saying why ([#24](https://github.com/Jumoo/uSync.Umbraco.Commerce/issues/24)).
+
+]]></description>
+    </item>
+    <item>
+      <title>uSync Forms 19.0.0-rc1</title>
+      <link>https://github.com/Jumoo/uSync.Forms/releases/tag/v19.0.0-rc1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Forms/releases/tag/v19.0.0-rc1</guid>
+      <pubDate>Thu, 12 Nov 2026 15:33:48 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Correct the nightly feed checkout comment by @KevinJump in https://github.com/Jumoo/uSync.Forms/pull/76
+* Correct the nightly feed checkout comment by @KevinJump in https://github.com/Jumoo/uSync.Forms/pull/77
+* Bump vite from 8.3.3 to 8.3.4 in /uSync.Forms/forms-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Forms/pull/79
+* Bump vite from 8.3.3 to 8.3.4 in /uSync.Forms.Complete/Client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Forms/pull/78
+* Merge v17/main into v18/main (2026-10-26) by @henryjump in https://github.com/Jumoo/uSync.Forms/pull/80
+* Bump vite from 8.3.4 to 8.3.5 in /uSync.Forms.Complete/Client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Forms/pull/82
+* Bump vite from 8.3.4 to 8.3.5 in /uSync.Forms/forms-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/uSync.Forms/pull/81
+* Merge v17/main into v18/main (2026-11-06) by @KevinJump in https://github.com/Jumoo/uSync.Forms/pull/83
+* Move to Umbraco 19.0.0-rc1 (net11, Forms 19, uSync 19) by @KevinJump in https://github.com/Jumoo/uSync.Forms/pull/86
+
+## New Contributors
+* @henryjump made their first contribution in https://github.com/Jumoo/uSync.Forms/pull/80
+
+**Full Changelog**: https://github.com/Jumoo/uSync.Forms/compare/v18.1.0...v19.0.0-rc1]]></description>
+    </item>
+    <item>
+      <title>Maintenance Mode 19.0.0-rc1</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v19.0.0-rc1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v19.0.0-rc1</guid>
+      <pubDate>Thu, 12 Nov 2026 14:45:57 GMT</pubDate>
+      <description><![CDATA[Release candidate for Umbraco 19, built against Umbraco 19.0.0-rc1 on .NET 11. Use the 18.x releases on Umbraco 18.
+
+## What's Changed
+* Move to Umbraco 19.0.0-rc1 by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/141
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v19.0.0-beta01...v19.0.0-rc1
+]]></description>
+    </item>
+    <item>
+      <title>uSync Complete 19.0.0-rc1</title>
+      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v19.0.0-rc1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v19.0.0-rc1</guid>
+      <pubDate>Thu, 12 Nov 2026 14:27:28 GMT</pubDate>
+      <description><![CDATA[# v19.0.0-rc1
+
+First release of uSync.Complete for Umbraco 19, a release candidate for testing against Umbraco 19.0.0-rc1. It includes everything up to 18.4.1.
+
+> [!WARNING]
+> This is a release candidate. Don't run it on a production site.
+
+## Changed
+
+- Targets Umbraco 19 and .NET 11. Built against Umbraco 19.0.0-rc1, uSync 19.0.0-rc1 and Jumoo.Processing 19.0.0-rc2.
+
+The `@jumoo/usync-expansions` and `@jumoo/usync-publisher-assets` npm packages are published under the `next-19` tag.
+]]></description>
+    </item>
+    <item>
+      <title>Translation Manager 19.0.0-rc1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v19.0.0-rc1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v19.0.0-rc1</guid>
+      <pubDate>Thu, 12 Nov 2026 14:16:16 GMT</pubDate>
+      <description><![CDATA[
+Release candidate for Umbraco 19. Includes everything in 18.5.0, merged forward from `v18/main`. The main Jumoo.TranslationManager package ships alongside the core packages, still bundling the v18 connectors, which run on Umbraco 19.0.0-rc1.
+
+- Build: Umbraco 19.0.0-rc1, Jumoo.Processing 19.0.0-rc2 (and `@jumoo/processing` ^19.0.0-rc2) and Jumoo.Json 19.0.0-rc1
+
+- Add: the translation coverage report works for Library element sets. It lists the elements under the set's folder and links each one to the element editor. Publishing an element now records its version per culture, the same way publishing a document does, so an element translated before a later change shows as out of date
+- Add: when Umbraco.AI is set up on the site and the Umbraco.AI connector (`Jumoo.TranslationManager.UmbracoAi`) isn't installed, the Connectors page has a banner across the top, and the bottom of the AI connector's settings page has a small "Using Umbraco.AI?" button. Both open a dialog about the connector, with a link to the setup guide. The `HideProviderBoxes` setting, which hides the connector adverts on the Connectors page, hides these too. Translation Manager checks for Umbraco.AI by type name and has no reference to it (Jumoo/Jumoo.TranslationManager#178)
+- Docs: the README and NuGet description name the Umbraco.AI connector, for sites that want to translate through their Umbraco.AI setup. The bundled AI connector is still the one most sites should use (Jumoo/Jumoo.TranslationManager#178)
+
+]]></description>
+    </item>
+    <item>
+      <title>Jumoo.Processing 19.0.0-rc2</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-rc2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-rc2</guid>
+      <pubDate>Thu, 12 Nov 2026 13:02:06 GMT</pubDate>
+      <description><![CDATA[Second release candidate of Jumoo.Processing for Umbraco 19.
+
+> [!WARNING]
+> This is a release candidate for testing against Umbraco 19.0.0-rc1. Don't run it on a production site.
+
+Includes everything in 18.4.0, merged forward from `v18/main`. 19.0.0-rc1 didn't have it.
+
+### Changed
+
+- Long runs with large results put much less load on the database. A pipeline's results are now stored compressed in their own column, and are only written again when a step changes them.
+- The backoffice no longer downloads a pipeline's results after every step while it is running. It gets them when the run stops, finishes, fails or waits for you.
+
+### Upgrading
+
+- A database migration adds the new columns to `Jumoo_Pipelines` when the site starts. Runs in progress during the upgrade carry on.
+
+The `@jumoo/processing` npm package is published under the `next-19` tag.
+]]></description>
+    </item>
+    <item>
+      <title>uSync 19.0.0-rc1</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v19.0.0-rc1</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v19.0.0-rc1</guid>
+      <pubDate>Thu, 12 Nov 2026 12:45:16 GMT</pubDate>
+      <description><![CDATA[Release candidate of uSync for Umbraco 19. It's built against Umbraco 19.0.0-rc1 on .NET 11.
+
+> [!WARNING]
+> This is a release candidate for testing against Umbraco 19.0.0-rc1. Don't run it on a production site.
+
+## Changes
+
+Includes everything in 18.2.1, 18.3.0 and 18.3.1, merged forward from `v18/main`. See those releases for details.
+
+- Built against Umbraco 19.0.0-rc1 and Jumoo.Json 19.0.0-rc1.
+
+The `@jumoo/usync` npm package is published under the `next-19` tag.
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v19.0.0-beta01...v19.0.0-rc1
+]]></description>
+    </item>
+    <item>
       <title>Jumoo.Json 19.0.0-rc1</title>
       <link>https://github.com/Jumoo/Jumoo.Json/releases/tag/v19.0.0-rc1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Json/releases/tag/v19.0.0-rc1</guid>
@@ -260,31 +436,6 @@ lot of content at once, or use approvals.
 - Umbraco 18.
 - uSync 18.3.1 or later.
 - Jumoo.Processing 18.3.4 (installed automatically).
-]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Processing 19.0.0-beta03</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-beta03</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-beta03</guid>
-      <pubDate>Tue, 10 Nov 2026 12:34:00 GMT</pubDate>
-      <description><![CDATA[Includes everything in 18.3.2, 18.3.3 and 18.3.4, merged forward from `v18/main`: the **Clear
-it** and **Try again** buttons on the "Already in progress" panel, and a pipeline whose results
-can't be saved after a step is marked Failed rather than left holding its concurrency key.
-18.3.1's fix was already in 19.0.0-beta01.
-
-### Changed
-
-- **The generated client throws on a failed response** and authenticates through
-  `configureClient()`, on `@hey-api/openapi-ts` 0.99. Failed requests show an error notification,
-  and a `409` for a held concurrency key reaches the inline conflict message. Code that called the
-  client and checked for an `error` in the result should catch instead.
-
-### Removed
-
-- **The `SamplePipeline`, `SamplePipelineOptions` and `SamplePipelineState` types** are gone from
-  the `@jumoo/processing` npm package. They came from generating the client against a Debug site,
-  which includes the sample projects, and were never part of the API.
-
 ]]></description>
     </item>
     <item>
@@ -954,116 +1105,6 @@ uSync 18.3.1 or later.
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
       <pubDate>Wed, 04 Nov 2026 13:04:44 GMT</pubDate>
       <description><![CDATA[]]></description>
-    </item>
-    <item>
-      <title>uSync 13.4.0-final</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v13.4.0-final</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v13.4.0-final</guid>
-      <pubDate>Wed, 04 Nov 2026 12:27:10 GMT</pubDate>
-      <description><![CDATA[This is a final release of uSync for Umbraco v13. It rolls up the fixes made since v13.3.2.
-
-It is marked as a pre-release (`-final`), so NuGet won't pick it as the default update. If you're on Umbraco v13 and want these fixes, install `13.4.0-final` explicitly.
-
-## What's Changed
-* Check "ShouldImport" on all report steps by @KevinJump in https://github.com/KevinJump/uSync/pull/817
-* Use `Clear(key)` instead of `ClearByKey(key)` for exact-key cache removal by @AndersKaae in https://github.com/KevinJump/uSync/pull/1022
-* Make the bad file name list configurable (`AdditionalBadNames`, `IncludeWindowsReservedNames`) by @NikRimington in https://github.com/KevinJump/uSync/pull/1084
-* Fix content import ordering overflowing past 1000 siblings (mis-parented nodes) by @AndersKaae in https://github.com/KevinJump/uSync/pull/1118
-* Keep JSON booleans and numbers in block values as they are by @KevinJump in https://github.com/KevinJump/uSync/pull/1196
-* Match content and media by name when the name has spaces or symbols by @KevinJump in https://github.com/KevinJump/uSync/pull/1197 and https://github.com/KevinJump/uSync/pull/1199
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v13.3.2...v13.4.0-final
-]]></description>
-    </item>
-    <item>
-      <title>uSync 17.6.1</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v17.6.1</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.6.1</guid>
-      <pubDate>Tue, 03 Nov 2026 16:41:14 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Let callers choose where item previews come from by @KevinJump in https://github.com/KevinJump/uSync/pull/1192
-* Preview with the handler set the import uses by @KevinJump in https://github.com/KevinJump/uSync/pull/1193
-* Let callers set the preview's side headlines by @KevinJump in https://github.com/KevinJump/uSync/pull/1194
-* Source on the left and side colours in the item previews by @KevinJump in https://github.com/KevinJump/uSync/pull/1195
-
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.6.0...v17.6.1]]></description>
-    </item>
-    <item>
-      <title>AI Connector 17.7.3</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.3</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.3</guid>
-      <pubDate>Tue, 03 Nov 2026 14:47:33 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* build(deps-dev): Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.AI/ai-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/66
-* Update Translation Manager core packages to 17.10.0 by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/64
-* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/68
-* Secure the API and authenticate the client with configureClient by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/70
-* docs(release): Add 17.7.3 changelog entry by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.AI/pull/72
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.AI/compare/v17.7.2...v17.7.3]]></description>
-    </item>
-    <item>
-      <title>Xliff Connector 17.0.3</title>
-      <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.3</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v17.0.3</guid>
-      <pubDate>Tue, 03 Nov 2026 14:47:29 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* docs: note ignored format setting in 17.0.1 changelog by @KevinJump in https://github.com/Jumoo/Xliff.Connector/pull/28
-* chore: roll up dependabot bumps, ignore typescript 6+ and hey-api by @KevinJump in https://github.com/Jumoo/Xliff.Connector/pull/29
-* Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.Xliff/xliff-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Xliff.Connector/pull/31
-* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Xliff.Connector/pull/33
-* Secure the API and authenticate the client with configureClient by @henryjump in https://github.com/Jumoo/Xliff.Connector/pull/35
-* docs(release): Add 17.0.3 changelog entry by @henryjump in https://github.com/Jumoo/Xliff.Connector/pull/37
-
-
-**Full Changelog**: https://github.com/Jumoo/Xliff.Connector/compare/v17.0.2...v17.0.3]]></description>
-    </item>
-    <item>
-      <title>DeepL Connector 17.4.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.1</guid>
-      <pubDate>Tue, 03 Nov 2026 14:47:26 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Bump the npm-dependencies group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/25
-* Bump vite from 8.3.2 to 8.3.4 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/27
-* Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/29
-* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/31
-* Authenticate the API client with configureClient by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/33
-* docs(release): Add 17.4.1 changelog entry by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/35
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v17.4.0...v17.4.1]]></description>
-    </item>
-    <item>
-      <title>uSync 18.3.0</title>
-      <link>https://github.com/KevinJump/uSync/releases/tag/v18.3.0</link>
-      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.3.0</guid>
-      <pubDate>Tue, 03 Nov 2026 12:08:26 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Preview content and media imports with the real property editors by @KevinJump in https://github.com/KevinJump/uSync/pull/1168
-* Move the backoffice clients to configureClient by @KevinJump in https://github.com/KevinJump/uSync/pull/1186
-* Merge v17/main into v18/main (2026-11-02) by @KevinJump in https://github.com/KevinJump/uSync/pull/1187
-* Preview data type and content type imports with the real property editors by @KevinJump in https://github.com/KevinJump/uSync/pull/1166
-* Return a failed preview instead of a 500 when the dry run throws by @KevinJump in https://github.com/KevinJump/uSync/pull/1189
-* Merge v17/main into v18/main (2026-11-03) by @KevinJump in https://github.com/KevinJump/uSync/pull/1190
-* Update changelog for v18.3.0 release by @KevinJump in https://github.com/KevinJump/uSync/pull/1191
-
-
-**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.2.1...v18.3.0]]></description>
-    </item>
-    <item>
-      <title>Maintenance Mode 17.3.1</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.3.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.3.1</guid>
-      <pubDate>Tue, 03 Nov 2026 11:14:31 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Fix unfrozen users being blocked by the freeze and lock by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/129
-* Release 17.3.1 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/131
-
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v17.3.0...v17.3.1]]></description>
     </item>
   </channel>
 </rss>
