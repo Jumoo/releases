@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T12:19:44.075Z",
+  "generatedAt": "2026-11-12T00:34:19.351Z",
   "packages": [
     {
       "package": "uSync",
@@ -128,8 +128,8 @@
       "lastReleaseDate": "2026-11-10T12:08:37Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.11.1",
       "releaseBranch": "v17/main",
-      "commitsSince": 16,
-      "lastCommitDate": "2026-11-11T12:16:20Z"
+      "commitsSince": 52,
+      "lastCommitDate": "2026-11-11T21:42:25Z"
     },
     {
       "package": "Jumoo.TranslationManager.AI",
@@ -137,12 +137,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.AI",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.4.2",
-      "lastReleaseDate": "2026-11-09T11:13:35Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.4.2",
+      "lastReleaseTag": "v18.5.0",
+      "lastReleaseDate": "2026-11-11T21:24:18Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.5.0",
       "releaseBranch": "v18/main",
-      "commitsSince": 7,
-      "lastCommitDate": "2026-11-09T14:41:16Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-11-11T21:24:18Z"
     },
     {
       "package": "Jumoo.TranslationManager.CSV",
@@ -163,12 +163,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.UmbracoAI",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.3.0",
-      "lastReleaseDate": "2026-11-11T10:29:47Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.3.0",
-      "releaseBranch": "v17/main",
+      "lastReleaseTag": "v18.0.0",
+      "lastReleaseDate": "2026-11-11T16:36:07Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v18.0.0",
+      "releaseBranch": "v18/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-11-11T10:29:47Z"
+      "lastCommitDate": "2026-11-11T16:36:07Z"
     },
     {
       "package": "Jumoo.TranslationManager.SmartCat",

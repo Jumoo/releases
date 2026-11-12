@@ -1,5 +1,44 @@
 [
   {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "17.8.0",
+    "publishedAt": "2026-11-11T21:24:19Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/17.8.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.8.0",
+    "notes": "### Changed\n\n- The job view is one compact box: translator, model, tokens, and how much of the job came\n  from translation memory, as a percentage with \"x of y items\". Errors and batch state are\n  one-line notices, and the prompt opens in a side panel.\n- The connector settings screen is split into a provider box and a Translation box, with\n  advanced settings behind a cog. API keys and secrets are password inputs, and a saved\n  model the provider no longer lists stays visible instead of switching to the first option.\n- New default models: `gpt-6-luna` for OpenAI, `gemini-3.6-flash` for Gemini,\n  `claude-sonnet-5-5` for Claude and `gpt-5.4-mini` for GitHub Models and Azure. The\n  previous Gemini and Claude defaults no longer work, so existing sites that saved them need\n  the model changing in the connector settings.\n- Batch jobs now record how much translation memory covered, so the job view shows it.\n\n### Fixed\n\n- The Claude translator's structured requests failed on current Claude models, which reject\n  a forced tool call, so every block fell back to one request per string.\n- The Azure batch deployment field was always disabled.\n- Azure AI Foundry saved its default model under the wrong setting.\n\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager.AI",
+    "title": "AI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.AI",
+    "version": "18.5.0",
+    "publishedAt": "2026-11-11T21:24:18Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.AI/18.5.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.5.0",
+    "notes": "### Added\n\n- The backoffice client types are published to npmjs.org as `@jumoo/translate-ai` from v18\n  builds too, so connectors that extend the AI translator settings can build against them\n  with `npm install @jumoo/translate-ai@^18`. Nightly builds publish under `next-18`.\n\n### Changed\n\n- The job view is one compact box: translator, model, tokens, and how much of the job came\n  from translation memory, as a percentage with \"x of y items\". Errors and batch state are\n  one-line notices, and the prompt opens in a side panel.\n- The connector settings screen is split into a provider box and a Translation box, with\n  advanced settings behind a cog. API keys and secrets are password inputs, and a saved\n  model the provider no longer lists stays visible instead of switching to the first option.\n- New default models: `gpt-6-luna` for OpenAI, `gemini-3.6-flash` for Gemini,\n  `claude-sonnet-5-5` for Claude and `gpt-5.4-mini` for GitHub Models and Azure. The\n  previous Gemini and Claude defaults no longer work, so existing sites that saved them need\n  the model changing in the connector settings.\n- Batch jobs now record how much translation memory covered, so the job view shows it.\n\n### Fixed\n\n- The Claude translator's structured requests failed on current Claude models, which reject\n  a forced tool call, so every block fell back to one request per string.\n- The Azure batch deployment field was always disabled.\n- Azure AI Foundry saved its default model under the wrong setting.\n\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
+    "package": "Jumoo.TranslationManager.UmbracoAI",
+    "title": "UmbracoAI Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.UmbracoAI",
+    "version": "18.0.0",
+    "publishedAt": "2026-11-11T16:36:07Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.UmbracoAI/18.0.0",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v18.0.0",
+    "notes": "### Changed\n\n- Targets Umbraco 18 (net10.0), Umbraco.AI 18.0.0 and `Jumoo.TranslationManager.AI` 18.4.1.\n  `Jumoo.UmbracoAI.Translations` moves to Umbraco 18 with it.\n- Backoffice client dependencies updated.\n",
+    "prerelease": false,
+    "umbracoMajor": 18
+  },
+  {
     "package": "Jumoo.TranslationManager.UmbracoAI",
     "title": "UmbracoAI Connector",
     "category": "Translation Connectors",

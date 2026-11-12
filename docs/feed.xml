@@ -5,6 +5,80 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>AI Connector 17.8.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.8.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.8.0</guid>
+      <pubDate>Wed, 11 Nov 2026 21:24:19 GMT</pubDate>
+      <description><![CDATA[### Changed
+
+- The job view is one compact box: translator, model, tokens, and how much of the job came
+  from translation memory, as a percentage with "x of y items". Errors and batch state are
+  one-line notices, and the prompt opens in a side panel.
+- The connector settings screen is split into a provider box and a Translation box, with
+  advanced settings behind a cog. API keys and secrets are password inputs, and a saved
+  model the provider no longer lists stays visible instead of switching to the first option.
+- New default models: `gpt-6-luna` for OpenAI, `gemini-3.6-flash` for Gemini,
+  `claude-sonnet-5-5` for Claude and `gpt-5.4-mini` for GitHub Models and Azure. The
+  previous Gemini and Claude defaults no longer work, so existing sites that saved them need
+  the model changing in the connector settings.
+- Batch jobs now record how much translation memory covered, so the job view shows it.
+
+### Fixed
+
+- The Claude translator's structured requests failed on current Claude models, which reject
+  a forced tool call, so every block fell back to one request per string.
+- The Azure batch deployment field was always disabled.
+- Azure AI Foundry saved its default model under the wrong setting.
+
+]]></description>
+    </item>
+    <item>
+      <title>AI Connector 18.5.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.5.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v18.5.0</guid>
+      <pubDate>Wed, 11 Nov 2026 21:24:18 GMT</pubDate>
+      <description><![CDATA[### Added
+
+- The backoffice client types are published to npmjs.org as `@jumoo/translate-ai` from v18
+  builds too, so connectors that extend the AI translator settings can build against them
+  with `npm install @jumoo/translate-ai@^18`. Nightly builds publish under `next-18`.
+
+### Changed
+
+- The job view is one compact box: translator, model, tokens, and how much of the job came
+  from translation memory, as a percentage with "x of y items". Errors and batch state are
+  one-line notices, and the prompt opens in a side panel.
+- The connector settings screen is split into a provider box and a Translation box, with
+  advanced settings behind a cog. API keys and secrets are password inputs, and a saved
+  model the provider no longer lists stays visible instead of switching to the first option.
+- New default models: `gpt-6-luna` for OpenAI, `gemini-3.6-flash` for Gemini,
+  `claude-sonnet-5-5` for Claude and `gpt-5.4-mini` for GitHub Models and Azure. The
+  previous Gemini and Claude defaults no longer work, so existing sites that saved them need
+  the model changing in the connector settings.
+- Batch jobs now record how much translation memory covered, so the job view shows it.
+
+### Fixed
+
+- The Claude translator's structured requests failed on current Claude models, which reject
+  a forced tool call, so every block fell back to one request per string.
+- The Azure batch deployment field was always disabled.
+- Azure AI Foundry saved its default model under the wrong setting.
+
+]]></description>
+    </item>
+    <item>
+      <title>UmbracoAI Connector 18.0.0</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v18.0.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v18.0.0</guid>
+      <pubDate>Wed, 11 Nov 2026 16:36:07 GMT</pubDate>
+      <description><![CDATA[### Changed
+
+- Targets Umbraco 18 (net10.0), Umbraco.AI 18.0.0 and `Jumoo.TranslationManager.AI` 18.4.1.
+  `Jumoo.UmbracoAI.Translations` moves to Umbraco 18 with it.
+- Backoffice client dependencies updated.
+]]></description>
+    </item>
+    <item>
       <title>UmbracoAI Connector 17.3.0</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.3.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.UmbracoAI/releases/tag/v17.3.0</guid>
@@ -990,79 +1064,6 @@ It is marked as a pre-release (`-final`), so NuGet won't pick it as the default 
 ### Changed
 
 - **Depends on `Jumoo.Json` `19.0.0-beta1`.** `19.0.0-beta01` still depended on the v18 `Jumoo.Json` (`18.0.3`).
-]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Json 19.0.0-beta1</title>
-      <link>https://github.com/Jumoo/Jumoo.Json/releases/tag/v19.0.0-beta1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Json/releases/tag/v19.0.0-beta1</guid>
-      <pubDate>Mon, 02 Nov 2026 20:26:11 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Mark the unreleased changes as 18.0.3 by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/10
-* Add CodeQL code scanning by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/11
-* Bump github/codeql-action from 4 to 4.37.4 in the github-actions group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/12
-* Bump github/codeql-action from 4.37.4 to 4.37.6 in the github-actions group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/13
-* Bump the nuget-dependencies group with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/14
-* Bump github/codeql-action from 4.37.6 to 4.37.8 in the github-actions group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/15
-* Port v18 CI/CD pipeline to v17 by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/16
-* Add remaining CI/CD files (release, dependabot, templates) by @henryjump in https://github.com/Jumoo/Jumoo.Json/pull/17
-* Add NuGet release workflow, align CI/CD files with v17/main by @henryjump in https://github.com/Jumoo/Jumoo.Json/pull/22
-* Bump github/codeql-action from 4.37.8 to 4.37.9 in the github-actions group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/18
-* Bump the nuget-dependencies group with 1 update by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/24
-* Bump coverlet.collector to 10.1.0 and xunit.runner.visualstudio to 4.0.0 by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/26
-* Merge v17/main into v18/main (2026-09-29) by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/27
-* Bump github/codeql-action from 4.37.9 to 4.38.2 in the github-actions group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/28
-* Merge v17/main into v18/main (2026-10-13) by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/29
-* Bump github/codeql-action from 4.38.2 to 4.38.3 in the github-actions group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/31
-* Bump the nuget-dependencies group with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.Json/pull/30
-* Merge v17/main into v18/main (2026-10-31) by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/32
-* Target net11.0 and Umbraco 19.0.0-beta1 by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/33
-* Install the SDK before GitVersion in the package build by @KevinJump in https://github.com/Jumoo/Jumoo.Json/pull/34
-
-## New Contributors
-* @henryjump made their first contribution in https://github.com/Jumoo/Jumoo.Json/pull/17
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.Json/compare/release/18.0.3...v19.0.0-beta1]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Processing 18.3.2</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.2</guid>
-      <pubDate>Mon, 02 Nov 2026 12:20:53 GMT</pubDate>
-      <description><![CDATA[Includes the fixes in 17.5.2, merged forward from `v17/main`. v18 already authenticated through
-`configureClient()`.
-
-### Fixed
-
-- The generated client throws on a failed response, as it does on v17. Failed requests show an error
-  notification, and a `409` for a held concurrency key reaches the inline conflict message.
-- A failed queue request shows an error notification and no longer leaves the queue list loading.
-  A failed refresh keeps the last list.
-
-### Removed
-
-- The `SamplePipeline` types are gone from the generated client. They came from generating against
-  a Debug site, which includes the sample projects.
-
-]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Processing 17.5.2</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.2</guid>
-      <pubDate>Mon, 02 Nov 2026 12:19:30 GMT</pubDate>
-      <description><![CDATA[### Changed
-
-- The backoffice client authenticates through `configureClient()`, on `@hey-api/openapi-ts` 0.99.
-  This also binds Umbraco's default interceptors, so a 401 is retried and failed requests can show
-  error notifications where they didn't before.
-- The generated client's `PipelineRunRejectedReason` includes `NotWaiting`.
-
-### Fixed
-
-- A failed queue request shows an error notification and no longer leaves the queue list loading.
-  A failed refresh keeps the last list.
-
 ]]></description>
     </item>
   </channel>
