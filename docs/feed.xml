@@ -5,6 +5,17 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync CLI 17.1.1</title>
+      <link>https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.1.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.1.1</guid>
+      <pubDate>Thu, 12 Nov 2026 17:07:03 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Follow background runs instead of exiting by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/24
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.CommandLine/compare/v17.1.0...v17.1.1]]></description>
+    </item>
+    <item>
       <title>uSync Commerce 18.0.2</title>
       <link>https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.2</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Umbraco.Commerce/releases/tag/v18.0.2</guid>
@@ -1098,13 +1109,6 @@ uSync 18.3.1 or later.
   try again once the other run has finished.
 
 ]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 13.4.0-final</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases</guid>
-      <pubDate>Wed, 04 Nov 2026 13:04:44 GMT</pubDate>
-      <description><![CDATA[]]></description>
     </item>
   </channel>
 </rss>

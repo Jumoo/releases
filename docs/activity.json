@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-12T16:49:27.576Z",
+  "generatedAt": "2026-11-13T00:34:31.842Z",
   "packages": [
     {
       "package": "uSync",
@@ -59,12 +59,12 @@
       "category": "uSync Addon",
       "repo": "Jumoo/uSync.CommandLine",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.1.0",
-      "lastReleaseDate": "2026-11-11T08:48:52Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.1.0",
+      "lastReleaseTag": "v17.1.1",
+      "lastReleaseDate": "2026-11-12T17:07:03Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.1.1",
       "releaseBranch": "v17/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-11-11T08:48:52Z"
+      "lastCommitDate": "2026-11-12T17:07:03Z"
     },
     {
       "package": "uSync.Migrations",
