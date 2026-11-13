@@ -5,6 +5,21 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>PowerToys 17.5.0</title>
+      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.5.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.5.0</guid>
+      <pubDate>Fri, 13 Nov 2026 14:32:55 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Add the Tab Icons docs page by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/79
+* Add the Right-Click Actions power toy by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/81
+* Add the Toast Durations power toy by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/82
+* Add a login screen message to the Login Customizer by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/83
+* Bump vite from 8.3.5 to 8.3.6 in /src/PowerToys/Client in the minor-and-patch group by @dependabot[bot] in https://github.com/Jumoo/umbraco.community.powertoys/pull/80
+
+
+**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.4.0...v17.5.0]]></description>
+    </item>
+    <item>
       <title>uSync CLI 17.1.1</title>
       <link>https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.1.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.1.1</guid>
@@ -1084,29 +1099,6 @@ uSync 18.3.1 or later.
 - Fix: a licence within a month of expiry was replaced with a blank one when the renewal check found no new key. The existing licence is now kept
 - Fix: saving Translation Manager's settings, licence, connector settings or translation sets returned a 403 unless the user's group had the "Manage translations" permission. These pages are in the Settings section, so anyone with access to that section can now save them
 - Add: a bell button in the job page footer resends the notification emails for the job's current stage, for when a translator has lost the original email. It shows once a job is past Submitted: received and reviewing jobs resend the Received email, approved and closed jobs the Approved one. It asks before sending, and if nothing goes out it says why (notifications off, no email set up, or no recipients for that stage). Only the email is resent, so nothing else that runs when a job is received, such as auto approval, runs again (Jumoo/Jumoo.TranslationManager.Issues#109)
-
-]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Processing 17.5.3</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.3</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.3</guid>
-      <pubDate>Wed, 04 Nov 2026 14:44:59 GMT</pubDate>
-      <description><![CDATA[### Added
-
-- The "Already in progress" panel offers **Clear it** when the run holding the target has been
-  Running with no progress for over five minutes. After a confirm it clears that run and starts
-  the new one. Until now a run that lost its browser kept the target locked for up to an hour, and
-  the only way out was Delete on the Background screen. Only the run's owner or an admin sees the
-  button.
-- The panel also has a **Try again** button and a "Checked" time. The panel doesn't refresh by
-  itself, so Try again re-checks: it starts the new run if the old one has finished, and otherwise
-  shows the latest status.
-
-### Changed
-
-- The conflict messages no longer suggest waiting on the panel or cancelling from it. They say to
-  try again once the other run has finished.
 
 ]]></description>
     </item>

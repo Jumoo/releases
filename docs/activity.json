@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T12:19:03.676Z",
+  "generatedAt": "2026-11-13T16:19:13.912Z",
   "packages": [
     {
       "package": "uSync",
@@ -358,12 +358,12 @@
       "category": "Other",
       "repo": "Jumoo/umbraco.community.powertoys",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.4.0",
-      "lastReleaseDate": "2026-11-09T12:44:15Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.4.0",
+      "lastReleaseTag": "v17.5.0",
+      "lastReleaseDate": "2026-11-13T14:32:55Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.5.0",
       "releaseBranch": "v17/main",
-      "commitsSince": 8,
-      "lastCommitDate": "2026-11-13T11:16:29Z"
+      "commitsSince": 0,
+      "lastCommitDate": "2026-11-13T14:32:55Z"
     },
     {
       "package": "Jumoo.Processing",
