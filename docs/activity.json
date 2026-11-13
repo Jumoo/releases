@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T00:34:31.842Z",
+  "generatedAt": "2026-11-13T12:19:03.676Z",
   "packages": [
     {
       "package": "uSync",
@@ -362,8 +362,8 @@
       "lastReleaseDate": "2026-11-09T12:44:15Z",
       "lastReleaseUrl": "https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.4.0",
       "releaseBranch": "v17/main",
-      "commitsSince": 2,
-      "lastCommitDate": "2026-11-09T12:47:17Z"
+      "commitsSince": 8,
+      "lastCommitDate": "2026-11-13T11:16:29Z"
     },
     {
       "package": "Jumoo.Processing",
