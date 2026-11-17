@@ -1,5 +1,18 @@
 [
   {
+    "package": "uSync.Engage",
+    "title": "uSync Engage",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.Engage",
+    "version": "17.0.0-beta02",
+    "publishedAt": "2026-11-16T15:26:58Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Engage/17.0.0-beta02",
+    "githubUrl": "https://github.com/Jumoo/uSync.Engage/releases/tag/v17.0.0-beta02",
+    "notes": "## What's Changed\n* Add uSync.Engage.Complete for uSync.Complete push and pull by @henryjump in https://github.com/Jumoo/uSync.Engage/pull/3\n\n## New Contributors\n* @henryjump made their first contribution in https://github.com/Jumoo/uSync.Engage/pull/3\n\n**Full Changelog**: https://github.com/Jumoo/uSync.Engage/compare/v17.0.0-beta01...v17.0.0-beta02",
+    "prerelease": true,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync.Migrations",
     "title": "uSync Migrations",
     "category": "uSync Addon",
