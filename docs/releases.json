@@ -1,5 +1,44 @@
 [
   {
+    "package": "Jumoo.TranslationManager.LanguageWire",
+    "title": "LanguageWire Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/LanguageWire.Connector",
+    "version": "17.1.5",
+    "publishedAt": "2026-11-18T13:35:50Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.LanguageWire/17.1.5",
+    "githubUrl": "https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.5",
+    "notes": "### Fixed\n\n- The connector's options now return the whitespace and inline-code settings under the keys\n  they are read from (`prependWhitespace`, `appendWhitespace`, `inlineCodes`), so saving the\n  settings keeps them and the Inline Codes field shows the saved value. Settings saved under\n  the old `prependSpaceBeforeTag` / `appendSpaceAfterTag` keys are still read.\n\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager.CSV",
+    "title": "CSV Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.CSV",
+    "version": "17.0.1",
+    "publishedAt": "2026-11-18T13:35:48Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.CSV/17.0.1",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v17.0.1",
+    "notes": "### Fixed\n\n- The date format set on the settings screen is now used in file names. The connector read\n  `dateTemplate` while the screen saves `fileDate`; it now reads `fileDate`, and still reads\n  `dateTemplate` for config set under the old key.\n- Uploaded files are saved under the configured folder. The upload path read its folder setting\n  from the wrong connector alias.\n- The default Include header line option reads `includeHeaderLine`, the key the screen and the\n  connector use.\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
+    "package": "Jumoo.TranslationManager.Google",
+    "title": "Google Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Google.Connector",
+    "version": "17.1.2",
+    "publishedAt": "2026-11-18T13:35:47Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.Google/17.1.2",
+    "githubUrl": "https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.2",
+    "notes": "### Fixed\n\n- The Map glossaries setting is returned with the connector's options as `mapGlossaries`, the\n  key the settings screen and the connector use, so the toggle shows its saved value instead of\n  always showing off. Settings saved under the old `useGlossaries` key are still read.\n\n### Changed\n\n- The backoffice client is built with Vite 8, and `@jumoo/translate` now resolves from\n  npmjs.org.\n\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.DeepL",
     "title": "DeepL Connector",
     "category": "Translation Connectors",

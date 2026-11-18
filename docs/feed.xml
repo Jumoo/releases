@@ -5,6 +5,54 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>LanguageWire Connector 17.1.5</title>
+      <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.5</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.5</guid>
+      <pubDate>Wed, 18 Nov 2026 13:35:50 GMT</pubDate>
+      <description><![CDATA[### Fixed
+
+- The connector's options now return the whitespace and inline-code settings under the keys
+  they are read from (`prependWhitespace`, `appendWhitespace`, `inlineCodes`), so saving the
+  settings keeps them and the Inline Codes field shows the saved value. Settings saved under
+  the old `prependSpaceBeforeTag` / `appendSpaceAfterTag` keys are still read.
+
+]]></description>
+    </item>
+    <item>
+      <title>CSV Connector 17.0.1</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v17.0.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CSV/releases/tag/v17.0.1</guid>
+      <pubDate>Wed, 18 Nov 2026 13:35:48 GMT</pubDate>
+      <description><![CDATA[### Fixed
+
+- The date format set on the settings screen is now used in file names. The connector read
+  `dateTemplate` while the screen saves `fileDate`; it now reads `fileDate`, and still reads
+  `dateTemplate` for config set under the old key.
+- Uploaded files are saved under the configured folder. The upload path read its folder setting
+  from the wrong connector alias.
+- The default Include header line option reads `includeHeaderLine`, the key the screen and the
+  connector use.
+]]></description>
+    </item>
+    <item>
+      <title>Google Connector 17.1.2</title>
+      <link>https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases/tag/v17.1.2</guid>
+      <pubDate>Wed, 18 Nov 2026 13:35:47 GMT</pubDate>
+      <description><![CDATA[### Fixed
+
+- The Map glossaries setting is returned with the connector's options as `mapGlossaries`, the
+  key the settings screen and the connector use, so the toggle shows its saved value instead of
+  always showing off. Settings saved under the old `useGlossaries` key are still read.
+
+### Changed
+
+- The backoffice client is built with Vite 8, and `@jumoo/translate` now resolves from
+  npmjs.org.
+
+]]></description>
+    </item>
+    <item>
       <title>DeepL Connector 17.4.2</title>
       <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.2</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.2</guid>
@@ -881,60 +929,6 @@ The LanguageWire backoffice API now declares backoffice authentication on every 
 - Client build tooling: prettier 3.9, vite 8.3.5 (#11, #12).
 
 **Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/compare/v17.0.0...v17.0.1
-]]></description>
-    </item>
-    <item>
-      <title>CrowdIn Connector 17.2.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.2</guid>
-      <pubDate>Mon, 09 Nov 2026 10:38:53 GMT</pubDate>
-      <description><![CDATA[## Fixed
-
-- Authenticate the backoffice API client with `configureClient` in the entry point's `onInit`; every generated operation now carries its bearer `security` requirement (Jumoo/jumoo-context#138, Jumoo/Jumoo.TranslationManager.CrowdIn#18).
-
-## Changed — client dependencies and tooling
-
-- 96a2cd0 Dependabot roll-up: lit 3.3.3, prettier 3.9.10, vite 8.3.4; Dependabot ignores typescript 6+ and minor/major `@hey-api/*` bumps (#10)
-- bf0d0e3 typescript 5.9.3 (#11)
-- ea2f2d4 vite 8.3.5 (#14)
-- f5827e4 Resolve `@jumoo/translate` from npmjs.org (#16)
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/compare/v17.2.1...v17.2.2]]></description>
-    </item>
-    <item>
-      <title>Publicis Connector 17.0.3</title>
-      <link>https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.3</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/TranslatePlus-Connector/releases/tag/v17.0.3</guid>
-      <pubDate>Mon, 09 Nov 2026 10:38:24 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/TranslatePlus-Connector/pull/27
-* Remove runtimeConfigPath now configureClient is in place by @henryjump in https://github.com/Jumoo/TranslatePlus-Connector/pull/29
-* Bump NSwag.ApiDescription.Client from 13.20.0 to 14.7.1 by @dependabot[bot] in https://github.com/Jumoo/TranslatePlus-Connector/pull/28
-
-
-**Full Changelog**: https://github.com/Jumoo/TranslatePlus-Connector/compare/v17.0.2...v17.0.3]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 18.5.0</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.5.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v18.5.0</guid>
-      <pubDate>Mon, 09 Nov 2026 10:14:05 GMT</pubDate>
-      <description><![CDATA[Resend a job's notification emails, a temporary licence for older keys, a much faster translation memory, and Clone to Language fixes for block properties. Includes the fixes from v17 17.11.0.
-
-- Build: raise the bundled connector minimums to their latest v18 releases (Google 18.0.1, Microsoft 18.2.1, Xliff 18.0.2, Passthrough 18.0.1, DeepL 18.2.0, AI 18.4.1). NuGet picks the lowest matching version, so sites kept getting the older connectors, including Google 18.0.0 without the fix that only loads it when the backoffice is enabled
-
-- Fix: the `@jumoo/translate` npm package was missing most of its types in 18.3.2 and 18.4.0, including `dist/index.d.ts`, so packages building against it failed with `TS2307`
-- Fix: the Quick translate button never showed in the Languages box on a document's Translation view, because the box dropped its header actions unless it was collapsable
-- Fix: Clone to Language left a culture-variant Block List, Block Grid, Single Block or rich text block property's blocks in the source language. Their element values and expose entries kept the source culture, so on the target page the blocks showed as drafts with no content. An invariant block property on a culture-variant page (block level variance) wasn't cloned at all. Both are now cloned to the target language, including blocks nested inside other blocks
-- Fix: a failed backoffice API call now shows the error notification, and is treated as an error rather than an empty result. The v18 client wasn't generated with `throwOnError`, so errors were returned instead of thrown
-- Fix: translation memory slowed down a lot once it held many rows. With 500,000 rows, approving a job no longer scans the memory table for every translated value, and listing, counting and deleting memory now runs in the database rather than loading every row first. Paging a source, its counts and the sources list now take milliseconds instead of seconds. Deleting all memory on SQL Server now takes 6s instead of 93s (950s to under 1s on SQLite). A migration adds two indexes to the memory table, which took about a second at 500,000 rows (Jumoo/Jumoo.TranslationManager#154)
-- Fix: creating a job failed on SQL Server with "String or binary data would be truncated in table 'Translate_Jobs', column 'name'" when the job's name was longer than 255 characters, which a long page name could cause because the default job name starts with it. Job names are now cut to 255 characters (ending in `...`) when they're saved (Jumoo/Jumoo.TranslationManager#157)
-- Fix: when translating a page and its children, the suggested job name lost the page's name and started "& Children". It's now "{page name} & Children"
-- Add: when the licence key is for an older version of Translation Manager, the licence page shows a warning with a button to get a one-off temporary licence. If the licence is set in appsettings, nothing is saved and the page shows the new key and domains to copy there (Jumoo/Jumoo.TranslationManager#162)
-- Fix: a licence within a month of expiry was replaced with a blank one when the renewal check found no new key. The existing licence is now kept
-- Fix: saving Translation Manager's settings, licence, connector settings or translation sets returned a 403 unless the user's group had the "Manage translations" permission. These pages are in the Settings section, so anyone with access to that section can now save them
-- Add: a bell button in the job page footer resends the notification emails for the job's current stage, for when a translator has lost the original email. It shows once a job is past Submitted: received and reviewing jobs resend the Received email, approved and closed jobs the Approved one. It asks before sending, and if nothing goes out it says why (notifications off, no email set up, or no recipients for that stage). Only the email is resent, so nothing else that runs when a job is received, such as auto approval, runs again (Jumoo/Jumoo.TranslationManager.Issues#109)
-
 ]]></description>
     </item>
   </channel>
