@@ -5,6 +5,18 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>DeepL Connector 17.4.2</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.2</guid>
+      <pubDate>Tue, 17 Nov 2026 16:58:38 GMT</pubDate>
+      <description><![CDATA[### Fixed
+
+- Map glossaries and the advanced settings (model type, tag handling version, outline detection, preserve formatting, ignore, splitting and non-splitting tags) now load on the config page. They were saved but never returned, so the page showed defaults and the next save removed them.
+- Ignore tags and non-splitting tags were swapped when building the DeepL request.
+- Upgrading from v13: a stored `mapGlossary` value is honoured when `mapGlossaries` isn't set.
+]]></description>
+    </item>
+    <item>
       <title>uSync Engage 17.0.0</title>
       <link>https://github.com/Jumoo/uSync.Engage/releases/tag/v17.0.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.Engage/releases/tag/v17.0.0</guid>
@@ -922,81 +934,6 @@ The LanguageWire backoffice API now declares backoffice authentication on every 
 - Fix: a licence within a month of expiry was replaced with a blank one when the renewal check found no new key. The existing licence is now kept
 - Fix: saving Translation Manager's settings, licence, connector settings or translation sets returned a 403 unless the user's group had the "Manage translations" permission. These pages are in the Settings section, so anyone with access to that section can now save them
 - Add: a bell button in the job page footer resends the notification emails for the job's current stage, for when a translator has lost the original email. It shows once a job is past Submitted: received and reviewing jobs resend the Received email, approved and closed jobs the Approved one. It asks before sending, and if nothing goes out it says why (notifications off, no email set up, or no recipients for that stage). Only the email is resent, so nothing else that runs when a job is received, such as auto approval, runs again (Jumoo/Jumoo.TranslationManager.Issues#109)
-
-]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 17.7.0</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.7.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v17.7.0</guid>
-      <pubDate>Mon, 09 Nov 2026 10:03:19 GMT</pubDate>
-      <description><![CDATA[- New: the change details dialog on the Publisher, Exporter, snapshot,
-  restore point and TimeMachine rollback reports has a Side by side tab that
-  previews the item from what's being synced (the sync pack, snapshot,
-  restore point or rollback) rather than the site's uSync folders. Pushes
-  preview on the target server, when the target supports it
-- The dialog's tabs are now Side by side, Web page, Details. Both sides are
-  labelled Current and Incoming, with the site's name, and the incoming
-  side is on the left
-- New: the licence page can get a one-off 60 day temporary licence for keys
-  from older versions of uSync.Complete, while you upgrade
-- New: `uSyncPublisherActionCompletedNotification` is raised on the server
-  that started a push or pull when it finishes, from the push dialog,
-  headless or the background queue. It has the target server, the user,
-  the items pushed (with their children) and the per-item results,
-  dependencies included. `uSyncPublisher.Pipelines.Publish` gives the
-  Publisher pipeline's alias for code handling `PipelineFinishedNotification`
-- Fix: a settings push or pull only sends the website folders for the file
-  types you pick, so pushing stylesheets no longer sends `Views`
-- Fix: items pushed from the Sync Queue to a server that requires approval
-  are now removed from the queue once the approval goes through
-- Fix: items pushed from the Sync Queue to a server that already has them
-  are now removed from the queue, when the report finds no changes
-- New: a "Content & Media" server template, for sites that deploy settings
-  and files with uSync and source control. It is first in the list and
-  selected by default when you add a server
-- The "Content & Media & Settings" server template is now called
-  "Everything", and a new server set up from it includes settings and files
-  in its pushes and pulls. Servers you have already set up keep their
-  settings
-- Fix: the Web page tab now says when an item doesn't exist on the other
-  site yet, instead of saying there are no differences
-- Fix: when the Side by side tab can't preview an item, for example content whose
-  document type isn't on the other site yet, the tab says so instead of
-  not appearing
-- Fix: approvals only apply to content, media and member pushes and pulls.
-  Pushing or pulling settings from the Settings tree (document types,
-  templates, stylesheets and so on) no longer waits for approval, as the
-  approval setting says
-- Pushing or pulling a document, media or member type now always includes its
-  compositions, whether or not "Include dependencies" is on
-- New in uSync.Publisher: "Include shared values", an option on language
-  limited pushes and pulls. The report also says when shared values were not
-  compared
-- Fix: a root push with "Delete missing" ticked now deletes from the target
-  when `AllowDeletingOfOrphanedItemsFromRoot` is set, and only for the orphan
-  types
-- Fix: a full push no longer sends values for unpublished cultures
-- The backoffice screens now use Umbraco's own client setup, so a session that
-  expires during a request asks you to sign in again instead of failing
-- Publisher's language step now says that content that doesn't vary by language
-  is sent in full when only some languages are selected
-- Updated to Jumoo.Processing 17.5.3
-- Updated to uSync 17.6.1. This includes the uSync 17.5.2 fixes, which keep
-  the right values on culture and segment limited pushes, and import items
-  that have a clean marker
-- Fix: a push to a site in Production mode no longer lists website file changes
-  the site won't apply. The report shows a note when files are different instead
-- Fix: v17 servers can connect to each other when a URL rewrite rule or
-  middleware changes the case of the request path, as v13 servers could
-- Fix: v17 servers can connect to each other on sites where authentication
-  runs before Umbraco's pipeline in Program.cs
-- When a server turns down a connection, both servers now log the address
-  they used for the request, so the two can be compared
-- `MaxRequestBodySize` (Publisher and Exporter) now applies on IIS as well as
-  Kestrel, so large pushes and uploads on IIS only need `maxAllowedContentLength`
-  raised in web.config. It only raises the limit: a site that already allows
-  more keeps its own limit
 
 ]]></description>
     </item>

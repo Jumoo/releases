@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T12:19:14.115Z",
+  "generatedAt": "2026-11-18T00:34:59.027Z",
   "packages": [
     {
       "package": "uSync",
@@ -202,12 +202,12 @@
       "category": "Translation Connectors",
       "repo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v18.2.1",
-      "lastReleaseDate": "2026-11-09T11:14:24Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.1",
-      "releaseBranch": "v18/main",
+      "lastReleaseTag": "v17.4.2",
+      "lastReleaseDate": "2026-11-17T16:58:38Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.2",
+      "releaseBranch": "v17/main",
       "commitsSince": 0,
-      "lastCommitDate": "2026-11-09T11:14:24Z"
+      "lastCommitDate": "2026-11-17T16:58:38Z"
     },
     {
       "package": "Jumoo.TranslationManager.Google",

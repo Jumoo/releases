@@ -1,5 +1,18 @@
 [
   {
+    "package": "Jumoo.TranslationManager.DeepL",
+    "title": "DeepL Connector",
+    "category": "Translation Connectors",
+    "repo": "Jumoo/Jumoo.TranslationManager.Connector.DeepL",
+    "version": "17.4.2",
+    "publishedAt": "2026-11-17T16:58:38Z",
+    "nugetUrl": "https://www.nuget.org/packages/Jumoo.TranslationManager.DeepL/17.4.2",
+    "githubUrl": "https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v17.4.2",
+    "notes": "### Fixed\n\n- Map glossaries and the advanced settings (model type, tag handling version, outline detection, preserve formatting, ignore, splitting and non-splitting tags) now load on the config page. They were saved but never returned, so the page showed defaults and the next save removed them.\n- Ignore tags and non-splitting tags were swapped when building the DeepL request.\n- Upgrading from v13: a stored `mapGlossary` value is honoured when `mapGlossaries` isn't set.\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "uSync.Engage",
     "title": "uSync Engage",
     "category": "uSync Addon",
