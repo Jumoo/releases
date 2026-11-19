@@ -1,5 +1,18 @@
 [
   {
+    "package": "uSync.Forms",
+    "title": "uSync Forms",
+    "category": "uSync Addon",
+    "repo": "Jumoo/uSync.Forms",
+    "version": "17.2.1",
+    "publishedAt": "2026-11-19T13:58:45Z",
+    "nugetUrl": "https://www.nuget.org/packages/uSync.Forms/17.2.1",
+    "githubUrl": "https://github.com/Jumoo/uSync.Forms/releases/tag/v17.2.1",
+    "notes": "## What's Changed\n* Correct the nightly feed checkout comment by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/76\n* Bump vite from 8.3.3 to 8.3.4 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/79\n* Bump vite from 8.3.3 to 8.3.4 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/78\n* Bump vite from 8.3.4 to 8.3.5 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/82\n* Bump vite from 8.3.4 to 8.3.5 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/81\n* Bump vite from 8.3.5 to 8.3.6 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/84\n* Bump vite from 8.3.5 to 8.3.6 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/85\n* Build on demand, scan CodeQL weekly, update Dependabot monthly by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/89\n* Bump vite from 8.3.6 to 8.3.8 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/87\n* Bump vite from 8.3.6 to 8.3.8 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/88\n\n**Full Changelog**: https://github.com/KevinJump/uSync.Forms/compare/v17.2.0...v17.2.1\n",
+    "prerelease": false,
+    "umbracoMajor": 17
+  },
+  {
     "package": "Jumoo.TranslationManager.LanguageWire",
     "title": "LanguageWire Connector",
     "category": "Translation Connectors",

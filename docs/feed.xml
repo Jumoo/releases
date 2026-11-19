@@ -5,6 +5,26 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync Forms 17.2.1</title>
+      <link>https://github.com/Jumoo/uSync.Forms/releases/tag/v17.2.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Forms/releases/tag/v17.2.1</guid>
+      <pubDate>Thu, 19 Nov 2026 13:58:45 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Correct the nightly feed checkout comment by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/76
+* Bump vite from 8.3.3 to 8.3.4 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/79
+* Bump vite from 8.3.3 to 8.3.4 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/78
+* Bump vite from 8.3.4 to 8.3.5 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/82
+* Bump vite from 8.3.4 to 8.3.5 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/81
+* Bump vite from 8.3.5 to 8.3.6 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/84
+* Bump vite from 8.3.5 to 8.3.6 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/85
+* Build on demand, scan CodeQL weekly, update Dependabot monthly by @KevinJump in https://github.com/KevinJump/uSync.Forms/pull/89
+* Bump vite from 8.3.6 to 8.3.8 in /uSync.Forms.Complete/Client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/87
+* Bump vite from 8.3.6 to 8.3.8 in /uSync.Forms/forms-client by @dependabot[bot] in https://github.com/KevinJump/uSync.Forms/pull/88
+
+**Full Changelog**: https://github.com/KevinJump/uSync.Forms/compare/v17.2.0...v17.2.1
+]]></description>
+    </item>
+    <item>
       <title>LanguageWire Connector 17.1.5</title>
       <link>https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.5</link>
       <guid isPermaLink="true">https://github.com/Jumoo/LanguageWire.Connector/releases/tag/v17.1.5</guid>
@@ -914,21 +934,6 @@ The LanguageWire backoffice API now declares backoffice authentication on every 
 ## Requires
 - Jumoo.TranslationManager.Core / Serializers 17.2.2 or later
 - Umbraco.Cms 17.3.0 or later
-]]></description>
-    </item>
-    <item>
-      <title>SmartCat Connector 17.0.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/releases/tag/v17.0.1</guid>
-      <pubDate>Mon, 09 Nov 2026 10:38:54 GMT</pubDate>
-      <description><![CDATA[## What's changed
-
-- **Authenticate the backoffice API client with `configureClient`** (#15, part of Jumoo/jumoo-context#138). Umbraco's `UMB_AUTH_CONTEXT.configureClient()` now runs from the entry point's `onInit`, replacing the hand-rolled hey-api runtime config. `@hey-api/openapi-ts` bumped to 0.99 and the client regenerated.
-- **RestSharp and RestSharp.Serializers.NewtonsoftJson 114.0.0 → 114.1.0** (#13). These are runtime dependencies of the connector.
-- `@jumoo/translate` now resolves from npmjs.org rather than the Azure feed (#14).
-- Client build tooling: prettier 3.9, vite 8.3.5 (#11, #12).
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.SmartCat/compare/v17.0.0...v17.0.1
 ]]></description>
     </item>
   </channel>

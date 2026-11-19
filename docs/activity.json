@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-19T12:18:52.316Z",
+  "generatedAt": "2026-11-19T14:06:30.079Z",
   "packages": [
     {
       "package": "uSync",
@@ -33,12 +33,12 @@
       "category": "uSync Addon",
       "repo": "Jumoo/uSync.Forms",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v19.0.0-rc1",
-      "lastReleaseDate": "2026-11-12T15:33:48Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Forms/releases/tag/v19.0.0-rc1",
-      "releaseBranch": "v19/main",
-      "commitsSince": 18,
-      "lastCommitDate": "2026-11-18T15:55:56Z"
+      "lastReleaseTag": "v17.2.1",
+      "lastReleaseDate": "2026-11-19T13:58:45Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.Forms/releases/tag/v17.2.1",
+      "releaseBranch": "v17/main",
+      "commitsSince": 0,
+      "lastCommitDate": "2026-11-19T13:58:45Z"
     },
     {
       "package": "uSync.Umbraco.Commerce",
