@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-18T16:25:17.229Z",
+  "generatedAt": "2026-11-19T00:34:43.152Z",
   "packages": [
     {
       "package": "uSync",
@@ -24,8 +24,8 @@
       "lastReleaseDate": "2026-11-12T14:27:28Z",
       "lastReleaseUrl": "https://github.com/Jumoo/uSync.Complete/releases/tag/release/v19.0.0-rc1",
       "releaseBranch": "v19/main",
-      "commitsSince": 35,
-      "lastCommitDate": "2026-11-18T15:59:16Z"
+      "commitsSince": 57,
+      "lastCommitDate": "2026-11-18T20:55:28Z"
     },
     {
       "package": "uSync.Forms",
@@ -128,8 +128,8 @@
       "lastReleaseDate": "2026-11-12T14:16:16Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v19.0.0-rc1",
       "releaseBranch": "v19/main",
-      "commitsSince": 56,
-      "lastCommitDate": "2026-11-18T14:49:53Z"
+      "commitsSince": 65,
+      "lastCommitDate": "2026-11-18T21:56:51Z"
     },
     {
       "package": "Jumoo.TranslationManager.AI",
