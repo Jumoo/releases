@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T12:16:56.250Z",
+  "generatedAt": "2026-11-22T00:36:18.889Z",
   "packages": [
     {
       "package": "uSync",
@@ -11,8 +11,8 @@
       "lastReleaseDate": "2026-11-12T12:45:16Z",
       "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v19.0.0-rc1",
       "releaseBranch": "v19/main",
-      "commitsSince": 125,
-      "lastCommitDate": "2026-11-21T11:37:01Z"
+      "commitsSince": 134,
+      "lastCommitDate": "2026-11-21T14:01:35Z"
     },
     {
       "package": "uSync.Complete",
@@ -388,8 +388,8 @@
       "lastReleaseDate": "2026-11-12T11:56:54Z",
       "lastReleaseUrl": "https://github.com/Jumoo/Jumoo.Json/releases/tag/v19.0.0-rc1",
       "releaseBranch": "v19/main",
-      "commitsSince": 18,
-      "lastCommitDate": "2026-11-18T15:52:18Z"
+      "commitsSince": 25,
+      "lastCommitDate": "2026-11-21T21:03:34Z"
     }
   ]
 }
