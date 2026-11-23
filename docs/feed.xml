@@ -5,6 +5,235 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>Maintenance Mode 18.2.4</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.4</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.4</guid>
+      <pubDate>Mon, 23 Nov 2026 11:53:42 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Bump the npm-dependencies group in /Our.Umbraco.MaintenanceMode.Client/maintenance-client with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/142
+* Build on demand and monthly Dependabot (#159) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/143
+* Merge v17 into v18: build on demand, monthly Dependabot (#159) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/145
+* Add the #159 build changes to dotnet-build.yml on v18 by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/147
+* Bump prettier from 3.10.0 to 3.10.1 in /Our.Umbraco.MaintenanceMode.Client/maintenance-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/144
+* Merge v17/main into v18/main (2026-11-18) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/148
+* Fix maintenance mode saves on database mode by @josephheqj in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/151
+* Merge v17/main into v18/main (2026-11-23) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/152
+
+## New Contributors
+* @josephheqj made their first contribution in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/151
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v18.2.3...v18.2.4]]></description>
+    </item>
+    <item>
+      <title>Maintenance Mode 19.0.0-rc2</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v19.0.0-rc2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v19.0.0-rc2</guid>
+      <pubDate>Mon, 23 Nov 2026 11:53:41 GMT</pubDate>
+      <description><![CDATA[Release candidate for Umbraco 19, still built against Umbraco 19.0.0-rc1 on .NET 11. Use the 18.x releases on Umbraco 18.
+## What's Changed
+* Bump the npm-dependencies group in /Our.Umbraco.MaintenanceMode.Client/maintenance-client with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/142
+* Build on demand and monthly Dependabot (#159) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/143
+* Merge v17 into v18: build on demand, monthly Dependabot (#159) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/145
+* Add the #159 build changes to dotnet-build.yml on v18 by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/147
+* Merge v18 into v19: build on demand, monthly Dependabot (#159) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/146
+* Bump prettier from 3.10.0 to 3.10.1 in /Our.Umbraco.MaintenanceMode.Client/maintenance-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/144
+* Merge v17/main into v18/main (2026-11-18) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/148
+* Merge v18/main into v19/main (2026-11-18) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/149
+* Fix maintenance mode saves on database mode by @josephheqj in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/151
+* Merge v17/main into v18/main (2026-11-23) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/152
+* Merge v18/main into v19/main (2026-11-23) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/153
+
+## New Contributors
+* @josephheqj made their first contribution in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/151
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v19.0.0-rc1...v19.0.0-rc2]]></description>
+    </item>
+    <item>
+      <title>Maintenance Mode 17.3.2</title>
+      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.3.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v17.3.2</guid>
+      <pubDate>Mon, 23 Nov 2026 11:53:40 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Bump ws from 7.5.10 to 7.5.13 in /Our.Umbraco.MaintenanceMode.Client/maintenance-client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/128
+* Override js-yaml to 4.3.2 (Dependabot alert 233) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/133
+* Bump the npm-dependencies group in /Our.Umbraco.MaintenanceMode.Client/maintenance-client with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/142
+* Build on demand and monthly Dependabot (#159) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/143
+* Bump prettier from 3.10.0 to 3.10.1 in /Our.Umbraco.MaintenanceMode.Client/maintenance-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/144
+* Fix maintenance mode saves on database mode by @josephheqj in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/151
+
+## New Contributors
+* @josephheqj made their first contribution in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/151
+
+**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v17.3.1...v17.3.2]]></description>
+    </item>
+    <item>
+      <title>uSync 19.0.0-rc2</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v19.0.0-rc2</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v19.0.0-rc2</guid>
+      <pubDate>Mon, 23 Nov 2026 11:37:34 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Refresh the README with new screenshots and setup notes by @KevinJump in https://github.com/KevinJump/uSync/pull/1214
+* Bump vite from 8.3.5 to 8.3.6 in /uSync.History/history-client in the npm-dependencies group by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1216
+* Bump vite from 8.3.5 to 8.3.6 in /uSync.Backoffice.Management.Client/usync-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1217
+* Bump the nuget-dependencies group with 3 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1218
+* Bump Microsoft.SourceLink.GitHub from 10.0.404 to 11.0.100 by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1219
+* Merge v17/main into v18/main (2026-11-17) by @henryjump in https://github.com/KevinJump/uSync/pull/1222
+* Build on demand, scan CodeQL weekly, update Dependabot monthly by @KevinJump in https://github.com/KevinJump/uSync/pull/1224
+* Merge v17/main into v18/main (CI on demand) by @KevinJump in https://github.com/KevinJump/uSync/pull/1229
+* Merge v18/main into v19/main (CI on demand) by @KevinJump in https://github.com/KevinJump/uSync/pull/1231
+* Bump coverlet.collector from 8.0.1 to 10.1.1 by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1230
+* Bump vite-plugin-checker from 0.14.5 to 1.0.0 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1227
+* Bump the npm-dependencies group in /uSync.Backoffice.Management.Client/usync-assets with 3 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1226
+* Bump the npm-dependencies group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1225
+* Ignore signalr 11 and Clean majors in dependabot by @KevinJump in https://github.com/KevinJump/uSync/pull/1232
+* Merge v17/main into v18/main (2026-11-18) by @KevinJump in https://github.com/KevinJump/uSync/pull/1233
+* Merge v18/main into v19/main (2026-11-18) by @KevinJump in https://github.com/KevinJump/uSync/pull/1234
+* Compare content schedule dates against UTC by @KevinJump in https://github.com/KevinJump/uSync/pull/1251
+* uSync.History retention settings by @KevinJump in https://github.com/KevinJump/uSync/pull/1252
+* KeepTemplates: match site-only templates by whole alias by @KevinJump in https://github.com/KevinJump/uSync/pull/1254
+* Delete markers for dictionary item descendants by @KevinJump in https://github.com/KevinJump/uSync/pull/1253
+* Serializable payloads for uSync webhook events by @KevinJump in https://github.com/KevinJump/uSync/pull/1255
+* Merge v17/main into v18/main (2026-11-19) by @KevinJump in https://github.com/KevinJump/uSync/pull/1256
+* Merge v17/main into v18/main (2026-11-19) by @KevinJump in https://github.com/KevinJump/uSync/pull/1257
+* Merge v18/main into v19/main (2026-11-19) by @KevinJump in https://github.com/KevinJump/uSync/pull/1258
+* Document type round-trip regression tests by @KevinJump in https://github.com/KevinJump/uSync/pull/1259
+* Merge v17/main into v18/main (2026-11-19) by @KevinJump in https://github.com/KevinJump/uSync/pull/1260
+* Merge v18/main into v19/main (2026-11-19) by @KevinJump in https://github.com/KevinJump/uSync/pull/1261
+* Keep usync.once when the startup import has errors by @KevinJump in https://github.com/KevinJump/uSync/pull/1262
+* Startup import status in the key-value store plus a StartupStatus endpoint by @KevinJump in https://github.com/KevinJump/uSync/pull/1263
+* Results view: change-type summary, errors-only filter and search by @KevinJump in https://github.com/KevinJump/uSync/pull/1264
+* Add Time Machine (timeline) to the add-ons view by @KevinJump in https://github.com/KevinJump/uSync/pull/1265
+* Add import failed webhook event and summary counts to bulk webhook payloads by @KevinJump in https://github.com/KevinJump/uSync/pull/1266
+* Merge v17/main into v18/main (2026-11-20) by @KevinJump in https://github.com/KevinJump/uSync/pull/1267
+* Merge v18/main into v19/main (2026-11-20) by @KevinJump in https://github.com/KevinJump/uSync/pull/1268
+* Reduce disk IO and DB calls in save cleanup, export and preview by @KevinJump in https://github.com/KevinJump/uSync/pull/1269
+* Use the entity cache for mapper dependency lookups and reuse report nodes by @KevinJump in https://github.com/KevinJump/uSync/pull/1270
+* Skip the sibling name search for items under parents the import created by @KevinJump in https://github.com/KevinJump/uSync/pull/1271
+* Merge v17/main into v18/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1272
+* Give mappers the entity cache from the mapper collection by @KevinJump in https://github.com/KevinJump/uSync/pull/1273
+* Merge v17/main into v18/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1274
+* Merge v18/main into v19/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1275
+* Report key conflicts clearly when Umbraco won't change a key by @KevinJump in https://github.com/KevinJump/uSync/pull/1276
+* Add KeyConflict: Map, an opt-in per-site key map by @KevinJump in https://github.com/KevinJump/uSync/pull/1277
+* Merge v17/main into v18/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1278
+* Merge v18/main into v19/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1279
+* Use CountChildren in the key map import test by @KevinJump in https://github.com/KevinJump/uSync/pull/1280
+* Merge v17/main into v18/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1281
+* Merge v18/main into v19/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1282
+* Cut allocations on the import, export and report paths by @KevinJump in https://github.com/KevinJump/uSync/pull/1283
+* Cut more allocations in xml merging, tracking and file loading by @KevinJump in https://github.com/KevinJump/uSync/pull/1284
+* Merge v17/main into v18/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1285
+* Merge v18/main into v19/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1286
+* Update Jumoo.Json to 18.0.4 by @KevinJump in https://github.com/KevinJump/uSync/pull/1287
+* Update Jumoo.Json to 19.0.0-rc2 by @KevinJump in https://github.com/KevinJump/uSync/pull/1288
+* Leave languages out of the key map by @KevinJump in https://github.com/KevinJump/uSync/pull/1289
+* Merge v17/main into v18/main (2026-11-23) by @KevinJump in https://github.com/KevinJump/uSync/pull/1290
+* Merge v18/main into v19/main (2026-11-23) by @KevinJump in https://github.com/KevinJump/uSync/pull/1291
+* Update uSync.Extend lock file for the Jumoo.Json bump (v19) by @KevinJump in https://github.com/KevinJump/uSync/pull/1293
+
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v19.0.0-rc1...v19.0.0-rc2]]></description>
+    </item>
+    <item>
+      <title>uSync 18.3.2</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v18.3.2</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.3.2</guid>
+      <pubDate>Mon, 23 Nov 2026 11:37:32 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Refresh the README with new screenshots and setup notes by @KevinJump in https://github.com/KevinJump/uSync/pull/1214
+* Bump vite from 8.3.5 to 8.3.6 in /uSync.History/history-client in the npm-dependencies group by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1216
+* Bump vite from 8.3.5 to 8.3.6 in /uSync.Backoffice.Management.Client/usync-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1217
+* Bump the nuget-dependencies group with 3 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1218
+* Bump Microsoft.SourceLink.GitHub from 10.0.404 to 11.0.100 by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1219
+* Merge v17/main into v18/main (2026-11-17) by @henryjump in https://github.com/KevinJump/uSync/pull/1222
+* Build on demand, scan CodeQL weekly, update Dependabot monthly by @KevinJump in https://github.com/KevinJump/uSync/pull/1224
+* Merge v17/main into v18/main (CI on demand) by @KevinJump in https://github.com/KevinJump/uSync/pull/1229
+* Bump coverlet.collector from 8.0.1 to 10.1.1 by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1230
+* Bump vite-plugin-checker from 0.14.5 to 1.0.0 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1227
+* Bump the npm-dependencies group in /uSync.Backoffice.Management.Client/usync-assets with 3 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1226
+* Bump the npm-dependencies group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1225
+* Ignore signalr 11 and Clean majors in dependabot by @KevinJump in https://github.com/KevinJump/uSync/pull/1232
+* Merge v17/main into v18/main (2026-11-18) by @KevinJump in https://github.com/KevinJump/uSync/pull/1233
+* Compare content schedule dates against UTC by @KevinJump in https://github.com/KevinJump/uSync/pull/1251
+* uSync.History retention settings by @KevinJump in https://github.com/KevinJump/uSync/pull/1252
+* KeepTemplates: match site-only templates by whole alias by @KevinJump in https://github.com/KevinJump/uSync/pull/1254
+* Delete markers for dictionary item descendants by @KevinJump in https://github.com/KevinJump/uSync/pull/1253
+* Serializable payloads for uSync webhook events by @KevinJump in https://github.com/KevinJump/uSync/pull/1255
+* Merge v17/main into v18/main (2026-11-19) by @KevinJump in https://github.com/KevinJump/uSync/pull/1256
+* Merge v17/main into v18/main (2026-11-19) by @KevinJump in https://github.com/KevinJump/uSync/pull/1257
+* Document type round-trip regression tests by @KevinJump in https://github.com/KevinJump/uSync/pull/1259
+* Merge v17/main into v18/main (2026-11-19) by @KevinJump in https://github.com/KevinJump/uSync/pull/1260
+* Keep usync.once when the startup import has errors by @KevinJump in https://github.com/KevinJump/uSync/pull/1262
+* Startup import status in the key-value store plus a StartupStatus endpoint by @KevinJump in https://github.com/KevinJump/uSync/pull/1263
+* Results view: change-type summary, errors-only filter and search by @KevinJump in https://github.com/KevinJump/uSync/pull/1264
+* Add Time Machine (timeline) to the add-ons view by @KevinJump in https://github.com/KevinJump/uSync/pull/1265
+* Add import failed webhook event and summary counts to bulk webhook payloads by @KevinJump in https://github.com/KevinJump/uSync/pull/1266
+* Merge v17/main into v18/main (2026-11-20) by @KevinJump in https://github.com/KevinJump/uSync/pull/1267
+* Reduce disk IO and DB calls in save cleanup, export and preview by @KevinJump in https://github.com/KevinJump/uSync/pull/1269
+* Use the entity cache for mapper dependency lookups and reuse report nodes by @KevinJump in https://github.com/KevinJump/uSync/pull/1270
+* Skip the sibling name search for items under parents the import created by @KevinJump in https://github.com/KevinJump/uSync/pull/1271
+* Merge v17/main into v18/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1272
+* Give mappers the entity cache from the mapper collection by @KevinJump in https://github.com/KevinJump/uSync/pull/1273
+* Merge v17/main into v18/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1274
+* Report key conflicts clearly when Umbraco won't change a key by @KevinJump in https://github.com/KevinJump/uSync/pull/1276
+* Add KeyConflict: Map, an opt-in per-site key map by @KevinJump in https://github.com/KevinJump/uSync/pull/1277
+* Merge v17/main into v18/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1278
+* Use CountChildren in the key map import test by @KevinJump in https://github.com/KevinJump/uSync/pull/1280
+* Merge v17/main into v18/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1281
+* Cut allocations on the import, export and report paths by @KevinJump in https://github.com/KevinJump/uSync/pull/1283
+* Cut more allocations in xml merging, tracking and file loading by @KevinJump in https://github.com/KevinJump/uSync/pull/1284
+* Merge v17/main into v18/main (2026-11-21) by @KevinJump in https://github.com/KevinJump/uSync/pull/1285
+* Update Jumoo.Json to 18.0.4 by @KevinJump in https://github.com/KevinJump/uSync/pull/1287
+* Leave languages out of the key map by @KevinJump in https://github.com/KevinJump/uSync/pull/1289
+* Merge v17/main into v18/main (2026-11-23) by @KevinJump in https://github.com/KevinJump/uSync/pull/1290
+* Update uSync.Extend lock file for the Jumoo.Json bump (v18) by @KevinJump in https://github.com/KevinJump/uSync/pull/1292
+
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.3.1...v18.3.2]]></description>
+    </item>
+    <item>
+      <title>uSync 17.6.3</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v17.6.3</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v17.6.3</guid>
+      <pubDate>Mon, 23 Nov 2026 11:28:46 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Refresh the README with new screenshots and setup notes by @KevinJump in https://github.com/KevinJump/uSync/pull/1214
+* Bump vite from 8.3.5 to 8.3.6 in /uSync.History/history-client in the npm-dependencies group by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1216
+* Bump vite from 8.3.5 to 8.3.6 in /uSync.Backoffice.Management.Client/usync-assets in the npm-dependencies group by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1217
+* Bump the nuget-dependencies group with 3 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1218
+* Bump Microsoft.SourceLink.GitHub from 10.0.404 to 11.0.100 by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1219
+* Build on demand, scan CodeQL weekly, update Dependabot monthly by @KevinJump in https://github.com/KevinJump/uSync/pull/1224
+* Bump coverlet.collector from 8.0.1 to 10.1.1 by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1230
+* Bump vite-plugin-checker from 0.14.5 to 1.0.0 in /uSync.History/history-client by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1227
+* Bump the npm-dependencies group in /uSync.Backoffice.Management.Client/usync-assets with 3 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1226
+* Bump the npm-dependencies group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/KevinJump/uSync/pull/1225
+* Ignore signalr 11 and Clean majors in dependabot by @KevinJump in https://github.com/KevinJump/uSync/pull/1232
+* Compare content schedule dates against UTC by @KevinJump in https://github.com/KevinJump/uSync/pull/1251
+* uSync.History retention settings by @KevinJump in https://github.com/KevinJump/uSync/pull/1252
+* KeepTemplates: match site-only templates by whole alias by @KevinJump in https://github.com/KevinJump/uSync/pull/1254
+* Delete markers for dictionary item descendants by @KevinJump in https://github.com/KevinJump/uSync/pull/1253
+* Serializable payloads for uSync webhook events by @KevinJump in https://github.com/KevinJump/uSync/pull/1255
+* Document type round-trip regression tests by @KevinJump in https://github.com/KevinJump/uSync/pull/1259
+* Keep usync.once when the startup import has errors by @KevinJump in https://github.com/KevinJump/uSync/pull/1262
+* Startup import status in the key-value store plus a StartupStatus endpoint by @KevinJump in https://github.com/KevinJump/uSync/pull/1263
+* Results view: change-type summary, errors-only filter and search by @KevinJump in https://github.com/KevinJump/uSync/pull/1264
+* Add Time Machine (timeline) to the add-ons view by @KevinJump in https://github.com/KevinJump/uSync/pull/1265
+* Add import failed webhook event and summary counts to bulk webhook payloads by @KevinJump in https://github.com/KevinJump/uSync/pull/1266
+* Reduce disk IO and DB calls in save cleanup, export and preview by @KevinJump in https://github.com/KevinJump/uSync/pull/1269
+* Use the entity cache for mapper dependency lookups and reuse report nodes by @KevinJump in https://github.com/KevinJump/uSync/pull/1270
+* Skip the sibling name search for items under parents the import created by @KevinJump in https://github.com/KevinJump/uSync/pull/1271
+* Give mappers the entity cache from the mapper collection by @KevinJump in https://github.com/KevinJump/uSync/pull/1273
+* Report key conflicts clearly when Umbraco won't change a key by @KevinJump in https://github.com/KevinJump/uSync/pull/1276
+* Add KeyConflict: Map, an opt-in per-site key map by @KevinJump in https://github.com/KevinJump/uSync/pull/1277
+* Use CountChildren in the key map import test by @KevinJump in https://github.com/KevinJump/uSync/pull/1280
+* Cut allocations on the import, export and report paths by @KevinJump in https://github.com/KevinJump/uSync/pull/1283
+* Cut more allocations in xml merging, tracking and file loading by @KevinJump in https://github.com/KevinJump/uSync/pull/1284
+* Leave languages out of the key map by @KevinJump in https://github.com/KevinJump/uSync/pull/1289
+
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v17.6.2...v17.6.3]]></description>
+    </item>
+    <item>
       <title>Jumoo.Processing 19.0.0-rc3</title>
       <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-rc3</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v19.0.0-rc3</guid>
@@ -804,137 +1033,6 @@ lot of content at once, or use approvals.
   `npm install @jumoo/translate-ai@^17`. v17 releases carry the `latest-17` dist-tag, and
   nightly builds publish under `next-17`.
 
-]]></description>
-    </item>
-    <item>
-      <title>PowerToys 17.4.0</title>
-      <link>https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.4.0</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/umbraco.community.powertoys/releases/tag/v17.4.0</guid>
-      <pubDate>Mon, 09 Nov 2026 12:44:15 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Add the Tab Icons power toy by @KevinJump in https://github.com/Jumoo/umbraco.community.powertoys/pull/78
-
-
-**Full Changelog**: https://github.com/Jumoo/umbraco.community.powertoys/compare/v17.3.1...v17.4.0]]></description>
-    </item>
-    <item>
-      <title>Maintenance Mode 18.2.2</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.2</guid>
-      <pubDate>Mon, 09 Nov 2026 12:04:26 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Prepare 17.2.1 release by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/123
-* Authenticate the client with configureClient, drop Umbraco 16 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/125
-* Merge v17/main into v18/main (2026-11-02) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/126
-* Release 17.3.0 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/127
-* Fix unfrozen users being blocked by the freeze and lock by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/129
-* Release 17.3.1 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/131
-* Bump ws from 7.5.10 to 7.5.13 in /Our.Umbraco.MaintenanceMode.Client/maintenance-client by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/128
-* Merge v17/main into v18/main (2026-11-06) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/132
-* Override js-yaml to 4.3.2 (Dependabot alert 233) by @KevinJump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/133
-* Merge v17/main into v18/main (2026-11-09) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/135
-* Release 18.2.2 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/136
-
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v18.2.1...v18.2.2]]></description>
-    </item>
-    <item>
-      <title>Linked Pages 18.0.7</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.7</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.LinkedPages/releases/tag/v18.0.7</guid>
-      <pubDate>Mon, 09 Nov 2026 11:45:27 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Bump vite from 8.3.4 to 8.3.5 in /src/Umbraco.Community.LinkedPages/Client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/52
-* Bump hey-api to 0.99 and override js-yaml to clear security alerts by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/53
-* Merge v17/main into v18/main (2026-11-02) by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/54
-* Merge v17/main into v18/main (2026-11-02) by @henryjump in https://github.com/Jumoo/Our.Umbraco.LinkedPages/pull/56
-
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.LinkedPages/compare/v18.0.6...v18.0.7]]></description>
-    </item>
-    <item>
-      <title>DeepL Connector 18.2.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.1</guid>
-      <pubDate>Mon, 09 Nov 2026 11:14:24 GMT</pubDate>
-      <description><![CDATA[## Changed
-
-- The connector's backoffice API client now authenticates through Umbraco's `configureClient`, so it always sends the current backoffice token, and a session that expires during a request asks you to sign in again instead of failing.
-- The backoffice client resolves `@jumoo/translate` from npmjs.org instead of Jumoo's Azure feed, and builds against `@jumoo/translate` 18.5.0.
-
-## What's Changed
-* Bump the npm-dependencies group across 1 directory with 2 updates by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/25
-* Bump vite from 8.3.2 to 8.3.4 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/27
-* Merge v17/main into v18/main (2026-10-26) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/28
-* Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.DeepL/deepl-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/29
-* Merge v17/main into v18/main (2026-10-31) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/30
-* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/31
-* Merge v17/main into v18/main (2026-10-31) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/32
-* Authenticate the API client with configureClient by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/33
-* Merge v17 fix/configure-client into v18/main (2026-11-02) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/34
-* docs(release): Add 17.4.1 changelog entry by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/35
-* Merge v17 into v18 (2026-11-06) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/36
-* Lock @jumoo/translate to 18.5.0 by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/37
-
-## New Contributors
-* @henryjump made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/pull/28
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/compare/v18.2.0...v18.2.1
-]]></description>
-    </item>
-    <item>
-      <title>Xliff Connector 18.0.3</title>
-      <link>https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.3</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Xliff.Connector/releases/tag/v18.0.3</guid>
-      <pubDate>Mon, 09 Nov 2026 11:14:16 GMT</pubDate>
-      <description><![CDATA[### Changed
-
-- The backoffice client is now built against `@jumoo/translate` 18.5.0 from npmjs.org, and
-  with vite 8.3.5. `@jumoo/translate` is supplied by Translation Manager at runtime, so this is
-  a build-only change: the connector behaves exactly as 18.0.2. The 18.x line has authenticated
-  through `configureClient` since 18.0.0; that change in 17.0.3 has no 18.x counterpart.
-]]></description>
-    </item>
-    <item>
-      <title>CrowdIn Connector 18.1.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.1</guid>
-      <pubDate>Mon, 09 Nov 2026 11:14:02 GMT</pubDate>
-      <description><![CDATA[
-## Fixed
-
-- The backoffice API client is now authenticated by calling `configureClient` on the auth
-  context in the entry point's `onInit`, and every generated operation carries its bearer
-  `security` requirement, replacing the `hey-api.ts` runtime config that copied
-  `umbHttpClient`'s settings
-  ([jumoo-context#138](https://github.com/Jumoo/jumoo-context/issues/138)).
-
-## Changed
-
-- Client build tooling: `@hey-api/openapi-ts` 0.99, lit 3.3.3, prettier 3.9.10, typescript
-  5.9.3 and vite 8.3.5, with the generated API client refreshed to match.
-- Dependabot no longer proposes typescript 6+ (not yet supported by `@hey-api/openapi-ts`)
-  or minor/major `@hey-api/*` bumps, which must track the Umbraco backoffice package.
-- `@jumoo/translate` now resolves from npmjs.org rather than a separate registry, locked at
-  18.5.0 ([jumoo-context#134](https://github.com/Jumoo/jumoo-context/issues/134)).
-
-
-## Pull requests
-* chore: roll up dependabot bumps, ignore typescript 6+ and hey-api by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/10
-* Merge v17/main into v18/main (dependabot triage) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/12
-* Bump typescript from 5.7.2 to 5.9.3 in /Jumoo.TranslationManager.CrowdIn/crowdin-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/11
-* Merge v17/main into v18/main (dependabot bumps) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/13
-* Bump vite from 8.3.4 to 8.3.5 in /Jumoo.TranslationManager.CrowdIn/crowdin-client in the npm-dependencies group by @dependabot[bot] in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/14
-* Merge v17/main into v18/main (2026-10-31) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/15
-* Resolve @jumoo/translate from npmjs.org by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/16
-* Merge v17/main into v18/main (2026-10-31) by @KevinJump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/17
-* Merge v17 fix/configure-client into v18/main (2026-11-02) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/19
-* Move the @jumoo/translate lock to 18.5.0 by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/20
-
-## New Contributors
-* @dependabot[bot] made their first contribution in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/11
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/compare/v18.1.0...v18.1.1
 ]]></description>
     </item>
   </channel>
