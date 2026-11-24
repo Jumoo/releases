@@ -5,6 +5,90 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync CLI 17.2.0</title>
+      <link>https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.2.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.2.0</guid>
+      <pubDate>Mon, 23 Nov 2026 22:02:14 GMT</pubDate>
+      <description><![CDATA[## New
+* `files-verify` checks a uSync folder before you import it: invalid XML, merge conflict markers, duplicate keys, alias clashes, broken references and unknown files.
+* `usync-report` reports what an import would change without running it. On GitHub Actions it also writes a step summary.
+* `usync-ping --timeout` waits for a site to come up.
+* The server and credentials can now come from environment variables, so they don't have to be on the command line.
+
+## Changed
+* `healthcheck-group-check` now exits with 1 when the results contain errors. A pipeline step that ran it will now fail on those errors.
+* `usync-ping` fails straight away when the site rejects the credentials, instead of retrying until the timeout.
+* Errors print as one line rather than a stack trace. Set `USYNC_DEBUG` to get the full trace.
+* The tool rolls forward to newer .NET runtimes.
+
+## What's Changed
+* Build on demand, scan CodeQL weekly, update Dependabot monthly by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/25
+* Pipeline commands: files-verify, usync-report, env-var credentials, clean errors by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/26
+
+**Full Changelog**: https://github.com/Jumoo/uSync.CommandLine/compare/v17.1.1...v17.2.0
+]]></description>
+    </item>
+    <item>
+      <title>Google Connector 18.0.2</title>
+      <link>https://github.com/Jumoo/Google.Connector/releases/tag/v18.0.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Google.Connector/releases/tag/v18.0.2</guid>
+      <pubDate>Mon, 23 Nov 2026 14:21:45 GMT</pubDate>
+      <description><![CDATA[
+### Fixed
+
+- The Map glossaries setting is returned with the connector's options as `mapGlossaries`, the
+  key the settings screen and the connector use, so the toggle shows its saved value instead of
+  always showing off. Settings saved under the old `useGlossaries` key are still read (also in
+  17.1.2).
+
+### Changed
+
+- Backoffice client dependency updates (Vite, Prettier).
+
+]]></description>
+    </item>
+    <item>
+      <title>DeepL Connector 18.2.2</title>
+      <link>https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.Connector.DeepL/releases/tag/v18.2.2</guid>
+      <pubDate>Mon, 23 Nov 2026 14:21:44 GMT</pubDate>
+      <description><![CDATA[
+### Fixed
+
+- Map glossaries and the advanced settings (model type, tag handling version, outline detection,
+  preserve formatting, ignore, splitting and non-splitting tags) now load on the config page.
+  They were saved but never returned, so the page showed defaults and the next save removed them
+  (also in 17.4.2).
+- Ignore tags and non-splitting tags were swapped when building the DeepL request.
+- Upgrading from v13: a stored `mapGlossary` value is honoured when `mapGlossaries` isn't set.
+
+### Changed
+
+- Backoffice client dependency updates (Vite, Prettier).
+
+]]></description>
+    </item>
+    <item>
+      <title>Jumoo.Processing 18.4.2</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.4.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.4.2</guid>
+      <pubDate>Mon, 23 Nov 2026 12:18:38 GMT</pubDate>
+      <description><![CDATA[### Changed
+
+- Depends on `Jumoo.Json` 18.0.4 (was 18.0.3).
+]]></description>
+    </item>
+    <item>
+      <title>Jumoo.Processing 17.6.2</title>
+      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.6.2</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.6.2</guid>
+      <pubDate>Mon, 23 Nov 2026 12:18:37 GMT</pubDate>
+      <description><![CDATA[### Changed
+
+- Depends on `Jumoo.Json` 17.0.3 (was 17.0.2).
+]]></description>
+    </item>
+    <item>
       <title>Maintenance Mode 18.2.4</title>
       <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.4</link>
       <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v18.2.4</guid>
@@ -959,80 +1043,6 @@ lot of content at once, or use approvals.
 
 
 **Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v18.2.2...v19.0.0-beta01
-]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Processing 18.3.4</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.4</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v18.3.4</guid>
-      <pubDate>Tue, 10 Nov 2026 11:42:28 GMT</pubDate>
-      <description><![CDATA[Includes the fixes in 17.5.4, merged forward from `v17/main`.
-
-### Fixed
-
-- A pipeline whose step ran but whose results then couldn't be saved is now marked Failed, with
-  the save error in its details. Before, it stayed Running and kept the target locked, so the
-  next run was told one was already in progress. This covers a write lock timeout, a pipeline too
-  big to serialise, and a processor that throws while merging a step's results.
-- Saving a big pipeline no longer holds the processing write lock while it serialises. Other
-  processing writes are less likely to hit Umbraco's write lock timeout while a large pipeline
-  saves.
-
-]]></description>
-    </item>
-    <item>
-      <title>Jumoo.Processing 17.5.4</title>
-      <link>https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.4</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.Processing/releases/tag/release/v17.5.4</guid>
-      <pubDate>Tue, 10 Nov 2026 11:28:39 GMT</pubDate>
-      <description><![CDATA[### Fixed
-
-- A pipeline whose step ran but whose results then couldn't be saved is now marked Failed, with
-  the save error in its details. Before, it stayed Running and kept the target locked, so the
-  next run was told one was already in progress. This covers a write lock timeout, a pipeline too
-  big to serialise, and a processor that throws while merging a step's results.
-- Saving a big pipeline no longer holds the processing write lock while it serialises. Other
-  processing writes are less likely to hit Umbraco's write lock timeout while a large pipeline
-  saves.
-
-]]></description>
-    </item>
-    <item>
-      <title>CrowdIn Connector 18.1.2</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.2</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v18.1.2</guid>
-      <pubDate>Mon, 09 Nov 2026 15:01:59 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Fix default project setting not being read back after save by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/21
-* Merge v17/main into v18/main (2026-11-09) by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/22
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/compare/v18.1.1...v18.1.2
-]]></description>
-    </item>
-    <item>
-      <title>CrowdIn Connector 17.2.3</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.3</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/releases/tag/v17.2.3</guid>
-      <pubDate>Mon, 09 Nov 2026 15:01:54 GMT</pubDate>
-      <description><![CDATA[## What's Changed
-* Fix default project setting not being read back after save by @henryjump in https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/pull/21
-
-
-**Full Changelog**: https://github.com/Jumoo/Jumoo.TranslationManager.CrowdIn/compare/v17.2.2...v17.2.3]]></description>
-    </item>
-    <item>
-      <title>AI Connector 17.7.4</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.4</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager.AI/releases/tag/v17.7.4</guid>
-      <pubDate>Mon, 09 Nov 2026 14:26:22 GMT</pubDate>
-      <description><![CDATA[### Added
-
-- The backoffice client types are published to npmjs.org as `@jumoo/translate-ai`, so
-  connectors that extend the AI translator settings can build against them with a plain
-  `npm install @jumoo/translate-ai@^17`. v17 releases carry the `latest-17` dist-tag, and
-  nightly builds publish under `next-17`.
-
 ]]></description>
     </item>
   </channel>
