@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T12:20:14.011Z",
+  "generatedAt": "2026-11-25T00:34:16.370Z",
   "packages": [
     {
       "package": "uSync",
@@ -7,12 +7,12 @@
       "category": "",
       "repo": "KevinJump/uSync",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v19.0.0-rc2",
-      "lastReleaseDate": "2026-11-23T11:37:34Z",
-      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v19.0.0-rc2",
-      "releaseBranch": "v19/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-11-23T11:37:34Z"
+      "lastReleaseTag": "v18.3.3",
+      "lastReleaseDate": "2026-11-24T14:43:24Z",
+      "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.3.3",
+      "releaseBranch": "v18/main",
+      "commitsSince": 2,
+      "lastCommitDate": "2026-11-24T15:23:33Z"
     },
     {
       "package": "uSync.Complete",
@@ -59,12 +59,12 @@
       "category": "uSync Addon",
       "repo": "Jumoo/uSync.CommandLine",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.2.0",
-      "lastReleaseDate": "2026-11-23T22:02:14Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.2.0",
+      "lastReleaseTag": "v17.2.1",
+      "lastReleaseDate": "2026-11-24T15:10:14Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.2.1",
       "releaseBranch": "v17/main",
-      "commitsSince": 0,
-      "lastCommitDate": "2026-11-23T22:02:14Z"
+      "commitsSince": 28,
+      "lastCommitDate": "2026-11-24T16:36:52Z"
     },
     {
       "package": "uSync.Migrations",

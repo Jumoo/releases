@@ -5,6 +5,33 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync CLI 17.2.1</title>
+      <link>https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.2.1</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.2.1</guid>
+      <pubDate>Tue, 24 Nov 2026 15:10:14 GMT</pubDate>
+      <description><![CDATA[## New
+* **uSync.Command.Notify**, a new package for the site. It adds a "uSync Site Started" webhook event that fires once per new build, with a GitHub `repository_dispatch` shaped payload. A deploy pipeline can stop after the deploy and run the import when the site says it's up, instead of a runner waiting for the restart.
+* The webhook can name a token (`uSync-Notify-Token` header) and the package adds it as the `Authorization` header when it sends, from `uSync:Notify:Secrets` on the site. The token stays out of the database, the uSync files and the webhook log, and is only sent to hosts in `uSync:Notify:AllowedHosts` (default `api.github.com`).
+* `files-webhook --repo owner/name` writes the webhook into your uSync folder, so it ships with the rest of your settings.
+
+The workflows that use it are in [usync-actions: docs/getting-started-deploy-callback.md](https://github.com/Jumoo/usync-actions/blob/main/docs/getting-started-deploy-callback.md).
+
+**Full Changelog**: https://github.com/Jumoo/uSync.CommandLine/compare/v17.2.0...v17.2.1
+]]></description>
+    </item>
+    <item>
+      <title>uSync 18.3.3</title>
+      <link>https://github.com/KevinJump/uSync/releases/tag/v18.3.3</link>
+      <guid isPermaLink="true">https://github.com/KevinJump/uSync/releases/tag/v18.3.3</guid>
+      <pubDate>Tue, 24 Nov 2026 14:43:24 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Skip the management API services when the back office is off by @KevinJump in https://github.com/KevinJump/uSync/pull/1296
+* Update changelog for v18.3.3 release by @KevinJump in https://github.com/KevinJump/uSync/pull/1298
+
+
+**Full Changelog**: https://github.com/KevinJump/uSync/compare/v18.3.2...v18.3.3]]></description>
+    </item>
+    <item>
       <title>uSync CLI 17.2.0</title>
       <link>https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.2.0</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.2.0</guid>
@@ -1015,34 +1042,6 @@ lot of content at once, or use approvals.
 - Umbraco 18.
 - uSync 18.3.1 or later.
 - Jumoo.Processing 18.3.4 (installed automatically).
-]]></description>
-    </item>
-    <item>
-      <title>Translation Manager 17.11.1</title>
-      <link>https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.11.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Jumoo.TranslationManager/releases/tag/v17.11.1</guid>
-      <pubDate>Tue, 10 Nov 2026 12:08:37 GMT</pubDate>
-      <description><![CDATA[- Add: the content picker for bulk translation now has a search tab alongside the tree, so you can find pages by name instead of browsing for them
-- Build: Jumoo.Processing 17.5.4 (and `@jumoo/processing` 17.5.4)
-- Build: dependency updates (Polly.Core 8.9.1, vite)
-]]></description>
-    </item>
-    <item>
-      <title>Maintenance Mode 19.0.0-beta01</title>
-      <link>https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v19.0.0-beta01</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/releases/tag/v19.0.0-beta01</guid>
-      <pubDate>Tue, 10 Nov 2026 11:44:44 GMT</pubDate>
-      <description><![CDATA[First build for Umbraco 19, a prerelease against Umbraco 19.0.0-beta1 on .NET 11. Use the 18.x releases on Umbraco 18.
-
-## What's Changed
-* Add Umbraco 19 beta support: net11.0, Umbraco.Cms 19.0.0-beta1, @umbraco-cms/backoffice 19.0.0-beta1 (21ec514)
-* Bump the entry point cache-buster for Umbraco 19 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/137
-* Block Library Elements while content is frozen or the site is locked by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/138
-* Merge v18/main into v19/main (2026-11-10) by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/139
-* Release 19.0.0-beta01 by @henryjump in https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/pull/140
-
-
-**Full Changelog**: https://github.com/Jumoo/Our.Umbraco.MaintenanceMode/compare/v18.2.2...v19.0.0-beta01
 ]]></description>
     </item>
   </channel>
