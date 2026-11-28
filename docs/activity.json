@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-27T12:19:27.884Z",
+  "generatedAt": "2026-11-28T00:31:42.202Z",
   "packages": [
     {
       "package": "uSync",
@@ -11,8 +11,8 @@
       "lastReleaseDate": "2026-11-24T14:43:24Z",
       "lastReleaseUrl": "https://github.com/KevinJump/uSync/releases/tag/v18.3.3",
       "releaseBranch": "v18/main",
-      "commitsSince": 12,
-      "lastCommitDate": "2026-11-26T22:27:24Z"
+      "commitsSince": 28,
+      "lastCommitDate": "2026-11-27T17:29:52Z"
     },
     {
       "package": "uSync.Complete",
@@ -59,12 +59,12 @@
       "category": "uSync Addon",
       "repo": "Jumoo/uSync.CommandLine",
       "defaultBranch": "v17/main",
-      "lastReleaseTag": "v17.2.1",
-      "lastReleaseDate": "2026-11-24T15:10:14Z",
-      "lastReleaseUrl": "https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.2.1",
+      "lastReleaseTag": "v17.3.0",
+      "lastReleaseDate": "2026-11-27T13:20:13Z",
+      "lastReleaseUrl": "https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.3.0",
       "releaseBranch": "v17/main",
-      "commitsSince": 28,
-      "lastCommitDate": "2026-11-24T16:36:52Z"
+      "commitsSince": 1,
+      "lastCommitDate": "2026-11-27T13:21:19Z"
     },
     {
       "package": "uSync.Migrations",

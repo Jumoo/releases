@@ -5,6 +5,23 @@
     <link>https://releases.jumoo.co.uk/</link>
     <description>Latest NuGet package releases from Jumoo</description>
     <item>
+      <title>uSync CLI 17.3.0</title>
+      <link>https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.3.0</link>
+      <guid isPermaLink="true">https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.3.0</guid>
+      <pubDate>Fri, 27 Nov 2026 13:20:13 GMT</pubDate>
+      <description><![CDATA[## What's Changed
+* Deploy commands: server-status, package-migrations, log-errors, cache-status, healthcheck-run-all by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/28
+* Diagnostic commands: server-troubleshoot, redirects-list, webhook-list, index health by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/29
+* Content checks: content-urls and recyclebin-list by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/30
+* Offline file commands: files-diff, files-find, files-clean by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/31
+* config-check and --json output for the list commands by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/32
+* --json for the new list commands by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/33
+* Rename uSync.Files to uSync.FolderChecks by @KevinJump in https://github.com/Jumoo/uSync.CommandLine/pull/34
+
+
+**Full Changelog**: https://github.com/Jumoo/uSync.CommandLine/compare/v17.2.1...v17.3.0]]></description>
+    </item>
+    <item>
       <title>uSync CLI 17.2.1</title>
       <link>https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.2.1</link>
       <guid isPermaLink="true">https://github.com/Jumoo/uSync.CommandLine/releases/tag/v17.2.1</guid>
@@ -1000,49 +1017,6 @@ The `@jumoo/usync` npm package is published under the `next-19` tag.
 
 
 **Full Changelog**: https://github.com/Jumoo/uSync.Umbraco.Commerce/compare/v17.1.1...v17.1.2]]></description>
-    </item>
-    <item>
-      <title>uSync Complete 18.4.1</title>
-      <link>https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.4.1</link>
-      <guid isPermaLink="true">https://github.com/Jumoo/uSync.Complete/releases/tag/release/v18.4.1</guid>
-      <pubDate>Tue, 10 Nov 2026 13:46:17 GMT</pubDate>
-      <description><![CDATA[# v18.4.1
-
-Brings the v17.7.1 work forward to Umbraco 18. 18.4.1 makes large Publisher
-pushes and pulls lighter, and fixes pulls to a server that requires approval
-when "Delete missing" is on. Upgrading is recommended if you push or pull a
-lot of content at once, or use approvals.
-
-## Changed
-
-- Publisher keeps long changed values (block lists, rich text and so on)
-  shortened while a push or pull is running, so large pushes stay quick and
-  use less memory. The change details dialog fetches the full values when
-  you open an item, including for approvers reviewing a request.
-  ([KevinJump/uSync#1215](https://github.com/KevinJump/uSync/issues/1215))
-- Once a push or pull has finished, values that were shortened are listed as
-  they are, under "Shortened values", rather than compared.
-- For developers: code that handles
-  `uSyncPublisherActionCompletedNotification` may now find long values in
-  the `Details` of its `Actions` shortened. The same goes for the reports an
-  approval keeps once its run has finished.
-
-## Fixed
-
-- Publisher: a pull from a server that requires approval now applies when
-  "Delete missing" is on, instead of failing with "Missing File".
-- Publisher: an approval whose run fails no longer shows its changes as made.
-
-## Updated
-
-- Jumoo.Processing 18.3.4.
-
-## Requirements
-
-- Umbraco 18.
-- uSync 18.3.1 or later.
-- Jumoo.Processing 18.3.4 (installed automatically).
-]]></description>
     </item>
   </channel>
 </rss>
